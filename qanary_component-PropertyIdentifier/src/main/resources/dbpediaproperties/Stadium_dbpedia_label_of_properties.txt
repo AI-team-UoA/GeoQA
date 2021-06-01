@@ -1,0 +1,276 @@
+type,http://dbpedia.org/property/type
+Link from a Wikipage to an external page,http://dbpedia.org/ontology/wikiPageExternalLink
+acreage,http://dbpedia.org/property/acreage
+align,http://dbpedia.org/property/align
+firstodidate,http://dbpedia.org/property/firstodidate
+construction start,http://dbpedia.org/property/constructionStart
+operator,http://dbpedia.org/property/operator
+lasttesthome,http://dbpedia.org/property/lasttesthome
+latNS,http://dbpedia.org/property/latns
+curator,http://dbpedia.org/property/curator
+coordinates,http://dbpedia.org/property/coordinates
+cost ($),http://dbpedia.org/ontology/cost
+location,http://dbpedia.org/property/location
+contractor,http://dbpedia.org/property/contractor
+country,http://dbpedia.org/property/country
+wickets-team2-inns,http://dbpedia.org/property/wicketsTeam2Inns
+image size,http://dbpedia.org/property/imageSize
+pattern b,http://dbpedia.org/property/patternB
+image,http://dbpedia.org/property/image
+logo width,http://dbpedia.org/property/logoWidth
+lastodiyear,http://dbpedia.org/property/lastodiyear
+record attendance,http://dbpedia.org/property/recordAttendance
+ground name,http://dbpedia.org/property/groundName
+owners,http://dbpedia.org/property/owners
+referee,http://dbpedia.org/property/referee
+penalties,http://dbpedia.org/property/penalties
+seating capacity,http://dbpedia.org/ontology/seatingCapacity
+native name lang,http://dbpedia.org/property/nativeNameLang
+end,http://dbpedia.org/property/end
+dimensions,http://dbpedia.org/property/dimensions
+address,http://dbpedia.org/ontology/address
+ticket sales,http://dbpedia.org/property/ticketSales
+Nickname,http://dbpedia.org/property/nickname
+decks,http://dbpedia.org/property/decks
+imagesize,http://dbpedia.org/property/imagesize
+państwo,http://dbpedia.org/ontology/locationCountry
+bgcolour,http://dbpedia.org/property/bgcolour
+penaltyscore,http://dbpedia.org/property/penaltyscore
+constructor,http://dbpedia.org/property/constructor
+longm,http://dbpedia.org/property/longm
+country,http://dbpedia.org/ontology/country
+genre,http://dbpedia.org/property/genre
+longs,http://dbpedia.org/property/longs
+firsttestaway,http://dbpedia.org/property/firsttestaway
+capacity,http://dbpedia.org/property/capacity
+construction cost,http://dbpedia.org/property/constructionCost
+firsttesthome,http://dbpedia.org/property/firsttesthome
+revenue,http://dbpedia.org/property/revenue
+longd,http://dbpedia.org/property/longd
+height (μ),http://dbpedia.org/ontology/height
+previous work,http://dbpedia.org/ontology/previousWork
+thumbnail,http://dbpedia.org/ontology/thumbnail
+contentcss,http://dbpedia.org/property/contentcss
+pattern la,http://dbpedia.org/property/patternLa
+owner,http://dbpedia.org/ontology/owner
+image width,http://dbpedia.org/property/imageWidth
+wickets,http://dbpedia.org/property/wickets
+time,http://dbpedia.org/property/time
+stadium names,http://dbpedia.org/property/stadiumNames
+address,http://dbpedia.org/property/address
+lasttestaway,http://dbpedia.org/property/lasttestaway
+firstt20idate,http://dbpedia.org/property/firstt20idate
+international,http://dbpedia.org/property/international
+Latitude,http://dbpedia.org/property/latitude
+longEW,http://dbpedia.org/property/longew
+firstodiyear,http://dbpedia.org/property/firstodiyear
+general contractor,http://dbpedia.org/property/generalContractor
+completed,http://dbpedia.org/property/completed
+services engineer,http://dbpedia.org/property/servicesEngineer
+lighting,http://dbpedia.org/property/lighting
+wickets-team1-inns,http://dbpedia.org/property/wicketsTeam1Inns
+date,http://dbpedia.org/property/date
+alternate names,http://dbpedia.org/property/alternateNames
+logo,http://dbpedia.org/property/logo
+auto,http://dbpedia.org/property/auto
+source ,http://dbpedia.org/property/source
+drainage,http://dbpedia.org/property/drainage
+operator,http://dbpedia.org/ontology/operator
+score-team1-inns,http://dbpedia.org/property/scoreTeam1Inns
+publictransit,http://dbpedia.org/property/publictransit
+volume,http://dbpedia.org/property/volume
+built,http://dbpedia.org/property/built
+released,http://dbpedia.org/property/released
+area total (m2),http://dbpedia.org/ontology/areaTotal
+content,http://dbpedia.org/property/content
+goals,http://dbpedia.org/property/goals
+opened,http://dbpedia.org/property/opened
+daynight,http://dbpedia.org/property/daynight
+Caption,http://dbpedia.org/property/caption
+body,http://dbpedia.org/property/body
+city,http://dbpedia.org/ontology/city
+field dimensions,http://dbpedia.org/property/fieldDimensions
+motm,http://dbpedia.org/property/motm
+Rain,http://dbpedia.org/property/rain
+demolished,http://dbpedia.org/property/demolished
+number of rooms,http://dbpedia.org/ontology/numberOfRooms
+closed,http://dbpedia.org/property/closed
+since,http://dbpedia.org/property/since
+city,http://dbpedia.org/property/city
+genre,http://dbpedia.org/ontology/genre
+result,http://dbpedia.org/property/result
+pushpin label position,http://dbpedia.org/property/pushpinLabelPosition
+built by,http://dbpedia.org/property/builtBy
+stadium,http://dbpedia.org/property/stadium
+replaced by,http://dbpedia.org/property/replacedBy
+type,http://dbpedia.org/ontology/type
+COP 90.000 (1946)
+  tenants,http://dbpedia.org/property/cop90.000(1946)Tenants
+height,http://dbpedia.org/property/height
+rebuilding date,http://dbpedia.org/ontology/rebuildingDate
+engineer,http://dbpedia.org/ontology/engineer
+location,http://dbpedia.org/ontology/location
+round,http://dbpedia.org/property/round
+lastodidate,http://dbpedia.org/property/lastodidate
+estimated cost,http://dbpedia.org/property/estimatedCost
+coordinates display,http://dbpedia.org/property/coordinatesDisplay
+reason,http://dbpedia.org/property/reason
+pushpin map,http://dbpedia.org/property/pushpinMap
+lastT20Iyear,http://dbpedia.org/property/lastt20iyear
+before,http://dbpedia.org/property/before
+runs,http://dbpedia.org/property/runs
+building start date,http://dbpedia.org/ontology/buildingStartDate
+fix-attempted,http://dbpedia.org/property/fixAttempted
+pitch Surface,http://dbpedia.org/property/pitchSurface
+main contractors,http://dbpedia.org/property/mainContractors
+quantity surveyor,http://dbpedia.org/property/quantitySurveyor
+runtime (s),http://dbpedia.org/ontology/runtime
+firsttestyear,http://dbpedia.org/property/firsttestyear
+official website,http://dbpedia.org/property/officialWebsite
+performer,http://dbpedia.org/ontology/artist
+year,http://dbpedia.org/property/year
+runtime (m),http://dbpedia.org/ontology/Work/runtime
+establishment,http://dbpedia.org/property/establishment
+logo size,http://dbpedia.org/property/logoSize
+id,http://dbpedia.org/property/id
+main contractor,http://dbpedia.org/property/mainContractor
+former name,http://dbpedia.org/ontology/formerName
+pushpin mapsize,http://dbpedia.org/property/pushpinMapsize
+Longitude,http://dbpedia.org/property/longitude
+renovated,http://dbpedia.org/property/renovated
+firsttestdate,http://dbpedia.org/property/firsttestdate
+bot,http://dbpedia.org/property/bot
+score-team2-inns,http://dbpedia.org/property/scoreTeam2Inns
+This album,http://dbpedia.org/property/thisAlbum
+developer,http://dbpedia.org/ontology/developer
+toss,http://dbpedia.org/property/toss
+racetype,http://dbpedia.org/property/racetype
+pattern ra,http://dbpedia.org/property/patternRa
+official names,http://dbpedia.org/property/officialNames
+opening date,http://dbpedia.org/ontology/openingDate
+lastodiaway,http://dbpedia.org/property/lastodiaway
+total construction time,http://dbpedia.org/property/totalConstructionTime
+firstt20ihome,http://dbpedia.org/property/firstt20ihome
+project manager,http://dbpedia.org/property/projectManager
+float,http://dbpedia.org/property/float
+lasttestdate,http://dbpedia.org/property/lasttestdate
+socks,http://dbpedia.org/property/socks
+lastodihome,http://dbpedia.org/property/lastodihome
+firstt20iaway,http://dbpedia.org/property/firstt20iaway
+Wikipage revision ID,http://dbpedia.org/ontology/wikiPageRevisionID
+header,http://dbpedia.org/property/header
+size,http://dbpedia.org/property/size
+Website,http://dbpedia.org/property/website
+damaged,http://dbpedia.org/property/damaged
+pattern sh,http://dbpedia.org/property/patternSh
+lastt20ihome,http://dbpedia.org/property/lastt20ihome
+runs-team2-inns,http://dbpedia.org/property/runsTeam2Inns
+sports,http://dbpedia.org/property/sports
+fulleren,http://dbpedia.org/property/fulleren
+infamous for,http://dbpedia.org/property/infamousFor
+lastt20iaway,http://dbpedia.org/property/lastt20iaway
+architect,http://dbpedia.org/property/architect
+pattern so,http://dbpedia.org/property/patternSo
+name,http://dbpedia.org/ontology/name
+nicknames,http://dbpedia.org/property/nicknames
+tenant,http://dbpedia.org/ontology/tenant
+relief,http://dbpedia.org/property/relief
+headercss,http://dbpedia.org/property/headercss
+header align,http://dbpedia.org/property/headerAlign
+logo caption,http://dbpedia.org/property/logoCaption
+parking,http://dbpedia.org/property/parking
+c,http://dbpedia.org/property/c
+public transportation,http://dbpedia.org/property/publicTransportation
+after,http://dbpedia.org/property/after
+cost,http://dbpedia.org/property/cost
+has abstract,http://dbpedia.org/ontology/abstract
+structural engineer,http://dbpedia.org/property/structuralEngineer
+t,http://dbpedia.org/property/t
+p,http://dbpedia.org/property/p
+s,http://dbpedia.org/property/s
+former names,http://dbpedia.org/property/formerNames
+school,http://dbpedia.org/property/school
+lats,http://dbpedia.org/property/lats
+stadium nam,http://dbpedia.org/property/stadiumNam
+years,http://dbpedia.org/property/years
+seating type,http://dbpedia.org/property/seatingType
+club,http://dbpedia.org/property/club
+latm,http://dbpedia.org/property/latm
+arena name,http://dbpedia.org/property/arenaName
+width,http://dbpedia.org/property/width
+direction,http://dbpedia.org/property/direction
+Cover,http://dbpedia.org/property/cover
+inauguration,http://dbpedia.org/property/inauguration
+architect,http://dbpedia.org/ontology/architect
+suites,http://dbpedia.org/property/suites
+lastT20Idate,http://dbpedia.org/property/lastt20idate
+score,http://dbpedia.org/property/score
+stack,http://dbpedia.org/property/stack
+home team,http://dbpedia.org/property/homeTeam
+construction contractor,http://dbpedia.org/property/constructionContractor
+producer,http://dbpedia.org/ontology/producer
+stadium name,http://dbpedia.org/property/stadiumName
+name,http://dbpedia.org/property/name
+Engineers,http://dbpedia.org/property/engineers
+url,http://dbpedia.org/property/url
+demolition date,http://dbpedia.org/ontology/demolitionDate
+latd,http://dbpedia.org/property/latd
+other name,http://dbpedia.org/property/otherName
+Floodlights,http://dbpedia.org/property/floodlights
+video,http://dbpedia.org/property/video
+date of abandonment,http://dbpedia.org/ontology/dateOfAbandonment
+attendance,http://dbpedia.org/property/attendance
+opening year,http://dbpedia.org/ontology/openingYear
+seating capacity,http://dbpedia.org/property/seatingCapacity
+leftarm,http://dbpedia.org/property/leftarm
+Fullname,http://dbpedia.org/property/fullname
+logo image,http://dbpedia.org/property/logoImage
+opening,http://dbpedia.org/property/opening
+venue,http://dbpedia.org/property/venue
+tenants,http://dbpedia.org/property/tenants
+subsequent work,http://dbpedia.org/ontology/subsequentWork
+fullheight,http://dbpedia.org/property/fullheight
+field shape,http://dbpedia.org/property/fieldShape
+firstodiaway,http://dbpedia.org/property/firstodiaway
+firstt20iyear,http://dbpedia.org/property/firstt20iyear
+formerctenants,http://dbpedia.org/property/formerctenants
+building end date,http://dbpedia.org/ontology/buildingEndDate
+electrical contractor,http://dbpedia.org/property/electricalContractor
+surface,http://dbpedia.org/property/surface
+fullwidth,http://dbpedia.org/property/fullwidth
+record label,http://dbpedia.org/ontology/recordLabel
+broke ground,http://dbpedia.org/property/brokeGround
+est,http://dbpedia.org/property/est
+label,http://dbpedia.org/property/label
+scoreboard,http://dbpedia.org/property/scoreboard
+shorts,http://dbpedia.org/property/shorts
+long,http://dbpedia.org/property/long
+opening date,http://dbpedia.org/property/openingDate
+runs-team1-inns,http://dbpedia.org/property/runsTeam1Inns
+material,http://dbpedia.org/property/material
+lasttestyear,http://dbpedia.org/property/lasttestyear
+reopening year,http://dbpedia.org/ontology/reopeningYear
+colwidth,http://dbpedia.org/property/colwidth
+Wikipage redirect,http://dbpedia.org/ontology/wikiPageRedirects
+opened date,http://dbpedia.org/property/openedDate
+owner,http://dbpedia.org/property/owner
+Recorded,http://dbpedia.org/property/recorded
+Wikipage page ID,http://dbpedia.org/ontology/wikiPageID
+homepage,http://dbpedia.org/property/homepage
+Team,http://dbpedia.org/property/team
+Alt,http://dbpedia.org/property/alt
+builder,http://dbpedia.org/ontology/builder
+expanded,http://dbpedia.org/property/expanded
+marksize,http://dbpedia.org/property/marksize
+firstodihome,http://dbpedia.org/property/firstodihome
+rightarm,http://dbpedia.org/property/rightarm
+capicity,http://dbpedia.org/property/capicity
+native name,http://dbpedia.org/property/nativeName
+report,http://dbpedia.org/property/report
+umpires,http://dbpedia.org/property/umpires
+conesssioner,http://dbpedia.org/property/conesssioner
+floor count,http://dbpedia.org/ontology/floorCount
+pushpin map caption,http://dbpedia.org/property/pushpinMapCaption
+title,http://dbpedia.org/property/title
+landscape,http://dbpedia.org/property/landscape
+lat,http://dbpedia.org/property/lat

@@ -1,0 +1,348 @@
+type,http://dbpedia.org/property/type
+Jul precipitation days,http://dbpedia.org/property/julPrecipitationDays
+Oct record high C,http://dbpedia.org/property/octRecordHighC
+local name,http://dbpedia.org/property/localName
+Dec snow cm,http://dbpedia.org/property/decSnowCm
+Link from a Wikipage to an external page,http://dbpedia.org/ontology/wikiPageExternalLink
+intensity,http://dbpedia.org/property/intensity
+Aug high C,http://dbpedia.org/property/augHighC
+Feb record high C,http://dbpedia.org/property/febRecordHighC
+operator,http://dbpedia.org/property/operator
+Mar snow cm,http://dbpedia.org/property/marSnowCm
+latNS,http://dbpedia.org/property/latns
+Apr record high C,http://dbpedia.org/property/aprRecordHighC
+year record high C,http://dbpedia.org/property/yearRecordHighC
+Nov snow cm,http://dbpedia.org/property/novSnowCm
+Aug mean C,http://dbpedia.org/property/augMeanC
+Apr snow cm,http://dbpedia.org/property/aprSnowCm
+Jul chill,http://dbpedia.org/property/julChill
+Nov maximum humidex,http://dbpedia.org/property/novMaximumHumidex
+May snow days,http://dbpedia.org/property/maySnowDays
+coordinates,http://dbpedia.org/property/coordinates
+location,http://dbpedia.org/property/location
+May rain mm,http://dbpedia.org/property/mayRainMm
+Jan record low C,http://dbpedia.org/property/janRecordLowC
+lon deg,http://dbpedia.org/property/lonDeg
+Nov humidity,http://dbpedia.org/property/novHumidity
+Feb sun,http://dbpedia.org/property/febSun
+Feb humidity,http://dbpedia.org/property/febHumidity
+country,http://dbpedia.org/property/country
+Jul low C,http://dbpedia.org/property/julLowC
+long seconds,http://dbpedia.org/property/longSeconds
+countrylink,http://dbpedia.org/property/countrylink
+image size,http://dbpedia.org/property/imageSize
+Dec maximum humidex,http://dbpedia.org/property/decMaximumHumidex
+Oct sun,http://dbpedia.org/property/octSun
+province,http://dbpedia.org/ontology/province
+position,http://dbpedia.org/property/position
+Jun chill,http://dbpedia.org/property/junChill
+May rain days,http://dbpedia.org/property/mayRainDays
+Sep snow days,http://dbpedia.org/property/sepSnowDays
+Jul record low C,http://dbpedia.org/property/julRecordLowC
+labels,http://dbpedia.org/property/labels
+Dec chill,http://dbpedia.org/property/decChill
+Nov precipitation days,http://dbpedia.org/property/novPrecipitationDays
+Oct chill,http://dbpedia.org/property/octChill
+Aug humidity,http://dbpedia.org/property/augHumidity
+module,http://dbpedia.org/property/module
+Jan mean C,http://dbpedia.org/property/janMeanC
+lat direction,http://dbpedia.org/property/latDirection
+long degrees,http://dbpedia.org/property/longDegrees
+lat deg,http://dbpedia.org/property/latDeg
+year high C,http://dbpedia.org/property/yearHighC
+year mean C,http://dbpedia.org/property/yearMeanC
+Feb precipitation days,http://dbpedia.org/property/febPrecipitationDays
+Jun snow cm,http://dbpedia.org/property/junSnowCm
+markings,http://dbpedia.org/property/markings
+Mar precipitation mm,http://dbpedia.org/property/marPrecipitationMm
+Dec rain days,http://dbpedia.org/property/decRainDays
+Apr mean C,http://dbpedia.org/property/aprMeanC
+Apr precipitation mm,http://dbpedia.org/property/aprPrecipitationMm
+Nov precipitation mm,http://dbpedia.org/property/novPrecipitationMm
+Jan high C,http://dbpedia.org/property/janHighC
+admiralty,http://dbpedia.org/property/admiralty
+lat sec,http://dbpedia.org/property/latSec
+Dec precipitation days,http://dbpedia.org/property/decPrecipitationDays
+lat min,http://dbpedia.org/property/latMin
+Oct snow days,http://dbpedia.org/property/octSnowDays
+Sep precipitation mm,http://dbpedia.org/property/sepPrecipitationMm
+longm,http://dbpedia.org/property/longm
+Jan rain mm,http://dbpedia.org/property/janRainMm
+country,http://dbpedia.org/ontology/country
+Jan snow days,http://dbpedia.org/property/janSnowDays
+longs,http://dbpedia.org/property/longs
+Dec low C,http://dbpedia.org/property/decLowC
+Apr precipitation days,http://dbpedia.org/property/aprPrecipitationDays
+lens,http://dbpedia.org/property/lens
+Jul record high C,http://dbpedia.org/property/julRecordHighC
+longd,http://dbpedia.org/property/longd
+Dec record high C,http://dbpedia.org/property/decRecordHighC
+Jan sun,http://dbpedia.org/property/janSun
+pushupin map caption,http://dbpedia.org/property/pushupinMapCaption
+fogsignal,http://dbpedia.org/property/fogsignal
+os grid reference,http://dbpedia.org/property/osGridReference
+height (μ),http://dbpedia.org/ontology/height
+Jun record low C,http://dbpedia.org/property/junRecordLowC
+long direction,http://dbpedia.org/property/longDirection
+Dec snow days,http://dbpedia.org/property/decSnowDays
+Feb maximum humidex,http://dbpedia.org/property/febMaximumHumidex
+thumbnail,http://dbpedia.org/ontology/thumbnail
+Aug low C,http://dbpedia.org/property/augLowC
+year sun,http://dbpedia.org/property/yearSun
+image width,http://dbpedia.org/property/imageWidth
+Feb precipitation mm,http://dbpedia.org/property/febPrecipitationMm
+countrynumber,http://dbpedia.org/property/countrynumber
+Jun humidity,http://dbpedia.org/property/junHumidity
+Oct snow cm,http://dbpedia.org/property/octSnowCm
+year snow days,http://dbpedia.org/property/yearSnowDays
+Sep snow cm,http://dbpedia.org/property/sepSnowCm
+Latitude,http://dbpedia.org/property/latitude
+automated,http://dbpedia.org/property/automated
+longEW,http://dbpedia.org/property/longew
+Jul high C,http://dbpedia.org/property/julHighC
+Mar record low C,http://dbpedia.org/property/marRecordLowC
+Nov record high C,http://dbpedia.org/property/novRecordHighC
+cWidth,http://dbpedia.org/property/cwidth
+Nov rain mm,http://dbpedia.org/property/novRainMm
+Nov low C,http://dbpedia.org/property/novLowC
+lat dir,http://dbpedia.org/property/latDir
+data,http://dbpedia.org/property/data
+Jul mean C,http://dbpedia.org/property/julMeanC
+Aug rain mm,http://dbpedia.org/property/augRainMm
+date,http://dbpedia.org/property/date
+Nov mean C,http://dbpedia.org/property/novMeanC
+auto,http://dbpedia.org/property/auto
+source ,http://dbpedia.org/property/source
+characteristics,http://dbpedia.org/property/characteristics
+builder,http://dbpedia.org/property/builder
+Feb low C,http://dbpedia.org/property/febLowC
+Oct rain days,http://dbpedia.org/property/octRainDays
+Aug precipitation days,http://dbpedia.org/property/augPrecipitationDays
+Sep humidity,http://dbpedia.org/property/sepHumidity
+ARLH S,http://dbpedia.org/property/arlhS
+Jul precipitation mm,http://dbpedia.org/property/julPrecipitationMm
+shape,http://dbpedia.org/property/shape
+Dec record low C,http://dbpedia.org/property/decRecordLowC
+Dec mean C,http://dbpedia.org/property/decMeanC
+Aug sun,http://dbpedia.org/property/augSun
+year rain mm,http://dbpedia.org/property/yearRainMm
+year chill,http://dbpedia.org/property/yearChill
+Dec high C,http://dbpedia.org/property/decHighC
+Jun rain mm,http://dbpedia.org/property/junRainMm
+Description,http://dbpedia.org/property/description
+May precipitation mm,http://dbpedia.org/property/mayPrecipitationMm
+coordinates footnotes,http://dbpedia.org/property/coordinatesFootnotes
+Nov record low C,http://dbpedia.org/property/novRecordLowC
+Sep mean C,http://dbpedia.org/property/sepMeanC
+Oct mean C,http://dbpedia.org/property/octMeanC
+Caption,http://dbpedia.org/property/caption
+long minutes,http://dbpedia.org/property/longMinutes
+May low C,http://dbpedia.org/property/mayLowC
+static image name,http://dbpedia.org/property/staticImageName
+May snow cm,http://dbpedia.org/property/maySnowCm
+Apr rain mm,http://dbpedia.org/property/aprRainMm
+range,http://dbpedia.org/property/range
+survey,http://dbpedia.org/property/survey
+Mar rain mm,http://dbpedia.org/property/marRainMm
+ARLHS,http://dbpedia.org/property/arlhs
+lightsource,http://dbpedia.org/property/lightsource
+official name,http://dbpedia.org/property/officialName
+Sep rain days,http://dbpedia.org/property/sepRainDays
+USCG,http://dbpedia.org/property/uscg
+year precipitation days,http://dbpedia.org/property/yearPrecipitationDays
+static image caption,http://dbpedia.org/property/staticImageCaption
+pushpin label position,http://dbpedia.org/property/pushpinLabelPosition
+Jun sun,http://dbpedia.org/property/junSun
+Nov snow days,http://dbpedia.org/property/novSnowDays
+Jan low C,http://dbpedia.org/property/janLowC
+unit snow days,http://dbpedia.org/property/unitSnowDays
+Apr high C,http://dbpedia.org/property/aprHighC
+Apr chill,http://dbpedia.org/property/aprChill
+Sep rain mm,http://dbpedia.org/property/sepRainMm
+year record low C,http://dbpedia.org/property/yearRecordLowC
+May precipitation days,http://dbpedia.org/property/mayPrecipitationDays
+Oct rain mm,http://dbpedia.org/property/octRainMm
+Jan precipitation mm,http://dbpedia.org/property/janPrecipitationMm
+locmapin,http://dbpedia.org/property/locmapin
+yerabuilt,http://dbpedia.org/property/yerabuilt
+location,http://dbpedia.org/ontology/location
+Oct humidity,http://dbpedia.org/property/octHumidity
+coordinates display,http://dbpedia.org/property/coordinatesDisplay
+reason,http://dbpedia.org/property/reason
+pushpin map,http://dbpedia.org/property/pushpinMap
+Mar record high C,http://dbpedia.org/property/marRecordHighC
+visitation year,http://dbpedia.org/property/visitationYear
+Jul rain mm,http://dbpedia.org/property/julRainMm
+nation,http://dbpedia.org/property/nation
+May maximum humidex,http://dbpedia.org/property/mayMaximumHumidex
+Sep low C,http://dbpedia.org/property/sepLowC
+mpsub,http://dbpedia.org/property/mpsub
+precipitation colour,http://dbpedia.org/property/precipitationColour
+cap,http://dbpedia.org/property/cap
+racon,http://dbpedia.org/property/racon
+Jun record high C,http://dbpedia.org/property/junRecordHighC
+y,http://dbpedia.org/property/y
+May sun,http://dbpedia.org/property/maySun
+lat seconds,http://dbpedia.org/property/latSeconds
+Jun low C,http://dbpedia.org/property/junLowC
+Apr snow days,http://dbpedia.org/property/aprSnowDays
+Nov chill,http://dbpedia.org/property/novChill
+NGA,http://dbpedia.org/property/nga
+Sep sun,http://dbpedia.org/property/sepSun
+Oct maximum humidex,http://dbpedia.org/property/octMaximumHumidex
+id,http://dbpedia.org/property/id
+Jun snow days,http://dbpedia.org/property/junSnowDays
+Apr low C,http://dbpedia.org/property/aprLowC
+Oct low C,http://dbpedia.org/property/octLowC
+pushpin mapsize,http://dbpedia.org/property/pushpinMapsize
+unit precipitation days,http://dbpedia.org/property/unitPrecipitationDays
+Longitude,http://dbpedia.org/property/longitude
+Aug rain days,http://dbpedia.org/property/augRainDays
+Aug snow days,http://dbpedia.org/property/augSnowDays
+pushpin,http://dbpedia.org/property/pushpin
+Dec humidity,http://dbpedia.org/property/decHumidity
+Jan humidity,http://dbpedia.org/property/janHumidity
+lat degrees,http://dbpedia.org/property/latDegrees
+Feb snow cm,http://dbpedia.org/property/febSnowCm
+Apr rain days,http://dbpedia.org/property/aprRainDays
+elevation (μ),http://dbpedia.org/ontology/elevation
+Mar high C,http://dbpedia.org/property/marHighC
+Mar snow days,http://dbpedia.org/property/marSnowDays
+oLeft,http://dbpedia.org/property/oleft
+characteristic,http://dbpedia.org/property/characteristic
+Jun precipitation mm,http://dbpedia.org/property/junPrecipitationMm
+float,http://dbpedia.org/property/float
+status,http://dbpedia.org/property/status
+Jan record high C,http://dbpedia.org/property/janRecordHighC
+Sep chill,http://dbpedia.org/property/sepChill
+Aug snow cm,http://dbpedia.org/property/augSnowCm
+Jan chill,http://dbpedia.org/property/janChill
+Jun precipitation days,http://dbpedia.org/property/junPrecipitationDays
+Mar maximum humidex,http://dbpedia.org/property/marMaximumHumidex
+Nov sun,http://dbpedia.org/property/novSun
+visitation num,http://dbpedia.org/property/visitationNum
+Apr record low C,http://dbpedia.org/property/aprRecordLowC
+May mean C,http://dbpedia.org/property/mayMeanC
+Wikipage revision ID,http://dbpedia.org/ontology/wikiPageRevisionID
+region:ph type,http://dbpedia.org/property/regionPhType
+Feb rain days,http://dbpedia.org/property/febRainDays
+May humidity,http://dbpedia.org/property/mayHumidity
+Website,http://dbpedia.org/property/website
+managingagent,http://dbpedia.org/property/managingagent
+Apr sun,http://dbpedia.org/property/aprSun
+Jun maximum humidex,http://dbpedia.org/property/junMaximumHumidex
+lat minutes,http://dbpedia.org/property/latMinutes
+Nov rain days,http://dbpedia.org/property/novRainDays
+architect,http://dbpedia.org/property/architect
+Jun high C,http://dbpedia.org/property/junHighC
+Mar mean C,http://dbpedia.org/property/marMeanC
+link,http://dbpedia.org/property/link
+display,http://dbpedia.org/property/display
+Jan precipitation days,http://dbpedia.org/property/janPrecipitationDays
+relief,http://dbpedia.org/property/relief
+coordinates type,http://dbpedia.org/property/coordinatesType
+cHeight,http://dbpedia.org/property/cheight
+Dec precipitation mm,http://dbpedia.org/property/decPrecipitationMm
+May record high C,http://dbpedia.org/property/mayRecordHighC
+single line,http://dbpedia.org/property/singleLine
+year low C,http://dbpedia.org/property/yearLowC
+Jul rain days,http://dbpedia.org/property/julRainDays
+supp,http://dbpedia.org/property/supp
+Feb snow days,http://dbpedia.org/property/febSnowDays
+Feb mean C,http://dbpedia.org/property/febMeanC
+H,http://dbpedia.org/property/h
+has abstract,http://dbpedia.org/ontology/abstract
+j,http://dbpedia.org/property/j
+Sep precipitation days,http://dbpedia.org/property/sepPrecipitationDays
+background,http://dbpedia.org/property/background
+t,http://dbpedia.org/property/t
+p,http://dbpedia.org/property/p
+lats,http://dbpedia.org/property/lats
+Jul snow days,http://dbpedia.org/property/julSnowDays
+coordinates sidplay,http://dbpedia.org/property/coordinatesSidplay
+Nov high C,http://dbpedia.org/property/novHighC
+Jul maximum humidex,http://dbpedia.org/property/julMaximumHumidex
+Feb record low C,http://dbpedia.org/property/febRecordLowC
+year rain days,http://dbpedia.org/property/yearRainDays
+latm,http://dbpedia.org/property/latm
+marking,http://dbpedia.org/property/marking
+May record low C,http://dbpedia.org/property/mayRecordLowC
+width,http://dbpedia.org/property/width
+Dec sun,http://dbpedia.org/property/decSun
+Jul snow cm,http://dbpedia.org/property/julSnowCm
+Aug record high C,http://dbpedia.org/property/augRecordHighC
+Mar humidity,http://dbpedia.org/property/marHumidity
+Mar low C,http://dbpedia.org/property/marLowC
+Sep record low C,http://dbpedia.org/property/sepRecordLowC
+Jul sun,http://dbpedia.org/property/julSun
+image name,http://dbpedia.org/property/imageName
+foundation,http://dbpedia.org/property/foundation
+Feb rain mm,http://dbpedia.org/property/febRainMm
+Aug maximum humidex,http://dbpedia.org/property/augMaximumHumidex
+Oct precipitation days,http://dbpedia.org/property/octPrecipitationDays
+dwgs,http://dbpedia.org/property/dwgs
+lon dir,http://dbpedia.org/property/lonDir
+governing body,http://dbpedia.org/property/governingBody
+Mar sun,http://dbpedia.org/property/marSun
+Oct precipitation mm,http://dbpedia.org/property/octPrecipitationMm
+Jan snow cm,http://dbpedia.org/property/janSnowCm
+currentlens,http://dbpedia.org/property/currentlens
+Sep high C,http://dbpedia.org/property/sepHighC
+Mar chill,http://dbpedia.org/property/marChill
+name,http://dbpedia.org/property/name
+rain colour,http://dbpedia.org/property/rainColour
+Oct high C,http://dbpedia.org/property/octHighC
+managing agent,http://dbpedia.org/property/managingAgent
+Sep maximum humidex,http://dbpedia.org/property/sepMaximumHumidex
+Oct record low C,http://dbpedia.org/property/octRecordLowC
+heritage,http://dbpedia.org/property/heritage
+latd,http://dbpedia.org/property/latd
+Aug record low C,http://dbpedia.org/property/augRecordLowC
+year precipitation mm,http://dbpedia.org/property/yearPrecipitationMm
+Aug chill,http://dbpedia.org/property/augChill
+year humidity,http://dbpedia.org/property/yearHumidity
+Apr humidity,http://dbpedia.org/property/aprHumidity
+color,http://dbpedia.org/property/color
+Feb chill,http://dbpedia.org/property/febChill
+map relief,http://dbpedia.org/property/mapRelief
+canada,http://dbpedia.org/property/canada
+Jul humidity,http://dbpedia.org/property/julHumidity
+map name,http://dbpedia.org/property/mapName
+Mar precipitation days,http://dbpedia.org/property/marPrecipitationDays
+focalheight,http://dbpedia.org/property/focalheight
+Feb high C,http://dbpedia.org/property/febHighC
+Jan maximum humidex,http://dbpedia.org/property/janMaximumHumidex
+Sep record high C,http://dbpedia.org/property/sepRecordHighC
+building end date,http://dbpedia.org/ontology/buildingEndDate
+pushpin-Map captio,http://dbpedia.org/property/pushpinMapCaptio
+oTop,http://dbpedia.org/property/otop
+Mar rain days,http://dbpedia.org/property/marRainDays
+May chill,http://dbpedia.org/property/mayChill
+Jun mean C,http://dbpedia.org/property/junMeanC
+Jan rain days,http://dbpedia.org/property/janRainDays
+label,http://dbpedia.org/property/label
+unit rain days,http://dbpedia.org/property/unitRainDays
+lon sec,http://dbpedia.org/property/lonSec
+lon min,http://dbpedia.org/property/lonMin
+May high C,http://dbpedia.org/property/mayHighC
+year snow cm,http://dbpedia.org/property/yearSnowCm
+Apr maximum humidex,http://dbpedia.org/property/aprMaximumHumidex
+colwidth,http://dbpedia.org/property/colwidth
+photos,http://dbpedia.org/property/photos
+Aug precipitation mm,http://dbpedia.org/property/augPrecipitationMm
+owner,http://dbpedia.org/property/owner
+yearlit,http://dbpedia.org/property/yearlit
+Wikipage page ID,http://dbpedia.org/ontology/wikiPageID
+year maximum humidex,http://dbpedia.org/property/yearMaximumHumidex
+metric first,http://dbpedia.org/property/metricFirst
+Jun rain days,http://dbpedia.org/property/junRainDays
+nearest city,http://dbpedia.org/property/nearestCity
+construction,http://dbpedia.org/property/construction
+yeardeactivated,http://dbpedia.org/property/yeardeactivated
+bSize,http://dbpedia.org/property/bsize
+pushpin map caption,http://dbpedia.org/property/pushpinMapCaption
+shire county/state,http://dbpedia.org/property/shireCounty/state
+title,http://dbpedia.org/property/title
+Dec rain mm,http://dbpedia.org/property/decRainMm
+.6 longEW,http://dbpedia.org/property/.6Longew
+original lens,http://dbpedia.org/property/originalLens

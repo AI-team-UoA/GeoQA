@@ -1,0 +1,417 @@
+type,http://dbpedia.org/property/type
+align,http://dbpedia.org/property/align
+latNS,http://dbpedia.org/property/latns
+MÜNDUNG,http://dbpedia.org/property/mündung
+designated other1 num position,http://dbpedia.org/property/designatedOther1NumPosition
+county,http://dbpedia.org/property/county
+legend,http://dbpedia.org/property/legend
+o beam in,http://dbpedia.org/property/oBeamIn
+State Party,http://dbpedia.org/property/stateParty
+lon deg,http://dbpedia.org/property/lonDeg
+enref,http://dbpedia.org/property/enref
+connects to,http://dbpedia.org/property/connectsTo
+height1 type,http://dbpedia.org/property/height1Type
+long seconds,http://dbpedia.org/property/longSeconds
+architect OR builder,http://dbpedia.org/property/architectOrBuilder
+mouth mountain,http://dbpedia.org/ontology/mouthMountain
+position,http://dbpedia.org/property/position
+Session,http://dbpedia.org/property/session
+HÖHENBEZUG-QUELLE,http://dbpedia.org/property/höhenbezugQuelle
+rr,http://dbpedia.org/property/rr
+source lat NS,http://dbpedia.org/property/sourceLatNs
+o len,http://dbpedia.org/property/oLen
+MÜNDUNGSHÖHE,http://dbpedia.org/property/mündungshöhe
+upstream,http://dbpedia.org/property/upstream
+total rise,http://dbpedia.org/property/totalRise
+source lat d,http://dbpedia.org/property/sourceLatD
+NRHP type,http://dbpedia.org/ontology/nrhpType
+lat direction,http://dbpedia.org/property/latDirection
+date act,http://dbpedia.org/ontology/dateAct
+footer background,http://dbpedia.org/property/footerBackground
+MÜNDUNGSHÖHE-PREFIX,http://dbpedia.org/property/mündungshöhePrefix
+begin coord,http://dbpedia.org/property/beginCoord
+lat min,http://dbpedia.org/property/latMin
+established,http://dbpedia.org/property/established
+QUELLE LONG GRAD,http://dbpedia.org/property/quelleLongGrad
+mouth elevation (μ),http://dbpedia.org/ontology/mouthElevation
+long EW,http://dbpedia.org/property/longEw
+source1 lat s,http://dbpedia.org/property/source1LatS
+date construction,http://dbpedia.org/ontology/dateConstruction
+governing body,http://dbpedia.org/ontology/governingBody
+Dorlands prefix,http://dbpedia.org/ontology/dorlandsPrefix
+Dorlands suffix,http://dbpedia.org/ontology/dorlandsSuffix
+state,http://dbpedia.org/ontology/state
+source1 lat d,http://dbpedia.org/property/source1LatD
+start note,http://dbpedia.org/property/startNote
+NRHP Reference Number,http://dbpedia.org/ontology/nrhpReferenceNumber
+mouth long d,http://dbpedia.org/property/mouthLongD
+architecture,http://dbpedia.org/property/architecture
+source state,http://dbpedia.org/property/sourceState
+branch of,http://dbpedia.org/property/branchOf
+elev m,http://dbpedia.org/property/elevM
+depth,http://dbpedia.org/property/depth
+source1 lat m,http://dbpedia.org/property/source1LatM
+order,http://dbpedia.org/property/order
+longEW,http://dbpedia.org/property/longew
+length note,http://dbpedia.org/property/lengthNote
+city type,http://dbpedia.org/property/cityType
+o length,http://dbpedia.org/property/oLength
+data,http://dbpedia.org/property/data
+poj,http://dbpedia.org/property/poj
+source place,http://dbpedia.org/ontology/sourcePlace
+date,http://dbpedia.org/property/date
+beam,http://dbpedia.org/property/beam
+subdivision type,http://dbpedia.org/property/subdivisionType
+company,http://dbpedia.org/property/company
+DÖRFER,http://dbpedia.org/property/dörfer
+ABFLUSS-PEGEL,http://dbpedia.org/property/abflussPegel
+locmap label,http://dbpedia.org/property/locmapLabel
+max elev,http://dbpedia.org/property/maxElev
+beam m,http://dbpedia.org/property/beamM
+synonym,http://dbpedia.org/ontology/synonym
+HÖHENBEZUG-MÜNDUNG,http://dbpedia.org/property/höhenbezugMündung
+coord parameters,http://dbpedia.org/property/coordParameters
+built,http://dbpedia.org/property/built
+content,http://dbpedia.org/property/content
+mouth district,http://dbpedia.org/property/mouthDistrict
+Description,http://dbpedia.org/property/description
+inaccurate,http://dbpedia.org/property/inaccurate
+Caption,http://dbpedia.org/property/caption
+mouth lat d,http://dbpedia.org/property/mouthLatD
+mouth state,http://dbpedia.org/property/mouthState
+notifydate,http://dbpedia.org/property/notifydate
+len note,http://dbpedia.org/property/lenNote
+long minutes,http://dbpedia.org/property/longMinutes
+mouth lat m,http://dbpedia.org/property/mouthLatM
+mouth name,http://dbpedia.org/property/mouthName
+source lat m,http://dbpedia.org/property/sourceLatM
+source lat s,http://dbpedia.org/property/sourceLatS
+mouth lat s,http://dbpedia.org/property/mouthLatS
+district,http://dbpedia.org/ontology/district
+mouth location,http://dbpedia.org/property/mouthLocation
+image caption,http://dbpedia.org/property/imageCaption
+ALTERNATIVNAME,http://dbpedia.org/property/alternativname
+type,http://dbpedia.org/ontology/type
+height,http://dbpedia.org/property/height
+designated other1 name,http://dbpedia.org/property/designatedOther1Name
+engineer,http://dbpedia.org/ontology/engineer
+location,http://dbpedia.org/ontology/location
+lat NS,http://dbpedia.org/property/latNs
+year of construction,http://dbpedia.org/ontology/yearOfConstruction
+coordinates display,http://dbpedia.org/property/coordinatesDisplay
+reason,http://dbpedia.org/property/reason
+pushpin map,http://dbpedia.org/property/pushpinMap
+source1 lat NS,http://dbpedia.org/property/source1LatNs
+fix-attempted,http://dbpedia.org/property/fixAttempted
+date use,http://dbpedia.org/property/dateUse
+QUELLE,http://dbpedia.org/property/quelle
+LÄNGE,http://dbpedia.org/property/länge
+beginning label,http://dbpedia.org/property/beginningLabel
+o beam,http://dbpedia.org/property/oBeam
+individualised GND number,http://dbpedia.org/ontology/individualisedGnd
+designated other1 textcolor,http://dbpedia.org/property/designatedOther1Textcolor
+original start point,http://dbpedia.org/ontology/originalStartPoint
+Longitude,http://dbpedia.org/property/longitude
+width unit,http://dbpedia.org/property/widthUnit
+o start,http://dbpedia.org/property/oStart
+bot,http://dbpedia.org/property/bot
+lat degrees,http://dbpedia.org/property/latDegrees
+locks,http://dbpedia.org/property/locks
+piccap,http://dbpedia.org/property/piccap
+source position,http://dbpedia.org/ontology/sourcePosition
+elevation (μ),http://dbpedia.org/ontology/elevation
+progression,http://dbpedia.org/property/progression
+branch,http://dbpedia.org/ontology/riverBranch
+original maximum boat beam (μ),http://dbpedia.org/ontology/originalMaximumBoatBeam
+oLeft,http://dbpedia.org/property/oleft
+designated other1 date,http://dbpedia.org/property/designatedOther1Date
+status,http://dbpedia.org/property/status
+designation,http://dbpedia.org/property/designation
+date use,http://dbpedia.org/ontology/dateUse
+len,http://dbpedia.org/property/len
+mouth country,http://dbpedia.org/ontology/mouthCountry
+designated other1 link,http://dbpedia.org/property/designatedOther1Link
+o end,http://dbpedia.org/property/oEnd
+original end point,http://dbpedia.org/ontology/originalEndPoint
+area (m2),http://dbpedia.org/ontology/area
+aos,http://dbpedia.org/property/aos
+visitors num,http://dbpedia.org/property/visitorsNum
+o length mi,http://dbpedia.org/property/oLengthMi
+relief,http://dbpedia.org/property/relief
+listed,http://dbpedia.org/property/listed
+source1 long s,http://dbpedia.org/property/source1LongS
+height type,http://dbpedia.org/property/heightType
+cHeight,http://dbpedia.org/property/cheight
+end point,http://dbpedia.org/ontology/endPoint
+district map,http://dbpedia.org/property/districtMap
+basin countries,http://dbpedia.org/property/basinCountries
+nearest city,http://dbpedia.org/ontology/nearestCity
+source1 long m,http://dbpedia.org/property/source1LongM
+designated other1 color,http://dbpedia.org/property/designatedOther1Color
+end note,http://dbpedia.org/property/endNote
+after,http://dbpedia.org/property/after
+source1 long d,http://dbpedia.org/property/source1LongD
+map locator,http://dbpedia.org/property/mapLocator
+date inaugration on,http://dbpedia.org/property/dateInaugrationOn
+has abstract,http://dbpedia.org/ontology/abstract
+principal engineer,http://dbpedia.org/ontology/principalEngineer
+length unit,http://dbpedia.org/property/lengthUnit
+modern name,http://dbpedia.org/property/modernName
+lats,http://dbpedia.org/property/lats
+years,http://dbpedia.org/property/years
+mouth long s,http://dbpedia.org/property/mouthLongS
+wuu,http://dbpedia.org/property/wuu
+latm,http://dbpedia.org/property/latm
+max boat length,http://dbpedia.org/property/maxBoatLength
+mouth long m,http://dbpedia.org/property/mouthLongM
+xvalue,http://dbpedia.org/property/xvalue
+source elevation (μ),http://dbpedia.org/ontology/sourceElevation
+date closed,http://dbpedia.org/property/dateClosed
+lock note,http://dbpedia.org/property/lockNote
+linkoverride,http://dbpedia.org/property/linkoverride
+date restored,http://dbpedia.org/property/dateRestored
+BILDBESCHREIBUNG,http://dbpedia.org/property/bildbeschreibung
+direction,http://dbpedia.org/property/direction
+sound recording,http://dbpedia.org/ontology/soundRecording
+state,http://dbpedia.org/property/state
+height round,http://dbpedia.org/property/heightRound
+lon dir,http://dbpedia.org/property/lonDir
+lat s,http://dbpedia.org/property/latS
+company,http://dbpedia.org/ontology/company
+lat m,http://dbpedia.org/property/latM
+o locks,http://dbpedia.org/property/oLocks
+mouth place,http://dbpedia.org/ontology/mouthPlace
+name,http://dbpedia.org/property/name
+latd,http://dbpedia.org/property/latd
+coord display,http://dbpedia.org/property/coordDisplay
+contaminants,http://dbpedia.org/property/contaminants
+river system,http://dbpedia.org/property/riverSystem
+EINWOHNER IM EINZUGSGEBIET,http://dbpedia.org/property/einwohnerImEinzugsgebiet
+source country,http://dbpedia.org/ontology/sourceCountry
+free,http://dbpedia.org/property/free
+pic,http://dbpedia.org/property/pic
+source,http://dbpedia.org/ontology/source
+has junction with,http://dbpedia.org/ontology/hasJunctionWith
+oTop,http://dbpedia.org/property/otop
+lat d,http://dbpedia.org/property/latD
+ABFLUSSWEG,http://dbpedia.org/property/abflussweg
+lon sec,http://dbpedia.org/property/lonSec
+long,http://dbpedia.org/property/long
+river type,http://dbpedia.org/property/riverType
+Wikipage redirect,http://dbpedia.org/ontology/wikiPageRedirects
+start,http://dbpedia.org/property/start
+Wikipage page ID,http://dbpedia.org/ontology/wikiPageID
+Alt,http://dbpedia.org/property/alt
+orig num locks,http://dbpedia.org/property/origNumLocks
+date act,http://dbpedia.org/property/dateAct
+added,http://dbpedia.org/ontology/added
+footer align,http://dbpedia.org/property/footerAlign
+original maximum boat length (μ),http://dbpedia.org/ontology/originalMaximumBoatLength
+status,http://dbpedia.org/ontology/status
+lat,http://dbpedia.org/property/lat
+maximum boat beam (μ),http://dbpedia.org/ontology/Canal/maximumBoatBeam
+source district,http://dbpedia.org/property/sourceDistrict
+Link from a Wikipage to an external page,http://dbpedia.org/ontology/wikiPageExternalLink
+source1 coord region,http://dbpedia.org/property/source1CoordRegion
+length m,http://dbpedia.org/property/lengthM
+source1 location,http://dbpedia.org/property/source1Location
+join,http://dbpedia.org/property/join
+location,http://dbpedia.org/property/location
+designation1 date,http://dbpedia.org/property/designation1Date
+visitors per year,http://dbpedia.org/ontology/visitorsPerYear
+country,http://dbpedia.org/property/country
+image size,http://dbpedia.org/property/imageSize
+image,http://dbpedia.org/property/image
+proposed,http://dbpedia.org/property/proposed
+maximum boat beam (μ),http://dbpedia.org/ontology/maximumBoatBeam
+branch,http://dbpedia.org/property/branch
+original maximum boat length (μ),http://dbpedia.org/ontology/Canal/originalMaximumBoatLength
+a engineers,http://dbpedia.org/property/aEngineers
+LAGE,http://dbpedia.org/property/lage
+beam in,http://dbpedia.org/property/beamIn
+end,http://dbpedia.org/property/end
+long degrees,http://dbpedia.org/property/longDegrees
+lat deg,http://dbpedia.org/property/latDeg
+canal length,http://dbpedia.org/property/canalLength
+map caption,http://dbpedia.org/property/mapCaption
+other engineer,http://dbpedia.org/property/otherEngineer
+visitors year,http://dbpedia.org/property/visitorsYear
+coordinates region,http://dbpedia.org/property/coordinatesRegion
+width3 type,http://dbpedia.org/property/width3Type
+lat sec,http://dbpedia.org/property/latSec
+country,http://dbpedia.org/ontology/country
+longm,http://dbpedia.org/property/longm
+longs,http://dbpedia.org/property/longs
+beam ft,http://dbpedia.org/property/beamFt
+min boat air draft,http://dbpedia.org/property/minBoatAirDraft
+source long EW,http://dbpedia.org/property/sourceLongEw
+longd,http://dbpedia.org/property/longd
+maximum boat length (μ),http://dbpedia.org/ontology/Canal/maximumBoatLength
+QUELLE LAT GRAD,http://dbpedia.org/property/quelleLatGrad
+original owner,http://dbpedia.org/property/originalOwner
+long direction,http://dbpedia.org/property/longDirection
+thumbnail,http://dbpedia.org/ontology/thumbnail
+designation1 offname,http://dbpedia.org/property/designation1Offname
+river,http://dbpedia.org/property/river
+start point,http://dbpedia.org/property/startPoint
+owner,http://dbpedia.org/ontology/owner
+nav,http://dbpedia.org/property/nav
+long m,http://dbpedia.org/property/longM
+long s,http://dbpedia.org/property/longS
+Hide header,http://dbpedia.org/property/hideHeader
+elev ft,http://dbpedia.org/property/elevFt
+long d,http://dbpedia.org/property/longD
+region,http://dbpedia.org/ontology/region
+inflow,http://dbpedia.org/ontology/inflow
+Latitude,http://dbpedia.org/property/latitude
+cWidth,http://dbpedia.org/property/cwidth
+lat dir,http://dbpedia.org/property/latDir
+len in,http://dbpedia.org/property/lenIn
+category,http://dbpedia.org/property/category
+creator,http://dbpedia.org/property/creator
+auto,http://dbpedia.org/property/auto
+present owner,http://dbpedia.org/property/presentOwner
+builder,http://dbpedia.org/property/builder
+watershed,http://dbpedia.org/property/watershed
+Criteria,http://dbpedia.org/property/criteria
+nrhp type,http://dbpedia.org/property/nrhpType
+LÄNGE-PREFIX,http://dbpedia.org/property/längePrefix
+volume,http://dbpedia.org/property/volume
+area total (m2),http://dbpedia.org/ontology/areaTotal
+branch of,http://dbpedia.org/ontology/riverBranchOf
+city,http://dbpedia.org/ontology/city
+Gray subject,http://dbpedia.org/ontology/graySubject
+source1 long EW,http://dbpedia.org/property/source1LongEw
+designated other1 abbr,http://dbpedia.org/property/designatedOther1Abbr
+survey,http://dbpedia.org/property/survey
+installed capacity (W),http://dbpedia.org/ontology/installedCapacity
+city,http://dbpedia.org/property/city
+category hide,http://dbpedia.org/property/categoryHide
+designated nrhp type,http://dbpedia.org/property/designatedNrhpType
+width type,http://dbpedia.org/property/widthType
+mouth position,http://dbpedia.org/ontology/mouthPosition
+state type,http://dbpedia.org/property/stateType
+width2 type,http://dbpedia.org/property/width2Type
+locmapin,http://dbpedia.org/property/locmapin
+river mouth,http://dbpedia.org/ontology/riverMouth
+len ft,http://dbpedia.org/property/lenFt
+end coord,http://dbpedia.org/property/endCoord
+background-color,http://dbpedia.org/property/backgroundColor
+mpsub,http://dbpedia.org/property/mpsub
+footnotes,http://dbpedia.org/property/footnotes
+free type,http://dbpedia.org/property/freeType
+year,http://dbpedia.org/property/year
+cap,http://dbpedia.org/property/cap
+lat seconds,http://dbpedia.org/property/latSeconds
+id,http://dbpedia.org/property/id
+maximum boat length (μ),http://dbpedia.org/ontology/maximumBoatLength
+Gray page,http://dbpedia.org/ontology/grayPage
+th fuel primary,http://dbpedia.org/property/thFuelPrimary
+beam note,http://dbpedia.org/property/beamNote
+end point,http://dbpedia.org/property/endPoint
+min boat draft,http://dbpedia.org/property/minBoatDraft
+length round,http://dbpedia.org/property/lengthRound
+number,http://dbpedia.org/property/number
+float,http://dbpedia.org/property/float
+altname,http://dbpedia.org/property/altname
+max boat beam,http://dbpedia.org/property/maxBoatBeam
+map alt,http://dbpedia.org/property/mapAlt
+o len in,http://dbpedia.org/property/oLenIn
+a engineer,http://dbpedia.org/property/aEngineer
+length km,http://dbpedia.org/property/lengthKm
+coord format,http://dbpedia.org/property/coordFormat
+left tributary,http://dbpedia.org/ontology/leftTributary
+outflow,http://dbpedia.org/ontology/outflow
+length mi,http://dbpedia.org/property/lengthMi
+Length,http://dbpedia.org/property/length
+Wikipage revision ID,http://dbpedia.org/ontology/wikiPageRevisionID
+elev note,http://dbpedia.org/property/elevNote
+GKZ,http://dbpedia.org/property/gkz
+current num locks,http://dbpedia.org/property/currentNumLocks
+map size,http://dbpedia.org/property/mapSize
+Website,http://dbpedia.org/property/website
+lat minutes,http://dbpedia.org/property/latMinutes
+designated other1 number,http://dbpedia.org/property/designatedOther1Number
+date rest,http://dbpedia.org/property/dateRest
+architect,http://dbpedia.org/property/architect
+locmap relief,http://dbpedia.org/property/locmapRelief
+xfield,http://dbpedia.org/property/xfield
+link,http://dbpedia.org/property/link
+mouth coord region,http://dbpedia.org/property/mouthCoordRegion
+BILD,http://dbpedia.org/property/bild
+beginning date,http://dbpedia.org/property/beginningDate
+discharge average (m³/s),http://dbpedia.org/ontology/dischargeAverage
+width1 type,http://dbpedia.org/property/width1Type
+date app,http://dbpedia.org/property/dateApp
+date ext,http://dbpedia.org/property/dateExt
+district type,http://dbpedia.org/property/districtType
+l,http://dbpedia.org/property/l
+lock width,http://dbpedia.org/property/lockWidth
+EINZUGSGEBIET,http://dbpedia.org/property/einzugsgebiet
+visitation date,http://dbpedia.org/property/visitationDate
+restore date,http://dbpedia.org/ontology/restoreDate
+j,http://dbpedia.org/property/j
+footer,http://dbpedia.org/property/footer
+t,http://dbpedia.org/property/t
+w,http://dbpedia.org/property/w
+p,http://dbpedia.org/property/p
+s,http://dbpedia.org/property/s
+former names,http://dbpedia.org/property/formerNames
+mr,http://dbpedia.org/property/mr
+MÜNDUNG LONG GRAD,http://dbpedia.org/property/mündungLongGrad
+source mountain,http://dbpedia.org/ontology/sourceMountain
+downstream,http://dbpedia.org/property/downstream
+width,http://dbpedia.org/property/width
+FLUSSSYSTEM,http://dbpedia.org/property/flusssystem
+country type,http://dbpedia.org/property/countryType
+width round,http://dbpedia.org/property/widthRound
+engineer,http://dbpedia.org/property/engineer
+date comp,http://dbpedia.org/property/dateComp
+architect,http://dbpedia.org/ontology/architect
+BILD1-BESCHREIBUNG,http://dbpedia.org/property/bild1Beschreibung
+dwgs,http://dbpedia.org/property/dwgs
+governing body,http://dbpedia.org/property/governingBody
+source long m,http://dbpedia.org/property/sourceLongM
+Latin,http://dbpedia.org/property/latin
+source long d,http://dbpedia.org/property/sourceLongD
+length (μ),http://dbpedia.org/ontology/length
+start point,http://dbpedia.org/ontology/startPoint
+date cons,http://dbpedia.org/property/dateCons
+partof,http://dbpedia.org/property/partof
+nocat,http://dbpedia.org/property/nocat
+KLEINSTÄDTE,http://dbpedia.org/property/kleinstädte
+color,http://dbpedia.org/property/color
+MÜNDUNG LAT GRAD,http://dbpedia.org/property/mündungLatGrad
+MÜNDUNG REGION,http://dbpedia.org/property/mündungRegion
+QUELLHÖHE,http://dbpedia.org/property/quellhöhe
+date completed,http://dbpedia.org/ontology/dateCompleted
+date const,http://dbpedia.org/property/dateConst
+name other,http://dbpedia.org/property/nameOther
+discharge location,http://dbpedia.org/property/dischargeLocation
+height-unit,http://dbpedia.org/property/heightUnit
+label,http://dbpedia.org/property/label
+lon min,http://dbpedia.org/property/lonMin
+lock length,http://dbpedia.org/property/lockLength
+country flag,http://dbpedia.org/property/countryFlag
+source long s,http://dbpedia.org/property/sourceLongS
+right tributary,http://dbpedia.org/ontology/rightTributary
+original maximum boat beam (μ),http://dbpedia.org/ontology/Canal/originalMaximumBoatBeam
+designated other,http://dbpedia.org/property/designatedOther
+colwidth,http://dbpedia.org/property/colwidth
+SCHIFFBAR,http://dbpedia.org/property/schiffbar
+photos,http://dbpedia.org/property/photos
+partof refnum,http://dbpedia.org/property/partofRefnum
+river,http://dbpedia.org/ontology/river
+name native,http://dbpedia.org/property/nameNative
+lenght mi,http://dbpedia.org/property/lenghtMi
+QUELLE REGION,http://dbpedia.org/property/quelleRegion
+QUELLHÖHE-PREFIX,http://dbpedia.org/property/quellhöhePrefix
+picsize,http://dbpedia.org/property/picsize
+nearest city,http://dbpedia.org/property/nearestCity
+visitation type,http://dbpedia.org/property/visitationType
+bSize,http://dbpedia.org/property/bsize
+mouth long EW,http://dbpedia.org/property/mouthLongEw
+title,http://dbpedia.org/property/title
+width (μ),http://dbpedia.org/ontology/width
+CERCLIS ID,http://dbpedia.org/property/cerclisId
+mouth lat NS,http://dbpedia.org/property/mouthLatNs

@@ -1,0 +1,196 @@
+type,http://dbpedia.org/property/type
+coord region,http://dbpedia.org/property/coordRegion
+Link from a Wikipage to an external page,http://dbpedia.org/ontology/wikiPageExternalLink
+align,http://dbpedia.org/property/align
+operator,http://dbpedia.org/property/operator
+latNS,http://dbpedia.org/property/latns
+location,http://dbpedia.org/property/location
+closedate,http://dbpedia.org/property/closedate
+country,http://dbpedia.org/property/country
+long seconds,http://dbpedia.org/property/longSeconds
+image size,http://dbpedia.org/property/imageSize
+image,http://dbpedia.org/property/image
+total width,http://dbpedia.org/property/totalWidth
+renovation date,http://dbpedia.org/property/renovationDate
+rr,http://dbpedia.org/property/rr
+closing date,http://dbpedia.org/ontology/closingDate
+accessdate,http://dbpedia.org/property/accessdate
+seating capacity,http://dbpedia.org/ontology/seatingCapacity
+article,http://dbpedia.org/property/article
+native name lang,http://dbpedia.org/property/nativeNameLang
+lat direction,http://dbpedia.org/property/latDirection
+long degrees,http://dbpedia.org/property/longDegrees
+address,http://dbpedia.org/ontology/address
+col wifth,http://dbpedia.org/property/colWifth
+active years start year,http://dbpedia.org/ontology/activeYearsStartYear
+yearsactive,http://dbpedia.org/property/yearsactive
+Brand Ambassador,http://dbpedia.org/property/brandAmbassador
+Nickname,http://dbpedia.org/property/nickname
+map caption,http://dbpedia.org/property/mapCaption
+państwo,http://dbpedia.org/ontology/locationCountry
+current production,http://dbpedia.org/ontology/currentProduction
+iso region,http://dbpedia.org/property/isoRegion
+screens,http://dbpedia.org/property/screens
+longm,http://dbpedia.org/property/longm
+longs,http://dbpedia.org/property/longs
+capacity,http://dbpedia.org/property/capacity
+longd,http://dbpedia.org/property/longd
+os grid reference,http://dbpedia.org/property/osGridReference
+long direction,http://dbpedia.org/property/longDirection
+thumbnail,http://dbpedia.org/ontology/thumbnail
+quoted,http://dbpedia.org/property/quoted
+reopening date,http://dbpedia.org/ontology/reopeningDate
+rebuilt s,http://dbpedia.org/property/rebuiltS
+contentcss,http://dbpedia.org/property/contentcss
+Upcoming Production,http://dbpedia.org/property/upcomingProduction
+owner,http://dbpedia.org/ontology/owner
+image width,http://dbpedia.org/property/imageWidth
+NRHP Reference Number,http://dbpedia.org/ontology/nrhpReferenceNumber
+architecture,http://dbpedia.org/property/architecture
+Latitude,http://dbpedia.org/property/latitude
+longEW,http://dbpedia.org/property/longew
+general contractor,http://dbpedia.org/property/generalContractor
+data,http://dbpedia.org/property/data
+date,http://dbpedia.org/property/date
+source ,http://dbpedia.org/property/source
+founded,http://dbpedia.org/property/founded
+builder,http://dbpedia.org/property/builder
+operator,http://dbpedia.org/ontology/operator
+director,http://dbpedia.org/property/director
+floors,http://dbpedia.org/property/floors
+publictransit,http://dbpedia.org/property/publictransit
+built,http://dbpedia.org/property/built
+content,http://dbpedia.org/property/content
+closing year,http://dbpedia.org/ontology/closingYear
+inaccurate,http://dbpedia.org/property/inaccurate
+architectural style,http://dbpedia.org/ontology/architecturalStyle
+Caption,http://dbpedia.org/property/caption
+long minutes,http://dbpedia.org/property/longMinutes
+style,http://dbpedia.org/property/style
+salign,http://dbpedia.org/property/salign
+mission,http://dbpedia.org/property/mission
+survey,http://dbpedia.org/property/survey
+en,http://dbpedia.org/property/en
+city,http://dbpedia.org/property/city
+image caption,http://dbpedia.org/property/imageCaption
+airdate,http://dbpedia.org/property/airdate
+by,http://dbpedia.org/property/by
+type,http://dbpedia.org/ontology/type
+height,http://dbpedia.org/property/height
+rebuilding date,http://dbpedia.org/ontology/rebuildingDate
+tenant,http://dbpedia.org/property/tenant
+locmapin,http://dbpedia.org/property/locmapin
+location,http://dbpedia.org/ontology/location
+coordinates display,http://dbpedia.org/property/coordinatesDisplay
+year of construction,http://dbpedia.org/ontology/yearOfConstruction
+reason,http://dbpedia.org/property/reason
+pushpin map,http://dbpedia.org/property/pushpinMap
+before,http://dbpedia.org/property/before
+production,http://dbpedia.org/property/production
+fix-attempted,http://dbpedia.org/property/fixAttempted
+developer,http://dbpedia.org/property/developer
+perrow,http://dbpedia.org/property/perrow
+annexe added,http://dbpedia.org/property/annexeAdded
+cap,http://dbpedia.org/property/cap
+designation1 number,http://dbpedia.org/property/designation1Number
+lat seconds,http://dbpedia.org/property/latSeconds
+id,http://dbpedia.org/property/id
+former name,http://dbpedia.org/ontology/formerName
+Longitude,http://dbpedia.org/property/longitude
+otherarticle,http://dbpedia.org/property/otherarticle
+renovated,http://dbpedia.org/property/renovated
+bot,http://dbpedia.org/property/bot
+reopened,http://dbpedia.org/property/reopened
+lat degrees,http://dbpedia.org/property/latDegrees
+theatre name,http://dbpedia.org/property/theatreName
+rebuilding year,http://dbpedia.org/ontology/rebuildingYear
+currently used for,http://dbpedia.org/ontology/currentlyUsedFor
+viaf,http://dbpedia.org/property/viaf
+building type,http://dbpedia.org/property/buildingType
+opening date,http://dbpedia.org/ontology/openingDate
+topic,http://dbpedia.org/property/topic
+frequency,http://dbpedia.org/property/frequency
+float,http://dbpedia.org/property/float
+status,http://dbpedia.org/property/status
+demolition year,http://dbpedia.org/ontology/demolitionYear
+designation,http://dbpedia.org/property/designation
+zipcode,http://dbpedia.org/property/zipcode
+currentuse,http://dbpedia.org/property/currentuse
+picture,http://dbpedia.org/ontology/picture
+embedded,http://dbpedia.org/property/embedded
+Wikipage revision ID,http://dbpedia.org/ontology/wikiPageRevisionID
+header,http://dbpedia.org/property/header
+Previous Production,http://dbpedia.org/property/previousProduction
+lang,http://dbpedia.org/property/lang
+Website,http://dbpedia.org/property/website
+image map,http://dbpedia.org/property/imageMap
+lat minutes,http://dbpedia.org/property/latMinutes
+area (m2),http://dbpedia.org/ontology/area
+architect,http://dbpedia.org/property/architect
+buildingtype,http://dbpedia.org/property/buildingtype
+active years end year,http://dbpedia.org/ontology/activeYearsEndYear
+client,http://dbpedia.org/property/client
+tenant,http://dbpedia.org/ontology/tenant
+headercss,http://dbpedia.org/property/headercss
+Current Production,http://dbpedia.org/property/currentProduction
+header align,http://dbpedia.org/property/headerAlign
+parking,http://dbpedia.org/property/parking
+number of performance areas,http://dbpedia.org/property/numberOfPerformanceAreas
+langcode,http://dbpedia.org/property/langcode
+nrhp,http://dbpedia.org/property/nrhp
+after,http://dbpedia.org/property/after
+cost,http://dbpedia.org/property/cost
+en text,http://dbpedia.org/property/enText
+has abstract,http://dbpedia.org/ontology/abstract
+j,http://dbpedia.org/property/j
+structural engineer,http://dbpedia.org/property/structuralEngineer
+t,http://dbpedia.org/property/t
+rules,http://dbpedia.org/property/rules
+former names,http://dbpedia.org/property/formerNames
+mr,http://dbpedia.org/property/mr
+lats,http://dbpedia.org/property/lats
+years,http://dbpedia.org/property/years
+seating type,http://dbpedia.org/property/seatingType
+col width,http://dbpedia.org/property/colWidth
+latm,http://dbpedia.org/property/latm
+width,http://dbpedia.org/property/width
+transmitter,http://dbpedia.org/property/transmitter
+direction,http://dbpedia.org/property/direction
+state,http://dbpedia.org/property/state
+architect,http://dbpedia.org/ontology/architect
+dwgs,http://dbpedia.org/property/dwgs
+about,http://dbpedia.org/property/about
+governing body,http://dbpedia.org/property/governingBody
+embed,http://dbpedia.org/property/embed
+name,http://dbpedia.org/property/name
+area,http://dbpedia.org/property/area
+url,http://dbpedia.org/property/url
+demolition date,http://dbpedia.org/ontology/demolitionDate
+latd,http://dbpedia.org/property/latd
+coord display,http://dbpedia.org/property/coordDisplay
+opening year,http://dbpedia.org/ontology/openingYear
+seating capacity,http://dbpedia.org/property/seatingCapacity
+color,http://dbpedia.org/property/color
+logo image,http://dbpedia.org/property/logoImage
+Fullname,http://dbpedia.org/property/fullname
+venue,http://dbpedia.org/property/venue
+tenants,http://dbpedia.org/property/tenants
+vertical-align,http://dbpedia.org/property/verticalAlign
+label,http://dbpedia.org/property/label
+column width,http://dbpedia.org/property/columnWidth
+opening date,http://dbpedia.org/property/openingDate
+reopening year,http://dbpedia.org/ontology/reopeningYear
+photos,http://dbpedia.org/property/photos
+owner,http://dbpedia.org/property/owner
+Wikipage page ID,http://dbpedia.org/ontology/wikiPageID
+homepage,http://dbpedia.org/property/homepage
+Alt,http://dbpedia.org/property/alt
+native name,http://dbpedia.org/property/nativeName
+image alt,http://dbpedia.org/property/imageAlt
+onlinebooks,http://dbpedia.org/property/onlinebooks
+pushpin map caption,http://dbpedia.org/property/pushpinMapCaption
+quote,http://dbpedia.org/property/quote
+title,http://dbpedia.org/property/title
+added,http://dbpedia.org/ontology/added
+footer align,http://dbpedia.org/property/footerAlign
+coord dim,http://dbpedia.org/property/coordDim

@@ -1,0 +1,144 @@
+overlay11left,http://dbpedia.org/property/overlay11left
+Link from a Wikipage to an external page,http://dbpedia.org/ontology/wikiPageExternalLink
+overlay5left,http://dbpedia.org/property/overlay5left
+head,http://dbpedia.org/ontology/head
+overlay10color,http://dbpedia.org/property/overlay10color
+overlay1tip,http://dbpedia.org/property/overlay1tip
+university,http://dbpedia.org/property/university
+old names,http://dbpedia.org/property/oldNames
+ex-head,http://dbpedia.org/property/exHead
+former name,http://dbpedia.org/ontology/formerName
+visiting students,http://dbpedia.org/property/visitingStudents
+notes,http://dbpedia.org/property/notes
+overlay2top,http://dbpedia.org/property/overlay2top
+image-left,http://dbpedia.org/property/imageLeft
+pages,http://dbpedia.org/property/pages
+grid,http://dbpedia.org/property/grid
+Longitude,http://dbpedia.org/property/longitude
+overlay4tip,http://dbpedia.org/property/overlay4tip
+location,http://dbpedia.org/property/location
+is part of,http://dbpedia.org/ontology/isPartOf
+text,http://dbpedia.org/property/text
+overlay13left,http://dbpedia.org/property/overlay13left
+fellows,http://dbpedia.org/property/fellows
+college name,http://dbpedia.org/property/collegeName
+motto,http://dbpedia.org/ontology/motto
+overlay12top,http://dbpedia.org/property/overlay12top
+overlay3left,http://dbpedia.org/property/overlay3left
+float,http://dbpedia.org/property/float
+overlay15left,http://dbpedia.org/property/overlay15left
+overlay9tip,http://dbpedia.org/property/overlay9tip
+overlay11tip,http://dbpedia.org/property/overlay11tip
+visitor,http://dbpedia.org/property/visitor
+overlay7top,http://dbpedia.org/property/overlay7top
+overlay,http://dbpedia.org/property/overlay
+overlay2color,http://dbpedia.org/property/overlay2color
+image-top,http://dbpedia.org/property/imageTop
+symbolism,http://dbpedia.org/property/symbolism
+overlay16left,http://dbpedia.org/property/overlay16left
+overlay3color,http://dbpedia.org/property/overlay3color
+escutcheon,http://dbpedia.org/property/escutcheon
+Wikipage revision ID,http://dbpedia.org/ontology/wikiPageRevisionID
+overlay9left,http://dbpedia.org/property/overlay9left
+imagesize,http://dbpedia.org/property/imagesize
+overlay11top,http://dbpedia.org/property/overlay11top
+overlay9color,http://dbpedia.org/property/overlay9color
+overlay3tip,http://dbpedia.org/property/overlay3tip
+overlay10tip,http://dbpedia.org/property/overlay10tip
+overlay6tip,http://dbpedia.org/property/overlay6tip
+established,http://dbpedia.org/property/established
+overlay4top,http://dbpedia.org/property/overlay4top
+student body name,http://dbpedia.org/property/studentBodyName
+overlay2left,http://dbpedia.org/property/overlay2left
+ball,http://dbpedia.org/property/ball
+named for,http://dbpedia.org/property/namedFor
+thumbnail,http://dbpedia.org/ontology/thumbnail
+overlay7left,http://dbpedia.org/property/overlay7left
+photo,http://dbpedia.org/property/photo
+motto language,http://dbpedia.org/property/mottoLanguage
+basoc,http://dbpedia.org/property/basoc
+founder pl,http://dbpedia.org/property/founderPl
+overlay16tip,http://dbpedia.org/property/overlay16tip
+first,http://dbpedia.org/property/first
+overlay14top,http://dbpedia.org/property/overlay14top
+latin name,http://dbpedia.org/property/latinName
+columns,http://dbpedia.org/property/columns
+sister college,http://dbpedia.org/property/sisterCollege
+image width,http://dbpedia.org/property/imageWidth
+overlay13tip,http://dbpedia.org/property/overlay13tip
+head,http://dbpedia.org/property/head
+has abstract,http://dbpedia.org/ontology/abstract
+overlay1top,http://dbpedia.org/property/overlay1top
+adopted,http://dbpedia.org/property/adopted
+overlay9top,http://dbpedia.org/property/overlay9top
+Latitude,http://dbpedia.org/property/latitude
+mature students,http://dbpedia.org/property/matureStudents
+sister college,http://dbpedia.org/ontology/sisterCollege
+overlay16color,http://dbpedia.org/property/overlay16color
+overlay15tip,http://dbpedia.org/property/overlay15tip
+width,http://dbpedia.org/property/width
+date,http://dbpedia.org/property/date
+overlay12left,http://dbpedia.org/property/overlay12left
+overlay13top,http://dbpedia.org/property/overlay13top
+overlay10left,http://dbpedia.org/property/overlay10left
+founder,http://dbpedia.org/property/founder
+overlay6left,http://dbpedia.org/property/overlay6left
+founded,http://dbpedia.org/property/founded
+overlay8tip,http://dbpedia.org/property/overlay8tip
+talk,http://dbpedia.org/property/talk
+overlay12tip,http://dbpedia.org/property/overlay12tip
+overlay6top,http://dbpedia.org/property/overlay6top
+overlay7color,http://dbpedia.org/property/overlay7color
+last,http://dbpedia.org/property/last
+previous versions,http://dbpedia.org/property/previousVersions
+volume,http://dbpedia.org/property/volume
+grace,http://dbpedia.org/property/grace
+number of undergraduate students,http://dbpedia.org/ontology/numberOfUndergraduateStudents
+overlay2tip,http://dbpedia.org/property/overlay2tip
+overlay14left,http://dbpedia.org/property/overlay14left
+overlay15color,http://dbpedia.org/property/overlay15color
+head label,http://dbpedia.org/property/headLabel
+link colour,http://dbpedia.org/property/linkColour
+latin motto,http://dbpedia.org/property/latinMotto
+Motto,http://dbpedia.org/property/motto
+women only,http://dbpedia.org/property/womenOnly
+overlay16top,http://dbpedia.org/property/overlay16top
+overlay8color,http://dbpedia.org/property/overlay8color
+Caption,http://dbpedia.org/property/caption
+overlay3top,http://dbpedia.org/property/overlay3top
+undergraduates,http://dbpedia.org/property/undergraduates
+overlay5tip,http://dbpedia.org/property/overlay5tip
+jcr,http://dbpedia.org/property/jcr
+overlay4left,http://dbpedia.org/property/overlay4left
+author,http://dbpedia.org/property/author
+student body,http://dbpedia.org/property/studentBody
+wstitle,http://dbpedia.org/property/wstitle
+text colour,http://dbpedia.org/property/textColour
+GCR president,http://dbpedia.org/property/gcrPresident
+closed,http://dbpedia.org/property/closed
+legend1title,http://dbpedia.org/property/legend1title
+founding date,http://dbpedia.org/ontology/foundingDate
+sister college pl,http://dbpedia.org/property/sisterCollegePl
+JCR president,http://dbpedia.org/property/jcrPresident
+overlay13color,http://dbpedia.org/property/overlay13color
+overlay15top,http://dbpedia.org/property/overlay15top
+overlay1left,http://dbpedia.org/property/overlay1left
+shield,http://dbpedia.org/property/shield
+infobox colour,http://dbpedia.org/property/infoboxColour
+overlay14tip,http://dbpedia.org/property/overlay14tip
+legend1start,http://dbpedia.org/property/legend1start
+MCR president,http://dbpedia.org/property/mcrPresident
+overlay8top,http://dbpedia.org/property/overlay8top
+height,http://dbpedia.org/property/height
+english motto,http://dbpedia.org/property/englishMotto
+Wikipage page ID,http://dbpedia.org/ontology/wikiPageID
+location,http://dbpedia.org/ontology/location
+overlay10top,http://dbpedia.org/property/overlay10top
+boat club,http://dbpedia.org/property/boatClub
+overlay7tip,http://dbpedia.org/property/overlay7tip
+legend1end,http://dbpedia.org/property/legend1end
+overlay5top,http://dbpedia.org/property/overlay5top
+overlay8left,http://dbpedia.org/property/overlay8left
+number of graduate students,http://dbpedia.org/ontology/numberOfGraduateStudents
+mcr,http://dbpedia.org/property/mcr
+blazon,http://dbpedia.org/property/blazon

@@ -1,0 +1,357 @@
+type,http://dbpedia.org/property/type
+coord region,http://dbpedia.org/property/coordRegion
+added,http://dbpedia.org/property/added
+events,http://dbpedia.org/property/events
+reference,http://dbpedia.org/property/reference
+Link from a Wikipage to an external page,http://dbpedia.org/ontology/wikiPageExternalLink
+pushpin map label,http://dbpedia.org/property/pushpinMapLabel
+operator,http://dbpedia.org/property/operator
+latNS,http://dbpedia.org/property/latns
+bar width,http://dbpedia.org/property/barWidth
+r2-number,http://dbpedia.org/property/r2Number
+Aug high F,http://dbpedia.org/property/augHighF
+site,http://dbpedia.org/property/site
+coordinates,http://dbpedia.org/property/coordinates
+Aug mean F,http://dbpedia.org/property/augMeanF
+service,http://dbpedia.org/property/service
+region served,http://dbpedia.org/ontology/regionServed
+location,http://dbpedia.org/property/location
+parent,http://dbpedia.org/property/parent
+lon deg,http://dbpedia.org/property/lonDeg
+designation1 date,http://dbpedia.org/property/designation1Date
+is part of,http://dbpedia.org/ontology/isPartOf
+Jul precipitation inch,http://dbpedia.org/property/julPrecipitationInch
+long seconds,http://dbpedia.org/property/longSeconds
+country,http://dbpedia.org/property/country
+Jul low F,http://dbpedia.org/property/julLowF
+IUPAC name,http://dbpedia.org/ontology/iupacName
+image,http://dbpedia.org/property/image
+surface of runway,http://dbpedia.org/ontology/runwaySurface
+position,http://dbpedia.org/property/position
+demographics1 title,http://dbpedia.org/property/demographics1Title
+Ship crew,http://dbpedia.org/property/shipCrew
+countries only,http://dbpedia.org/property/countriesOnly
+postal code,http://dbpedia.org/ontology/postalCode
+hub,http://dbpedia.org/property/hub
+owner-oper,http://dbpedia.org/property/ownerOper
+time zone,http://dbpedia.org/ontology/timeZone
+Feb precipitation inch,http://dbpedia.org/property/febPrecipitationInch
+code,http://dbpedia.org/ontology/code
+demographics type,http://dbpedia.org/property/demographicsType
+h2-number,http://dbpedia.org/property/h2Number
+lat direction,http://dbpedia.org/property/latDirection
+long degrees,http://dbpedia.org/property/longDegrees
+image mapsize,http://dbpedia.org/property/imageMapsize
+lat deg,http://dbpedia.org/property/latDeg
+condition,http://dbpedia.org/property/condition
+owning organisation,http://dbpedia.org/ontology/owningOrganisation
+Nov precipitation inch,http://dbpedia.org/property/novPrecipitationInch
+Jan high F,http://dbpedia.org/property/janHighF
+post town,http://dbpedia.org/property/postTown
+active,http://dbpedia.org/property/active
+Apr mean F,http://dbpedia.org/property/aprMeanF
+map caption,http://dbpedia.org/property/mapCaption
+imagesize,http://dbpedia.org/property/imagesize
+państwo,http://dbpedia.org/ontology/locationCountry
+admiralty,http://dbpedia.org/property/admiralty
+coordinates region,http://dbpedia.org/property/coordinatesRegion
+pushpin label,http://dbpedia.org/property/pushpinLabel
+lat sec,http://dbpedia.org/property/latSec
+lat min,http://dbpedia.org/property/latMin
+established,http://dbpedia.org/property/established
+Dec low F,http://dbpedia.org/property/decLowF
+h1-number,http://dbpedia.org/property/h1Number
+country,http://dbpedia.org/ontology/country
+longm,http://dbpedia.org/property/longm
+r2-length-f,http://dbpedia.org/property/r2LengthF
+r2-length-m,http://dbpedia.org/property/r2LengthM
+longs,http://dbpedia.org/property/longs
+Apr precipitation inch,http://dbpedia.org/property/aprPrecipitationInch
+South,http://dbpedia.org/property/south
+open to public,http://dbpedia.org/property/openToPublic
+longd,http://dbpedia.org/property/longd
+Ship caption,http://dbpedia.org/property/shipCaption
+ICAO Location Identifier,http://dbpedia.org/ontology/icaoLocationIdentifier
+height (μ),http://dbpedia.org/ontology/height
+long EW,http://dbpedia.org/property/longEw
+long direction,http://dbpedia.org/property/longDirection
+image2 width,http://dbpedia.org/property/image2Width
+Dec precipitation inch,http://dbpedia.org/property/decPrecipitationInch
+pushpin relief,http://dbpedia.org/property/pushpinRelief
+thumbnail,http://dbpedia.org/ontology/thumbnail
+photo,http://dbpedia.org/property/photo
+state-airports,http://dbpedia.org/property/stateAirports
+UK only,http://dbpedia.org/property/ukOnly
+mark,http://dbpedia.org/property/mark
+state,http://dbpedia.org/ontology/state
+ICAO,http://dbpedia.org/property/icao
+Aug low F,http://dbpedia.org/property/augLowF
+map type,http://dbpedia.org/property/mapType
+owner,http://dbpedia.org/ontology/owner
+image width,http://dbpedia.org/property/imageWidth
+r3-number,http://dbpedia.org/property/r3Number
+long m,http://dbpedia.org/property/longM
+image2 alt,http://dbpedia.org/property/image2Alt
+long s,http://dbpedia.org/property/longS
+delisted,http://dbpedia.org/property/delisted
+Ship image,http://dbpedia.org/property/shipImage
+NRHP Reference Number,http://dbpedia.org/ontology/nrhpReferenceNumber
+col2 data,http://dbpedia.org/property/col2Data
+architecture,http://dbpedia.org/property/architecture
+r3-surface,http://dbpedia.org/property/r3Surface
+long d,http://dbpedia.org/property/longD
+length of runway (μ),http://dbpedia.org/ontology/runwayLength
+industry,http://dbpedia.org/ontology/industry
+Latitude,http://dbpedia.org/property/latitude
+longEW,http://dbpedia.org/property/longew
+lat/long,http://dbpedia.org/property/lat/long
+Jul high F,http://dbpedia.org/property/julHighF
+label position,http://dbpedia.org/property/labelPosition
+Jul mean F,http://dbpedia.org/property/julMeanF
+grid reference,http://dbpedia.org/ontology/gridReference
+lat dir,http://dbpedia.org/property/latDir
+box width,http://dbpedia.org/property/boxWidth
+Nov low F,http://dbpedia.org/property/novLowF
+used,http://dbpedia.org/property/used
+city-served,http://dbpedia.org/property/cityServed
+data,http://dbpedia.org/property/data
+Nov mean F,http://dbpedia.org/property/novMeanF
+col2 data max,http://dbpedia.org/property/col2DataMax
+h2-surface,http://dbpedia.org/property/h2Surface
+date,http://dbpedia.org/property/date
+logo,http://dbpedia.org/property/logo
+time zone,http://dbpedia.org/property/timeZone
+source ,http://dbpedia.org/property/source
+Feb low F,http://dbpedia.org/property/febLowF
+nearest town,http://dbpedia.org/property/nearestTown
+subdivision type,http://dbpedia.org/property/subdivisionType
+builder,http://dbpedia.org/property/builder
+operator,http://dbpedia.org/ontology/operator
+Aug precipitation inch,http://dbpedia.org/property/augPrecipitationInch
+static image,http://dbpedia.org/property/staticImage
+nrhp type,http://dbpedia.org/property/nrhpType
+Oct mean F,http://dbpedia.org/property/octMeanF
+suffix,http://dbpedia.org/property/suffix
+shape,http://dbpedia.org/property/shape
+Dec mean F,http://dbpedia.org/property/decMeanF
+r1-number,http://dbpedia.org/property/r1Number
+built,http://dbpedia.org/property/built
+area total (m2),http://dbpedia.org/ontology/areaTotal
+Dec high F,http://dbpedia.org/property/decHighF
+inaccurate,http://dbpedia.org/property/inaccurate
+col2 data type,http://dbpedia.org/property/col2DataType
+Sep mean F,http://dbpedia.org/property/sepMeanF
+area code,http://dbpedia.org/ontology/areaCode
+opened,http://dbpedia.org/property/opened
+city,http://dbpedia.org/ontology/city
+Caption,http://dbpedia.org/property/caption
+long minutes,http://dbpedia.org/property/longMinutes
+static image name,http://dbpedia.org/property/staticImageName
+May low F,http://dbpedia.org/property/mayLowF
+WMO,http://dbpedia.org/property/wmo
+Verifiedfields,http://dbpedia.org/property/verifiedfields
+metric-elev,http://dbpedia.org/property/metricElev
+survey,http://dbpedia.org/property/survey
+unit pref,http://dbpedia.org/property/unitPref
+closed,http://dbpedia.org/property/closed
+pushpin map alt,http://dbpedia.org/property/pushpinMapAlt
+district,http://dbpedia.org/ontology/district
+Jan low F,http://dbpedia.org/property/janLowF
+summer,http://dbpedia.org/property/summer
+Jan mean F,http://dbpedia.org/property/janMeanF
+image caption,http://dbpedia.org/property/imageCaption
+static image caption,http://dbpedia.org/property/staticImageCaption
+built for,http://dbpedia.org/property/builtFor
+metric-rwy,http://dbpedia.org/property/metricRwy
+pushpin label position,http://dbpedia.org/property/pushpinLabelPosition
+Council area,http://dbpedia.org/ontology/councilArea
+original use,http://dbpedia.org/property/originalUse
+Apr high F,http://dbpedia.org/property/aprHighF
+demographics1 info,http://dbpedia.org/property/demographics1Info
+stat4-data,http://dbpedia.org/property/stat4Data
+Ship completed,http://dbpedia.org/property/shipCompleted
+type,http://dbpedia.org/ontology/type
+commander,http://dbpedia.org/ontology/commander
+garrison,http://dbpedia.org/property/garrison
+TimeZone,http://dbpedia.org/property/timezone
+occupants,http://dbpedia.org/property/occupants
+locmapin,http://dbpedia.org/property/locmapin
+location,http://dbpedia.org/ontology/location
+lat NS,http://dbpedia.org/property/latNs
+GPS,http://dbpedia.org/property/gps
+Northeast,http://dbpedia.org/property/northeast
+coordinates display,http://dbpedia.org/property/coordinatesDisplay
+reason,http://dbpedia.org/property/reason
+Centre,http://dbpedia.org/property/centre
+pushpin map,http://dbpedia.org/property/pushpinMap
+May precipitation inch,http://dbpedia.org/property/mayPrecipitationInch
+comment,http://dbpedia.org/property/comment
+battles,http://dbpedia.org/property/battles
+fix-attempted,http://dbpedia.org/property/fixAttempted
+developer,http://dbpedia.org/property/developer
+utcs,http://dbpedia.org/property/utcs
+ensign,http://dbpedia.org/property/ensign
+tc,http://dbpedia.org/property/tc
+ImageFile,http://dbpedia.org/property/imagefile
+Sep low F,http://dbpedia.org/property/sepLowF
+r1-surface,http://dbpedia.org/property/r1Surface
+footnotes,http://dbpedia.org/property/footnotes
+Jun low F,http://dbpedia.org/property/junLowF
+Oct low F,http://dbpedia.org/property/octLowF
+othernames,http://dbpedia.org/property/othernames
+designation1 number,http://dbpedia.org/property/designation1Number
+lat seconds,http://dbpedia.org/property/latSeconds
+province-served,http://dbpedia.org/property/provinceServed
+NGA,http://dbpedia.org/property/nga
+Apr low F,http://dbpedia.org/property/aprLowF
+constituency westminster,http://dbpedia.org/property/constituencyWestminster
+id,http://dbpedia.org/property/id
+pushpin mapsize,http://dbpedia.org/property/pushpinMapsize
+Longitude,http://dbpedia.org/property/longitude
+Ship owner,http://dbpedia.org/property/shipOwner
+data max,http://dbpedia.org/property/dataMax
+pushpin,http://dbpedia.org/property/pushpin
+bot,http://dbpedia.org/property/bot
+lat degrees,http://dbpedia.org/property/latDegrees
+current use,http://dbpedia.org/property/currentUse
+Mar high F,http://dbpedia.org/property/marHighF
+municipality type,http://dbpedia.org/property/municipalityType
+elevation (μ),http://dbpedia.org/ontology/elevation
+h2-length-m,http://dbpedia.org/property/h2LengthM
+municipality,http://dbpedia.org/ontology/municipality
+float,http://dbpedia.org/property/float
+product,http://dbpedia.org/ontology/product
+characteristic,http://dbpedia.org/property/characteristic
+r1-length-ft,http://dbpedia.org/property/r1LengthFt
+map alt,http://dbpedia.org/property/mapAlt
+status,http://dbpedia.org/property/status
+Jun precipitation inch,http://dbpedia.org/property/junPrecipitationInch
+geology,http://dbpedia.org/property/geology
+nom carto,http://dbpedia.org/property/nomCarto
+civil parish,http://dbpedia.org/property/civilParish
+r2-surface,http://dbpedia.org/property/r2Surface
+designation,http://dbpedia.org/property/designation
+materials,http://dbpedia.org/property/materials
+stat3-header,http://dbpedia.org/property/stat3Header
+image map caption,http://dbpedia.org/property/imageMapCaption
+map locator y,http://dbpedia.org/property/mapLocatorY
+map locator x,http://dbpedia.org/property/mapLocatorX
+population density km,http://dbpedia.org/property/populationDensityKm
+stat4-header,http://dbpedia.org/property/stat4Header
+visitation,http://dbpedia.org/property/visitation
+Length,http://dbpedia.org/property/length
+Wikipage revision ID,http://dbpedia.org/ontology/wikiPageRevisionID
+May mean F,http://dbpedia.org/property/mayMeanF
+designation of runway,http://dbpedia.org/ontology/runwayDesignation
+Jan precipitation inch,http://dbpedia.org/property/janPrecipitationInch
+settlement type,http://dbpedia.org/property/settlementType
+image map,http://dbpedia.org/property/imageMap
+Website,http://dbpedia.org/property/website
+North,http://dbpedia.org/property/north
+founding year,http://dbpedia.org/ontology/foundingYear
+lat minutes,http://dbpedia.org/property/latMinutes
+h2-length-f,http://dbpedia.org/property/h2LengthF
+area (m2),http://dbpedia.org/ontology/area
+Jun high F,http://dbpedia.org/property/junHighF
+pushpin mark,http://dbpedia.org/property/pushpinMark
+IATA Location Identifier,http://dbpedia.org/ontology/iataLocationIdentifier
+Mar mean F,http://dbpedia.org/property/marMeanF
+r1 ILS,http://dbpedia.org/property/r1Ils
+East,http://dbpedia.org/property/east
+key person,http://dbpedia.org/ontology/keyPerson
+relief,http://dbpedia.org/property/relief
+coordinates type,http://dbpedia.org/property/coordinatesType
+average depth (μ),http://dbpedia.org/ontology/averageDepth
+difficulty,http://dbpedia.org/property/difficulty
+Sep precipitation inch,http://dbpedia.org/property/sepPrecipitationInch
+single line,http://dbpedia.org/property/singleLine
+location city,http://dbpedia.org/ontology/locationCity
+nearest city,http://dbpedia.org/ontology/nearestCity
+stat3-data,http://dbpedia.org/property/stat3Data
+UTC offset,http://dbpedia.org/ontology/utcOffset
+focus city,http://dbpedia.org/property/focusCity
+F,http://dbpedia.org/property/f
+data type,http://dbpedia.org/property/dataType
+c,http://dbpedia.org/property/c
+Feb mean F,http://dbpedia.org/property/febMeanF
+has abstract,http://dbpedia.org/ontology/abstract
+t,http://dbpedia.org/property/t
+Location Identifier,http://dbpedia.org/ontology/locationIdentifier
+controlledby,http://dbpedia.org/property/controlledby
+p,http://dbpedia.org/property/p
+s,http://dbpedia.org/property/s
+Nov high F,http://dbpedia.org/property/novHighF
+lats,http://dbpedia.org/property/lats
+r1-length,http://dbpedia.org/property/r1Length
+latm,http://dbpedia.org/property/latm
+marking,http://dbpedia.org/property/marking
+width,http://dbpedia.org/property/width
+stat1-data,http://dbpedia.org/property/stat1Data
+Oct precipitation inch,http://dbpedia.org/property/octPrecipitationInch
+state,http://dbpedia.org/property/state
+stat2-header,http://dbpedia.org/property/stat2Header
+lon dir,http://dbpedia.org/property/lonDir
+past commanders,http://dbpedia.org/property/pastCommanders
+governing body,http://dbpedia.org/property/governingBody
+Mar low F,http://dbpedia.org/property/marLowF
+lat s,http://dbpedia.org/property/latS
+lat m,http://dbpedia.org/property/latM
+Oct high F,http://dbpedia.org/property/octHighF
+length (μ),http://dbpedia.org/ontology/length
+name,http://dbpedia.org/property/name
+Sep high F,http://dbpedia.org/property/sepHighF
+area,http://dbpedia.org/property/area
+route,http://dbpedia.org/property/route
+maximum depth (μ),http://dbpedia.org/ontology/maximumDepth
+latd,http://dbpedia.org/property/latd
+h1-surface,http://dbpedia.org/property/h1Surface
+FAA Location Identifier,http://dbpedia.org/ontology/faaLocationIdentifier
+other name,http://dbpedia.org/property/otherName
+coord display,http://dbpedia.org/property/coordDisplay
+partof,http://dbpedia.org/property/partof
+Southeast,http://dbpedia.org/property/southeast
+photo caption,http://dbpedia.org/property/photoCaption
+nocat,http://dbpedia.org/property/nocat
+noicon,http://dbpedia.org/property/noicon
+region,http://dbpedia.org/property/region
+Feb high F,http://dbpedia.org/property/febHighF
+building end date,http://dbpedia.org/ontology/buildingEndDate
+stat1-header,http://dbpedia.org/property/stat1Header
+fate,http://dbpedia.org/property/fate
+pushpin image,http://dbpedia.org/property/pushpinImage
+Jun mean F,http://dbpedia.org/property/junMeanF
+col,http://dbpedia.org/property/col
+h1-length-f,http://dbpedia.org/property/h1LengthF
+stat year,http://dbpedia.org/property/statYear
+lat d,http://dbpedia.org/property/latD
+Mar precipitation inch,http://dbpedia.org/property/marPrecipitationInch
+own,http://dbpedia.org/property/own
+Use,http://dbpedia.org/property/use
+label,http://dbpedia.org/property/label
+lon sec,http://dbpedia.org/property/lonSec
+May high F,http://dbpedia.org/property/mayHighF
+lon min,http://dbpedia.org/property/lonMin
+width units,http://dbpedia.org/property/widthUnits
+Wikipage redirect,http://dbpedia.org/ontology/wikiPageRedirects
+depth (μ),http://dbpedia.org/ontology/depth
+commander,http://dbpedia.org/property/commander
+photos,http://dbpedia.org/property/photos
+owner,http://dbpedia.org/property/owner
+yearlit,http://dbpedia.org/property/yearlit
+verifiedrevid,http://dbpedia.org/property/verifiedrevid
+Wikipage page ID,http://dbpedia.org/ontology/wikiPageID
+h1-length-m,http://dbpedia.org/property/h1LengthM
+Alt,http://dbpedia.org/property/alt
+label type,http://dbpedia.org/property/labelType
+builder,http://dbpedia.org/ontology/builder
+marksize,http://dbpedia.org/property/marksize
+metric first,http://dbpedia.org/property/metricFirst
+nearest city,http://dbpedia.org/property/nearestCity
+construction,http://dbpedia.org/property/construction
+utc,http://dbpedia.org/property/utc
+pushpin map caption,http://dbpedia.org/property/pushpinMapCaption
+title,http://dbpedia.org/property/title
+stat2-data,http://dbpedia.org/property/stat2Data
+added,http://dbpedia.org/ontology/added
+postcode area,http://dbpedia.org/property/postcodeArea
+status,http://dbpedia.org/ontology/status

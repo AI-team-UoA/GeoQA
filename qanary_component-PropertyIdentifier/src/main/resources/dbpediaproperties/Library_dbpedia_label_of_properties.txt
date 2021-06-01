@@ -1,0 +1,333 @@
+type,http://dbpedia.org/property/type
+Link from a Wikipage to an external page,http://dbpedia.org/ontology/wikiPageExternalLink
+align,http://dbpedia.org/property/align
+postalcode,http://dbpedia.org/property/postalcode
+latNS,http://dbpedia.org/property/latns
+designated other1 num position,http://dbpedia.org/property/designatedOther1NumPosition
+architecture firm,http://dbpedia.org/property/architectureFirm
+coordinates,http://dbpedia.org/property/coordinates
+cost ($),http://dbpedia.org/ontology/cost
+discontinued,http://dbpedia.org/property/discontinued
+location,http://dbpedia.org/property/location
+lon deg,http://dbpedia.org/property/lonDeg
+license,http://dbpedia.org/property/license
+area served,http://dbpedia.org/property/areaServed
+long seconds,http://dbpedia.org/property/longSeconds
+country,http://dbpedia.org/property/country
+annual person visits,http://dbpedia.org/property/annualPersonVisits
+image size,http://dbpedia.org/property/imageSize
+architect OR builder,http://dbpedia.org/property/architectOrBuilder
+image,http://dbpedia.org/property/image
+latest preview date,http://dbpedia.org/ontology/latestPreviewDate
+renovation date,http://dbpedia.org/property/renovationDate
+position,http://dbpedia.org/property/position
+rr,http://dbpedia.org/property/rr
+latest release date,http://dbpedia.org/property/latestReleaseDate
+Debian approved,http://dbpedia.org/property/debianApproved
+launch date,http://dbpedia.org/property/launchDate
+items collected,http://dbpedia.org/property/itemsCollected
+voy,http://dbpedia.org/property/voy
+President and CEO,http://dbpedia.org/property/presidentAndCeo
+module,http://dbpedia.org/property/module
+librlary name,http://dbpedia.org/property/librlaryName
+birth year,http://dbpedia.org/ontology/birthYear
+lat direction,http://dbpedia.org/property/latDirection
+tax id,http://dbpedia.org/property/taxId
+long degrees,http://dbpedia.org/property/longDegrees
+parent company,http://dbpedia.org/ontology/parentCompany
+lat deg,http://dbpedia.org/property/latDeg
+address,http://dbpedia.org/ontology/address
+paradigm,http://dbpedia.org/property/paradigm
+opening year,http://dbpedia.org/property/openingYear
+dedication date,http://dbpedia.org/property/dedicationDate
+pop served,http://dbpedia.org/property/popServed
+map caption,http://dbpedia.org/property/mapCaption
+imagesize,http://dbpedia.org/property/imagesize
+coordinates region,http://dbpedia.org/property/coordinatesRegion
+programming language,http://dbpedia.org/ontology/programmingLanguage
+pushpin label,http://dbpedia.org/property/pushpinLabel
+iso region,http://dbpedia.org/property/isoRegion
+structural system,http://dbpedia.org/property/structuralSystem
+established,http://dbpedia.org/property/established
+country,http://dbpedia.org/ontology/country
+longm,http://dbpedia.org/property/longm
+current status,http://dbpedia.org/property/currentStatus
+genre,http://dbpedia.org/property/genre
+longs,http://dbpedia.org/property/longs
+OSI approved,http://dbpedia.org/property/osiApproved
+publications,http://dbpedia.org/property/publications
+top floor,http://dbpedia.org/property/topFloor
+located in area,http://dbpedia.org/ontology/locatedInArea
+longd,http://dbpedia.org/property/longd
+members,http://dbpedia.org/property/members
+age,http://dbpedia.org/property/age
+height (μ),http://dbpedia.org/ontology/height
+parent organization,http://dbpedia.org/property/parentOrganization
+collection size,http://dbpedia.org/property/collectionSize
+long direction,http://dbpedia.org/property/longDirection
+thumbnail,http://dbpedia.org/ontology/thumbnail
+photo,http://dbpedia.org/property/photo
+precision,http://dbpedia.org/property/precision
+mark,http://dbpedia.org/property/mark
+num employees,http://dbpedia.org/property/numEmployees
+map type,http://dbpedia.org/property/mapType
+owner,http://dbpedia.org/ontology/owner
+AlternativeMap,http://dbpedia.org/property/alternativemap
+delisted,http://dbpedia.org/property/delisted
+NRHP Reference Number,http://dbpedia.org/ontology/nrhpReferenceNumber
+architecture,http://dbpedia.org/property/architecture
+branch of,http://dbpedia.org/property/branchOf
+address,http://dbpedia.org/property/address
+fax,http://dbpedia.org/property/fax
+titlestyle,http://dbpedia.org/property/titlestyle
+Latitude,http://dbpedia.org/property/latitude
+ren firm,http://dbpedia.org/property/renFirm
+longEW,http://dbpedia.org/property/longew
+latest preview version,http://dbpedia.org/ontology/latestPreviewVersion
+wikt,http://dbpedia.org/property/wikt
+services engineer,http://dbpedia.org/property/servicesEngineer
+language,http://dbpedia.org/ontology/language
+state/province,http://dbpedia.org/property/state/province
+date,http://dbpedia.org/property/date
+logo,http://dbpedia.org/property/logo
+alternate names,http://dbpedia.org/property/alternateNames
+manager,http://dbpedia.org/property/manager
+source ,http://dbpedia.org/property/source
+founder,http://dbpedia.org/property/founder
+subdivision type,http://dbpedia.org/property/subdivisionType
+builder,http://dbpedia.org/property/builder
+collapsible,http://dbpedia.org/property/collapsible
+amount,http://dbpedia.org/property/amount
+managers,http://dbpedia.org/property/managers
+location city,http://dbpedia.org/property/locationCity
+director,http://dbpedia.org/property/director
+Criteria,http://dbpedia.org/property/criteria
+nrhp type,http://dbpedia.org/property/nrhpType
+unitof,http://dbpedia.org/property/unitof
+coord parameters,http://dbpedia.org/property/coordParameters
+released,http://dbpedia.org/property/released
+language count,http://dbpedia.org/property/languageCount
+legal deposit,http://dbpedia.org/property/legalDeposit
+phone,http://dbpedia.org/property/phone
+patrons,http://dbpedia.org/property/patrons
+acquisition year,http://dbpedia.org/property/acquisitionYear
+architectural style,http://dbpedia.org/ontology/architecturalStyle
+opened,http://dbpedia.org/property/opened
+Caption,http://dbpedia.org/property/caption
+city,http://dbpedia.org/ontology/city
+long minutes,http://dbpedia.org/property/longMinutes
+typing,http://dbpedia.org/property/typing
+num branches,http://dbpedia.org/property/numBranches
+Slogan,http://dbpedia.org/property/slogan
+province,http://dbpedia.org/property/province
+completion date,http://dbpedia.org/property/completionDate
+pic caption,http://dbpedia.org/property/picCaption
+FSF approved,http://dbpedia.org/property/fsfApproved
+founding date,http://dbpedia.org/ontology/foundingDate
+Chronology,http://dbpedia.org/property/chronology
+platform,http://dbpedia.org/property/platform
+genre,http://dbpedia.org/ontology/genre
+designated nrhp type,http://dbpedia.org/property/designatedNrhpType
+commercial,http://dbpedia.org/property/commercial
+references,http://dbpedia.org/property/references
+period,http://dbpedia.org/property/period
+type,http://dbpedia.org/ontology/type
+other designers,http://dbpedia.org/property/otherDesigners
+System Administrator,http://dbpedia.org/property/systemAdministrator
+locmapin,http://dbpedia.org/property/locmapin
+de,http://dbpedia.org/property/de
+author,http://dbpedia.org/ontology/author
+license,http://dbpedia.org/ontology/license
+location,http://dbpedia.org/ontology/location
+birth place,http://dbpedia.org/ontology/birthPlace
+year of construction,http://dbpedia.org/ontology/yearOfConstruction
+coordinates display,http://dbpedia.org/property/coordinatesDisplay
+reason,http://dbpedia.org/property/reason
+pushpin map,http://dbpedia.org/property/pushpinMap
+before,http://dbpedia.org/property/before
+fix-attempted,http://dbpedia.org/property/fixAttempted
+building start date,http://dbpedia.org/ontology/buildingStartDate
+developer,http://dbpedia.org/property/developer
+image flag,http://dbpedia.org/property/imageFlag
+main contractors,http://dbpedia.org/property/mainContractors
+mpsub,http://dbpedia.org/property/mpsub
+quantity surveyor,http://dbpedia.org/property/quantitySurveyor
+annual circulation,http://dbpedia.org/property/annualCirculation
+location country,http://dbpedia.org/property/locationCountry
+official website,http://dbpedia.org/property/officialWebsite
+year,http://dbpedia.org/property/year
+GPL compatible,http://dbpedia.org/property/gplCompatible
+distribution,http://dbpedia.org/property/distribution
+latest release version,http://dbpedia.org/ontology/latestReleaseVersion
+lat seconds,http://dbpedia.org/property/latSeconds
+alexa,http://dbpedia.org/property/alexa
+death place,http://dbpedia.org/ontology/deathPlace
+screenshot size,http://dbpedia.org/property/screenshotSize
+operating system,http://dbpedia.org/property/operatingSystem
+commonscat,http://dbpedia.org/property/commonscat
+logo size,http://dbpedia.org/property/logoSize
+id,http://dbpedia.org/property/id
+main contractor,http://dbpedia.org/property/mainContractor
+former name,http://dbpedia.org/ontology/formerName
+latest release date,http://dbpedia.org/ontology/latestReleaseDate
+system,http://dbpedia.org/property/system
+library logo,http://dbpedia.org/property/libraryLogo
+language,http://dbpedia.org/property/language
+phone num,http://dbpedia.org/property/phoneNum
+Longitude,http://dbpedia.org/property/longitude
+construction start date,http://dbpedia.org/property/constructionStartDate
+pushpin mapsize,http://dbpedia.org/property/pushpinMapsize
+otherarticle,http://dbpedia.org/property/otherarticle
+img,http://dbpedia.org/property/img
+death date,http://dbpedia.org/ontology/deathDate
+Wikipage disambiguates,http://dbpedia.org/ontology/wikiPageDisambiguates
+bot,http://dbpedia.org/property/bot
+floor area (m2),http://dbpedia.org/ontology/floorArea
+lat degrees,http://dbpedia.org/property/latDegrees
+developer,http://dbpedia.org/ontology/developer
+label size,http://dbpedia.org/property/labelSize
+programming language,http://dbpedia.org/property/programmingLanguage
+branches,http://dbpedia.org/property/branches
+building type,http://dbpedia.org/property/buildingType
+closing year,http://dbpedia.org/property/closingYear
+opening date,http://dbpedia.org/ontology/openingDate
+ren architect,http://dbpedia.org/property/renArchitect
+prefix,http://dbpedia.org/property/prefix
+screenshot,http://dbpedia.org/property/screenshot
+float,http://dbpedia.org/property/float
+designated other1 date,http://dbpedia.org/property/designatedOther1Date
+status,http://dbpedia.org/property/status
+nationality,http://dbpedia.org/ontology/nationality
+annual website visits,http://dbpedia.org/property/annualWebsiteVisits
+line,http://dbpedia.org/property/line
+namedfor,http://dbpedia.org/property/namedfor
+picture,http://dbpedia.org/ontology/picture
+embedded,http://dbpedia.org/property/embedded
+Wikipage revision ID,http://dbpedia.org/ontology/wikiPageRevisionID
+header,http://dbpedia.org/property/header
+head librarian,http://dbpedia.org/property/headLibrarian
+circumference,http://dbpedia.org/property/circumference
+products,http://dbpedia.org/property/products
+librarian,http://dbpedia.org/property/librarian
+map size,http://dbpedia.org/property/mapSize
+size,http://dbpedia.org/property/size
+Website,http://dbpedia.org/property/website
+founding year,http://dbpedia.org/ontology/foundingYear
+lat minutes,http://dbpedia.org/property/latMinutes
+area (m2),http://dbpedia.org/ontology/area
+designated other1 number,http://dbpedia.org/property/designatedOther1Number
+architect,http://dbpedia.org/property/architect
+origins,http://dbpedia.org/property/origins
+budget,http://dbpedia.org/property/budget
+screenshot alt,http://dbpedia.org/property/screenshotAlt
+client,http://dbpedia.org/property/client
+floor area (m2),http://dbpedia.org/ontology/Building/floorArea
+display,http://dbpedia.org/property/display
+logo alt,http://dbpedia.org/property/logoAlt
+state of origin,http://dbpedia.org/ontology/stateOfOrigin
+grid ref UK,http://dbpedia.org/property/gridRefUk
+release date,http://dbpedia.org/ontology/releaseDate
+named for,http://dbpedia.org/property/namedFor
+commons,http://dbpedia.org/property/commons
+nearest city,http://dbpedia.org/ontology/nearestCity
+size (MB),http://dbpedia.org/ontology/Software/fileSize
+d,http://dbpedia.org/property/d
+langcode,http://dbpedia.org/property/langcode
+collection,http://dbpedia.org/property/collection
+coordinates format,http://dbpedia.org/property/coordinatesFormat
+place,http://dbpedia.org/property/place
+c,http://dbpedia.org/property/c
+after,http://dbpedia.org/property/after
+b,http://dbpedia.org/property/b
+m,http://dbpedia.org/property/m
+l,http://dbpedia.org/property/l
+n,http://dbpedia.org/property/n
+has abstract,http://dbpedia.org/ontology/abstract
+j,http://dbpedia.org/property/j
+picture,http://dbpedia.org/property/picture
+structural engineer,http://dbpedia.org/property/structuralEngineer
+t,http://dbpedia.org/property/t
+v,http://dbpedia.org/property/v
+q,http://dbpedia.org/property/q
+species,http://dbpedia.org/property/species
+p,http://dbpedia.org/property/p
+s,http://dbpedia.org/property/s
+hanja,http://dbpedia.org/property/hanja
+lats,http://dbpedia.org/property/lats
+mr,http://dbpedia.org/property/mr
+years,http://dbpedia.org/property/years
+registration,http://dbpedia.org/property/registration
+latm,http://dbpedia.org/property/latm
+width,http://dbpedia.org/property/width
+areaThis,http://dbpedia.org/property/areathis
+hangul,http://dbpedia.org/property/hangul
+cost amount,http://dbpedia.org/property/costAmount
+University Librarian,http://dbpedia.org/property/universityLibrarian
+direction,http://dbpedia.org/property/direction
+occupation,http://dbpedia.org/ontology/occupation
+birth date,http://dbpedia.org/ontology/birthDate
+architect,http://dbpedia.org/ontology/architect
+computing platform,http://dbpedia.org/ontology/computingPlatform
+Bookmobile stops,http://dbpedia.org/property/bookmobileStops
+Web site,http://dbpedia.org/property/webSite
+governing body,http://dbpedia.org/property/governingBody
+ref legal mandate,http://dbpedia.org/property/refLegalMandate
+copyleft,http://dbpedia.org/property/copyleft
+name,http://dbpedia.org/property/name
+area,http://dbpedia.org/property/area
+size (B),http://dbpedia.org/ontology/fileSize
+url,http://dbpedia.org/property/url
+architectural style,http://dbpedia.org/property/architecturalStyle
+latd,http://dbpedia.org/property/latd
+death year,http://dbpedia.org/ontology/deathYear
+coord display,http://dbpedia.org/property/coordDisplay
+partof,http://dbpedia.org/property/partof
+focus,http://dbpedia.org/property/focus
+video,http://dbpedia.org/property/video
+photo caption,http://dbpedia.org/property/photoCaption
+author,http://dbpedia.org/property/author
+nocat,http://dbpedia.org/property/nocat
+date of abandonment,http://dbpedia.org/ontology/dateOfAbandonment
+streetaddress,http://dbpedia.org/property/streetaddress
+mw,http://dbpedia.org/property/mw
+region,http://dbpedia.org/property/region
+offonshore,http://dbpedia.org/property/offonshore
+operating system,http://dbpedia.org/ontology/operatingSystem
+req to access,http://dbpedia.org/property/reqToAccess
+editors,http://dbpedia.org/property/editors
+namedby,http://dbpedia.org/property/namedby
+building end date,http://dbpedia.org/ontology/buildingEndDate
+maintainer,http://dbpedia.org/property/maintainer
+website type,http://dbpedia.org/property/websiteType
+tablewidth,http://dbpedia.org/property/tablewidth
+frequently updated,http://dbpedia.org/ontology/frequentlyUpdated
+req access,http://dbpedia.org/property/reqAccess
+label,http://dbpedia.org/property/label
+long,http://dbpedia.org/property/long
+headquarters,http://dbpedia.org/property/headquarters
+opening date,http://dbpedia.org/property/openingDate
+scope,http://dbpedia.org/property/scope
+designated other,http://dbpedia.org/property/designatedOther
+colwidth,http://dbpedia.org/property/colwidth
+rededication date,http://dbpedia.org/property/rededicationDate
+ILS,http://dbpedia.org/property/ils
+headerimage,http://dbpedia.org/property/headerimage
+photos,http://dbpedia.org/property/photos
+opened date,http://dbpedia.org/property/openedDate
+owner,http://dbpedia.org/property/owner
+partof refnum,http://dbpedia.org/property/partofRefnum
+Wikipage page ID,http://dbpedia.org/ontology/wikiPageID
+inauguration date,http://dbpedia.org/property/inaugurationDate
+Alt,http://dbpedia.org/property/alt
+marksize,http://dbpedia.org/property/marksize
+demolition date,http://dbpedia.org/property/demolitionDate
+logosize,http://dbpedia.org/property/logosize
+floor count,http://dbpedia.org/ontology/floorCount
+pushpin map caption,http://dbpedia.org/property/pushpinMapCaption
+quote,http://dbpedia.org/property/quote
+prilithology,http://dbpedia.org/property/prilithology
+title,http://dbpedia.org/property/title
+added,http://dbpedia.org/ontology/added
+locations,http://dbpedia.org/property/locations
+status,http://dbpedia.org/ontology/status
+lat,http://dbpedia.org/property/lat

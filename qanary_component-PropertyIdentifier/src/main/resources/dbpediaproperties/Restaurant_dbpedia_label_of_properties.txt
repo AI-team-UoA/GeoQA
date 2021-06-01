@@ -1,0 +1,323 @@
+type,http://dbpedia.org/property/type
+added,http://dbpedia.org/property/added
+Link from a Wikipage to an external page,http://dbpedia.org/ontology/wikiPageExternalLink
+align,http://dbpedia.org/property/align
+operator,http://dbpedia.org/property/operator
+latNS,http://dbpedia.org/property/latns
+designated other1 num position,http://dbpedia.org/property/designatedOther1NumPosition
+access,http://dbpedia.org/ontology/access
+co-owner and general manager,http://dbpedia.org/property/coOwnerAndGeneralManager
+county,http://dbpedia.org/property/county
+Excutive-chef,http://dbpedia.org/property/excutiveChef
+region served,http://dbpedia.org/ontology/regionServed
+coordinates,http://dbpedia.org/property/coordinates
+location,http://dbpedia.org/property/location
+parent,http://dbpedia.org/property/parent
+company slogan,http://dbpedia.org/property/companySlogan
+etymology,http://dbpedia.org/property/etymology
+pastry-chef,http://dbpedia.org/property/pastryChef
+text,http://dbpedia.org/property/text
+area served,http://dbpedia.org/property/areaServed
+country,http://dbpedia.org/property/country
+long seconds,http://dbpedia.org/property/longSeconds
+image size,http://dbpedia.org/property/imageSize
+architect OR builder,http://dbpedia.org/property/architectOrBuilder
+image,http://dbpedia.org/property/image
+chef,http://dbpedia.org/ontology/chef
+length orientation,http://dbpedia.org/property/lengthOrientation
+logo width,http://dbpedia.org/property/logoWidth
+position,http://dbpedia.org/property/position
+renovation date,http://dbpedia.org/property/renovationDate
+labels,http://dbpedia.org/property/labels
+free1 type,http://dbpedia.org/property/free1Type
+japanese,http://dbpedia.org/property/japanese
+seating capacity,http://dbpedia.org/ontology/seatingCapacity
+lat direction,http://dbpedia.org/property/latDirection
+long degrees,http://dbpedia.org/property/longDegrees
+parent company,http://dbpedia.org/ontology/parentCompany
+address,http://dbpedia.org/ontology/address
+top speed (kmh),http://dbpedia.org/ontology/topSpeed
+Ship decks,http://dbpedia.org/property/shipDecks
+service,http://dbpedia.org/ontology/service
+theme,http://dbpedia.org/property/theme
+head chef,http://dbpedia.org/ontology/headChef
+map caption,http://dbpedia.org/property/mapCaption
+imagesize,http://dbpedia.org/property/imagesize
+państwo,http://dbpedia.org/ontology/locationCountry
+holes,http://dbpedia.org/property/holes
+iso region,http://dbpedia.org/property/isoRegion
+established,http://dbpedia.org/property/established
+longm,http://dbpedia.org/property/longm
+country,http://dbpedia.org/ontology/country
+coordinates wrap,http://dbpedia.org/property/coordinatesWrap
+genre,http://dbpedia.org/property/genre
+industry,http://dbpedia.org/property/industry
+longs,http://dbpedia.org/property/longs
+key people,http://dbpedia.org/property/keyPeople
+South,http://dbpedia.org/property/south
+longd,http://dbpedia.org/property/longd
+revenue ($),http://dbpedia.org/ontology/revenue
+height (μ),http://dbpedia.org/ontology/height
+long EW,http://dbpedia.org/property/longEw
+long direction,http://dbpedia.org/property/longDirection
+thumbnail,http://dbpedia.org/ontology/thumbnail
+region type,http://dbpedia.org/property/regionType
+other label,http://dbpedia.org/property/otherLabel
+current-owner,http://dbpedia.org/property/currentOwner
+state,http://dbpedia.org/ontology/state
+map type,http://dbpedia.org/property/mapType
+zip,http://dbpedia.org/property/zip
+owner,http://dbpedia.org/ontology/owner
+image width,http://dbpedia.org/property/imageWidth
+services,http://dbpedia.org/property/services
+long m,http://dbpedia.org/property/longM
+Center,http://dbpedia.org/property/center
+long s,http://dbpedia.org/property/longS
+delisted,http://dbpedia.org/property/delisted
+NRHP Reference Number,http://dbpedia.org/ontology/nrhpReferenceNumber
+Southwest,http://dbpedia.org/property/southwest
+architecture,http://dbpedia.org/property/architecture
+long d,http://dbpedia.org/property/longD
+address,http://dbpedia.org/property/address
+region,http://dbpedia.org/ontology/region
+industry,http://dbpedia.org/ontology/industry
+sub class,http://dbpedia.org/property/subClass
+Latitude,http://dbpedia.org/property/latitude
+longEW,http://dbpedia.org/property/longew
+wikt,http://dbpedia.org/property/wikt
+previousattraction,http://dbpedia.org/property/previousattraction
+dress code,http://dbpedia.org/ontology/dressCode
+Ship acquired,http://dbpedia.org/property/shipAcquired
+number of locations,http://dbpedia.org/ontology/numberOfLocations
+date,http://dbpedia.org/property/date
+designer,http://dbpedia.org/property/designer
+logo,http://dbpedia.org/property/logo
+auto,http://dbpedia.org/property/auto
+founder,http://dbpedia.org/property/founder
+source ,http://dbpedia.org/property/source
+tournaments,http://dbpedia.org/property/tournaments
+no recipes,http://dbpedia.org/property/noRecipes
+builder,http://dbpedia.org/property/builder
+founded,http://dbpedia.org/property/founded
+accessible,http://dbpedia.org/property/accessible
+collapsible,http://dbpedia.org/property/collapsible
+chef,http://dbpedia.org/property/chef
+West,http://dbpedia.org/property/west
+operator,http://dbpedia.org/ontology/operator
+num locations,http://dbpedia.org/property/numLocations
+location city,http://dbpedia.org/property/locationCity
+etymology type,http://dbpedia.org/property/etymologyType
+nrhp type,http://dbpedia.org/property/nrhpType
+coord parameters,http://dbpedia.org/property/coordParameters
+built,http://dbpedia.org/property/built
+cuisine,http://dbpedia.org/ontology/cuisine
+hq location,http://dbpedia.org/property/hqLocation
+other-locations,http://dbpedia.org/property/otherLocations
+architectural style,http://dbpedia.org/ontology/architecturalStyle
+opened,http://dbpedia.org/property/opened
+english,http://dbpedia.org/property/english
+Caption,http://dbpedia.org/property/caption
+long minutes,http://dbpedia.org/property/longMinutes
+net income ($),http://dbpedia.org/ontology/netIncome
+style,http://dbpedia.org/property/style
+Slogan,http://dbpedia.org/property/slogan
+hq location country,http://dbpedia.org/property/hqLocationCountry
+Ship registry,http://dbpedia.org/property/shipRegistry
+en,http://dbpedia.org/property/en
+free2 type,http://dbpedia.org/property/free2Type
+extinction date,http://dbpedia.org/ontology/extinctionDate
+founders,http://dbpedia.org/property/founders
+official name,http://dbpedia.org/property/officialName
+closed,http://dbpedia.org/property/closed
+founding date,http://dbpedia.org/ontology/foundingDate
+district,http://dbpedia.org/ontology/district
+city,http://dbpedia.org/property/city
+image caption,http://dbpedia.org/property/imageCaption
+designated nrhp type,http://dbpedia.org/property/designatedNrhpType
+genre,http://dbpedia.org/ontology/genre
+Ship capacity,http://dbpedia.org/property/shipCapacity
+rating,http://dbpedia.org/ontology/rating
+reestablished,http://dbpedia.org/property/reestablished
+state type,http://dbpedia.org/property/stateType
+assets ($),http://dbpedia.org/ontology/assets
+Ship completed,http://dbpedia.org/property/shipCompleted
+type,http://dbpedia.org/ontology/type
+locmapin,http://dbpedia.org/property/locmapin
+location,http://dbpedia.org/ontology/location
+lat NS,http://dbpedia.org/property/latNs
+birth place,http://dbpedia.org/ontology/birthPlace
+romaji,http://dbpedia.org/property/romaji
+Northeast,http://dbpedia.org/property/northeast
+year of construction,http://dbpedia.org/ontology/yearOfConstruction
+coordinates display,http://dbpedia.org/property/coordinatesDisplay
+reason,http://dbpedia.org/property/reason
+pushpin map,http://dbpedia.org/property/pushpinMap
+golf facility name,http://dbpedia.org/property/golfFacilityName
+par,http://dbpedia.org/property/par
+att,http://dbpedia.org/property/att
+before,http://dbpedia.org/property/before
+fix-attempted,http://dbpedia.org/property/fixAttempted
+building start date,http://dbpedia.org/ontology/buildingStartDate
+revenue year,http://dbpedia.org/property/revenueYear
+mpsub,http://dbpedia.org/property/mpsub
+publicly accessible,http://dbpedia.org/ontology/publiclyAccessible
+co-owner and Brewmaster,http://dbpedia.org/property/coOwnerAndBrewmaster
+free type,http://dbpedia.org/property/freeType
+location country,http://dbpedia.org/property/locationCountry
+designation1 number,http://dbpedia.org/property/designation1Number
+y,http://dbpedia.org/property/y
+lat seconds,http://dbpedia.org/property/latSeconds
+death place,http://dbpedia.org/ontology/deathPlace
+establishment,http://dbpedia.org/property/establishment
+free3 type,http://dbpedia.org/property/free3Type
+logo size,http://dbpedia.org/property/logoSize
+id,http://dbpedia.org/property/id
+former name,http://dbpedia.org/ontology/formerName
+postcode,http://dbpedia.org/property/postcode
+Longitude,http://dbpedia.org/property/longitude
+pushpin mapsize,http://dbpedia.org/property/pushpinMapsize
+otherarticle,http://dbpedia.org/property/otherarticle
+death date,http://dbpedia.org/ontology/deathDate
+reservations,http://dbpedia.org/ontology/reservations
+renovated,http://dbpedia.org/property/renovated
+Wikipage disambiguates,http://dbpedia.org/ontology/wikiPageDisambiguates
+bot,http://dbpedia.org/property/bot
+lat degrees,http://dbpedia.org/property/latDegrees
+hp,http://dbpedia.org/property/hp
+piccap,http://dbpedia.org/property/piccap
+Ship out of service,http://dbpedia.org/property/shipOutOfService
+elevation (μ),http://dbpedia.org/ontology/elevation
+building type,http://dbpedia.org/property/buildingType
+Zip Code,http://dbpedia.org/property/zipCode
+opening date,http://dbpedia.org/ontology/openingDate
+municipality,http://dbpedia.org/ontology/municipality
+alias,http://dbpedia.org/ontology/alias
+product,http://dbpedia.org/ontology/product
+float,http://dbpedia.org/property/float
+designated other1 date,http://dbpedia.org/property/designatedOther1Date
+section,http://dbpedia.org/property/section
+status,http://dbpedia.org/property/status
+foundation place,http://dbpedia.org/ontology/foundationPlace
+designation,http://dbpedia.org/property/designation
+zipcode,http://dbpedia.org/property/zipcode
+ship beam (μ),http://dbpedia.org/ontology/shipBeam
+coord format,http://dbpedia.org/property/coordFormat
+number of employees,http://dbpedia.org/ontology/numberOfEmployees
+map locator y,http://dbpedia.org/property/mapLocatorY
+map locator x,http://dbpedia.org/property/mapLocatorX
+Length,http://dbpedia.org/property/length
+picture,http://dbpedia.org/ontology/picture
+Wikipage revision ID,http://dbpedia.org/ontology/wikiPageRevisionID
+products,http://dbpedia.org/property/products
+map size,http://dbpedia.org/property/mapSize
+lang,http://dbpedia.org/property/lang
+Website,http://dbpedia.org/property/website
+North,http://dbpedia.org/property/north
+founding year,http://dbpedia.org/ontology/foundingYear
+lat minutes,http://dbpedia.org/property/latMinutes
+ingredient name (literal),http://dbpedia.org/ontology/ingredientName
+former name,http://dbpedia.org/property/formerName
+designated other1 number,http://dbpedia.org/property/designatedOther1Number
+area (m2),http://dbpedia.org/ontology/area
+architect,http://dbpedia.org/property/architect
+Northwest,http://dbpedia.org/property/northwest
+established type,http://dbpedia.org/property/establishedType
+client,http://dbpedia.org/property/client
+key person,http://dbpedia.org/ontology/keyPerson
+logo alt,http://dbpedia.org/property/logoAlt
+East,http://dbpedia.org/property/east
+header align,http://dbpedia.org/property/headerAlign
+logo caption,http://dbpedia.org/property/logoCaption
+location city,http://dbpedia.org/ontology/locationCity
+commons,http://dbpedia.org/property/commons
+other-information,http://dbpedia.org/property/otherInformation
+nearest city,http://dbpedia.org/ontology/nearestCity
+parking,http://dbpedia.org/property/parking
+langcode,http://dbpedia.org/property/langcode
+first,http://dbpedia.org/property/first
+Ship in service,http://dbpedia.org/property/shipInService
+c,http://dbpedia.org/property/c
+b,http://dbpedia.org/property/b
+after,http://dbpedia.org/property/after
+l,http://dbpedia.org/property/l
+has abstract,http://dbpedia.org/ontology/abstract
+j,http://dbpedia.org/property/j
+slogan,http://dbpedia.org/ontology/slogan
+t,http://dbpedia.org/property/t
+footer,http://dbpedia.org/property/footer
+v,http://dbpedia.org/property/v
+q,http://dbpedia.org/property/q
+p,http://dbpedia.org/property/p
+s,http://dbpedia.org/property/s
+lats,http://dbpedia.org/property/lats
+years,http://dbpedia.org/property/years
+seating type,http://dbpedia.org/property/seatingType
+prevrests,http://dbpedia.org/property/prevrests
+latm,http://dbpedia.org/property/latm
+ingredient,http://dbpedia.org/ontology/ingredient
+width,http://dbpedia.org/property/width
+education,http://dbpedia.org/property/education
+direction,http://dbpedia.org/property/direction
+previous-owner,http://dbpedia.org/property/previousOwner
+birth date,http://dbpedia.org/ontology/birthDate
+author type,http://dbpedia.org/property/authorType
+state,http://dbpedia.org/property/state
+foundation,http://dbpedia.org/property/foundation
+architect,http://dbpedia.org/ontology/architect
+founded by,http://dbpedia.org/ontology/foundedBy
+reservations,http://dbpedia.org/property/reservations
+governing body,http://dbpedia.org/property/governingBody
+lat s,http://dbpedia.org/property/latS
+lat m,http://dbpedia.org/property/latM
+class,http://dbpedia.org/property/class
+length (μ),http://dbpedia.org/ontology/length
+area,http://dbpedia.org/property/area
+name,http://dbpedia.org/property/name
+latd,http://dbpedia.org/property/latd
+rating,http://dbpedia.org/property/rating
+coord display,http://dbpedia.org/property/coordDisplay
+partof,http://dbpedia.org/property/partof
+video,http://dbpedia.org/property/video
+Southeast,http://dbpedia.org/property/southeast
+Ship class,http://dbpedia.org/property/shipClass
+nocat,http://dbpedia.org/property/nocat
+author,http://dbpedia.org/property/author
+seating capacity,http://dbpedia.org/property/seatingCapacity
+established1 type,http://dbpedia.org/property/established1Type
+logo image,http://dbpedia.org/property/logoImage
+extinction year,http://dbpedia.org/ontology/extinctionYear
+free,http://dbpedia.org/property/free
+date type,http://dbpedia.org/property/dateType
+pic,http://dbpedia.org/property/pic
+building end date,http://dbpedia.org/ontology/buildingEndDate
+vertical-align,http://dbpedia.org/property/verticalAlign
+lat d,http://dbpedia.org/property/latD
+head-chef,http://dbpedia.org/property/headChef
+label,http://dbpedia.org/property/label
+kodokan,http://dbpedia.org/property/kodokan
+long,http://dbpedia.org/property/long
+length (mm),http://dbpedia.org/ontology/MeanOfTransportation/length
+course,http://dbpedia.org/property/course
+designated other,http://dbpedia.org/property/designatedOther
+colwidth,http://dbpedia.org/property/colwidth
+Wikipage redirect,http://dbpedia.org/ontology/wikiPageRedirects
+owner,http://dbpedia.org/property/owner
+partof refnum,http://dbpedia.org/property/partofRefnum
+Wikipage page ID,http://dbpedia.org/ontology/wikiPageID
+homepage,http://dbpedia.org/property/homepage
+Alt,http://dbpedia.org/property/alt
+hq location city,http://dbpedia.org/property/hqLocationCity
+builder,http://dbpedia.org/ontology/builder
+owning company,http://dbpedia.org/ontology/owningCompany
+Ship propulsion,http://dbpedia.org/property/shipPropulsion
+operating income,http://dbpedia.org/property/operatingIncome
+image alt,http://dbpedia.org/property/imageAlt
+width orientation,http://dbpedia.org/property/widthOrientation
+pushpin map caption,http://dbpedia.org/property/pushpinMapCaption
+quote,http://dbpedia.org/property/quote
+title,http://dbpedia.org/property/title
+added,http://dbpedia.org/ontology/added
+footer align,http://dbpedia.org/property/footerAlign
+locations,http://dbpedia.org/property/locations
+lat,http://dbpedia.org/property/lat
+status,http://dbpedia.org/ontology/status

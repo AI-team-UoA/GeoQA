@@ -1,0 +1,351 @@
+type,http://dbpedia.org/property/type
+coord region,http://dbpedia.org/property/coordRegion
+events,http://dbpedia.org/property/events
+Link from a Wikipage to an external page,http://dbpedia.org/ontology/wikiPageExternalLink
+align,http://dbpedia.org/property/align
+operator,http://dbpedia.org/property/operator
+access date,http://dbpedia.org/property/accessDate
+latNS,http://dbpedia.org/property/latns
+mascot,http://dbpedia.org/ontology/mascot
+access,http://dbpedia.org/ontology/access
+coordinates,http://dbpedia.org/property/coordinates
+location,http://dbpedia.org/property/location
+native language,http://dbpedia.org/property/nativeLanguage
+State Party,http://dbpedia.org/property/stateParty
+designation1 criteria,http://dbpedia.org/property/designation1Criteria
+designation1 date,http://dbpedia.org/property/designation1Date
+lon deg,http://dbpedia.org/property/lonDeg
+is part of,http://dbpedia.org/ontology/isPartOf
+etymology,http://dbpedia.org/property/etymology
+country,http://dbpedia.org/property/country
+long seconds,http://dbpedia.org/property/longSeconds
+image size,http://dbpedia.org/property/imageSize
+image,http://dbpedia.org/property/image
+region-ISO,http://dbpedia.org/property/regionIso
+length orientation,http://dbpedia.org/property/lengthOrientation
+imagedimensions,http://dbpedia.org/property/imagedimensions
+edition,http://dbpedia.org/property/edition
+renovation date,http://dbpedia.org/property/renovationDate
+position,http://dbpedia.org/property/position
+Session,http://dbpedia.org/property/session
+Colors,http://dbpedia.org/property/colors
+postal code,http://dbpedia.org/ontology/postalCode
+time zone,http://dbpedia.org/ontology/timeZone
+length (km),http://dbpedia.org/ontology/Infrastructure/length
+chapter,http://dbpedia.org/property/chapter
+free1 type,http://dbpedia.org/property/free1Type
+commanders,http://dbpedia.org/property/commanders
+replacement,http://dbpedia.org/property/replacement
+code,http://dbpedia.org/ontology/code
+robust struct shape,http://dbpedia.org/property/robustStructShape
+birth year,http://dbpedia.org/ontology/birthYear
+native name lang,http://dbpedia.org/property/nativeNameLang
+lat direction,http://dbpedia.org/property/latDirection
+condition,http://dbpedia.org/property/condition
+long degrees,http://dbpedia.org/property/longDegrees
+lat deg,http://dbpedia.org/property/latDeg
+address,http://dbpedia.org/ontology/address
+owning organisation,http://dbpedia.org/ontology/owningOrganisation
+duration,http://dbpedia.org/property/duration
+varietal,http://dbpedia.org/property/varietal
+nativename a,http://dbpedia.org/property/nativenameA
+parent,http://dbpedia.org/ontology/parent
+theme,http://dbpedia.org/property/theme
+map caption,http://dbpedia.org/property/mapCaption
+imagesize,http://dbpedia.org/property/imagesize
+site area,http://dbpedia.org/property/siteArea
+coordinates region,http://dbpedia.org/property/coordinatesRegion
+pushpin label,http://dbpedia.org/property/pushpinLabel
+iso region,http://dbpedia.org/property/isoRegion
+lat min,http://dbpedia.org/property/latMin
+established,http://dbpedia.org/property/established
+country,http://dbpedia.org/ontology/country
+longm,http://dbpedia.org/property/longm
+genre,http://dbpedia.org/property/genre
+longs,http://dbpedia.org/property/longs
+key people,http://dbpedia.org/property/keyPeople
+open to public,http://dbpedia.org/property/openToPublic
+located in area,http://dbpedia.org/ontology/locatedInArea
+known for,http://dbpedia.org/property/knownFor
+longd,http://dbpedia.org/property/longd
+os grid reference,http://dbpedia.org/property/osGridReference
+height (μ),http://dbpedia.org/ontology/height
+long EW,http://dbpedia.org/property/longEw
+long direction,http://dbpedia.org/property/longDirection
+class,http://dbpedia.org/ontology/class
+pushpin relief,http://dbpedia.org/property/pushpinRelief
+thumbnail,http://dbpedia.org/ontology/thumbnail
+ownership,http://dbpedia.org/property/ownership
+designation1 offname,http://dbpedia.org/property/designation1Offname
+region type,http://dbpedia.org/property/regionType
+ratio,http://dbpedia.org/property/ratio
+state,http://dbpedia.org/ontology/state
+designation1 partof,http://dbpedia.org/property/designation1Partof
+native category,http://dbpedia.org/property/nativeCategory
+map type,http://dbpedia.org/property/mapType
+owner,http://dbpedia.org/ontology/owner
+Heutiger Ortsname,http://dbpedia.org/property/heutigerOrtsname
+long m,http://dbpedia.org/property/longM
+long s,http://dbpedia.org/property/longS
+NRHP Reference Number,http://dbpedia.org/ontology/nrhpReferenceNumber
+architecture,http://dbpedia.org/property/architecture
+long d,http://dbpedia.org/property/longD
+region,http://dbpedia.org/ontology/region
+signature wine,http://dbpedia.org/property/signatureWine
+Latitude,http://dbpedia.org/property/latitude
+longEW,http://dbpedia.org/property/longew
+sign,http://dbpedia.org/property/sign
+ensign caption,http://dbpedia.org/property/ensignCaption
+used,http://dbpedia.org/property/used
+category,http://dbpedia.org/property/category
+manufacturer,http://dbpedia.org/property/manufacturer
+creator,http://dbpedia.org/property/creator
+image skyline,http://dbpedia.org/property/imageSkyline
+date,http://dbpedia.org/property/date
+Höhenordinate,http://dbpedia.org/property/höhenordinate
+designer,http://dbpedia.org/property/designer
+alternate names,http://dbpedia.org/property/alternateNames
+logo,http://dbpedia.org/property/logo
+auto,http://dbpedia.org/property/auto
+source ,http://dbpedia.org/property/source
+nearest town,http://dbpedia.org/property/nearestTown
+subdivision type,http://dbpedia.org/property/subdivisionType
+builder,http://dbpedia.org/property/builder
+accessible,http://dbpedia.org/property/accessible
+population total,http://dbpedia.org/ontology/populationTotal
+music,http://dbpedia.org/property/music
+location city,http://dbpedia.org/property/locationCity
+kingdom,http://dbpedia.org/ontology/kingdom
+etymology type,http://dbpedia.org/property/etymologyType
+designation1 free1name,http://dbpedia.org/property/designation1Free1name
+Criteria,http://dbpedia.org/property/criteria
+synonym,http://dbpedia.org/ontology/synonym
+coord parameters,http://dbpedia.org/property/coordParameters
+built,http://dbpedia.org/property/built
+area code,http://dbpedia.org/ontology/areaCode
+architectural style,http://dbpedia.org/ontology/architecturalStyle
+opened,http://dbpedia.org/property/opened
+city,http://dbpedia.org/ontology/city
+Caption,http://dbpedia.org/property/caption
+phylum,http://dbpedia.org/ontology/phylum
+long minutes,http://dbpedia.org/property/longMinutes
+mode,http://dbpedia.org/property/mode
+static image name,http://dbpedia.org/property/staticImageName
+style,http://dbpedia.org/property/style
+current tenants,http://dbpedia.org/property/currentTenants
+demolished,http://dbpedia.org/property/demolished
+free2 type,http://dbpedia.org/property/free2Type
+coord type,http://dbpedia.org/property/coordType
+official name,http://dbpedia.org/property/officialName
+unit pref,http://dbpedia.org/property/unitPref
+closed,http://dbpedia.org/property/closed
+known for,http://dbpedia.org/ontology/knownFor
+pushpin map alt,http://dbpedia.org/property/pushpinMapAlt
+1p,http://dbpedia.org/property/1p
+district,http://dbpedia.org/ontology/district
+image caption,http://dbpedia.org/property/imageCaption
+static image caption,http://dbpedia.org/property/staticImageCaption
+built for,http://dbpedia.org/property/builtFor
+ALTERNATIVNAME,http://dbpedia.org/property/alternativname
+location county,http://dbpedia.org/property/locationCounty
+pushpin label position,http://dbpedia.org/property/pushpinLabelPosition
+Längengrad,http://dbpedia.org/property/längengrad
+postal code type,http://dbpedia.org/property/postalCodeType
+state type,http://dbpedia.org/property/stateType
+population as of,http://dbpedia.org/property/populationAsOf
+1a,http://dbpedia.org/property/1a
+type,http://dbpedia.org/ontology/type
+robust struct area,http://dbpedia.org/property/robustStructArea
+height,http://dbpedia.org/property/height
+garrison,http://dbpedia.org/property/garrison
+stitle,http://dbpedia.org/property/stitle
+occupants,http://dbpedia.org/property/occupants
+2y,http://dbpedia.org/property/2y
+Poskarte,http://dbpedia.org/property/poskarte
+locmapin,http://dbpedia.org/property/locmapin
+map width,http://dbpedia.org/property/mapWidth
+parent company,http://dbpedia.org/property/parentCompany
+location,http://dbpedia.org/ontology/location
+lat NS,http://dbpedia.org/property/latNs
+2p,http://dbpedia.org/property/2p
+birth place,http://dbpedia.org/ontology/birthPlace
+coordinates display,http://dbpedia.org/property/coordinatesDisplay
+year of construction,http://dbpedia.org/ontology/yearOfConstruction
+year founded,http://dbpedia.org/property/yearFounded
+pushpin map,http://dbpedia.org/property/pushpinMap
+visitation year,http://dbpedia.org/property/visitationYear
+nation,http://dbpedia.org/property/nation
+Höhe-Bezug,http://dbpedia.org/property/höheBezug
+building start date,http://dbpedia.org/ontology/buildingStartDate
+battles,http://dbpedia.org/property/battles
+fix-attempted,http://dbpedia.org/property/fixAttempted
+ensign,http://dbpedia.org/property/ensign
+familia,http://dbpedia.org/property/familia
+2a,http://dbpedia.org/property/2a
+material,http://dbpedia.org/ontology/material
+publicly accessible,http://dbpedia.org/ontology/publiclyAccessible
+place name,http://dbpedia.org/property/placeName
+1y,http://dbpedia.org/property/1y
+footnotes,http://dbpedia.org/property/footnotes
+free type,http://dbpedia.org/property/freeType
+location country,http://dbpedia.org/property/locationCountry
+year,http://dbpedia.org/property/year
+grades,http://dbpedia.org/ontology/grades
+designation1 number,http://dbpedia.org/property/designation1Number
+distribution,http://dbpedia.org/property/distribution
+lat seconds,http://dbpedia.org/property/latSeconds
+death place,http://dbpedia.org/ontology/deathPlace
+gbgridref,http://dbpedia.org/property/gbgridref
+familia authority,http://dbpedia.org/property/familiaAuthority
+id,http://dbpedia.org/property/id
+free3 type,http://dbpedia.org/property/free3Type
+designation1 free2name,http://dbpedia.org/property/designation1Free2name
+Longitude,http://dbpedia.org/property/longitude
+pushpin mapsize,http://dbpedia.org/property/pushpinMapsize
+WHS,http://dbpedia.org/property/whs
+death date,http://dbpedia.org/ontology/deathDate
+order (taxonomy),http://dbpedia.org/ontology/order
+bot,http://dbpedia.org/property/bot
+mainspan (μ),http://dbpedia.org/ontology/mainspan
+floor area (m2),http://dbpedia.org/ontology/floorArea
+fossil range,http://dbpedia.org/property/fossilRange
+lat degrees,http://dbpedia.org/property/latDegrees
+current use,http://dbpedia.org/property/currentUse
+Entstehungszeit,http://dbpedia.org/property/entstehungszeit
+Typologie n. geo. Lage,http://dbpedia.org/property/typologieN.Geo.Lage
+elevation (μ),http://dbpedia.org/ontology/elevation
+building type,http://dbpedia.org/property/buildingType
+dtitle,http://dbpedia.org/property/dtitle
+opening date,http://dbpedia.org/ontology/openingDate
+municipality,http://dbpedia.org/ontology/municipality
+alias,http://dbpedia.org/ontology/alias
+float,http://dbpedia.org/property/float
+status,http://dbpedia.org/property/status
+map alt,http://dbpedia.org/property/mapAlt
+section,http://dbpedia.org/property/section
+designation,http://dbpedia.org/property/designation
+materials,http://dbpedia.org/property/materials
+coord format,http://dbpedia.org/property/coordFormat
+visitation num,http://dbpedia.org/property/visitationNum
+map locator y,http://dbpedia.org/property/mapLocatorY
+image map caption,http://dbpedia.org/property/imageMapCaption
+map locator x,http://dbpedia.org/property/mapLocatorX
+Length,http://dbpedia.org/property/length
+visitation,http://dbpedia.org/property/visitation
+embedded,http://dbpedia.org/property/embedded
+Wikipage revision ID,http://dbpedia.org/ontology/wikiPageRevisionID
+number of students,http://dbpedia.org/ontology/numberOfStudents
+map size,http://dbpedia.org/property/mapSize
+settlement type,http://dbpedia.org/property/settlementType
+Website,http://dbpedia.org/property/website
+image map,http://dbpedia.org/property/imageMap
+resting place,http://dbpedia.org/ontology/restingPlace
+restored,http://dbpedia.org/property/restored
+lat minutes,http://dbpedia.org/property/latMinutes
+date demolished,http://dbpedia.org/property/dateDemolished
+established2 type,http://dbpedia.org/property/established2Type
+architect,http://dbpedia.org/property/architect
+established type,http://dbpedia.org/property/establishedType
+bridge carries,http://dbpedia.org/ontology/bridgeCarries
+rebuilt,http://dbpedia.org/property/rebuilt
+client,http://dbpedia.org/property/client
+BILD,http://dbpedia.org/property/bild
+floor area (m2),http://dbpedia.org/ontology/Building/floorArea
+robust struct material,http://dbpedia.org/property/robustStructMaterial
+relief,http://dbpedia.org/property/relief
+coordinates type,http://dbpedia.org/property/coordinatesType
+abandoned,http://dbpedia.org/property/abandoned
+group,http://dbpedia.org/property/group
+free6 type,http://dbpedia.org/property/free6Type
+commons,http://dbpedia.org/property/commons
+crosses,http://dbpedia.org/ontology/crosses
+UTC offset,http://dbpedia.org/ontology/utcOffset
+designation1 free2value,http://dbpedia.org/property/designation1Free2value
+death cause,http://dbpedia.org/ontology/deathCause
+cost,http://dbpedia.org/property/cost
+map locator,http://dbpedia.org/property/mapLocator
+visitation date,http://dbpedia.org/property/visitationDate
+has abstract,http://dbpedia.org/ontology/abstract
+controlledby,http://dbpedia.org/property/controlledby
+current commander,http://dbpedia.org/property/currentCommander
+lats,http://dbpedia.org/property/lats
+Ständische Stellung,http://dbpedia.org/property/ständischeStellung
+latm,http://dbpedia.org/property/latm
+width,http://dbpedia.org/property/width
+number of rooms,http://dbpedia.org/property/numberOfRooms
+colour,http://dbpedia.org/property/colour
+designation1 type,http://dbpedia.org/property/designation1Type
+BILDBESCHREIBUNG,http://dbpedia.org/property/bildbeschreibung
+occupation,http://dbpedia.org/ontology/occupation
+birth date,http://dbpedia.org/ontology/birthDate
+author type,http://dbpedia.org/property/authorType
+state,http://dbpedia.org/property/state
+architect,http://dbpedia.org/ontology/architect
+free4 type,http://dbpedia.org/property/free4Type
+past commanders,http://dbpedia.org/property/pastCommanders
+governing body,http://dbpedia.org/property/governingBody
+fewer-links,http://dbpedia.org/property/fewerLinks
+lat s,http://dbpedia.org/property/latS
+desc,http://dbpedia.org/property/desc
+site other label,http://dbpedia.org/property/siteOtherLabel
+lat m,http://dbpedia.org/property/latM
+length (μ),http://dbpedia.org/ontology/length
+area,http://dbpedia.org/property/area
+name,http://dbpedia.org/property/name
+Mauerwerksmerkmale,http://dbpedia.org/property/mauerwerksmerkmale
+url,http://dbpedia.org/property/url
+Abmessungen oder Fläche,http://dbpedia.org/property/abmessungenOderFläche
+demolition date,http://dbpedia.org/ontology/demolitionDate
+architectural style,http://dbpedia.org/property/architecturalStyle
+death year,http://dbpedia.org/ontology/deathYear
+latd,http://dbpedia.org/property/latd
+coord display,http://dbpedia.org/property/coordDisplay
+partof,http://dbpedia.org/property/partof
+hotel chain,http://dbpedia.org/property/hotelChain
+Erhaltungszustand,http://dbpedia.org/property/erhaltungszustand
+family,http://dbpedia.org/ontology/family
+author,http://dbpedia.org/property/author
+opening year,http://dbpedia.org/ontology/openingYear
+established1 type,http://dbpedia.org/property/established1Type
+map relief,http://dbpedia.org/property/mapRelief
+Principal,http://dbpedia.org/property/principal
+map name,http://dbpedia.org/property/mapName
+designation1 free1value,http://dbpedia.org/property/designation1Free1value
+ensign alt,http://dbpedia.org/property/ensignAlt
+classification,http://dbpedia.org/property/classification
+free,http://dbpedia.org/property/free
+building end date,http://dbpedia.org/ontology/buildingEndDate
+tasting,http://dbpedia.org/property/tasting
+fate,http://dbpedia.org/property/fate
+lat d,http://dbpedia.org/property/latD
+num,http://dbpedia.org/property/num
+label,http://dbpedia.org/property/label
+map background,http://dbpedia.org/property/mapBackground
+id,http://dbpedia.org/ontology/id
+lon min,http://dbpedia.org/property/lonMin
+country flag,http://dbpedia.org/property/countryFlag
+etymplogy type,http://dbpedia.org/property/etymplogyType
+material,http://dbpedia.org/property/material
+colwidth,http://dbpedia.org/property/colwidth
+Wikipage redirect,http://dbpedia.org/ontology/wikiPageRedirects
+designation2 date,http://dbpedia.org/property/designation2Date
+owner,http://dbpedia.org/property/owner
+Wikipage page ID,http://dbpedia.org/ontology/wikiPageID
+Alt,http://dbpedia.org/property/alt
+people,http://dbpedia.org/property/people
+builder,http://dbpedia.org/ontology/builder
+free5 type,http://dbpedia.org/property/free5Type
+post-text,http://dbpedia.org/property/postText
+marksize,http://dbpedia.org/property/marksize
+2pp,http://dbpedia.org/property/2pp
+demolition date,http://dbpedia.org/property/demolitionDate
+native name,http://dbpedia.org/property/nativeName
+floor count,http://dbpedia.org/ontology/floorCount
+shire county/state,http://dbpedia.org/property/shireCounty/state
+pushpin map caption,http://dbpedia.org/property/pushpinMapCaption
+width orientation,http://dbpedia.org/property/widthOrientation
+quote,http://dbpedia.org/property/quote
+title,http://dbpedia.org/property/title
+width (μ),http://dbpedia.org/ontology/width
+added,http://dbpedia.org/ontology/added
+Breitengrad,http://dbpedia.org/property/breitengrad

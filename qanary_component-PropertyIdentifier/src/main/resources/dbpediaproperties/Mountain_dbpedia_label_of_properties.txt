@@ -1,0 +1,333 @@
+other name,http://dbpedia.org/ontology/otherName
+type,http://dbpedia.org/property/type
+Volcanic group,http://dbpedia.org/property/volcanicGroup
+Link from a Wikipage to an external page,http://dbpedia.org/ontology/wikiPageExternalLink
+Aug high C,http://dbpedia.org/property/augHighC
+align,http://dbpedia.org/property/align
+gridref,http://dbpedia.org/property/gridref
+latNS,http://dbpedia.org/property/latns
+draft,http://dbpedia.org/ontology/draft
+range long EW,http://dbpedia.org/property/rangeLongEw
+isolation mi,http://dbpedia.org/property/isolationMi
+range long d,http://dbpedia.org/property/rangeLongD
+diameter,http://dbpedia.org/property/diameter
+parent peak,http://dbpedia.org/property/parentPeak
+coordinates,http://dbpedia.org/property/coordinates
+location,http://dbpedia.org/property/location
+parent,http://dbpedia.org/property/parent
+company slogan,http://dbpedia.org/property/companySlogan
+is part of,http://dbpedia.org/ontology/isPartOf
+frequency of publication,http://dbpedia.org/ontology/frequencyOfPublication
+Jul low C,http://dbpedia.org/property/julLowC
+country,http://dbpedia.org/property/country
+long seconds,http://dbpedia.org/property/longSeconds
+image size,http://dbpedia.org/property/imageSize
+image,http://dbpedia.org/property/image
+length orientation,http://dbpedia.org/property/lengthOrientation
+province,http://dbpedia.org/ontology/province
+position,http://dbpedia.org/property/position
+mountain range,http://dbpedia.org/ontology/mountainRange
+photo width,http://dbpedia.org/property/photoWidth
+postal code,http://dbpedia.org/ontology/postalCode
+easiest route,http://dbpedia.org/property/easiestRoute
+rr,http://dbpedia.org/property/rr
+participants,http://dbpedia.org/property/participants
+spouse,http://dbpedia.org/property/spouse
+time zone,http://dbpedia.org/ontology/timeZone
+district,http://dbpedia.org/property/district
+parents,http://dbpedia.org/property/parents
+birth year,http://dbpedia.org/ontology/birthYear
+wha draft team,http://dbpedia.org/ontology/whaDraftTeam
+native name lang,http://dbpedia.org/property/nativeNameLang
+lat direction,http://dbpedia.org/property/latDirection
+long degrees,http://dbpedia.org/property/longDegrees
+active years start year,http://dbpedia.org/ontology/activeYearsStartYear
+isolation km,http://dbpedia.org/property/isolationKm
+post town,http://dbpedia.org/property/postTown
+Jan high C,http://dbpedia.org/property/janHighC
+map caption,http://dbpedia.org/property/mapCaption
+państwo,http://dbpedia.org/ontology/locationCountry
+coordinates region,http://dbpedia.org/property/coordinatesRegion
+range lat d,http://dbpedia.org/property/rangeLatD
+established,http://dbpedia.org/property/established
+country,http://dbpedia.org/ontology/country
+longm,http://dbpedia.org/property/longm
+industry,http://dbpedia.org/property/industry
+longs,http://dbpedia.org/property/longs
+Dec low C,http://dbpedia.org/property/decLowC
+located in area,http://dbpedia.org/ontology/locatedInArea
+longd,http://dbpedia.org/property/longd
+ends,http://dbpedia.org/property/ends
+Snowfall,http://dbpedia.org/property/snowfall
+shoots,http://dbpedia.org/ontology/shoots
+age,http://dbpedia.org/property/age
+height (μ),http://dbpedia.org/ontology/height
+long EW,http://dbpedia.org/property/longEw
+discipline,http://dbpedia.org/ontology/discipline
+long direction,http://dbpedia.org/property/longDirection
+pushpin relief,http://dbpedia.org/property/pushpinRelief
+thumbnail,http://dbpedia.org/ontology/thumbnail
+begins,http://dbpedia.org/property/begins
+photo,http://dbpedia.org/property/photo
+number trails,http://dbpedia.org/property/numberTrails
+region type,http://dbpedia.org/property/regionType
+Aug low C,http://dbpedia.org/property/augLowC
+mark,http://dbpedia.org/property/mark
+state,http://dbpedia.org/ontology/state
+owner,http://dbpedia.org/ontology/owner
+image width,http://dbpedia.org/property/imageWidth
+long m,http://dbpedia.org/property/longM
+long s,http://dbpedia.org/property/longS
+maximum elevation (μ),http://dbpedia.org/ontology/maximumElevation
+NRHP Reference Number,http://dbpedia.org/ontology/nrhpReferenceNumber
+architecture,http://dbpedia.org/property/architecture
+long d,http://dbpedia.org/property/longD
+region,http://dbpedia.org/ontology/region
+isolation ref,http://dbpedia.org/property/isolationRef
+publisher,http://dbpedia.org/ontology/publisher
+titlestyle,http://dbpedia.org/property/titlestyle
+Vertical Drop,http://dbpedia.org/property/verticalDrop
+Latitude,http://dbpedia.org/property/latitude
+Jul high C,http://dbpedia.org/property/julHighC
+longEW,http://dbpedia.org/property/longew
+order,http://dbpedia.org/property/order
+label position,http://dbpedia.org/property/labelPosition
+grid reference,http://dbpedia.org/ontology/gridReference
+format,http://dbpedia.org/property/format
+Nov low C,http://dbpedia.org/property/novLowC
+height ft,http://dbpedia.org/property/heightFt
+normal route,http://dbpedia.org/property/normalRoute
+category,http://dbpedia.org/property/category
+liftsystem,http://dbpedia.org/property/liftsystem
+city type,http://dbpedia.org/property/cityType
+blank label,http://dbpedia.org/property/blankLabel
+date,http://dbpedia.org/property/date
+isolation,http://dbpedia.org/property/isolation
+source place,http://dbpedia.org/ontology/sourcePlace
+logo,http://dbpedia.org/property/logo
+auto,http://dbpedia.org/property/auto
+source ,http://dbpedia.org/property/source
+subdivision type,http://dbpedia.org/property/subdivisionType
+eruption date,http://dbpedia.org/ontology/eruptionYear
+Feb low C,http://dbpedia.org/property/febLowC
+static image,http://dbpedia.org/property/staticImage
+nrhp type,http://dbpedia.org/property/nrhpType
+synonym,http://dbpedia.org/ontology/synonym
+Dec high C,http://dbpedia.org/property/decHighC
+area total (m2),http://dbpedia.org/ontology/areaTotal
+content,http://dbpedia.org/property/content
+first ascent,http://dbpedia.org/property/firstAscent
+highest,http://dbpedia.org/property/highest
+area code,http://dbpedia.org/ontology/areaCode
+administrator,http://dbpedia.org/property/administrator
+longest run,http://dbpedia.org/property/longestRun
+population blank2 title,http://dbpedia.org/property/populationBlank2Title
+kana,http://dbpedia.org/property/kana
+Caption,http://dbpedia.org/property/caption
+photo size,http://dbpedia.org/property/photoSize
+weight (kg),http://dbpedia.org/ontology/Person/weight
+long minutes,http://dbpedia.org/property/longMinutes
+May low C,http://dbpedia.org/property/mayLowC
+elevation ft,http://dbpedia.org/property/elevationFt
+blank data,http://dbpedia.org/property/blankData
+range,http://dbpedia.org/property/range
+dates,http://dbpedia.org/property/dates
+number of restaurants,http://dbpedia.org/ontology/numberOfRestaurants
+number of rooms,http://dbpedia.org/ontology/numberOfRooms
+person that first ascented a mountain,http://dbpedia.org/ontology/firstAscentPerson
+coord type,http://dbpedia.org/property/coordType
+birth date,http://dbpedia.org/property/birthDate
+unit pref,http://dbpedia.org/property/unitPref
+skiable area,http://dbpedia.org/property/skiableArea
+district,http://dbpedia.org/ontology/district
+city,http://dbpedia.org/property/city
+image caption,http://dbpedia.org/property/imageCaption
+static image caption,http://dbpedia.org/property/staticImageCaption
+birth name,http://dbpedia.org/ontology/birthName
+pushpin label position,http://dbpedia.org/property/pushpinLabelPosition
+state type,http://dbpedia.org/property/stateType
+Jan low C,http://dbpedia.org/property/janLowC
+scale,http://dbpedia.org/property/scale
+N or S,http://dbpedia.org/property/nOrS
+iucn category,http://dbpedia.org/ontology/iucnCategory
+type,http://dbpedia.org/ontology/type
+volcanic arc/belt,http://dbpedia.org/property/volcanicArc/belt
+height,http://dbpedia.org/property/height
+Apr high C,http://dbpedia.org/property/aprHighC
+skhanja,http://dbpedia.org/property/skhanja
+locmapin,http://dbpedia.org/property/locmapin
+map width,http://dbpedia.org/property/mapWidth
+lat NS,http://dbpedia.org/property/latNs
+location,http://dbpedia.org/ontology/location
+birth place,http://dbpedia.org/ontology/birthPlace
+romaji,http://dbpedia.org/property/romaji
+tp,http://dbpedia.org/property/tp
+river mouth,http://dbpedia.org/ontology/riverMouth
+height in,http://dbpedia.org/property/heightIn
+coordinates display,http://dbpedia.org/property/coordinatesDisplay
+Rock,http://dbpedia.org/property/rock
+reason,http://dbpedia.org/property/reason
+pushpin map,http://dbpedia.org/property/pushpinMap
+population blank1 title,http://dbpedia.org/property/populationBlank1Title
+before,http://dbpedia.org/property/before
+photo alt,http://dbpedia.org/property/photoAlt
+Sep low C,http://dbpedia.org/property/sepLowC
+summit name,http://dbpedia.org/property/summitName
+year of first ascent,http://dbpedia.org/ontology/firstAscentYear
+translation,http://dbpedia.org/property/translation
+former team,http://dbpedia.org/ontology/formerTeam
+range lat NS,http://dbpedia.org/property/rangeLatNs
+free type,http://dbpedia.org/property/freeType
+mark width,http://dbpedia.org/property/markWidth
+y,http://dbpedia.org/property/y
+x,http://dbpedia.org/property/x
+lat seconds,http://dbpedia.org/property/latSeconds
+Jun low C,http://dbpedia.org/property/junLowC
+elevation ref,http://dbpedia.org/property/elevationRef
+constituency westminster,http://dbpedia.org/property/constituencyWestminster
+skhangul,http://dbpedia.org/property/skhangul
+id,http://dbpedia.org/property/id
+E or W,http://dbpedia.org/property/eOrW
+Apr low C,http://dbpedia.org/property/aprLowC
+Oct low C,http://dbpedia.org/property/octLowC
+language,http://dbpedia.org/property/language
+Ceremonial County,http://dbpedia.org/ontology/ceremonialCounty
+Longitude,http://dbpedia.org/property/longitude
+death date,http://dbpedia.org/ontology/deathDate
+draft year,http://dbpedia.org/ontology/draftYear
+pronunciation,http://dbpedia.org/property/pronunciation
+lat degrees,http://dbpedia.org/property/latDegrees
+captionstyle,http://dbpedia.org/property/captionstyle
+hp,http://dbpedia.org/property/hp
+elevation (μ),http://dbpedia.org/ontology/elevation
+Mar high C,http://dbpedia.org/property/marHighC
+frequency,http://dbpedia.org/property/frequency
+float,http://dbpedia.org/property/float
+draft team,http://dbpedia.org/ontology/draftTeam
+history,http://dbpedia.org/property/history
+map alt,http://dbpedia.org/property/mapAlt
+status,http://dbpedia.org/property/status
+nationality,http://dbpedia.org/ontology/nationality
+geology,http://dbpedia.org/property/geology
+civil parish,http://dbpedia.org/property/civilParish
+mapsize,http://dbpedia.org/property/mapsize
+length km,http://dbpedia.org/property/lengthKm
+prominence,http://dbpedia.org/property/prominence
+Wikipage revision ID,http://dbpedia.org/ontology/wikiPageRevisionID
+circumference,http://dbpedia.org/property/circumference
+map size,http://dbpedia.org/property/mapSize
+terrainparks,http://dbpedia.org/property/terrainparks
+listing,http://dbpedia.org/property/listing
+Website,http://dbpedia.org/property/website
+National Topographic System map number,http://dbpedia.org/ontology/nationalTopographicSystemMapNumber
+founding year,http://dbpedia.org/ontology/foundingYear
+lat minutes,http://dbpedia.org/property/latMinutes
+west coord,http://dbpedia.org/property/westCoord
+nightskiing,http://dbpedia.org/property/nightskiing
+architect,http://dbpedia.org/property/architect
+grid ref Ireland,http://dbpedia.org/property/gridRefIreland
+Jun high C,http://dbpedia.org/property/junHighC
+active years end year,http://dbpedia.org/ontology/activeYearsEndYear
+display,http://dbpedia.org/property/display
+relief,http://dbpedia.org/property/relief
+grid ref UK,http://dbpedia.org/property/gridRefUk
+single line,http://dbpedia.org/property/singleLine
+weight (g),http://dbpedia.org/ontology/weight
+location city,http://dbpedia.org/ontology/locationCity
+nearest city,http://dbpedia.org/ontology/nearestCity
+UTC offset,http://dbpedia.org/ontology/utcOffset
+first,http://dbpedia.org/property/first
+wha draft year,http://dbpedia.org/property/whaDraftYear
+c,http://dbpedia.org/property/c
+after,http://dbpedia.org/property/after
+l,http://dbpedia.org/property/l
+district type,http://dbpedia.org/property/districtType
+minimum elevation (μ),http://dbpedia.org/ontology/minimumElevation
+has abstract,http://dbpedia.org/ontology/abstract
+wha draft,http://dbpedia.org/ontology/whaDraft
+venues,http://dbpedia.org/property/venues
+photo sixe,http://dbpedia.org/property/photoSixe
+picture,http://dbpedia.org/property/picture
+t,http://dbpedia.org/property/t
+w,http://dbpedia.org/property/w
+p,http://dbpedia.org/property/p
+s,http://dbpedia.org/property/s
+ruler,http://dbpedia.org/property/ruler
+lats,http://dbpedia.org/property/lats
+mr,http://dbpedia.org/property/mr
+Nov high C,http://dbpedia.org/property/novHighC
+years,http://dbpedia.org/property/years
+remarks,http://dbpedia.org/property/remarks
+latm,http://dbpedia.org/property/latm
+kanji,http://dbpedia.org/property/kanji
+source mountain,http://dbpedia.org/ontology/sourceMountain
+volcanic field,http://dbpedia.org/property/volcanicField
+width,http://dbpedia.org/property/width
+country type,http://dbpedia.org/property/countryType
+prominence (μ),http://dbpedia.org/ontology/prominence
+contentstyle,http://dbpedia.org/property/contentstyle
+occupation,http://dbpedia.org/ontology/occupation
+direction,http://dbpedia.org/property/direction
+birth date,http://dbpedia.org/ontology/birthDate
+Mar low C,http://dbpedia.org/property/marLowC
+institution,http://dbpedia.org/ontology/institution
+eponym,http://dbpedia.org/property/eponym
+state,http://dbpedia.org/property/state
+founded by,http://dbpedia.org/ontology/foundedBy
+governing body,http://dbpedia.org/property/governingBody
+north coord,http://dbpedia.org/property/northCoord
+prominence ref,http://dbpedia.org/property/prominenceRef
+last,http://dbpedia.org/property/last
+skrr,http://dbpedia.org/property/skrr
+alt name,http://dbpedia.org/property/altName
+lat s,http://dbpedia.org/property/latS
+lat m,http://dbpedia.org/property/latM
+Sep high C,http://dbpedia.org/property/sepHighC
+name,http://dbpedia.org/property/name
+Oct high C,http://dbpedia.org/property/octHighC
+children,http://dbpedia.org/property/children
+principal area,http://dbpedia.org/ontology/principalArea
+academic discipline,http://dbpedia.org/ontology/academicDiscipline
+url,http://dbpedia.org/property/url
+latd,http://dbpedia.org/property/latd
+other name,http://dbpedia.org/property/otherName
+coord display,http://dbpedia.org/property/coordDisplay
+volcanic belt,http://dbpedia.org/property/volcanicBelt
+position,http://dbpedia.org/ontology/position
+photo caption,http://dbpedia.org/property/photoCaption
+snowmaking,http://dbpedia.org/property/snowmaking
+nocat,http://dbpedia.org/property/nocat
+region,http://dbpedia.org/property/region
+map relief,http://dbpedia.org/property/mapRelief
+last eruption,http://dbpedia.org/property/lastEruption
+bodyclass,http://dbpedia.org/property/bodyclass
+vertical,http://dbpedia.org/property/vertical
+navbar,http://dbpedia.org/property/navbar
+Feb high C,http://dbpedia.org/property/febHighC
+created,http://dbpedia.org/property/created
+col,http://dbpedia.org/property/col
+lat d,http://dbpedia.org/property/latD
+elevation,http://dbpedia.org/property/elevation
+label,http://dbpedia.org/property/label
+number of suites,http://dbpedia.org/ontology/numberOfSuites
+lift capacity,http://dbpedia.org/property/liftCapacity
+May high C,http://dbpedia.org/property/mayHighC
+opening date,http://dbpedia.org/property/openingDate
+long,http://dbpedia.org/property/long
+death date,http://dbpedia.org/property/deathDate
+Wikipage redirect,http://dbpedia.org/ontology/wikiPageRedirects
+region code,http://dbpedia.org/property/regionCode
+owner,http://dbpedia.org/property/owner
+Wikipage page ID,http://dbpedia.org/ontology/wikiPageID
+homepage,http://dbpedia.org/property/homepage
+metric first,http://dbpedia.org/property/metricFirst
+owning company,http://dbpedia.org/ontology/owningCompany
+parent mountain peak,http://dbpedia.org/ontology/parentMountainPeak
+native name,http://dbpedia.org/property/nativeName
+floor count,http://dbpedia.org/ontology/floorCount
+pushpin map caption,http://dbpedia.org/property/pushpinMapCaption
+title,http://dbpedia.org/property/title
+added,http://dbpedia.org/ontology/added
+subdivision name,http://dbpedia.org/property/subdivisionName
+postcode area,http://dbpedia.org/property/postcodeArea
+lat,http://dbpedia.org/property/lat

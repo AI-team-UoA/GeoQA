@@ -1,0 +1,432 @@
+type,http://dbpedia.org/property/type
+GDP rank,http://dbpedia.org/property/gdpRank
+Apr record high F,http://dbpedia.org/property/aprRecordHighF
+access date,http://dbpedia.org/property/accessDate
+latNS,http://dbpedia.org/property/latns
+university,http://dbpedia.org/property/university
+sectors,http://dbpedia.org/property/sectors
+region served,http://dbpedia.org/ontology/regionServed
+coordinates,http://dbpedia.org/property/coordinates
+service,http://dbpedia.org/property/service
+long seconds,http://dbpedia.org/property/longSeconds
+standard,http://dbpedia.org/property/standard
+architect OR builder,http://dbpedia.org/property/architectOrBuilder
+chinese,http://dbpedia.org/property/chinese
+position,http://dbpedia.org/property/position
+employees,http://dbpedia.org/property/employees
+industries,http://dbpedia.org/property/industries
+affiliation,http://dbpedia.org/property/affiliation
+rr,http://dbpedia.org/property/rr
+labels,http://dbpedia.org/property/labels
+certification,http://dbpedia.org/property/certification
+gross external debt,http://dbpedia.org/property/grossExternalDebt
+closing date,http://dbpedia.org/ontology/closingDate
+military unit size,http://dbpedia.org/ontology/militaryUnitSize
+manufacturer,http://dbpedia.org/ontology/manufacturer
+bus stands,http://dbpedia.org/property/busStands
+h2-number,http://dbpedia.org/property/h2Number
+article,http://dbpedia.org/property/article
+lists,http://dbpedia.org/property/lists
+lat direction,http://dbpedia.org/property/latDirection
+parent company,http://dbpedia.org/ontology/parentCompany
+next,http://dbpedia.org/property/next
+państwo,http://dbpedia.org/ontology/locationCountry
+established,http://dbpedia.org/property/established
+key people,http://dbpedia.org/property/keyPeople
+capacity,http://dbpedia.org/property/capacity
+Apr precipitation inch,http://dbpedia.org/property/aprPrecipitationInch
+cianame,http://dbpedia.org/property/cianame
+gdp,http://dbpedia.org/property/gdp
+mark,http://dbpedia.org/property/mark
+state,http://dbpedia.org/ontology/state
+rector,http://dbpedia.org/property/rector
+native category,http://dbpedia.org/property/nativeCategory
+Aug low F,http://dbpedia.org/property/augLowF
+map type,http://dbpedia.org/property/mapType
+patron,http://dbpedia.org/property/patron
+imgsize,http://dbpedia.org/property/imgsize
+NRHP Reference Number,http://dbpedia.org/ontology/nrhpReferenceNumber
+Southwest,http://dbpedia.org/property/southwest
+architecture,http://dbpedia.org/property/architecture
+address,http://dbpedia.org/property/address
+industry,http://dbpedia.org/ontology/industry
+international,http://dbpedia.org/property/international
+titlestyle,http://dbpedia.org/property/titlestyle
+longEW,http://dbpedia.org/property/longew
+length alt,http://dbpedia.org/property/lengthAlt
+weapons,http://dbpedia.org/property/weapons
+data,http://dbpedia.org/property/data
+h2-surface,http://dbpedia.org/property/h2Surface
+date,http://dbpedia.org/property/date
+founder,http://dbpedia.org/property/founder
+founded,http://dbpedia.org/property/founded
+thrust alt,http://dbpedia.org/property/thrustAlt
+operator,http://dbpedia.org/ontology/operator
+affiliation,http://dbpedia.org/ontology/affiliation
+Wiki-Links,http://dbpedia.org/property/wikiLinks
+etymology type,http://dbpedia.org/property/etymologyType
+Aug precipitation inch,http://dbpedia.org/property/augPrecipitationInch
+labor,http://dbpedia.org/property/labor
+director,http://dbpedia.org/property/director
+txt,http://dbpedia.org/property/txt
+synonym,http://dbpedia.org/ontology/synonym
+coord parameters,http://dbpedia.org/property/coordParameters
+built,http://dbpedia.org/property/built
+empty weight kg,http://dbpedia.org/property/emptyWeightKg
+closing year,http://dbpedia.org/ontology/closingYear
+per capita,http://dbpedia.org/property/perCapita
+number of undergraduate students,http://dbpedia.org/ontology/numberOfUndergraduateStudents
+inaccurate,http://dbpedia.org/property/inaccurate
+architectural style,http://dbpedia.org/ontology/architecturalStyle
+Caption,http://dbpedia.org/property/caption
+long minutes,http://dbpedia.org/property/longMinutes
+thrust main,http://dbpedia.org/property/thrustMain
+Emergency department,http://dbpedia.org/property/emergencyDepartment
+demolished,http://dbpedia.org/property/demolished
+battle,http://dbpedia.org/ontology/battle
+empty weight lb,http://dbpedia.org/property/emptyWeightLb
+closed,http://dbpedia.org/property/closed
+founding date,http://dbpedia.org/ontology/foundingDate
+district,http://dbpedia.org/ontology/district
+image caption,http://dbpedia.org/property/imageCaption
+headquarter,http://dbpedia.org/ontology/headquarter
+type,http://dbpedia.org/ontology/type
+designated other1 name,http://dbpedia.org/property/designatedOther1Name
+max speed main,http://dbpedia.org/property/maxSpeedMain
+revenues,http://dbpedia.org/property/revenues
+location,http://dbpedia.org/ontology/location
+bodystyle,http://dbpedia.org/property/bodystyle
+number of staff,http://dbpedia.org/ontology/numberOfStaff
+coordinates display,http://dbpedia.org/property/coordinatesDisplay
+year of construction,http://dbpedia.org/ontology/yearOfConstruction
+reason,http://dbpedia.org/property/reason
+pushpin map,http://dbpedia.org/property/pushpinMap
+injuries,http://dbpedia.org/property/injuries
+fix-attempted,http://dbpedia.org/property/fixAttempted
+eng1 kw,http://dbpedia.org/property/eng1Kw
+free label,http://dbpedia.org/property/freeLabel
+export-partners,http://dbpedia.org/property/exportPartners
+publicly accessible,http://dbpedia.org/ontology/publiclyAccessible
+designation1 number,http://dbpedia.org/property/designation1Number
+origin,http://dbpedia.org/ontology/origin
+Apr low F,http://dbpedia.org/property/aprLowF
+funding,http://dbpedia.org/property/funding
+designated other1 textcolor,http://dbpedia.org/property/designatedOther1Textcolor
+ceiling ft,http://dbpedia.org/property/ceilingFt
+Aug snow inch,http://dbpedia.org/property/augSnowInch
+logo size,http://dbpedia.org/property/logoSize
+gross weight lb,http://dbpedia.org/property/grossWeightLb
+free text,http://dbpedia.org/property/freeText
+contact,http://dbpedia.org/property/contact
+Mobile Health Services,http://dbpedia.org/property/mobileHealthServices
+span ft,http://dbpedia.org/property/spanFt
+Longitude,http://dbpedia.org/property/longitude
+pushpin mapsize,http://dbpedia.org/property/pushpinMapsize
+death date,http://dbpedia.org/ontology/deathDate
+gross weight kg,http://dbpedia.org/property/grossWeightKg
+bot,http://dbpedia.org/property/bot
+imperial first,http://dbpedia.org/property/imperialFirst
+lat degrees,http://dbpedia.org/property/latDegrees
+elevation (μ),http://dbpedia.org/ontology/elevation
+motto,http://dbpedia.org/ontology/motto
+designated other2 abbr,http://dbpedia.org/property/designatedOther2Abbr
+municipality,http://dbpedia.org/ontology/municipality
+council,http://dbpedia.org/property/council
+height alt,http://dbpedia.org/property/heightAlt
+designated other1 date,http://dbpedia.org/property/designatedOther1Date
+status,http://dbpedia.org/property/status
+foundation place,http://dbpedia.org/ontology/foundationPlace
+designation,http://dbpedia.org/property/designation
+labelstyle,http://dbpedia.org/property/labelstyle
+eng1 number,http://dbpedia.org/property/eng1Number
+smartcardstatus,http://dbpedia.org/property/smartcardstatus
+length main,http://dbpedia.org/property/lengthMain
+lang,http://dbpedia.org/property/lang
+designated other1 link,http://dbpedia.org/property/designatedOther1Link
+North,http://dbpedia.org/property/north
+Hospital Type,http://dbpedia.org/property/hospitalType
+h2-length-f,http://dbpedia.org/property/h2LengthF
+area (m2),http://dbpedia.org/ontology/area
+Northwest,http://dbpedia.org/property/northwest
+other links,http://dbpedia.org/property/otherLinks
+display,http://dbpedia.org/property/display
+key person,http://dbpedia.org/ontology/keyPerson
+abovestyle,http://dbpedia.org/property/abovestyle
+relief,http://dbpedia.org/property/relief
+weight (g),http://dbpedia.org/ontology/weight
+location city,http://dbpedia.org/ontology/locationCity
+basin countries,http://dbpedia.org/property/basinCountries
+nearest city,http://dbpedia.org/ontology/nearestCity
+cty,http://dbpedia.org/property/cty
+designated other1 color,http://dbpedia.org/property/designatedOther1Color
+nrhp,http://dbpedia.org/property/nrhp
+coordinates format,http://dbpedia.org/property/coordinatesFormat
+cruise speed mph,http://dbpedia.org/property/cruiseSpeedMph
+en text,http://dbpedia.org/property/enText
+dean UG,http://dbpedia.org/property/deanUg
+has abstract,http://dbpedia.org/ontology/abstract
+growth,http://dbpedia.org/property/growth
+outflow,http://dbpedia.org/property/outflow
+background,http://dbpedia.org/property/background
+lats,http://dbpedia.org/property/lats
+Org/Group,http://dbpedia.org/property/org/group
+speciality,http://dbpedia.org/property/speciality
+latm,http://dbpedia.org/property/latm
+poverty,http://dbpedia.org/property/poverty
+dean PG,http://dbpedia.org/property/deanPg
+Affiliated Hospitals,http://dbpedia.org/property/affiliatedHospitals
+direction,http://dbpedia.org/property/direction
+author type,http://dbpedia.org/property/authorType
+state,http://dbpedia.org/property/state
+Executive Staff,http://dbpedia.org/property/executiveStaff
+yearscrapped,http://dbpedia.org/property/yearscrapped
+desc,http://dbpedia.org/property/desc
+climb rate ftmin,http://dbpedia.org/property/climbRateFtmin
+range miles,http://dbpedia.org/property/rangeMiles
+designated other2 date,http://dbpedia.org/property/designatedOther2Date
+name,http://dbpedia.org/property/name
+Motto,http://dbpedia.org/property/motto
+url,http://dbpedia.org/property/url
+Aug record low F,http://dbpedia.org/property/augRecordLowF
+latd,http://dbpedia.org/property/latd
+h1-surface,http://dbpedia.org/property/h1Surface
+coord display,http://dbpedia.org/property/coordDisplay
+focus,http://dbpedia.org/property/focus
+climb rate ms,http://dbpedia.org/property/climbRateMs
+Southeast,http://dbpedia.org/property/southeast
+subsidiary,http://dbpedia.org/ontology/subsidiary
+region,http://dbpedia.org/property/region
+garrison,http://dbpedia.org/ontology/garrison
+export-goods,http://dbpedia.org/property/exportGoods
+fatalities,http://dbpedia.org/property/fatalities
+classification,http://dbpedia.org/property/classification
+loaded weight alt,http://dbpedia.org/property/loadedWeightAlt
+predecessor,http://dbpedia.org/ontology/predecessor
+abbreviation,http://dbpedia.org/ontology/abbreviation
+imports,http://dbpedia.org/property/imports
+vertical-align,http://dbpedia.org/property/verticalAlign
+col,http://dbpedia.org/property/col
+h1-length-f,http://dbpedia.org/property/h1LengthF
+campus,http://dbpedia.org/property/campus
+long,http://dbpedia.org/property/long
+course,http://dbpedia.org/property/course
+enginetype,http://dbpedia.org/property/enginetype
+lond,http://dbpedia.org/property/lond
+Wikipage redirect,http://dbpedia.org/ontology/wikiPageRedirects
+shore length (μ),http://dbpedia.org/ontology/shoreLength
+Wikipage page ID,http://dbpedia.org/ontology/wikiPageID
+network,http://dbpedia.org/property/network
+h1-length-m,http://dbpedia.org/property/h1LengthM
+Alt,http://dbpedia.org/property/alt
+formation year,http://dbpedia.org/ontology/formationYear
+national origin,http://dbpedia.org/property/nationalOrigin
+added,http://dbpedia.org/ontology/added
+Apr snow inch,http://dbpedia.org/property/aprSnowInch
+developed into,http://dbpedia.org/property/developedInto
+lat,http://dbpedia.org/property/lat
+status,http://dbpedia.org/ontology/status
+expenses,http://dbpedia.org/property/expenses
+Link from a Wikipage to an external page,http://dbpedia.org/ontology/wikiPageExternalLink
+operator,http://dbpedia.org/property/operator
+length m,http://dbpedia.org/property/lengthM
+number of props,http://dbpedia.org/property/numberOfProps
+import-goods,http://dbpedia.org/property/importGoods
+access,http://dbpedia.org/ontology/access
+carbody,http://dbpedia.org/property/carbody
+edbr,http://dbpedia.org/property/edbr
+Aug high F,http://dbpedia.org/property/augHighF
+HealthCare,http://dbpedia.org/property/healthcare
+location,http://dbpedia.org/property/location
+native language,http://dbpedia.org/property/nativeLanguage
+designation1 date,http://dbpedia.org/property/designation1Date
+Emergency,http://dbpedia.org/property/emergency
+area served,http://dbpedia.org/property/areaServed
+text,http://dbpedia.org/property/text
+country,http://dbpedia.org/property/country
+image size,http://dbpedia.org/property/imageSize
+image,http://dbpedia.org/property/image
+district,http://dbpedia.org/property/district
+loaded weight main,http://dbpedia.org/property/loadedWeightMain
+commander1 label,http://dbpedia.org/property/commander1Label
+primary user,http://dbpedia.org/property/primaryUser
+lang title,http://dbpedia.org/property/langTitle
+long degrees,http://dbpedia.org/property/longDegrees
+active years start year,http://dbpedia.org/ontology/activeYearsStartYear
+map caption,http://dbpedia.org/property/mapCaption
+imagesize,http://dbpedia.org/property/imagesize
+shore length (km),http://dbpedia.org/ontology/Lake/shoreLength
+military branch,http://dbpedia.org/ontology/militaryBranch
+iso region,http://dbpedia.org/property/isoRegion
+h1-number,http://dbpedia.org/property/h1Number
+country,http://dbpedia.org/ontology/country
+longm,http://dbpedia.org/property/longm
+longs,http://dbpedia.org/property/longs
+industry,http://dbpedia.org/property/industry
+South,http://dbpedia.org/property/south
+revenue,http://dbpedia.org/property/revenue
+longd,http://dbpedia.org/property/longd
+Health Care,http://dbpedia.org/property/healthCare
+long direction,http://dbpedia.org/property/longDirection
+thumbnail,http://dbpedia.org/ontology/thumbnail
+designation1 offname,http://dbpedia.org/property/designation1Offname
+inflation,http://dbpedia.org/property/inflation
+owner,http://dbpedia.org/ontology/owner
+region,http://dbpedia.org/ontology/region
+inflow,http://dbpedia.org/ontology/inflow
+Latitude,http://dbpedia.org/property/latitude
+credit,http://dbpedia.org/property/credit
+standards,http://dbpedia.org/property/standards
+sign,http://dbpedia.org/property/sign
+pinyin,http://dbpedia.org/property/pinyin
+leaderFunction,http://dbpedia.org/ontology/leaderFunction
+logo,http://dbpedia.org/property/logo
+ceo,http://dbpedia.org/property/ceo
+auto,http://dbpedia.org/property/auto
+bed count,http://dbpedia.org/ontology/bedCount
+designated other2 color,http://dbpedia.org/property/designatedOther2Color
+West,http://dbpedia.org/property/west
+length ft,http://dbpedia.org/property/lengthFt
+organs,http://dbpedia.org/property/organs
+engine,http://dbpedia.org/property/engine
+nrhp type,http://dbpedia.org/property/nrhpType
+max speed kmh,http://dbpedia.org/property/maxSpeedKmh
+area total (m2),http://dbpedia.org/ontology/areaTotal
+span in,http://dbpedia.org/property/spanIn
+phone,http://dbpedia.org/property/phone
+opened,http://dbpedia.org/property/opened
+kana,http://dbpedia.org/property/kana
+city,http://dbpedia.org/ontology/city
+currency,http://dbpedia.org/property/currency
+mode,http://dbpedia.org/property/mode
+style,http://dbpedia.org/property/style
+Slogan,http://dbpedia.org/property/slogan
+designated other1 abbr,http://dbpedia.org/property/designatedOther1Abbr
+mission,http://dbpedia.org/property/mission
+province,http://dbpedia.org/property/province
+survey,http://dbpedia.org/property/survey
+en,http://dbpedia.org/property/en
+city,http://dbpedia.org/property/city
+designated nrhp type,http://dbpedia.org/property/designatedNrhpType
+built for,http://dbpedia.org/property/builtFor
+Helipad,http://dbpedia.org/property/helipad
+Apr high F,http://dbpedia.org/property/aprHighF
+retired,http://dbpedia.org/property/retired
+registration id,http://dbpedia.org/property/registrationId
+related,http://dbpedia.org/property/related
+headerstyle,http://dbpedia.org/property/headerstyle
+locmapin,http://dbpedia.org/property/locmapin
+romaji,http://dbpedia.org/property/romaji
+Northeast,http://dbpedia.org/property/northeast
+Centre,http://dbpedia.org/property/centre
+Vice-Chancellor,http://dbpedia.org/property/viceChancellor
+crew,http://dbpedia.org/property/crew
+length in,http://dbpedia.org/property/lengthIn
+material,http://dbpedia.org/ontology/material
+mpsub,http://dbpedia.org/property/mpsub
+max speed mph,http://dbpedia.org/property/maxSpeedMph
+footnotes,http://dbpedia.org/property/footnotes
+location country,http://dbpedia.org/property/locationCountry
+cap,http://dbpedia.org/property/cap
+lat seconds,http://dbpedia.org/property/latSeconds
+first flight,http://dbpedia.org/property/firstFlight
+product,http://dbpedia.org/property/product
+id,http://dbpedia.org/property/id
+unemployment,http://dbpedia.org/property/unemployment
+language,http://dbpedia.org/property/language
+span main,http://dbpedia.org/property/spanMain
+captionstyle,http://dbpedia.org/property/captionstyle
+Beds,http://dbpedia.org/property/beds
+below,http://dbpedia.org/property/below
+opening date,http://dbpedia.org/ontology/openingDate
+exports,http://dbpedia.org/property/exports
+divisions,http://dbpedia.org/property/divisions
+float,http://dbpedia.org/property/float
+Serves,http://dbpedia.org/property/serves
+map alt,http://dbpedia.org/property/mapAlt
+eng1 type,http://dbpedia.org/property/eng1Type
+ceiling alt,http://dbpedia.org/property/ceilingAlt
+coord format,http://dbpedia.org/property/coordFormat
+outflow,http://dbpedia.org/ontology/outflow
+map locator y,http://dbpedia.org/property/mapLocatorY
+map locator x,http://dbpedia.org/property/mapLocatorX
+designated other2 name,http://dbpedia.org/property/designatedOther2Name
+Apr record low F,http://dbpedia.org/property/aprRecordLowF
+Wikipage revision ID,http://dbpedia.org/ontology/wikiPageRevisionID
+header,http://dbpedia.org/property/header
+susperp,http://dbpedia.org/property/susperp
+map size,http://dbpedia.org/property/mapSize
+size,http://dbpedia.org/property/size
+belowstyle,http://dbpedia.org/property/belowstyle
+Website,http://dbpedia.org/property/website
+founding year,http://dbpedia.org/ontology/foundingYear
+number built,http://dbpedia.org/ontology/numberBuilt
+restored,http://dbpedia.org/property/restored
+lat minutes,http://dbpedia.org/property/latMinutes
+eng1 hp,http://dbpedia.org/property/eng1Hp
+architect,http://dbpedia.org/property/architect
+restored by,http://dbpedia.org/property/restoredBy
+wing area sqm,http://dbpedia.org/property/wingAreaSqm
+East,http://dbpedia.org/property/east
+organization,http://dbpedia.org/property/organization
+e,http://dbpedia.org/property/e
+first,http://dbpedia.org/property/first
+c,http://dbpedia.org/property/c
+n,http://dbpedia.org/property/n
+j,http://dbpedia.org/property/j
+weight (kg),http://dbpedia.org/ontology/MeanOfTransportation/weight
+t,http://dbpedia.org/property/t
+ceiling main,http://dbpedia.org/property/ceilingMain
+footer,http://dbpedia.org/property/footer
+w,http://dbpedia.org/property/w
+current commander,http://dbpedia.org/property/currentCommander
+p,http://dbpedia.org/property/p
+max speed alt,http://dbpedia.org/property/maxSpeedAlt
+number of jets,http://dbpedia.org/property/numberOfJets
+s,http://dbpedia.org/property/s
+ceiling m,http://dbpedia.org/property/ceilingM
+maxspeed,http://dbpedia.org/property/maxspeed
+Aug record high F,http://dbpedia.org/property/augRecordHighF
+span alt,http://dbpedia.org/property/spanAlt
+import-partners,http://dbpedia.org/property/importPartners
+width,http://dbpedia.org/property/width
+hangul,http://dbpedia.org/property/hangul
+similar aircraft,http://dbpedia.org/property/similarAircraft
+command structure,http://dbpedia.org/ontology/commandStructure
+birth date,http://dbpedia.org/ontology/birthDate
+founded date,http://dbpedia.org/property/foundedDate
+architect,http://dbpedia.org/ontology/architect
+founded by,http://dbpedia.org/ontology/foundedBy
+governing body,http://dbpedia.org/property/governingBody
+debt,http://dbpedia.org/property/debt
+length (μ),http://dbpedia.org/ontology/length
+area,http://dbpedia.org/property/area
+General Director,http://dbpedia.org/property/generalDirector
+above,http://dbpedia.org/property/above
+route,http://dbpedia.org/property/route
+type of jet,http://dbpedia.org/property/typeOfJet
+partof,http://dbpedia.org/property/partof
+nocat,http://dbpedia.org/property/nocat
+author,http://dbpedia.org/property/author
+border,http://dbpedia.org/property/border
+opening year,http://dbpedia.org/ontology/openingYear
+span m,http://dbpedia.org/property/spanM
+wing area sqft,http://dbpedia.org/property/wingAreaSqft
+ImageAlt,http://dbpedia.org/property/imagealt
+term,http://dbpedia.org/property/term
+num,http://dbpedia.org/property/num
+label,http://dbpedia.org/property/label
+coordinates scale,http://dbpedia.org/property/coordinatesScale
+height main,http://dbpedia.org/property/heightMain
+photos,http://dbpedia.org/property/photos
+commander,http://dbpedia.org/property/commander
+partof refnum,http://dbpedia.org/property/partofRefnum
+bus operators,http://dbpedia.org/property/busOperators
+homepage,http://dbpedia.org/property/homepage
+managed by,http://dbpedia.org/property/managedBy
+number of postgraduate students,http://dbpedia.org/ontology/numberOfPostgraduateStudents
+previous,http://dbpedia.org/property/previous
+native name,http://dbpedia.org/property/nativeName
+image alt,http://dbpedia.org/property/imageAlt
+specialty,http://dbpedia.org/property/specialty
+title,http://dbpedia.org/property/title
+width (μ),http://dbpedia.org/ontology/width

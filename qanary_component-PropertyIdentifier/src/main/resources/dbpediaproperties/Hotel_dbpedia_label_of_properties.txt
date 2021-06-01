@@ -1,0 +1,249 @@
+type,http://dbpedia.org/property/type
+Link from a Wikipage to an external page,http://dbpedia.org/ontology/wikiPageExternalLink
+align,http://dbpedia.org/property/align
+operator,http://dbpedia.org/property/operator
+latNS,http://dbpedia.org/property/latns
+Year built,http://dbpedia.org/property/yearBuilt
+architecture firm,http://dbpedia.org/property/architectureFirm
+coordinates,http://dbpedia.org/property/coordinates
+floor count,http://dbpedia.org/property/floorCount
+cost ($),http://dbpedia.org/ontology/cost
+location,http://dbpedia.org/property/location
+designation1 date,http://dbpedia.org/property/designation1Date
+lon deg,http://dbpedia.org/property/lonDeg
+longest Hole,http://dbpedia.org/property/longestHole
+text,http://dbpedia.org/property/text
+country,http://dbpedia.org/property/country
+image size,http://dbpedia.org/property/imageSize
+groundbreaking date,http://dbpedia.org/property/groundbreakingDate
+image,http://dbpedia.org/property/image
+logo width,http://dbpedia.org/property/logoWidth
+IT HEAD,http://dbpedia.org/property/itHead
+position,http://dbpedia.org/property/position
+renovation date,http://dbpedia.org/property/renovationDate
+affiliation,http://dbpedia.org/property/affiliation
+labels,http://dbpedia.org/property/labels
+topped out date,http://dbpedia.org/property/toppedOutDate
+voy,http://dbpedia.org/property/voy
+closing date,http://dbpedia.org/ontology/closingDate
+luxury residences,http://dbpedia.org/property/luxuryResidences
+spacing,http://dbpedia.org/property/spacing
+lat deg,http://dbpedia.org/property/latDeg
+address,http://dbpedia.org/ontology/address
+skyscraperpage id,http://dbpedia.org/property/skyscraperpageId
+golf courses,http://dbpedia.org/property/golfCourses
+map caption,http://dbpedia.org/property/mapCaption
+management,http://dbpedia.org/property/management
+holes,http://dbpedia.org/property/holes
+coordinates region,http://dbpedia.org/property/coordinatesRegion
+iso region,http://dbpedia.org/property/isoRegion
+lat sec,http://dbpedia.org/property/latSec
+lat min,http://dbpedia.org/property/latMin
+longm,http://dbpedia.org/property/longm
+AAA diamonds,http://dbpedia.org/property/aaaDiamonds
+longs,http://dbpedia.org/property/longs
+key people,http://dbpedia.org/property/keyPeople
+groundbreaking,http://dbpedia.org/property/groundbreaking
+South,http://dbpedia.org/property/south
+longd,http://dbpedia.org/property/longd
+height (μ),http://dbpedia.org/ontology/height
+chain,http://dbpedia.org/property/chain
+pushpin relief,http://dbpedia.org/property/pushpinRelief
+thumbnail,http://dbpedia.org/ontology/thumbnail
+designation1 offname,http://dbpedia.org/property/designation1Offname
+location town,http://dbpedia.org/property/locationTown
+mark,http://dbpedia.org/property/mark
+number of water slides,http://dbpedia.org/property/numberOfWaterSlides
+map type,http://dbpedia.org/property/mapType
+owner,http://dbpedia.org/ontology/owner
+image width,http://dbpedia.org/property/imageWidth
+Center,http://dbpedia.org/property/center
+successor,http://dbpedia.org/property/successor
+NRHP Reference Number,http://dbpedia.org/ontology/nrhpReferenceNumber
+architecture,http://dbpedia.org/property/architecture
+Latitude,http://dbpedia.org/property/latitude
+longEW,http://dbpedia.org/property/longew
+wikt,http://dbpedia.org/property/wikt
+elevator count,http://dbpedia.org/property/elevatorCount
+lat dir,http://dbpedia.org/property/latDir
+date,http://dbpedia.org/property/date
+designer,http://dbpedia.org/property/designer
+alternate names,http://dbpedia.org/property/alternateNames
+logo,http://dbpedia.org/property/logo
+manager,http://dbpedia.org/property/manager
+number of floors,http://dbpedia.org/property/numberOfFloors
+founder,http://dbpedia.org/property/founder
+source ,http://dbpedia.org/property/source
+tournaments,http://dbpedia.org/property/tournaments
+number of parking spaces,http://dbpedia.org/ontology/numberOfParkingSpaces
+collapsible,http://dbpedia.org/property/collapsible
+West,http://dbpedia.org/property/west
+location city,http://dbpedia.org/property/locationCity
+floor area,http://dbpedia.org/property/floorArea
+floors,http://dbpedia.org/property/floors
+closing date,http://dbpedia.org/property/closingDate
+built,http://dbpedia.org/property/built
+opened,http://dbpedia.org/property/opened
+architectural style,http://dbpedia.org/ontology/architecturalStyle
+complex,http://dbpedia.org/property/complex
+facebook,http://dbpedia.org/property/facebook
+Caption,http://dbpedia.org/property/caption
+completion date,http://dbpedia.org/property/completionDate
+highest end,http://dbpedia.org/property/highestEnd
+number of restaurants,http://dbpedia.org/ontology/numberOfRestaurants
+number of rooms,http://dbpedia.org/ontology/numberOfRooms
+number of event spaces,http://dbpedia.org/property/numberOfEventSpaces
+city,http://dbpedia.org/property/city
+investor,http://dbpedia.org/property/investor
+image caption,http://dbpedia.org/property/imageCaption
+built for,http://dbpedia.org/property/builtFor
+pushpin label position,http://dbpedia.org/property/pushpinLabelPosition
+original use,http://dbpedia.org/property/originalUse
+height,http://dbpedia.org/property/height
+other designers,http://dbpedia.org/property/otherDesigners
+locmapin,http://dbpedia.org/property/locmapin
+location,http://dbpedia.org/ontology/location
+number of restaurants,http://dbpedia.org/property/numberOfRestaurants
+coordinates display,http://dbpedia.org/property/coordinatesDisplay
+year of construction,http://dbpedia.org/ontology/yearOfConstruction
+pushpin map,http://dbpedia.org/property/pushpinMap
+number of villas,http://dbpedia.org/property/numberOfVillas
+number of pub,http://dbpedia.org/property/numberOfPub
+before,http://dbpedia.org/property/before
+golf facility name,http://dbpedia.org/property/golfFacilityName
+par,http://dbpedia.org/property/par
+building start date,http://dbpedia.org/ontology/buildingStartDate
+developer,http://dbpedia.org/property/developer
+perrow,http://dbpedia.org/property/perrow
+mpsub,http://dbpedia.org/property/mpsub
+Elevators,http://dbpedia.org/property/elevators
+footnotes,http://dbpedia.org/property/footnotes
+location country,http://dbpedia.org/property/locationCountry
+LEED certification,http://dbpedia.org/property/leedCertification
+establishment,http://dbpedia.org/property/establishment
+number of penthouses,http://dbpedia.org/property/numberOfPenthouses
+id,http://dbpedia.org/property/id
+main contractor,http://dbpedia.org/property/mainContractor
+pushpin mapsize,http://dbpedia.org/property/pushpinMapsize
+Longitude,http://dbpedia.org/property/longitude
+namesake,http://dbpedia.org/property/namesake
+floor area (m2),http://dbpedia.org/ontology/floorArea
+diamonds,http://dbpedia.org/property/diamonds
+developer,http://dbpedia.org/ontology/developer
+building type,http://dbpedia.org/property/buildingType
+opening date,http://dbpedia.org/ontology/openingDate
+ren architect,http://dbpedia.org/property/renArchitect
+float,http://dbpedia.org/property/float
+number of bars,http://dbpedia.org/property/numberOfBars
+status,http://dbpedia.org/property/status
+designation,http://dbpedia.org/property/designation
+ren engineer,http://dbpedia.org/property/renEngineer
+map dot label,http://dbpedia.org/property/mapDotLabel
+embedded,http://dbpedia.org/property/embedded
+Length,http://dbpedia.org/property/length
+Wikipage revision ID,http://dbpedia.org/ontology/wikiPageRevisionID
+map size,http://dbpedia.org/property/mapSize
+size,http://dbpedia.org/property/size
+Website,http://dbpedia.org/property/website
+North,http://dbpedia.org/property/north
+complimentary amenities,http://dbpedia.org/property/complimentaryAmenities
+restored,http://dbpedia.org/property/restored
+Number of Elevators,http://dbpedia.org/property/numberOfElevators
+architect,http://dbpedia.org/property/architect
+photo2b,http://dbpedia.org/property/photo2b
+photo2a,http://dbpedia.org/property/photo2a
+tenant,http://dbpedia.org/ontology/tenant
+floor area (m2),http://dbpedia.org/ontology/Building/floorArea
+East,http://dbpedia.org/property/east
+coordinates type,http://dbpedia.org/property/coordinatesType
+rows,http://dbpedia.org/property/rows
+chairman,http://dbpedia.org/property/chairman
+logo caption,http://dbpedia.org/property/logoCaption
+renovations,http://dbpedia.org/property/renovations
+parking,http://dbpedia.org/property/parking
+staff,http://dbpedia.org/property/staff
+event,http://dbpedia.org/property/event
+highest start,http://dbpedia.org/property/highestStart
+d,http://dbpedia.org/property/d
+c,http://dbpedia.org/property/c
+after,http://dbpedia.org/property/after
+cost,http://dbpedia.org/property/cost
+b,http://dbpedia.org/property/b
+l,http://dbpedia.org/property/l
+n,http://dbpedia.org/property/n
+has abstract,http://dbpedia.org/ontology/abstract
+photo1b,http://dbpedia.org/property/photo1b
+photo1a,http://dbpedia.org/property/photo1a
+footer,http://dbpedia.org/property/footer
+structural engineer,http://dbpedia.org/property/structuralEngineer
+t,http://dbpedia.org/property/t
+v,http://dbpedia.org/property/v
+q,http://dbpedia.org/property/q
+p,http://dbpedia.org/property/p
+s,http://dbpedia.org/property/s
+former names,http://dbpedia.org/property/formerNames
+rooms,http://dbpedia.org/property/rooms
+long NS,http://dbpedia.org/property/longNs
+lats,http://dbpedia.org/property/lats
+years,http://dbpedia.org/property/years
+attractions,http://dbpedia.org/property/attractions
+alternate name,http://dbpedia.org/property/alternateName
+latm,http://dbpedia.org/property/latm
+width,http://dbpedia.org/property/width
+number of rooms,http://dbpedia.org/property/numberOfRooms
+number of suites,http://dbpedia.org/property/numberOfSuites
+direction,http://dbpedia.org/property/direction
+foundation,http://dbpedia.org/property/foundation
+architect,http://dbpedia.org/ontology/architect
+reservations,http://dbpedia.org/property/reservations
+lon dir,http://dbpedia.org/property/lonDir
+Social Website,http://dbpedia.org/property/socialWebsite
+governing body,http://dbpedia.org/property/governingBody
+name,http://dbpedia.org/property/name
+area,http://dbpedia.org/property/area
+AA Rating,http://dbpedia.org/property/aaRating
+url,http://dbpedia.org/property/url
+architectural style,http://dbpedia.org/property/architecturalStyle
+highest region,http://dbpedia.org/property/highestRegion
+latd,http://dbpedia.org/property/latd
+rating,http://dbpedia.org/property/rating
+hotel chain,http://dbpedia.org/property/hotelChain
+Southeast,http://dbpedia.org/property/southeast
+start date,http://dbpedia.org/property/startDate
+border,http://dbpedia.org/property/border
+demolished date,http://dbpedia.org/property/demolishedDate
+bgcolor,http://dbpedia.org/property/bgcolor
+color,http://dbpedia.org/property/color
+open date,http://dbpedia.org/property/openDate
+opening,http://dbpedia.org/property/opening
+building end date,http://dbpedia.org/ontology/buildingEndDate
+landlord,http://dbpedia.org/property/landlord
+chain,http://dbpedia.org/ontology/chain
+Use,http://dbpedia.org/property/use
+number of suites,http://dbpedia.org/ontology/numberOfSuites
+label,http://dbpedia.org/property/label
+lon sec,http://dbpedia.org/property/lonSec
+lon min,http://dbpedia.org/property/lonMin
+opening date,http://dbpedia.org/property/openingDate
+course,http://dbpedia.org/property/course
+opened date,http://dbpedia.org/property/openedDate
+owner,http://dbpedia.org/property/owner
+build started,http://dbpedia.org/property/buildStarted
+Wikipage page ID,http://dbpedia.org/ontology/wikiPageID
+stars,http://dbpedia.org/property/stars
+Alt,http://dbpedia.org/property/alt
+marksize,http://dbpedia.org/property/marksize
+ren contractor,http://dbpedia.org/property/renContractor
+total number of units,http://dbpedia.org/property/totalNumberOfUnits
+ren cost,http://dbpedia.org/property/renCost
+demolition date,http://dbpedia.org/property/demolitionDate
+constructed,http://dbpedia.org/property/constructed
+native name,http://dbpedia.org/property/nativeName
+general manager,http://dbpedia.org/property/generalManager
+image alt,http://dbpedia.org/property/imageAlt
+floor count,http://dbpedia.org/ontology/floorCount
+pushpin map caption,http://dbpedia.org/property/pushpinMapCaption
+quote,http://dbpedia.org/property/quote
+title,http://dbpedia.org/property/title
+added,http://dbpedia.org/ontology/added
+text background,http://dbpedia.org/property/textBackground

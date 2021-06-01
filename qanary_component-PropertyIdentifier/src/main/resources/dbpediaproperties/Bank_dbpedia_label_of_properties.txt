@@ -1,0 +1,270 @@
+katakana,http://dbpedia.org/property/katakana
+type,http://dbpedia.org/property/type
+Link from a Wikipage to an external page,http://dbpedia.org/ontology/wikiPageExternalLink
+Former type,http://dbpedia.org/property/formerType
+fueltype,http://dbpedia.org/property/fueltype
+region served,http://dbpedia.org/ontology/regionServed
+source1 location,http://dbpedia.org/property/source1Location
+location,http://dbpedia.org/property/location
+yahoo,http://dbpedia.org/property/yahoo
+parent,http://dbpedia.org/property/parent
+number of employees,http://dbpedia.org/property/numberOfEmployees
+president title,http://dbpedia.org/property/presidentTitle
+company slogan,http://dbpedia.org/property/companySlogan
+license,http://dbpedia.org/property/license
+area served,http://dbpedia.org/property/areaServed
+long seconds,http://dbpedia.org/property/longSeconds
+formeroperator,http://dbpedia.org/property/formeroperator
+image size,http://dbpedia.org/property/imageSize
+architect OR builder,http://dbpedia.org/property/architectOrBuilder
+image,http://dbpedia.org/property/image
+Next album,http://dbpedia.org/property/nextAlbum
+mouth mountain,http://dbpedia.org/ontology/mouthMountain
+company slogan zh,http://dbpedia.org/property/companySloganZh
+employees,http://dbpedia.org/property/employees
+ROAA,http://dbpedia.org/property/roaa
+rr,http://dbpedia.org/property/rr
+ROAE,http://dbpedia.org/property/roae
+launch date,http://dbpedia.org/property/launchDate
+google,http://dbpedia.org/property/google
+owners,http://dbpedia.org/property/owners
+purpose,http://dbpedia.org/ontology/purpose
+hoovers,http://dbpedia.org/property/hoovers
+JapaneseName,http://dbpedia.org/property/japanesename
+<br />
+ type,http://dbpedia.org/property/%3Cbr/%3EType
+native name lang,http://dbpedia.org/property/nativeNameLang
+predecessors,http://dbpedia.org/property/predecessors
+lat direction,http://dbpedia.org/property/latDirection
+parent company,http://dbpedia.org/ontology/parentCompany
+long degrees,http://dbpedia.org/property/longDegrees
+service,http://dbpedia.org/ontology/service
+logowidth,http://dbpedia.org/property/logowidth
+asset size,http://dbpedia.org/property/assetSize
+grandparent,http://dbpedia.org/property/grandparent
+headquarter,http://dbpedia.org/property/headquarter
+państwo,http://dbpedia.org/ontology/locationCountry
+Year of forex division,http://dbpedia.org/property/yearOfForexDivision
+established,http://dbpedia.org/property/established
+country,http://dbpedia.org/ontology/country
+genre,http://dbpedia.org/property/genre
+current status,http://dbpedia.org/property/currentStatus
+industry,http://dbpedia.org/property/industry
+key people,http://dbpedia.org/property/keyPeople
+deposit rate,http://dbpedia.org/property/depositRate
+revenue,http://dbpedia.org/property/revenue
+region served,http://dbpedia.org/property/regionServed
+formation date,http://dbpedia.org/ontology/formationDate
+revenue ($),http://dbpedia.org/ontology/revenue
+members,http://dbpedia.org/property/members
+NPL Ratio,http://dbpedia.org/property/nplRatio
+long direction,http://dbpedia.org/property/longDirection
+preceded,http://dbpedia.org/property/preceded
+thumbnail,http://dbpedia.org/ontology/thumbnail
+membership,http://dbpedia.org/ontology/membership
+ownership,http://dbpedia.org/property/ownership
+reuters,http://dbpedia.org/property/reuters
+ratio,http://dbpedia.org/property/ratio
+num employees,http://dbpedia.org/property/numEmployees
+licensee,http://dbpedia.org/ontology/licensee
+CBS branches,http://dbpedia.org/property/cbsBranches
+owner,http://dbpedia.org/ontology/owner
+services,http://dbpedia.org/property/services
+image width,http://dbpedia.org/property/imageWidth
+balance sheet,http://dbpedia.org/property/balanceSheet
+locale,http://dbpedia.org/property/locale
+successor,http://dbpedia.org/property/successor
+NRHP Reference Number,http://dbpedia.org/ontology/nrhpReferenceNumber
+architecture,http://dbpedia.org/property/architecture
+company logo,http://dbpedia.org/property/companyLogo
+bank of,http://dbpedia.org/property/bankOf
+industry,http://dbpedia.org/ontology/industry
+traded as,http://dbpedia.org/property/tradedAs
+el,http://dbpedia.org/property/el
+number of locations,http://dbpedia.org/ontology/numberOfLocations
+format,http://dbpedia.org/property/format
+leaderFunction,http://dbpedia.org/ontology/leaderFunction
+image skyline,http://dbpedia.org/property/imageSkyline
+date,http://dbpedia.org/property/date
+logo,http://dbpedia.org/property/logo
+ceo,http://dbpedia.org/property/ceo
+founder,http://dbpedia.org/property/founder
+subdivision type,http://dbpedia.org/property/subdivisionType
+founded,http://dbpedia.org/property/founded
+builder,http://dbpedia.org/property/builder
+liquidation,http://dbpedia.org/property/liquidation
+num locations,http://dbpedia.org/property/numLocations
+location city,http://dbpedia.org/property/locationCity
+num employees year,http://dbpedia.org/property/numEmployeesYear
+nrhp type,http://dbpedia.org/property/nrhpType
+bank name in local,http://dbpedia.org/property/bankNameInLocal
+reserves,http://dbpedia.org/property/reserves
+area total (m2),http://dbpedia.org/ontology/areaTotal
+sec cik,http://dbpedia.org/property/secCik
+hq location,http://dbpedia.org/property/hqLocation
+architectural style,http://dbpedia.org/ontology/architecturalStyle
+Caption,http://dbpedia.org/property/caption
+currency,http://dbpedia.org/property/currency
+net income ($),http://dbpedia.org/ontology/netIncome
+long minutes,http://dbpedia.org/property/longMinutes
+symbol,http://dbpedia.org/property/symbol
+num branches,http://dbpedia.org/property/numBranches
+style,http://dbpedia.org/property/style
+Slogan,http://dbpedia.org/property/slogan
+hq location country,http://dbpedia.org/property/hqLocationCountry
+succeeded,http://dbpedia.org/property/succeeded
+founders,http://dbpedia.org/property/founders
+extinction date,http://dbpedia.org/ontology/extinctionDate
+bank name,http://dbpedia.org/property/bankName
+reg,http://dbpedia.org/property/reg
+unit pref,http://dbpedia.org/property/unitPref
+founding date,http://dbpedia.org/ontology/foundingDate
+equity ($),http://dbpedia.org/ontology/equity
+death,http://dbpedia.org/property/death
+genre,http://dbpedia.org/ontology/genre
+image caption,http://dbpedia.org/property/imageCaption
+designated nrhp type,http://dbpedia.org/property/designatedNrhpType
+company name zh,http://dbpedia.org/property/companyNameZh
+net profit,http://dbpedia.org/property/netProfit
+headquarter,http://dbpedia.org/ontology/headquarter
+assets ($),http://dbpedia.org/ontology/assets
+type,http://dbpedia.org/ontology/type
+foot notes,http://dbpedia.org/property/footNotes
+net income year,http://dbpedia.org/property/netIncomeYear
+company motto,http://dbpedia.org/property/companyMotto
+locmapin,http://dbpedia.org/property/locmapin
+location,http://dbpedia.org/ontology/location
+year of construction,http://dbpedia.org/ontology/yearOfConstruction
+coordinates display,http://dbpedia.org/property/coordinatesDisplay
+reason,http://dbpedia.org/property/reason
+revenue year,http://dbpedia.org/property/revenueYear
+mpsub,http://dbpedia.org/property/mpsub
+President,http://dbpedia.org/property/president
+footnotes,http://dbpedia.org/property/footnotes
+runtime (s),http://dbpedia.org/ontology/runtime
+location country,http://dbpedia.org/property/locationCountry
+performer,http://dbpedia.org/ontology/artist
+car,http://dbpedia.org/property/car
+lat seconds,http://dbpedia.org/property/latSeconds
+runtime (m),http://dbpedia.org/ontology/Work/runtime
+toggle,http://dbpedia.org/property/toggle
+successor,http://dbpedia.org/ontology/successor
+equity year,http://dbpedia.org/property/equityYear
+logo size,http://dbpedia.org/property/logoSize
+id,http://dbpedia.org/property/id
+stock,http://dbpedia.org/property/stock
+language,http://dbpedia.org/property/language
+image title ,http://dbpedia.org/property/imageTitle
+Non-profit slogan,http://dbpedia.org/property/nonProfitSlogan
+Fee/OPEX,http://dbpedia.org/property/fee/opex
+lat degrees,http://dbpedia.org/property/latDegrees
+assets year,http://dbpedia.org/property/assetsYear
+This album,http://dbpedia.org/property/thisAlbum
+C/I,http://dbpedia.org/property/c/i
+branches,http://dbpedia.org/property/branches
+alias,http://dbpedia.org/ontology/alias
+product,http://dbpedia.org/ontology/product
+divisions,http://dbpedia.org/property/divisions
+market cap,http://dbpedia.org/property/marketCap
+asset under management ($),http://dbpedia.org/ontology/assetUnderManagement
+status,http://dbpedia.org/property/status
+nationality,http://dbpedia.org/ontology/nationality
+borrowing rate,http://dbpedia.org/property/borrowingRate
+foundation place,http://dbpedia.org/ontology/foundationPlace
+number of employees,http://dbpedia.org/ontology/numberOfEmployees
+hepburn,http://dbpedia.org/property/hepburn
+population density km,http://dbpedia.org/property/populationDensityKm
+Wikipage revision ID,http://dbpedia.org/ontology/wikiPageRevisionID
+products,http://dbpedia.org/property/products
+Website,http://dbpedia.org/property/website
+currency iso,http://dbpedia.org/property/currencyIso
+founding year,http://dbpedia.org/ontology/foundingYear
+lat minutes,http://dbpedia.org/property/latMinutes
+former name,http://dbpedia.org/property/formerName
+area (m2),http://dbpedia.org/ontology/area
+architect,http://dbpedia.org/property/architect
+leader title,http://dbpedia.org/property/leaderTitle
+authorized Capital,http://dbpedia.org/property/authorizedCapital
+key person,http://dbpedia.org/ontology/keyPerson
+division,http://dbpedia.org/ontology/division
+release date,http://dbpedia.org/ontology/releaseDate
+logo caption,http://dbpedia.org/property/logoCaption
+chairman,http://dbpedia.org/property/chairman
+location city,http://dbpedia.org/ontology/locationCity
+ISIN,http://dbpedia.org/property/isin
+first,http://dbpedia.org/property/first
+technical reserve,http://dbpedia.org/property/technicalReserve
+c,http://dbpedia.org/property/c
+power,http://dbpedia.org/property/power
+premium income,http://dbpedia.org/property/premiumIncome
+premiums,http://dbpedia.org/property/premiums
+trading name,http://dbpedia.org/property/tradingName
+has abstract,http://dbpedia.org/ontology/abstract
+t,http://dbpedia.org/property/t
+p,http://dbpedia.org/property/p
+s,http://dbpedia.org/property/s
+hanja,http://dbpedia.org/property/hanja
+mr,http://dbpedia.org/property/mr
+activities,http://dbpedia.org/property/activities
+registration,http://dbpedia.org/property/registration
+location countries,http://dbpedia.org/property/locationCountries
+hangul,http://dbpedia.org/property/hangul
+context,http://dbpedia.org/property/context
+Cover,http://dbpedia.org/property/cover
+profit,http://dbpedia.org/property/profit
+founded by,http://dbpedia.org/ontology/foundedBy
+governing body,http://dbpedia.org/property/governingBody
+dissolved,http://dbpedia.org/property/dissolved
+liabilities,http://dbpedia.org/property/liabilities
+last,http://dbpedia.org/property/last
+predecessor,http://dbpedia.org/property/predecessor
+class,http://dbpedia.org/property/class
+length (μ),http://dbpedia.org/ontology/length
+name,http://dbpedia.org/property/name
+mouth place,http://dbpedia.org/ontology/mouthPlace
+area,http://dbpedia.org/property/area
+operating income ($),http://dbpedia.org/ontology/operatingIncome
+membership,http://dbpedia.org/property/membership
+fate,http://dbpedia.org/ontology/fate
+coolingsystem,http://dbpedia.org/property/coolingsystem
+webcast,http://dbpedia.org/ontology/webcast
+coord display,http://dbpedia.org/property/coordDisplay
+focus,http://dbpedia.org/property/focus
+partof,http://dbpedia.org/property/partof
+author,http://dbpedia.org/property/author
+nocat,http://dbpedia.org/property/nocat
+subsidiary,http://dbpedia.org/ontology/subsidiary
+source country,http://dbpedia.org/ontology/sourceCountry
+extinction year,http://dbpedia.org/ontology/extinctionYear
+predecessor,http://dbpedia.org/ontology/predecessor
+Last album,http://dbpedia.org/property/lastAlbum
+fate,http://dbpedia.org/property/fate
+col,http://dbpedia.org/property/col
+label,http://dbpedia.org/property/label
+headquarters,http://dbpedia.org/property/headquarters
+Wikipage redirect,http://dbpedia.org/ontology/wikiPageRedirects
+owner,http://dbpedia.org/property/owner
+principal executive offices,http://dbpedia.org/property/principalExecutiveOffices
+partof refnum,http://dbpedia.org/property/partofRefnum
+Wikipage page ID,http://dbpedia.org/ontology/wikiPageID
+homepage,http://dbpedia.org/property/homepage
+IOER,http://dbpedia.org/property/ioer
+assets,http://dbpedia.org/property/assets
+owners' equity,http://dbpedia.org/property/owners'Equity
+hq location city,http://dbpedia.org/property/hqLocationCity
+equity,http://dbpedia.org/property/equity
+area total (km2),http://dbpedia.org/ontology/PopulatedPlace/areaTotal
+owning company,http://dbpedia.org/ontology/owningCompany
+valvetrain,http://dbpedia.org/property/valvetrain
+subsid,http://dbpedia.org/property/subsid
+operating income,http://dbpedia.org/property/operatingIncome
+native name,http://dbpedia.org/property/nativeName
+formation year,http://dbpedia.org/ontology/formationYear
+num locations year,http://dbpedia.org/property/numLocationsYear
+image alt,http://dbpedia.org/property/imageAlt
+title,http://dbpedia.org/property/title
+internationally,http://dbpedia.org/ontology/internationally
+net income,http://dbpedia.org/property/netIncome
+added,http://dbpedia.org/ontology/added
+locations,http://dbpedia.org/property/locations
+status,http://dbpedia.org/ontology/status

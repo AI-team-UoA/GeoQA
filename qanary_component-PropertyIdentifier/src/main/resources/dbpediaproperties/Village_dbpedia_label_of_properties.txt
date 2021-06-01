@@ -1,0 +1,428 @@
+type,http://dbpedia.org/property/type
+align,http://dbpedia.org/property/align
+licence,http://dbpedia.org/property/licence
+latNS,http://dbpedia.org/property/latns
+county,http://dbpedia.org/property/county
+idnumber,http://dbpedia.org/property/idnumber
+arrondissement,http://dbpedia.org/ontology/arrondissement
+plantext,http://dbpedia.org/property/plantext
+lon deg,http://dbpedia.org/property/lonDeg
+is part of,http://dbpedia.org/ontology/isPartOf
+2006 pop density,http://dbpedia.org/property/2006PopDensity
+etymology,http://dbpedia.org/property/etymology
+INSEE code,http://dbpedia.org/ontology/inseeCode
+Oct sun,http://dbpedia.org/property/octSun
+image seal,http://dbpedia.org/property/imageSeal
+province,http://dbpedia.org/ontology/province
+population village,http://dbpedia.org/property/populationVillage
+position,http://dbpedia.org/property/position
+blank1 info sec,http://dbpedia.org/property/blank1InfoSec
+Capital,http://dbpedia.org/property/capital
+part,http://dbpedia.org/ontology/part
+demographics type,http://dbpedia.org/property/demographicsType
+native name lang,http://dbpedia.org/property/nativeNameLang
+2011 total pvt dwell usual,http://dbpedia.org/property/2011TotalPvtDwellUsual
+year high C,http://dbpedia.org/property/yearHighC
+area municipality,http://dbpedia.org/property/areaMunicipality
+arname,http://dbpedia.org/property/arname
+constituency welsh assembly,http://dbpedia.org/property/constituencyWelshAssembly
+demographics2 info,http://dbpedia.org/property/demographics2Info
+Area State,http://dbpedia.org/property/areaState
+metropolitan borough,http://dbpedia.org/ontology/metropolitanBorough
+Mar precipitation mm,http://dbpedia.org/property/marPrecipitationMm
+registration plate,http://dbpedia.org/property/registrationPlate
+os,http://dbpedia.org/property/os
+Jan high C,http://dbpedia.org/property/janHighC
+area water imperial,http://dbpedia.org/property/areaWaterImperial
+pushpin label,http://dbpedia.org/property/pushpinLabel
+lat min,http://dbpedia.org/property/latMin
+hide services,http://dbpedia.org/property/hideServices
+stand,http://dbpedia.org/property/stand
+established,http://dbpedia.org/property/established
+secretary general,http://dbpedia.org/property/secretaryGeneral
+collapsed,http://dbpedia.org/property/collapsed
+percent asian,http://dbpedia.org/property/percentAsian
+Jan sun,http://dbpedia.org/property/janSun
+munwebpage,http://dbpedia.org/property/munwebpage
+community wales,http://dbpedia.org/property/communityWales
+long EW,http://dbpedia.org/property/longEw
+governing body,http://dbpedia.org/ontology/governingBody
+region type,http://dbpedia.org/property/regionType
+Aug low C,http://dbpedia.org/property/augLowC
+curlocl,http://dbpedia.org/property/curlocl
+state,http://dbpedia.org/ontology/state
+unitary england,http://dbpedia.org/property/unitaryEngland
+map type,http://dbpedia.org/property/mapType
+2006 total pvt dwell,http://dbpedia.org/property/2006TotalPvtDwell
+Southwest,http://dbpedia.org/property/southwest
+utm easting,http://dbpedia.org/property/utmEasting
+blank2 name,http://dbpedia.org/property/blank2Name
+titlestyle,http://dbpedia.org/property/titlestyle
+longEW,http://dbpedia.org/property/longew
+area community,http://dbpedia.org/property/areaCommunity
+Nov low C,http://dbpedia.org/property/novLowC
+timezone DST,http://dbpedia.org/property/timezoneDst
+blank2 name sec,http://dbpedia.org/property/blank2NameSec
+date,http://dbpedia.org/property/date
+population unit,http://dbpedia.org/property/populationUnit
+founder,http://dbpedia.org/property/founder
+source ,http://dbpedia.org/property/source
+subdivision type,http://dbpedia.org/property/subdivisionType
+population total,http://dbpedia.org/ontology/populationTotal
+lga,http://dbpedia.org/property/lga
+Feb low C,http://dbpedia.org/property/febLowC
+2001 median age f,http://dbpedia.org/property/2001MedianAgeF
+2001 median age m,http://dbpedia.org/property/2001MedianAgeM
+area dunam,http://dbpedia.org/property/areaDunam
+Jul precipitation mm,http://dbpedia.org/property/julPrecipitationMm
+synonym,http://dbpedia.org/ontology/synonym
+areakm,http://dbpedia.org/property/areakm
+Aug sun,http://dbpedia.org/property/augSun
+leader name,http://dbpedia.org/ontology/leaderName
+Dec high C,http://dbpedia.org/property/decHighC
+population blank2 title,http://dbpedia.org/property/populationBlank2Title
+Caption,http://dbpedia.org/property/caption
+static image name,http://dbpedia.org/property/staticImageName
+symbol,http://dbpedia.org/property/symbol
+May low C,http://dbpedia.org/property/mayLowC
+statistics,http://dbpedia.org/property/statistics
+official name,http://dbpedia.org/property/officialName
+founding date,http://dbpedia.org/ontology/foundingDate
+pushpin map alt,http://dbpedia.org/property/pushpinMapAlt
+Flag,http://dbpedia.org/property/flag
+district,http://dbpedia.org/ontology/district
+image caption,http://dbpedia.org/property/imageCaption
+Council area,http://dbpedia.org/ontology/councilArea
+pushpin label position,http://dbpedia.org/property/pushpinLabelPosition
+postal code type,http://dbpedia.org/property/postalCodeType
+demographics1 info,http://dbpedia.org/property/demographics1Info
+population total,http://dbpedia.org/property/populationTotal
+population as of,http://dbpedia.org/property/populationAsOf
+population density (/sqkm),http://dbpedia.org/ontology/populationDensity
+type,http://dbpedia.org/ontology/type
+TimeZone,http://dbpedia.org/property/timezone
+government type,http://dbpedia.org/ontology/governmentType
+utm northing,http://dbpedia.org/property/utmNorthing
+lat NS,http://dbpedia.org/property/latNs
+recognized,http://dbpedia.org/property/recognized
+coordinates display,http://dbpedia.org/property/coordinatesDisplay
+reason,http://dbpedia.org/property/reason
+pushpin map,http://dbpedia.org/property/pushpinMap
+mayor party,http://dbpedia.org/property/mayorParty
+2011 population,http://dbpedia.org/property/2011Population
+blank1 name,http://dbpedia.org/property/blank1Name
+fix-attempted,http://dbpedia.org/property/fixAttempted
+blank info sec,http://dbpedia.org/property/blankInfoSec
+established date,http://dbpedia.org/property/establishedDate
+2011 pop delta,http://dbpedia.org/property/2011PopDelta
+pop community,http://dbpedia.org/property/popCommunity
+Jun low C,http://dbpedia.org/property/junLowC
+constituency westminster,http://dbpedia.org/property/constituencyWestminster
+area code,http://dbpedia.org/property/areaCode
+Sep sun,http://dbpedia.org/property/sepSun
+Apr low C,http://dbpedia.org/property/aprLowC
+Oct low C,http://dbpedia.org/property/octLowC
+leader party,http://dbpedia.org/ontology/leaderParty
+2006 land area,http://dbpedia.org/property/2006LandArea
+Longitude,http://dbpedia.org/property/longitude
+pushpin mapsize,http://dbpedia.org/property/pushpinMapsize
+population density (/sqkm),http://dbpedia.org/ontology/PopulatedPlace/populationDensity
+bot,http://dbpedia.org/property/bot
+flag size,http://dbpedia.org/property/flagSize
+elevation (μ),http://dbpedia.org/ontology/elevation
+Mar high C,http://dbpedia.org/property/marHighC
+municipality,http://dbpedia.org/ontology/municipality
+topic,http://dbpedia.org/property/topic
+geo cat,http://dbpedia.org/property/geoCat
+image plan,http://dbpedia.org/property/imagePlan
+Jun precipitation mm,http://dbpedia.org/property/junPrecipitationMm
+periph,http://dbpedia.org/property/periph
+fedgov,http://dbpedia.org/property/fedgov
+canton,http://dbpedia.org/ontology/canton
+altSp,http://dbpedia.org/property/altsp
+area km,http://dbpedia.org/property/areaKm
+pushpin map size,http://dbpedia.org/property/pushpinMapSize
+mintemp,http://dbpedia.org/property/mintemp
+settlement type,http://dbpedia.org/property/settlementType
+North,http://dbpedia.org/property/north
+seat,http://dbpedia.org/property/seat
+code,http://dbpedia.org/property/code
+municipality,http://dbpedia.org/property/municipality
+area (m2),http://dbpedia.org/ontology/area
+Northwest,http://dbpedia.org/property/northwest
+estyear,http://dbpedia.org/property/estyear
+Jun high C,http://dbpedia.org/property/junHighC
+image shield,http://dbpedia.org/property/imageShield
+display,http://dbpedia.org/property/display
+2001 median age,http://dbpedia.org/property/2001MedianAge
+named for,http://dbpedia.org/property/namedFor
+Dec precipitation mm,http://dbpedia.org/property/decPrecipitationMm
+single line,http://dbpedia.org/property/singleLine
+commons,http://dbpedia.org/property/commons
+year low C,http://dbpedia.org/property/yearLowC
+UTC offset,http://dbpedia.org/ontology/utcOffset
+percent black,http://dbpedia.org/property/percentBlack
+population,http://dbpedia.org/property/population
+coordinates format,http://dbpedia.org/property/coordinatesFormat
+censuscode,http://dbpedia.org/property/censuscode
+department,http://dbpedia.org/ontology/department
+map locator,http://dbpedia.org/property/mapLocator
+static image width,http://dbpedia.org/property/staticImageWidth
+has abstract,http://dbpedia.org/ontology/abstract
+lats,http://dbpedia.org/property/lats
+Nov high C,http://dbpedia.org/property/novHighC
+blank1 name sec,http://dbpedia.org/property/blank1NameSec
+latm,http://dbpedia.org/property/latm
+Dec sun,http://dbpedia.org/property/decSun
+direction,http://dbpedia.org/property/direction
+2011 pop density,http://dbpedia.org/property/2011PopDensity
+Mar low C,http://dbpedia.org/property/marLowC
+state,http://dbpedia.org/property/state
+percentage of area water,http://dbpedia.org/ontology/percentageOfAreaWater
+utc offset DST,http://dbpedia.org/property/utcOffsetDst
+region link,http://dbpedia.org/property/regionLink
+lon dir,http://dbpedia.org/property/lonDir
+2001 population,http://dbpedia.org/property/2001Population
+Mar sun,http://dbpedia.org/property/marSun
+2001 mean hh income,http://dbpedia.org/property/2001MeanHhIncome
+Footnote,http://dbpedia.org/property/footnote
+lat s,http://dbpedia.org/property/latS
+population blank,http://dbpedia.org/property/populationBlank
+CoA,http://dbpedia.org/property/coa
+lat m,http://dbpedia.org/property/latM
+Sep high C,http://dbpedia.org/property/sepHighC
+total type,http://dbpedia.org/property/totalType
+name,http://dbpedia.org/property/name
+Demonym,http://dbpedia.org/property/demonym
+area code type,http://dbpedia.org/property/areaCodeType
+latd,http://dbpedia.org/property/latd
+area round,http://dbpedia.org/property/areaRound
+image blank emblem,http://dbpedia.org/property/imageBlankEmblem
+blank info,http://dbpedia.org/property/blankInfo
+year precipitation mm,http://dbpedia.org/property/yearPrecipitationMm
+Southeast,http://dbpedia.org/property/southeast
+map,http://dbpedia.org/property/map
+region,http://dbpedia.org/property/region
+utm zone,http://dbpedia.org/property/utmZone
+periphunit,http://dbpedia.org/property/periphunit
+created,http://dbpedia.org/property/created
+lat d,http://dbpedia.org/property/latD
+stategov,http://dbpedia.org/property/stategov
+mayor as of,http://dbpedia.org/property/mayorAsOf
+elevation,http://dbpedia.org/property/elevation
+lon sec,http://dbpedia.org/property/lonSec
+headquarters,http://dbpedia.org/property/headquarters
+May high C,http://dbpedia.org/property/mayHighC
+leader title,http://dbpedia.org/ontology/leaderTitle
+Wikipage redirect,http://dbpedia.org/ontology/wikiPageRedirects
+constituency scottish parliament,http://dbpedia.org/property/constituencyScottishParliament
+Aug precipitation mm,http://dbpedia.org/property/augPrecipitationMm
+Wikipage page ID,http://dbpedia.org/ontology/wikiPageID
+Alt,http://dbpedia.org/property/alt
+leader name,http://dbpedia.org/property/leaderName
+metric first,http://dbpedia.org/property/metricFirst
+region name local,http://dbpedia.org/property/regionNameLocal
+2006 pop delta,http://dbpedia.org/property/2006PopDelta
+footer align,http://dbpedia.org/property/footerAlign
+population urban,http://dbpedia.org/ontology/populationUrban
+postcode area,http://dbpedia.org/property/postcodeArea
+local name,http://dbpedia.org/property/localName
+Link from a Wikipage to an external page,http://dbpedia.org/ontology/wikiPageExternalLink
+Aug high C,http://dbpedia.org/property/augHighC
+map1 caption,http://dbpedia.org/property/map1Caption
+distance to London (μ),http://dbpedia.org/ontology/distanceToLondon
+location,http://dbpedia.org/property/location
+Feb sun,http://dbpedia.org/property/febSun
+country,http://dbpedia.org/property/country
+Jul low C,http://dbpedia.org/property/julLowC
+image,http://dbpedia.org/property/image
+demographics1 title,http://dbpedia.org/property/demographics1Title
+blank3 info sec,http://dbpedia.org/property/blank3InfoSec
+postal code,http://dbpedia.org/ontology/postalCode
+population increase,http://dbpedia.org/property/populationIncrease
+time zone,http://dbpedia.org/ontology/timeZone
+area total km,http://dbpedia.org/property/areaTotalKm
+district,http://dbpedia.org/property/district
+2011 total pvt dwell,http://dbpedia.org/property/2011TotalPvtDwell
+utc offset,http://dbpedia.org/property/utcOffset
+lat deg,http://dbpedia.org/property/latDeg
+ISO region code,http://dbpedia.org/ontology/isoCodeRegion
+post town,http://dbpedia.org/property/postTown
+Apr precipitation mm,http://dbpedia.org/property/aprPrecipitationMm
+Nov precipitation mm,http://dbpedia.org/property/novPrecipitationMm
+map caption,http://dbpedia.org/property/mapCaption
+static image 2 name,http://dbpedia.org/property/staticImage2Name
+imagesize,http://dbpedia.org/property/imagesize
+coordinates region,http://dbpedia.org/property/coordinatesRegion
+lat sec,http://dbpedia.org/property/latSec
+Sep precipitation mm,http://dbpedia.org/property/sepPrecipitationMm
+country,http://dbpedia.org/ontology/country
+longm,http://dbpedia.org/property/longm
+longs,http://dbpedia.org/property/longs
+percent other,http://dbpedia.org/property/percentOther
+Dec low C,http://dbpedia.org/property/decLowC
+South,http://dbpedia.org/property/south
+2011 land area,http://dbpedia.org/property/2011LandArea
+longd,http://dbpedia.org/property/longd
+2001 pop delta,http://dbpedia.org/property/2001PopDelta
+area (km2),http://dbpedia.org/ontology/PopulatedPlace/area
+thumbnail,http://dbpedia.org/ontology/thumbnail
+year sun,http://dbpedia.org/property/yearSun
+long m,http://dbpedia.org/property/longM
+Feb precipitation mm,http://dbpedia.org/property/febPrecipitationMm
+long s,http://dbpedia.org/property/longS
+maximum elevation (μ),http://dbpedia.org/ontology/maximumElevation
+2006 access date,http://dbpedia.org/property/2006AccessDate
+long d,http://dbpedia.org/property/longD
+region,http://dbpedia.org/ontology/region
+typefrom,http://dbpedia.org/property/typefrom
+daylight saving time zone,http://dbpedia.org/ontology/daylightSavingTimeZone
+Latitude,http://dbpedia.org/property/latitude
+Jul high C,http://dbpedia.org/property/julHighC
+grid reference,http://dbpedia.org/ontology/gridReference
+label position,http://dbpedia.org/property/labelPosition
+lat dir,http://dbpedia.org/property/latDir
+category,http://dbpedia.org/property/category
+language,http://dbpedia.org/ontology/language
+image skyline,http://dbpedia.org/property/imageSkyline
+logo,http://dbpedia.org/property/logo
+West,http://dbpedia.org/property/west
+population as of,http://dbpedia.org/ontology/populationAsOf
+2011 access date,http://dbpedia.org/property/2011AccessDate
+2001 total pvt dwell,http://dbpedia.org/property/2001TotalPvtDwell
+static image,http://dbpedia.org/property/staticImage
+mayor,http://dbpedia.org/property/mayor
+nosave,http://dbpedia.org/property/nosave
+area total (m2),http://dbpedia.org/ontology/areaTotal
+blank name sec,http://dbpedia.org/property/blankNameSec
+seat type,http://dbpedia.org/property/seatType
+May precipitation mm,http://dbpedia.org/property/mayPrecipitationMm
+area code,http://dbpedia.org/ontology/areaCode
+area land (m2),http://dbpedia.org/ontology/areaLand
+city,http://dbpedia.org/ontology/city
+area municunit,http://dbpedia.org/property/areaMunicunit
+dist,http://dbpedia.org/property/dist
+Adresse-Verband,http://dbpedia.org/property/adresseVerband
+established title,http://dbpedia.org/property/establishedTitle
+palgrid,http://dbpedia.org/property/palgrid
+Lieutenancy area,http://dbpedia.org/ontology/lieutenancyArea
+province,http://dbpedia.org/property/province
+estimate,http://dbpedia.org/property/estimate
+pop municipality,http://dbpedia.org/property/popMunicipality
+unit pref,http://dbpedia.org/property/unitPref
+static image caption,http://dbpedia.org/property/staticImageCaption
+dir,http://dbpedia.org/property/dir
+population date,http://dbpedia.org/property/populationDate
+blank1 info,http://dbpedia.org/property/blank1Info
+Straße,http://dbpedia.org/property/straße
+Jun sun,http://dbpedia.org/property/junSun
+cause,http://dbpedia.org/property/cause
+iso,http://dbpedia.org/property/iso
+Jan low C,http://dbpedia.org/property/janLowC
+rainfall,http://dbpedia.org/property/rainfall
+Apr high C,http://dbpedia.org/property/aprHighC
+population ref,http://dbpedia.org/property/populationRef
+2001 land area,http://dbpedia.org/property/2001LandArea
+Jan precipitation mm,http://dbpedia.org/property/janPrecipitationMm
+postcode district,http://dbpedia.org/property/postcodeDistrict
+Northeast,http://dbpedia.org/property/northeast
+Centre,http://dbpedia.org/property/centre
+population blank1 title,http://dbpedia.org/property/populationBlank1Title
+Höhe-Bezug,http://dbpedia.org/property/höheBezug
+postal code,http://dbpedia.org/property/postalCode
+Sep low C,http://dbpedia.org/property/sepLowC
+image flag,http://dbpedia.org/property/imageFlag
+2011 median age,http://dbpedia.org/property/2011MedianAge
+pop municunit,http://dbpedia.org/property/popMunicunit
+commune,http://dbpedia.org/property/commune
+President,http://dbpedia.org/property/president
+footnotes,http://dbpedia.org/property/footnotes
+london distance,http://dbpedia.org/property/londonDistance
+May sun,http://dbpedia.org/property/maySun
+populationpercent,http://dbpedia.org/property/populationpercent
+postcode,http://dbpedia.org/property/postcode
+Ceremonial County,http://dbpedia.org/ontology/ceremonialCounty
+language,http://dbpedia.org/property/language
+metropolitan county,http://dbpedia.org/property/metropolitanCounty
+region type local,http://dbpedia.org/property/regionTypeLocal
+image coa,http://dbpedia.org/property/imageCoa
+static image alt,http://dbpedia.org/property/staticImageAlt
+Eingemeindungsdatum,http://dbpedia.org/property/eingemeindungsdatum
+float,http://dbpedia.org/property/float
+parts,http://dbpedia.org/property/parts
+population note,http://dbpedia.org/property/populationNote
+civil parish,http://dbpedia.org/property/civilParish
+mapsize,http://dbpedia.org/property/mapsize
+Nov sun,http://dbpedia.org/property/novSun
+area imperial,http://dbpedia.org/property/areaImperial
+2001 pop density,http://dbpedia.org/property/2001PopDensity
+population density km,http://dbpedia.org/property/populationDensityKm
+area land imperial,http://dbpedia.org/property/areaLandImperial
+Wikipage revision ID,http://dbpedia.org/ontology/wikiPageRevisionID
+map size,http://dbpedia.org/property/mapSize
+size,http://dbpedia.org/property/size
+image map,http://dbpedia.org/property/imageMap
+government type,http://dbpedia.org/property/governmentType
+Website,http://dbpedia.org/property/website
+Association,http://dbpedia.org/property/association
+Apr sun,http://dbpedia.org/property/aprSun
+pop year,http://dbpedia.org/property/popYear
+leader title,http://dbpedia.org/property/leaderTitle
+federal state,http://dbpedia.org/ontology/federalState
+established type,http://dbpedia.org/property/establishedType
+East,http://dbpedia.org/property/east
+coordinates type,http://dbpedia.org/property/coordinatesType
+blank2 info sec,http://dbpedia.org/property/blank2InfoSec
+popyear,http://dbpedia.org/property/popyear
+e,http://dbpedia.org/property/e
+parts type,http://dbpedia.org/property/partsType
+caption skyline,http://dbpedia.org/property/captionSkyline
+district type,http://dbpedia.org/property/districtType
+static image 2 caption,http://dbpedia.org/property/staticImage2Caption
+minimum elevation (μ),http://dbpedia.org/ontology/minimumElevation
+population rank,http://dbpedia.org/property/populationRank
+n,http://dbpedia.org/property/n
+footer,http://dbpedia.org/property/footer
+w,http://dbpedia.org/property/w
+population rural,http://dbpedia.org/ontology/populationRural
+p,http://dbpedia.org/property/p
+flag border,http://dbpedia.org/property/flagBorder
+s,http://dbpedia.org/property/s
+emblem,http://dbpedia.org/property/emblem
+2006 median age,http://dbpedia.org/property/2006MedianAge
+width,http://dbpedia.org/property/width
+maxtemp,http://dbpedia.org/property/maxtemp
+Jul sun,http://dbpedia.org/property/julSun
+blank3 name sec,http://dbpedia.org/property/blank3NameSec
+governing body,http://dbpedia.org/property/governingBody
+Oct precipitation mm,http://dbpedia.org/property/octPrecipitationMm
+percent white,http://dbpedia.org/property/percentWhite
+blank name,http://dbpedia.org/property/blankName
+municunit,http://dbpedia.org/property/municunit
+2006 total pvt dwell usual,http://dbpedia.org/property/2006TotalPvtDwellUsual
+area,http://dbpedia.org/property/area
+Oct high C,http://dbpedia.org/property/octHighC
+principal area,http://dbpedia.org/ontology/principalArea
+NE,http://dbpedia.org/property/ne
+border,http://dbpedia.org/property/border
+population density,http://dbpedia.org/property/populationDensity
+intercommunality,http://dbpedia.org/ontology/intercommunality
+Feb high C,http://dbpedia.org/property/febHighC
+county,http://dbpedia.org/ontology/county
+demographics2 title,http://dbpedia.org/property/demographics2Title
+area rank,http://dbpedia.org/property/areaRank
+term,http://dbpedia.org/property/term
+label,http://dbpedia.org/property/label
+lon min,http://dbpedia.org/property/lonMin
+map background,http://dbpedia.org/property/mapBackground
+parts style,http://dbpedia.org/property/partsStyle
+country flag,http://dbpedia.org/property/countryFlag
+2006 population,http://dbpedia.org/property/2006Population
+colwidth,http://dbpedia.org/property/colwidth
+london direction,http://dbpedia.org/property/londonDirection
+area total (km2),http://dbpedia.org/ontology/PopulatedPlace/areaTotal
+percent coloured,http://dbpedia.org/property/percentColoured
+pushpin map caption,http://dbpedia.org/property/pushpinMapCaption
+CoatOfArms,http://dbpedia.org/property/coatofarms
+title,http://dbpedia.org/property/title
+subdivision name,http://dbpedia.org/property/subdivisionName

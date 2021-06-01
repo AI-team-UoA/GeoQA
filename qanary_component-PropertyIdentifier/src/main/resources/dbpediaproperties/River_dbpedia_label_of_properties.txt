@@ -1,0 +1,246 @@
+source district,http://dbpedia.org/property/sourceDistrict
+Link from a Wikipage to an external page,http://dbpedia.org/ontology/wikiPageExternalLink
+map1 caption,http://dbpedia.org/property/map1Caption
+source1 coord region,http://dbpedia.org/property/source1CoordRegion
+MÜNDUNG,http://dbpedia.org/property/mündung
+psp,http://dbpedia.org/property/psp
+source1 location,http://dbpedia.org/property/source1Location
+location,http://dbpedia.org/property/location
+parent,http://dbpedia.org/property/parent
+etymology,http://dbpedia.org/property/etymology
+country,http://dbpedia.org/property/country
+image size,http://dbpedia.org/property/imageSize
+basin landmarks,http://dbpedia.org/property/basinLandmarks
+length orientation,http://dbpedia.org/property/lengthOrientation
+province,http://dbpedia.org/ontology/province
+RECHTE NEBENFLÜSSE,http://dbpedia.org/property/rechteNebenflüsse
+waterbodies,http://dbpedia.org/property/waterbodies
+mouth mountain,http://dbpedia.org/ontology/mouthMountain
+HÖHENBEZUG-QUELLE,http://dbpedia.org/property/höhenbezugQuelle
+LAGE,http://dbpedia.org/property/lage
+source lat NS,http://dbpedia.org/property/sourceLatNs
+tributary right,http://dbpedia.org/property/tributaryRight
+district,http://dbpedia.org/property/district
+free1 type,http://dbpedia.org/property/free1Type
+source location,http://dbpedia.org/property/sourceLocation
+accessdate,http://dbpedia.org/property/accessdate
+MÜNDUNGSHÖHE,http://dbpedia.org/property/mündungshöhe
+native name lang,http://dbpedia.org/property/nativeNameLang
+source confluence lat NS,http://dbpedia.org/property/sourceConfluenceLatNs
+source lat d,http://dbpedia.org/property/sourceLatD
+source name,http://dbpedia.org/property/sourceName
+mouth coord format,http://dbpedia.org/property/mouthCoordFormat
+map caption,http://dbpedia.org/property/mapCaption
+discharge round,http://dbpedia.org/property/dischargeRound
+source confluence place,http://dbpedia.org/ontology/sourceConfluencePlace
+country,http://dbpedia.org/ontology/country
+QUELLE LONG GRAD,http://dbpedia.org/property/quelleLongGrad
+located in area,http://dbpedia.org/ontology/locatedInArea
+source long EW,http://dbpedia.org/property/sourceLongEw
+mouth elevation (μ),http://dbpedia.org/ontology/mouthElevation
+QUELLE LAT GRAD,http://dbpedia.org/property/quelleLatGrad
+source1 lat s,http://dbpedia.org/property/source1LatS
+thumbnail,http://dbpedia.org/ontology/thumbnail
+region type,http://dbpedia.org/property/regionType
+state,http://dbpedia.org/ontology/state
+source1 lat d,http://dbpedia.org/property/source1LatD
+NRHP Reference Number,http://dbpedia.org/ontology/nrhpReferenceNumber
+mouth long d,http://dbpedia.org/property/mouthLongD
+source state,http://dbpedia.org/property/sourceState
+region,http://dbpedia.org/ontology/region
+source1 name,http://dbpedia.org/property/source1Name
+depth,http://dbpedia.org/property/depth
+source1 lat m,http://dbpedia.org/property/source1LatM
+order,http://dbpedia.org/property/order
+source confluence long s,http://dbpedia.org/property/sourceConfluenceLongS
+category,http://dbpedia.org/property/category
+source coordinates type,http://dbpedia.org/property/sourceCoordinatesType
+city type,http://dbpedia.org/property/cityType
+poj,http://dbpedia.org/property/poj
+source place,http://dbpedia.org/ontology/sourcePlace
+date,http://dbpedia.org/property/date
+source ,http://dbpedia.org/property/source
+source confluence long m,http://dbpedia.org/property/sourceConfluenceLongM
+subdivision type,http://dbpedia.org/property/subdivisionType
+LINKE NEBENFLÜSSE,http://dbpedia.org/property/linkeNebenflüsse
+map1 locator,http://dbpedia.org/property/map1Locator
+watershed,http://dbpedia.org/property/watershed
+source confluence location,http://dbpedia.org/property/sourceConfluenceLocation
+etymology type,http://dbpedia.org/property/etymologyType
+discharge (m³/s),http://dbpedia.org/ontology/Stream/discharge
+ABFLUSS-MQ,http://dbpedia.org/property/abflussMq
+synonym,http://dbpedia.org/ontology/synonym
+HÖHENBEZUG-MÜNDUNG,http://dbpedia.org/property/höhenbezugMündung
+volume,http://dbpedia.org/property/volume
+mouth district,http://dbpedia.org/property/mouthDistrict
+GEMEINDEN,http://dbpedia.org/property/gemeinden
+city,http://dbpedia.org/ontology/city
+mouth lat d,http://dbpedia.org/property/mouthLatD
+mouth state,http://dbpedia.org/property/mouthState
+source confluence long d,http://dbpedia.org/property/sourceConfluenceLongD
+source1 long EW,http://dbpedia.org/property/source1LongEw
+mouth lat m,http://dbpedia.org/property/mouthLatM
+mărimeimagine,http://dbpedia.org/property/mărimeimagine
+state flag,http://dbpedia.org/property/stateFlag
+mouth name,http://dbpedia.org/property/mouthName
+free2 type,http://dbpedia.org/property/free2Type
+source lat m,http://dbpedia.org/property/sourceLatM
+source lat s,http://dbpedia.org/property/sourceLatS
+mouth lat s,http://dbpedia.org/property/mouthLatS
+district,http://dbpedia.org/ontology/district
+mouth location,http://dbpedia.org/property/mouthLocation
+city,http://dbpedia.org/property/city
+category hide,http://dbpedia.org/property/categoryHide
+image caption,http://dbpedia.org/property/imageCaption
+mouth position,http://dbpedia.org/ontology/mouthPosition
+state type,http://dbpedia.org/property/stateType
+source confluence elevation (μ),http://dbpedia.org/ontology/sourceConfluenceElevation
+type,http://dbpedia.org/ontology/type
+locmapin,http://dbpedia.org/property/locmapin
+map1 size,http://dbpedia.org/property/map1Size
+river mouth,http://dbpedia.org/ontology/riverMouth
+Northeast,http://dbpedia.org/property/northeast
+tp,http://dbpedia.org/property/tp
+year of construction,http://dbpedia.org/ontology/yearOfConstruction
+Centre,http://dbpedia.org/property/centre
+source1 lat NS,http://dbpedia.org/property/source1LatNs
+fix-attempted,http://dbpedia.org/property/fixAttempted
+maximum discharge (m³/s),http://dbpedia.org/ontology/Stream/maximumDischarge
+custom label,http://dbpedia.org/property/customLabel
+minimum discharge (m³/s),http://dbpedia.org/ontology/Stream/minimumDischarge
+footnotes,http://dbpedia.org/property/footnotes
+free type,http://dbpedia.org/property/freeType
+QUELLE,http://dbpedia.org/property/quelle
+LÄNGE,http://dbpedia.org/property/länge
+source confluence,http://dbpedia.org/ontology/sourceConfluence
+free3 type,http://dbpedia.org/property/free3Type
+source country,http://dbpedia.org/property/sourceCountry
+waterfalls,http://dbpedia.org/property/waterfalls
+bot,http://dbpedia.org/property/bot
+source region,http://dbpedia.org/ontology/sourceRegion
+mouth country,http://dbpedia.org/property/mouthCountry
+hp,http://dbpedia.org/property/hp
+mouth coordinates type,http://dbpedia.org/property/mouthCoordinatesType
+piccap,http://dbpedia.org/property/piccap
+length round,http://dbpedia.org/property/lengthRound
+source position,http://dbpedia.org/ontology/sourcePosition
+municipality type,http://dbpedia.org/property/municipalityType
+landmark,http://dbpedia.org/property/landmark
+progression,http://dbpedia.org/property/progression
+municipality,http://dbpedia.org/ontology/municipality
+source confluence,http://dbpedia.org/property/sourceConfluence
+source1 elevation,http://dbpedia.org/property/source1Elevation
+discharge1 avg,http://dbpedia.org/property/discharge1Avg
+left tributary,http://dbpedia.org/ontology/leftTributary
+map locator y,http://dbpedia.org/property/mapLocatorY
+map locator x,http://dbpedia.org/property/mapLocatorX
+Length,http://dbpedia.org/property/length
+Wikipage revision ID,http://dbpedia.org/ontology/wikiPageRevisionID
+GKZ,http://dbpedia.org/property/gkz
+map size,http://dbpedia.org/property/mapSize
+mouth country,http://dbpedia.org/ontology/mouthCountry
+tributaries right,http://dbpedia.org/property/tributariesRight
+North,http://dbpedia.org/property/north
+municipality,http://dbpedia.org/property/municipality
+discharge (m³/s),http://dbpedia.org/ontology/discharge
+area (m2),http://dbpedia.org/ontology/area
+Northwest,http://dbpedia.org/property/northwest
+source confluence mountain,http://dbpedia.org/ontology/sourceConfluenceMountain
+tributaries left,http://dbpedia.org/property/tributariesLeft
+mouth coord region,http://dbpedia.org/property/mouthCoordRegion
+BILD,http://dbpedia.org/property/bild
+East,http://dbpedia.org/property/east
+coordinates type,http://dbpedia.org/property/coordinatesType
+group,http://dbpedia.org/property/group
+source1 long s,http://dbpedia.org/property/source1LongS
+source confluence name,http://dbpedia.org/property/sourceConfluenceName
+source confluence lat d,http://dbpedia.org/property/sourceConfluenceLatD
+commons,http://dbpedia.org/property/commons
+discharge average (m³/s),http://dbpedia.org/ontology/dischargeAverage
+basin countries,http://dbpedia.org/property/basinCountries
+nearest city,http://dbpedia.org/ontology/nearestCity
+source1 long m,http://dbpedia.org/property/source1LongM
+source confluence lat s,http://dbpedia.org/property/sourceConfluenceLatS
+source1 coord name,http://dbpedia.org/property/source1CoordName
+source confluence lat m,http://dbpedia.org/property/sourceConfluenceLatM
+source1 coord format,http://dbpedia.org/property/source1CoordFormat
+minimum discharge (m³/s),http://dbpedia.org/ontology/minimumDischarge
+c,http://dbpedia.org/property/c
+district type,http://dbpedia.org/property/districtType
+source1 long d,http://dbpedia.org/property/source1LongD
+l,http://dbpedia.org/property/l
+map locator,http://dbpedia.org/property/mapLocator
+EINZUGSGEBIET,http://dbpedia.org/property/einzugsgebiet
+has abstract,http://dbpedia.org/ontology/abstract
+t,http://dbpedia.org/property/t
+w,http://dbpedia.org/property/w
+name native lang,http://dbpedia.org/property/nameNativeLang
+p,http://dbpedia.org/property/p
+s,http://dbpedia.org/property/s
+source confluence position,http://dbpedia.org/ontology/sourceConfluencePosition
+mouth long s,http://dbpedia.org/property/mouthLongS
+wuu,http://dbpedia.org/property/wuu
+MÜNDUNG LONG GRAD,http://dbpedia.org/property/mündungLongGrad
+source mountain,http://dbpedia.org/ontology/sourceMountain
+maximum discharge (m³/s),http://dbpedia.org/ontology/maximumDischarge
+mouth long m,http://dbpedia.org/property/mouthLongM
+source elevation (μ),http://dbpedia.org/ontology/sourceElevation
+FLUSSSYSTEM,http://dbpedia.org/property/flusssystem
+country type,http://dbpedia.org/property/countryType
+BILDBESCHREIBUNG,http://dbpedia.org/property/bildbeschreibung
+mouth region,http://dbpedia.org/property/mouthRegion
+state,http://dbpedia.org/property/state
+watershed round,http://dbpedia.org/property/watershedRound
+governing body,http://dbpedia.org/property/governingBody
+source confluence long EW,http://dbpedia.org/property/sourceConfluenceLongEw
+source long m,http://dbpedia.org/property/sourceLongM
+desc,http://dbpedia.org/property/desc
+MITTELSTÄDTE,http://dbpedia.org/property/mittelstädte
+source long d,http://dbpedia.org/property/sourceLongD
+length (μ),http://dbpedia.org/ontology/length
+name,http://dbpedia.org/property/name
+mouth place,http://dbpedia.org/ontology/mouthPlace
+area,http://dbpedia.org/property/area
+mouth elevation,http://dbpedia.org/property/mouthElevation
+source region,http://dbpedia.org/property/sourceRegion
+BEZEICHNUNG-QUELLE,http://dbpedia.org/property/bezeichnungQuelle
+source1 state,http://dbpedia.org/property/source1State
+other name,http://dbpedia.org/property/otherName
+discharge1 location,http://dbpedia.org/property/discharge1Location
+Southeast,http://dbpedia.org/property/southeast
+river system,http://dbpedia.org/property/riverSystem
+map,http://dbpedia.org/property/map
+source country,http://dbpedia.org/ontology/sourceCountry
+KLEINSTÄDTE,http://dbpedia.org/property/kleinstädte
+region,http://dbpedia.org/property/region
+MÜNDUNG LAT GRAD,http://dbpedia.org/property/mündungLatGrad
+custom data,http://dbpedia.org/property/customData
+MÜNDUNG REGION,http://dbpedia.org/property/mündungRegion
+free,http://dbpedia.org/property/free
+pic,http://dbpedia.org/property/pic
+source,http://dbpedia.org/ontology/source
+watershed (m2),http://dbpedia.org/ontology/watershed
+QUELLHÖHE,http://dbpedia.org/property/quellhöhe
+name other,http://dbpedia.org/property/nameOther
+source confluence state,http://dbpedia.org/ontology/sourceConfluenceState
+mouth coord name,http://dbpedia.org/property/mouthCoordName
+discharge location,http://dbpedia.org/property/dischargeLocation
+ABFLUSSWEG,http://dbpedia.org/property/abflussweg
+num,http://dbpedia.org/property/num
+country flag,http://dbpedia.org/property/countryFlag
+source long s,http://dbpedia.org/property/sourceLongS
+mouth region,http://dbpedia.org/ontology/mouthRegion
+right tributary,http://dbpedia.org/ontology/rightTributary
+Wikipage redirect,http://dbpedia.org/ontology/wikiPageRedirects
+watershed (km2),http://dbpedia.org/ontology/Stream/watershed
+name native,http://dbpedia.org/property/nameNative
+Wikipage page ID,http://dbpedia.org/ontology/wikiPageID
+QUELLE REGION,http://dbpedia.org/property/quelleRegion
+discharge average (m³/s),http://dbpedia.org/ontology/Stream/dischargeAverage
+image alt,http://dbpedia.org/property/imageAlt
+mouth long EW,http://dbpedia.org/property/mouthLongEw
+mouth,http://dbpedia.org/property/mouth
+added,http://dbpedia.org/ontology/added
+subdivision name,http://dbpedia.org/property/subdivisionName
+mouth lat NS,http://dbpedia.org/property/mouthLatNs
+tributary left,http://dbpedia.org/property/tributaryLeft

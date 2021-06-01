@@ -1,0 +1,371 @@
+type,http://dbpedia.org/property/type
+coord region,http://dbpedia.org/property/coordRegion
+reference,http://dbpedia.org/property/reference
+Link from a Wikipage to an external page,http://dbpedia.org/ontology/wikiPageExternalLink
+align,http://dbpedia.org/property/align
+target,http://dbpedia.org/property/target
+Aug high C,http://dbpedia.org/property/augHighC
+lien subdivision,http://dbpedia.org/property/lienSubdivision
+access date,http://dbpedia.org/property/accessDate
+latNS,http://dbpedia.org/property/latns
+access,http://dbpedia.org/ontology/access
+code type,http://dbpedia.org/property/codeType
+nom,http://dbpedia.org/property/nom
+Aug high F,http://dbpedia.org/property/augHighF
+coordinates,http://dbpedia.org/property/coordinates
+region served,http://dbpedia.org/ontology/regionServed
+floor count,http://dbpedia.org/property/floorCount
+location,http://dbpedia.org/property/location
+legend,http://dbpedia.org/property/legend
+native language,http://dbpedia.org/property/nativeLanguage
+lon deg,http://dbpedia.org/property/lonDeg
+etymology,http://dbpedia.org/property/etymology
+height1 type,http://dbpedia.org/property/height1Type
+text,http://dbpedia.org/property/text
+country,http://dbpedia.org/property/country
+Jul low C,http://dbpedia.org/property/julLowC
+long seconds,http://dbpedia.org/property/longSeconds
+image size,http://dbpedia.org/property/imageSize
+Jul low F,http://dbpedia.org/property/julLowF
+image,http://dbpedia.org/property/image
+logo width,http://dbpedia.org/property/logoWidth
+destination initiale,http://dbpedia.org/property/destinationInitiale
+position,http://dbpedia.org/property/position
+material note,http://dbpedia.org/property/materialNote
+rr,http://dbpedia.org/property/rr
+labels,http://dbpedia.org/property/labels
+free1 type,http://dbpedia.org/property/free1Type
+voy,http://dbpedia.org/property/voy
+accessdate,http://dbpedia.org/property/accessdate
+code,http://dbpedia.org/ontology/code
+imperial unit,http://dbpedia.org/property/imperialUnit
+perps,http://dbpedia.org/property/perps
+native name lang,http://dbpedia.org/property/nativeNameLang
+lat direction,http://dbpedia.org/property/latDirection
+lat deg,http://dbpedia.org/property/latDeg
+long degrees,http://dbpedia.org/property/longDegrees
+owning organisation,http://dbpedia.org/ontology/owningOrganisation
+year high C,http://dbpedia.org/property/yearHighC
+year high F,http://dbpedia.org/property/yearHighF
+Jan high F,http://dbpedia.org/property/janHighF
+map caption,http://dbpedia.org/property/mapCaption
+Jan high C,http://dbpedia.org/property/janHighC
+imagesize,http://dbpedia.org/property/imagesize
+państwo,http://dbpedia.org/ontology/locationCountry
+coordinates region,http://dbpedia.org/property/coordinatesRegion
+footnotes type,http://dbpedia.org/property/footnotesType
+height1 unit,http://dbpedia.org/property/height1Unit
+iso region,http://dbpedia.org/property/isoRegion
+lat sec,http://dbpedia.org/property/latSec
+elevation2 imperial,http://dbpedia.org/property/elevation2Imperial
+lat min,http://dbpedia.org/property/latMin
+established,http://dbpedia.org/property/established
+Dec low F,http://dbpedia.org/property/decLowF
+longm,http://dbpedia.org/property/longm
+country,http://dbpedia.org/ontology/country
+longs,http://dbpedia.org/property/longs
+Dec low C,http://dbpedia.org/property/decLowC
+longd,http://dbpedia.org/property/longd
+highest long EW,http://dbpedia.org/property/highestLongEw
+long EW,http://dbpedia.org/property/longEw
+long direction,http://dbpedia.org/property/longDirection
+thumbnail,http://dbpedia.org/ontology/thumbnail
+quoted,http://dbpedia.org/property/quoted
+region type,http://dbpedia.org/property/regionType
+Aug low C,http://dbpedia.org/property/augLowC
+state,http://dbpedia.org/ontology/state
+Aug low F,http://dbpedia.org/property/augLowF
+map type,http://dbpedia.org/property/mapType
+owner,http://dbpedia.org/ontology/owner
+image width,http://dbpedia.org/property/imageWidth
+long m,http://dbpedia.org/property/longM
+locale,http://dbpedia.org/property/locale
+building,http://dbpedia.org/ontology/building
+long s,http://dbpedia.org/property/longS
+weight4 type,http://dbpedia.org/property/weight4Type
+maximum elevation (μ),http://dbpedia.org/ontology/maximumElevation
+architecture,http://dbpedia.org/property/architecture
+long d,http://dbpedia.org/property/longD
+region,http://dbpedia.org/ontology/region
+industry,http://dbpedia.org/ontology/industry
+Latitude,http://dbpedia.org/property/latitude
+map text,http://dbpedia.org/property/mapText
+longEW,http://dbpedia.org/property/longew
+Jul high C,http://dbpedia.org/property/julHighC
+wikt,http://dbpedia.org/property/wikt
+commemorates,http://dbpedia.org/property/commemorates
+functional status,http://dbpedia.org/property/functionalStatus
+Jul high F,http://dbpedia.org/property/julHighF
+format,http://dbpedia.org/property/format
+lat dir,http://dbpedia.org/property/latDir
+Nov low C,http://dbpedia.org/property/novLowC
+completed,http://dbpedia.org/property/completed
+Nov low F,http://dbpedia.org/property/novLowF
+data,http://dbpedia.org/property/data
+city type,http://dbpedia.org/property/cityType
+area unit,http://dbpedia.org/property/areaUnit
+poj,http://dbpedia.org/property/poj
+designer,http://dbpedia.org/property/designer
+date,http://dbpedia.org/property/date
+logo,http://dbpedia.org/property/logo
+auto,http://dbpedia.org/property/auto
+source ,http://dbpedia.org/property/source
+founder,http://dbpedia.org/property/founder
+Feb low F,http://dbpedia.org/property/febLowF
+nearest town,http://dbpedia.org/property/nearestTown
+founded,http://dbpedia.org/property/founded
+Feb low C,http://dbpedia.org/property/febLowC
+etymology type,http://dbpedia.org/property/etymologyType
+label name,http://dbpedia.org/property/labelName
+synonym,http://dbpedia.org/ontology/synonym
+elevation round,http://dbpedia.org/property/elevationRound
+coord parameters,http://dbpedia.org/property/coordParameters
+showflag,http://dbpedia.org/property/showflag
+volume,http://dbpedia.org/property/volume
+built,http://dbpedia.org/property/built
+Dec high C,http://dbpedia.org/property/decHighC
+length imperial,http://dbpedia.org/property/lengthImperial
+begin,http://dbpedia.org/property/begin
+Dec high F,http://dbpedia.org/property/decHighF
+highest,http://dbpedia.org/property/highest
+metric unit,http://dbpedia.org/property/metricUnit
+architectural style,http://dbpedia.org/ontology/architecturalStyle
+Caption,http://dbpedia.org/property/caption
+city,http://dbpedia.org/ontology/city
+location type,http://dbpedia.org/property/locationType
+mode,http://dbpedia.org/property/mode
+long minutes,http://dbpedia.org/property/longMinutes
+May low C,http://dbpedia.org/property/mayLowC
+May low F,http://dbpedia.org/property/mayLowF
+range type,http://dbpedia.org/property/rangeType
+museum,http://dbpedia.org/property/museum
+annual visitors,http://dbpedia.org/property/annualVisitors
+survey,http://dbpedia.org/property/survey
+range,http://dbpedia.org/property/range
+state flag,http://dbpedia.org/property/stateFlag
+free2 type,http://dbpedia.org/property/free2Type
+subdivision,http://dbpedia.org/property/subdivision
+highest elevation note,http://dbpedia.org/property/highestElevationNote
+official name,http://dbpedia.org/property/officialName
+founding date,http://dbpedia.org/ontology/foundingDate
+cc,http://dbpedia.org/property/cc
+1p,http://dbpedia.org/property/1p
+district,http://dbpedia.org/ontology/district
+city,http://dbpedia.org/property/city
+Jan low F,http://dbpedia.org/property/janLowF
+image caption,http://dbpedia.org/property/imageCaption
+width type,http://dbpedia.org/property/widthType
+inaugurated,http://dbpedia.org/property/inaugurated
+Apr high F,http://dbpedia.org/property/aprHighF
+state type,http://dbpedia.org/property/stateType
+extra,http://dbpedia.org/property/extra
+Jan low C,http://dbpedia.org/property/janLowC
+1a,http://dbpedia.org/property/1a
+type,http://dbpedia.org/ontology/type
+weight1 type,http://dbpedia.org/property/weight1Type
+height,http://dbpedia.org/property/height
+Apr high C,http://dbpedia.org/property/aprHighC
+zoo name,http://dbpedia.org/property/zooName
+unveiled,http://dbpedia.org/property/unveiled
+weight round,http://dbpedia.org/property/weightRound
+2y,http://dbpedia.org/property/2y
+date started,http://dbpedia.org/property/dateStarted
+locmapin,http://dbpedia.org/property/locmapin
+map width,http://dbpedia.org/property/mapWidth
+author,http://dbpedia.org/ontology/author
+location,http://dbpedia.org/ontology/location
+lat NS,http://dbpedia.org/property/latNs
+image file,http://dbpedia.org/property/imageFile
+painting alignment,http://dbpedia.org/property/paintingAlignment
+2p,http://dbpedia.org/property/2p
+coordinates display,http://dbpedia.org/property/coordinatesDisplay
+reason,http://dbpedia.org/property/reason
+pushpin map,http://dbpedia.org/property/pushpinMap
+material type,http://dbpedia.org/property/materialType
+building start date,http://dbpedia.org/ontology/buildingStartDate
+wiki articles,http://dbpedia.org/property/wikiArticles
+Sep low C,http://dbpedia.org/property/sepLowC
+2a,http://dbpedia.org/property/2a
+material,http://dbpedia.org/ontology/material
+free label,http://dbpedia.org/property/freeLabel
+Sep low F,http://dbpedia.org/property/sepLowF
+commune,http://dbpedia.org/property/commune
+1y,http://dbpedia.org/property/1y
+free type,http://dbpedia.org/property/freeType
+year,http://dbpedia.org/property/year
+Jun low F,http://dbpedia.org/property/junLowF
+Oct low F,http://dbpedia.org/property/octLowF
+lat seconds,http://dbpedia.org/property/latSeconds
+Jun low C,http://dbpedia.org/property/junLowC
+height imperial,http://dbpedia.org/property/heightImperial
+Apr low F,http://dbpedia.org/property/aprLowF
+id,http://dbpedia.org/property/id
+Apr low C,http://dbpedia.org/property/aprLowC
+Oct low C,http://dbpedia.org/property/octLowC
+Longitude,http://dbpedia.org/property/longitude
+otherarticle,http://dbpedia.org/property/otherarticle
+width unit,http://dbpedia.org/property/widthUnit
+owner type,http://dbpedia.org/property/ownerType
+portal,http://dbpedia.org/property/portal
+floor area (m2),http://dbpedia.org/ontology/floorArea
+lat degrees,http://dbpedia.org/property/latDegrees
+dismantled,http://dbpedia.org/property/dismantled
+Sponsor/Founder,http://dbpedia.org/property/sponsor/founder
+Mar high F,http://dbpedia.org/property/marHighF
+municipality type,http://dbpedia.org/property/municipalityType
+coordinate note,http://dbpedia.org/property/coordinateNote
+elevation (μ),http://dbpedia.org/ontology/elevation
+Mar high C,http://dbpedia.org/property/marHighC
+sculptor,http://dbpedia.org/property/sculptor
+municipality,http://dbpedia.org/ontology/municipality
+float,http://dbpedia.org/property/float
+Length,http://dbpedia.org/property/length
+embedded,http://dbpedia.org/property/embedded
+Wikipage revision ID,http://dbpedia.org/ontology/wikiPageRevisionID
+header,http://dbpedia.org/property/header
+map size,http://dbpedia.org/property/mapSize
+Website,http://dbpedia.org/property/website
+image map,http://dbpedia.org/property/imageMap
+founding year,http://dbpedia.org/ontology/foundingYear
+lat minutes,http://dbpedia.org/property/latMinutes
+Dedicated to,http://dbpedia.org/property/dedicatedTo
+weight2 type,http://dbpedia.org/property/weight2Type
+established2 type,http://dbpedia.org/property/established2Type
+urdu,http://dbpedia.org/property/urdu
+architect,http://dbpedia.org/property/architect
+Jun high C,http://dbpedia.org/property/junHighC
+established type,http://dbpedia.org/property/establishedType
+Jun high F,http://dbpedia.org/property/junHighF
+part,http://dbpedia.org/property/part
+elevation location,http://dbpedia.org/property/elevationLocation
+floor area (m2),http://dbpedia.org/ontology/Building/floorArea
+display,http://dbpedia.org/property/display
+key person,http://dbpedia.org/ontology/keyPerson
+relief,http://dbpedia.org/property/relief
+height type,http://dbpedia.org/property/heightType
+header align,http://dbpedia.org/property/headerAlign
+single line,http://dbpedia.org/property/singleLine
+weight (g),http://dbpedia.org/ontology/weight
+year low F,http://dbpedia.org/property/yearLowF
+commons,http://dbpedia.org/property/commons
+location city,http://dbpedia.org/ontology/locationCity
+year low C,http://dbpedia.org/property/yearLowC
+width1 type,http://dbpedia.org/property/width1Type
+d,http://dbpedia.org/property/d
+langcode,http://dbpedia.org/property/langcode
+highest lat NS,http://dbpedia.org/property/highestLatNs
+c,http://dbpedia.org/property/c
+coordinates format,http://dbpedia.org/property/coordinatesFormat
+b,http://dbpedia.org/property/b
+district type,http://dbpedia.org/property/districtType
+l,http://dbpedia.org/property/l
+map locator,http://dbpedia.org/property/mapLocator
+n,http://dbpedia.org/property/n
+has abstract,http://dbpedia.org/ontology/abstract
+j,http://dbpedia.org/property/j
+légende,http://dbpedia.org/property/légende
+footer,http://dbpedia.org/property/footer
+t,http://dbpedia.org/property/t
+w,http://dbpedia.org/property/w
+v,http://dbpedia.org/property/v
+q,http://dbpedia.org/property/q
+species,http://dbpedia.org/property/species
+p,http://dbpedia.org/property/p
+s,http://dbpedia.org/property/s
+hanja,http://dbpedia.org/property/hanja
+Nov high F,http://dbpedia.org/property/novHighF
+width imperial,http://dbpedia.org/property/widthImperial
+lats,http://dbpedia.org/property/lats
+mr,http://dbpedia.org/property/mr
+years,http://dbpedia.org/property/years
+Nov high C,http://dbpedia.org/property/novHighC
+géolocalisation,http://dbpedia.org/property/géolocalisation
+complete,http://dbpedia.org/property/complete
+building,http://dbpedia.org/property/building
+latm,http://dbpedia.org/property/latm
+width,http://dbpedia.org/property/width
+fabricator,http://dbpedia.org/property/fabricator
+weight imperial units,http://dbpedia.org/property/weightImperialUnits
+hangul,http://dbpedia.org/property/hangul
+nom local,http://dbpedia.org/property/nomLocal
+context,http://dbpedia.org/property/context
+direction,http://dbpedia.org/property/direction
+width round,http://dbpedia.org/property/widthRound
+Mar low C,http://dbpedia.org/property/marLowC
+author type,http://dbpedia.org/property/authorType
+destination actuelle,http://dbpedia.org/property/destinationActuelle
+image name,http://dbpedia.org/property/imageName
+state,http://dbpedia.org/property/state
+height round,http://dbpedia.org/property/heightRound
+architect,http://dbpedia.org/ontology/architect
+lon dir,http://dbpedia.org/property/lonDir
+fewer-links,http://dbpedia.org/property/fewerLinks
+Mar low F,http://dbpedia.org/property/marLowF
+lat s,http://dbpedia.org/property/latS
+desc,http://dbpedia.org/property/desc
+height2 type,http://dbpedia.org/property/height2Type
+lat m,http://dbpedia.org/property/latM
+Oct high F,http://dbpedia.org/property/octHighF
+Sep high C,http://dbpedia.org/property/sepHighC
+class,http://dbpedia.org/property/class
+name,http://dbpedia.org/property/name
+Sep high F,http://dbpedia.org/property/sepHighF
+weight,http://dbpedia.org/property/weight
+Oct high C,http://dbpedia.org/property/octHighC
+url,http://dbpedia.org/property/url
+latd,http://dbpedia.org/property/latd
+num species,http://dbpedia.org/property/numSpecies
+area round,http://dbpedia.org/property/areaRound
+coord display,http://dbpedia.org/property/coordDisplay
+map image,http://dbpedia.org/property/mapImage
+partof,http://dbpedia.org/property/partof
+author,http://dbpedia.org/property/author
+border,http://dbpedia.org/property/border
+bgcolor,http://dbpedia.org/property/bgcolor
+region,http://dbpedia.org/property/region
+weight3 type,http://dbpedia.org/property/weight3Type
+established1 type,http://dbpedia.org/property/established1Type
+liststyle,http://dbpedia.org/property/liststyle
+fatalities,http://dbpedia.org/property/fatalities
+date opened,http://dbpedia.org/property/dateOpened
+qalign,http://dbpedia.org/property/qalign
+Feb high F,http://dbpedia.org/property/febHighF
+free,http://dbpedia.org/property/free
+Feb high C,http://dbpedia.org/property/febHighC
+building end date,http://dbpedia.org/ontology/buildingEndDate
+operated by,http://dbpedia.org/property/operatedBy
+website type,http://dbpedia.org/property/websiteType
+width1 unit,http://dbpedia.org/property/width1Unit
+lat d,http://dbpedia.org/property/latD
+num,http://dbpedia.org/property/num
+height-unit,http://dbpedia.org/property/heightUnit
+lon sec,http://dbpedia.org/property/lonSec
+label,http://dbpedia.org/property/label
+lon min,http://dbpedia.org/property/lonMin
+May high F,http://dbpedia.org/property/mayHighF
+country flag,http://dbpedia.org/property/countryFlag
+long,http://dbpedia.org/property/long
+May high C,http://dbpedia.org/property/mayHighC
+inscription,http://dbpedia.org/property/inscription
+name local,http://dbpedia.org/property/nameLocal
+material,http://dbpedia.org/property/material
+colwidth,http://dbpedia.org/property/colwidth
+Wikipage redirect,http://dbpedia.org/ontology/wikiPageRedirects
+photos,http://dbpedia.org/property/photos
+opened date,http://dbpedia.org/property/openedDate
+owner,http://dbpedia.org/property/owner
+designer,http://dbpedia.org/ontology/designer
+Wikipage page ID,http://dbpedia.org/ontology/wikiPageID
+Alt,http://dbpedia.org/property/alt
+builder,http://dbpedia.org/ontology/builder
+metric first,http://dbpedia.org/property/metricFirst
+open,http://dbpedia.org/property/open
+native name,http://dbpedia.org/property/nativeName
+image alt,http://dbpedia.org/property/imageAlt
+quote,http://dbpedia.org/property/quote
+title,http://dbpedia.org/property/title
+museum,http://dbpedia.org/ontology/museum
+width (μ),http://dbpedia.org/ontology/width
+footer align,http://dbpedia.org/property/footerAlign
+height2 unit,http://dbpedia.org/property/height2Unit
+lat,http://dbpedia.org/property/lat

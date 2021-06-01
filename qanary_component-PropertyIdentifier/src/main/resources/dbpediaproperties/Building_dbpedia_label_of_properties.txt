@@ -1,0 +1,646 @@
+type,http://dbpedia.org/property/type
+letter,http://dbpedia.org/property/letter
+align,http://dbpedia.org/property/align
+latNS,http://dbpedia.org/property/latns
+designated other1 num position,http://dbpedia.org/property/designatedOther1NumPosition
+architecture firm,http://dbpedia.org/property/architectureFirm
+curator,http://dbpedia.org/property/curator
+coordinates,http://dbpedia.org/property/coordinates
+resort,http://dbpedia.org/property/resort
+cost ($),http://dbpedia.org/ontology/cost
+team name,http://dbpedia.org/ontology/teamName
+designation1 criteria,http://dbpedia.org/property/designation1Criteria
+lon deg,http://dbpedia.org/property/lonDeg
+long seconds,http://dbpedia.org/property/longSeconds
+architect OR builder,http://dbpedia.org/property/architectOrBuilder
+insignia,http://dbpedia.org/property/insignia
+renovation date,http://dbpedia.org/property/renovationDate
+stat2value,http://dbpedia.org/property/stat2value
+spire quantity,http://dbpedia.org/property/spireQuantity
+affiliation,http://dbpedia.org/property/affiliation
+appointer,http://dbpedia.org/property/appointer
+former band member,http://dbpedia.org/ontology/formerBandMember
+Last single,http://dbpedia.org/property/lastSingle
+seating capacity,http://dbpedia.org/ontology/seatingCapacity
+native name lang,http://dbpedia.org/property/nativeNameLang
+lat direction,http://dbpedia.org/property/latDirection
+address,http://dbpedia.org/ontology/address
+architecture style,http://dbpedia.org/property/architectureStyle
+curator,http://dbpedia.org/ontology/curator
+fam,http://dbpedia.org/property/fam
+religion,http://dbpedia.org/ontology/religion
+management,http://dbpedia.org/property/management
+lingua ref,http://dbpedia.org/property/linguaRef
+osgraw,http://dbpedia.org/property/osgraw
+spoken in,http://dbpedia.org/ontology/spokenIn
+lat min,http://dbpedia.org/property/latMin
+established,http://dbpedia.org/property/established
+consecration year,http://dbpedia.org/property/consecrationYear
+rite,http://dbpedia.org/property/rite
+career position,http://dbpedia.org/property/careerPosition
+construction cost,http://dbpedia.org/property/constructionCost
+key people,http://dbpedia.org/property/keyPeople
+capacity,http://dbpedia.org/property/capacity
+publications,http://dbpedia.org/property/publications
+sail type,http://dbpedia.org/property/sailType
+img size,http://dbpedia.org/property/imgSize
+members,http://dbpedia.org/property/members
+jurisdiction,http://dbpedia.org/ontology/jurisdiction
+storeys,http://dbpedia.org/property/storeys
+os grid reference,http://dbpedia.org/property/osGridReference
+artery,http://dbpedia.org/ontology/artery
+Dorlands prefix,http://dbpedia.org/ontology/dorlandsPrefix
+leadership,http://dbpedia.org/property/leadership
+base storeys,http://dbpedia.org/property/baseStoreys
+num employees,http://dbpedia.org/property/numEmployees
+Dorlands suffix,http://dbpedia.org/ontology/dorlandsSuffix
+state,http://dbpedia.org/ontology/state
+rector,http://dbpedia.org/property/rector
+minister,http://dbpedia.org/property/minister
+water rides,http://dbpedia.org/property/waterRides
+map type,http://dbpedia.org/property/mapType
+bishop ,http://dbpedia.org/property/bishop
+patron,http://dbpedia.org/property/patron
+image width,http://dbpedia.org/property/imageWidth
+date,http://dbpedia.org/ontology/date
+delisted,http://dbpedia.org/property/delisted
+NRHP Reference Number,http://dbpedia.org/ontology/nrhpReferenceNumber
+architecture,http://dbpedia.org/property/architecture
+number of visitors,http://dbpedia.org/ontology/numberOfVisitors
+address,http://dbpedia.org/property/address
+branch of,http://dbpedia.org/property/branchOf
+NeuroLex,http://dbpedia.org/property/neurolex
+sail number,http://dbpedia.org/property/sailNumber
+longEW,http://dbpedia.org/property/longew
+parent organisation,http://dbpedia.org/ontology/parentOrganisation
+height ft,http://dbpedia.org/property/heightFt
+completed,http://dbpedia.org/property/completed
+used,http://dbpedia.org/property/used
+data,http://dbpedia.org/property/data
+date,http://dbpedia.org/property/date
+source ,http://dbpedia.org/property/source
+rollingstock,http://dbpedia.org/property/rollingstock
+founder,http://dbpedia.org/property/founder
+names,http://dbpedia.org/property/names
+founded,http://dbpedia.org/property/founded
+affiliation,http://dbpedia.org/ontology/affiliation
+race horse,http://dbpedia.org/ontology/raceHorse
+heritage designation,http://dbpedia.org/property/heritageDesignation
+director,http://dbpedia.org/property/director
+floors,http://dbpedia.org/property/floors
+primate,http://dbpedia.org/property/primate
+termlength,http://dbpedia.org/property/termlength
+coord parameters,http://dbpedia.org/property/coordParameters
+publictransit,http://dbpedia.org/property/publictransit
+showflag,http://dbpedia.org/property/showflag
+routes,http://dbpedia.org/property/routes
+built,http://dbpedia.org/property/built
+years built,http://dbpedia.org/property/yearsBuilt
+familycolor,http://dbpedia.org/property/familycolor
+head label,http://dbpedia.org/property/headLabel
+architectural style,http://dbpedia.org/ontology/architecturalStyle
+Caption,http://dbpedia.org/property/caption
+weight (kg),http://dbpedia.org/ontology/Person/weight
+long minutes,http://dbpedia.org/property/longMinutes
+static image name,http://dbpedia.org/property/staticImageName
+grade,http://dbpedia.org/property/grade
+faculty size,http://dbpedia.org/ontology/facultySize
+number of anchors,http://dbpedia.org/property/numberOfAnchors
+subdivision,http://dbpedia.org/property/subdivision
+other dimensions,http://dbpedia.org/property/otherDimensions
+number of rooms,http://dbpedia.org/ontology/numberOfRooms
+office,http://dbpedia.org/ontology/office
+official name,http://dbpedia.org/property/officialName
+closed,http://dbpedia.org/property/closed
+founding date,http://dbpedia.org/ontology/foundingDate
+Flag,http://dbpedia.org/property/flag
+chaplain,http://dbpedia.org/property/chaplain
+district,http://dbpedia.org/ontology/district
+presbytery,http://dbpedia.org/property/presbytery
+image caption,http://dbpedia.org/property/imageCaption
+HOF player,http://dbpedia.org/property/hofPlayer
+pushpin label position,http://dbpedia.org/property/pushpinLabelPosition
+headquarter,http://dbpedia.org/ontology/headquarter
+college,http://dbpedia.org/ontology/college
+feeders,http://dbpedia.org/property/feeders
+refnum,http://dbpedia.org/property/refnum
+place of military conflict,http://dbpedia.org/ontology/place
+type,http://dbpedia.org/ontology/type
+seal width,http://dbpedia.org/property/sealWidth
+number,http://dbpedia.org/ontology/number
+debut,http://dbpedia.org/property/debut
+designated other1 name,http://dbpedia.org/property/designatedOther1Name
+residence,http://dbpedia.org/ontology/residence
+dedication,http://dbpedia.org/property/dedication
+map width,http://dbpedia.org/property/mapWidth
+location,http://dbpedia.org/ontology/location
+highschool,http://dbpedia.org/ontology/highschool
+birth place,http://dbpedia.org/ontology/birthPlace
+coordinates display,http://dbpedia.org/property/coordinatesDisplay
+year of construction,http://dbpedia.org/ontology/yearOfConstruction
+height in,http://dbpedia.org/property/heightIn
+reason,http://dbpedia.org/property/reason
+strength,http://dbpedia.org/ontology/strength
+pushpin map,http://dbpedia.org/property/pushpinMap
+tl,http://dbpedia.org/property/tl
+year started,http://dbpedia.org/property/yearStarted
+nation,http://dbpedia.org/property/nation
+before,http://dbpedia.org/property/before
+building start date,http://dbpedia.org/ontology/buildingStartDate
+ren oth designers,http://dbpedia.org/property/renOthDesigners
+former team,http://dbpedia.org/ontology/formerTeam
+debut team,http://dbpedia.org/ontology/debutTeam
+runtime (s),http://dbpedia.org/ontology/runtime
+designation1 number,http://dbpedia.org/property/designation1Number
+decimal,http://dbpedia.org/property/decimal
+runtime (m),http://dbpedia.org/ontology/Work/runtime
+abbot,http://dbpedia.org/property/abbot
+background,http://dbpedia.org/ontology/background
+stat1label,http://dbpedia.org/property/stat1label
+individualised GND number,http://dbpedia.org/ontology/individualisedGnd
+mohs,http://dbpedia.org/property/mohs
+funding,http://dbpedia.org/property/funding
+main contractor,http://dbpedia.org/property/mainContractor
+architecture type,http://dbpedia.org/property/architectureType
+former name,http://dbpedia.org/ontology/formerName
+Longitude,http://dbpedia.org/property/longitude
+pushpin mapsize,http://dbpedia.org/property/pushpinMapsize
+death date,http://dbpedia.org/ontology/deathDate
+disbanded,http://dbpedia.org/property/disbanded
+draft year,http://dbpedia.org/ontology/draftYear
+leader,http://dbpedia.org/property/leader
+DorlandsID,http://dbpedia.org/property/dorlandsid
+draft round,http://dbpedia.org/ontology/draftRound
+stat1value,http://dbpedia.org/property/stat1value
+research field,http://dbpedia.org/property/researchField
+tradition,http://dbpedia.org/property/tradition
+lat degrees,http://dbpedia.org/property/latDegrees
+cat suffix,http://dbpedia.org/property/catSuffix
+temple quantity,http://dbpedia.org/property/templeQuantity
+building type,http://dbpedia.org/property/buildingType
+Zip Code,http://dbpedia.org/property/zipCode
+designated other2 abbr,http://dbpedia.org/property/designatedOther2Abbr
+prefix,http://dbpedia.org/property/prefix
+luster,http://dbpedia.org/property/luster
+script,http://dbpedia.org/property/script
+designated other1 date,http://dbpedia.org/property/designatedOther1Date
+status,http://dbpedia.org/property/status
+imagecaption,http://dbpedia.org/property/imagecaption
+deputy,http://dbpedia.org/property/deputy
+foundation place,http://dbpedia.org/ontology/foundationPlace
+designation,http://dbpedia.org/property/designation
+namedfor,http://dbpedia.org/property/namedfor
+Seal,http://dbpedia.org/property/seal
+embedded,http://dbpedia.org/property/embedded
+is part of anatomical structure,http://dbpedia.org/ontology/isPartOfAnatomicalStructure
+child organisation,http://dbpedia.org/ontology/childOrganisation
+designated date,http://dbpedia.org/property/designatedDate
+number of students,http://dbpedia.org/ontology/numberOfStudents
+musical band,http://dbpedia.org/ontology/musicalBand
+lang,http://dbpedia.org/property/lang
+flagsize,http://dbpedia.org/property/flagsize
+designated other1 link,http://dbpedia.org/property/designatedOther1Link
+leader,http://dbpedia.org/ontology/leader
+combatant,http://dbpedia.org/ontology/combatant
+municipality,http://dbpedia.org/property/municipality
+area (m2),http://dbpedia.org/ontology/area
+date demolished,http://dbpedia.org/property/dateDemolished
+rebuilt,http://dbpedia.org/property/rebuilt
+number of stores,http://dbpedia.org/property/numberOfStores
+client,http://dbpedia.org/property/client
+congregations,http://dbpedia.org/property/congregations
+floor area (m2),http://dbpedia.org/ontology/Building/floorArea
+relief,http://dbpedia.org/property/relief
+header align,http://dbpedia.org/property/headerAlign
+preceding,http://dbpedia.org/property/preceding
+weight (g),http://dbpedia.org/ontology/weight
+img capt,http://dbpedia.org/property/imgCapt
+nearest city,http://dbpedia.org/ontology/nearestCity
+parking,http://dbpedia.org/property/parking
+designated other1 color,http://dbpedia.org/property/designatedOther1Color
+nrhp,http://dbpedia.org/property/nrhp
+coordinates format,http://dbpedia.org/property/coordinatesFormat
+newspaper,http://dbpedia.org/property/newspaper
+after,http://dbpedia.org/property/after
+head,http://dbpedia.org/property/head
+stat3value,http://dbpedia.org/property/stat3value
+draft pick,http://dbpedia.org/ontology/draftPick
+en text,http://dbpedia.org/property/enText
+has abstract,http://dbpedia.org/ontology/abstract
+structural engineer,http://dbpedia.org/property/structuralEngineer
+communities,http://dbpedia.org/property/communities
+lats,http://dbpedia.org/property/lats
+years,http://dbpedia.org/property/years
+fracture,http://dbpedia.org/property/fracture
+speciality,http://dbpedia.org/property/speciality
+glotto,http://dbpedia.org/property/glotto
+latm,http://dbpedia.org/property/latm
+child,http://dbpedia.org/ontology/child
+education,http://dbpedia.org/property/education
+designation1 type,http://dbpedia.org/property/designation1Type
+direction,http://dbpedia.org/property/direction
+occupation,http://dbpedia.org/ontology/occupation
+sound recording,http://dbpedia.org/ontology/soundRecording
+state,http://dbpedia.org/property/state
+pfr,http://dbpedia.org/property/pfr
+lon dir,http://dbpedia.org/property/lonDir
+department,http://dbpedia.org/property/department
+location of mill,http://dbpedia.org/property/locationOfMill
+ISO 639-3 code,http://dbpedia.org/ontology/iso6393Code
+auxpower,http://dbpedia.org/property/auxpower
+lingua,http://dbpedia.org/property/lingua
+designated other2 date,http://dbpedia.org/property/designatedOther2Date
+name,http://dbpedia.org/property/name
+url,http://dbpedia.org/property/url
+latd,http://dbpedia.org/property/latd
+general secretary,http://dbpedia.org/property/generalSecretary
+coord display,http://dbpedia.org/property/coordDisplay
+other name,http://dbpedia.org/property/otherName
+overlies,http://dbpedia.org/property/overlies
+destruction date,http://dbpedia.org/ontology/destructionDate
+video,http://dbpedia.org/property/video
+Town,http://dbpedia.org/property/town
+architectural type,http://dbpedia.org/property/architecturalType
+date of abandonment,http://dbpedia.org/ontology/dateOfAbandonment
+region,http://dbpedia.org/property/region
+draft round,http://dbpedia.org/property/draftRound
+pastteamsnote,http://dbpedia.org/property/pastteamsnote
+term end,http://dbpedia.org/property/termEnd
+map name,http://dbpedia.org/property/mapName
+classification,http://dbpedia.org/property/classification
+req to access,http://dbpedia.org/property/reqToAccess
+glottorefname,http://dbpedia.org/property/glottorefname
+namedby,http://dbpedia.org/property/namedby
+building end date,http://dbpedia.org/ontology/buildingEndDate
+predecessor,http://dbpedia.org/ontology/predecessor
+brain info type,http://dbpedia.org/ontology/brainInfoType
+MeSH number,http://dbpedia.org/ontology/meshNumber
+vertical-align,http://dbpedia.org/property/verticalAlign
+designated other2 link,http://dbpedia.org/property/designatedOther2Link
+campus,http://dbpedia.org/property/campus
+CBBASKHOF year,http://dbpedia.org/property/cbbaskhofYear
+elevation,http://dbpedia.org/property/elevation
+lon sec,http://dbpedia.org/property/lonSec
+headquarters,http://dbpedia.org/property/headquarters
+opening date,http://dbpedia.org/property/openingDate
+campus size (m2),http://dbpedia.org/ontology/campusSize
+Wikipage redirect,http://dbpedia.org/ontology/wikiPageRedirects
+headerimage,http://dbpedia.org/property/headerimage
+opened date,http://dbpedia.org/property/openedDate
+Recorded,http://dbpedia.org/property/recorded
+nfl,http://dbpedia.org/property/nfl
+cteam,http://dbpedia.org/property/cteam
+Wikipage page ID,http://dbpedia.org/ontology/wikiPageID
+Alt,http://dbpedia.org/property/alt
+people,http://dbpedia.org/property/people
+finalteam,http://dbpedia.org/property/finalteam
+purpose,http://dbpedia.org/property/purpose
+owning company,http://dbpedia.org/ontology/owningCompany
+logosize,http://dbpedia.org/property/logosize
+formation year,http://dbpedia.org/ontology/formationYear
+seal caption,http://dbpedia.org/property/sealCaption
+wins,http://dbpedia.org/ontology/wins
+added,http://dbpedia.org/ontology/added
+footer align,http://dbpedia.org/property/footerAlign
+vicar,http://dbpedia.org/property/vicar
+speakers,http://dbpedia.org/property/speakers
+tower quantity,http://dbpedia.org/property/towerQuantity
+status,http://dbpedia.org/ontology/status
+added,http://dbpedia.org/property/added
+est completion,http://dbpedia.org/property/estCompletion
+Link from a Wikipage to an external page,http://dbpedia.org/ontology/wikiPageExternalLink
+operator,http://dbpedia.org/property/operator
+deanery,http://dbpedia.org/property/deanery
+flagcaption,http://dbpedia.org/property/flagcaption
+associations,http://dbpedia.org/property/associations
+HealthCare,http://dbpedia.org/property/healthcare
+diameter,http://dbpedia.org/property/diameter
+salary,http://dbpedia.org/property/salary
+weight lbs,http://dbpedia.org/property/weightLbs
+floor count,http://dbpedia.org/property/floorCount
+stat2label,http://dbpedia.org/property/stat2label
+location,http://dbpedia.org/property/location
+diocese,http://dbpedia.org/property/diocese
+parent,http://dbpedia.org/property/parent
+native language,http://dbpedia.org/property/nativeLanguage
+designation1 date,http://dbpedia.org/property/designation1Date
+habit,http://dbpedia.org/property/habit
+Emergency,http://dbpedia.org/property/emergency
+country,http://dbpedia.org/property/country
+honours,http://dbpedia.org/ontology/honours
+Dorlands,http://dbpedia.org/property/dorlands
+image size,http://dbpedia.org/property/imageSize
+image,http://dbpedia.org/property/image
+draft pick,http://dbpedia.org/property/draftPick
+postal code,http://dbpedia.org/ontology/postalCode
+spouse,http://dbpedia.org/property/spouse
+district,http://dbpedia.org/property/district
+items collected,http://dbpedia.org/property/itemsCollected
+topped out date,http://dbpedia.org/property/toppedOutDate
+completed date,http://dbpedia.org/property/completedDate
+organist,http://dbpedia.org/property/organist
+afl,http://dbpedia.org/property/afl
+NeuroLexID,http://dbpedia.org/property/neurolexid
+governance,http://dbpedia.org/property/governance
+high school,http://dbpedia.org/property/highSchool
+lang title,http://dbpedia.org/property/langTitle
+churchmanship,http://dbpedia.org/property/churchmanship
+long degrees,http://dbpedia.org/property/longDegrees
+winding,http://dbpedia.org/property/winding
+lat deg,http://dbpedia.org/property/latDeg
+active years start year,http://dbpedia.org/ontology/activeYearsStartYear
+This single,http://dbpedia.org/property/thisSingle
+windshaft,http://dbpedia.org/property/windshaft
+facade direction,http://dbpedia.org/property/facadeDirection
+nationality,http://dbpedia.org/property/nationality
+map caption,http://dbpedia.org/property/mapCaption
+head chef,http://dbpedia.org/ontology/headChef
+pop served,http://dbpedia.org/property/popServed
+imagesize,http://dbpedia.org/property/imagesize
+formation,http://dbpedia.org/property/formation
+colour,http://dbpedia.org/ontology/colour
+coordinates region,http://dbpedia.org/property/coordinatesRegion
+brain info number,http://dbpedia.org/ontology/brainInfoNumber
+occupation,http://dbpedia.org/property/occupation
+iso region,http://dbpedia.org/property/isoRegion
+structural system,http://dbpedia.org/property/structuralSystem
+lat sec,http://dbpedia.org/property/latSec
+insigniasize,http://dbpedia.org/property/insigniasize
+country,http://dbpedia.org/ontology/country
+longm,http://dbpedia.org/property/longm
+ISO 639-2 code,http://dbpedia.org/ontology/iso6392Code
+musical artist,http://dbpedia.org/ontology/musicalArtist
+industry,http://dbpedia.org/property/industry
+longs,http://dbpedia.org/property/longs
+priest,http://dbpedia.org/property/priest
+groundbreaking,http://dbpedia.org/property/groundbreaking
+right,http://dbpedia.org/property/right
+religious affiliation,http://dbpedia.org/property/religiousAffiliation
+longd,http://dbpedia.org/property/longd
+revenue ($),http://dbpedia.org/ontology/revenue
+height (μ),http://dbpedia.org/ontology/height
+age,http://dbpedia.org/property/age
+long direction,http://dbpedia.org/property/longDirection
+collection size,http://dbpedia.org/property/collectionSize
+specifications,http://dbpedia.org/property/specifications
+thumbnail,http://dbpedia.org/ontology/thumbnail
+designation1 offname,http://dbpedia.org/property/designation1Offname
+reverend,http://dbpedia.org/property/reverend
+ministers,http://dbpedia.org/property/ministers
+inaugural,http://dbpedia.org/property/inaugural
+alma mater,http://dbpedia.org/ontology/almaMater
+owner,http://dbpedia.org/ontology/owner
+successor,http://dbpedia.org/property/successor
+architects,http://dbpedia.org/property/architects
+region,http://dbpedia.org/ontology/region
+stats league,http://dbpedia.org/property/statsLeague
+roof,http://dbpedia.org/property/roof
+Latitude,http://dbpedia.org/property/latitude
+name of mill,http://dbpedia.org/property/nameOfMill
+elevator count,http://dbpedia.org/property/elevatorCount
+functional status,http://dbpedia.org/property/functionalStatus
+see,http://dbpedia.org/property/see
+parish,http://dbpedia.org/property/parish
+general contractor,http://dbpedia.org/property/generalContractor
+sign,http://dbpedia.org/property/sign
+format,http://dbpedia.org/property/format
+career number,http://dbpedia.org/property/careerNumber
+lat dir,http://dbpedia.org/property/latDir
+category,http://dbpedia.org/property/category
+services engineer,http://dbpedia.org/property/servicesEngineer
+number of visitors as of,http://dbpedia.org/ontology/numberOfVisitorsAsOf
+language,http://dbpedia.org/ontology/language
+creator,http://dbpedia.org/property/creator
+division,http://dbpedia.org/property/division
+webpage,http://dbpedia.org/property/webpage
+alternate names,http://dbpedia.org/property/alternateNames
+manager,http://dbpedia.org/property/manager
+logo,http://dbpedia.org/property/logo
+bed count,http://dbpedia.org/ontology/bedCount
+builder,http://dbpedia.org/property/builder
+designated other2 color,http://dbpedia.org/property/designatedOther2Color
+article name,http://dbpedia.org/property/articleName
+succession,http://dbpedia.org/property/succession
+streak,http://dbpedia.org/property/streak
+location city,http://dbpedia.org/property/locationCity
+refractive,http://dbpedia.org/property/refractive
+archdiocese,http://dbpedia.org/property/archdiocese
+floor area,http://dbpedia.org/property/floorArea
+constructed date,http://dbpedia.org/property/constructedDate
+ipa symbol,http://dbpedia.org/property/ipaSymbol
+nrhp type,http://dbpedia.org/property/nrhpType
+Deity,http://dbpedia.org/property/deity
+parishadmin,http://dbpedia.org/property/parishadmin
+promotions,http://dbpedia.org/property/promotions
+statlabel,http://dbpedia.org/property/statlabel
+structural system,http://dbpedia.org/ontology/structuralSystem
+party,http://dbpedia.org/ontology/party
+highlights,http://dbpedia.org/property/highlights
+released,http://dbpedia.org/property/released
+cuisine,http://dbpedia.org/ontology/cuisine
+legal deposit,http://dbpedia.org/property/legalDeposit
+phone,http://dbpedia.org/property/phone
+opened,http://dbpedia.org/property/opened
+city,http://dbpedia.org/ontology/city
+style,http://dbpedia.org/property/style
+updated,http://dbpedia.org/property/updated
+num branches,http://dbpedia.org/property/numBranches
+Gray subject,http://dbpedia.org/ontology/graySubject
+designated other1 abbr,http://dbpedia.org/property/designatedOther1Abbr
+province,http://dbpedia.org/property/province
+writer,http://dbpedia.org/ontology/writer
+main classification,http://dbpedia.org/property/mainClassification
+survey,http://dbpedia.org/property/survey
+completion date,http://dbpedia.org/property/completionDate
+en,http://dbpedia.org/property/en
+otherlithology,http://dbpedia.org/property/otherlithology
+Next single,http://dbpedia.org/property/nextSingle
+ref,http://dbpedia.org/property/ref
+birth date,http://dbpedia.org/property/birthDate
+city,http://dbpedia.org/property/city
+genre,http://dbpedia.org/ontology/genre
+designated nrhp type,http://dbpedia.org/property/designatedNrhpType
+built for,http://dbpedia.org/property/builtFor
+static image caption,http://dbpedia.org/property/staticImageCaption
+home town,http://dbpedia.org/ontology/hometown
+Helipad,http://dbpedia.org/property/helipad
+language regulator or academy,http://dbpedia.org/ontology/languageRegulator
+ISO 639-1 code,http://dbpedia.org/ontology/iso6391Code
+commander,http://dbpedia.org/ontology/commander
+pushpin map label position,http://dbpedia.org/property/pushpinMapLabelPosition
+formula,http://dbpedia.org/property/formula
+incumbent,http://dbpedia.org/property/incumbent
+locmapin,http://dbpedia.org/property/locmapin
+insigniacaption,http://dbpedia.org/property/insigniacaption
+number of restaurants,http://dbpedia.org/property/numberOfRestaurants
+gravity,http://dbpedia.org/property/gravity
+developer,http://dbpedia.org/property/developer
+campus size (km2),http://dbpedia.org/ontology/School/campusSize
+mpsub,http://dbpedia.org/property/mpsub
+President,http://dbpedia.org/property/president
+annual circulation,http://dbpedia.org/property/annualCirculation
+location country,http://dbpedia.org/property/locationCountry
+cap,http://dbpedia.org/property/cap
+grades,http://dbpedia.org/ontology/grades
+y,http://dbpedia.org/property/y
+lat seconds,http://dbpedia.org/property/latSeconds
+gbgridref,http://dbpedia.org/property/gbgridref
+successor,http://dbpedia.org/ontology/successor
+id,http://dbpedia.org/property/id
+system,http://dbpedia.org/property/system
+Gray page,http://dbpedia.org/ontology/grayPage
+library logo,http://dbpedia.org/property/libraryLogo
+phone num,http://dbpedia.org/property/phoneNum
+img,http://dbpedia.org/property/img
+renovated,http://dbpedia.org/property/renovated
+floor area (m2),http://dbpedia.org/ontology/floorArea
+year completed,http://dbpedia.org/property/yearCompleted
+Thickness,http://dbpedia.org/property/thickness
+smock sides,http://dbpedia.org/property/smockSides
+Beds,http://dbpedia.org/property/beds
+term period,http://dbpedia.org/ontology/termPeriod
+opening date,http://dbpedia.org/ontology/openingDate
+school colors,http://dbpedia.org/property/schoolColors
+keypeople,http://dbpedia.org/property/keypeople
+civil engineer,http://dbpedia.org/property/civilEngineer
+race,http://dbpedia.org/ontology/race
+float,http://dbpedia.org/property/float
+draft team,http://dbpedia.org/ontology/draftTeam
+map alt,http://dbpedia.org/property/mapAlt
+mapsize,http://dbpedia.org/property/mapsize
+materials,http://dbpedia.org/property/materials
+coord format,http://dbpedia.org/property/coordFormat
+number of employees,http://dbpedia.org/ontology/numberOfEmployees
+dome quantity,http://dbpedia.org/property/domeQuantity
+bells,http://dbpedia.org/property/bells
+designated other2 name,http://dbpedia.org/property/designatedOther2Name
+notice,http://dbpedia.org/property/notice
+term start,http://dbpedia.org/property/termStart
+reports to,http://dbpedia.org/property/reportsTo
+picture,http://dbpedia.org/ontology/picture
+Length,http://dbpedia.org/property/length
+Wikipage revision ID,http://dbpedia.org/ontology/wikiPageRevisionID
+denomination,http://dbpedia.org/property/denomination
+map size,http://dbpedia.org/property/mapSize
+Website,http://dbpedia.org/property/website
+image map,http://dbpedia.org/property/imageMap
+founding year,http://dbpedia.org/ontology/foundingYear
+Other,http://dbpedia.org/property/other
+left,http://dbpedia.org/property/left
+lat minutes,http://dbpedia.org/property/latMinutes
+designated other1 number,http://dbpedia.org/property/designatedOther1Number
+former name,http://dbpedia.org/property/formerName
+format (object),http://dbpedia.org/ontology/format
+architect,http://dbpedia.org/property/architect
+restored by,http://dbpedia.org/property/restoredBy
+district president,http://dbpedia.org/property/districtPresident
+active years end year,http://dbpedia.org/ontology/activeYearsEndYear
+pastor,http://dbpedia.org/property/pastor
+budget,http://dbpedia.org/property/budget
+link,http://dbpedia.org/property/link
+building costs,http://dbpedia.org/property/buildingCosts
+award,http://dbpedia.org/ontology/award
+saw type,http://dbpedia.org/property/sawType
+tenant,http://dbpedia.org/ontology/tenant
+budget ($),http://dbpedia.org/ontology/budget
+highest prev,http://dbpedia.org/property/highestPrev
+businessmgr,http://dbpedia.org/property/businessmgr
+undrafted year,http://dbpedia.org/ontology/undraftedYear
+awards,http://dbpedia.org/property/awards
+bbr,http://dbpedia.org/property/bbr
+archbishop,http://dbpedia.org/property/archbishop
+rival,http://dbpedia.org/ontology/rival
+supp,http://dbpedia.org/property/supp
+festivals,http://dbpedia.org/property/festivals
+c,http://dbpedia.org/property/c
+width nave,http://dbpedia.org/property/widthNave
+underlies,http://dbpedia.org/property/underlies
+priestincharge,http://dbpedia.org/property/priestincharge
+j,http://dbpedia.org/property/j
+office,http://dbpedia.org/property/office
+footer,http://dbpedia.org/property/footer
+t,http://dbpedia.org/property/t
+controlledby,http://dbpedia.org/property/controlledby
+w,http://dbpedia.org/property/w
+stat3label,http://dbpedia.org/property/stat3label
+p,http://dbpedia.org/property/p
+s,http://dbpedia.org/property/s
+previous denomination,http://dbpedia.org/property/previousDenomination
+rooms,http://dbpedia.org/property/rooms
+former names,http://dbpedia.org/property/formerNames
+affiliations,http://dbpedia.org/property/affiliations
+geo,http://dbpedia.org/property/geo
+width,http://dbpedia.org/property/width
+birth date,http://dbpedia.org/ontology/birthDate
+result,http://dbpedia.org/ontology/result
+Parish Priest,http://dbpedia.org/property/parishPriest
+archdeaconry,http://dbpedia.org/property/archdeaconry
+Cover,http://dbpedia.org/property/cover
+founded date,http://dbpedia.org/property/foundedDate
+engineer,http://dbpedia.org/property/engineer
+architect,http://dbpedia.org/ontology/architect
+college,http://dbpedia.org/property/college
+dwgs,http://dbpedia.org/property/dwgs
+governing body,http://dbpedia.org/property/governingBody
+ref legal mandate,http://dbpedia.org/property/refLegalMandate
+birth place,http://dbpedia.org/property/birthPlace
+cyears,http://dbpedia.org/property/cyears
+other post,http://dbpedia.org/property/otherPost
+highschool,http://dbpedia.org/property/highschool
+asstpriest,http://dbpedia.org/property/asstpriest
+closed date,http://dbpedia.org/property/closedDate
+Latin,http://dbpedia.org/property/latin
+Post,http://dbpedia.org/property/post
+predecessor,http://dbpedia.org/property/predecessor
+above,http://dbpedia.org/property/above
+incumbentsince,http://dbpedia.org/property/incumbentsince
+area,http://dbpedia.org/property/area
+membership,http://dbpedia.org/property/membership
+seniorpastor,http://dbpedia.org/property/seniorpastor
+highest region,http://dbpedia.org/property/highestRegion
+architectural style,http://dbpedia.org/property/architecturalStyle
+statvalue,http://dbpedia.org/property/statvalue
+rating,http://dbpedia.org/property/rating
+synod,http://dbpedia.org/property/synod
+partof,http://dbpedia.org/property/partof
+family,http://dbpedia.org/ontology/languageFamily
+position,http://dbpedia.org/ontology/position
+team,http://dbpedia.org/ontology/team
+nocat,http://dbpedia.org/property/nocat
+resting place,http://dbpedia.org/property/restingPlace
+opening year,http://dbpedia.org/ontology/openingYear
+seating capacity,http://dbpedia.org/property/seatingCapacity
+Principal,http://dbpedia.org/property/principal
+years active,http://dbpedia.org/property/yearsActive
+opening,http://dbpedia.org/property/opening
+titlebar,http://dbpedia.org/property/titlebar
+MeSH name,http://dbpedia.org/ontology/meshName
+founder,http://dbpedia.org/ontology/founder
+dean,http://dbpedia.org/property/dean
+record label,http://dbpedia.org/ontology/recordLabel
+ImageAlt,http://dbpedia.org/property/imagealt
+term,http://dbpedia.org/property/term
+bishop of,http://dbpedia.org/property/bishopOf
+lon min,http://dbpedia.org/property/lonMin
+designated other,http://dbpedia.org/property/designatedOther
+colwidth,http://dbpedia.org/property/colwidth
+coasters,http://dbpedia.org/property/coasters
+photos,http://dbpedia.org/property/photos
+chief1 position,http://dbpedia.org/property/chief1Position
+owner,http://dbpedia.org/property/owner
+partof refnum,http://dbpedia.org/property/partofRefnum
+consecrated date,http://dbpedia.org/property/consecratedDate
+managed by,http://dbpedia.org/property/managedBy
+latittude,http://dbpedia.org/property/latittude
+theology,http://dbpedia.org/property/theology
+dedicated date,http://dbpedia.org/property/dedicatedDate
+demolition date,http://dbpedia.org/property/demolitionDate
+native name,http://dbpedia.org/property/nativeName
+floor count,http://dbpedia.org/ontology/floorCount
+quote,http://dbpedia.org/property/quote
+shire county/state,http://dbpedia.org/property/shireCounty/state
+prilithology,http://dbpedia.org/property/prilithology
+title,http://dbpedia.org/property/title
+landscape,http://dbpedia.org/property/landscape
+apartments,http://dbpedia.org/property/apartments
+church name,http://dbpedia.org/property/churchName

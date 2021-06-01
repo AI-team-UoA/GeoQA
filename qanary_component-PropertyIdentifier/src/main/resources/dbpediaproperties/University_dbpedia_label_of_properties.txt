@@ -1,0 +1,578 @@
+type,http://dbpedia.org/property/type
+board member,http://dbpedia.org/property/boardMember
+head of school,http://dbpedia.org/property/headOfSchool
+publication,http://dbpedia.org/property/publication
+reference,http://dbpedia.org/property/reference
+events,http://dbpedia.org/property/events
+letter,http://dbpedia.org/property/letter
+align,http://dbpedia.org/property/align
+academic affiliation,http://dbpedia.org/property/academicAffiliation
+latNS,http://dbpedia.org/property/latns
+university,http://dbpedia.org/property/university
+mascot,http://dbpedia.org/ontology/mascot
+superintendent,http://dbpedia.org/property/superintendent
+county,http://dbpedia.org/property/county
+region served,http://dbpedia.org/ontology/regionServed
+service,http://dbpedia.org/property/service
+coordinates,http://dbpedia.org/property/coordinates
+pages,http://dbpedia.org/property/pages
+nick name,http://dbpedia.org/property/nickName
+undergrad,http://dbpedia.org/property/undergrad
+company slogan,http://dbpedia.org/property/companySlogan
+is part of,http://dbpedia.org/ontology/isPartOf
+Chief Executive Officer,http://dbpedia.org/property/chiefExecutiveOfficer
+artistic staff type,http://dbpedia.org/property/artisticStaffType
+Colors,http://dbpedia.org/property/colors
+asst principal,http://dbpedia.org/property/asstPrincipal
+grad cource,http://dbpedia.org/property/gradCource
+affiliation,http://dbpedia.org/property/affiliation
+ShortConference,http://dbpedia.org/property/shortconference
+certification,http://dbpedia.org/property/certification
+academic staff,http://dbpedia.org/property/academicStaff
+chapter,http://dbpedia.org/property/chapter
+yearbook,http://dbpedia.org/property/yearbook
+visitor,http://dbpedia.org/property/visitor
+native name lang,http://dbpedia.org/property/nativeNameLang
+private,http://dbpedia.org/property/private
+residents,http://dbpedia.org/property/residents
+parent company,http://dbpedia.org/ontology/parentCompany
+department chair,http://dbpedia.org/property/departmentChair
+address,http://dbpedia.org/ontology/address
+Official Language,http://dbpedia.org/property/officialLanguage
+Nickname,http://dbpedia.org/property/nickname
+prinicpal,http://dbpedia.org/property/prinicpal
+artistic director,http://dbpedia.org/property/artisticDirector
+management,http://dbpedia.org/property/management
+państwo,http://dbpedia.org/ontology/locationCountry
+statseason,http://dbpedia.org/property/statseason
+logofile,http://dbpedia.org/property/logofile
+established,http://dbpedia.org/property/established
+secretary general,http://dbpedia.org/property/secretaryGeneral
+hand span,http://dbpedia.org/property/handSpan
+key people,http://dbpedia.org/property/keyPeople
+capacity,http://dbpedia.org/property/capacity
+formation date,http://dbpedia.org/ontology/formationDate
+jurisdiction,http://dbpedia.org/ontology/jurisdiction
+members,http://dbpedia.org/property/members
+email,http://dbpedia.org/property/email
+membership,http://dbpedia.org/ontology/membership
+heightft,http://dbpedia.org/property/heightft
+chair,http://dbpedia.org/property/chair
+ratio,http://dbpedia.org/property/ratio
+state,http://dbpedia.org/ontology/state
+rector,http://dbpedia.org/property/rector
+CollegeHOF,http://dbpedia.org/property/collegehof
+map type,http://dbpedia.org/property/mapType
+patron,http://dbpedia.org/property/patron
+fight song,http://dbpedia.org/property/fightSong
+date,http://dbpedia.org/ontology/date
+nflnew,http://dbpedia.org/property/nflnew
+architecture,http://dbpedia.org/property/architecture
+accreditation,http://dbpedia.org/property/accreditation
+address,http://dbpedia.org/property/address
+industry,http://dbpedia.org/ontology/industry
+titlestyle,http://dbpedia.org/property/titlestyle
+fax,http://dbpedia.org/property/fax
+traded as,http://dbpedia.org/property/tradedAs
+order,http://dbpedia.org/property/order
+longEW,http://dbpedia.org/property/longew
+wikt,http://dbpedia.org/property/wikt
+parent organisation,http://dbpedia.org/ontology/parentOrganisation
+coach team,http://dbpedia.org/property/coachTeam
+height ft,http://dbpedia.org/property/heightFt
+data,http://dbpedia.org/property/data
+OUTLOOK,http://dbpedia.org/property/outlook
+principal,http://dbpedia.org/ontology/principal
+date,http://dbpedia.org/property/date
+founder,http://dbpedia.org/property/founder
+number of doctoral students,http://dbpedia.org/ontology/numberOfDoctoralStudents
+founded,http://dbpedia.org/property/founded
+motto English,http://dbpedia.org/property/mottoEnglish
+crest,http://dbpedia.org/property/crest
+abbreviation,http://dbpedia.org/property/abbreviation
+letters,http://dbpedia.org/property/letters
+affiliation,http://dbpedia.org/ontology/affiliation
+director,http://dbpedia.org/property/director
+designation1 free1name,http://dbpedia.org/property/designation1Free1name
+dash,http://dbpedia.org/property/dash
+fields,http://dbpedia.org/property/fields
+enrolment,http://dbpedia.org/property/enrolment
+coord parameters,http://dbpedia.org/property/coordParameters
+publictransit,http://dbpedia.org/property/publictransit
+showflag,http://dbpedia.org/property/showflag
+Prisoners,http://dbpedia.org/property/prisoners
+curriculum,http://dbpedia.org/property/curriculum
+built,http://dbpedia.org/property/built
+number of undergraduate students,http://dbpedia.org/ontology/numberOfUndergraduateStudents
+closing year,http://dbpedia.org/ontology/closingYear
+head label,http://dbpedia.org/property/headLabel
+Caption,http://dbpedia.org/property/caption
+weight (kg),http://dbpedia.org/ontology/Person/weight
+faculty size,http://dbpedia.org/ontology/facultySize
+polity,http://dbpedia.org/property/polity
+founders,http://dbpedia.org/property/founders
+closed,http://dbpedia.org/property/closed
+Incharge Coordinator,http://dbpedia.org/property/inchargeCoordinator
+ofsted,http://dbpedia.org/property/ofsted
+founding date,http://dbpedia.org/ontology/foundingDate
+image caption,http://dbpedia.org/property/imageCaption
+trustee,http://dbpedia.org/ontology/trustee
+heightin,http://dbpedia.org/property/heightin
+alumni,http://dbpedia.org/property/alumni
+pushpin label position,http://dbpedia.org/property/pushpinLabelPosition
+headquarter,http://dbpedia.org/ontology/headquarter
+college,http://dbpedia.org/ontology/college
+assets ($),http://dbpedia.org/ontology/assets
+Dean,Faculty of LMA,http://dbpedia.org/property/dean,facultyOfLma
+school board,http://dbpedia.org/ontology/schoolBoard
+place of military conflict,http://dbpedia.org/ontology/place
+type,http://dbpedia.org/ontology/type
+number,http://dbpedia.org/ontology/number
+enrollment as of,http://dbpedia.org/property/enrollmentAsOf
+causalties,http://dbpedia.org/ontology/causalties
+ages,http://dbpedia.org/property/ages
+acceptance,http://dbpedia.org/property/acceptance
+location,http://dbpedia.org/ontology/location
+highschool,http://dbpedia.org/ontology/highschool
+birth place,http://dbpedia.org/ontology/birthPlace
+number of staff,http://dbpedia.org/ontology/numberOfStaff
+height in,http://dbpedia.org/property/heightIn
+coordinates display,http://dbpedia.org/property/coordinatesDisplay
+program director,http://dbpedia.org/property/programDirector
+Facebook page,http://dbpedia.org/property/facebookPage
+coor,http://dbpedia.org/property/coor
+reason,http://dbpedia.org/property/reason
+pushpin map,http://dbpedia.org/property/pushpinMap
+sport,http://dbpedia.org/property/sport
+confrecord,http://dbpedia.org/property/confrecord
+pupils,http://dbpedia.org/property/pupils
+fix-attempted,http://dbpedia.org/property/fixAttempted
+endowment ($),http://dbpedia.org/ontology/endowment
+former team,http://dbpedia.org/ontology/formerTeam
+free label,http://dbpedia.org/property/freeLabel
+blazon,http://dbpedia.org/property/blazon
+debut team,http://dbpedia.org/ontology/debutTeam
+athletics,http://dbpedia.org/property/athletics
+Dean,Faculty of AVM,http://dbpedia.org/property/dean,facultyOfAvm
+beginning label,http://dbpedia.org/property/beginningLabel
+designation1 number,http://dbpedia.org/property/designation1Number
+coach,http://dbpedia.org/ontology/coach
+death place,http://dbpedia.org/ontology/deathPlace
+sport,http://dbpedia.org/ontology/sport
+provost,http://dbpedia.org/property/provost
+funding,http://dbpedia.org/property/funding
+free text,http://dbpedia.org/property/freeText
+logo size,http://dbpedia.org/property/logoSize
+former name,http://dbpedia.org/ontology/formerName
+chairperson,http://dbpedia.org/property/chairperson
+rosebud campus,http://dbpedia.org/property/rosebudCampus
+Longitude,http://dbpedia.org/property/longitude
+otherarticle,http://dbpedia.org/property/otherarticle
+campus type,http://dbpedia.org/ontology/campusType
+death date,http://dbpedia.org/ontology/deathDate
+draft year,http://dbpedia.org/ontology/draftYear
+Non-profit slogan,http://dbpedia.org/property/nonProfitSlogan
+leader,http://dbpedia.org/property/leader
+Wikipage disambiguates,http://dbpedia.org/ontology/wikiPageDisambiguates
+bot,http://dbpedia.org/property/bot
+draft round,http://dbpedia.org/ontology/draftRound
+superintendent,http://dbpedia.org/ontology/superintendent
+street,http://dbpedia.org/property/street
+Managing Dir,http://dbpedia.org/property/managingDir
+branches,http://dbpedia.org/property/branches
+denomination,http://dbpedia.org/ontology/denomination
+Rectum,http://dbpedia.org/property/rectum
+building type,http://dbpedia.org/property/buildingType
+motto,http://dbpedia.org/ontology/motto
+gender,http://dbpedia.org/property/gender
+telephone,http://dbpedia.org/property/telephone
+regions,http://dbpedia.org/property/regions
+approval,http://dbpedia.org/property/approval
+imagecaption,http://dbpedia.org/property/imagecaption
+status,http://dbpedia.org/property/status
+fundingtype,http://dbpedia.org/property/fundingtype
+designation,http://dbpedia.org/property/designation
+zipcode,http://dbpedia.org/property/zipcode
+schooltype,http://dbpedia.org/property/schooltype
+president,http://dbpedia.org/ontology/president
+provost,http://dbpedia.org/ontology/provost
+products,http://dbpedia.org/property/products
+number of students,http://dbpedia.org/ontology/numberOfStudents
+lang,http://dbpedia.org/property/lang
+wonderlic,http://dbpedia.org/property/wonderlic
+enrollment,http://dbpedia.org/property/enrollment
+students,http://dbpedia.org/property/students
+state name,http://dbpedia.org/property/stateName
+counsellor,http://dbpedia.org/property/counsellor
+key person,http://dbpedia.org/ontology/keyPerson
+logo alt,http://dbpedia.org/property/logoAlt
+named for,http://dbpedia.org/property/namedFor
+chairman,http://dbpedia.org/property/chairman
+chancellor,http://dbpedia.org/property/chancellor
+weight (g),http://dbpedia.org/ontology/weight
+commons,http://dbpedia.org/property/commons
+location city,http://dbpedia.org/ontology/locationCity
+player team,http://dbpedia.org/property/playerTeam
+upper age,http://dbpedia.org/ontology/upperAge
+langcode,http://dbpedia.org/property/langcode
+mornington campus,http://dbpedia.org/property/morningtonCampus
+population,http://dbpedia.org/property/population
+newspaper,http://dbpedia.org/property/newspaper
+coordinates format,http://dbpedia.org/property/coordinatesFormat
+image description,http://dbpedia.org/property/imageDescription
+administration,http://dbpedia.org/property/administration
+head,http://dbpedia.org/property/head
+draft pick,http://dbpedia.org/ontology/draftPick
+en text,http://dbpedia.org/property/enText
+has abstract,http://dbpedia.org/ontology/abstract
+calendar,http://dbpedia.org/property/calendar
+information,http://dbpedia.org/property/information
+championships,http://dbpedia.org/property/championships
+lats,http://dbpedia.org/property/lats
+years,http://dbpedia.org/property/years
+complete,http://dbpedia.org/property/complete
+vision,http://dbpedia.org/property/vision
+Times/Sunday Times,http://dbpedia.org/property/times/sundayTimes
+speciality,http://dbpedia.org/property/speciality
+latm,http://dbpedia.org/property/latm
+designation1 type,http://dbpedia.org/property/designation1Type
+occupation,http://dbpedia.org/ontology/occupation
+academic dean,http://dbpedia.org/property/academicDean
+image name,http://dbpedia.org/property/imageName
+arm span,http://dbpedia.org/property/armSpan
+state,http://dbpedia.org/property/state
+broad ft,http://dbpedia.org/property/broadFt
+pfr,http://dbpedia.org/property/pfr
+department,http://dbpedia.org/property/department
+last,http://dbpedia.org/property/last
+urn,http://dbpedia.org/property/urn
+Secretary,http://dbpedia.org/property/secretary
+ceeb,http://dbpedia.org/ontology/ceeb
+medium,http://dbpedia.org/property/medium
+AKA,http://dbpedia.org/property/aka
+is part of military conflict,http://dbpedia.org/ontology/isPartOfMilitaryConflict
+class,http://dbpedia.org/property/class
+name,http://dbpedia.org/property/name
+weight,http://dbpedia.org/property/weight
+Motto,http://dbpedia.org/property/motto
+Press,http://dbpedia.org/property/press
+The Guardian,http://dbpedia.org/property/theGuardian
+latd,http://dbpedia.org/property/latd
+NAAC Grade,http://dbpedia.org/property/naacGrade
+average class size,http://dbpedia.org/ontology/averageClassSize
+coord display,http://dbpedia.org/property/coordDisplay
+other name,http://dbpedia.org/property/otherName
+dean,http://dbpedia.org/ontology/dean
+medium of instruction,http://dbpedia.org/property/mediumOfInstruction
+contribution,http://dbpedia.org/property/contribution
+joint director,http://dbpedia.org/property/jointDirector
+region,http://dbpedia.org/property/region
+arts,http://dbpedia.org/property/arts
+draft round,http://dbpedia.org/property/draftRound
+birthplace,http://dbpedia.org/property/birthplace
+Vice President,http://dbpedia.org/property/vicePresident
+vertical,http://dbpedia.org/property/vertical
+Dean,Faculty of BAM,http://dbpedia.org/property/dean,facultyOfBam
+designation1 free1value,http://dbpedia.org/property/designation1Free1value
+classification,http://dbpedia.org/property/classification
+free,http://dbpedia.org/property/free
+Perent,http://dbpedia.org/property/perent
+artistic staff name,http://dbpedia.org/property/artisticStaffName
+campus area,http://dbpedia.org/property/campusArea
+building end date,http://dbpedia.org/ontology/buildingEndDate
+abbreviation,http://dbpedia.org/ontology/abbreviation
+afldraftyear,http://dbpedia.org/property/afldraftyear
+Dean, Faculty of NFS,http://dbpedia.org/property/dean,FacultyOfNfs
+vertical-align,http://dbpedia.org/property/verticalAlign
+col,http://dbpedia.org/property/col
+campus,http://dbpedia.org/property/campus
+chief academic officer,http://dbpedia.org/property/chiefAcademicOfficer
+infobox colour,http://dbpedia.org/property/infoboxColour
+year,http://dbpedia.org/ontology/year
+headquarters,http://dbpedia.org/property/headquarters
+death date,http://dbpedia.org/property/deathDate
+Pro Vice Chancellor,http://dbpedia.org/property/proViceChancellor
+campus size (m2),http://dbpedia.org/ontology/campusSize
+schedule,http://dbpedia.org/property/schedule
+course,http://dbpedia.org/property/course
+Wikipage redirect,http://dbpedia.org/ontology/wikiPageRedirects
+other names,http://dbpedia.org/property/otherNames
+nfl,http://dbpedia.org/property/nfl
+Wikipage page ID,http://dbpedia.org/ontology/wikiPageID
+circulation,http://dbpedia.org/property/circulation
+network,http://dbpedia.org/property/network
+Team,http://dbpedia.org/property/team
+Alt,http://dbpedia.org/property/alt
+finalteam,http://dbpedia.org/property/finalteam
+head label,http://dbpedia.org/ontology/headLabel
+leader name,http://dbpedia.org/property/leaderName
+cable chan ,http://dbpedia.org/property/cableChan
+prev year,http://dbpedia.org/property/prevYear
+category,http://dbpedia.org/ontology/category
+formation year,http://dbpedia.org/ontology/formationYear
+internationally,http://dbpedia.org/ontology/internationally
+status,http://dbpedia.org/ontology/status
+Link from a Wikipage to an external page,http://dbpedia.org/ontology/wikiPageExternalLink
+sigla,http://dbpedia.org/property/sigla
+head,http://dbpedia.org/ontology/head
+managed b y,http://dbpedia.org/property/managedBY
+Dean, Faculty of CSE,http://dbpedia.org/property/dean,FacultyOfCse
+vice president,http://dbpedia.org/ontology/vicePresident
+HealthCare,http://dbpedia.org/property/healthcare
+weight lbs,http://dbpedia.org/property/weightLbs
+location,http://dbpedia.org/property/location
+parent,http://dbpedia.org/property/parent
+coach years,http://dbpedia.org/property/coachYears
+designation1 date,http://dbpedia.org/property/designation1Date
+text,http://dbpedia.org/property/text
+Emergency,http://dbpedia.org/property/emergency
+area served,http://dbpedia.org/property/areaServed
+country,http://dbpedia.org/property/country
+image size,http://dbpedia.org/property/imageSize
+dfeno,http://dbpedia.org/property/dfeno
+vice chancellor,http://dbpedia.org/ontology/viceChancellor
+record,http://dbpedia.org/property/record
+logo width,http://dbpedia.org/property/logoWidth
+associated schools,http://dbpedia.org/property/associatedSchools
+administrative staff,http://dbpedia.org/property/administrativeStaff
+draft pick,http://dbpedia.org/property/draftPick
+postal code,http://dbpedia.org/ontology/postalCode
+broad in,http://dbpedia.org/property/broadIn
+district,http://dbpedia.org/property/district
+owners,http://dbpedia.org/property/owners
+purpose,http://dbpedia.org/ontology/purpose
+player years,http://dbpedia.org/property/playerYears
+voy,http://dbpedia.org/property/voy
+chair label,http://dbpedia.org/property/chairLabel
+schoolboard,http://dbpedia.org/property/schoolboard
+lang title,http://dbpedia.org/property/langTitle
+high school,http://dbpedia.org/property/highSchool
+doctoral,http://dbpedia.org/property/doctoral
+Song,http://dbpedia.org/property/song
+athletics,http://dbpedia.org/ontology/athletics
+active years start year,http://dbpedia.org/ontology/activeYearsStartYear
+organiser,http://dbpedia.org/property/organiser
+nationality,http://dbpedia.org/property/nationality
+imagesize,http://dbpedia.org/property/imagesize
+formation,http://dbpedia.org/property/formation
+dms,http://dbpedia.org/property/dms
+rector,http://dbpedia.org/ontology/rector
+iso region,http://dbpedia.org/property/isoRegion
+country,http://dbpedia.org/ontology/country
+longm,http://dbpedia.org/property/longm
+longs,http://dbpedia.org/property/longs
+right,http://dbpedia.org/property/right
+religious affiliation,http://dbpedia.org/property/religiousAffiliation
+longd,http://dbpedia.org/property/longd
+departments,http://dbpedia.org/property/departments
+revenue ($),http://dbpedia.org/ontology/revenue
+height (μ),http://dbpedia.org/ontology/height
+collection size,http://dbpedia.org/property/collectionSize
+thumbnail,http://dbpedia.org/ontology/thumbnail
+photo,http://dbpedia.org/property/photo
+Approvals,http://dbpedia.org/property/approvals
+campus,http://dbpedia.org/ontology/campus
+teaching staff,http://dbpedia.org/property/teachingStaff
+designation1 offname,http://dbpedia.org/property/designation1Offname
+registrar,http://dbpedia.org/property/registrar
+StadiumArena,http://dbpedia.org/property/stadiumarena
+picture caption,http://dbpedia.org/property/pictureCaption
+owner,http://dbpedia.org/ontology/owner
+recognitions,http://dbpedia.org/property/recognitions
+region,http://dbpedia.org/ontology/region
+Latitude,http://dbpedia.org/property/latitude
+website name,http://dbpedia.org/property/websiteName
+sister college,http://dbpedia.org/ontology/sisterCollege
+leaderFunction,http://dbpedia.org/ontology/leaderFunction
+language,http://dbpedia.org/ontology/language
+conviction status,http://dbpedia.org/property/convictionStatus
+us nces school id,http://dbpedia.org/property/usNcesSchoolId
+logo,http://dbpedia.org/property/logo
+diploma,http://dbpedia.org/property/diploma
+broadcast area,http://dbpedia.org/property/broadcastArea
+bed count,http://dbpedia.org/ontology/bedCount
+applications,http://dbpedia.org/property/applications
+pincode,http://dbpedia.org/property/pincode
+cable serv ,http://dbpedia.org/property/cableServ
+populationdate,http://dbpedia.org/property/populationdate
+DQ,http://dbpedia.org/property/dq
+staff,http://dbpedia.org/ontology/staff
+seal size,http://dbpedia.org/property/sealSize
+Dean,Faculty of DM,http://dbpedia.org/property/dean,facultyOfDm
+statlabel,http://dbpedia.org/property/statlabel
+highlights,http://dbpedia.org/property/highlights
+University Affiliation,http://dbpedia.org/property/universityAffiliation
+phone,http://dbpedia.org/property/phone
+city,http://dbpedia.org/ontology/city
+offered classes,http://dbpedia.org/ontology/offeredClasses
+net income ($),http://dbpedia.org/ontology/netIncome
+mode,http://dbpedia.org/property/mode
+price,http://dbpedia.org/property/price
+warden,http://dbpedia.org/property/warden
+style,http://dbpedia.org/property/style
+mission,http://dbpedia.org/property/mission
+Slogan,http://dbpedia.org/property/slogan
+official school colour,http://dbpedia.org/ontology/officialSchoolColour
+province,http://dbpedia.org/property/province
+Teachers & Officers,http://dbpedia.org/property/teachers&Officers
+en,http://dbpedia.org/property/en
+Tuition,http://dbpedia.org/property/tuition
+birth date,http://dbpedia.org/property/birthDate
+death place,http://dbpedia.org/property/deathPlace
+Courses,http://dbpedia.org/property/courses
+city,http://dbpedia.org/property/city
+genre,http://dbpedia.org/ontology/genre
+choreographers,http://dbpedia.org/property/choreographers
+Helipad,http://dbpedia.org/property/helipad
+IT E,http://dbpedia.org/property/itE
+college hymn,http://dbpedia.org/property/collegeHymn
+motto lang,http://dbpedia.org/property/mottoLang
+headerstyle,http://dbpedia.org/property/headerstyle
+date founded,http://dbpedia.org/property/dateFounded
+locmapin,http://dbpedia.org/property/locmapin
+head name,http://dbpedia.org/property/headName
+profess,http://dbpedia.org/property/profess
+technical,http://dbpedia.org/property/technical
+postgrad label,http://dbpedia.org/property/postgradLabel
+Vice-Chancellor,http://dbpedia.org/property/viceChancellor
+boat club,http://dbpedia.org/property/boatClub
+postgrad,http://dbpedia.org/property/postgrad
+campus size (km2),http://dbpedia.org/ontology/School/campusSize
+interim president,http://dbpedia.org/property/interimPresident
+number of graduate students,http://dbpedia.org/ontology/numberOfGraduateStudents
+President,http://dbpedia.org/property/president
+footnotes,http://dbpedia.org/property/footnotes
+year,http://dbpedia.org/property/year
+grades,http://dbpedia.org/ontology/grades
+in,http://dbpedia.org/property/in
+annual tuition,http://dbpedia.org/property/annualTuition
+picture format,http://dbpedia.org/ontology/pictureFormat
+local authority,http://dbpedia.org/ontology/localAuthority
+id,http://dbpedia.org/property/id
+system,http://dbpedia.org/property/system
+postcode,http://dbpedia.org/property/postcode
+language,http://dbpedia.org/property/language
+designation1 free2name,http://dbpedia.org/property/designation1Free2name
+international students,http://dbpedia.org/property/internationalStudents
+vice principal,http://dbpedia.org/property/vicePrincipal
+namesake,http://dbpedia.org/property/namesake
+hp,http://dbpedia.org/property/hp
+chancellor,http://dbpedia.org/ontology/chancellor
+authority,http://dbpedia.org/property/authority
+term period,http://dbpedia.org/ontology/termPeriod
+street-address,http://dbpedia.org/property/streetAddress
+Accredition,http://dbpedia.org/property/accredition
+school colors,http://dbpedia.org/property/schoolColors
+altname,http://dbpedia.org/property/altname
+product,http://dbpedia.org/ontology/product
+float,http://dbpedia.org/property/float
+draft team,http://dbpedia.org/ontology/draftTeam
+tuition ($),http://dbpedia.org/ontology/tuition
+faculty,http://dbpedia.org/property/faculty
+grades,http://dbpedia.org/property/grades
+film director,http://dbpedia.org/ontology/director
+number of employees,http://dbpedia.org/ontology/numberOfEmployees
+line,http://dbpedia.org/property/line
+master,http://dbpedia.org/property/master
+Wikipage revision ID,http://dbpedia.org/ontology/wikiPageRevisionID
+note,http://dbpedia.org/property/note
+deputy principals,http://dbpedia.org/property/deputyPrincipals
+size,http://dbpedia.org/property/size
+Website,http://dbpedia.org/property/website
+founding year,http://dbpedia.org/ontology/foundingYear
+sports,http://dbpedia.org/property/sports
+left,http://dbpedia.org/property/left
+former name,http://dbpedia.org/property/formerName
+architect,http://dbpedia.org/property/architect
+leader title,http://dbpedia.org/property/leaderTitle
+imagewidth,http://dbpedia.org/property/imagewidth
+active years end year,http://dbpedia.org/ontology/activeYearsEndYear
+chairman,http://dbpedia.org/ontology/chairman
+budget,http://dbpedia.org/property/budget
+beginning date,http://dbpedia.org/property/beginningDate
+awards,http://dbpedia.org/property/awards
+bbr,http://dbpedia.org/property/bbr
+group,http://dbpedia.org/property/group
+assistant principal,http://dbpedia.org/property/assistantPrincipal
+staff,http://dbpedia.org/property/staff
+d,http://dbpedia.org/property/d
+fightsong,http://dbpedia.org/property/fightsong
+first,http://dbpedia.org/property/first
+designation1 free2value,http://dbpedia.org/property/designation1Free2value
+c,http://dbpedia.org/property/c
+faculties,http://dbpedia.org/property/faculties
+b,http://dbpedia.org/property/b
+n,http://dbpedia.org/property/n
+age range,http://dbpedia.org/ontology/ageRange
+gender,http://dbpedia.org/ontology/gender
+t,http://dbpedia.org/property/t
+picture,http://dbpedia.org/property/picture
+vicechair,http://dbpedia.org/property/vicechair
+v,http://dbpedia.org/property/v
+tel,http://dbpedia.org/property/tel
+q,http://dbpedia.org/property/q
+species,http://dbpedia.org/property/species
+p,http://dbpedia.org/property/p
+s,http://dbpedia.org/property/s
+former names,http://dbpedia.org/property/formerNames
+affiliations,http://dbpedia.org/property/affiliations
+web,http://dbpedia.org/property/web
+viceprincipal,http://dbpedia.org/property/viceprincipal
+statleague,http://dbpedia.org/property/statleague
+width,http://dbpedia.org/property/width
+lower age,http://dbpedia.org/ontology/lowerAge
+birth date,http://dbpedia.org/ontology/birthDate
+founded date,http://dbpedia.org/property/foundedDate
+foundation,http://dbpedia.org/property/foundation
+college,http://dbpedia.org/property/college
+founded by,http://dbpedia.org/ontology/foundedBy
+houses,http://dbpedia.org/property/houses
+birth place,http://dbpedia.org/property/birthPlace
+next year,http://dbpedia.org/property/nextYear
+highschool,http://dbpedia.org/property/highschool
+Dean, Faculty of Agriculture,http://dbpedia.org/property/dean,FacultyOfAgriculture
+Pro VC,http://dbpedia.org/property/proVc
+area,http://dbpedia.org/property/area
+seal image,http://dbpedia.org/property/sealImage
+tagline,http://dbpedia.org/property/tagline
+conference,http://dbpedia.org/property/conference
+undergrad label,http://dbpedia.org/property/undergradLabel
+statvalue,http://dbpedia.org/property/statvalue
+Vice Rector,http://dbpedia.org/property/viceRector
+Non-profit logo,http://dbpedia.org/property/nonProfitLogo
+Dy.director,http://dbpedia.org/property/dy.director
+list,http://dbpedia.org/property/list
+institute,http://dbpedia.org/property/institute
+position,http://dbpedia.org/ontology/position
+endowment,http://dbpedia.org/property/endowment
+author,http://dbpedia.org/property/author
+streetaddress,http://dbpedia.org/property/streetaddress
+designation1 free3name,http://dbpedia.org/property/designation1Free3name
+opening year,http://dbpedia.org/ontology/openingYear
+chief1 name,http://dbpedia.org/property/chief1Name
+Principal,http://dbpedia.org/property/principal
+bodyclass,http://dbpedia.org/property/bodyclass
+venue,http://dbpedia.org/property/venue
+Dean,Faculty of Fisheries,http://dbpedia.org/property/dean,facultyOfFisheries
+teacher,http://dbpedia.org/property/teacher
+titlebar,http://dbpedia.org/property/titlebar
+county,http://dbpedia.org/ontology/county
+dean,http://dbpedia.org/property/dean
+charge,http://dbpedia.org/property/charge
+launch,http://dbpedia.org/property/launch
+shield,http://dbpedia.org/property/shield
+label,http://dbpedia.org/property/label
+groupstyle,http://dbpedia.org/property/groupstyle
+officer in charge,http://dbpedia.org/property/officerInCharge
+bgcolor section,http://dbpedia.org/property/bgcolorSection
+owner,http://dbpedia.org/property/owner
+homepage,http://dbpedia.org/property/homepage
+number of postgraduate students,http://dbpedia.org/ontology/numberOfPostgraduateStudents
+dbf,http://dbpedia.org/property/dbf
+vice-rectors,http://dbpedia.org/property/viceRectors
+subsid,http://dbpedia.org/property/subsid
+native name,http://dbpedia.org/property/nativeName
+image alt,http://dbpedia.org/property/imageAlt
+orientation,http://dbpedia.org/property/orientation
+pushpin map caption,http://dbpedia.org/property/pushpinMapCaption
+title,http://dbpedia.org/property/title
