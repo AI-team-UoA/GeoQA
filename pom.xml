@@ -11,5 +11,10 @@
     <module>qanary_pipeline-template</module>
     <module>qanary_component-template</module>
     <module>qald-evaluator</module>
+    <module>qanary_component-TagMeDisambiguate</module>
+    <module>qanary_component-ConceptIdentifier</module>
+    <module>qanary_component-RelationDetection</module>
+    <module>qanary_component-PropertyIdentifierYago</module>
+    <module>qanary_component-GeoSparqlGenerator</module>
   </modules>
 </project>
