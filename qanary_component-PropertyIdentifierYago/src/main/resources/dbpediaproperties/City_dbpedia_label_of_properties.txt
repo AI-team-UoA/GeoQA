@@ -1,0 +1,3236 @@
+Apr record high F,http://dbpedia.org/property/aprRecordHighF
+seats4 title,http://dbpedia.org/property/seats4Title
+access-date,http://dbpedia.org/property/accessDate
+Apr record high C,http://dbpedia.org/property/aprRecordHighC
+Apr snow cm,http://dbpedia.org/property/aprSnowCm
+county,http://dbpedia.org/property/county
+cost ($),http://dbpedia.org/ontology/cost
+May rain mm,http://dbpedia.org/property/mayRainMm
+iucn category,http://dbpedia.org/property/iucnCategory
+lon deg,http://dbpedia.org/property/lonDeg
+designation1 criteria,http://dbpedia.org/property/designation1Criteria
+etymology,http://dbpedia.org/property/etymology
+Feb humidity,http://dbpedia.org/property/febHumidity
+Oct sun,http://dbpedia.org/property/octSun
+demononym,http://dbpedia.org/property/demononym
+position,http://dbpedia.org/property/position
+lon4 deg,http://dbpedia.org/property/lon4Deg
+area urban,http://dbpedia.org/property/areaUrban
+lat5 deg,http://dbpedia.org/property/lat5Deg
+capital,http://dbpedia.org/property/capital
+labels,http://dbpedia.org/property/labels
+row3-6-text,http://dbpedia.org/property/row36Text
+Feb precipitation inch,http://dbpedia.org/property/febPrecipitationInch
+mnc,http://dbpedia.org/property/mnc
+overlay9tip,http://dbpedia.org/property/overlay9tip
+bar5-from,http://dbpedia.org/property/bar5From
+GDPPC PPP us,http://dbpedia.org/property/gdppcPppUs
+labela,http://dbpedia.org/property/labela
+labelb,http://dbpedia.org/property/labelb
+population density urban km,http://dbpedia.org/property/populationDensityUrbanKm
+inscriptions,http://dbpedia.org/property/inscriptions
+Blank name section ,http://dbpedia.org/property/blankNameSection
+government blank2 title,http://dbpedia.org/property/governmentBlank2Title
+de name,http://dbpedia.org/property/deName
+epochs,http://dbpedia.org/property/epochs
+Feb percentsun,http://dbpedia.org/property/febPercentsun
+mon,http://dbpedia.org/property/mon
+pop est as of,http://dbpedia.org/property/popEstAsOf
+collapsed,http://dbpedia.org/property/collapsed
+school board,http://dbpedia.org/property/schoolBoard
+frazioni,http://dbpedia.org/ontology/frazioni
+os grid reference,http://dbpedia.org/property/osGridReference
+cnhangul,http://dbpedia.org/property/cnhangul
+MPs,http://dbpedia.org/property/mps
+long EW,http://dbpedia.org/property/longEw
+Dec precipitation inch,http://dbpedia.org/property/decPrecipitationInch
+Feb maximum humidex,http://dbpedia.org/property/febMaximumHumidex
+population metro density (/sqkm),http://dbpedia.org/ontology/PopulatedPlace/populationMetroDensity
+population density urban mi,http://dbpedia.org/property/populationDensityUrbanMi
+frame-align,http://dbpedia.org/property/frameAlign
+demo-csd,http://dbpedia.org/property/demoCsd
+image width,http://dbpedia.org/property/imageWidth
+2006 total pvt dwell,http://dbpedia.org/property/2006TotalPvtDwell
+famous for,http://dbpedia.org/property/famousFor
+utm easting,http://dbpedia.org/property/utmEasting
+time,http://dbpedia.org/property/time
+address,http://dbpedia.org/property/address
+overlay25top,http://dbpedia.org/property/overlay25top
+uyy,http://dbpedia.org/property/uyy
+Jun avg record low C,http://dbpedia.org/property/junAvgRecordLowC
+Jun avg record low F,http://dbpedia.org/property/junAvgRecordLowF
+TCS service,http://dbpedia.org/property/tcsService
+population density urban sq mi,http://dbpedia.org/property/populationDensityUrbanSqMi
+collapsible,http://dbpedia.org/property/collapsible
+crest,http://dbpedia.org/property/crest
+PLZ-alt,http://dbpedia.org/property/plzAlt
+area water sq mi,http://dbpedia.org/property/areaWaterSqMi
+bar11-right,http://dbpedia.org/property/bar11Right
+establisted date,http://dbpedia.org/property/establistedDate
+Oct snow inch,http://dbpedia.org/property/octSnowInch
+Tree,http://dbpedia.org/property/tree
+r1-number,http://dbpedia.org/property/r1Number
+bar6-left,http://dbpedia.org/property/bar6Left
+association of local government,http://dbpedia.org/ontology/associationOfLocalGovernment
+Collector's Name,http://dbpedia.org/property/collector'sName
+per capita,http://dbpedia.org/property/perCapita
+inaccurate,http://dbpedia.org/property/inaccurate
+barwidth,http://dbpedia.org/property/barwidth
+2011 pop rank,http://dbpedia.org/property/2011PopRank
+area blank2 km,http://dbpedia.org/property/areaBlank2Km
+session room,http://dbpedia.org/property/sessionRoom
+pop latest ref,http://dbpedia.org/property/popLatestRef
+imagepath coa,http://dbpedia.org/property/imagepathCoa
+demographics1 footnotes,http://dbpedia.org/property/demographics1Footnotes
+overlay33colour,http://dbpedia.org/property/overlay33colour
+death,http://dbpedia.org/property/death
+postal code type,http://dbpedia.org/property/postalCodeType
+original use,http://dbpedia.org/property/originalUse
+extra,http://dbpedia.org/property/extra
+bar18-right,http://dbpedia.org/property/bar18Right
+type,http://dbpedia.org/ontology/type
+designated other1 name,http://dbpedia.org/property/designatedOther1Name
+patron-saint's day,http://dbpedia.org/property/patronSaint'sDay
+Oct rain mm,http://dbpedia.org/property/octRainMm
+image branstrompark,http://dbpedia.org/property/imageBranstrompark
+country admin divisions title,http://dbpedia.org/property/countryAdminDivisionsTitle
+Jul rain mm,http://dbpedia.org/property/julRainMm
+session res,http://dbpedia.org/property/sessionRes
+MLA,http://dbpedia.org/property/mla
+blank info sec,http://dbpedia.org/property/blankInfoSec
+overlay12link,http://dbpedia.org/property/overlay12link
+small,http://dbpedia.org/property/small
+Link from a Wikipage to another Wikipage,http://dbpedia.org/ontology/wikiPageWikiLink
+former name,http://dbpedia.org/ontology/formerName
+Longitude,http://dbpedia.org/property/longitude
+divtype,http://dbpedia.org/property/divtype
+notable commanders,http://dbpedia.org/property/notableCommanders
+Wikipage disambiguates,http://dbpedia.org/ontology/wikiPageDisambiguates
+pushpin,http://dbpedia.org/property/pushpin
+overlay24colour,http://dbpedia.org/property/overlay24colour
+developer,http://dbpedia.org/ontology/developer
+counties,http://dbpedia.org/property/counties
+term length,http://dbpedia.org/property/termLength
+LokSabha,http://dbpedia.org/property/loksabha
+population density sq mi,http://dbpedia.org/property/populationDensitySqMi
+force national map,http://dbpedia.org/property/forceNationalMap
+Jun precipitation inch,http://dbpedia.org/property/junPrecipitationInch
+airfield other,http://dbpedia.org/property/airfieldOther
+Jun percentsun,http://dbpedia.org/property/junPercentsun
+population micropolitan,http://dbpedia.org/property/populationMicropolitan
+embedded,http://dbpedia.org/property/embedded
+products,http://dbpedia.org/property/products
+lang,http://dbpedia.org/property/lang
+settlement type,http://dbpedia.org/property/settlementType
+seal alt,http://dbpedia.org/property/sealAlt
+location map text,http://dbpedia.org/property/locationMapText
+grid position,http://dbpedia.org/property/gridPosition
+population nonfarm,http://dbpedia.org/property/populationNonfarm
+area (m2),http://dbpedia.org/ontology/area
+picupright,http://dbpedia.org/property/picupright
+population density sq km,http://dbpedia.org/property/populationDensitySqKm
+area as of,http://dbpedia.org/property/areaAsOf
+bar20-colour,http://dbpedia.org/property/bar20Colour
+2001 median age,http://dbpedia.org/property/2001MedianAge
+population urban density (/sqkm),http://dbpedia.org/ontology/PopulatedPlace/populationUrbanDensity
+relief,http://dbpedia.org/property/relief
+mmax,http://dbpedia.org/property/mmax
+flag link,http://dbpedia.org/property/flagLink
+religion,http://dbpedia.org/property/religion
+area metro,http://dbpedia.org/property/areaMetro
+designation2 type,http://dbpedia.org/property/designation2Type
+nbcomm,http://dbpedia.org/property/nbcomm
+population,http://dbpedia.org/property/population
+Dec afthumidity,http://dbpedia.org/property/decAfthumidity
+columns,http://dbpedia.org/property/columns
+year uv,http://dbpedia.org/property/yearUv
+overlay9top,http://dbpedia.org/property/overlay9top
+label7size,http://dbpedia.org/property/label7size
+lats,http://dbpedia.org/property/lats
+lowest elevation m,http://dbpedia.org/property/lowestElevationM
+area footnotes,http://dbpedia.org/property/areaFootnotes
+latm,http://dbpedia.org/property/latm
+kanji,http://dbpedia.org/property/kanji
+2016 median age m,http://dbpedia.org/property/2016MedianAgeM
+overlay10left,http://dbpedia.org/property/overlay10left
+2016 median age f,http://dbpedia.org/property/2016MedianAgeF
+direction,http://dbpedia.org/property/direction
+motto...,http://dbpedia.org/property/motto...
+failed,http://dbpedia.org/property/failed
+Nov uv,http://dbpedia.org/property/novUv
+bar3-text,http://dbpedia.org/property/bar3Text
+lon dir,http://dbpedia.org/property/lonDir
+last,http://dbpedia.org/property/last
+population female,http://dbpedia.org/property/populationFemale
+note-mid,http://dbpedia.org/property/noteMid
+coa alt,http://dbpedia.org/property/coaAlt
+2016 total pvt dwell usual,http://dbpedia.org/property/2016TotalPvtDwellUsual
+url,http://dbpedia.org/property/url
+population denonymn,http://dbpedia.org/property/populationDenonymn
+Proportion,http://dbpedia.org/property/proportion
+latd,http://dbpedia.org/property/latd
+image blank emblem,http://dbpedia.org/property/imageBlankEmblem
+population urban,http://dbpedia.org/property/populationUrban
+video,http://dbpedia.org/property/video
+Southeast,http://dbpedia.org/property/southeast
+designation1 free1value,http://dbpedia.org/property/designation1Free1value
+tenants,http://dbpedia.org/property/tenants
+ward,http://dbpedia.org/property/ward
+seealso,http://dbpedia.org/property/seealso
+Use,http://dbpedia.org/property/use
+adm selsoviet type,http://dbpedia.org/property/admSelsovietType
+alternative name,http://dbpedia.org/ontology/alternativeName
+designation2 date,http://dbpedia.org/property/designation2Date
+circulation,http://dbpedia.org/property/circulation
+year maximum humidex,http://dbpedia.org/property/yearMaximumHumidex
+blank emblem size,http://dbpedia.org/property/blankEmblemSize
+adm ctr name,http://dbpedia.org/property/admCtrName
+mark2size,http://dbpedia.org/property/mark2size
+region name local,http://dbpedia.org/property/regionNameLocal
+year adopted,http://dbpedia.org/property/yearAdopted
+2006 pop delta,http://dbpedia.org/property/2006PopDelta
+utc,http://dbpedia.org/property/utc
+usy,http://dbpedia.org/property/usy
+Apr snow inch,http://dbpedia.org/property/aprSnowInch
+urban development name,http://dbpedia.org/property/urbanDevelopmentName
+eastwest,http://dbpedia.org/property/eastwest
+pop as of,http://dbpedia.org/property/popAsOf
+STD Code.,http://dbpedia.org/property/stdCode.
+child,http://dbpedia.org/property/child
+Kristelig Folkeparti,http://dbpedia.org/property/kristeligFolkeparti
+uly,http://dbpedia.org/property/uly
+oc-bs,http://dbpedia.org/property/ocBs
+Location,http://dbpedia.org/property/location
+hhbuc,http://dbpedia.org/property/hhbuc
+country,http://dbpedia.org/property/country
+bar18-from,http://dbpedia.org/property/bar18From
+other services collapsible,http://dbpedia.org/property/otherServicesCollapsible
+Alcalde ,http://dbpedia.org/property/alcalde
+daughters,http://dbpedia.org/property/daughters
+retrieved,http://dbpedia.org/property/retrieved
+authorlink,http://dbpedia.org/property/authorlink
+overlay3left,http://dbpedia.org/property/overlay3left
+time zone,http://dbpedia.org/ontology/timeZone
+translit lang1 type,http://dbpedia.org/property/translitLang1Type
+2006 pop rank,http://dbpedia.org/property/2006PopRank
+adm data as of,http://dbpedia.org/property/admDataAsOf
+Per capta water supply,http://dbpedia.org/property/perCaptaWaterSupply
+Aug humidity,http://dbpedia.org/property/augHumidity
+irish grid reference,http://dbpedia.org/property/irishGridReference
+row2-6-colour,http://dbpedia.org/property/row26Colour
+DLF,http://dbpedia.org/property/dlf
+percentage,http://dbpedia.org/property/percentage
+bar3-to,http://dbpedia.org/property/bar3To
+opening year,http://dbpedia.org/property/openingYear
+thumb,http://dbpedia.org/property/thumb
+static image 2 name,http://dbpedia.org/property/staticImage2Name
+overlay32left,http://dbpedia.org/property/overlay32left
+bar16-colour,http://dbpedia.org/property/bar16Colour
+headmaster,http://dbpedia.org/property/headmaster
+capital of,http://dbpedia.org/property/capitalOf
+Samdari pardhan,http://dbpedia.org/property/samdariPardhan
+caption left,http://dbpedia.org/property/captionLeft
+altOffSp,http://dbpedia.org/property/altoffsp
+height (μ),http://dbpedia.org/ontology/height
+aggravated assault,http://dbpedia.org/property/aggravatedAssault
+mblmc,http://dbpedia.org/property/mblmc
+bar14-to,http://dbpedia.org/property/bar14To
+operational,http://dbpedia.org/property/operational
+May avg record low F,http://dbpedia.org/property/mayAvgRecordLowF
+Number of wards,http://dbpedia.org/property/numberOfWards
+dno,http://dbpedia.org/property/dno
+overlay1top,http://dbpedia.org/property/overlay1top
+May avg record low C,http://dbpedia.org/property/mayAvgRecordLowC
+Total area,http://dbpedia.org/property/totalArea
+row2-7-to,http://dbpedia.org/property/row27To
+row4-1-text,http://dbpedia.org/property/row41Text
+uig,http://dbpedia.org/property/uig
+format,http://dbpedia.org/property/format
+New named for,http://dbpedia.org/property/newNamedFor
+language,http://dbpedia.org/ontology/language
+to-right,http://dbpedia.org/property/toRight
+oil production bbl/d,http://dbpedia.org/property/oilProductionBbl/d
+image skyline,http://dbpedia.org/property/imageSkyline
+manager,http://dbpedia.org/property/manager
+population metro,http://dbpedia.org/property/populationMetro
+label9 size,http://dbpedia.org/property/label9Size
+radius,http://dbpedia.org/property/radius
+population as of,http://dbpedia.org/ontology/populationAsOf
+amount,http://dbpedia.org/property/amount
+length ft,http://dbpedia.org/property/lengthFt
+trucks,http://dbpedia.org/property/trucks
+applications,http://dbpedia.org/property/applications
+halign,http://dbpedia.org/property/halign
+nrhp type,http://dbpedia.org/property/nrhpType
+distance to Edinburgh (μ),http://dbpedia.org/ontology/distanceToEdinburgh
+subheader,http://dbpedia.org/property/subheader
+2006 mean hh income,http://dbpedia.org/property/2006MeanHhIncome
+coa res,http://dbpedia.org/property/coaRes
+Social media,http://dbpedia.org/property/socialMedia
+opened,http://dbpedia.org/property/opened
+label3size,http://dbpedia.org/property/label3size
+twin2 country,http://dbpedia.org/property/twin2Country
+price,http://dbpedia.org/property/price
+wikilink,http://dbpedia.org/property/wikilink
+archaeologists,http://dbpedia.org/property/archaeologists
+pop municipality,http://dbpedia.org/property/popMunicipality
+Sep rain days,http://dbpedia.org/property/sepRainDays
+value,http://dbpedia.org/property/value
+built for,http://dbpedia.org/property/builtFor
+dir,http://dbpedia.org/property/dir
+maint,http://dbpedia.org/property/maint
+bar2-left,http://dbpedia.org/property/bar2Left
+Founded in,http://dbpedia.org/property/foundedIn
+Famous,http://dbpedia.org/property/famous
+mark11size,http://dbpedia.org/property/mark11size
+lizu,http://dbpedia.org/property/lizu
+lcheading,http://dbpedia.org/property/lcheading
+chief,http://dbpedia.org/property/chief
+row2-1-colour,http://dbpedia.org/property/row21Colour
+Jan precipitation mm,http://dbpedia.org/property/janPrecipitationMm
+romaji,http://dbpedia.org/property/romaji
+Centre,http://dbpedia.org/property/centre
+caption align,http://dbpedia.org/property/captionAlign
+overlay23left,http://dbpedia.org/property/overlay23left
+frame-height,http://dbpedia.org/property/frameHeight
+political leader,http://dbpedia.org/ontology/politicalLeader
+bar1-from,http://dbpedia.org/property/bar1From
+location country,http://dbpedia.org/property/locationCountry
+manx name,http://dbpedia.org/property/manxName
+populationpercent,http://dbpedia.org/property/populationpercent
+image seal                Fox ,http://dbpedia.org/property/imageSealFox
+political party,http://dbpedia.org/property/politicalParty
+Aug rain days,http://dbpedia.org/property/augRainDays
+portal,http://dbpedia.org/property/portal
+label12size,http://dbpedia.org/property/label12size
+floor area (m2),http://dbpedia.org/ontology/floorArea
+year completed,http://dbpedia.org/property/yearCompleted
+founded by,http://dbpedia.org/property/foundedBy
+Jun uv,http://dbpedia.org/property/junUv
+seats,http://dbpedia.org/property/seats
+containervolume,http://dbpedia.org/property/containervolume
+Nov rain inch,http://dbpedia.org/property/novRainInch
+opening date,http://dbpedia.org/ontology/openingDate
+Jan precipitation cm,http://dbpedia.org/property/janPrecipitationCm
+municipality day,http://dbpedia.org/property/municipalityDay
+studio,http://dbpedia.org/property/studio
+station code,http://dbpedia.org/property/stationCode
+Record year,http://dbpedia.org/property/recordYear
+length km,http://dbpedia.org/property/lengthKm
+2001 pop density,http://dbpedia.org/property/2001PopDensity
+length mi,http://dbpedia.org/property/lengthMi
+dome quantity,http://dbpedia.org/property/domeQuantity
+row1-1-text,http://dbpedia.org/property/row11Text
+line,http://dbpedia.org/property/line
+May mean C,http://dbpedia.org/property/mayMeanC
+vice-mayor.,http://dbpedia.org/property/viceMayor.
+population blank3 title,http://dbpedia.org/property/populationBlank3Title
+note,http://dbpedia.org/property/note
+May mean F,http://dbpedia.org/property/mayMeanF
+human development index,http://dbpedia.org/property/humanDevelopmentIndex
+Feb rain days,http://dbpedia.org/property/febRainDays
+row3-2-at,http://dbpedia.org/property/row32At
+Mar mean C,http://dbpedia.org/property/marMeanC
+electorate,http://dbpedia.org/property/electorate
+Mar mean F,http://dbpedia.org/property/marMeanF
+budget,http://dbpedia.org/property/budget
+link,http://dbpedia.org/property/link
+headercss,http://dbpedia.org/property/headercss
+event,http://dbpedia.org/property/event
+first,http://dbpedia.org/property/first
+cost,http://dbpedia.org/property/cost
+title leader,http://dbpedia.org/property/titleLeader
+famous personality,http://dbpedia.org/property/famousPersonality
+canton,http://dbpedia.org/property/canton
+VIP person,http://dbpedia.org/property/vipPerson
+lon,http://dbpedia.org/property/lon
+orbits,http://dbpedia.org/property/orbits
+Jul snow cm,http://dbpedia.org/property/julSnowCm
+with,http://dbpedia.org/property/with
+minipog-y,http://dbpedia.org/property/minipogY
+overlay13top,http://dbpedia.org/property/overlay13top
+games,http://dbpedia.org/property/games
+battalions,http://dbpedia.org/property/battalions
+governing body,http://dbpedia.org/property/governingBody
+fewer-links,http://dbpedia.org/property/fewerLinks
+lesnsjfjfjsvxader name,http://dbpedia.org/property/lesnsjfjfjsvxaderName
+anthem ref,http://dbpedia.org/property/anthemRef
+mark6size,http://dbpedia.org/property/mark6size
+blank3 info,http://dbpedia.org/property/blank3Info
+area,http://dbpedia.org/property/area
+trans,http://dbpedia.org/property/trans
+route,http://dbpedia.org/property/route
+minipog-x,http://dbpedia.org/property/minipogX
+List ,http://dbpedia.org/property/list
+photo caption,http://dbpedia.org/property/photoCaption
+spoken language,http://dbpedia.org/property/spokenLanguage
+Geographical location,http://dbpedia.org/property/geographicalLocation
+population density,http://dbpedia.org/property/populationDensity
+seating capacity,http://dbpedia.org/property/seatingCapacity
+opening,http://dbpedia.org/property/opening
+legend1title,http://dbpedia.org/property/legend1title
+Jul rain cm,http://dbpedia.org/property/julRainCm
+block code,http://dbpedia.org/property/blockCode
+demographics2 title,http://dbpedia.org/property/demographics2Title
+bar19-left,http://dbpedia.org/property/bar19Left
+elevation min m,http://dbpedia.org/property/elevationMinM
+stat year,http://dbpedia.org/property/statYear
+native n
+ame,http://dbpedia.org/property/nativeNAme
+number drops,http://dbpedia.org/property/numberDrops
+Litracy rate,http://dbpedia.org/property/litracyRate
+May percentsun,http://dbpedia.org/property/mayPercentsun
+photos,http://dbpedia.org/property/photos
+commander,http://dbpedia.org/property/commander
+owner,http://dbpedia.org/property/owner
+Mar rain inch,http://dbpedia.org/property/marRainInch
+band number,http://dbpedia.org/property/bandNumber
+marksize,http://dbpedia.org/property/marksize
+row2-7-text,http://dbpedia.org/property/row27Text
+picsize,http://dbpedia.org/property/picsize
+owned,http://dbpedia.org/property/owned
+pushpin map caption,http://dbpedia.org/property/pushpinMapCaption
+Jun rain inch,http://dbpedia.org/property/junRainInch
+dau,http://dbpedia.org/property/dau
+Elevation / Altitude,http://dbpedia.org/property/elevation/Altitude
+subdivision name,http://dbpedia.org/property/subdivisionName
+day,http://dbpedia.org/property/day
+overlay1link,http://dbpedia.org/property/overlay1link
+type,http://dbpedia.org/property/type
+gdp rank,http://dbpedia.org/property/gdpRank
+stroke-color,http://dbpedia.org/property/strokeColor
+Feb record high C,http://dbpedia.org/property/febRecordHighC
+mark14size,http://dbpedia.org/property/mark14size
+target,http://dbpedia.org/property/target
+airfield other label,http://dbpedia.org/property/airfieldOtherLabel
+superintendent,http://dbpedia.org/property/superintendent
+Feb record high F,http://dbpedia.org/property/febRecordHighF
+Jun dew point F,http://dbpedia.org/property/junDewPointF
+pages,http://dbpedia.org/property/pages
+County judge,http://dbpedia.org/property/countyJudge
+Jul precipitation inch,http://dbpedia.org/property/julPrecipitationInch
+standard,http://dbpedia.org/property/standard
+Danger,http://dbpedia.org/property/danger
+wylie,http://dbpedia.org/property/wylie
+Oct uv,http://dbpedia.org/property/octUv
+demographics2 footnotes,http://dbpedia.org/property/demographics2Footnotes
+overlay19colour,http://dbpedia.org/property/overlay19colour
+named for Dynasty,http://dbpedia.org/property/namedForDynasty
+nolabels,http://dbpedia.org/property/nolabels
+Höhe,http://dbpedia.org/property/höhe
+Jun dew point C,http://dbpedia.org/property/junDewPointC
+NPC,http://dbpedia.org/property/npc
+module,http://dbpedia.org/property/module
+demographics type,http://dbpedia.org/property/demographicsType
+Aug precipitation cm,http://dbpedia.org/property/augPrecipitationCm
+wife,http://dbpedia.org/property/wife
+population CSA,http://dbpedia.org/property/populationCsa
+metropolitan borough,http://dbpedia.org/ontology/metropolitanBorough
+larceny theft,http://dbpedia.org/property/larcenyTheft
+population rural footnotes,http://dbpedia.org/property/populationRuralFootnotes
+Jan snow days,http://dbpedia.org/property/janSnowDays
+FAA,http://dbpedia.org/property/faa
+Jan sun,http://dbpedia.org/property/janSun
+cultures,http://dbpedia.org/property/cultures
+mouth elevation (μ),http://dbpedia.org/ontology/mouthElevation
+bar10-colour,http://dbpedia.org/property/bar10Colour
+overlay14colour,http://dbpedia.org/property/overlay14colour
+bar15-from,http://dbpedia.org/property/bar15From
+certain,http://dbpedia.org/property/certain
+region type,http://dbpedia.org/property/regionType
+Tehsil,http://dbpedia.org/property/tehsil
+ratio,http://dbpedia.org/property/ratio
+patron,http://dbpedia.org/property/patron
+Center,http://dbpedia.org/property/center
+board,http://dbpedia.org/property/board
+Southwest,http://dbpedia.org/property/southwest
+area blank1 km,http://dbpedia.org/property/areaBlank1Km
+mark-dim,http://dbpedia.org/property/markDim
+Wappengröße,http://dbpedia.org/property/wappengröße
+blank2 name,http://dbpedia.org/property/blank2Name
+wikt,http://dbpedia.org/property/wikt
+Turns,http://dbpedia.org/property/turns
+row2-2-colour,http://dbpedia.org/property/row22Colour
+NKP,http://dbpedia.org/property/nkp
+data,http://dbpedia.org/property/data
+date,http://dbpedia.org/property/date
+company,http://dbpedia.org/property/company
+Leaders name,http://dbpedia.org/property/leadersName
+overlay6top,http://dbpedia.org/property/overlay6top
+bar16-left,http://dbpedia.org/property/bar16Left
+data hdi,http://dbpedia.org/property/dataHdi
+shape,http://dbpedia.org/property/shape
+Aug sun,http://dbpedia.org/property/augSun
+Educational Institutions,http://dbpedia.org/property/educationalInstitutions
+total area sq mi,http://dbpedia.org/property/totalAreaSqMi
+area rural km,http://dbpedia.org/property/areaRuralKm
+chairperson name,http://dbpedia.org/property/chairpersonName
+population demonym title,http://dbpedia.org/property/populationDemonymTitle
+native name2.,http://dbpedia.org/property/nativeName2.
+founders,http://dbpedia.org/property/founders
+champa municipality twitter link,http://dbpedia.org/property/champaMunicipalityTwitterLink
+portrayer,http://dbpedia.org/ontology/portrayer
+scale-increment,http://dbpedia.org/property/scaleIncrement
+overlay8link,http://dbpedia.org/property/overlay8link
+May rain inch,http://dbpedia.org/property/mayRainInch
+population density person per sq km,http://dbpedia.org/property/populationDensityPersonPerSqKm
+habitat loss,http://dbpedia.org/property/habitatLoss
+quantity,http://dbpedia.org/property/quantity
+label14 size,http://dbpedia.org/property/label14Size
+population as of,http://dbpedia.org/property/populationAsOf
+garrison,http://dbpedia.org/property/garrison
+Sep rain mm,http://dbpedia.org/property/sepRainMm
+Hospital,http://dbpedia.org/property/hospital
+links,http://dbpedia.org/property/links
+map width,http://dbpedia.org/property/mapWidth
+collapse,http://dbpedia.org/property/collapse
+principal label,http://dbpedia.org/property/principalLabel
+fix-attempted,http://dbpedia.org/property/fixAttempted
+nearest town or city,http://dbpedia.org/property/nearestTownOrCity
+coa caption,http://dbpedia.org/property/coaCaption
+tenders,http://dbpedia.org/property/tenders
+legend4-colour,http://dbpedia.org/property/legend4Colour
+designation1 number,http://dbpedia.org/property/designation1Number
+stanmax,http://dbpedia.org/property/stanmax
+NGA,http://dbpedia.org/property/nga
+historical name,http://dbpedia.org/property/historicalName
+main contractor,http://dbpedia.org/property/mainContractor
+leader party,http://dbpedia.org/ontology/leaderParty
+Mar uv,http://dbpedia.org/property/marUv
+highway,http://dbpedia.org/property/highway
+cod provincia,http://dbpedia.org/property/codProvincia
+inhabloc type,http://dbpedia.org/property/inhablocType
+municipality type,http://dbpedia.org/property/municipalityType
+colours,http://dbpedia.org/property/colours
+gender,http://dbpedia.org/property/gender
+oLeft,http://dbpedia.org/property/oleft
+postal2 code type,http://dbpedia.org/property/postal2CodeType
+Town Song,http://dbpedia.org/property/townSong
+mark-lon,http://dbpedia.org/property/markLon
+script,http://dbpedia.org/property/script
+status,http://dbpedia.org/property/status
+orders,http://dbpedia.org/property/orders
+dialect,http://dbpedia.org/property/dialect
+agencyname,http://dbpedia.org/property/agencyname
+overlay,http://dbpedia.org/property/overlay
+seat1 type,http://dbpedia.org/property/seat1Type
+logo pic,http://dbpedia.org/property/logoPic
+population change since ,http://dbpedia.org/property/populationChangeSince
+area km,http://dbpedia.org/property/areaKm
+rural pop 2010census,http://dbpedia.org/property/ruralPop2010census
+thdl,http://dbpedia.org/property/thdl
+Champa municipality facebook link,http://dbpedia.org/property/champaMunicipalityFacebookLink
+seat,http://dbpedia.org/property/seat
+label5 size,http://dbpedia.org/property/label5Size
+code,http://dbpedia.org/property/code
+Northwest,http://dbpedia.org/property/northwest
+continent,http://dbpedia.org/property/continent
+overlay26left,http://dbpedia.org/property/overlay26left
+project,http://dbpedia.org/property/project
+Sep precipitation inch,http://dbpedia.org/property/sepPrecipitationInch
+legend5-colour,http://dbpedia.org/property/legend5Colour
+single line,http://dbpedia.org/property/singleLine
+population metro rank,http://dbpedia.org/property/populationMetroRank
+secondaryauthor,http://dbpedia.org/property/secondaryauthor
+parking,http://dbpedia.org/property/parking
+Near by,http://dbpedia.org/property/nearBy
+blank7 info,http://dbpedia.org/property/blank7Info
+MLA.,http://dbpedia.org/property/mla.
+newspaper,http://dbpedia.org/property/newspaper
+chunom,http://dbpedia.org/property/chunom
+structural engineer,http://dbpedia.org/property/structuralEngineer
+overlay15colour,http://dbpedia.org/property/overlay15colour
+alternate name,http://dbpedia.org/property/alternateName
+defaultipa,http://dbpedia.org/property/defaultipa
+cargotonnage,http://dbpedia.org/property/cargotonnage
+original text,http://dbpedia.org/property/originalText
+May record low C,http://dbpedia.org/property/mayRecordLowC
+governing body 
+Bhiwani municipality,http://dbpedia.org/property/governingBodyBhiwaniMunicipality
+overlay6left,http://dbpedia.org/property/overlay6left
+row2-3-text,http://dbpedia.org/property/row23Text
+bar15-colour,http://dbpedia.org/property/bar15Colour
+May record low F,http://dbpedia.org/property/mayRecordLowF
+region link,http://dbpedia.org/property/regionLink
+Oct precipitation days,http://dbpedia.org/property/octPrecipitationDays
+Mar sun,http://dbpedia.org/property/marSun
+department,http://dbpedia.org/property/department
+This,http://dbpedia.org/property/this
+ESE,http://dbpedia.org/property/ese
+total type,http://dbpedia.org/property/totalType
+QuarterReleaseDate,http://dbpedia.org/property/quarterreleasedate
+area code type,http://dbpedia.org/property/areaCodeType
+Municipal,http://dbpedia.org/property/municipal
+centre of city,http://dbpedia.org/property/centreOfCity
+lat8 deg,http://dbpedia.org/property/lat8Deg
+classification,http://dbpedia.org/property/classification
+GNIS id,http://dbpedia.org/property/gnisId
+others,http://dbpedia.org/property/others
+broke ground,http://dbpedia.org/property/brokeGround
+est,http://dbpedia.org/property/est
+colorcode,http://dbpedia.org/property/colorcode
+Demokratene,http://dbpedia.org/property/demokratene
+headquarters,http://dbpedia.org/property/headquarters
+numbered,http://dbpedia.org/property/numbered
+row2-7-colour,http://dbpedia.org/property/row27Colour
+Wikipage redirect,http://dbpedia.org/ontology/wikiPageRedirects
+overlay18top,http://dbpedia.org/property/overlay18top
+frame-long,http://dbpedia.org/property/frameLong
+Aug precipitation mm,http://dbpedia.org/property/augPrecipitationMm
+yearlit,http://dbpedia.org/property/yearlit
+elevation min ft,http://dbpedia.org/property/elevationMinFt
+naslov,http://dbpedia.org/property/naslov
+row1-11-text,http://dbpedia.org/property/row111Text
+structure,http://dbpedia.org/property/structure
+twin1 country,http://dbpedia.org/property/twin1Country
+metric first,http://dbpedia.org/property/metricFirst
+status system,http://dbpedia.org/property/statusSystem
+English name,http://dbpedia.org/property/englishName
+bar20-from,http://dbpedia.org/property/bar20From
+local name,http://dbpedia.org/property/localName
+operator,http://dbpedia.org/property/operator
+bar11-colour,http://dbpedia.org/property/bar11Colour
+length m,http://dbpedia.org/property/lengthM
+year record high C,http://dbpedia.org/property/yearRecordHighC
+row3-2-text,http://dbpedia.org/property/row32Text
+Existence,http://dbpedia.org/property/existence
+bar9-left,http://dbpedia.org/property/bar9Left
+year record high F,http://dbpedia.org/property/yearRecordHighF
+pop density,http://dbpedia.org/property/popDensity
+native language,http://dbpedia.org/property/nativeLanguage
+conflict,http://dbpedia.org/property/conflict
+Jul low C,http://dbpedia.org/property/julLowC
+Jul low F,http://dbpedia.org/property/julLowF
+edition,http://dbpedia.org/property/edition
+mountain range,http://dbpedia.org/ontology/mountainRange
+multiline,http://dbpedia.org/property/multiline
+Jul record low C,http://dbpedia.org/property/julRecordLowC
+Jul record low F,http://dbpedia.org/property/julRecordLowF
+usebelowbox,http://dbpedia.org/property/usebelowbox
+owners,http://dbpedia.org/property/owners
+voy,http://dbpedia.org/property/voy
+Vehicle registration,http://dbpedia.org/property/vehicleRegistration
+Vehicle registration no,http://dbpedia.org/property/vehicleRegistrationNo
+dist capital,http://dbpedia.org/property/distCapital
+blank6 name,http://dbpedia.org/property/blank6Name
+population density (per square km) as of,http://dbpedia.org/property/populationDensity(perSquareKm)AsOf
+archivedate,http://dbpedia.org/property/archivedate
+bar11-from,http://dbpedia.org/property/bar11From
+archipelago,http://dbpedia.org/property/archipelago
+end,http://dbpedia.org/property/end
+ENE,http://dbpedia.org/property/ene
+condition,http://dbpedia.org/property/condition
+ISO region code,http://dbpedia.org/ontology/isoCodeRegion
+site name,http://dbpedia.org/property/siteName
+dimy,http://dbpedia.org/property/dimy
+dimx,http://dbpedia.org/property/dimx
+occupation,http://dbpedia.org/property/occupation
+elevation max ft,http://dbpedia.org/property/elevationMaxFt
+Juld sun,http://dbpedia.org/property/juldSun
+Sep snow inch,http://dbpedia.org/property/sepSnowInch
+2001 pop delta,http://dbpedia.org/property/2001PopDelta
+Jun record low C,http://dbpedia.org/property/junRecordLowC
+Jun record low F,http://dbpedia.org/property/junRecordLowF
+label10 size,http://dbpedia.org/property/label10Size
+Beverage,http://dbpedia.org/property/beverage
+railway code type,http://dbpedia.org/property/railwayCodeType
+Jun humidity,http://dbpedia.org/property/junHumidity
+Oct snow cm,http://dbpedia.org/property/octSnowCm
+pop 2019census,http://dbpedia.org/property/pop2019census
+bar2-to,http://dbpedia.org/property/bar2To
+city-served,http://dbpedia.org/property/cityServed
+area unit,http://dbpedia.org/property/areaUnit
+Urban Male and Female,http://dbpedia.org/property/urbanMaleAndFemale
+drives on the,http://dbpedia.org/property/drivesOnThe
+blank5 name sec,http://dbpedia.org/property/blank5NameSec
+unitary wales,http://dbpedia.org/property/unitaryWales
+myr,http://dbpedia.org/property/myr
+music,http://dbpedia.org/property/music
+hindi name,http://dbpedia.org/property/hindiName
+Oct precipitation cm,http://dbpedia.org/property/octPrecipitationCm
+overlay22top,http://dbpedia.org/property/overlay22top
+deity,http://dbpedia.org/property/deity
+Feb rain cm,http://dbpedia.org/property/febRainCm
+flag caption,http://dbpedia.org/property/flagCaption
+label-sizeD,http://dbpedia.org/property/labelSized
+bar12-left,http://dbpedia.org/property/bar12Left
+mayor,http://dbpedia.org/property/mayor
+year percentsun,http://dbpedia.org/property/yearPercentsun
+seat type,http://dbpedia.org/property/seatType
+highest,http://dbpedia.org/property/highest
+bar13-to,http://dbpedia.org/property/bar13To
+bar1-colour,http://dbpedia.org/property/bar1Colour
+dist,http://dbpedia.org/property/dist
+2011-accessdate,http://dbpedia.org/property/2011Accessdate
+area urban km,http://dbpedia.org/property/areaUrbanKm
+May snow cm,http://dbpedia.org/property/maySnowCm
+mini-width,http://dbpedia.org/property/miniWidth
+row2-8-to,http://dbpedia.org/property/row28To
+2006 median age f,http://dbpedia.org/property/2006MedianAgeF
+title-bg,http://dbpedia.org/property/titleBg
+Jan low F,http://dbpedia.org/property/janLowF
+static image caption,http://dbpedia.org/property/staticImageCaption
+overlay10colour,http://dbpedia.org/property/overlay10colour
+Straße,http://dbpedia.org/property/straße
+Total No of Household,http://dbpedia.org/property/totalNoOfHousehold
+Nov snow days,http://dbpedia.org/property/novSnowDays
+overlay17left,http://dbpedia.org/property/overlay17left
+Nov percentsun,http://dbpedia.org/property/novPercentsun
+Jan low C,http://dbpedia.org/property/janLowC
+2006 median age m,http://dbpedia.org/property/2006MedianAgeM
+Jand sun,http://dbpedia.org/property/jandSun
+incumbent,http://dbpedia.org/property/incumbent
+Chairmanship,http://dbpedia.org/property/chairmanship
+year record low C,http://dbpedia.org/property/yearRecordLowC
+2001 land area,http://dbpedia.org/property/2001LandArea
+voy-search,http://dbpedia.org/property/voySearch
+bar5-right,http://dbpedia.org/property/bar5Right
+overlay10top,http://dbpedia.org/property/overlay10top
+year record low F,http://dbpedia.org/property/yearRecordLowF
+police,http://dbpedia.org/property/police
+postal code,http://dbpedia.org/property/postalCode
+Jul percentsun,http://dbpedia.org/property/julPercentsun
+main contractors,http://dbpedia.org/property/mainContractors
+elevation max m,http://dbpedia.org/property/elevationMaxM
+burglary,http://dbpedia.org/property/burglary
+pop municunit,http://dbpedia.org/property/popMunicunit
+lon7 deg,http://dbpedia.org/property/lon7Deg
+bridges,http://dbpedia.org/property/bridges
+Michael Petrick,http://dbpedia.org/property/michaelPetrick
+bar5-colour,http://dbpedia.org/property/bar5Colour
+n-search,http://dbpedia.org/property/nSearch
+Foundedb,http://dbpedia.org/property/foundedb
+area blank2 title,http://dbpedia.org/property/areaBlank2Title
+label1 size,http://dbpedia.org/property/label1Size
+strength,http://dbpedia.org/property/strength
+notes,http://dbpedia.org/property/notes
+pop metro,http://dbpedia.org/property/popMetro
+designation1 free2name,http://dbpedia.org/property/designation1Free2name
+mcap,http://dbpedia.org/property/mcap
+namesake,http://dbpedia.org/property/namesake
+adm inhabloc jur,http://dbpedia.org/property/admInhablocJur
+otherparty no,http://dbpedia.org/property/otherpartyNo
+image coa,http://dbpedia.org/property/imageCoa
+to-left,http://dbpedia.org/property/toLeft
+gazetted,http://dbpedia.org/property/gazetted
+area sweat km,http://dbpedia.org/property/areaSweatKm
+Mar snow days,http://dbpedia.org/property/marSnowDays
+dynasty,http://dbpedia.org/property/dynasty
+divisions,http://dbpedia.org/property/divisions
+bar24-from,http://dbpedia.org/property/bar24From
+shield size,http://dbpedia.org/property/shieldSize
+flag p,http://dbpedia.org/property/flagP
+s-search,http://dbpedia.org/property/sSearch
+discovery year,http://dbpedia.org/property/discoveryYear
+flag s,http://dbpedia.org/property/flagS
+schools,http://dbpedia.org/property/schools
+arc-text-colorC,http://dbpedia.org/property/arcTextColorc
+image-top,http://dbpedia.org/property/imageTop
+arc-text-colorB,http://dbpedia.org/property/arcTextColorb
+arc-text-colorA,http://dbpedia.org/property/arcTextColora
+foot montage,http://dbpedia.org/property/footMontage
+vie,http://dbpedia.org/property/vie
+increase refnum,http://dbpedia.org/property/increaseRefnum
+Layout,http://dbpedia.org/property/layout
+size shield,http://dbpedia.org/property/sizeShield
+taxon,http://dbpedia.org/property/taxon
+cnrr,http://dbpedia.org/property/cnrr
+May humidity,http://dbpedia.org/property/mayHumidity
+overlay15link,http://dbpedia.org/property/overlay15link
+bar6-text,http://dbpedia.org/property/bar6Text
+Aug afthumidity,http://dbpedia.org/property/augAfthumidity
+architect,http://dbpedia.org/property/architect
+diff,http://dbpedia.org/property/diff
+STD code,http://dbpedia.org/property/stdCode
+near-sw,http://dbpedia.org/property/nearSw
+nicknames,http://dbpedia.org/property/nicknames
+classification,http://dbpedia.org/ontology/classification
+tenant,http://dbpedia.org/ontology/tenant
+blank2 info sec,http://dbpedia.org/property/blank2InfoSec
+division,http://dbpedia.org/ontology/division
+supp,http://dbpedia.org/property/supp
+bar6-colour,http://dbpedia.org/property/bar6Colour
+demo-cd,http://dbpedia.org/property/demoCd
+mark-lat,http://dbpedia.org/property/markLat
+near-se,http://dbpedia.org/property/nearSe
+minimum elevation (μ),http://dbpedia.org/ontology/minimumElevation
+subspecies,http://dbpedia.org/property/subspecies
+poprank,http://dbpedia.org/property/poprank
+demographics1 type,http://dbpedia.org/property/demographics1Type
+footer,http://dbpedia.org/property/footer
+hanja,http://dbpedia.org/property/hanja
+maintained by,http://dbpedia.org/ontology/maintainedBy
+Feb record low F,http://dbpedia.org/property/febRecordLowF
+population density rural km,http://dbpedia.org/property/populationDensityRuralKm
+Jul maximum humidex,http://dbpedia.org/property/julMaximumHumidex
+Feb record low C,http://dbpedia.org/property/febRecordLowC
+frame-lat,http://dbpedia.org/property/frameLat
+near-ne,http://dbpedia.org/property/nearNe
+width,http://dbpedia.org/property/width
+house-type,http://dbpedia.org/property/houseType
+chief1name,http://dbpedia.org/property/chief1name
+row3-3-at,http://dbpedia.org/property/row33At
+feeder to,http://dbpedia.org/property/feederTo
+sub board,http://dbpedia.org/property/subBoard
+Oct precipitation mm,http://dbpedia.org/property/octPrecipitationMm
+ noautocat,http://dbpedia.org/property/Noautocat
+famous Drama,http://dbpedia.org/property/famousDrama
+adm district jur,http://dbpedia.org/property/admDistrictJur
+GI Tags,http://dbpedia.org/property/giTags
+property crimes,http://dbpedia.org/property/propertyCrimes
+pop urban,http://dbpedia.org/property/popUrban
+extension,http://dbpedia.org/property/extension
+nocat,http://dbpedia.org/property/nocat
+start date,http://dbpedia.org/property/startDate
+Total water supply,http://dbpedia.org/property/totalWaterSupply
+color,http://dbpedia.org/property/color
+logo image,http://dbpedia.org/property/logoImage
+population metro km,http://dbpedia.org/property/populationMetroKm
+area codes,http://dbpedia.org/property/areaCodes
+titlebar,http://dbpedia.org/property/titlebar
+founder,http://dbpedia.org/ontology/founder
+CurrentMP,http://dbpedia.org/property/currentmp
+Jul avg record high C,http://dbpedia.org/property/julAvgRecordHighC
+Assembly Constituency,http://dbpedia.org/property/assemblyConstituency
+bar8-right,http://dbpedia.org/property/bar8Right
+Jul avg record high F,http://dbpedia.org/property/julAvgRecordHighF
+incorporation date,http://dbpedia.org/property/incorporationDate
+loc name,http://dbpedia.org/property/locName
+municipality code,http://dbpedia.org/property/municipalityCode
+parliament,http://dbpedia.org/property/parliament
+rape,http://dbpedia.org/property/rape
+champa municipality mail id,http://dbpedia.org/property/champaMunicipalityMailId
+near-nw,http://dbpedia.org/property/nearNw
+granddaughters,http://dbpedia.org/property/granddaughters
+Oct afthumidity,http://dbpedia.org/property/octAfthumidity
+Food,http://dbpedia.org/property/food
+indicator plants,http://dbpedia.org/property/indicatorPlants
+intensity,http://dbpedia.org/property/intensity
+licence,http://dbpedia.org/property/licence
+label6size,http://dbpedia.org/property/label6size
+Aug mean C,http://dbpedia.org/property/augMeanC
+density,http://dbpedia.org/property/density
+Royal House Royal House,http://dbpedia.org/property/royalHouseRoyalHouse
+Aug mean F,http://dbpedia.org/property/augMeanF
+Aug percentsun,http://dbpedia.org/property/augPercentsun
+bar2-colour,http://dbpedia.org/property/bar2Colour
+row3-5-at,http://dbpedia.org/property/row35At
+london borough,http://dbpedia.org/property/londonBorough
+overlay13left,http://dbpedia.org/property/overlay13left
+image seal,http://dbpedia.org/property/imageSeal
+shield alt,http://dbpedia.org/property/shieldAlt
+item,http://dbpedia.org/property/item
+sister city,http://dbpedia.org/property/sisterCity
+length of roads,http://dbpedia.org/property/lengthOfRoads
+leader title.,http://dbpedia.org/property/leaderTitle.
+Adoption,http://dbpedia.org/property/adoption
+stepdaughters,http://dbpedia.org/property/stepdaughters
+arc-text-sizeB,http://dbpedia.org/property/arcTextSizeb
+arc-text-sizeC,http://dbpedia.org/property/arcTextSizec
+country largest city,http://dbpedia.org/property/countryLargestCity
+arc-text-sizeA,http://dbpedia.org/property/arcTextSizea
+area metro (m2),http://dbpedia.org/ontology/areaMetro
+Don barhaj.,http://dbpedia.org/property/donBarhaj.
+native name lang,http://dbpedia.org/property/nativeNameLang
+source name,http://dbpedia.org/property/sourceName
+violent crime,http://dbpedia.org/property/violentCrime
+Official Language,http://dbpedia.org/property/officialLanguage
+2016 land area,http://dbpedia.org/property/2016LandArea
+crta,http://dbpedia.org/property/crta
+Jan high F,http://dbpedia.org/property/janHighF
+nickname,http://dbpedia.org/property/nickname
+Jan high C,http://dbpedia.org/property/janHighC
+management,http://dbpedia.org/property/management
+book,http://dbpedia.org/property/book
+elevation max footnotes,http://dbpedia.org/property/elevationMaxFootnotes
+elevation min point,http://dbpedia.org/property/elevationMinPoint
+mapa loc,http://dbpedia.org/property/mapaLoc
+ruling party,http://dbpedia.org/property/rulingParty
+zipcode population,http://dbpedia.org/property/zipcodePopulation
+Shop,http://dbpedia.org/property/shop
+row4-1-colour,http://dbpedia.org/property/row41Colour
+borough,http://dbpedia.org/property/borough
+pushpin relief,http://dbpedia.org/property/pushpinRelief
+ICAO,http://dbpedia.org/property/icao
+map type,http://dbpedia.org/property/mapType
+official type,http://dbpedia.org/property/officialType
+monr,http://dbpedia.org/property/monr
+countrynumber,http://dbpedia.org/property/countrynumber
+NRHP Reference Number,http://dbpedia.org/ontology/nrhpReferenceNumber
+bar19-right,http://dbpedia.org/property/bar19Right
+May avg record high C,http://dbpedia.org/property/mayAvgRecordHighC
+year snow days,http://dbpedia.org/property/yearSnowDays
+2016-accessdate,http://dbpedia.org/property/2016Accessdate
+May avg record high F,http://dbpedia.org/property/mayAvgRecordHighF
+mong,http://dbpedia.org/property/mong
+number of towns,http://dbpedia.org/property/numberOfTowns
+Police Station,http://dbpedia.org/property/policeStation
+Jul mean F,http://dbpedia.org/property/julMeanF
+timezone DST,http://dbpedia.org/property/timezoneDst
+weapons,http://dbpedia.org/property/weapons
+North-west,http://dbpedia.org/property/northWest
+grid name,http://dbpedia.org/property/gridName
+Jul mean C,http://dbpedia.org/property/julMeanC
+population density metro km,http://dbpedia.org/property/populationDensityMetroKm
+scalemark,http://dbpedia.org/property/scalemark
+subdivision ranks,http://dbpedia.org/property/subdivisionRanks
+rural population,http://dbpedia.org/property/ruralPopulation
+Feb low F,http://dbpedia.org/property/febLowF
+PRESS Club,http://dbpedia.org/property/pressClub
+federal district,http://dbpedia.org/property/federalDistrict
+Feb low C,http://dbpedia.org/property/febLowC
+Oct rain days,http://dbpedia.org/property/octRainDays
+MLCTS,http://dbpedia.org/property/mlcts
+buc,http://dbpedia.org/property/buc
+row3-5-text,http://dbpedia.org/property/row35Text
+Dec high C,http://dbpedia.org/property/decHighC
+Jan avg record low C,http://dbpedia.org/property/janAvgRecordLowC
+Sep avg record low C,http://dbpedia.org/property/sepAvgRecordLowC
+Sep avg record low F,http://dbpedia.org/property/sepAvgRecordLowF
+Dec high F,http://dbpedia.org/property/decHighF
+Jan avg record low F,http://dbpedia.org/property/janAvgRecordLowF
+image map size,http://dbpedia.org/property/imageMapSize
+population blank2 title,http://dbpedia.org/property/populationBlank2Title
+elevation m max,http://dbpedia.org/property/elevationMMax
+image coat,http://dbpedia.org/property/imageCoat
+symbol,http://dbpedia.org/property/symbol
+static image name,http://dbpedia.org/property/staticImageName
+suz,http://dbpedia.org/property/suz
+key,http://dbpedia.org/property/key
+immage skyline,http://dbpedia.org/property/immageSkyline
+Febd sun,http://dbpedia.org/property/febdSun
+bar6-from,http://dbpedia.org/property/bar6From
+image caption,http://dbpedia.org/property/imageCaption
+grounds area,http://dbpedia.org/property/groundsArea
+SWS,http://dbpedia.org/property/sws
+boundaries,http://dbpedia.org/property/boundaries
+total,http://dbpedia.org/property/total
+fed sen,http://dbpedia.org/property/fedSen
+height,http://dbpedia.org/property/height
+timezone,http://dbpedia.org/property/timezone
+enrollment as of,http://dbpedia.org/property/enrollmentAsOf
+timezone2 DST,http://dbpedia.org/property/timezone2Dst
+location,http://dbpedia.org/ontology/location
+map-data,http://dbpedia.org/property/mapData
+blank7 name sec,http://dbpedia.org/property/blank7NameSec
+born,http://dbpedia.org/property/born
+reason,http://dbpedia.org/property/reason
+2011 population,http://dbpedia.org/property/2011Population
+nate,http://dbpedia.org/property/nate
+church,http://dbpedia.org/property/church
+urban settlement jur,http://dbpedia.org/property/urbanSettlementJur
+mark-sizeD,http://dbpedia.org/property/markSized
+Jun low F,http://dbpedia.org/property/junLowF
+2016 median hh income,http://dbpedia.org/property/2016MedianHhIncome
+overlay19tip,http://dbpedia.org/property/overlay19tip
+Jun record high C,http://dbpedia.org/property/junRecordHighC
+Jun low C,http://dbpedia.org/property/junLowC
+Jun record high F,http://dbpedia.org/property/junRecordHighF
+refs,http://dbpedia.org/property/refs
+Aug snow inch,http://dbpedia.org/property/augSnowInch
+overlay11link,http://dbpedia.org/property/overlay11link
+The Ghan,http://dbpedia.org/property/theGhan
+official languages,http://dbpedia.org/property/officialLanguages
+junction,http://dbpedia.org/property/junction
+scots name,http://dbpedia.org/property/scotsName
+images,http://dbpedia.org/property/images
+bot,http://dbpedia.org/property/bot
+presentUS$asdefault,http://dbpedia.org/property/presentus$asdefault
+government blank,http://dbpedia.org/property/governmentBlank
+Feb snow cm,http://dbpedia.org/property/febSnowCm
+bar11-to,http://dbpedia.org/property/bar11To
+Demographic section 1 info ,http://dbpedia.org/property/demographicSection1Info
+building type,http://dbpedia.org/property/buildingType
+PopulationFirst,http://dbpedia.org/property/populationfirst
+property crime,http://dbpedia.org/property/propertyCrime
+characteristic,http://dbpedia.org/property/characteristic
+Jan record high F,http://dbpedia.org/property/janRecordHighF
+GDPPC,http://dbpedia.org/property/gdppc
+bar7-left,http://dbpedia.org/property/bar7Left
+section,http://dbpedia.org/property/section
+Jan record high C,http://dbpedia.org/property/janRecordHighC
+2001 access date,http://dbpedia.org/property/2001AccessDate
+total population ranking,http://dbpedia.org/ontology/populationTotalRanking
+tribal council,http://dbpedia.org/property/tribalCouncil
+canton,http://dbpedia.org/ontology/canton
+visitation num,http://dbpedia.org/property/visitationNum
+pushpin map size,http://dbpedia.org/property/pushpinMapSize
+elevation min footnotes,http://dbpedia.org/property/elevationMinFootnotes
+mun admctr of,http://dbpedia.org/property/munAdmctrOf
+municipality,http://dbpedia.org/property/municipality
+students,http://dbpedia.org/property/students
+revhep,http://dbpedia.org/property/revhep
+common name,http://dbpedia.org/property/commonName
+Jun high C,http://dbpedia.org/property/junHighC
+Jun high F,http://dbpedia.org/property/junHighF
+Jan precipitation days,http://dbpedia.org/property/janPrecipitationDays
+floor area (m2),http://dbpedia.org/ontology/Building/floorArea
+near-e,http://dbpedia.org/property/nearE
+Sep precipitation cm,http://dbpedia.org/property/sepPrecipitationCm
+inline,http://dbpedia.org/property/inline
+data type,http://dbpedia.org/property/dataType
+near-n,http://dbpedia.org/property/nearN
+Nearest Railway Station,http://dbpedia.org/property/nearestRailwayStation
+Feb mean C,http://dbpedia.org/property/febMeanC
+designation3 date,http://dbpedia.org/property/designation3Date
+near-s,http://dbpedia.org/property/nearS
+Jund sun,http://dbpedia.org/property/jundSun
+Feb mean F,http://dbpedia.org/property/febMeanF
+near-w,http://dbpedia.org/property/nearW
+GDP nominal per capita,http://dbpedia.org/property/gdpNominalPerCapita
+Local website,http://dbpedia.org/property/localWebsite
+mark1size,http://dbpedia.org/property/mark1size
+row2-1-to,http://dbpedia.org/property/row21To
+Jul snow days,http://dbpedia.org/property/julSnowDays
+SHORT FORM name lang,http://dbpedia.org/property/shortFormNameLang
+d-search,http://dbpedia.org/property/dSearch
+Representer,http://dbpedia.org/property/representer
+Dec sun,http://dbpedia.org/property/decSun
+pop 2012census,http://dbpedia.org/property/pop2012census
+education,http://dbpedia.org/property/education
+sound recording,http://dbpedia.org/ontology/soundRecording
+Feb rain mm,http://dbpedia.org/property/febRainMm
+utc offset DST,http://dbpedia.org/property/utcOffsetDst
+translit lang2 type,http://dbpedia.org/property/translitLang2Type
+population blank,http://dbpedia.org/property/populationBlank
+currentlens,http://dbpedia.org/property/currentlens
+populaton as of,http://dbpedia.org/property/populatonAsOf
+structure1 res,http://dbpedia.org/property/structure1Res
+name,http://dbpedia.org/property/name
+other name,http://dbpedia.org/property/otherName
+city seal,http://dbpedia.org/property/citySeal
+dimensions footnotes,http://dbpedia.org/property/dimensionsFootnotes
+irish name,http://dbpedia.org/property/irishName
+teachers,http://dbpedia.org/property/teachers
+representative body,http://dbpedia.org/property/representativeBody
+Bürgermeistertitel,http://dbpedia.org/property/bürgermeistertitel
+periphunit,http://dbpedia.org/property/periphunit
+building end date,http://dbpedia.org/ontology/buildingEndDate
+area metro km,http://dbpedia.org/property/areaMetroKm
+Høyre,http://dbpedia.org/property/høyre
+overlay31left,http://dbpedia.org/property/overlay31left
+flag alt,http://dbpedia.org/property/flagAlt
+trainstations,http://dbpedia.org/property/trainstations
+opening date,http://dbpedia.org/property/openingDate
+shape-color,http://dbpedia.org/property/shapeColor
+bar2-right,http://dbpedia.org/property/bar2Right
+twin city,http://dbpedia.org/ontology/twinTown
+Wikipage page ID,http://dbpedia.org/ontology/wikiPageID
+overlay20tip,http://dbpedia.org/property/overlay20tip
+population density blank1 km,http://dbpedia.org/property/populationDensityBlank1Km
+bar12-colour,http://dbpedia.org/property/bar12Colour
+mouth,http://dbpedia.org/property/mouth
+population urban,http://dbpedia.org/ontology/populationUrban
+twin country,http://dbpedia.org/ontology/twinCountry
+stat area,http://dbpedia.org/property/statArea
+SS2018 Rank,http://dbpedia.org/property/ss2018Rank
+transport,http://dbpedia.org/property/transport
+sic,http://dbpedia.org/property/sic
+subdivison type,http://dbpedia.org/property/subdivisonType
+Sep rain cm,http://dbpedia.org/property/sepRainCm
+urban pop 2010census,http://dbpedia.org/property/urbanPop2010census
+blank3 info sec,http://dbpedia.org/property/blank3InfoSec
+Municipal wards,http://dbpedia.org/property/municipalWards
+shape-colour,http://dbpedia.org/property/shapeColour
+population increase,http://dbpedia.org/property/populationIncrease
+native name link,http://dbpedia.org/property/nativeNameLink
+campus size,http://dbpedia.org/property/campusSize
+Fremskrittspartiet,http://dbpedia.org/property/fremskrittspartiet
+Oct chill,http://dbpedia.org/property/octChill
+plain,http://dbpedia.org/property/plain
+2011 total pvt dwell,http://dbpedia.org/property/2011TotalPvtDwell
+year mean F,http://dbpedia.org/property/yearMeanF
+lieutenancy england,http://dbpedia.org/property/lieutenancyEngland
+year mean C,http://dbpedia.org/property/yearMeanC
+forcible rape,http://dbpedia.org/property/forcibleRape
+map caption,http://dbpedia.org/property/mapCaption
+formation,http://dbpedia.org/property/formation
+Jan light,http://dbpedia.org/property/janLight
+overlay24link,http://dbpedia.org/property/overlay24link
+population metro,http://dbpedia.org/ontology/populationMetro
+coordinates region,http://dbpedia.org/property/coordinatesRegion
+overlay3tip,http://dbpedia.org/property/overlay3tip
+Jun afthumidity,http://dbpedia.org/property/junAfthumidity
+label2size,http://dbpedia.org/property/label2size
+Sep precipitation mm,http://dbpedia.org/property/sepPrecipitationMm
+row4-borderbottom,http://dbpedia.org/property/row4Borderbottom
+groundbreaking,http://dbpedia.org/property/groundbreaking
+plot-colour,http://dbpedia.org/property/plotColour
+bar20-left,http://dbpedia.org/property/bar20Left
+blank2 info,http://dbpedia.org/property/blank2Info
+river,http://dbpedia.org/property/river
+year sun,http://dbpedia.org/property/yearSun
+owner,http://dbpedia.org/ontology/owner
+off reserve,http://dbpedia.org/property/offReserve
+species link,http://dbpedia.org/property/speciesLink
+Nov light,http://dbpedia.org/property/novLight
+Latitude,http://dbpedia.org/property/latitude
+bar18-left,http://dbpedia.org/property/bar18Left
+functional status,http://dbpedia.org/property/functionalStatus
+label position,http://dbpedia.org/property/labelPosition
+bar10-right,http://dbpedia.org/property/bar10Right
+lang2 content,http://dbpedia.org/property/lang2Content
+bar2-from,http://dbpedia.org/property/bar2From
+bar17-from,http://dbpedia.org/property/bar17From
+blank4 name sec,http://dbpedia.org/property/blank4NameSec
+Nov record low F,http://dbpedia.org/property/novRecordLowF
+seal size,http://dbpedia.org/property/sealSize
+leader1 type,http://dbpedia.org/property/leader1Type
+Oct light,http://dbpedia.org/property/octLight
+elevation m,http://dbpedia.org/property/elevationM
+legend3-colour,http://dbpedia.org/property/legend3Colour
+Sep mean F,http://dbpedia.org/property/sepMeanF
+Nov record low C,http://dbpedia.org/property/novRecordLowC
+Sep mean C,http://dbpedia.org/property/sepMeanC
+constituency ni assembly,http://dbpedia.org/property/constituencyNiAssembly
+elevation-f,http://dbpedia.org/property/elevationF
+city,http://dbpedia.org/ontology/city
+body,http://dbpedia.org/property/body
+SES,http://dbpedia.org/property/ses
+mode,http://dbpedia.org/property/mode
+overlay33link,http://dbpedia.org/property/overlay33link
+overlay4left,http://dbpedia.org/property/overlay4left
+province,http://dbpedia.org/property/province
+range,http://dbpedia.org/property/range
+ARLHS,http://dbpedia.org/property/arlhs
+demographic1 info,http://dbpedia.org/property/demographic1Info
+lightsource,http://dbpedia.org/property/lightsource
+city,http://dbpedia.org/property/city
+mark-title,http://dbpedia.org/property/markTitle
+government blank1 title,http://dbpedia.org/property/governmentBlank1Title
+Dec rain cm,http://dbpedia.org/property/decRainCm
+unit,http://dbpedia.org/property/unit
+Rød Valgallianse,http://dbpedia.org/property/rødValgallianse
+Sumit Chauhan,http://dbpedia.org/property/sumitChauhan
+pop density as of,http://dbpedia.org/property/popDensityAsOf
+unit snow days,http://dbpedia.org/property/unitSnowDays
+stroke-width,http://dbpedia.org/property/strokeWidth
+May precipitation days,http://dbpedia.org/property/mayPrecipitationDays
+bar12-to,http://dbpedia.org/property/bar12To
+headerstyle,http://dbpedia.org/property/headerstyle
+rival,http://dbpedia.org/property/rival
+legend1-colour,http://dbpedia.org/property/legend1Colour
+sgs,http://dbpedia.org/property/sgs
+pop ref,http://dbpedia.org/property/popRef
+Nov chill,http://dbpedia.org/property/novChill
+Local Lists,http://dbpedia.org/property/localLists
+Oct maximum humidex,http://dbpedia.org/property/octMaximumHumidex
+system,http://dbpedia.org/property/system
+construction start date,http://dbpedia.org/property/constructionStartDate
+area urban footnotes,http://dbpedia.org/property/areaUrbanFootnotes
+pop latest date,http://dbpedia.org/property/popLatestDate
+parishes,http://dbpedia.org/property/parishes
+coordinates pinpoint,http://dbpedia.org/property/coordinatesPinpoint
+fauna,http://dbpedia.org/property/fauna
+year start,http://dbpedia.org/property/yearStart
+axis-nudge,http://dbpedia.org/property/axisNudge
+mun district jur,http://dbpedia.org/property/munDistrictJur
+label size,http://dbpedia.org/property/labelSize
+traversed,http://dbpedia.org/property/traversed
+number,http://dbpedia.org/property/number
+bar14-right,http://dbpedia.org/property/bar14Right
+population county,http://dbpedia.org/property/populationCounty
+mark12size,http://dbpedia.org/property/mark12size
+party,http://dbpedia.org/property/party
+football team,http://dbpedia.org/property/footballTeam
+parts,http://dbpedia.org/property/parts
+subdivision name1      ,http://dbpedia.org/property/subdivisionName1
+population note,http://dbpedia.org/property/populationNote
+mapsize,http://dbpedia.org/property/mapsize
+civil parish,http://dbpedia.org/property/civilParish
+ICTC CENTRE,http://dbpedia.org/property/ictcCentre
+mark5size,http://dbpedia.org/property/mark5size
+bar6-right,http://dbpedia.org/property/bar6Right
+Jan chill,http://dbpedia.org/property/janChill
+overlay23top,http://dbpedia.org/property/overlay23top
+subdi,http://dbpedia.org/property/subdi
+bar,http://dbpedia.org/property/bar
+Wikipage revision ID,http://dbpedia.org/ontology/wikiPageRevisionID
+bar3-left,http://dbpedia.org/property/bar3Left
+denomination,http://dbpedia.org/property/denomination
+overlay11top,http://dbpedia.org/property/overlay11top
+Arbeiderpartiet,http://dbpedia.org/property/arbeiderpartiet
+government type,http://dbpedia.org/property/governmentType
+image map,http://dbpedia.org/property/imageMap
+website,http://dbpedia.org/property/website
+audio,http://dbpedia.org/property/audio
+Tahasil,http://dbpedia.org/property/tahasil
+overlay22left,http://dbpedia.org/property/overlay22left
+SDA,http://dbpedia.org/property/sda
+lon6 deg,http://dbpedia.org/property/lon6Deg
+holiday,http://dbpedia.org/property/holiday
+area urban (m2),http://dbpedia.org/ontology/areaUrban
+overlay2link,http://dbpedia.org/property/overlay2link
+rusr,http://dbpedia.org/property/rusr
+Feb snow days,http://dbpedia.org/property/febSnowDays
+May dew point C,http://dbpedia.org/property/mayDewPointC
+Senterpartiet,http://dbpedia.org/property/senterpartiet
+Kotwali,http://dbpedia.org/property/kotwali
+May dew point F,http://dbpedia.org/property/mayDewPointF
+Quarter,http://dbpedia.org/property/quarter
+controlledby,http://dbpedia.org/property/controlledby
+row2-6-text,http://dbpedia.org/property/row26Text
+species,http://dbpedia.org/property/species
+encyber,http://dbpedia.org/property/encyber
+former names,http://dbpedia.org/property/formerNames
+area sqmi,http://dbpedia.org/property/areaSqmi
+Upa Sarpanch,http://dbpedia.org/property/upaSarpanch
+version,http://dbpedia.org/property/version
+market right,http://dbpedia.org/property/marketRight
+maxtemp,http://dbpedia.org/property/maxtemp
+est oil bbl,http://dbpedia.org/property/estOilBbl
+mantra,http://dbpedia.org/property/mantra
+divname,http://dbpedia.org/property/divname
+City rank,http://dbpedia.org/property/cityRank
+datepop,http://dbpedia.org/property/datepop
+sq mi,http://dbpedia.org/property/sqMi
+Jan uv,http://dbpedia.org/property/janUv
+Oct high F,http://dbpedia.org/property/octHighF
+Post,http://dbpedia.org/property/post
+length (μ),http://dbpedia.org/ontology/length
+Oct high C,http://dbpedia.org/property/octHighC
+overlay3top,http://dbpedia.org/property/overlay3top
+map image,http://dbpedia.org/property/mapImage
+partof,http://dbpedia.org/property/partof
+overlay20link,http://dbpedia.org/property/overlay20link
+attendance,http://dbpedia.org/property/attendance
+years active,http://dbpedia.org/property/yearsActive
+navbar,http://dbpedia.org/property/navbar
+silver ,http://dbpedia.org/property/silver
+bar5-to,http://dbpedia.org/property/bar5To
+Jan maximum humidex,http://dbpedia.org/property/janMaximumHumidex
+lieutenancy wales,http://dbpedia.org/property/lieutenancyWales
+candidate,http://dbpedia.org/property/candidate
+county,http://dbpedia.org/ontology/county
+Dec avg record high C,http://dbpedia.org/property/decAvgRecordHighC
+Dec avg record high F,http://dbpedia.org/property/decAvgRecordHighF
+fate,http://dbpedia.org/property/fate
+row3-4-at,http://dbpedia.org/property/row34At
+Jan rain days,http://dbpedia.org/property/janRainDays
+annual calls,http://dbpedia.org/property/annualCalls
+year snow cm,http://dbpedia.org/property/yearSnowCm
+material,http://dbpedia.org/property/material
+colwidth,http://dbpedia.org/property/colwidth
+meaning,http://dbpedia.org/property/meaning
+london direction,http://dbpedia.org/property/londonDirection
+label11size,http://dbpedia.org/property/label11size
+prov-status,http://dbpedia.org/property/provStatus
+shield caption,http://dbpedia.org/property/shieldCaption
+area water percent,http://dbpedia.org/property/areaWaterPercent
+Nul points,http://dbpedia.org/property/nulPoints
+lat3 deg,http://dbpedia.org/property/lat3Deg
+post-text,http://dbpedia.org/property/postText
+previous,http://dbpedia.org/property/previous
+nearest city,http://dbpedia.org/property/nearestCity
+native name,http://dbpedia.org/property/nativeName
+Dec rain mm,http://dbpedia.org/property/decRainMm
+Successful Party,http://dbpedia.org/property/successfulParty
+prov-created,http://dbpedia.org/property/provCreated
+align,http://dbpedia.org/property/align
+image coat size,http://dbpedia.org/property/imageCoatSize
+architecture firm,http://dbpedia.org/property/architectureFirm
+bar15-left,http://dbpedia.org/property/bar15Left
+idnumber,http://dbpedia.org/property/idnumber
+bar7-right,http://dbpedia.org/property/bar7Right
+bar15-right,http://dbpedia.org/property/bar15Right
+legend,http://dbpedia.org/property/legend
+leader4 type,http://dbpedia.org/property/leader4Type
+blank6 info,http://dbpedia.org/property/blank6Info
+county name,http://dbpedia.org/property/countyName
+Record driver,http://dbpedia.org/property/recordDriver
+service type,http://dbpedia.org/property/serviceType
+date end,http://dbpedia.org/property/dateEnd
+affiliation,http://dbpedia.org/property/affiliation
+length (km),http://dbpedia.org/ontology/Infrastructure/length
+Internal links,http://dbpedia.org/property/internalLinks
+accessdate,http://dbpedia.org/property/accessdate
+spacing,http://dbpedia.org/property/spacing
+2011 total pvt dwell usual,http://dbpedia.org/property/2011TotalPvtDwellUsual
+margin,http://dbpedia.org/property/margin
+Mar precipitation mm,http://dbpedia.org/property/marPrecipitationMm
+longmchange,http://dbpedia.org/property/longmchange
+isbn,http://dbpedia.org/property/isbn
+Apr light,http://dbpedia.org/property/aprLight
+Apr precipitation inch,http://dbpedia.org/property/aprPrecipitationInch
+POLTICAL LEADERS,http://dbpedia.org/property/polticalLeaders
+row3-6-at,http://dbpedia.org/property/row36At
+overlay7left,http://dbpedia.org/property/overlay7left
+area metro footnotes,http://dbpedia.org/property/areaMetroFootnotes
+imgsize,http://dbpedia.org/property/imgsize
+lmz,http://dbpedia.org/property/lmz
+area metro sq mi,http://dbpedia.org/property/areaMetroSqMi
+population district,http://dbpedia.org/property/populationDistrict
+Nov record high C,http://dbpedia.org/property/novRecordHighC
+longEW,http://dbpedia.org/property/longew
+Nov record high F,http://dbpedia.org/property/novRecordHighF
+lat6 deg,http://dbpedia.org/property/lat6Deg
+from,http://dbpedia.org/property/from
+managing authorities,http://dbpedia.org/property/managingAuthorities
+next type,http://dbpedia.org/property/nextType
+lga,http://dbpedia.org/property/lga
+bar24-left,http://dbpedia.org/property/bar24Left
+species author,http://dbpedia.org/property/speciesAuthor
+arc-textC,http://dbpedia.org/property/arcTextc
+rescues,http://dbpedia.org/property/rescues
+2001 median age f,http://dbpedia.org/property/2001MedianAgeF
+2001 median age m,http://dbpedia.org/property/2001MedianAgeM
+arc-textA,http://dbpedia.org/property/arcTexta
+arc-textB,http://dbpedia.org/property/arcTextb
+overlay27link,http://dbpedia.org/property/overlay27link
+area dunam,http://dbpedia.org/property/areaDunam
+publictransit,http://dbpedia.org/property/publictransit
+Vidhanshabha total 
+population,http://dbpedia.org/property/vidhanshabhaTotalPopulation
+bar23-from,http://dbpedia.org/property/bar23From
+area urban (km2),http://dbpedia.org/ontology/PopulatedPlace/areaUrban
+content,http://dbpedia.org/property/content
+overlay16top,http://dbpedia.org/property/overlay16top
+meeting place,http://dbpedia.org/property/meetingPlace
+label13 size,http://dbpedia.org/property/label13Size
+Mar rain mm,http://dbpedia.org/property/marRainMm
+adm ctr type,http://dbpedia.org/property/admCtrType
+timezone link,http://dbpedia.org/property/timezoneLink
+bar23-colour,http://dbpedia.org/property/bar23Colour
+lit,http://dbpedia.org/property/lit
+pushpin map alt,http://dbpedia.org/property/pushpinMapAlt
+pushpin label position,http://dbpedia.org/property/pushpinLabelPosition
+Nagar Panchayat adhyaksh name,http://dbpedia.org/property/nagarPanchayatAdhyakshName
+alias,http://dbpedia.org/property/alias
+crown dependency,http://dbpedia.org/ontology/crownDependency
+Apr chill,http://dbpedia.org/property/aprChill
+units,http://dbpedia.org/property/units
+dedication,http://dbpedia.org/property/dedication
+facebook page,http://dbpedia.org/property/facebookPage
+blank1 name,http://dbpedia.org/property/blank1Name
+Adresse,http://dbpedia.org/property/adresse
+Feb avg record high F,http://dbpedia.org/property/febAvgRecordHighF
+Municipal Council President,http://dbpedia.org/property/municipalCouncilPresident
+mark9size,http://dbpedia.org/property/mark9size
+Feb avg record high C,http://dbpedia.org/property/febAvgRecordHighC
+previous election,http://dbpedia.org/property/previousElection
+Dec uv,http://dbpedia.org/property/decUv
+classes,http://dbpedia.org/property/classes
+runtime,http://dbpedia.org/property/runtime
+rulers,http://dbpedia.org/property/rulers
+fed rep,http://dbpedia.org/property/fedRep
+AssemblyConstituencies,http://dbpedia.org/property/assemblyconstituencies
+verse,http://dbpedia.org/property/verse
+shape-outline,http://dbpedia.org/property/shapeOutline
+chairperson,http://dbpedia.org/property/chairperson
+official mascot,http://dbpedia.org/property/officialMascot
+leader,http://dbpedia.org/property/leader
+pop2 year,http://dbpedia.org/property/pop2Year
+Social Worker,http://dbpedia.org/property/socialWorker
+area of what,http://dbpedia.org/property/areaOfWhat
+overlay18link,http://dbpedia.org/property/overlay18link
+label8 size,http://dbpedia.org/property/label8Size
+elevation (μ),http://dbpedia.org/ontology/elevation
+Mar dew point C,http://dbpedia.org/property/marDewPointC
+Mar dew point F,http://dbpedia.org/property/marDewPointF
+geo cat,http://dbpedia.org/property/geoCat
+council,http://dbpedia.org/property/council
+image plan,http://dbpedia.org/property/imagePlan
+overlay5link,http://dbpedia.org/property/overlay5link
+ambulances,http://dbpedia.org/property/ambulances
+imagecaption,http://dbpedia.org/property/imagecaption
+map label position,http://dbpedia.org/property/mapLabelPosition
+chuhan,http://dbpedia.org/property/chuhan
+skylinesize,http://dbpedia.org/property/skylinesize
+utc-dst,http://dbpedia.org/property/utcDst
+row4-3-colour,http://dbpedia.org/property/row43Colour
+row2-2-text,http://dbpedia.org/property/row22Text
+pushpin map narrow,http://dbpedia.org/property/pushpinMapNarrow
+overlay28top,http://dbpedia.org/property/overlay28top
+meta,http://dbpedia.org/property/meta
+shinjitai,http://dbpedia.org/property/shinjitai
+r1-length-f,http://dbpedia.org/property/r1LengthF
+NPCname,http://dbpedia.org/property/npcname
+languages,http://dbpedia.org/property/languages
+naver,http://dbpedia.org/property/naver
+event end,http://dbpedia.org/property/eventEnd
+suburbs title,http://dbpedia.org/property/suburbsTitle
+client,http://dbpedia.org/property/client
+unit name,http://dbpedia.org/property/unitName
+dissolution date,http://dbpedia.org/ontology/dissolutionDate
+bar10-to,http://dbpedia.org/property/bar10To
+named for,http://dbpedia.org/property/namedFor
+chairman,http://dbpedia.org/property/chairman
+commons,http://dbpedia.org/property/commons
+Jul rain days,http://dbpedia.org/property/julRainDays
+demo-electors,http://dbpedia.org/property/demoElectors
+fullscreen-option,http://dbpedia.org/property/fullscreenOption
+place,http://dbpedia.org/property/place
+overlay31colour,http://dbpedia.org/property/overlay31colour
+best,http://dbpedia.org/property/best
+Mar precipitation cm,http://dbpedia.org/property/marPrecipitationCm
+top,http://dbpedia.org/property/top
+toi,http://dbpedia.org/property/toi
+service area,http://dbpedia.org/property/serviceArea
+Jan snow cm,http://dbpedia.org/property/janSnowCm
+Record time,http://dbpedia.org/property/recordTime
+population density blank2 km,http://dbpedia.org/property/populationDensityBlank2Km
+South-east,http://dbpedia.org/property/southEast
+image skyk
+line,http://dbpedia.org/property/imageSkykLine
+creator (agent),http://dbpedia.org/ontology/creator
+motto,http://dbpedia.org/property/motto
+description URL,http://dbpedia.org/property/descriptionUrl
+xposition,http://dbpedia.org/property/xposition
+river system,http://dbpedia.org/property/riverSystem
+noicon,http://dbpedia.org/property/noicon
+synonyms,http://dbpedia.org/property/synonyms
+russian,http://dbpedia.org/property/russian
+row2-2-to,http://dbpedia.org/property/row22To
+religions sub,http://dbpedia.org/property/religionsSub
+last eruption,http://dbpedia.org/property/lastEruption
+state rep,http://dbpedia.org/property/stateRep
+utm zone,http://dbpedia.org/property/utmZone
+gov as of,http://dbpedia.org/property/govAsOf
+free,http://dbpedia.org/property/free
+oTop,http://dbpedia.org/property/otop
+pop urban date,http://dbpedia.org/property/popUrbanDate
+overlay25left,http://dbpedia.org/property/overlay25left
+col,http://dbpedia.org/property/col
+bar14-from,http://dbpedia.org/property/bar14From
+champa municipality telephone number,http://dbpedia.org/property/champaMunicipalityTelephoneNumber
+mayor as of,http://dbpedia.org/property/mayorAsOf
+elevation,http://dbpedia.org/property/elevation
+unit rain days,http://dbpedia.org/property/unitRainDays
+elevation max,http://dbpedia.org/property/elevationMax
+May high F,http://dbpedia.org/property/mayHighF
+May high C,http://dbpedia.org/property/mayHighC
+overlay8top,http://dbpedia.org/property/overlay8top
+leader title,http://dbpedia.org/ontology/leaderTitle
+Sosialistisk Folkeparti,http://dbpedia.org/property/sosialistiskFolkeparti
+medium of language,http://dbpedia.org/property/mediumOfLanguage
+GDP us,http://dbpedia.org/property/gdpUs
+leader name,http://dbpedia.org/property/leaderName
+feeder schools,http://dbpedia.org/property/feederSchools
+oclc,http://dbpedia.org/property/oclc
+Oct percentsun,http://dbpedia.org/property/octPercentsun
+Men Population,http://dbpedia.org/property/menPopulation
+footer align,http://dbpedia.org/property/footerAlign
+text background,http://dbpedia.org/property/textBackground
+lat,http://dbpedia.org/property/lat
+status,http://dbpedia.org/ontology/status
+Jun avg record high F,http://dbpedia.org/property/junAvgRecordHighF
+Link from a Wikipage to an external page,http://dbpedia.org/ontology/wikiPageExternalLink
+Jun avg record high C,http://dbpedia.org/property/junAvgRecordHighC
+bar4-to,http://dbpedia.org/property/bar4To
+councillors,http://dbpedia.org/property/councillors
+location map,http://dbpedia.org/property/locationMap
+overlay32top,http://dbpedia.org/property/overlay32top
+CIM,http://dbpedia.org/property/cim
+code1 info,http://dbpedia.org/property/code1Info
+area total acre,http://dbpedia.org/property/areaTotalAcre
+sworn,http://dbpedia.org/property/sworn
+Sepd sun,http://dbpedia.org/property/sepdSun
+bg,http://dbpedia.org/property/bg
+Jun chill,http://dbpedia.org/property/junChill
+photo width,http://dbpedia.org/property/photoWidth
+govtofficial title,http://dbpedia.org/property/govtofficialTitle
+sons,http://dbpedia.org/property/sons
+mayor,http://dbpedia.org/ontology/mayor
+2016 mean hh income,http://dbpedia.org/property/2016MeanHhIncome
+Nov precipitation days,http://dbpedia.org/property/novPrecipitationDays
+Dec chill,http://dbpedia.org/property/decChill
+attested date,http://dbpedia.org/property/attestedDate
+Dec rain days,http://dbpedia.org/property/decRainDays
+lon9 deg,http://dbpedia.org/property/lon9Deg
+frazioni,http://dbpedia.org/property/frazioni
+overlay16left,http://dbpedia.org/property/overlay16left
+Mar rain cm,http://dbpedia.org/property/marRainCm
+post town,http://dbpedia.org/property/postTown
+producingformations,http://dbpedia.org/property/producingformations
+imagesize,http://dbpedia.org/property/imagesize
+color border,http://dbpedia.org/property/colorBorder
+overlay19top,http://dbpedia.org/property/overlay19top
+Dec record high F,http://dbpedia.org/property/decRecordHighF
+bar11-left,http://dbpedia.org/property/bar11Left
+main reserve,http://dbpedia.org/property/mainReserve
+bar22-right,http://dbpedia.org/property/bar22Right
+located in area,http://dbpedia.org/ontology/locatedInArea
+Dec record high C,http://dbpedia.org/property/decRecordHighC
+defunct,http://dbpedia.org/property/defunct
+overlay20top,http://dbpedia.org/property/overlay20top
+previous type,http://dbpedia.org/property/previousType
+population est as of,http://dbpedia.org/property/populationEstAsOf
+area (km2),http://dbpedia.org/ontology/PopulatedPlace/area
+label9size,http://dbpedia.org/property/label9size
+bar9-from,http://dbpedia.org/property/bar9From
+area metro (km2),http://dbpedia.org/ontology/PopulatedPlace/areaMetro
+waterbody,http://dbpedia.org/property/waterbody
+cWidth,http://dbpedia.org/property/cwidth
+population total tehsil zafarwal,http://dbpedia.org/property/populationTotalTehsilZafarwal
+webpage,http://dbpedia.org/property/webpage
+designer,http://dbpedia.org/property/designer
+bar24-to,http://dbpedia.org/property/bar24To
+location city,http://dbpedia.org/property/locationCity
+2001 total pvt dwell,http://dbpedia.org/property/2001TotalPvtDwell
+road end direction,http://dbpedia.org/ontology/routeEndDirection
+dp,http://dbpedia.org/property/dp
+dn,http://dbpedia.org/property/dn
+Criteria,http://dbpedia.org/property/criteria
+Banks.,http://dbpedia.org/property/banks.
+blank5 name,http://dbpedia.org/property/blank5Name
+government MLA,http://dbpedia.org/property/governmentMla
+Dec light,http://dbpedia.org/property/decLight
+mark-image,http://dbpedia.org/property/markImage
+image caption      vi,http://dbpedia.org/property/imageCaptionVi
+postal code         Poteten er nammenam,http://dbpedia.org/property/postalCodePotetenErNammenam
+Engines,http://dbpedia.org/property/engines
+nocity,http://dbpedia.org/property/nocity
+currency,http://dbpedia.org/property/currency
+stations,http://dbpedia.org/property/stations
+Adresse-Verband,http://dbpedia.org/property/adresseVerband
+mnc a,http://dbpedia.org/property/mncA
+buildings,http://dbpedia.org/property/buildings
+SHORT FORM name,http://dbpedia.org/property/shortFormName
+ci,http://dbpedia.org/property/ci
+CF,http://dbpedia.org/property/cf
+cc,http://dbpedia.org/property/cc
+FIA grade,http://dbpedia.org/property/fiaGrade
+LOCODE,http://dbpedia.org/property/locode
+elevation min,http://dbpedia.org/property/elevationMin
+designated nrhp type,http://dbpedia.org/property/designatedNrhpType
+iso code,http://dbpedia.org/property/isoCode
+year precipitation days,http://dbpedia.org/property/yearPrecipitationDays
+tib,http://dbpedia.org/property/tib
+M.L.A.,http://dbpedia.org/property/m.l.a.
+minimap,http://dbpedia.org/property/minimap
+settled,http://dbpedia.org/property/settled
+by,http://dbpedia.org/property/by
+IATA,http://dbpedia.org/property/iata
+Apr high F,http://dbpedia.org/property/aprHighF
+GDP ratio,http://dbpedia.org/property/gdpRatio
+upright,http://dbpedia.org/property/upright
+bp,http://dbpedia.org/property/bp
+Representative,http://dbpedia.org/property/representative
+Apr high C,http://dbpedia.org/property/aprHighC
+label4 size,http://dbpedia.org/property/label4Size
+df,http://dbpedia.org/property/df
+postcode district,http://dbpedia.org/property/postcodeDistrict
+vehicle code range,http://dbpedia.org/property/vehicleCodeRange
+population blank1 title,http://dbpedia.org/property/populationBlank1Title
+cy,http://dbpedia.org/property/cy
+forest area km,http://dbpedia.org/property/forestAreaKm
+other services header,http://dbpedia.org/property/otherServicesHeader
+row3-1-text,http://dbpedia.org/property/row31Text
+Sep low C,http://dbpedia.org/property/sepLowC
+North-east,http://dbpedia.org/property/northEast
+custom label,http://dbpedia.org/property/customLabel
+cp,http://dbpedia.org/property/cp
+Sep low F,http://dbpedia.org/property/sepLowF
+footnotes,http://dbpedia.org/property/footnotes
+official website,http://dbpedia.org/property/officialWebsite
+cap,http://dbpedia.org/property/cap
+Aug dew point C,http://dbpedia.org/property/augDewPointC
+label-offset-yD,http://dbpedia.org/property/labelOffsetYd
+The most respected person,http://dbpedia.org/property/theMostRespectedPerson
+Jun snow days,http://dbpedia.org/property/junSnowDays
+id,http://dbpedia.org/property/id
+named after,http://dbpedia.org/ontology/namedAfter
+coor type,http://dbpedia.org/property/coorType
+producer,http://dbpedia.org/property/producer
+language,http://dbpedia.org/property/language
+Sep dew point F,http://dbpedia.org/property/sepDewPointF
+reserve,http://dbpedia.org/property/reserve
+Sep dew point C,http://dbpedia.org/property/sepDewPointC
+June,http://dbpedia.org/property/june
+Aug dew point F,http://dbpedia.org/property/augDewPointF
+hp,http://dbpedia.org/property/hp
+prev name,http://dbpedia.org/property/prevName
+Beds,http://dbpedia.org/property/beds
+Jul afthumidity,http://dbpedia.org/property/julAfthumidity
+features,http://dbpedia.org/property/features
+Aug avg record high C,http://dbpedia.org/property/augAvgRecordHighC
+bar19-to,http://dbpedia.org/property/bar19To
+Aug rain inch,http://dbpedia.org/property/augRainInch
+census year,http://dbpedia.org/ontology/censusYear
+Aug avg record high F,http://dbpedia.org/property/augAvgRecordHighF
+image size.,http://dbpedia.org/property/imageSize.
+EBU page,http://dbpedia.org/property/ebuPage
+seats1 title,http://dbpedia.org/property/seats1Title
+latmchange,http://dbpedia.org/property/latmchange
+queen,http://dbpedia.org/property/queen
+governing body O,http://dbpedia.org/property/governingBodyO
+Promoted Status,http://dbpedia.org/property/promotedStatus
+Operators,http://dbpedia.org/property/operators
+area total sq mi,http://dbpedia.org/property/areaTotalSqMi
+precolumbian,http://dbpedia.org/property/precolumbian
+squads,http://dbpedia.org/property/squads
+conventional long name,http://dbpedia.org/property/conventionalLongName
+founding year,http://dbpedia.org/ontology/foundingYear
+Apr sun,http://dbpedia.org/property/aprSun
+Nov rain days,http://dbpedia.org/property/novRainDays
+locmap relief,http://dbpedia.org/property/locmapRelief
+Feb rain inch,http://dbpedia.org/property/febRainInch
+subdivname,http://dbpedia.org/property/subdivname
+arson,http://dbpedia.org/property/arson
+metropolitan city,http://dbpedia.org/property/metropolitanCity
+coordinates type,http://dbpedia.org/property/coordinatesType
+abandoned,http://dbpedia.org/property/abandoned
+2016 pop delta,http://dbpedia.org/property/2016PopDelta
+group,http://dbpedia.org/property/group
+original name,http://dbpedia.org/property/originalName
+state bird,http://dbpedia.org/property/stateBird
+demonym,http://dbpedia.org/ontology/demonym
+population rank,http://dbpedia.org/property/populationRank
+Feb afthumidity,http://dbpedia.org/property/febAfthumidity
+overlay9link,http://dbpedia.org/property/overlay9link
+current commander,http://dbpedia.org/property/currentCommander
+gr,http://dbpedia.org/property/gr
+founding year,http://dbpedia.org/property/foundingYear
+iaff,http://dbpedia.org/property/iaff
+teo,http://dbpedia.org/property/teo
+unsworn,http://dbpedia.org/property/unsworn
+mr,http://dbpedia.org/property/mr
+school roll,http://dbpedia.org/property/schoolRoll
+kyujitai,http://dbpedia.org/property/kyujitai
+overlay29left,http://dbpedia.org/property/overlay29left
+mp,http://dbpedia.org/property/mp
+year rain days,http://dbpedia.org/property/yearRainDays
+area total acer,http://dbpedia.org/property/areaTotalAcer
+width km,http://dbpedia.org/property/widthKm
+mi,http://dbpedia.org/property/mi
+formedyear,http://dbpedia.org/property/formedyear
+route end,http://dbpedia.org/ontology/routeEnd
+context,http://dbpedia.org/property/context
+MC,http://dbpedia.org/property/mc
+part of,http://dbpedia.org/property/partOf
+bar1-right,http://dbpedia.org/property/bar1Right
+founded date,http://dbpedia.org/property/foundedDate
+talk,http://dbpedia.org/property/talk
+ESC apps,http://dbpedia.org/property/escApps
+LU,http://dbpedia.org/property/lu
+bar10-from,http://dbpedia.org/property/bar10From
+pushpin caption,http://dbpedia.org/property/pushpinCaption
+NE,http://dbpedia.org/property/ne
+architectural style,http://dbpedia.org/property/architecturalStyle
+Jun light,http://dbpedia.org/property/junLight
+discharge1 location,http://dbpedia.org/property/discharge1Location
+political groups,http://dbpedia.org/property/politicalGroups
+area telephone,http://dbpedia.org/property/areaTelephone
+subcritical tests,http://dbpedia.org/property/subcriticalTests
+CEO janpad,http://dbpedia.org/property/ceoJanpad
+MY,http://dbpedia.org/property/my
+border,http://dbpedia.org/property/border
+designation1 free3name,http://dbpedia.org/property/designation1Free3name
+mw,http://dbpedia.org/property/mw
+Density km,http://dbpedia.org/property/densityKm
+custom data,http://dbpedia.org/property/customData
+bodyclass,http://dbpedia.org/property/bodyclass
+inunits,http://dbpedia.org/property/inunits
+Gemeindeschlüssel,http://dbpedia.org/property/gemeindeschlüssel
+Mar rain days,http://dbpedia.org/property/marRainDays
+population est,http://dbpedia.org/property/populationEst
+width mi,http://dbpedia.org/property/widthMi
+area total dunam,http://dbpedia.org/property/areaTotalDunam
+winter temperature,http://dbpedia.org/property/winterTemperature
+lon min,http://dbpedia.org/property/lonMin
+parts style,http://dbpedia.org/property/partsStyle
+overlay14link,http://dbpedia.org/property/overlay14link
+Apr maximum humidex,http://dbpedia.org/property/aprMaximumHumidex
+bar7-text,http://dbpedia.org/property/bar7Text
+leading,http://dbpedia.org/property/leading
+Parliament MP,http://dbpedia.org/property/parliamentMp
+homepage,http://dbpedia.org/property/homepage
+grand theft auto,http://dbpedia.org/property/grandTheftAuto
+Near By Air Ports,http://dbpedia.org/property/nearByAirPorts
+lj,http://dbpedia.org/property/lj
+row2-bordertop,http://dbpedia.org/property/row2Bordertop
+constructed,http://dbpedia.org/property/constructed
+area land km,http://dbpedia.org/property/areaLandKm
+floor count,http://dbpedia.org/ontology/floorCount
+coatofarms,http://dbpedia.org/property/coatofarms
+election,http://dbpedia.org/property/election
+width (μ),http://dbpedia.org/ontology/width
+locations,http://dbpedia.org/property/locations
+Jul precipitation days,http://dbpedia.org/property/julPrecipitationDays
+Oct record high F,http://dbpedia.org/property/octRecordHighF
+Oct record high C,http://dbpedia.org/property/octRecordHighC
+image captionq,http://dbpedia.org/property/imageCaptionq
+Jul avg record low F,http://dbpedia.org/property/julAvgRecordLowF
+latNS,http://dbpedia.org/property/latns
+Nov snow cm,http://dbpedia.org/property/novSnowCm
+designated other1 num position,http://dbpedia.org/property/designatedOther1NumPosition
+Jul avg record low C,http://dbpedia.org/property/julAvgRecordLowC
+leader years,http://dbpedia.org/property/leaderYears
+organisational status,http://dbpedia.org/property/organisationalStatus
+legend7-colour,http://dbpedia.org/property/legend7Colour
+fmax,http://dbpedia.org/property/fmax
+public transit,http://dbpedia.org/property/publicTransit
+territorial extent,http://dbpedia.org/property/territorialExtent
+province,http://dbpedia.org/ontology/province
+employees,http://dbpedia.org/property/employees
+zha,http://dbpedia.org/property/zha
+blank5 info sec,http://dbpedia.org/property/blank5InfoSec
+combatant,http://dbpedia.org/property/combatant
+RR,http://dbpedia.org/property/rr
+country capital and largest city,http://dbpedia.org/property/countryCapitalAndLargestCity
+overlay21left,http://dbpedia.org/property/overlay21left
+blank emblem type,http://dbpedia.org/property/blankEmblemType
+chapter,http://dbpedia.org/property/chapter
+bar20-right,http://dbpedia.org/property/bar20Right
+row2-height,http://dbpedia.org/property/row2Height
+carlicense,http://dbpedia.org/property/carlicense
+lieutenancy northern ireland,http://dbpedia.org/property/lieutenancyNorthernIreland
+code1 name,http://dbpedia.org/property/code1Name
+direction a,http://dbpedia.org/property/directionA
+long title,http://dbpedia.org/property/longTitle
+address,http://dbpedia.org/ontology/address
+constituency manx parliament,http://dbpedia.org/property/constituencyManxParliament
+direction b,http://dbpedia.org/property/directionB
+Jun snow cm,http://dbpedia.org/property/junSnowCm
+mini-height,http://dbpedia.org/property/miniHeight
+South-west,http://dbpedia.org/property/southWest
+Jan snow inch,http://dbpedia.org/property/janSnowInch
+pushpin label,http://dbpedia.org/property/pushpinLabel
+stand,http://dbpedia.org/property/stand
+established,http://dbpedia.org/property/established
+known for,http://dbpedia.org/property/knownFor
+members,http://dbpedia.org/property/members
+NW,http://dbpedia.org/property/nw
+city mayor,http://dbpedia.org/property/cityMayor
+row4-3-text,http://dbpedia.org/property/row43Text
+area water km,http://dbpedia.org/property/areaWaterKm
+location town,http://dbpedia.org/property/locationTown
+father,http://dbpedia.org/property/father
+May snow inch,http://dbpedia.org/property/maySnowInch
+PC,http://dbpedia.org/property/pc
+provname,http://dbpedia.org/property/provname
+area code                     LLP,http://dbpedia.org/property/areaCodeLlp
+titlestyle,http://dbpedia.org/property/titlestyle
+No. Of Villages,http://dbpedia.org/property/no.OfVillages
+bar1-text,http://dbpedia.org/property/bar1Text
+alternative location map,http://dbpedia.org/property/alternativeLocationMap
+blank2 name sec,http://dbpedia.org/property/blank2NameSec
+mark4size,http://dbpedia.org/property/mark4size
+Aug rain mm,http://dbpedia.org/property/augRainMm
+overlay12left,http://dbpedia.org/property/overlay12left
+brothers,http://dbpedia.org/property/brothers
+motor vehicle theft,http://dbpedia.org/property/motorVehicleTheft
+pop est footnotes,http://dbpedia.org/property/popEstFootnotes
+abbreviation,http://dbpedia.org/property/abbreviation
+flap caption,http://dbpedia.org/property/flapCaption
+row3-7-at,http://dbpedia.org/property/row37At
+designation1 free1name,http://dbpedia.org/property/designation1Free1name
+next election,http://dbpedia.org/property/nextElection
+native nme,http://dbpedia.org/property/nativeNme
+architectural style,http://dbpedia.org/ontology/architecturalStyle
+shiel caption,http://dbpedia.org/property/shielCaption
+Avholdspartiet,http://dbpedia.org/property/avholdspartiet
+image logo,http://dbpedia.org/property/imageLogo
+elevation ft,http://dbpedia.org/property/elevationFt
+coordinates parameters,http://dbpedia.org/property/coordinatesParameters
+command structure,http://dbpedia.org/property/commandStructure
+overlay29tip,http://dbpedia.org/property/overlay29tip
+row4-1-to,http://dbpedia.org/property/row41To
+Apr precipitation cm,http://dbpedia.org/property/aprPrecipitationCm
+subdivision,http://dbpedia.org/property/subdivision
+row2-9-text,http://dbpedia.org/property/row29Text
+SW,http://dbpedia.org/property/sw
+designation4 date,http://dbpedia.org/property/designation4Date
+closed,http://dbpedia.org/property/closed
+image seal size,http://dbpedia.org/property/imageSealSize
+founding date,http://dbpedia.org/ontology/foundingDate
+mouth location,http://dbpedia.org/property/mouthLocation
+population munic,http://dbpedia.org/property/populationMunic
+population total,http://dbpedia.org/property/populationTotal
+demographics1 info,http://dbpedia.org/property/demographics1Info
+'''Bold text'''date,http://dbpedia.org/property/'''boldText'''date
+SE,http://dbpedia.org/property/se
+legend2-colour,http://dbpedia.org/property/legend2Colour
+ibox-order,http://dbpedia.org/property/iboxOrder
+population density (/sqkm),http://dbpedia.org/ontology/populationDensity
+zoo name,http://dbpedia.org/property/zooName
+government type,http://dbpedia.org/ontology/governmentType
+Jan percentsun,http://dbpedia.org/property/janPercentsun
+tp,http://dbpedia.org/property/tp
+to,http://dbpedia.org/property/to
+pushpin map,http://dbpedia.org/property/pushpinMap
+archiveurl,http://dbpedia.org/property/archiveurl
+tl,http://dbpedia.org/property/tl
+before,http://dbpedia.org/property/before
+capital,http://dbpedia.org/ontology/capital
+overlay5top,http://dbpedia.org/property/overlay5top
+Nov avg record high F,http://dbpedia.org/property/novAvgRecordHighF
+perrow,http://dbpedia.org/property/perrow
+Type of City,http://dbpedia.org/property/typeOfCity
+Nov avg record high C,http://dbpedia.org/property/novAvgRecordHighC
+overlay17top,http://dbpedia.org/property/overlay17top
+state sen,http://dbpedia.org/property/stateSen
+elevation km,http://dbpedia.org/property/elevationKm
+bar22-to,http://dbpedia.org/property/bar22To
+runtime (m),http://dbpedia.org/ontology/Work/runtime
+commonscat,http://dbpedia.org/property/commonscat
+row2-9-colour,http://dbpedia.org/property/row29Colour
+yp,http://dbpedia.org/property/yp
+population male,http://dbpedia.org/property/populationMale
+data max,http://dbpedia.org/property/dataMax
+Replace,http://dbpedia.org/property/replace
+prev,http://dbpedia.org/property/prev
+label-pos,http://dbpedia.org/property/labelPos
+ya,http://dbpedia.org/property/ya
+officers,http://dbpedia.org/property/officers
+flag size,http://dbpedia.org/property/flagSize
+ZIP code,http://dbpedia.org/property/zipCode
+Previous Mayor,http://dbpedia.org/property/previousMayor
+mini-file,http://dbpedia.org/property/miniFile
+Apr afthumidity,http://dbpedia.org/property/aprAfthumidity
+original name,http://dbpedia.org/ontology/originalName
+periph,http://dbpedia.org/property/periph
+legislature,http://dbpedia.org/property/legislature
+Mar percentsun,http://dbpedia.org/property/marPercentsun
+mintemp,http://dbpedia.org/property/mintemp
+bar7-from,http://dbpedia.org/property/bar7From
+zwpy,http://dbpedia.org/property/zwpy
+row2-4-colour,http://dbpedia.org/property/row24Colour
+managingagent,http://dbpedia.org/property/managingagent
+enrollment,http://dbpedia.org/property/enrollment
+weapon,http://dbpedia.org/property/weapon
+area water (m2),http://dbpedia.org/ontology/areaWater
+Sunrise,http://dbpedia.org/property/sunrise
+number of stores,http://dbpedia.org/property/numberOfStores
+May precipitation cm,http://dbpedia.org/property/mayPrecipitationCm
+Aug rain cm,http://dbpedia.org/property/augRainCm
+Mard sun,http://dbpedia.org/property/mardSun
+rows,http://dbpedia.org/property/rows
+cHeight,http://dbpedia.org/property/cheight
+Dec precipitation mm,http://dbpedia.org/property/decPrecipitationMm
+header align,http://dbpedia.org/property/headerAlign
+overlay30left,http://dbpedia.org/property/overlay30left
+location map caption,http://dbpedia.org/property/locationMapCaption
+Buffer zone,http://dbpedia.org/property/bufferZone
+District Headquarter,http://dbpedia.org/property/districtHeadquarter
+blank emblem alt,http://dbpedia.org/property/blankEmblemAlt
+deity of,http://dbpedia.org/property/deityOf
+Rødt,http://dbpedia.org/property/rødt
+public access,http://dbpedia.org/property/publicAccess
+image maps,http://dbpedia.org/property/imageMaps
+overlay10link,http://dbpedia.org/property/overlay10link
+lang1 content,http://dbpedia.org/property/lang1Content
+bar8-left,http://dbpedia.org/property/bar8Left
+marking,http://dbpedia.org/property/marking
+image style,http://dbpedia.org/property/imageStyle
+Mar low C,http://dbpedia.org/property/marLowC
+marker image,http://dbpedia.org/property/markerImage
+Oct precipitation inch,http://dbpedia.org/property/octPrecipitationInch
+state,http://dbpedia.org/property/state
+past commanders,http://dbpedia.org/property/pastCommanders
+Nasjonal Samling,http://dbpedia.org/property/nasjonalSamling
+Mar low F,http://dbpedia.org/property/marLowF
+label5size,http://dbpedia.org/property/label5size
+Member of parliament,http://dbpedia.org/property/memberOfParliament
+Footnote,http://dbpedia.org/property/footnote
+adm selsoviet jur,http://dbpedia.org/property/admSelsovietJur
+population blank2 footnotes,http://dbpedia.org/property/populationBlank2Footnotes
+lat9 deg,http://dbpedia.org/property/lat9Deg
+Unit offset ,http://dbpedia.org/property/unitOffset
+Banks,http://dbpedia.org/property/banks
+stadium name,http://dbpedia.org/property/stadiumName
+date start,http://dbpedia.org/property/dateStart
+mouth place,http://dbpedia.org/ontology/mouthPlace
+overlay30top,http://dbpedia.org/property/overlay30top
+urban population,http://dbpedia.org/property/urbanPopulation
+page,http://dbpedia.org/property/page
+suburbs name,http://dbpedia.org/property/suburbsName
+bgcolor,http://dbpedia.org/property/bgcolor
+offonshore,http://dbpedia.org/property/offonshore
+Jul humidity,http://dbpedia.org/property/julHumidity
+bar13-colour,http://dbpedia.org/property/bar13Colour
+ImageName,http://dbpedia.org/property/imagename
+translit lang,http://dbpedia.org/property/translitLang
+Clarification,http://dbpedia.org/property/clarification
+distance,http://dbpedia.org/property/distance
+Mar precipitation inch,http://dbpedia.org/property/marPrecipitationInch
+estabslished date,http://dbpedia.org/property/estabslishedDate
+artist from karanpur,http://dbpedia.org/property/artistFromKaranpur
+Jan dew point C,http://dbpedia.org/property/janDewPointC
+Jan dew point F,http://dbpedia.org/property/janDewPointF
+headerimage,http://dbpedia.org/property/headerimage
+opened date,http://dbpedia.org/property/openedDate
+start,http://dbpedia.org/property/start
+source url,http://dbpedia.org/property/sourceUrl
+blank emblem link,http://dbpedia.org/property/blankEmblemLink
+Team,http://dbpedia.org/property/team
+row1-1-arrow,http://dbpedia.org/property/row11Arrow
+political status link,http://dbpedia.org/property/politicalStatusLink
+overlay29top,http://dbpedia.org/property/overlay29top
+geocode,http://dbpedia.org/property/geocode
+row2-3-to,http://dbpedia.org/property/row23To
+demo-census-date,http://dbpedia.org/property/demoCensusDate
+inventory number,http://dbpedia.org/property/inventoryNumber
+flagcaption,http://dbpedia.org/property/flagcaption
+Decd sun,http://dbpedia.org/property/decdSun
+lspan,http://dbpedia.org/property/lspan
+hsn,http://dbpedia.org/property/hsn
+Feb sun,http://dbpedia.org/property/febSun
+listclass,http://dbpedia.org/property/listclass
+Dec precipitation cm,http://dbpedia.org/property/decPrecipitationCm
+overlay3link,http://dbpedia.org/property/overlay3link
+population urban footnotes,http://dbpedia.org/property/populationUrbanFootnotes
+City Logo,http://dbpedia.org/property/cityLogo
+Sep snow days,http://dbpedia.org/property/sepSnowDays
+area sweat percent,http://dbpedia.org/property/areaSweatPercent
+utc offset,http://dbpedia.org/property/utcOffset
+schoolboard,http://dbpedia.org/property/schoolboard
+Police SHO,http://dbpedia.org/property/policeSho
+welsh name,http://dbpedia.org/property/welshName
+Nov precipitation inch,http://dbpedia.org/property/novPrecipitationInch
+Apr precipitation mm,http://dbpedia.org/property/aprPrecipitationMm
+overlay32link,http://dbpedia.org/property/overlay32link
+symbol type,http://dbpedia.org/property/symbolType
+Dec low F,http://dbpedia.org/property/decLowF
+country,http://dbpedia.org/ontology/country
+native lang,http://dbpedia.org/property/nativeLang
+Dec low C,http://dbpedia.org/property/decLowC
+right,http://dbpedia.org/property/right
+2011 mean hh income,http://dbpedia.org/property/2011MeanHhIncome
+Feb uv,http://dbpedia.org/property/febUv
+licence number,http://dbpedia.org/ontology/licenceNumber
+Public Facilities,http://dbpedia.org/property/publicFacilities
+Nov dew point C,http://dbpedia.org/property/novDewPointC
+Metro region,http://dbpedia.org/property/metroRegion
+Nov dew point F,http://dbpedia.org/property/novDewPointF
+Ho Chunk,http://dbpedia.org/property/hoChunk
+locale,http://dbpedia.org/property/locale
+Feb precipitation mm,http://dbpedia.org/property/febPrecipitationMm
+image2 alt,http://dbpedia.org/property/image2Alt
+maximum elevation (μ),http://dbpedia.org/ontology/maximumElevation
+label10size,http://dbpedia.org/property/label10size
+2006 access date,http://dbpedia.org/property/2006AccessDate
+temples,http://dbpedia.org/property/temples
+parish,http://dbpedia.org/property/parish
+bar18-colour,http://dbpedia.org/property/bar18Colour
+archipelago,http://dbpedia.org/ontology/archipelago
+category,http://dbpedia.org/property/category
+state/province,http://dbpedia.org/property/state/province
+alternate names,http://dbpedia.org/property/alternateNames
+Climatic Zone,http://dbpedia.org/property/climaticZone
+West,http://dbpedia.org/property/west
+izvor,http://dbpedia.org/property/izvor
+Grønne,http://dbpedia.org/property/grønne
+pincode,http://dbpedia.org/property/pincode
+label-color,http://dbpedia.org/property/labelColor
+utc offset1 DST,http://dbpedia.org/property/utcOffset1Dst
+unitary northern ireland,http://dbpedia.org/property/unitaryNorthernIreland
+lon8 deg,http://dbpedia.org/property/lon8Deg
+Jun rain mm,http://dbpedia.org/property/junRainMm
+May precipitation mm,http://dbpedia.org/property/mayPrecipitationMm
+overlay33top,http://dbpedia.org/property/overlay33top
+area code,http://dbpedia.org/ontology/areaCode
+Aug uv,http://dbpedia.org/property/augUv
+completion date,http://dbpedia.org/property/completionDate
+estimate,http://dbpedia.org/property/estimate
+Nov snow inch,http://dbpedia.org/property/novSnowInch
+bar23-to,http://dbpedia.org/property/bar23To
+overlay23link,http://dbpedia.org/property/overlay23link
+Nov afthumidity,http://dbpedia.org/property/novAfthumidity
+blank1 info,http://dbpedia.org/property/blank1Info
+commons-search,http://dbpedia.org/property/commonsSearch
+title representative,http://dbpedia.org/property/titleRepresentative
+populatio rural,http://dbpedia.org/property/populatioRural
+filename,http://dbpedia.org/property/filename
+other designers,http://dbpedia.org/property/otherDesigners
+bar17-left,http://dbpedia.org/property/bar17Left
+highest mount,http://dbpedia.org/property/highestMount
+seats2 title,http://dbpedia.org/property/seats2Title
+river mouth,http://dbpedia.org/ontology/riverMouth
+statute book chapter,http://dbpedia.org/property/statuteBookChapter
+background color,http://dbpedia.org/property/backgroundColor
+govtofficial name,http://dbpedia.org/property/govtofficialName
+est oil t,http://dbpedia.org/property/estOilT
+overlay21top,http://dbpedia.org/property/overlay21top
+Dec percentsun,http://dbpedia.org/property/decPercentsun
+london distance,http://dbpedia.org/property/londonDistance
+free type,http://dbpedia.org/property/freeType
+metropolitan county,http://dbpedia.org/property/metropolitanCounty
+includes,http://dbpedia.org/property/includes
+region type local,http://dbpedia.org/property/regionTypeLocal
+bar3-from,http://dbpedia.org/property/bar3From
+Mar light,http://dbpedia.org/property/marLight
+designation2 offname,http://dbpedia.org/property/designation2Offname
+National selection event,http://dbpedia.org/property/nationalSelectionEvent
+popofyear,http://dbpedia.org/property/popofyear
+float,http://dbpedia.org/property/float
+altname,http://dbpedia.org/property/altname
+month,http://dbpedia.org/property/month
+map alt,http://dbpedia.org/property/mapAlt
+population Alqasaba District,http://dbpedia.org/property/populationAlqasabaDistrict
+Jun snow inch,http://dbpedia.org/property/junSnowInch
+year afthumidity,http://dbpedia.org/property/yearAfthumidity
+population year,http://dbpedia.org/property/populationYear
+bar7-to,http://dbpedia.org/property/bar7To
+staffing,http://dbpedia.org/property/staffing
+mark8size,http://dbpedia.org/property/mark8size
+size,http://dbpedia.org/property/size
+May light,http://dbpedia.org/property/mayLight
+commissioning date,http://dbpedia.org/property/commissioningDate
+Tehsildar,http://dbpedia.org/property/tehsildar
+left,http://dbpedia.org/property/left
+2016 total pvt dwell,http://dbpedia.org/property/2016TotalPvtDwell
+leader title,http://dbpedia.org/property/leaderTitle
+tributaries left,http://dbpedia.org/property/tributariesLeft
+Town Animal,http://dbpedia.org/property/townAnimal
+prov-election-last,http://dbpedia.org/property/provElectionLast
+sobriquet,http://dbpedia.org/property/sobriquet
+staff,http://dbpedia.org/property/staff
+bar18-to,http://dbpedia.org/property/bar18To
+unemployment rate,http://dbpedia.org/property/unemploymentRate
+caption skyline,http://dbpedia.org/property/captionSkyline
+area land sq mi,http://dbpedia.org/property/areaLandSqMi
+hain,http://dbpedia.org/property/hain
+writer,http://dbpedia.org/property/writer
+image coat of arms caption,http://dbpedia.org/property/imageCoatOfArmsCaption
+Aug record high F,http://dbpedia.org/property/augRecordHighF
+2006 median age,http://dbpedia.org/property/2006MedianAge
+annot-font-size,http://dbpedia.org/property/annotFontSize
+Politicians,http://dbpedia.org/property/politicians
+Aug record high C,http://dbpedia.org/property/augRecordHighC
+Jun rain cm,http://dbpedia.org/property/junRainCm
+extinct date,http://dbpedia.org/property/extinctDate
+about,http://dbpedia.org/property/about
+dwgs,http://dbpedia.org/property/dwgs
+on other land,http://dbpedia.org/property/onOtherLand
+place type,http://dbpedia.org/property/placeType
+area munic,http://dbpedia.org/property/areaMunic
+image2 caption,http://dbpedia.org/property/image2Caption
+event start,http://dbpedia.org/property/eventStart
+municunit,http://dbpedia.org/property/municunit
+Mar chill,http://dbpedia.org/property/marChill
+2006 total pvt dwell usual,http://dbpedia.org/property/2006TotalPvtDwellUsual
+above,http://dbpedia.org/property/above
+Oct record low C,http://dbpedia.org/property/octRecordLowC
+member of,http://dbpedia.org/property/memberOf
+Oct record low F,http://dbpedia.org/property/octRecordLowF
+music festival name,http://dbpedia.org/property/musicFestivalName
+bar3-right,http://dbpedia.org/property/bar3Right
+author,http://dbpedia.org/property/author
+map relief,http://dbpedia.org/property/mapRelief
+bar4-left,http://dbpedia.org/property/bar4Left
+overlay1left,http://dbpedia.org/property/overlay1left
+May chill,http://dbpedia.org/property/mayChill
+height-unit,http://dbpedia.org/property/heightUnit
+label1size,http://dbpedia.org/property/label1size
+2006 population,http://dbpedia.org/property/2006Population
+map-data-light,http://dbpedia.org/property/mapDataLight
+dimension,http://dbpedia.org/property/dimension
+area total,http://dbpedia.org/property/areaTotal
+number plate prefix,http://dbpedia.org/property/numberPlatePrefix
+common languages,http://dbpedia.org/property/commonLanguages
+2016 median age,http://dbpedia.org/property/2016MedianAge
+onlinebooks,http://dbpedia.org/property/onlinebooks
+gold ,http://dbpedia.org/property/gold
+leader title1  Hillssmall,http://dbpedia.org/property/leaderTitle1Hillssmall
+Team Name ,http://dbpedia.org/property/teamName
+title,http://dbpedia.org/property/title
+bar23-left,http://dbpedia.org/property/bar23Left
+Jan avg record high F,http://dbpedia.org/property/janAvgRecordHighF
+population Princeton Area,http://dbpedia.org/property/populationPrincetonArea
+image place,http://dbpedia.org/property/imagePlace
+congressional district,http://dbpedia.org/property/congressionalDistrict
+northkorea,http://dbpedia.org/property/northkorea
+row1-2-at,http://dbpedia.org/property/row12At
+2006 pop density,http://dbpedia.org/property/2006PopDensity
+Apr percentsun,http://dbpedia.org/property/aprPercentsun
+overlay26top,http://dbpedia.org/property/overlay26top
+largest city,http://dbpedia.org/property/largestCity
+renovation date,http://dbpedia.org/property/renovationDate
+session,http://dbpedia.org/property/session
+Frisinnede Venstre,http://dbpedia.org/property/frisinnedeVenstre
+Colors,http://dbpedia.org/property/colors
+population rural,http://dbpedia.org/property/populationRural
+Mayor name,http://dbpedia.org/property/mayorName
+Road,http://dbpedia.org/property/road
+v-search,http://dbpedia.org/property/vSearch
+May afthumidity,http://dbpedia.org/property/mayAfthumidity
+overlay28left,http://dbpedia.org/property/overlay28left
+bus stands,http://dbpedia.org/property/busStands
+Chief Muncipal Officer,http://dbpedia.org/property/chiefMuncipalOfficer
+population micro,http://dbpedia.org/property/populationMicro
+Jan avg record high C,http://dbpedia.org/property/janAvgRecordHighC
+keywords,http://dbpedia.org/property/keywords
+stat pop,http://dbpedia.org/property/statPop
+constituency welsh assembly,http://dbpedia.org/property/constituencyWelshAssembly
+lat4 deg,http://dbpedia.org/property/lat4Deg
+sortkey,http://dbpedia.org/property/sortkey
+Dec precipitation days,http://dbpedia.org/property/decPrecipitationDays
+Oct snow days,http://dbpedia.org/property/octSnowDays
+hide services,http://dbpedia.org/property/hideServices
+leader title1
+City Manager,http://dbpedia.org/property/leaderTitle1CityManager
+Novd sun,http://dbpedia.org/property/novdSun
+local,http://dbpedia.org/property/local
+sex ratio,http://dbpedia.org/property/sexRatio
+Postmaster,http://dbpedia.org/property/postmaster
+title color,http://dbpedia.org/property/titleColor
+overlay14top,http://dbpedia.org/property/overlay14top
+label7 size,http://dbpedia.org/property/label7Size
+q-search,http://dbpedia.org/property/qSearch
+row1-3-text,http://dbpedia.org/property/row13Text
+Other Language.,http://dbpedia.org/property/otherLanguage.
+current cat date,http://dbpedia.org/property/currentCatDate
+Oct rain inch,http://dbpedia.org/property/octRainInch
+blank5 info,http://dbpedia.org/property/blank5Info
+Mar avg record low C,http://dbpedia.org/property/marAvgRecordLowC
+area community,http://dbpedia.org/property/areaCommunity
+Nov low C,http://dbpedia.org/property/novLowC
+Nov low F,http://dbpedia.org/property/novLowF
+lon3 deg,http://dbpedia.org/property/lon3Deg
+ALSorBLS,http://dbpedia.org/property/alsorbls
+Mar avg record low F,http://dbpedia.org/property/marAvgRecordLowF
+founder,http://dbpedia.org/property/founder
+NADRA office,http://dbpedia.org/property/nadraOffice
+founded,http://dbpedia.org/property/founded
+Oct avg record low F,http://dbpedia.org/property/octAvgRecordLowF
+Oct avg record low C,http://dbpedia.org/property/octAvgRecordLowC
+area km2 rank,http://dbpedia.org/property/areaKm2Rank
+Aug precipitation inch,http://dbpedia.org/property/augPrecipitationInch
+labor,http://dbpedia.org/property/labor
+co-ordinates,http://dbpedia.org/property/coOrdinates
+synonym,http://dbpedia.org/ontology/synonym
+leader party,http://dbpedia.org/property/leaderParty
+leader name,http://dbpedia.org/ontology/leaderName
+description,http://dbpedia.org/property/description
+2016 population,http://dbpedia.org/property/2016Population
+art,http://dbpedia.org/property/art
+May low C,http://dbpedia.org/property/mayLowC
+May low F,http://dbpedia.org/property/mayLowF
+rus,http://dbpedia.org/property/rus
+auto-caption,http://dbpedia.org/property/autoCaption
+urban okrug jur,http://dbpedia.org/property/urbanOkrugJur
+area metro dunam,http://dbpedia.org/property/areaMetroDunam
+Flag,http://dbpedia.org/property/flag
+district,http://dbpedia.org/ontology/district
+ecozone,http://dbpedia.org/property/ecozone
+bar22-from,http://dbpedia.org/property/bar22From
+today,http://dbpedia.org/property/today
+bar4-colour,http://dbpedia.org/property/bar4Colour
+island type,http://dbpedia.org/property/islandType
+year precipitation cm,http://dbpedia.org/property/yearPrecipitationCm
+revised text,http://dbpedia.org/property/revisedText
+utm northing,http://dbpedia.org/property/utmNorthing
+bodystyle,http://dbpedia.org/property/bodystyle
+lat NS,http://dbpedia.org/property/latNs
+coordinates display,http://dbpedia.org/property/coordinatesDisplay
+Rock,http://dbpedia.org/property/rock
+visitation year,http://dbpedia.org/property/visitationYear
+nativekmmm77 name,http://dbpedia.org/property/nativekmmm77Name
+literacy rate of Sumerpur,http://dbpedia.org/property/literacyRateOfSumerpur
+established date,http://dbpedia.org/property/establishedDate
+overlay8left,http://dbpedia.org/property/overlay8left
+bar19-colour,http://dbpedia.org/property/bar19Colour
+row4-2-to,http://dbpedia.org/property/row42To
+row3-2-shift,http://dbpedia.org/property/row32Shift
+toggle,http://dbpedia.org/property/toggle
+Amt,http://dbpedia.org/property/amt
+establishment,http://dbpedia.org/property/establishment
+constituency westminster,http://dbpedia.org/property/constituencyWestminster
+city population,http://dbpedia.org/property/cityPopulation
+architecture type,http://dbpedia.org/property/architectureType
+2006 land area,http://dbpedia.org/property/2006LandArea
+otherarticle,http://dbpedia.org/property/otherarticle
+daily,http://dbpedia.org/property/daily
+text align,http://dbpedia.org/property/textAlign
+Aug snow days,http://dbpedia.org/property/augSnowDays
+population density (/sqkm),http://dbpedia.org/ontology/PopulatedPlace/populationDensity
+pronunciation,http://dbpedia.org/property/pronunciation
+blank4 name,http://dbpedia.org/property/blank4Name
+age range,http://dbpedia.org/property/ageRange
+temple quantity,http://dbpedia.org/property/templeQuantity
+row4-bordertop,http://dbpedia.org/property/row4Bordertop
+year dew point C,http://dbpedia.org/property/yearDewPointC
+Mar high F,http://dbpedia.org/property/marHighF
+year dew point F,http://dbpedia.org/property/yearDewPointF
+previous route,http://dbpedia.org/property/previousRoute
+Mar high C,http://dbpedia.org/property/marHighC
+motto,http://dbpedia.org/ontology/motto
+closing year,http://dbpedia.org/property/closingYear
+license plates,http://dbpedia.org/property/licensePlates
+prefix,http://dbpedia.org/property/prefix
+municipality,http://dbpedia.org/ontology/municipality
+designated other1 date,http://dbpedia.org/property/designatedOther1Date
+religion main,http://dbpedia.org/property/religionMain
+Popular Village,http://dbpedia.org/property/popularVillage
+row,http://dbpedia.org/property/row
+row2-3-colour,http://dbpedia.org/property/row23Colour
+bar14-colour,http://dbpedia.org/property/bar14Colour
+Apr rain inch,http://dbpedia.org/property/aprRainInch
+time zone DST,http://dbpedia.org/property/timeZoneDst
+bar13-from,http://dbpedia.org/property/bar13From
+tributaries right,http://dbpedia.org/property/tributariesRight
+admini division code,http://dbpedia.org/property/adminiDivisionCode
+mnc rom,http://dbpedia.org/property/mncRom
+snow colour,http://dbpedia.org/property/snowColour
+royal assent,http://dbpedia.org/property/royalAssent
+timezone1 location,http://dbpedia.org/property/timezone1Location
+estyear,http://dbpedia.org/property/estyear
+last election,http://dbpedia.org/property/lastElection
+designation2 number,http://dbpedia.org/property/designation2Number
+Mayd sun,http://dbpedia.org/property/maydSun
+designated other1 color,http://dbpedia.org/property/designatedOther1Color
+langcode,http://dbpedia.org/property/langcode
+locator position,http://dbpedia.org/property/locatorPosition
+administration,http://dbpedia.org/property/administration
+has abstract,http://dbpedia.org/ontology/abstract
+map label,http://dbpedia.org/property/mapLabel
+blank6 info sec,http://dbpedia.org/property/blank6InfoSec
+Nov high F,http://dbpedia.org/property/novHighF
+Nov high C,http://dbpedia.org/property/novHighC
+years,http://dbpedia.org/property/years
+blank1 name sec,http://dbpedia.org/property/blank1NameSec
+leader3 type,http://dbpedia.org/property/leader3Type
+portrayer,http://dbpedia.org/property/portrayer
+Aug avg record low F,http://dbpedia.org/property/augAvgRecordLowF
+Aug avg record low C,http://dbpedia.org/property/augAvgRecordLowC
+religions,http://dbpedia.org/property/religions
+population density rank,http://dbpedia.org/property/populationDensityRank
+desc,http://dbpedia.org/property/desc
+main lenguages,http://dbpedia.org/property/mainLenguages
+minimap-boxwidth,http://dbpedia.org/property/minimapBoxwidth
+bar23-right,http://dbpedia.org/property/bar23Right
+overlay6link,http://dbpedia.org/property/overlay6link
+population demonym,http://dbpedia.org/property/populationDemonym
+Sep maximum humidex,http://dbpedia.org/property/sepMaximumHumidex
+Aug record low F,http://dbpedia.org/property/augRecordLowF
+Aug record low C,http://dbpedia.org/property/augRecordLowC
+year precipitation mm,http://dbpedia.org/property/yearPrecipitationMm
+bar14-left,http://dbpedia.org/property/bar14Left
+Apr humidity,http://dbpedia.org/property/aprHumidity
+city slogan,http://dbpedia.org/property/citySlogan
+qalign,http://dbpedia.org/property/qalign
+mongr,http://dbpedia.org/property/mongr
+conservation,http://dbpedia.org/property/conservation
+Nov rain cm,http://dbpedia.org/property/novRainCm
+fullwidth,http://dbpedia.org/property/fullwidth
+post-noms,http://dbpedia.org/property/postNoms
+neighboring municipality,http://dbpedia.org/ontology/neighboringMunicipality
+mascot,http://dbpedia.org/property/mascot
+pop 2010census,http://dbpedia.org/property/pop2010census
+row2-8-colour,http://dbpedia.org/property/row28Colour
+alt,http://dbpedia.org/property/alt
+INSEE,http://dbpedia.org/property/insee
+people,http://dbpedia.org/property/people
+expanded,http://dbpedia.org/property/expanded
+government footnotes,http://dbpedia.org/property/governmentFootnotes
+bpmf,http://dbpedia.org/property/bpmf
+Banking,http://dbpedia.org/property/banking
+overlay19left,http://dbpedia.org/property/overlay19left
+FirstResponderBLSorALS,http://dbpedia.org/property/firstresponderblsorals
+government,http://dbpedia.org/property/government
+added,http://dbpedia.org/property/added
+fleet,http://dbpedia.org/property/fleet
+hazmat,http://dbpedia.org/property/hazmat
+Mar snow cm,http://dbpedia.org/property/marSnowCm
+bar width,http://dbpedia.org/property/barWidth
+google representative head,http://dbpedia.org/property/googleRepresentativeHead
+historic names,http://dbpedia.org/property/historicNames
+arc-gapA,http://dbpedia.org/property/arcGapa
+arc-gapB,http://dbpedia.org/property/arcGapb
+distance to London (μ),http://dbpedia.org/ontology/distanceToLondon
+arc-gapC,http://dbpedia.org/property/arcGapc
+overlay2top,http://dbpedia.org/property/overlay2top
+floor count,http://dbpedia.org/property/floorCount
+year avg record low F,http://dbpedia.org/property/yearAvgRecordLowF
+hide,http://dbpedia.org/property/hide
+anthem,http://dbpedia.org/property/anthem
+area total mi,http://dbpedia.org/property/areaTotalMi
+highest elevation m,http://dbpedia.org/property/highestElevationM
+translit,http://dbpedia.org/property/translit
+label3 size,http://dbpedia.org/property/label3Size
+creation,http://dbpedia.org/property/creation
+prominence m,http://dbpedia.org/property/prominenceM
+area total km,http://dbpedia.org/property/areaTotalKm
+bar4-text,http://dbpedia.org/property/bar4Text
+AFS,http://dbpedia.org/property/afs
+year avg record low C,http://dbpedia.org/property/yearAvgRecordLowC
+annual budget,http://dbpedia.org/property/annualBudget
+overlay13colour,http://dbpedia.org/property/overlay13colour
+row2-4-to,http://dbpedia.org/property/row24To
+bar8-colour,http://dbpedia.org/property/bar8Colour
+lat sec,http://dbpedia.org/property/latSec
+row2-borderbottom,http://dbpedia.org/property/row2Borderbottom
+Jan rain mm,http://dbpedia.org/property/janRainMm
+industry,http://dbpedia.org/property/industry
+voting system,http://dbpedia.org/property/votingSystem
+religious affiliation,http://dbpedia.org/property/religiousAffiliation
+age,http://dbpedia.org/property/age
+Dec snow days,http://dbpedia.org/property/decSnowDays
+photo,http://dbpedia.org/property/photo
+precip days colour,http://dbpedia.org/property/precipDaysColour
+bar13-right,http://dbpedia.org/property/bar13Right
+distance to Charing Cross (μ),http://dbpedia.org/ontology/distanceToCharingCross
+sea type,http://dbpedia.org/property/seaType
+Nov rain mm,http://dbpedia.org/property/novRainMm
+grid reference,http://dbpedia.org/ontology/gridReference
+sign,http://dbpedia.org/property/sign
+auto,http://dbpedia.org/property/auto
+area blank1 sq mi,http://dbpedia.org/property/areaBlank1SqMi
+sizeland,http://dbpedia.org/property/sizeland
+presidency,http://dbpedia.org/property/presidency
+district area sq km,http://dbpedia.org/property/districtAreaSqKm
+kk name,http://dbpedia.org/property/kkName
+overlay17link,http://dbpedia.org/property/overlay17link
+area land (m2),http://dbpedia.org/ontology/areaLand
+kana,http://dbpedia.org/property/kana
+population density blank2 sq mi,http://dbpedia.org/property/populationDensityBlank2SqMi
+style,http://dbpedia.org/property/style
+Pensjonistpartiet,http://dbpedia.org/property/pensjonistpartiet
+established title,http://dbpedia.org/property/establishedTitle
+cities,http://dbpedia.org/property/cities
+Slogan,http://dbpedia.org/property/slogan
+current tenants,http://dbpedia.org/property/currentTenants
+elevation point,http://dbpedia.org/property/elevationPoint
+Wards,http://dbpedia.org/property/wards
+ref,http://dbpedia.org/property/ref
+unit pref,http://dbpedia.org/property/unitPref
+cs1-dates,http://dbpedia.org/property/cs1Dates
+site ref,http://dbpedia.org/property/siteRef
+other lang,http://dbpedia.org/property/otherLang
+Image of skyline ,http://dbpedia.org/property/imageOfSkyline
+voter total,http://dbpedia.org/property/voterTotal
+retired,http://dbpedia.org/property/retired
+administrative district,http://dbpedia.org/ontology/administrativeDistrict
+iso,http://dbpedia.org/property/iso
+county title,http://dbpedia.org/property/countyTitle
+series,http://dbpedia.org/property/series
+S.T.D. Code,http://dbpedia.org/property/s.t.d.Code
+Mar record high F,http://dbpedia.org/property/marRecordHighF
+area rural (m2),http://dbpedia.org/ontology/areaRural
+area magnitude,http://dbpedia.org/property/areaMagnitude
+inhabloc cat,http://dbpedia.org/property/inhablocCat
+Mar record high C,http://dbpedia.org/property/marRecordHighC
+comment,http://dbpedia.org/property/comment
+label8size,http://dbpedia.org/property/label8size
+overlay11colour,http://dbpedia.org/property/overlay11colour
+bar3-colour,http://dbpedia.org/property/bar3Colour
+Vidhan Sabha constituency,http://dbpedia.org/property/vidhanSabhaConstituency
+r1-surface,http://dbpedia.org/property/r1Surface
+President,http://dbpedia.org/property/president
+side,http://dbpedia.org/property/side
+Population and Occupation,http://dbpedia.org/property/populationAndOccupation
+May sun,http://dbpedia.org/property/maySun
+launched,http://dbpedia.org/property/launched
+transport code type,http://dbpedia.org/property/transportCodeType
+density footnotes,http://dbpedia.org/property/densityFootnotes
+registration plate type,http://dbpedia.org/property/registrationPlateType
+unemployment,http://dbpedia.org/property/unemployment
+Lok Sabha constituency,http://dbpedia.org/property/lokSabhaConstituency
+img ,http://dbpedia.org/property/img
+caption position,http://dbpedia.org/property/captionPosition
+Feb avg record low F,http://dbpedia.org/property/febAvgRecordLowF
+Link from a Wikipage to a Wikipage in a different language about the same or a related subject.,http://dbpedia.org/ontology/wikiPageInterLanguageLink
+image-bg-color,http://dbpedia.org/property/imageBgColor
+Feb avg record low C,http://dbpedia.org/property/febAvgRecordLowC
+other name   jefferson county,http://dbpedia.org/property/otherNameJeffersonCounty
+stdHeb,http://dbpedia.org/property/stdheb
+Major highway,http://dbpedia.org/property/majorHighway
+humidity colour,http://dbpedia.org/property/humidityColour
+row3-4-text,http://dbpedia.org/property/row34Text
+overlay15left,http://dbpedia.org/property/overlay15left
+country leader title,http://dbpedia.org/property/countryLeaderTitle
+Mar maximum humidex,http://dbpedia.org/property/marMaximumHumidex
+inc,http://dbpedia.org/property/inc
+Apr record low C,http://dbpedia.org/property/aprRecordLowC
+Apr record low F,http://dbpedia.org/property/aprRecordLowF
+header,http://dbpedia.org/property/header
+commencement,http://dbpedia.org/property/commencement
+label12 size,http://dbpedia.org/property/label12Size
+shield link,http://dbpedia.org/property/shieldLink
+short title,http://dbpedia.org/property/shortTitle
+Other,http://dbpedia.org/property/other
+skyline,http://dbpedia.org/property/skyline
+pop year,http://dbpedia.org/property/popYear
+indent,http://dbpedia.org/property/indent
+prev name1 date,http://dbpedia.org/property/prevName1Date
+designated other1 number,http://dbpedia.org/property/designatedOther1Number
+Feb snow inch,http://dbpedia.org/property/febSnowInch
+federal state,http://dbpedia.org/ontology/federalState
+ethnic groups,http://dbpedia.org/property/ethnicGroups
+route junction,http://dbpedia.org/ontology/routeJunction
+robbery,http://dbpedia.org/property/robbery
+Townarea Chair man,http://dbpedia.org/property/townareaChairMan
+nuclear tests,http://dbpedia.org/property/nuclearTests
+designation1 free2value,http://dbpedia.org/property/designation1Free2value
+saint,http://dbpedia.org/property/saint
+education rate,http://dbpedia.org/property/educationRate
+IPA,http://dbpedia.org/property/ipa
+Assembly MLA,http://dbpedia.org/property/assemblyMla
+bar16-right,http://dbpedia.org/property/bar16Right
+code2 info,http://dbpedia.org/property/code2Info
+affiliations,http://dbpedia.org/property/affiliations
+emblem,http://dbpedia.org/property/emblem
+temperature colour,http://dbpedia.org/property/temperatureColour
+municipality code,http://dbpedia.org/ontology/municipalityCode
+bar6-to,http://dbpedia.org/property/bar6To
+overlay16color,http://dbpedia.org/property/overlay16color
+excavations,http://dbpedia.org/property/excavations
+auto percent,http://dbpedia.org/property/autoPercent
+phfs,http://dbpedia.org/property/phfs
+contentstyle,http://dbpedia.org/property/contentstyle
+Jul sun,http://dbpedia.org/property/julSun
+bar9-colour,http://dbpedia.org/property/bar9Colour
+foundation,http://dbpedia.org/property/foundation
+mapsiz,http://dbpedia.org/property/mapsiz
+architect,http://dbpedia.org/ontology/architect
+year of city status,http://dbpedia.org/property/yearOfCityStatus
+blank name,http://dbpedia.org/property/blankName
+labes,http://dbpedia.org/property/labes
+bar17-to,http://dbpedia.org/property/bar17To
+shortname,http://dbpedia.org/property/shortname
+area total ha,http://dbpedia.org/property/areaTotalHa
+iaffweb,http://dbpedia.org/property/iaffweb
+Mar avg record high F,http://dbpedia.org/property/marAvgRecordHighF
+Mar avg record high C,http://dbpedia.org/property/marAvgRecordHighC
+translit lang1 info,http://dbpedia.org/property/translitLang1Info
+publisher,http://dbpedia.org/property/publisher
+year end,http://dbpedia.org/property/yearEnd
+startofproduction,http://dbpedia.org/property/startofproduction
+2016 pop density,http://dbpedia.org/property/2016PopDensity
+State rank,http://dbpedia.org/property/stateRank
+stepsons,http://dbpedia.org/property/stepsons
+bar10-left,http://dbpedia.org/property/bar10Left
+Surname jat,http://dbpedia.org/property/surnameJat
+Sep record high C,http://dbpedia.org/property/sepRecordHighC
+Sep record high F,http://dbpedia.org/property/sepRecordHighF
+blank8 name,http://dbpedia.org/property/blank8Name
+overlay14tip,http://dbpedia.org/property/overlay14tip
+row1-1-at,http://dbpedia.org/property/row11At
+label,http://dbpedia.org/property/label
+icon,http://dbpedia.org/property/icon
+wraparound,http://dbpedia.org/property/wraparound
+registration plate
+RTO-fathepur,http://dbpedia.org/property/registrationPlateRtoFathepur
+Jun rain days,http://dbpedia.org/property/junRainDays
+radio stations,http://dbpedia.org/property/radioStations
+bSize,http://dbpedia.org/property/bsize
+quote,http://dbpedia.org/property/quote
+mark-size,http://dbpedia.org/property/markSize
+chief1position,http://dbpedia.org/property/chief1position
+population nonfarm as of,http://dbpedia.org/property/populationNonfarmAsOf
+mark3size,http://dbpedia.org/property/mark3size
+gan,http://dbpedia.org/property/gan
+150 homes,http://dbpedia.org/property/150Homes
+Aug light,http://dbpedia.org/property/augLight
+gap,http://dbpedia.org/property/gap
+Jul chill,http://dbpedia.org/property/julChill
+symbol location,http://dbpedia.org/property/symbolLocation
+designation4 number,http://dbpedia.org/property/designation4Number
+plantext,http://dbpedia.org/property/plantext
+empas k,http://dbpedia.org/property/empasK
+ESC best,http://dbpedia.org/property/escBest
+empas b,http://dbpedia.org/property/empasB
+mouth mountain,http://dbpedia.org/ontology/mouthMountain
+image location,http://dbpedia.org/property/imageLocation
+May rain days,http://dbpedia.org/property/mayRainDays
+charingX direction,http://dbpedia.org/property/charingxDirection
+bar17-colour,http://dbpedia.org/property/bar17Colour
+summer temperature,http://dbpedia.org/property/summerTemperature
+perps,http://dbpedia.org/property/perps
+article,http://dbpedia.org/property/article
+overlay7top,http://dbpedia.org/property/overlay7top
+year high C,http://dbpedia.org/property/yearHighC
+year high F,http://dbpedia.org/property/yearHighF
+area municipality,http://dbpedia.org/property/areaMunicipality
+coor pinpoint,http://dbpedia.org/property/coorPinpoint
+demographics2 info,http://dbpedia.org/property/demographics2Info
+next,http://dbpedia.org/property/next
+country code,http://dbpedia.org/property/countryCode
+federal subject,http://dbpedia.org/property/federalSubject
+elevation footnotes,http://dbpedia.org/property/elevationFootnotes
+rite,http://dbpedia.org/property/rite
+short description,http://dbpedia.org/property/shortDescription
+row2-8-text,http://dbpedia.org/property/row28Text
+row1-3-at,http://dbpedia.org/property/row13At
+Apr precipitation days,http://dbpedia.org/property/aprPrecipitationDays
+bar5-left,http://dbpedia.org/property/bar5Left
+bar7-colour,http://dbpedia.org/property/bar7Colour
+lhasa,http://dbpedia.org/property/lhasa
+row1-11-at,http://dbpedia.org/property/row111At
+email,http://dbpedia.org/property/email
+gdp,http://dbpedia.org/property/gdp
+quoted,http://dbpedia.org/property/quoted
+ownership,http://dbpedia.org/property/ownership
+designation1 partof,http://dbpedia.org/property/designation1Partof
+hospitals,http://dbpedia.org/property/hospitals
+overlay13link,http://dbpedia.org/property/overlay13link
+assembly,http://dbpedia.org/property/assembly
+architecture,http://dbpedia.org/property/architecture
+xej,http://dbpedia.org/property/xej
+first appearance,http://dbpedia.org/ontology/firstAppearance
+populationof,http://dbpedia.org/property/populationof
+used,http://dbpedia.org/property/used
+time day,http://dbpedia.org/property/timeDay
+label13size,http://dbpedia.org/property/label13size
+subdivision type,http://dbpedia.org/property/subdivisionType
+allocation,http://dbpedia.org/property/allocation
+whig,http://dbpedia.org/property/whig
+population total,http://dbpedia.org/ontology/populationTotal
+Aug precipitation days,http://dbpedia.org/property/augPrecipitationDays
+Jul light,http://dbpedia.org/property/julLight
+director,http://dbpedia.org/property/director
+Jan rain cm,http://dbpedia.org/property/janRainCm
+floors,http://dbpedia.org/property/floors
+subdivision,http://dbpedia.org/ontology/subdivision
+bar12-right,http://dbpedia.org/property/bar12Right
+caption,http://dbpedia.org/property/caption
+borough,http://dbpedia.org/ontology/borough
+country largest city population,http://dbpedia.org/property/countryLargestCityPopulation
+overlay27top,http://dbpedia.org/property/overlay27top
+incorporated,http://dbpedia.org/property/incorporated
+country admin divisions,http://dbpedia.org/property/countryAdminDivisions
+dialing codes,http://dbpedia.org/property/dialingCodes
+anthem,http://dbpedia.org/ontology/anthem
+bar9-to,http://dbpedia.org/property/bar9To
+Council area,http://dbpedia.org/ontology/councilArea
+ru name,http://dbpedia.org/property/ruName
+overlay15top,http://dbpedia.org/property/overlay15top
+image upright,http://dbpedia.org/property/imageUpright
+lon2 deg,http://dbpedia.org/property/lon2Deg
+cnmr,http://dbpedia.org/property/cnmr
+known as,http://dbpedia.org/property/knownAs
+casualties,http://dbpedia.org/property/casualties
+injuries,http://dbpedia.org/property/injuries
+Current Sarpanch,http://dbpedia.org/property/currentSarpanch
+classification WWF,http://dbpedia.org/property/classificationWwf
+usar,http://dbpedia.org/property/usar
+2011 pop delta,http://dbpedia.org/property/2011PopDelta
+labelpos,http://dbpedia.org/property/labelpos
+overlay11left,http://dbpedia.org/property/overlay11left
+Oct low F,http://dbpedia.org/property/octLowF
+Sep sun,http://dbpedia.org/property/sepSun
+bar2-text,http://dbpedia.org/property/bar2Text
+logo size,http://dbpedia.org/property/logoSize
+Oct low C,http://dbpedia.org/property/octLowC
+seats3 title,http://dbpedia.org/property/seats3Title
+Dec dew point F,http://dbpedia.org/property/decDewPointF
+row4-2-text,http://dbpedia.org/property/row42Text
+Literacy,http://dbpedia.org/property/literacy
+Apr rain days,http://dbpedia.org/property/aprRainDays
+Yonis Ibrahim Timlaawe,http://dbpedia.org/property/yonisIbrahimTimlaawe
+mun data as of,http://dbpedia.org/property/munDataAsOf
+progression,http://dbpedia.org/property/progression
+District magistrate,http://dbpedia.org/property/districtMagistrate
+topic,http://dbpedia.org/property/topic
+regions,http://dbpedia.org/property/regions
+label4size,http://dbpedia.org/property/label4size
+railway code,http://dbpedia.org/property/railwayCode
+designation,http://dbpedia.org/property/designation
+Gini,http://dbpedia.org/property/gini
+map dot label,http://dbpedia.org/property/mapDotLabel
+image map caption,http://dbpedia.org/property/imageMapCaption
+arc-radiusC,http://dbpedia.org/property/arcRadiusc
+arc-radiusB,http://dbpedia.org/property/arcRadiusb
+arc-radiusA,http://dbpedia.org/property/arcRadiusa
+motto translation,http://dbpedia.org/property/mottoTranslation
+patron saint,http://dbpedia.org/property/patronSaint
+adm ctr of,http://dbpedia.org/property/admCtrOf
+bar4-right,http://dbpedia.org/property/bar4Right
+year of first mention,http://dbpedia.org/property/yearOfFirstMention
+peak of production oil bbl/d,http://dbpedia.org/property/peakOfProductionOilBbl/d
+grandsons,http://dbpedia.org/property/grandsons
+Feb light,http://dbpedia.org/property/febLight
+abovestyle,http://dbpedia.org/property/abovestyle
+row3-7-text,http://dbpedia.org/property/row37Text
+near famous village,http://dbpedia.org/property/nearFamousVillage
+lat7 deg,http://dbpedia.org/property/lat7Deg
+use lga map,http://dbpedia.org/property/useLgaMap
+UTC offset,http://dbpedia.org/ontology/utcOffset
+Dec dew point C,http://dbpedia.org/property/decDewPointC
+German name,http://dbpedia.org/property/germanName
+Jul rain inch,http://dbpedia.org/property/julRainInch
+otherparty number,http://dbpedia.org/property/otherpartyNumber
+origin,http://dbpedia.org/property/origin
+static image width,http://dbpedia.org/property/staticImageWidth
+growth,http://dbpedia.org/property/growth
+Sep precipitation days,http://dbpedia.org/property/sepPrecipitationDays
+background,http://dbpedia.org/property/background
+bar20-to,http://dbpedia.org/property/bar20To
+wuu,http://dbpedia.org/property/wuu
+coa pic,http://dbpedia.org/property/coaPic
+comune,http://dbpedia.org/property/comune
+row2-5-colour,http://dbpedia.org/property/row25Colour
+designation1 type,http://dbpedia.org/property/designation1Type
+hiragana,http://dbpedia.org/property/hiragana
+delisted date,http://dbpedia.org/property/delistedDate
+elevation min rank,http://dbpedia.org/property/elevationMinRank
+Jan afthumidity,http://dbpedia.org/property/janAfthumidity
+2001 population,http://dbpedia.org/property/2001Population
+prov-election-first,http://dbpedia.org/property/provElectionFirst
+2001 mean hh income,http://dbpedia.org/property/2001MeanHhIncome
+Railway station code,http://dbpedia.org/property/railwayStationCode
+code2 name,http://dbpedia.org/property/code2Name
+class,http://dbpedia.org/property/class
+postal codes,http://dbpedia.org/property/postalCodes
+Octd sun,http://dbpedia.org/property/octdSun
+development name,http://dbpedia.org/property/developmentName
+adm city jur,http://dbpedia.org/property/admCityJur
+famous food,http://dbpedia.org/property/famousFood
+Town,http://dbpedia.org/property/town
+legend6-colour,http://dbpedia.org/property/legend6Colour
+lables,http://dbpedia.org/property/lables
+pop latest,http://dbpedia.org/property/popLatest
+Feb chill,http://dbpedia.org/property/febChill
+apps,http://dbpedia.org/property/apps
+fatalities,http://dbpedia.org/property/fatalities
+route start,http://dbpedia.org/ontology/routeStart
+bar9-right,http://dbpedia.org/property/bar9Right
+fireboats,http://dbpedia.org/property/fireboats
+postal code.,http://dbpedia.org/property/postalCode.
+mark-description,http://dbpedia.org/property/markDescription
+population region,http://dbpedia.org/property/populationRegion
+lon sec,http://dbpedia.org/property/lonSec
+population urban as of,http://dbpedia.org/property/populationUrbanAsOf
+overlay31link,http://dbpedia.org/property/overlay31link
+bar8-from,http://dbpedia.org/property/bar8From
+align-fn,http://dbpedia.org/property/alignFn
+width units,http://dbpedia.org/property/widthUnits
+constituency scottish parliament,http://dbpedia.org/property/constituencyScottishParliament
+seats5 title,http://dbpedia.org/property/seats5Title
+wikt-search,http://dbpedia.org/property/wiktSearch
+construction,http://dbpedia.org/property/construction
+postcode area,http://dbpedia.org/property/postcodeArea
+elevation max point,http://dbpedia.org/property/elevationMaxPoint
+Dec snow cm,http://dbpedia.org/property/decSnowCm
+pusl guy,http://dbpedia.org/property/puslGuy
+row2-5-to,http://dbpedia.org/property/row25To
+postalcode,http://dbpedia.org/property/postalcode
+for,http://dbpedia.org/property/for
+url-access,http://dbpedia.org/property/urlAccess
+source1 location,http://dbpedia.org/property/source1Location
+image-left,http://dbpedia.org/property/imageLeft
+designation1 date,http://dbpedia.org/property/designation1Date
+empire,http://dbpedia.org/property/empire
+image size,http://dbpedia.org/property/imageSize
+Dec maximum humidex,http://dbpedia.org/property/decMaximumHumidex
+current,http://dbpedia.org/property/current
+image,http://dbpedia.org/property/image
+Marketing Sites,http://dbpedia.org/property/marketingSites
+frame,http://dbpedia.org/property/frame
+bar17-right,http://dbpedia.org/property/bar17Right
+collector,http://dbpedia.org/property/collector
+year precipitation inch,http://dbpedia.org/property/yearPrecipitationInch
+arc-angleA,http://dbpedia.org/property/arcAnglea
+arc-angleB,http://dbpedia.org/property/arcAngleb
+Jan mean C,http://dbpedia.org/property/janMeanC
+arc-angleC,http://dbpedia.org/property/arcAnglec
+Sep avg record high F,http://dbpedia.org/property/sepAvgRecordHighF
+Sep avg record high C,http://dbpedia.org/property/sepAvgRecordHighC
+Sosialistisk Venstreparti,http://dbpedia.org/property/sosialistiskVenstreparti
+Dec avg record low F,http://dbpedia.org/property/decAvgRecordLowF
+titlebare,http://dbpedia.org/property/titlebare
+Dec avg record low C,http://dbpedia.org/property/decAvgRecordLowC
+indic,http://dbpedia.org/property/indic
+gov councilors,http://dbpedia.org/property/govCouncilors
+seal type,http://dbpedia.org/property/sealType
+Leader tittle 4
+।   General Secretary Mr.Mangal pandey,http://dbpedia.org/property/leaderTittle4।GeneralSecretaryMr.mangalPandey
+listings,http://dbpedia.org/property/listings
+Dec rain inch,http://dbpedia.org/property/decRainInch
+longm,http://dbpedia.org/property/longm
+genre,http://dbpedia.org/property/genre
+mark10size,http://dbpedia.org/property/mark10size
+longs,http://dbpedia.org/property/longs
+South,http://dbpedia.org/property/south
+label-offset-y,http://dbpedia.org/property/labelOffsetY
+label-offset-x,http://dbpedia.org/property/labelOffsetX
+longd,http://dbpedia.org/property/longd
+Dec snow inch,http://dbpedia.org/property/decSnowInch
+overlay31top,http://dbpedia.org/property/overlay31top
+literacy rate,http://dbpedia.org/property/literacyRate
+municipality name,http://dbpedia.org/property/municipalityName
+WSW,http://dbpedia.org/property/wsw
+region,http://dbpedia.org/ontology/region
+postal code info,http://dbpedia.org/property/postalCodeInfo
+overlay24left,http://dbpedia.org/property/overlay24left
+Jul high C,http://dbpedia.org/property/julHighC
+topo,http://dbpedia.org/property/topo
+Jul high F,http://dbpedia.org/property/julHighF
+Nov mean F,http://dbpedia.org/property/novMeanF
+seal link,http://dbpedia.org/property/sealLink
+zh-dungan,http://dbpedia.org/property/zhDungan
+Feb dew point F,http://dbpedia.org/property/febDewPointF
+subdivtype,http://dbpedia.org/property/subdivtype
+Nov mean C,http://dbpedia.org/property/novMeanC
+car code,http://dbpedia.org/property/carCode
+legislative power,http://dbpedia.org/property/legislativePower
+overlay4link,http://dbpedia.org/property/overlay4link
+2011 access date,http://dbpedia.org/property/2011AccessDate
+overlay32colour,http://dbpedia.org/property/overlay32colour
+pushpin map captyoion,http://dbpedia.org/property/pushpinMapCaptyoion
+local language,http://dbpedia.org/property/localLanguage
+Sep humidity,http://dbpedia.org/property/sepHumidity
+mayortitle,http://dbpedia.org/property/mayortitle
+Oct mean F,http://dbpedia.org/property/octMeanF
+bar1-left,http://dbpedia.org/property/bar1Left
+Dec record low C,http://dbpedia.org/property/decRecordLowC
+skyline caption,http://dbpedia.org/property/skylineCaption
+year rain mm,http://dbpedia.org/property/yearRainMm
+volume,http://dbpedia.org/property/volume
+year chill,http://dbpedia.org/property/yearChill
+area total (m2),http://dbpedia.org/ontology/areaTotal
+Dec record low F,http://dbpedia.org/property/decRecordLowF
+map dot mark,http://dbpedia.org/property/mapDotMark
+genus,http://dbpedia.org/property/genus
+coordinates footnotes,http://dbpedia.org/property/coordinatesFootnotes
+Oct mean C,http://dbpedia.org/property/octMeanC
+overlay18color,http://dbpedia.org/property/overlay18color
+Feb dew point C,http://dbpedia.org/property/febDewPointC
+designated other1 abbr,http://dbpedia.org/property/designatedOther1Abbr
+Lieutenancy area,http://dbpedia.org/ontology/lieutenancyArea
+Sep light,http://dbpedia.org/property/sepLight
+overlay33left,http://dbpedia.org/property/overlay33left
+bar1-to,http://dbpedia.org/property/bar1To
+political status,http://dbpedia.org/property/politicalStatus
+Jan mean F,http://dbpedia.org/property/janMeanF
+Telephone Code/Std Code,http://dbpedia.org/property/telephoneCode/stdCode
+HDI rank,http://dbpedia.org/property/hdiRank
+elevation max rank,http://dbpedia.org/property/elevationMaxRank
+fmt,http://dbpedia.org/property/fmt
+WNW,http://dbpedia.org/property/wnw
+population metro density (/sqkm),http://dbpedia.org/ontology/populationMetroDensity
+scale,http://dbpedia.org/property/scale
+map custom,http://dbpedia.org/property/mapCustom
+rainfall,http://dbpedia.org/property/rainfall
+number of ward,http://dbpedia.org/property/numberOfWard
+population metro footnotes,http://dbpedia.org/property/populationMetroFootnotes
+Northeast,http://dbpedia.org/property/northeast
+May maximum humidex,http://dbpedia.org/property/mayMaximumHumidex
+developer,http://dbpedia.org/property/developer
+image flag,http://dbpedia.org/property/imageFlag
+FNB,http://dbpedia.org/property/fnb
+mpsub,http://dbpedia.org/property/mpsub
+precipitation colour,http://dbpedia.org/property/precipitationColour
+STD/ISD Code,http://dbpedia.org/property/std/isdCode
+year,http://dbpedia.org/property/year
+Unofficial language,http://dbpedia.org/property/unofficialLanguage
+subdivision name3.,http://dbpedia.org/property/subdivisionName3.
+Previous name,http://dbpedia.org/property/previousName
+near,http://dbpedia.org/property/near
+Ceremonial County,http://dbpedia.org/ontology/ceremonialCounty
+WHS,http://dbpedia.org/property/whs
+crown dependency,http://dbpedia.org/property/crownDependency
+Jan humidity,http://dbpedia.org/property/janHumidity
+Apr dew point F,http://dbpedia.org/property/aprDewPointF
+dial code,http://dbpedia.org/property/dialCode
+below,http://dbpedia.org/property/below
+Vallapuzha other information $special,http://dbpedia.org/property/vallapuzhaOtherInformation$special
+blank4 info,http://dbpedia.org/property/blank4Info
+Sep chill,http://dbpedia.org/property/sepChill
+population point,http://dbpedia.org/property/populationPoint
+discharge1 avg,http://dbpedia.org/property/discharge1Avg
+logo upright,http://dbpedia.org/property/logoUpright
+Partido ,http://dbpedia.org/property/partido
+Verbandsgemeinde,http://dbpedia.org/property/verbandsgemeinde
+istat,http://dbpedia.org/property/istat
+overlay22link,http://dbpedia.org/property/overlay22link
+CurrentMPParty,http://dbpedia.org/property/currentmpparty
+nyc,http://dbpedia.org/property/nyc
+lieutenancy scotland,http://dbpedia.org/property/lieutenancyScotland
+Mar snow inch,http://dbpedia.org/property/marSnowInch
+overlay2left,http://dbpedia.org/property/overlay2left
+neighboring towns,http://dbpedia.org/property/neighboringTowns
+May record high C,http://dbpedia.org/property/mayRecordHighC
+Apr dew point C,http://dbpedia.org/property/aprDewPointC
+May record high F,http://dbpedia.org/property/mayRecordHighF
+votes,http://dbpedia.org/property/votes
+campus type,http://dbpedia.org/property/campusType
+parts type,http://dbpedia.org/property/partsType
+Tehsil population,http://dbpedia.org/property/tehsilPopulation
+shire county,http://dbpedia.org/property/shireCounty
+type species authority,http://dbpedia.org/property/typeSpeciesAuthority
+population rural,http://dbpedia.org/ontology/populationRural
+flag border,http://dbpedia.org/property/flagBorder
+bar24-right,http://dbpedia.org/property/bar24Right
+No. of Wards,http://dbpedia.org/property/no.OfWards
+web,http://dbpedia.org/property/web
+Sep afthumidity,http://dbpedia.org/property/sepAfthumidity
+overlay15tip,http://dbpedia.org/property/overlay15tip
+Sep record low C,http://dbpedia.org/property/sepRecordLowC
+population demonyms,http://dbpedia.org/property/populationDemonyms
+Jul uv,http://dbpedia.org/property/julUv
+Sep record low F,http://dbpedia.org/property/sepRecordLowF
+otherparty,http://dbpedia.org/property/otherparty
+Oct avg record high C,http://dbpedia.org/property/octAvgRecordHighC
+bar4-from,http://dbpedia.org/property/bar4From
+Oct avg record high F,http://dbpedia.org/property/octAvgRecordHighF
+rain colour,http://dbpedia.org/property/rainColour
+principal area,http://dbpedia.org/ontology/principalArea
+bar19-from,http://dbpedia.org/property/bar19From
+DLF/V,http://dbpedia.org/property/dlf/v
+Aug chill,http://dbpedia.org/property/augChill
+FAIZAN E MADINAH,http://dbpedia.org/property/faizanEMadinah
+year rain inch,http://dbpedia.org/property/yearRainInch
+headercolor,http://dbpedia.org/property/headercolor
+overlay20left,http://dbpedia.org/property/overlay20left
+short name,http://dbpedia.org/property/shortName
+pop 2010census rank,http://dbpedia.org/property/pop2010censusRank
+Principal,http://dbpedia.org/property/principal
+area rank,http://dbpedia.org/property/areaRank
+name other,http://dbpedia.org/property/nameOther
+num,http://dbpedia.org/property/num
+mark7size,http://dbpedia.org/property/mark7size
+water bodies,http://dbpedia.org/property/waterBodies
+name local,http://dbpedia.org/property/nameLocal
+May uv,http://dbpedia.org/property/mayUv
+from oldid,http://dbpedia.org/property/fromOldid
+highest,http://dbpedia.org/ontology/highest
+label type,http://dbpedia.org/property/labelType
+popdate,http://dbpedia.org/property/popdate
+bar16-to,http://dbpedia.org/property/bar16To
+Railway station,http://dbpedia.org/property/railwayStation
+Our Promotional Video,http://dbpedia.org/property/ourPromotionalVideo
+official name      bu'aale,http://dbpedia.org/property/officialNameBu'aale
+katakana,http://dbpedia.org/property/katakana
+GDP PPP us,http://dbpedia.org/property/gdpPppUs
+events,http://dbpedia.org/property/events
+leader(MPA) name,http://dbpedia.org/property/leader(mpa)Name
+Jun precipitation cm,http://dbpedia.org/property/junPrecipitationCm
+May snow days,http://dbpedia.org/property/maySnowDays
+psp,http://dbpedia.org/property/psp
+coordinates,http://dbpedia.org/property/coordinates
+nick-name,http://dbpedia.org/property/nickName
+Flower,http://dbpedia.org/property/flower
+economic region,http://dbpedia.org/property/economicRegion
+yahoo,http://dbpedia.org/property/yahoo
+Jan record low C,http://dbpedia.org/property/janRecordLowC
+is part of,http://dbpedia.org/ontology/isPartOf
+designation1 free3value,http://dbpedia.org/property/designation1Free3value
+architect OR builder,http://dbpedia.org/property/architectOrBuilder
+year avg record high F,http://dbpedia.org/property/yearAvgRecordHighF
+Jan rain inch,http://dbpedia.org/property/janRainInch
+area blank1 title,http://dbpedia.org/property/areaBlank1Title
+year avg record high C,http://dbpedia.org/property/yearAvgRecordHighC
+total width,http://dbpedia.org/property/totalWidth
+blank1 info sec,http://dbpedia.org/property/blank1InfoSec
+increase,http://dbpedia.org/property/increase
+Jan record low F,http://dbpedia.org/property/janRecordLowF
+cinematography,http://dbpedia.org/property/cinematography
+HDI,http://dbpedia.org/property/hdi
+towns,http://dbpedia.org/property/towns
+lost,http://dbpedia.org/property/lost
+seating capacity,http://dbpedia.org/ontology/seatingCapacity
+Feb precipitation days,http://dbpedia.org/property/febPrecipitationDays
+leaser name,http://dbpedia.org/property/leaserName
+Apr mean C,http://dbpedia.org/property/aprMeanC
+registration plate,http://dbpedia.org/property/registrationPlate
+footer background,http://dbpedia.org/property/footerBackground
+Apr mean F,http://dbpedia.org/property/aprMeanF
+2016 access date,http://dbpedia.org/property/2016AccessDate
+Apr rain cm,http://dbpedia.org/property/aprRainCm
+Notable People,http://dbpedia.org/property/notablePeople
+lat min,http://dbpedia.org/property/latMin
+overlay27colour,http://dbpedia.org/property/overlay27colour
+twin,http://dbpedia.org/property/twin
+Jul record high F,http://dbpedia.org/property/julRecordHighF
+construction cost,http://dbpedia.org/property/constructionCost
+key people,http://dbpedia.org/property/keyPeople
+Jul record high C,http://dbpedia.org/property/julRecordHighC
+overlay7link,http://dbpedia.org/property/overlay7link
+munwebpage,http://dbpedia.org/property/munwebpage
+Record class,http://dbpedia.org/property/recordClass
+year leader,http://dbpedia.org/property/yearLeader
+population of,http://dbpedia.org/property/populationOf
+community wales,http://dbpedia.org/property/communityWales
+governing body,http://dbpedia.org/ontology/governingBody
+Popular couching center,http://dbpedia.org/property/popularCouchingCenter
+Aug low C,http://dbpedia.org/property/augLowC
+dialling code,http://dbpedia.org/property/diallingCode
+mark,http://dbpedia.org/property/mark
+Sanskrit transliteration,http://dbpedia.org/property/sanskritTransliteration
+Aug low F,http://dbpedia.org/property/augLowF
+unitary england,http://dbpedia.org/property/unitaryEngland
+AlternativeMap,http://dbpedia.org/property/alternativemap
+year snow inch,http://dbpedia.org/property/yearSnowInch
+M.P.,http://dbpedia.org/property/m.p.
+mottoes,http://dbpedia.org/property/mottoes
+telephone code,http://dbpedia.org/property/telephoneCode
+ren firm,http://dbpedia.org/property/renFirm
+Mar record low C,http://dbpedia.org/property/marRecordLowC
+order,http://dbpedia.org/property/order
+pop,http://dbpedia.org/property/pop
+pos,http://dbpedia.org/property/pos
+timezone1 DST,http://dbpedia.org/property/timezone1Dst
+poj,http://dbpedia.org/property/poj
+population city,http://dbpedia.org/property/populationCity
+population unit,http://dbpedia.org/property/populationUnit
+time zone,http://dbpedia.org/property/timeZone
+source ,http://dbpedia.org/property/source
+Mar record low F,http://dbpedia.org/property/marRecordLowF
+nearest town,http://dbpedia.org/property/nearestTown
+starring,http://dbpedia.org/property/starring
+antenna spire,http://dbpedia.org/property/antennaSpire
+Nov precipitation cm,http://dbpedia.org/property/novPrecipitationCm
+row1-4-at,http://dbpedia.org/property/row14At
+Jul precipitation mm,http://dbpedia.org/property/julPrecipitationMm
+manx sheading,http://dbpedia.org/property/manxSheading
+Mar afthumidity,http://dbpedia.org/property/marAfthumidity
+showflag,http://dbpedia.org/property/showflag
+built,http://dbpedia.org/property/built
+length imperial,http://dbpedia.org/property/lengthImperial
+unitary scotland,http://dbpedia.org/property/unitaryScotland
+overlay27left,http://dbpedia.org/property/overlay27left
+population growth,http://dbpedia.org/property/populationGrowth
+Augd sun,http://dbpedia.org/property/augdSun
+Sep uv,http://dbpedia.org/property/sepUv
+GDPPC us,http://dbpedia.org/property/gdppcUs
+photo3b,http://dbpedia.org/property/photo3b
+photo3a,http://dbpedia.org/property/photo3a
+dates,http://dbpedia.org/property/dates
+official name,http://dbpedia.org/property/officialName
+altitude,http://dbpedia.org/property/altitude
+start year,http://dbpedia.org/property/startYear
+indexes,http://dbpedia.org/property/indexes
+Venstre,http://dbpedia.org/property/venstre
+next route,http://dbpedia.org/property/nextRoute
+refnum,http://dbpedia.org/property/refnum
+foot notes,http://dbpedia.org/property/footNotes
+ladders,http://dbpedia.org/property/ladders
+Souvenirs,http://dbpedia.org/property/souvenirs
+financial year,http://dbpedia.org/property/financialYear
+blank4 info sec,http://dbpedia.org/property/blank4InfoSec
+shire district,http://dbpedia.org/property/shireDistrict
+Oct humidity,http://dbpedia.org/property/octHumidity
+Oct dew point C,http://dbpedia.org/property/octDewPointC
+row1-4-text,http://dbpedia.org/property/row14Text
+Oct dew point F,http://dbpedia.org/property/octDewPointF
+mayor party,http://dbpedia.org/property/mayorParty
+Old Name,http://dbpedia.org/property/oldName
+homicide,http://dbpedia.org/property/homicide
+nation,http://dbpedia.org/property/nation
+bar16-from,http://dbpedia.org/property/bar16From
+building start date,http://dbpedia.org/ontology/buildingStartDate
+pop community,http://dbpedia.org/property/popCommunity
+runtime (s),http://dbpedia.org/ontology/runtime
+area urban sq mi,http://dbpedia.org/property/areaUrbanSqMi
+overlay5left,http://dbpedia.org/property/overlay5left
+Apr snow days,http://dbpedia.org/property/aprSnowDays
+area blank2 sq mi,http://dbpedia.org/property/areaBlank2SqMi
+overlay1tip,http://dbpedia.org/property/overlay1tip
+Apr low F,http://dbpedia.org/property/aprLowF
+area code,http://dbpedia.org/property/areaCode
+skhangul,http://dbpedia.org/property/skhangul
+active years,http://dbpedia.org/property/activeYears
+neighboring municipalities,http://dbpedia.org/property/neighboringMunicipalities
+Apr low C,http://dbpedia.org/property/aprLowC
+unit precipitation days,http://dbpedia.org/property/unitPrecipitationDays
+pushpin mapsize,http://dbpedia.org/property/pushpinMapsize
+location special,http://dbpedia.org/property/locationSpecial
+population denonym,http://dbpedia.org/property/populationDenonym
+url-status,http://dbpedia.org/property/urlStatus
+piccap,http://dbpedia.org/property/piccap
+Police commissioner,http://dbpedia.org/property/policeCommissioner
+othername,http://dbpedia.org/property/othername
+telephone,http://dbpedia.org/property/telephone
+male,http://dbpedia.org/property/male
+Jun precipitation mm,http://dbpedia.org/property/junPrecipitationMm
+leader2 type,http://dbpedia.org/property/leader2Type
+bar13-left,http://dbpedia.org/property/bar13Left
+fedgov,http://dbpedia.org/property/fedgov
+zipcode,http://dbpedia.org/property/zipcode
+Jun precipitation days,http://dbpedia.org/property/junPrecipitationDays
+Aug snow cm,http://dbpedia.org/property/augSnowCm
+city name,http://dbpedia.org/property/cityName
+incorporated date,http://dbpedia.org/property/incorporatedDate
+skmr,http://dbpedia.org/property/skmr
+watercourse,http://dbpedia.org/property/watercourse
+cellpadding,http://dbpedia.org/property/cellpadding
+Jan precipitation inch,http://dbpedia.org/property/janPrecipitationInch
+North,http://dbpedia.org/property/north
+length total mi,http://dbpedia.org/property/lengthTotalMi
+Aprd sun,http://dbpedia.org/property/aprdSun
+Feb precipitation cm,http://dbpedia.org/property/febPrecipitationCm
+overlay30colour,http://dbpedia.org/property/overlay30colour
+road start direction,http://dbpedia.org/ontology/routeStartDirection
+Name commonly used,http://dbpedia.org/property/nameCommonlyUsed
+photo2c,http://dbpedia.org/property/photo2c
+image shield,http://dbpedia.org/property/imageShield
+photo2b,http://dbpedia.org/property/photo2b
+photo2a,http://dbpedia.org/property/photo2a
+display,http://dbpedia.org/property/display
+year low F,http://dbpedia.org/property/yearLowF
+overlay18left,http://dbpedia.org/property/overlay18left
+treaty,http://dbpedia.org/property/treaty
+NOTABLE PERSONS,http://dbpedia.org/property/notablePersons
+Ramadan time,http://dbpedia.org/property/ramadanTime
+year low C,http://dbpedia.org/property/yearLowC
+terminus a,http://dbpedia.org/property/terminusA
+Google head name,http://dbpedia.org/property/googleHeadName
+row4-height,http://dbpedia.org/property/row4Height
+terminus b,http://dbpedia.org/property/terminusB
+label-colorD,http://dbpedia.org/property/labelColord
+after,http://dbpedia.org/property/after
+bar22-left,http://dbpedia.org/property/bar22Left
+photo1b,http://dbpedia.org/property/photo1b
+photo1a,http://dbpedia.org/property/photo1a
+Per capital income,http://dbpedia.org/property/perCapitalIncome
+rules,http://dbpedia.org/property/rules
+photo1c,http://dbpedia.org/property/photo1c
+supporters,http://dbpedia.org/property/supporters
+gaelic name,http://dbpedia.org/property/gaelicName
+discovery,http://dbpedia.org/property/discovery
+blank3 name,http://dbpedia.org/property/blank3Name
+2011 pop density,http://dbpedia.org/property/2011PopDensity
+bars,http://dbpedia.org/property/bars
+blank6 name sec,http://dbpedia.org/property/blank6NameSec
+transport code,http://dbpedia.org/property/transportCode
+image name,http://dbpedia.org/property/imageName
+percentage of area water,http://dbpedia.org/ontology/percentageOfAreaWater
+female,http://dbpedia.org/property/female
+talksection,http://dbpedia.org/property/talksection
+Jul precipitation cm,http://dbpedia.org/property/julPrecipitationCm
+skrr,http://dbpedia.org/property/skrr
+row1-10-at,http://dbpedia.org/property/row110At
+index,http://dbpedia.org/property/index
+Sep high C,http://dbpedia.org/property/sepHighC
+Sep high F,http://dbpedia.org/property/sepHighF
+demonym,http://dbpedia.org/property/demonym
+blank info,http://dbpedia.org/property/blankInfo
+Jul snow inch,http://dbpedia.org/property/julSnowInch
+district collector,http://dbpedia.org/property/districtCollector
+percent,http://dbpedia.org/property/percent
+elecref,http://dbpedia.org/property/elecref
+row3-1-arrow,http://dbpedia.org/property/row31Arrow
+region,http://dbpedia.org/property/region
+PIN,http://dbpedia.org/property/pin
+Mar precipitation days,http://dbpedia.org/property/marPrecipitationDays
+pic,http://dbpedia.org/property/pic
+pushpin image,http://dbpedia.org/property/pushpinImage
+NUTS,http://dbpedia.org/property/nuts
+total population,http://dbpedia.org/property/totalPopulation
+Borgerlige Felleslister,http://dbpedia.org/property/borgerligeFelleslister
+yeard sun,http://dbpedia.org/property/yeardSun
+bronze ,http://dbpedia.org/property/bronze
+stategov,http://dbpedia.org/property/stategov
+Record team,http://dbpedia.org/property/recordTeam
+id,http://dbpedia.org/ontology/id
+long,http://dbpedia.org/property/long
+constituency,http://dbpedia.org/property/constituency
+subject name,http://dbpedia.org/property/subjectName
+Member station,http://dbpedia.org/property/memberStation
+Nov avg record low C,http://dbpedia.org/property/novAvgRecordLowC
+Nov avg record low F,http://dbpedia.org/property/novAvgRecordLowF
+open,http://dbpedia.org/property/open
+start production,http://dbpedia.org/property/startProduction
+seal caption,http://dbpedia.org/property/sealCaption
+label6 size,http://dbpedia.org/property/label6Size
+overlay25link,http://dbpedia.org/property/overlay25link
+blank8 info,http://dbpedia.org/property/blank8Info
+label-angle,http://dbpedia.org/property/labelAngle
+population density 10km,http://dbpedia.org/property/populationDensity10km
+Aug high C,http://dbpedia.org/property/augHighC
+Famous personalities,http://dbpedia.org/property/famousPersonalities
+Nov maximum humidex,http://dbpedia.org/property/novMaximumHumidex
+Apr avg record high F,http://dbpedia.org/property/aprAvgRecordHighF
+Aug high F,http://dbpedia.org/property/augHighF
+Apr avg record high C,http://dbpedia.org/property/aprAvgRecordHighC
+overlay4tip,http://dbpedia.org/property/overlay4tip
+boxname,http://dbpedia.org/property/boxname
+Nov humidity,http://dbpedia.org/property/novHumidity
+text,http://dbpedia.org/property/text
+area served,http://dbpedia.org/property/areaServed
+population urban density (/sqkm),http://dbpedia.org/ontology/populationUrbanDensity
+within municipality,http://dbpedia.org/property/withinMunicipality
+demographics1 title,http://dbpedia.org/property/demographics1Title
+branch,http://dbpedia.org/property/branch
+postal code,http://dbpedia.org/ontology/postalCode
+villages,http://dbpedia.org/property/villages
+district,http://dbpedia.org/property/district
+bar15-to,http://dbpedia.org/property/bar15To
+overlay16link,http://dbpedia.org/property/overlay16link
+natikriueekbuig
+ve name,http://dbpedia.org/property/natikriueekbuigVeName
+hide rank,http://dbpedia.org/property/hideRank
+cod municipio,http://dbpedia.org/property/codMunicipio
+blank7 info sec,http://dbpedia.org/property/blank7InfoSec
+population density blank1 sq mi,http://dbpedia.org/property/populationDensityBlank1SqMi
+lat deg,http://dbpedia.org/property/latDeg
+related names,http://dbpedia.org/property/relatedNames
+row2-6-to,http://dbpedia.org/property/row26To
+Nov precipitation mm,http://dbpedia.org/property/novPrecipitationMm
+admiralty,http://dbpedia.org/property/admiralty
+area blank2 acre,http://dbpedia.org/property/areaBlank2Acre
+overlat17tip,http://dbpedia.org/property/overlat17tip
+Rural Male and Female,http://dbpedia.org/property/ruralMaleAndFemale
+postal2 code,http://dbpedia.org/property/postal2Code
+Post Office Name,http://dbpedia.org/property/postOfficeName
+Sep percentsun,http://dbpedia.org/property/sepPercentsun
+population footnotes,http://dbpedia.org/property/populationFootnotes
+title fnt,http://dbpedia.org/property/titleFnt
+2011 land area,http://dbpedia.org/property/2011LandArea
+GDPPC rank,http://dbpedia.org/property/gdppcRank
+meaning,http://dbpedia.org/ontology/meaning
+frame-width,http://dbpedia.org/property/frameWidth
+thumbnail,http://dbpedia.org/ontology/thumbnail
+designation1 offname,http://dbpedia.org/property/designation1Offname
+Apr avg record low F,http://dbpedia.org/property/aprAvgRecordLowF
+Apr avg record low C,http://dbpedia.org/property/aprAvgRecordLowC
+Member of Legislative Assembly,http://dbpedia.org/property/memberOfLegislativeAssembly
+row1-10-text,http://dbpedia.org/property/row110Text
+Sep snow cm,http://dbpedia.org/property/sepSnowCm
+lang3 content,http://dbpedia.org/property/lang3Content
+general contractor,http://dbpedia.org/property/generalContractor
+lat dir,http://dbpedia.org/property/latDir
+mayor.,http://dbpedia.org/property/mayor.
+creator,http://dbpedia.org/property/creator
+Women Population,http://dbpedia.org/property/womenPopulation
+logo,http://dbpedia.org/property/logo
+builder,http://dbpedia.org/property/builder
+saint,http://dbpedia.org/ontology/saint
+Local names,http://dbpedia.org/property/localNames
+on reserve,http://dbpedia.org/property/onReserve
+row4-2-colour,http://dbpedia.org/property/row42Colour
+Dec mean F,http://dbpedia.org/property/decMeanF
+Dec mean C,http://dbpedia.org/property/decMeanC
+governing chair person,http://dbpedia.org/property/governingChairPerson
+Pin code,http://dbpedia.org/property/pinCode
+blank name sec,http://dbpedia.org/property/blankNameSec
+acquisition year,http://dbpedia.org/property/acquisitionYear
+bar22-colour,http://dbpedia.org/property/bar22Colour
+biome,http://dbpedia.org/property/biome
+Dinosaur,http://dbpedia.org/property/dinosaur
+area municunit,http://dbpedia.org/property/areaMunicunit
+salign,http://dbpedia.org/property/salign
+page length (characters) of wiki page,http://dbpedia.org/ontology/wikiPageLength
+Apr rain mm,http://dbpedia.org/property/aprRainMm
+survey,http://dbpedia.org/property/survey
+bar5-text,http://dbpedia.org/property/bar5Text
+wstitle,http://dbpedia.org/property/wstitle
+bar12-from,http://dbpedia.org/property/bar12From
+gini category,http://dbpedia.org/property/giniCategory
+local business ct,http://dbpedia.org/property/localBusinessCt
+image notes,http://dbpedia.org/property/imageNotes
+result,http://dbpedia.org/property/result
+Jun sun,http://dbpedia.org/property/junSun
+Sep rain inch,http://dbpedia.org/property/sepRainInch
+population ref,http://dbpedia.org/property/populationRef
+anniversaries,http://dbpedia.org/property/anniversaries
+locmapin,http://dbpedia.org/property/locmapin
+related legislation,http://dbpedia.org/property/relatedLegislation
+Clinic Hospitals,http://dbpedia.org/property/clinicHospitals
+state mun,http://dbpedia.org/property/stateMun
+May precipitation inch,http://dbpedia.org/property/mayPrecipitationInch
+2011 median age,http://dbpedia.org/property/2011MedianAge
+extinct title,http://dbpedia.org/property/extinctTitle
+GDP as of,http://dbpedia.org/property/gdpAsOf
+bar24-colour,http://dbpedia.org/property/bar24Colour
+y,http://dbpedia.org/property/y
+x,http://dbpedia.org/property/x
+z,http://dbpedia.org/property/z
+caption right,http://dbpedia.org/property/captionRight
+school website,http://dbpedia.org/property/schoolWebsite
+area note,http://dbpedia.org/property/areaNote
+bar8-to,http://dbpedia.org/property/bar8To
+lat2 deg,http://dbpedia.org/property/lat2Deg
+consort,http://dbpedia.org/property/consort
+current minister,http://dbpedia.org/property/currentMinister
+postcode,http://dbpedia.org/property/postcode
+noprescript,http://dbpedia.org/property/noprescript
+metropolitan borough,http://dbpedia.org/property/metropolitanBorough
+population density metro sq mi,http://dbpedia.org/property/populationDensityMetroSqMi
+row3-1-at,http://dbpedia.org/property/row31At
+Dec humidity,http://dbpedia.org/property/decHumidity
+light and air,http://dbpedia.org/property/lightAndAir
+length round,http://dbpedia.org/property/lengthRound
+authority,http://dbpedia.org/property/authority
+mile,http://dbpedia.org/property/mile
+overlay12top,http://dbpedia.org/property/overlay12top
+project manager,http://dbpedia.org/property/projectManager
+grades,http://dbpedia.org/property/grades
+pop metro date,http://dbpedia.org/property/popMetroDate
+Nov sun,http://dbpedia.org/property/novSun
+Apr uv,http://dbpedia.org/property/aprUv
+blank7 name,http://dbpedia.org/property/blank7Name
+population density km,http://dbpedia.org/property/populationDensityKm
+iso-code-region,http://dbpedia.org/property/isoCodeRegion
+loc lang,http://dbpedia.org/property/locLang
+map size,http://dbpedia.org/property/mapSize
+overlay9left,http://dbpedia.org/property/overlay9left
+sports,http://dbpedia.org/property/sports
+Jun maximum humidex,http://dbpedia.org/property/junMaximumHumidex
+former name,http://dbpedia.org/property/formerName
+overlay4top,http://dbpedia.org/property/overlay4top
+LicensePlate,http://dbpedia.org/property/licenseplate
+May rain cm,http://dbpedia.org/property/mayRainCm
+subdivision tyep,http://dbpedia.org/property/subdivisionTyep
+part,http://dbpedia.org/property/part
+East,http://dbpedia.org/property/east
+notable,http://dbpedia.org/property/notable
+H/FV,http://dbpedia.org/property/h/fv
+e,http://dbpedia.org/property/e
+d,http://dbpedia.org/property/d
+area land dunam,http://dbpedia.org/property/areaLandDunam
+F,http://dbpedia.org/property/f
+A,http://dbpedia.org/property/a
+2016 pop rank,http://dbpedia.org/property/2016PopRank
+c,http://dbpedia.org/property/c
+partners,http://dbpedia.org/property/partners
+b,http://dbpedia.org/property/b
+m,http://dbpedia.org/property/m
+l,http://dbpedia.org/property/l
+static image 2 caption,http://dbpedia.org/property/staticImage2Caption
+n,http://dbpedia.org/property/n
+H,http://dbpedia.org/property/h
+k,http://dbpedia.org/property/k
+j,http://dbpedia.org/property/j
+t,http://dbpedia.org/property/t
+w,http://dbpedia.org/property/w
+city administrator/clerk,http://dbpedia.org/property/cityAdministrator/clerk
+v,http://dbpedia.org/property/v
+q,http://dbpedia.org/property/q
+p,http://dbpedia.org/property/p
+s,http://dbpedia.org/property/s
+zoom,http://dbpedia.org/property/zoom
+r,http://dbpedia.org/property/r
+fontsize,http://dbpedia.org/property/fontsize
+ElectedByYear,http://dbpedia.org/property/electedbyyear
+hangul,http://dbpedia.org/property/hangul
+pop 2020 census,http://dbpedia.org/property/pop2020Census
+width total mi,http://dbpedia.org/property/widthTotalMi
+Mar humidity,http://dbpedia.org/property/marHumidity
+blank3 name sec,http://dbpedia.org/property/blank3NameSec
+Oct rain cm,http://dbpedia.org/property/octRainCm
+Aug maximum humidex,http://dbpedia.org/property/augMaximumHumidex
+row3-3-text,http://dbpedia.org/property/row33Text
+Bird,http://dbpedia.org/property/bird
+Subtype,http://dbpedia.org/property/subtype
+Lok sabha constitution seat,http://dbpedia.org/property/lokSabhaConstitutionSeat
+Police Station Incharge,http://dbpedia.org/property/policeStationIncharge
+minaret quantity,http://dbpedia.org/property/minaretQuantity
+overlay14left,http://dbpedia.org/property/overlay14left
+incumbentsince,http://dbpedia.org/property/incumbentsince
+Pusphin map caption,http://dbpedia.org/property/pusphinMapCaption
+News website,http://dbpedia.org/property/newsWebsite
+type species,http://dbpedia.org/property/typeSpecies
+year humidity,http://dbpedia.org/property/yearHumidity
+label2 size,http://dbpedia.org/property/label2Size
+overlay29link,http://dbpedia.org/property/overlay29link
+VIAF Id,http://dbpedia.org/ontology/viafId
+lon5 deg,http://dbpedia.org/property/lon5Deg
+Feb high F,http://dbpedia.org/property/febHighF
+fullheight,http://dbpedia.org/property/fullheight
+Feb high C,http://dbpedia.org/property/febHighC
+surface,http://dbpedia.org/property/surface
+nativename,http://dbpedia.org/property/nativename
+gwebsite,http://dbpedia.org/property/gwebsite
+Jun mean F,http://dbpedia.org/property/junMeanF
+local map,http://dbpedia.org/property/localMap
+en name,http://dbpedia.org/property/enName
+established name,http://dbpedia.org/property/establishedName
+Jun mean C,http://dbpedia.org/property/junMeanC
+label11 size,http://dbpedia.org/property/label11Size
+designated other,http://dbpedia.org/property/designatedOther
+Private School,http://dbpedia.org/property/privateSchool
+overlay24top,http://dbpedia.org/property/overlay24top
+band name,http://dbpedia.org/property/bandName
+2011 median age f,http://dbpedia.org/property/2011MedianAgeF
+area total (km2),http://dbpedia.org/ontology/PopulatedPlace/areaTotal
+2011 median age m,http://dbpedia.org/property/2011MedianAgeM
+yearbuilt,http://dbpedia.org/property/yearbuilt
+yeardeactivated,http://dbpedia.org/property/yeardeactivated
+image alt,http://dbpedia.org/property/imageAlt
+Jul dew point F,http://dbpedia.org/property/julDewPointF
+charingX distance mi,http://dbpedia.org/property/charingxDistanceMi
+Jul dew point C,http://dbpedia.org/property/julDewPointC
+name  jafar ali,http://dbpedia.org/property/nameJafarAli

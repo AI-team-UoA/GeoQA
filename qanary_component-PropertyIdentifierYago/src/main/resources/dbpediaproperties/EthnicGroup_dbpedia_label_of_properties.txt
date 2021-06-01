@@ -1,0 +1,702 @@
+type,http://dbpedia.org/property/type
+reference,http://dbpedia.org/property/reference
+events,http://dbpedia.org/property/events
+align,http://dbpedia.org/property/align
+mark3size,http://dbpedia.org/property/mark3size
+target,http://dbpedia.org/property/target
+gan,http://dbpedia.org/property/gan
+carbs,http://dbpedia.org/property/carbs
+density,http://dbpedia.org/property/density
+Coat of arms,http://dbpedia.org/property/coatOfArms
+pages,http://dbpedia.org/property/pages
+discontinued,http://dbpedia.org/property/discontinued
+lon deg,http://dbpedia.org/property/lonDeg
+QC,http://dbpedia.org/property/qc
+2006 pop density,http://dbpedia.org/property/2006PopDensity
+fmax,http://dbpedia.org/property/fmax
+image seal,http://dbpedia.org/property/imageSeal
+total width,http://dbpedia.org/property/totalWidth
+div link,http://dbpedia.org/property/divLink
+flag type,http://dbpedia.org/property/flagType
+position,http://dbpedia.org/property/position
+date end,http://dbpedia.org/property/dateEnd
+zha,http://dbpedia.org/property/zha
+carb g,http://dbpedia.org/property/carbG
+wylie,http://dbpedia.org/property/wylie
+RR,http://dbpedia.org/property/rr
+capital,http://dbpedia.org/property/capital
+labels,http://dbpedia.org/property/labels
+chapter,http://dbpedia.org/property/chapter
+accessdate,http://dbpedia.org/property/accessdate
+official,http://dbpedia.org/property/official
+dungan-han,http://dbpedia.org/property/dunganHan
+manufacturer,http://dbpedia.org/ontology/manufacturer
+spacing,http://dbpedia.org/property/spacing
+liturgy,http://dbpedia.org/property/liturgy
+article,http://dbpedia.org/property/article
+native name lang,http://dbpedia.org/property/nativeNameLang
+dungan-latin,http://dbpedia.org/property/dunganLatin
+2016 land area,http://dbpedia.org/property/2016LandArea
+fam,http://dbpedia.org/property/fam
+sstyle,http://dbpedia.org/property/sstyle
+rels,http://dbpedia.org/property/rels
+footer background,http://dbpedia.org/property/footerBackground
+religion,http://dbpedia.org/ontology/religion
+2016 access date,http://dbpedia.org/property/2016AccessDate
+spoken in,http://dbpedia.org/ontology/spokenIn
+og,http://dbpedia.org/property/og
+needed,http://dbpedia.org/property/needed
+key people,http://dbpedia.org/property/keyPeople
+currency,http://dbpedia.org/ontology/currency
+life,http://dbpedia.org/property/life
+ingredients,http://dbpedia.org/property/ingredients
+age 65 years,http://dbpedia.org/property/age65Years
+MPs,http://dbpedia.org/property/mps
+quoted,http://dbpedia.org/property/quoted
+certain,http://dbpedia.org/property/certain
+pp,http://dbpedia.org/property/pp
+caste name,http://dbpedia.org/property/casteName
+mark,http://dbpedia.org/property/mark
+map type,http://dbpedia.org/property/mapType
+image width,http://dbpedia.org/property/imageWidth
+2006 total pvt dwell,http://dbpedia.org/property/2006TotalPvtDwell
+AlternativeMap,http://dbpedia.org/property/alternativemap
+lmz,http://dbpedia.org/property/lmz
+fat,http://dbpedia.org/property/fat
+dungan,http://dbpedia.org/property/dungan
+titlestyle,http://dbpedia.org/property/titlestyle
+flavour,http://dbpedia.org/property/flavour
+xej,http://dbpedia.org/property/xej
+wikt,http://dbpedia.org/property/wikt
+order,http://dbpedia.org/property/order
+feudal title,http://dbpedia.org/property/feudalTitle
+pop,http://dbpedia.org/property/pop
+perpetrators,http://dbpedia.org/property/perpetrators
+por,http://dbpedia.org/property/por
+sr under ,http://dbpedia.org/property/srUnder
+pos,http://dbpedia.org/property/pos
+overflow-x,http://dbpedia.org/property/overflowX
+timezone DST,http://dbpedia.org/property/timezoneDst
+cholesterol,http://dbpedia.org/property/cholesterol
+lon3 deg,http://dbpedia.org/property/lon3Deg
+data,http://dbpedia.org/property/data
+infant mortality,http://dbpedia.org/property/infantMortality
+poj,http://dbpedia.org/property/poj
+date,http://dbpedia.org/property/date
+time zone,http://dbpedia.org/property/timeZone
+source ,http://dbpedia.org/property/source
+founder,http://dbpedia.org/property/founder
+subdivision type,http://dbpedia.org/property/subdivisionType
+collapsible,http://dbpedia.org/property/collapsible
+abbreviation,http://dbpedia.org/property/abbreviation
+population total,http://dbpedia.org/ontology/populationTotal
+species author,http://dbpedia.org/property/speciesAuthor
+MLCTS,http://dbpedia.org/property/mlcts
+buc,http://dbpedia.org/property/buc
+person,http://dbpedia.org/property/person
+kind,http://dbpedia.org/property/kind
+showflag,http://dbpedia.org/property/showflag
+content,http://dbpedia.org/property/content
+sugars g,http://dbpedia.org/property/sugarsG
+notopborder,http://dbpedia.org/property/notopborder
+countries,http://dbpedia.org/property/countries
+familycolor,http://dbpedia.org/property/familycolor
+description,http://dbpedia.org/property/description
+2016 population,http://dbpedia.org/property/2016Population
+inaccurate,http://dbpedia.org/property/inaccurate
+barwidth,http://dbpedia.org/property/barwidth
+subdivision,http://dbpedia.org/ontology/subdivision
+flavor,http://dbpedia.org/property/flavor
+caption,http://dbpedia.org/property/caption
+header background,http://dbpedia.org/property/headerBackground
+image coat,http://dbpedia.org/property/imageCoat
+elevation ft,http://dbpedia.org/property/elevationFt
+dungan-xej,http://dbpedia.org/property/dunganXej
+dates,http://dbpedia.org/property/dates
+polity,http://dbpedia.org/property/polity
+rus,http://dbpedia.org/property/rus
+official name,http://dbpedia.org/property/officialName
+founding date,http://dbpedia.org/ontology/foundingDate
+Flag,http://dbpedia.org/property/flag
+current head,http://dbpedia.org/property/currentHead
+death,http://dbpedia.org/property/death
+start year,http://dbpedia.org/property/startYear
+image caption,http://dbpedia.org/property/imageCaption
+anthem,http://dbpedia.org/ontology/anthem
+pushpin label position,http://dbpedia.org/property/pushpinLabelPosition
+postal code type,http://dbpedia.org/property/postalCodeType
+both,http://dbpedia.org/property/both
+population total,http://dbpedia.org/property/populationTotal
+population as of,http://dbpedia.org/property/populationAsOf
+poptime,http://dbpedia.org/property/poptime
+image upright,http://dbpedia.org/property/imageUpright
+range map,http://dbpedia.org/property/rangeMap
+total,http://dbpedia.org/property/total
+lon2 deg,http://dbpedia.org/property/lon2Deg
+type,http://dbpedia.org/ontology/type
+languageorigin,http://dbpedia.org/property/languageorigin
+height,http://dbpedia.org/property/height
+ibu,http://dbpedia.org/property/ibu
+timezone,http://dbpedia.org/property/timezone
+glottoname,http://dbpedia.org/property/glottoname
+legal recognition,http://dbpedia.org/property/legalRecognition
+total ref,http://dbpedia.org/property/totalRef
+government type,http://dbpedia.org/ontology/governmentType
+official language,http://dbpedia.org/ontology/officialLanguage
+links,http://dbpedia.org/property/links
+collapse,http://dbpedia.org/property/collapse
+protein g,http://dbpedia.org/property/proteinG
+introduced,http://dbpedia.org/ontology/introduced
+tp,http://dbpedia.org/property/tp
+reason,http://dbpedia.org/property/reason
+archiveurl,http://dbpedia.org/property/archiveurl
+pushpin map,http://dbpedia.org/property/pushpinMap
+tl,http://dbpedia.org/property/tl
+2011 population,http://dbpedia.org/property/2011Population
+nation,http://dbpedia.org/property/nation
+sport,http://dbpedia.org/property/sport
+before,http://dbpedia.org/property/before
+fix-attempted,http://dbpedia.org/property/fixAttempted
+established date,http://dbpedia.org/property/establishedDate
+capital,http://dbpedia.org/ontology/capital
+2011 pop delta,http://dbpedia.org/property/2011PopDelta
+dissolution year,http://dbpedia.org/ontology/dissolutionYear
+special,http://dbpedia.org/property/special
+perrow,http://dbpedia.org/property/perrow
+division type,http://dbpedia.org/property/divisionType
+flag upright,http://dbpedia.org/property/flagUpright
+small,http://dbpedia.org/property/small
+toggle,http://dbpedia.org/property/toggle
+origin,http://dbpedia.org/ontology/origin
+area code,http://dbpedia.org/property/areaCode
+commonscat,http://dbpedia.org/property/commonscat
+popplace,http://dbpedia.org/property/popplace
+Link from a Wikipage to another Wikipage,http://dbpedia.org/ontology/wikiPageWikiLink
+official languages,http://dbpedia.org/property/officialLanguages
+2006 land area,http://dbpedia.org/property/2006LandArea
+otherarticle,http://dbpedia.org/property/otherarticle
+pushpin mapsize,http://dbpedia.org/property/pushpinMapsize
+dupe,http://dbpedia.org/property/dupe
+Wikipage disambiguates,http://dbpedia.org/ontology/wikiPageDisambiguates
+data max,http://dbpedia.org/property/dataMax
+bot,http://dbpedia.org/property/bot
+related,http://dbpedia.org/ontology/related
+url-status,http://dbpedia.org/property/urlStatus
+piccap,http://dbpedia.org/property/piccap
+flag size,http://dbpedia.org/property/flagSize
+othername,http://dbpedia.org/property/othername
+population density sq mi,http://dbpedia.org/property/populationDensitySqMi
+prefix,http://dbpedia.org/property/prefix
+list3style,http://dbpedia.org/property/list3style
+regions,http://dbpedia.org/property/regions
+topic,http://dbpedia.org/property/topic
+wikititle,http://dbpedia.org/property/wikititle
+oLeft,http://dbpedia.org/property/oleft
+script,http://dbpedia.org/property/script
+status,http://dbpedia.org/property/status
+section,http://dbpedia.org/property/section
+original name,http://dbpedia.org/ontology/originalName
+legislature,http://dbpedia.org/property/legislature
+image map caption,http://dbpedia.org/property/imageMapCaption
+area km,http://dbpedia.org/property/areaKm
+list1style,http://dbpedia.org/property/list1style
+cellpadding,http://dbpedia.org/property/cellpadding
+products,http://dbpedia.org/property/products
+thdl,http://dbpedia.org/property/thdl
+lang,http://dbpedia.org/property/lang
+settlement type,http://dbpedia.org/property/settlementType
+North,http://dbpedia.org/property/north
+seat,http://dbpedia.org/property/seat
+land,http://dbpedia.org/property/land
+code,http://dbpedia.org/property/code
+common name,http://dbpedia.org/property/commonName
+area (m2),http://dbpedia.org/ontology/area
+languages,http://dbpedia.org/property/languages
+rawimage,http://dbpedia.org/property/rawimage
+photo2b,http://dbpedia.org/property/photo2b
+photo2a,http://dbpedia.org/property/photo2a
+event end,http://dbpedia.org/property/eventEnd
+abovestyle,http://dbpedia.org/property/abovestyle
+key person,http://dbpedia.org/ontology/keyPerson
+display,http://dbpedia.org/property/display
+relief,http://dbpedia.org/property/relief
+mmax,http://dbpedia.org/property/mmax
+cHeight,http://dbpedia.org/property/cheight
+header align,http://dbpedia.org/property/headerAlign
+treaty,http://dbpedia.org/property/treaty
+total1 year,http://dbpedia.org/property/total1Year
+religion,http://dbpedia.org/property/religion
+commons,http://dbpedia.org/property/commons
+inline,http://dbpedia.org/property/inline
+langs,http://dbpedia.org/property/langs
+UTC offset,http://dbpedia.org/ontology/utcOffset
+langcode,http://dbpedia.org/property/langcode
+population,http://dbpedia.org/property/population
+data type,http://dbpedia.org/property/dataType
+place,http://dbpedia.org/property/place
+mapcaption,http://dbpedia.org/property/mapcaption
+after,http://dbpedia.org/property/after
+origin,http://dbpedia.org/property/origin
+has abstract,http://dbpedia.org/ontology/abstract
+growth,http://dbpedia.org/property/growth
+lon1 deg,http://dbpedia.org/property/lon1Deg
+photo1a,http://dbpedia.org/property/photo1a
+life span,http://dbpedia.org/property/lifeSpan
+years,http://dbpedia.org/property/years
+lang1 content,http://dbpedia.org/property/lang1Content
+era,http://dbpedia.org/property/era
+total3 year,http://dbpedia.org/property/total3Year
+wuu,http://dbpedia.org/property/wuu
+header-lines,http://dbpedia.org/property/headerLines
+glotto,http://dbpedia.org/property/glotto
+kanji,http://dbpedia.org/property/kanji
+kunrei,http://dbpedia.org/property/kunrei
+population place,http://dbpedia.org/ontology/populationPlace
+2016 median age m,http://dbpedia.org/property/2016MedianAgeM
+toi,http://dbpedia.org/property/toi
+image style,http://dbpedia.org/property/imageStyle
+agency,http://dbpedia.org/property/agency
+2016 median age f,http://dbpedia.org/property/2016MedianAgeF
+direction,http://dbpedia.org/property/direction
+bars,http://dbpedia.org/property/bars
+2011 pop density,http://dbpedia.org/property/2011PopDensity
+sound recording,http://dbpedia.org/ontology/soundRecording
+state,http://dbpedia.org/property/state
+rtgs,http://dbpedia.org/property/rtgs
+patent originator,http://dbpedia.org/property/patentOriginator
+religions,http://dbpedia.org/property/religions
+utc offset DST,http://dbpedia.org/property/utcOffsetDst
+talksection,http://dbpedia.org/property/talksection
+sr 15-64 years,http://dbpedia.org/property/sr1564Years
+doi,http://dbpedia.org/property/doi
+last,http://dbpedia.org/property/last
+calories,http://dbpedia.org/property/calories
+Footnote,http://dbpedia.org/property/footnote
+index,http://dbpedia.org/property/index
+fiber,http://dbpedia.org/property/fiber
+lingua,http://dbpedia.org/property/lingua
+class,http://dbpedia.org/property/class
+causes,http://dbpedia.org/property/causes
+date start,http://dbpedia.org/property/dateStart
+name,http://dbpedia.org/property/name
+population demonym,http://dbpedia.org/property/populationDemonym
+url,http://dbpedia.org/property/url
+simpchi,http://dbpedia.org/property/simpchi
+area code type,http://dbpedia.org/property/areaCodeType
+qstyle,http://dbpedia.org/property/qstyle
+family names,http://dbpedia.org/property/familyNames
+video,http://dbpedia.org/property/video
+page,http://dbpedia.org/property/page
+russiantext,http://dbpedia.org/property/russiantext
+noicon,http://dbpedia.org/property/noicon
+synonyms,http://dbpedia.org/property/synonyms
+bgcolor,http://dbpedia.org/property/bgcolor
+region,http://dbpedia.org/property/region
+sr at birth,http://dbpedia.org/property/srAtBirth
+qalign,http://dbpedia.org/property/qalign
+fatalities,http://dbpedia.org/property/fatalities
+classification,http://dbpedia.org/property/classification
+glottorefname,http://dbpedia.org/property/glottorefname
+pic,http://dbpedia.org/property/pic
+region color,http://dbpedia.org/property/regionColor
+oTop,http://dbpedia.org/property/otop
+seealso,http://dbpedia.org/property/seealso
+col,http://dbpedia.org/property/col
+field,http://dbpedia.org/property/field
+potassium,http://dbpedia.org/property/potassium
+others,http://dbpedia.org/property/others
+tablewidth,http://dbpedia.org/property/tablewidth
+flag alt,http://dbpedia.org/property/flagAlt
+headquarters,http://dbpedia.org/property/headquarters
+serving size,http://dbpedia.org/property/servingSize
+width units,http://dbpedia.org/property/widthUnits
+course,http://dbpedia.org/property/course
+Wikipage redirect,http://dbpedia.org/ontology/wikiPageRedirects
+introduced,http://dbpedia.org/property/introduced
+other names,http://dbpedia.org/property/otherNames
+headerimage,http://dbpedia.org/property/headerimage
+extinct,http://dbpedia.org/property/extinct
+Wikipage page ID,http://dbpedia.org/ontology/wikiPageID
+serv size us,http://dbpedia.org/property/servSizeUs
+structure,http://dbpedia.org/property/structure
+alt,http://dbpedia.org/property/alt
+range map caption,http://dbpedia.org/property/rangeMapCaption
+people,http://dbpedia.org/property/people
+leader name,http://dbpedia.org/property/leaderName
+list by pop,http://dbpedia.org/property/listByPop
+mark2size,http://dbpedia.org/property/mark2size
+wikt-search,http://dbpedia.org/property/wiktSearch
+2006 pop delta,http://dbpedia.org/property/2006PopDelta
+status system,http://dbpedia.org/property/statusSystem
+sr total mf ratio,http://dbpedia.org/property/srTotalMfRatio
+bpmf,http://dbpedia.org/property/bpmf
+total2 year,http://dbpedia.org/property/total2Year
+footer align,http://dbpedia.org/property/footerAlign
+text background,http://dbpedia.org/property/textBackground
+speakers,http://dbpedia.org/property/speakers
+location color,http://dbpedia.org/property/locationColor
+Link from a Wikipage to an external page,http://dbpedia.org/ontology/wikiPageExternalLink
+serv size met,http://dbpedia.org/property/servSizeMet
+bar width,http://dbpedia.org/property/barWidth
+child,http://dbpedia.org/property/child
+fertility,http://dbpedia.org/property/fertility
+related-c,http://dbpedia.org/property/relatedC
+Location,http://dbpedia.org/property/location
+text,http://dbpedia.org/property/text
+anthem,http://dbpedia.org/property/anthem
+area served,http://dbpedia.org/property/areaServed
+country,http://dbpedia.org/property/country
+image size,http://dbpedia.org/property/imageSize
+image,http://dbpedia.org/property/image
+area total acre,http://dbpedia.org/property/areaTotalAcre
+residence,http://dbpedia.org/property/residence
+total population,http://dbpedia.org/ontology/totalPopulation
+motive,http://dbpedia.org/property/motive
+label3 size,http://dbpedia.org/property/label3Size
+bg,http://dbpedia.org/property/bg
+followedby,http://dbpedia.org/property/followedby
+authorlink,http://dbpedia.org/property/authorlink
+time zone,http://dbpedia.org/ontology/timeZone
+area total km,http://dbpedia.org/property/areaTotalKm
+date post,http://dbpedia.org/property/datePost
+2016 mean hh income,http://dbpedia.org/property/2016MeanHhIncome
+voy,http://dbpedia.org/property/voy
+event post,http://dbpedia.org/property/eventPost
+plain,http://dbpedia.org/property/plain
+2011 total pvt dwell,http://dbpedia.org/property/2011TotalPvtDwell
+utc offset,http://dbpedia.org/property/utcOffset
+ethnicity,http://dbpedia.org/property/ethnicity
+governance,http://dbpedia.org/property/governance
+trans fat g,http://dbpedia.org/property/transFatG
+lat deg,http://dbpedia.org/property/latDeg
+indic,http://dbpedia.org/property/indic
+basestyle,http://dbpedia.org/property/basestyle
+imageleft,http://dbpedia.org/property/imageleft
+thumb,http://dbpedia.org/property/thumb
+chapterurl,http://dbpedia.org/property/chapterurl
+nationality,http://dbpedia.org/property/nationality
+map caption,http://dbpedia.org/property/mapCaption
+custom,http://dbpedia.org/property/custom
+color border,http://dbpedia.org/property/colorBorder
+discontinued,http://dbpedia.org/ontology/discontinued
+country,http://dbpedia.org/ontology/country
+genre,http://dbpedia.org/property/genre
+industry,http://dbpedia.org/property/industry
+right,http://dbpedia.org/property/right
+author-link,http://dbpedia.org/property/authorLink
+South,http://dbpedia.org/property/south
+sr 0-6 years,http://dbpedia.org/property/sr06Years
+2011 land area,http://dbpedia.org/property/2011LandArea
+total source,http://dbpedia.org/property/totalSource
+birth,http://dbpedia.org/property/birth
+area (km2),http://dbpedia.org/ontology/PopulatedPlace/area
+linglist,http://dbpedia.org/property/linglist
+thumbnail,http://dbpedia.org/ontology/thumbnail
+photo,http://dbpedia.org/property/photo
+potassium mg,http://dbpedia.org/property/potassiumMg
+root,http://dbpedia.org/property/root
+distributor,http://dbpedia.org/property/distributor
+iron,http://dbpedia.org/property/iron
+culture,http://dbpedia.org/property/culture
+off reserve,http://dbpedia.org/property/offReserve
+iwi name,http://dbpedia.org/property/iwiName
+family,http://dbpedia.org/property/family
+2006 access date,http://dbpedia.org/property/2006AccessDate
+stat ref,http://dbpedia.org/property/statRef
+national anthem,http://dbpedia.org/property/nationalAnthem
+cWidth,http://dbpedia.org/property/cwidth
+age 0-14 years,http://dbpedia.org/property/age014Years
+sign,http://dbpedia.org/property/sign
+format,http://dbpedia.org/property/format
+manufacturer,http://dbpedia.org/property/manufacturer
+pinyin,http://dbpedia.org/property/pinyin
+leaderFunction,http://dbpedia.org/ontology/leaderFunction
+language,http://dbpedia.org/ontology/language
+populated states,http://dbpedia.org/property/populatedStates
+protein,http://dbpedia.org/property/protein
+division,http://dbpedia.org/property/division
+zh-dungan,http://dbpedia.org/property/zhDungan
+image skyline,http://dbpedia.org/property/imageSkyline
+logo,http://dbpedia.org/property/logo
+auto,http://dbpedia.org/property/auto
+West,http://dbpedia.org/property/west
+legal protection,http://dbpedia.org/property/legalProtection
+myr,http://dbpedia.org/property/myr
+location city,http://dbpedia.org/property/locationCity
+2011 access date,http://dbpedia.org/property/2011AccessDate
+on reserve,http://dbpedia.org/property/onReserve
+seal size,http://dbpedia.org/property/sealSize
+Criteria,http://dbpedia.org/property/criteria
+flag caption,http://dbpedia.org/property/flagCaption
+2006 mean hh income,http://dbpedia.org/property/2006MeanHhIncome
+volume,http://dbpedia.org/property/volume
+abv,http://dbpedia.org/property/abv
+total year,http://dbpedia.org/property/totalYear
+sodium mg,http://dbpedia.org/property/sodiumMg
+area total (m2),http://dbpedia.org/ontology/areaTotal
+elevation m,http://dbpedia.org/property/elevationM
+border-width,http://dbpedia.org/property/borderWidth
+sort,http://dbpedia.org/property/sort
+proof,http://dbpedia.org/property/proof
+seat type,http://dbpedia.org/property/seatType
+waka,http://dbpedia.org/property/waka
+kana,http://dbpedia.org/property/kana
+area land (m2),http://dbpedia.org/ontology/areaLand
+body,http://dbpedia.org/property/body
+currency,http://dbpedia.org/property/currency
+lat1 deg,http://dbpedia.org/property/lat1Deg
+separated from,http://dbpedia.org/property/separatedFrom
+mode,http://dbpedia.org/property/mode
+united tribes no.,http://dbpedia.org/property/unitedTribesNo.
+style,http://dbpedia.org/property/style
+Mandarin,http://dbpedia.org/property/mandarin
+salign,http://dbpedia.org/property/salign
+established title,http://dbpedia.org/property/establishedTitle
+page length (characters) of wiki page,http://dbpedia.org/ontology/wikiPageLength
+sat fat g,http://dbpedia.org/property/satFatG
+tgl,http://dbpedia.org/property/tgl
+Slogan,http://dbpedia.org/property/slogan
+protoname,http://dbpedia.org/property/protoname
+province,http://dbpedia.org/property/province
+metadata,http://dbpedia.org/property/metadata
+main classification,http://dbpedia.org/property/mainClassification
+total fat g,http://dbpedia.org/property/totalFatG
+life male,http://dbpedia.org/property/lifeMale
+wstitle,http://dbpedia.org/property/wstitle
+div ,http://dbpedia.org/property/div
+ref,http://dbpedia.org/property/ref
+unit pref,http://dbpedia.org/property/unitPref
+2006 median age f,http://dbpedia.org/property/2006MedianAgeF
+cc,http://dbpedia.org/property/cc
+value,http://dbpedia.org/property/value
+city,http://dbpedia.org/property/city
+calcium,http://dbpedia.org/property/calcium
+fmt,http://dbpedia.org/property/fmt
+tib,http://dbpedia.org/property/tib
+by,http://dbpedia.org/property/by
+calling code,http://dbpedia.org/property/callingCode
+mapalt,http://dbpedia.org/property/mapalt
+commons-search,http://dbpedia.org/property/commonsSearch
+policy,http://dbpedia.org/property/policy
+iso,http://dbpedia.org/property/iso
+scale,http://dbpedia.org/property/scale
+period,http://dbpedia.org/property/period
+error,http://dbpedia.org/property/error
+filename,http://dbpedia.org/property/filename
+related,http://dbpedia.org/property/related
+2006 median age m,http://dbpedia.org/property/2006MedianAgeM
+incumbent,http://dbpedia.org/property/incumbent
+ethnic group,http://dbpedia.org/ontology/ethnicGroup
+headerstyle,http://dbpedia.org/property/headerstyle
+voy-search,http://dbpedia.org/property/voySearch
+related groups,http://dbpedia.org/property/relatedGroups
+chief,http://dbpedia.org/property/chief
+df,http://dbpedia.org/property/df
+resides,http://dbpedia.org/property/resides
+distributor,http://dbpedia.org/ontology/distributor
+locmapin,http://dbpedia.org/property/locmapin
+romaji,http://dbpedia.org/property/romaji
+Centre,http://dbpedia.org/property/centre
+caption align,http://dbpedia.org/property/captionAlign
+background color,http://dbpedia.org/property/backgroundColor
+cy,http://dbpedia.org/property/cy
+variants,http://dbpedia.org/property/variants
+cholesterol mg,http://dbpedia.org/property/cholesterolMg
+political leader,http://dbpedia.org/ontology/politicalLeader
+postal code,http://dbpedia.org/property/postalCode
+extlinks,http://dbpedia.org/property/extlinks
+image flag,http://dbpedia.org/property/imageFlag
+2011 median age,http://dbpedia.org/property/2011MedianAge
+founded place,http://dbpedia.org/property/foundedPlace
+iwi location,http://dbpedia.org/property/iwiLocation
+side,http://dbpedia.org/property/side
+footnotes,http://dbpedia.org/property/footnotes
+abbr,http://dbpedia.org/property/abbr
+location country,http://dbpedia.org/property/locationCountry
+year,http://dbpedia.org/property/year
+y,http://dbpedia.org/property/y
+x,http://dbpedia.org/property/x
+vit c,http://dbpedia.org/property/vitC
+vit a,http://dbpedia.org/property/vitA
+lat2 deg,http://dbpedia.org/property/lat2Deg
+genealogy,http://dbpedia.org/property/genealogy
+id,http://dbpedia.org/property/id
+language,http://dbpedia.org/property/language
+WHS,http://dbpedia.org/property/whs
+isoexception,http://dbpedia.org/property/isoexception
+img ,http://dbpedia.org/property/img
+includes,http://dbpedia.org/property/includes
+Link from a Wikipage to a Wikipage in a different language about the same or a related subject.,http://dbpedia.org/ontology/wikiPageInterLanguageLink
+reserve,http://dbpedia.org/property/reserve
+portal,http://dbpedia.org/property/portal
+fossil range,http://dbpedia.org/property/fossilRange
+year start,http://dbpedia.org/property/yearStart
+captionstyle,http://dbpedia.org/property/captionstyle
+hp,http://dbpedia.org/property/hp
+sugars,http://dbpedia.org/property/sugars
+below,http://dbpedia.org/property/below
+authority,http://dbpedia.org/property/authority
+states,http://dbpedia.org/property/states
+number,http://dbpedia.org/property/number
+float,http://dbpedia.org/property/float
+altname,http://dbpedia.org/property/altname
+month,http://dbpedia.org/property/month
+product,http://dbpedia.org/ontology/product
+map alt,http://dbpedia.org/property/mapAlt
+parts,http://dbpedia.org/property/parts
+flag p,http://dbpedia.org/property/flagP
+tradchi,http://dbpedia.org/property/tradchi
+flag s,http://dbpedia.org/property/flagS
+cal from fat,http://dbpedia.org/property/calFromFat
+tstyle,http://dbpedia.org/property/tstyle
+sure,http://dbpedia.org/property/sure
+vie,http://dbpedia.org/property/vie
+population density km,http://dbpedia.org/property/populationDensityKm
+notice,http://dbpedia.org/property/notice
+length,http://dbpedia.org/property/length
+Wikipage revision ID,http://dbpedia.org/ontology/wikiPageRevisionID
+header,http://dbpedia.org/property/header
+fix,http://dbpedia.org/property/fix
+taxon,http://dbpedia.org/property/taxon
+map size,http://dbpedia.org/property/mapSize
+area total sq mi,http://dbpedia.org/property/areaTotalSqMi
+size,http://dbpedia.org/property/size
+gd,http://dbpedia.org/property/gd
+image map,http://dbpedia.org/property/imageMap
+website,http://dbpedia.org/property/website
+government type,http://dbpedia.org/property/governmentType
+conventional long name,http://dbpedia.org/property/conventionalLongName
+audio,http://dbpedia.org/property/audio
+East Turkic,http://dbpedia.org/property/eastTurkic
+founding year,http://dbpedia.org/ontology/foundingYear
+caste name in local,http://dbpedia.org/property/casteNameInLocal
+left,http://dbpedia.org/property/left
+pop year,http://dbpedia.org/property/popYear
+indent,http://dbpedia.org/property/indent
+size of population,http://dbpedia.org/property/sizeOfPopulation
+origins,http://dbpedia.org/property/origins
+2016 total pvt dwell,http://dbpedia.org/property/2016TotalPvtDwell
+imagewidth,http://dbpedia.org/property/imagewidth
+leader title,http://dbpedia.org/property/leaderTitle
+ethnic groups,http://dbpedia.org/property/ethnicGroups
+japanesetext,http://dbpedia.org/property/japanesetext
+part,http://dbpedia.org/property/part
+link,http://dbpedia.org/property/link
+fiber g,http://dbpedia.org/property/fiberG
+East,http://dbpedia.org/property/east
+hn,http://dbpedia.org/property/hn
+group,http://dbpedia.org/property/group
+2016 pop delta,http://dbpedia.org/property/2016PopDelta
+characters,http://dbpedia.org/property/characters
+philosophies,http://dbpedia.org/property/philosophies
+cyrillic,http://dbpedia.org/property/cyrillic
+titles,http://dbpedia.org/property/titles
+d,http://dbpedia.org/property/d
+div name,http://dbpedia.org/property/divName
+first,http://dbpedia.org/property/first
+F,http://dbpedia.org/property/f
+A,http://dbpedia.org/property/a
+c,http://dbpedia.org/property/c
+b,http://dbpedia.org/property/b
+parts type,http://dbpedia.org/property/partsType
+m,http://dbpedia.org/property/m
+l,http://dbpedia.org/property/l
+n,http://dbpedia.org/property/n
+title leader,http://dbpedia.org/property/titleLeader
+H,http://dbpedia.org/property/h
+j,http://dbpedia.org/property/j
+area land sq mi,http://dbpedia.org/property/areaLandSqMi
+footer,http://dbpedia.org/property/footer
+t,http://dbpedia.org/property/t
+w,http://dbpedia.org/property/w
+age 15-64 years,http://dbpedia.org/property/age1564Years
+v,http://dbpedia.org/property/v
+species,http://dbpedia.org/property/species
+gr,http://dbpedia.org/property/gr
+q,http://dbpedia.org/property/q
+p,http://dbpedia.org/property/p
+spoken,http://dbpedia.org/property/spoken
+founding year,http://dbpedia.org/property/foundingYear
+s,http://dbpedia.org/property/s
+zoom,http://dbpedia.org/property/zoom
+teo,http://dbpedia.org/property/teo
+hanja,http://dbpedia.org/property/hanja
+r,http://dbpedia.org/property/r
+fontsize,http://dbpedia.org/property/fontsize
+mr,http://dbpedia.org/property/mr
+2006 median age,http://dbpedia.org/property/2006MedianAge
+width,http://dbpedia.org/property/width
+colour,http://dbpedia.org/property/colour
+hangul,http://dbpedia.org/property/hangul
+context,http://dbpedia.org/property/context
+MC,http://dbpedia.org/property/mc
+cover,http://dbpedia.org/property/cover
+founded date,http://dbpedia.org/property/foundedDate
+talk,http://dbpedia.org/property/talk
+about,http://dbpedia.org/property/about
+governing body,http://dbpedia.org/property/governingBody
+on other land,http://dbpedia.org/property/onOtherLand
+# servings,http://dbpedia.org/property/%23Servings
+blank name,http://dbpedia.org/property/blankName
+no,http://dbpedia.org/property/no
+Post,http://dbpedia.org/property/post
+event start,http://dbpedia.org/property/eventStart
+predecessor,http://dbpedia.org/property/predecessor
+romanization,http://dbpedia.org/property/romanization
+2006 total pvt dwell usual,http://dbpedia.org/property/2006TotalPvtDwellUsual
+area,http://dbpedia.org/property/area
+above,http://dbpedia.org/property/above
+incumbentsince,http://dbpedia.org/property/incumbentsince
+trans,http://dbpedia.org/property/trans
+membership,http://dbpedia.org/property/membership
+partof,http://dbpedia.org/property/partof
+sr 65 years over,http://dbpedia.org/property/sr65YearsOver
+List ,http://dbpedia.org/property/list
+photo caption,http://dbpedia.org/property/photoCaption
+author,http://dbpedia.org/property/author
+MY,http://dbpedia.org/property/my
+border,http://dbpedia.org/property/border
+mw,http://dbpedia.org/property/mw
+publisher,http://dbpedia.org/property/publisher
+color,http://dbpedia.org/property/color
+year end,http://dbpedia.org/property/yearEnd
+liststyle,http://dbpedia.org/property/liststyle
+bodyclass,http://dbpedia.org/property/bodyclass
+associated terms,http://dbpedia.org/property/associatedTerms
+2016 pop density,http://dbpedia.org/property/2016PopDensity
+titlebar,http://dbpedia.org/property/titlebar
+nativename,http://dbpedia.org/property/nativename
+term,http://dbpedia.org/property/term
+label,http://dbpedia.org/property/label
+parts style,http://dbpedia.org/property/partsStyle
+groupstyle,http://dbpedia.org/property/groupstyle
+populace,http://dbpedia.org/property/populace
+msa,http://dbpedia.org/property/msa
+2006 population,http://dbpedia.org/property/2006Population
+colwidth,http://dbpedia.org/property/colwidth
+country code,http://dbpedia.org/ontology/countryCode
+meaning,http://dbpedia.org/property/meaning
+band name,http://dbpedia.org/property/bandName
+2011 median age f,http://dbpedia.org/property/2011MedianAgeF
+owner,http://dbpedia.org/property/owner
+homepage,http://dbpedia.org/property/homepage
+band number,http://dbpedia.org/property/bandNumber
+common languages,http://dbpedia.org/property/commonLanguages
+label type,http://dbpedia.org/property/labelType
+lat3 deg,http://dbpedia.org/property/lat3Deg
+title bar,http://dbpedia.org/property/titleBar
+area total (km2),http://dbpedia.org/ontology/PopulatedPlace/areaTotal
+marksize,http://dbpedia.org/property/marksize
+2011 median age m,http://dbpedia.org/property/2011MedianAgeM
+2016 median age,http://dbpedia.org/property/2016MedianAge
+tablehdr,http://dbpedia.org/property/tablehdr
+native name,http://dbpedia.org/property/nativeName
+area land km,http://dbpedia.org/property/areaLandKm
+onlinebooks,http://dbpedia.org/property/onlinebooks
+orientation,http://dbpedia.org/property/orientation
+bSize,http://dbpedia.org/property/bsize
+life female,http://dbpedia.org/property/lifeFemale
+quote,http://dbpedia.org/property/quote
+pushpin map caption,http://dbpedia.org/property/pushpinMapCaption
+title,http://dbpedia.org/property/title
+subdivision name,http://dbpedia.org/property/subdivisionName

@@ -1,0 +1,829 @@
+Jul precipitation days,http://dbpedia.org/property/julPrecipitationDays
+Oct record high F,http://dbpedia.org/property/octRecordHighF
+Oct record high C,http://dbpedia.org/property/octRecordHighC
+Apr record high F,http://dbpedia.org/property/aprRecordHighF
+management,http://dbpedia.org/ontology/management
+Jul avg record low F,http://dbpedia.org/property/julAvgRecordLowF
+Apr record high C,http://dbpedia.org/property/aprRecordHighC
+Nov snow cm,http://dbpedia.org/property/novSnowCm
+Apr snow cm,http://dbpedia.org/property/aprSnowCm
+Aug mean C,http://dbpedia.org/property/augMeanC
+id type,http://dbpedia.org/property/idType
+Aug mean F,http://dbpedia.org/property/augMeanF
+cost ($),http://dbpedia.org/ontology/cost
+May rain mm,http://dbpedia.org/property/mayRainMm
+iucn category,http://dbpedia.org/property/iucnCategory
+designation1 criteria,http://dbpedia.org/property/designation1Criteria
+lon deg,http://dbpedia.org/property/lonDeg
+etymology,http://dbpedia.org/property/etymology
+Feb humidity,http://dbpedia.org/property/febHumidity
+res capacity inactive,http://dbpedia.org/property/resCapacityInactive
+length orientation,http://dbpedia.org/property/lengthOrientation
+province,http://dbpedia.org/ontology/province
+position,http://dbpedia.org/property/position
+May rain days,http://dbpedia.org/property/mayRainDays
+RR,http://dbpedia.org/property/rr
+bridge signs,http://dbpedia.org/property/bridgeSigns
+labels,http://dbpedia.org/property/labels
+plant capacity factor,http://dbpedia.org/property/plantCapacityFactor
+Feb precipitation inch,http://dbpedia.org/property/febPrecipitationInch
+upstream,http://dbpedia.org/property/upstream
+labela,http://dbpedia.org/property/labela
+article,http://dbpedia.org/property/article
+native name lang,http://dbpedia.org/property/nativeNameLang
+labelb,http://dbpedia.org/property/labelb
+year high C,http://dbpedia.org/property/yearHighC
+year high F,http://dbpedia.org/property/yearHighF
+Jun snow cm,http://dbpedia.org/property/junSnowCm
+mini-height,http://dbpedia.org/property/miniHeight
+Jan high F,http://dbpedia.org/property/janHighF
+Jan snow inch,http://dbpedia.org/property/janSnowInch
+nickname,http://dbpedia.org/property/nickname
+Jan high C,http://dbpedia.org/property/janHighC
+plant decommission,http://dbpedia.org/property/plantDecommission
+pushpin label,http://dbpedia.org/property/pushpinLabel
+elevation min point,http://dbpedia.org/property/elevationMinPoint
+established,http://dbpedia.org/property/established
+lon2 dir,http://dbpedia.org/property/lon2Dir
+Apr precipitation days,http://dbpedia.org/property/aprPrecipitationDays
+collapsed,http://dbpedia.org/property/collapsed
+os grid reference,http://dbpedia.org/property/osGridReference
+Dec precipitation inch,http://dbpedia.org/property/decPrecipitationInch
+pushpin relief,http://dbpedia.org/property/pushpinRelief
+plant capacity,http://dbpedia.org/property/plantCapacity
+map type,http://dbpedia.org/property/mapType
+image width,http://dbpedia.org/property/imageWidth
+May snow inch,http://dbpedia.org/property/maySnowInch
+architecture,http://dbpedia.org/property/architecture
+lower res capacity total,http://dbpedia.org/property/lowerResCapacityTotal
+year snow days,http://dbpedia.org/property/yearSnowDays
+May avg record high F,http://dbpedia.org/property/mayAvgRecordHighF
+depth,http://dbpedia.org/property/depth
+Jul mean F,http://dbpedia.org/property/julMeanF
+max-depth,http://dbpedia.org/property/maxDepth
+Jul mean C,http://dbpedia.org/property/julMeanC
+Jun avg record low F,http://dbpedia.org/property/junAvgRecordLowF
+Aug rain mm,http://dbpedia.org/property/augRainMm
+scalemark,http://dbpedia.org/property/scalemark
+Feb low F,http://dbpedia.org/property/febLowF
+subdivision type,http://dbpedia.org/property/subdivisionType
+displaymap,http://dbpedia.org/property/displaymap
+lower spillway capacity,http://dbpedia.org/property/lowerSpillwayCapacity
+operator,http://dbpedia.org/ontology/operator
+Feb low C,http://dbpedia.org/property/febLowC
+Oct rain days,http://dbpedia.org/property/octRainDays
+Aug precipitation days,http://dbpedia.org/property/augPrecipitationDays
+Oct snow inch,http://dbpedia.org/property/octSnowInch
+Dec high C,http://dbpedia.org/property/decHighC
+countries,http://dbpedia.org/property/countries
+Sep avg record low F,http://dbpedia.org/property/sepAvgRecordLowF
+Dec high F,http://dbpedia.org/property/decHighF
+plant type,http://dbpedia.org/property/plantType
+Jan avg record low F,http://dbpedia.org/property/janAvgRecordLowF
+capacity factor,http://dbpedia.org/ontology/capacityFactor
+subdivision,http://dbpedia.org/ontology/subdivision
+caption,http://dbpedia.org/property/caption
+Habitat,http://dbpedia.org/property/habitat
+demolished,http://dbpedia.org/property/demolished
+res max width,http://dbpedia.org/property/resMaxWidth
+image caption,http://dbpedia.org/property/imageCaption
+extra,http://dbpedia.org/property/extra
+lon2 deg,http://dbpedia.org/property/lon2Deg
+type,http://dbpedia.org/ontology/type
+height,http://dbpedia.org/property/height
+Oct rain mm,http://dbpedia.org/property/octRainMm
+dam length,http://dbpedia.org/property/damLength
+island,http://dbpedia.org/ontology/island
+location,http://dbpedia.org/ontology/location
+area of catchment (m2),http://dbpedia.org/ontology/areaOfCatchment
+tp,http://dbpedia.org/property/tp
+reason,http://dbpedia.org/property/reason
+pushpin map,http://dbpedia.org/property/pushpinMap
+before,http://dbpedia.org/property/before
+Jul rain mm,http://dbpedia.org/property/julRainMm
+Nov avg record high F,http://dbpedia.org/property/novAvgRecordHighF
+perrow,http://dbpedia.org/property/perrow
+Jun low F,http://dbpedia.org/property/junLowF
+Oct low F,http://dbpedia.org/property/octLowF
+Jun record high C,http://dbpedia.org/property/junRecordHighC
+Jun low C,http://dbpedia.org/property/junLowC
+Jun record high F,http://dbpedia.org/property/junRecordHighF
+refs,http://dbpedia.org/property/refs
+Aug snow inch,http://dbpedia.org/property/augSnowInch
+commonscat,http://dbpedia.org/property/commonscat
+Link from a Wikipage to another Wikipage,http://dbpedia.org/ontology/wikiPageWikiLink
+Oct low C,http://dbpedia.org/property/octLowC
+Dec dew point F,http://dbpedia.org/property/decDewPointF
+bot,http://dbpedia.org/property/bot
+plant commission,http://dbpedia.org/property/plantCommission
+ps units cancelled,http://dbpedia.org/property/psUnitsCancelled
+label-pos,http://dbpedia.org/property/labelPos
+Feb snow cm,http://dbpedia.org/property/febSnowCm
+Apr rain days,http://dbpedia.org/property/aprRainDays
+np reactor type,http://dbpedia.org/property/npReactorType
+building type,http://dbpedia.org/property/buildingType
+population density sq mi,http://dbpedia.org/property/populationDensitySqMi
+topic,http://dbpedia.org/property/topic
+mini-file,http://dbpedia.org/property/miniFile
+Jan record high F,http://dbpedia.org/property/janRecordHighF
+original name,http://dbpedia.org/ontology/originalName
+Jan record high C,http://dbpedia.org/property/janRecordHighC
+Jun precipitation inch,http://dbpedia.org/property/junPrecipitationInch
+plant pumpgenerators,http://dbpedia.org/property/plantPumpgenerators
+designation,http://dbpedia.org/property/designation
+fetchwikidata,http://dbpedia.org/property/fetchwikidata
+th fuel secondary,http://dbpedia.org/property/thFuelSecondary
+visitation num,http://dbpedia.org/property/visitationNum
+building end year,http://dbpedia.org/ontology/buildingEndYear
+res capacity active,http://dbpedia.org/property/resCapacityActive
+embedded,http://dbpedia.org/property/embedded
+settlement type,http://dbpedia.org/property/settlementType
+nightskiing,http://dbpedia.org/property/nightskiing
+Jun high C,http://dbpedia.org/property/junHighC
+Jun high F,http://dbpedia.org/property/junHighF
+Jan precipitation days,http://dbpedia.org/property/janPrecipitationDays
+relief,http://dbpedia.org/property/relief
+Dec precipitation mm,http://dbpedia.org/property/decPrecipitationMm
+basin countries,http://dbpedia.org/property/basinCountries
+location map caption,http://dbpedia.org/property/locationMapCaption
+population,http://dbpedia.org/property/population
+Feb mean C,http://dbpedia.org/property/febMeanC
+Jul rain inch,http://dbpedia.org/property/julRainInch
+Feb mean F,http://dbpedia.org/property/febMeanF
+Sep precipitation days,http://dbpedia.org/property/sepPrecipitationDays
+background,http://dbpedia.org/property/background
+markersize,http://dbpedia.org/property/markersize
+dam type,http://dbpedia.org/property/damType
+Jul snow days,http://dbpedia.org/property/julSnowDays
+agency,http://dbpedia.org/property/agency
+designation1 type,http://dbpedia.org/property/designation1Type
+direction,http://dbpedia.org/property/direction
+Mar low C,http://dbpedia.org/property/marLowC
+Oct precipitation inch,http://dbpedia.org/property/octPrecipitationInch
+state,http://dbpedia.org/property/state
+Feb rain mm,http://dbpedia.org/property/febRainMm
+lon dir,http://dbpedia.org/property/lonDir
+Mar low F,http://dbpedia.org/property/marLowF
+last,http://dbpedia.org/property/last
+name,http://dbpedia.org/property/name
+url,http://dbpedia.org/property/url
+other name,http://dbpedia.org/property/otherName
+video,http://dbpedia.org/property/video
+Southeast,http://dbpedia.org/property/southeast
+average annual gross power generation (J),http://dbpedia.org/ontology/averageAnnualGeneration
+bgcolor,http://dbpedia.org/property/bgcolor
+Jul humidity,http://dbpedia.org/property/julHumidity
+vertical,http://dbpedia.org/property/vertical
+IMDB id,http://dbpedia.org/ontology/imdbId
+interest,http://dbpedia.org/property/interest
+created,http://dbpedia.org/property/created
+Mar precipitation inch,http://dbpedia.org/property/marPrecipitationInch
+mark-description,http://dbpedia.org/property/markDescription
+tablewidth,http://dbpedia.org/property/tablewidth
+lon sec,http://dbpedia.org/property/lonSec
+Jan dew point F,http://dbpedia.org/property/janDewPointF
+shape-color,http://dbpedia.org/property/shapeColor
+alternative name,http://dbpedia.org/ontology/alternativeName
+opened date,http://dbpedia.org/property/openedDate
+designation2 date,http://dbpedia.org/property/designation2Date
+start,http://dbpedia.org/property/start
+Wikipage page ID,http://dbpedia.org/ontology/wikiPageID
+builder,http://dbpedia.org/ontology/builder
+purpose,http://dbpedia.org/property/purpose
+mark2size,http://dbpedia.org/property/mark2size
+construction,http://dbpedia.org/property/construction
+Installed Capacity,http://dbpedia.org/property/installedCapacity
+volume (μ³),http://dbpedia.org/ontology/volume
+plant coordinates,http://dbpedia.org/property/plantCoordinates
+Apr snow inch,http://dbpedia.org/property/aprSnowInch
+shore,http://dbpedia.org/property/shore
+elevation max point,http://dbpedia.org/property/elevationMaxPoint
+toll,http://dbpedia.org/property/toll
+Dec snow cm,http://dbpedia.org/property/decSnowCm
+upstream signs,http://dbpedia.org/property/upstreamSigns
+ps electrical cap fac,http://dbpedia.org/property/psElectricalCapFac
+image-left,http://dbpedia.org/property/imageLeft
+Location,http://dbpedia.org/property/location
+ps units decommissioned,http://dbpedia.org/property/psUnitsDecommissioned
+designation1 date,http://dbpedia.org/property/designation1Date
+country,http://dbpedia.org/property/country
+image size,http://dbpedia.org/property/imageSize
+image,http://dbpedia.org/property/image
+Sep snow days,http://dbpedia.org/property/sepSnowDays
+purpose,http://dbpedia.org/ontology/purpose
+Aug humidity,http://dbpedia.org/property/augHumidity
+year precipitation inch,http://dbpedia.org/property/yearPrecipitationInch
+res max depth,http://dbpedia.org/property/resMaxDepth
+Jan mean C,http://dbpedia.org/property/janMeanC
+Sep avg record high F,http://dbpedia.org/property/sepAvgRecordHighF
+year mean F,http://dbpedia.org/property/yearMeanF
+Dec avg record low F,http://dbpedia.org/property/decAvgRecordLowF
+Nov precipitation inch,http://dbpedia.org/property/novPrecipitationInch
+year mean C,http://dbpedia.org/property/yearMeanC
+Apr precipitation mm,http://dbpedia.org/property/aprPrecipitationMm
+map caption,http://dbpedia.org/property/mapCaption
+vastest lake,http://dbpedia.org/ontology/lake
+Dec low F,http://dbpedia.org/property/decLowF
+Sep precipitation mm,http://dbpedia.org/property/sepPrecipitationMm
+Dec rain inch,http://dbpedia.org/property/decRainInch
+country,http://dbpedia.org/ontology/country
+frozen,http://dbpedia.org/ontology/frozen
+lower dam crosses,http://dbpedia.org/property/lowerDamCrosses
+Dec low C,http://dbpedia.org/property/decLowC
+South,http://dbpedia.org/property/south
+label-offset-x,http://dbpedia.org/property/labelOffsetX
+height (μ),http://dbpedia.org/ontology/height
+Dec snow inch,http://dbpedia.org/property/decSnowInch
+river,http://dbpedia.org/property/river
+Nov dew point F,http://dbpedia.org/property/novDewPointF
+May avg record low F,http://dbpedia.org/property/mayAvgRecordLowF
+owner,http://dbpedia.org/ontology/owner
+locale,http://dbpedia.org/property/locale
+Feb precipitation mm,http://dbpedia.org/property/febPrecipitationMm
+dno,http://dbpedia.org/property/dno
+maximum elevation (μ),http://dbpedia.org/ontology/maximumElevation
+region,http://dbpedia.org/ontology/region
+Jul high C,http://dbpedia.org/property/julHighC
+Jul high F,http://dbpedia.org/property/julHighF
+Nov mean F,http://dbpedia.org/property/novMeanF
+zh-dungan,http://dbpedia.org/property/zhDungan
+Feb dew point F,http://dbpedia.org/property/febDewPointF
+lon2 min,http://dbpedia.org/property/lon2Min
+Nov mean C,http://dbpedia.org/property/novMeanC
+Nov record low F,http://dbpedia.org/property/novRecordLowF
+West,http://dbpedia.org/property/west
+lake type,http://dbpedia.org/property/lakeType
+res name,http://dbpedia.org/property/resName
+date-flooded,http://dbpedia.org/property/dateFlooded
+Sep humidity,http://dbpedia.org/property/sepHumidity
+clearance,http://dbpedia.org/property/clearance
+nrhp type,http://dbpedia.org/property/nrhpType
+label-color,http://dbpedia.org/property/labelColor
+Oct mean F,http://dbpedia.org/property/octMeanF
+Dec record low C,http://dbpedia.org/property/decRecordLowC
+year rain mm,http://dbpedia.org/property/yearRainMm
+volume,http://dbpedia.org/property/volume
+crosses,http://dbpedia.org/property/crosses
+area total (m2),http://dbpedia.org/ontology/areaTotal
+Dec record low F,http://dbpedia.org/property/decRecordLowF
+Jun rain mm,http://dbpedia.org/property/junRainMm
+May precipitation mm,http://dbpedia.org/property/mayPrecipitationMm
+Sep mean F,http://dbpedia.org/property/sepMeanF
+opened,http://dbpedia.org/property/opened
+Nov record low C,http://dbpedia.org/property/novRecordLowC
+Sep mean C,http://dbpedia.org/property/sepMeanC
+Oct mean C,http://dbpedia.org/property/octMeanC
+city,http://dbpedia.org/ontology/city
+downstream signs,http://dbpedia.org/property/downstreamSigns
+Nov snow inch,http://dbpedia.org/property/novSnowInch
+Sep rain days,http://dbpedia.org/property/sepRainDays
+value,http://dbpedia.org/property/value
+city,http://dbpedia.org/property/city
+mark-title,http://dbpedia.org/property/markTitle
+Jan mean F,http://dbpedia.org/property/janMeanF
+fmt,http://dbpedia.org/property/fmt
+ps units uc,http://dbpedia.org/property/psUnitsUc
+maint,http://dbpedia.org/property/maint
+state type,http://dbpedia.org/property/stateType
+unit snow days,http://dbpedia.org/property/unitSnowDays
+May precipitation days,http://dbpedia.org/property/mayPrecipitationDays
+headerstyle,http://dbpedia.org/property/headerstyle
+Jan precipitation mm,http://dbpedia.org/property/janPrecipitationMm
+Northeast,http://dbpedia.org/property/northeast
+Centre,http://dbpedia.org/property/centre
+caption align,http://dbpedia.org/property/captionAlign
+date-built,http://dbpedia.org/property/dateBuilt
+through,http://dbpedia.org/property/through
+spillway length,http://dbpedia.org/property/spillwayLength
+mpsub,http://dbpedia.org/property/mpsub
+precipitation colour,http://dbpedia.org/property/precipitationColour
+location country,http://dbpedia.org/property/locationCountry
+year,http://dbpedia.org/property/year
+th fuel primary,http://dbpedia.org/property/thFuelPrimary
+Aug rain days,http://dbpedia.org/property/augRainDays
+Jan humidity,http://dbpedia.org/property/janHumidity
+Apr dew point F,http://dbpedia.org/property/aprDewPointF
+Nov rain inch,http://dbpedia.org/property/novRainInch
+label size,http://dbpedia.org/property/labelSize
+alt bathymetry,http://dbpedia.org/property/altBathymetry
+opening date,http://dbpedia.org/ontology/openingDate
+designation2 offname,http://dbpedia.org/property/designation2Offname
+float,http://dbpedia.org/property/float
+Jun snow inch,http://dbpedia.org/property/junSnowInch
+camp sites,http://dbpedia.org/property/campSites
+maximum temperature (K),http://dbpedia.org/ontology/maximumTemperature
+length km,http://dbpedia.org/property/lengthKm
+outflow,http://dbpedia.org/ontology/outflow
+length mi,http://dbpedia.org/property/lengthMi
+May mean C,http://dbpedia.org/property/mayMeanC
+lower res name,http://dbpedia.org/property/lowerResName
+Wikipage revision ID,http://dbpedia.org/ontology/wikiPageRevisionID
+May mean F,http://dbpedia.org/property/mayMeanF
+sections,http://dbpedia.org/property/sections
+Feb rain days,http://dbpedia.org/property/febRainDays
+website,http://dbpedia.org/property/website
+image map,http://dbpedia.org/property/imageMap
+traffic,http://dbpedia.org/property/traffic
+Mar mean C,http://dbpedia.org/property/marMeanC
+bridge carries,http://dbpedia.org/ontology/bridgeCarries
+Mar mean F,http://dbpedia.org/property/marMeanF
+link,http://dbpedia.org/property/link
+Mar snow inch,http://dbpedia.org/property/marSnowInch
+location map relief,http://dbpedia.org/property/locationMapRelief
+startwork,http://dbpedia.org/property/startwork
+May record high C,http://dbpedia.org/property/mayRecordHighC
+May record high F,http://dbpedia.org/property/mayRecordHighF
+first,http://dbpedia.org/property/first
+plant annual gen year,http://dbpedia.org/property/plantAnnualGenYear
+cost,http://dbpedia.org/property/cost
+Feb snow days,http://dbpedia.org/property/febSnowDays
+spillway type,http://dbpedia.org/property/spillwayType
+district type,http://dbpedia.org/property/districtType
+May dew point F,http://dbpedia.org/property/mayDewPointF
+shire county,http://dbpedia.org/property/shireCounty
+species,http://dbpedia.org/property/species
+area sqmi,http://dbpedia.org/property/areaSqmi
+Aug record high F,http://dbpedia.org/property/augRecordHighF
+annot-font-size,http://dbpedia.org/property/annotFontSize
+lon,http://dbpedia.org/property/lon
+Jul snow cm,http://dbpedia.org/property/julSnowCm
+minipog-y,http://dbpedia.org/property/minipogY
+Aug record high C,http://dbpedia.org/property/augRecordHighC
+Sep record low C,http://dbpedia.org/property/sepRecordLowC
+Other info,http://dbpedia.org/property/otherInfo
+dwgs,http://dbpedia.org/property/dwgs
+Sep record low F,http://dbpedia.org/property/sepRecordLowF
+Oct high F,http://dbpedia.org/property/octHighF
+datastyle,http://dbpedia.org/property/datastyle
+Oct avg record high F,http://dbpedia.org/property/octAvgRecordHighF
+length (μ),http://dbpedia.org/ontology/length
+area,http://dbpedia.org/property/area
+rain colour,http://dbpedia.org/property/rainColour
+above,http://dbpedia.org/property/above
+Oct high C,http://dbpedia.org/property/octHighC
+Oct record low C,http://dbpedia.org/property/octRecordLowC
+minipog-x,http://dbpedia.org/property/minipogX
+Oct record low F,http://dbpedia.org/property/octRecordLowF
+map image,http://dbpedia.org/property/mapImage
+photo caption,http://dbpedia.org/property/photoCaption
+year rain inch,http://dbpedia.org/property/yearRainInch
+author,http://dbpedia.org/property/author
+inflow,http://dbpedia.org/property/inflow
+opening year,http://dbpedia.org/ontology/openingYear
+res catchment,http://dbpedia.org/property/resCatchment
+dam,http://dbpedia.org/property/dam
+opening,http://dbpedia.org/property/opening
+spillway count,http://dbpedia.org/property/spillwayCount
+pos x,http://dbpedia.org/property/posX
+pos y,http://dbpedia.org/property/posY
+construction began,http://dbpedia.org/property/constructionBegan
+Dec avg record high F,http://dbpedia.org/property/decAvgRecordHighF
+ps cooling source,http://dbpedia.org/property/psCoolingSource
+name other,http://dbpedia.org/property/nameOther
+Jan rain days,http://dbpedia.org/property/janRainDays
+num,http://dbpedia.org/property/num
+year snow cm,http://dbpedia.org/property/yearSnowCm
+material,http://dbpedia.org/property/material
+colwidth,http://dbpedia.org/property/colwidth
+photos,http://dbpedia.org/property/photos
+owner,http://dbpedia.org/property/owner
+caption map,http://dbpedia.org/property/captionMap
+collections,http://dbpedia.org/property/collections
+river,http://dbpedia.org/ontology/river
+Mar rain inch,http://dbpedia.org/property/marRainInch
+needs,http://dbpedia.org/property/needs
+marksize,http://dbpedia.org/property/marksize
+nearest city,http://dbpedia.org/property/nearestCity
+native name,http://dbpedia.org/property/nativeName
+pushpin map caption,http://dbpedia.org/property/pushpinMapCaption
+Jun rain inch,http://dbpedia.org/property/junRainInch
+title,http://dbpedia.org/property/title
+Dec rain mm,http://dbpedia.org/property/decRainMm
+dam elevation crest,http://dbpedia.org/property/damElevationCrest
+subdivision name,http://dbpedia.org/property/subdivisionName
+type,http://dbpedia.org/property/type
+plant efficiency,http://dbpedia.org/property/plantEfficiency
+reference,http://dbpedia.org/property/reference
+align,http://dbpedia.org/property/align
+Feb record high C,http://dbpedia.org/property/febRecordHighC
+plant turbines,http://dbpedia.org/property/plantTurbines
+Jan avg record high F,http://dbpedia.org/property/janAvgRecordHighF
+frozen,http://dbpedia.org/property/frozen
+May snow days,http://dbpedia.org/property/maySnowDays
+Feb record high F,http://dbpedia.org/property/febRecordHighF
+coordinates,http://dbpedia.org/property/coordinates
+Jun dew point F,http://dbpedia.org/property/junDewPointF
+pages,http://dbpedia.org/property/pages
+legend,http://dbpedia.org/property/legend
+enref,http://dbpedia.org/property/enref
+Jan record low C,http://dbpedia.org/property/janRecordLowC
+is part of,http://dbpedia.org/ontology/isPartOf
+Jul precipitation inch,http://dbpedia.org/property/julPrecipitationInch
+year avg record high F,http://dbpedia.org/property/yearAvgRecordHighF
+Jan rain inch,http://dbpedia.org/property/janRainInch
+total width,http://dbpedia.org/property/totalWidth
+Jan record low F,http://dbpedia.org/property/janRecordLowF
+length (km),http://dbpedia.org/ontology/Infrastructure/length
+part,http://dbpedia.org/ontology/part
+accessdate,http://dbpedia.org/property/accessdate
+closing date,http://dbpedia.org/ontology/closingDate
+towns,http://dbpedia.org/property/towns
+ps thermal capacity,http://dbpedia.org/property/psThermalCapacity
+islands,http://dbpedia.org/property/islands
+bridge,http://dbpedia.org/property/bridge
+Feb precipitation days,http://dbpedia.org/property/febPrecipitationDays
+Mar precipitation mm,http://dbpedia.org/property/marPrecipitationMm
+Apr mean C,http://dbpedia.org/property/aprMeanC
+description,http://dbpedia.org/ontology/description
+Apr mean F,http://dbpedia.org/property/aprMeanF
+hiking trails,http://dbpedia.org/property/hikingTrails
+lat min,http://dbpedia.org/property/latMin
+Dec precipitation days,http://dbpedia.org/property/decPrecipitationDays
+Oct snow days,http://dbpedia.org/property/octSnowDays
+Jul record high F,http://dbpedia.org/property/julRecordHighF
+Jan snow days,http://dbpedia.org/property/janSnowDays
+Apr precipitation inch,http://dbpedia.org/property/aprPrecipitationInch
+Jul record high C,http://dbpedia.org/property/julRecordHighC
+location map size,http://dbpedia.org/property/locationMapSize
+number trails,http://dbpedia.org/property/numberTrails
+certain,http://dbpedia.org/property/certain
+res max length,http://dbpedia.org/property/resMaxLength
+Aug low C,http://dbpedia.org/property/augLowC
+mark,http://dbpedia.org/property/mark
+Aug low F,http://dbpedia.org/property/augLowF
+year snow inch,http://dbpedia.org/property/yearSnowInch
+Southwest,http://dbpedia.org/property/southwest
+wikt,http://dbpedia.org/property/wikt
+Mar record low C,http://dbpedia.org/property/marRecordLowC
+Nov record high C,http://dbpedia.org/property/novRecordHighC
+Oct rain inch,http://dbpedia.org/property/octRainInch
+order,http://dbpedia.org/property/order
+dam height thalweg,http://dbpedia.org/property/damHeightThalweg
+pos,http://dbpedia.org/property/pos
+Nov record high F,http://dbpedia.org/property/novRecordHighF
+Nov low C,http://dbpedia.org/property/novLowC
+Nov low F,http://dbpedia.org/property/novLowF
+Mar avg record low F,http://dbpedia.org/property/marAvgRecordLowF
+data,http://dbpedia.org/property/data
+liftsystem,http://dbpedia.org/property/liftsystem
+poj,http://dbpedia.org/property/poj
+date,http://dbpedia.org/property/date
+Mar record low F,http://dbpedia.org/property/marRecordLowF
+source ,http://dbpedia.org/property/source
+nearest town,http://dbpedia.org/property/nearestTown
+Oct avg record low F,http://dbpedia.org/property/octAvgRecordLowF
+Aug precipitation inch,http://dbpedia.org/property/augPrecipitationInch
+Jul precipitation mm,http://dbpedia.org/property/julPrecipitationMm
+shape,http://dbpedia.org/property/shape
+formed by,http://dbpedia.org/property/formedBy
+publictransit,http://dbpedia.org/property/publictransit
+mapsize x,http://dbpedia.org/property/mapsizeX
+mapsize y,http://dbpedia.org/property/mapsizeY
+built,http://dbpedia.org/property/built
+description,http://dbpedia.org/property/description
+dam width crest,http://dbpedia.org/property/damWidthCrest
+notifydate,http://dbpedia.org/property/notifydate
+May low C,http://dbpedia.org/property/mayLowC
+May low F,http://dbpedia.org/property/mayLowF
+Mar rain mm,http://dbpedia.org/property/marRainMm
+official name,http://dbpedia.org/property/officialName
+pushpin map alt,http://dbpedia.org/property/pushpinMapAlt
+start year,http://dbpedia.org/property/startYear
+May rain inch,http://dbpedia.org/property/mayRainInch
+ecozone,http://dbpedia.org/property/ecozone
+pushpin label position,http://dbpedia.org/property/pushpinLabelPosition
+population as of,http://dbpedia.org/property/populationAsOf
+protected ref,http://dbpedia.org/property/protectedRef
+refnum,http://dbpedia.org/property/refnum
+spillway volumetric flow rate,http://dbpedia.org/property/spillwayVolumetricFlowRate
+Sep rain mm,http://dbpedia.org/property/sepRainMm
+engineer,http://dbpedia.org/ontology/engineer
+links,http://dbpedia.org/property/links
+shire district,http://dbpedia.org/property/shireDistrict
+Oct humidity,http://dbpedia.org/property/octHumidity
+year of construction,http://dbpedia.org/ontology/yearOfConstruction
+Oct dew point F,http://dbpedia.org/property/octDewPointF
+visitation year,http://dbpedia.org/property/visitationYear
+Feb avg record high F,http://dbpedia.org/property/febAvgRecordHighF
+building start date,http://dbpedia.org/ontology/buildingStartDate
+fix-attempted,http://dbpedia.org/property/fixAttempted
+flooding date,http://dbpedia.org/ontology/floodingDate
+designation1 number,http://dbpedia.org/property/designation1Number
+toggle,http://dbpedia.org/property/toggle
+Apr snow days,http://dbpedia.org/property/aprSnowDays
+Apr low F,http://dbpedia.org/property/aprLowF
+Apr low C,http://dbpedia.org/property/aprLowC
+shape-outline,http://dbpedia.org/property/shapeOutline
+unit precipitation days,http://dbpedia.org/property/unitPrecipitationDays
+pushpin mapsize,http://dbpedia.org/property/pushpinMapsize
+Aug snow days,http://dbpedia.org/property/augSnowDays
+dam height foundation,http://dbpedia.org/property/damHeightFoundation
+lower spillway count,http://dbpedia.org/property/lowerSpillwayCount
+piccap,http://dbpedia.org/property/piccap
+Mar high F,http://dbpedia.org/property/marHighF
+year dew point F,http://dbpedia.org/property/yearDewPointF
+elevation (μ),http://dbpedia.org/ontology/elevation
+Mar high C,http://dbpedia.org/property/marHighC
+Mar dew point F,http://dbpedia.org/property/marDewPointF
+Jun precipitation mm,http://dbpedia.org/property/junPrecipitationMm
+history,http://dbpedia.org/property/history
+mark-lon,http://dbpedia.org/property/markLon
+status,http://dbpedia.org/property/status
+res capacity total,http://dbpedia.org/property/resCapacityTotal
+commissioned,http://dbpedia.org/property/commissioned
+demolition year,http://dbpedia.org/ontology/demolitionYear
+Aug snow cm,http://dbpedia.org/property/augSnowCm
+Jun precipitation days,http://dbpedia.org/property/junPrecipitationDays
+Apr rain inch,http://dbpedia.org/property/aprRainInch
+ps units manu model,http://dbpedia.org/property/psUnitsManuModel
+area km,http://dbpedia.org/property/areaKm
+ps electrical capacity,http://dbpedia.org/property/psElectricalCapacity
+Jan precipitation inch,http://dbpedia.org/property/janPrecipitationInch
+terrainparks,http://dbpedia.org/property/terrainparks
+North,http://dbpedia.org/property/north
+Northwest,http://dbpedia.org/property/northwest
+aos,http://dbpedia.org/property/aos
+dam crosses,http://dbpedia.org/property/damCrosses
+location map alt,http://dbpedia.org/property/locationMapAlt
+building start year,http://dbpedia.org/ontology/buildingStartYear
+designation2 number,http://dbpedia.org/property/designation2Number
+average depth (μ),http://dbpedia.org/ontology/averageDepth
+Sep precipitation inch,http://dbpedia.org/property/sepPrecipitationInch
+named for,http://dbpedia.org/property/namedFor
+single line,http://dbpedia.org/property/singleLine
+year low F,http://dbpedia.org/property/yearLowF
+nearest city,http://dbpedia.org/ontology/nearestCity
+Jul rain days,http://dbpedia.org/property/julRainDays
+year low C,http://dbpedia.org/property/yearLowC
+parking,http://dbpedia.org/property/parking
+place,http://dbpedia.org/property/place
+after,http://dbpedia.org/property/after
+has abstract,http://dbpedia.org/ontology/abstract
+outflow,http://dbpedia.org/property/outflow
+dam height,http://dbpedia.org/property/damHeight
+Nov high F,http://dbpedia.org/property/novHighF
+Designed by,http://dbpedia.org/property/designedBy
+years,http://dbpedia.org/property/years
+Nov high C,http://dbpedia.org/property/novHighC
+top,http://dbpedia.org/property/top
+May record low C,http://dbpedia.org/property/mayRecordLowC
+wayback,http://dbpedia.org/property/wayback
+Aug avg record low F,http://dbpedia.org/property/augAvgRecordLowF
+May record low F,http://dbpedia.org/property/mayRecordLowF
+Oct precipitation days,http://dbpedia.org/property/octPrecipitationDays
+desc,http://dbpedia.org/property/desc
+Jan snow cm,http://dbpedia.org/property/janSnowCm
+index,http://dbpedia.org/property/index
+Sep high C,http://dbpedia.org/property/sepHighC
+marker,http://dbpedia.org/property/marker
+Sep high F,http://dbpedia.org/property/sepHighF
+maximum depth (μ),http://dbpedia.org/ontology/maximumDepth
+demolition date,http://dbpedia.org/ontology/demolitionDate
+Aug record low F,http://dbpedia.org/property/augRecordLowF
+circuits no,http://dbpedia.org/property/circuitsNo
+Aug record low C,http://dbpedia.org/property/augRecordLowC
+Jul snow inch,http://dbpedia.org/property/julSnowInch
+year precipitation mm,http://dbpedia.org/property/yearPrecipitationMm
+snowmaking,http://dbpedia.org/property/snowmaking
+Apr humidity,http://dbpedia.org/property/aprHumidity
+region,http://dbpedia.org/property/region
+plant name,http://dbpedia.org/property/plantName
+qalign,http://dbpedia.org/property/qalign
+Mar precipitation days,http://dbpedia.org/property/marPrecipitationDays
+dam name,http://dbpedia.org/property/damName
+conservation,http://dbpedia.org/property/conservation
+pic,http://dbpedia.org/property/pic
+plant pumps,http://dbpedia.org/property/plantPumps
+fullwidth,http://dbpedia.org/property/fullwidth
+United States National Bridge ID,http://dbpedia.org/ontology/unitedStatesNationalBridgeId
+elevation,http://dbpedia.org/property/elevation
+unit rain days,http://dbpedia.org/property/unitRainDays
+May high F,http://dbpedia.org/property/mayHighF
+long,http://dbpedia.org/property/long
+May high C,http://dbpedia.org/property/mayHighC
+coords,http://dbpedia.org/property/coords
+numbered,http://dbpedia.org/property/numbered
+Wikipage redirect,http://dbpedia.org/ontology/wikiPageRedirects
+plant hydraulic head,http://dbpedia.org/property/plantHydraulicHead
+Aug precipitation mm,http://dbpedia.org/property/augPrecipitationMm
+shore length (μ),http://dbpedia.org/ontology/shoreLength
+elevation min ft,http://dbpedia.org/property/elevationMinFt
+structure,http://dbpedia.org/property/structure
+alt,http://dbpedia.org/property/alt
+Nov avg record low F,http://dbpedia.org/property/novAvgRecordLowF
+metric first,http://dbpedia.org/property/metricFirst
+open,http://dbpedia.org/property/open
+bpmf,http://dbpedia.org/property/bpmf
+lat2 min,http://dbpedia.org/property/lat2Min
+carries,http://dbpedia.org/property/carries
+footer align,http://dbpedia.org/property/footerAlign
+label-angle,http://dbpedia.org/property/labelAngle
+status,http://dbpedia.org/ontology/status
+lat,http://dbpedia.org/property/lat
+Jun avg record high F,http://dbpedia.org/property/junAvgRecordHighF
+added,http://dbpedia.org/property/added
+Link from a Wikipage to an external page,http://dbpedia.org/ontology/wikiPageExternalLink
+Aug high C,http://dbpedia.org/property/augHighC
+operator,http://dbpedia.org/property/operator
+Mar snow cm,http://dbpedia.org/property/marSnowCm
+res surface,http://dbpedia.org/property/resSurface
+year record high C,http://dbpedia.org/property/yearRecordHighC
+location map,http://dbpedia.org/property/locationMap
+Apr avg record high F,http://dbpedia.org/property/aprAvgRecordHighF
+Aug high F,http://dbpedia.org/property/augHighF
+year record high F,http://dbpedia.org/property/yearRecordHighF
+year avg record low F,http://dbpedia.org/property/yearAvgRecordLowF
+native language,http://dbpedia.org/property/nativeLanguage
+current type,http://dbpedia.org/property/currentType
+Nov humidity,http://dbpedia.org/property/novHumidity
+text,http://dbpedia.org/property/text
+Jul low C,http://dbpedia.org/property/julLowC
+Jul low F,http://dbpedia.org/property/julLowF
+quote,http://dbpedia.org/ontology/quote
+bg,http://dbpedia.org/property/bg
+Jul record low C,http://dbpedia.org/property/julRecordLowC
+Jul record low F,http://dbpedia.org/property/julRecordLowF
+district,http://dbpedia.org/property/district
+voy,http://dbpedia.org/property/voy
+Nov precipitation days,http://dbpedia.org/property/novPrecipitationDays
+lower spillway type,http://dbpedia.org/property/lowerSpillwayType
+ps units operational,http://dbpedia.org/property/psUnitsOperational
+lat deg,http://dbpedia.org/property/latDeg
+Dec rain days,http://dbpedia.org/property/decRainDays
+Nov precipitation mm,http://dbpedia.org/property/novPrecipitationMm
+maptext,http://dbpedia.org/property/maptext
+lat sec,http://dbpedia.org/property/latSec
+catchment,http://dbpedia.org/property/catchment
+Jan rain mm,http://dbpedia.org/property/janRainMm
+Dec record high F,http://dbpedia.org/property/decRecordHighF
+elevation max ft,http://dbpedia.org/property/elevationMaxFt
+located in area,http://dbpedia.org/ontology/locatedInArea
+Dec record high C,http://dbpedia.org/property/decRecordHighC
+Sep snow inch,http://dbpedia.org/property/sepSnowInch
+Jun record low C,http://dbpedia.org/property/junRecordLowC
+Dec snow days,http://dbpedia.org/property/decSnowDays
+thumbnail,http://dbpedia.org/ontology/thumbnail
+photo,http://dbpedia.org/property/photo
+Jun record low F,http://dbpedia.org/property/junRecordLowF
+designation1 offname,http://dbpedia.org/property/designation1Offname
+Apr avg record low F,http://dbpedia.org/property/aprAvgRecordLowF
+Jun humidity,http://dbpedia.org/property/junHumidity
+Oct snow cm,http://dbpedia.org/property/octSnowCm
+Sep snow cm,http://dbpedia.org/property/sepSnowCm
+inflow,http://dbpedia.org/ontology/inflow
+Nov rain mm,http://dbpedia.org/property/novRainMm
+sign,http://dbpedia.org/property/sign
+lat dir,http://dbpedia.org/property/latDir
+protected,http://dbpedia.org/property/protected
+markertext,http://dbpedia.org/property/markertext
+builder,http://dbpedia.org/property/builder
+location city,http://dbpedia.org/property/locationCity
+finish,http://dbpedia.org/property/finish
+Dec mean F,http://dbpedia.org/property/decMeanF
+Dec mean C,http://dbpedia.org/property/decMeanC
+res elevation,http://dbpedia.org/property/resElevation
+mark-image,http://dbpedia.org/property/markImage
+lower dam type,http://dbpedia.org/property/lowerDamType
+photo size,http://dbpedia.org/property/photoSize
+biome,http://dbpedia.org/property/biome
+downriver,http://dbpedia.org/property/downriver
+cities,http://dbpedia.org/property/cities
+salign,http://dbpedia.org/property/salign
+page length (characters) of wiki page,http://dbpedia.org/ontology/wikiPageLength
+May snow cm,http://dbpedia.org/property/maySnowCm
+plant storage hours,http://dbpedia.org/property/plantStorageHours
+Apr rain mm,http://dbpedia.org/property/aprRainMm
+survey,http://dbpedia.org/property/survey
+mini-width,http://dbpedia.org/property/miniWidth
+wstitle,http://dbpedia.org/property/wstitle
+installed capacity (W),http://dbpedia.org/ontology/installedCapacity
+cc,http://dbpedia.org/property/cc
+dam volume,http://dbpedia.org/property/damVolume
+Jan low F,http://dbpedia.org/property/janLowF
+rivers,http://dbpedia.org/property/rivers
+year precipitation days,http://dbpedia.org/property/yearPrecipitationDays
+minimap,http://dbpedia.org/property/minimap
+Nov snow days,http://dbpedia.org/property/novSnowDays
+Apr high F,http://dbpedia.org/property/aprHighF
+Jan low C,http://dbpedia.org/property/janLowC
+Apr high C,http://dbpedia.org/property/aprHighC
+Sep rain inch,http://dbpedia.org/property/sepRainInch
+year record low C,http://dbpedia.org/property/yearRecordLowC
+locmapin,http://dbpedia.org/property/locmapin
+upriver,http://dbpedia.org/property/upriver
+Mar record high F,http://dbpedia.org/property/marRecordHighF
+Mar record high C,http://dbpedia.org/property/marRecordHighC
+year record low F,http://dbpedia.org/property/yearRecordLowF
+May precipitation inch,http://dbpedia.org/property/mayPrecipitationInch
+Sep low C,http://dbpedia.org/property/sepLowC
+Sep low F,http://dbpedia.org/property/sepLowF
+cap,http://dbpedia.org/property/cap
+y,http://dbpedia.org/property/y
+crossing  signs,http://dbpedia.org/property/crossingSigns
+lat2 deg,http://dbpedia.org/property/lat2Deg
+id,http://dbpedia.org/property/id
+named after,http://dbpedia.org/ontology/namedAfter
+Jun snow days,http://dbpedia.org/property/junSnowDays
+Sep dew point F,http://dbpedia.org/property/sepDewPointF
+image bathymetry,http://dbpedia.org/property/imageBathymetry
+Link from a Wikipage to a Wikipage in a different language about the same or a related subject.,http://dbpedia.org/ontology/wikiPageInterLanguageLink
+Feb avg record low F,http://dbpedia.org/property/febAvgRecordLowF
+Dec humidity,http://dbpedia.org/property/decHumidity
+Aug dew point F,http://dbpedia.org/property/augDewPointF
+hp,http://dbpedia.org/property/hp
+minimum temperature (K),http://dbpedia.org/ontology/minimumTemperature
+watercourses,http://dbpedia.org/property/watercourses
+Mar snow days,http://dbpedia.org/property/marSnowDays
+Aug rain inch,http://dbpedia.org/property/augRainInch
+humidity colour,http://dbpedia.org/property/humidityColour
+Aug avg record high F,http://dbpedia.org/property/augAvgRecordHighF
+residence time,http://dbpedia.org/property/residenceTime
+image-top,http://dbpedia.org/property/imageTop
+Apr record low C,http://dbpedia.org/property/aprRecordLowC
+design,http://dbpedia.org/property/design
+population density km,http://dbpedia.org/property/populationDensityKm
+Apr record low F,http://dbpedia.org/property/aprRecordLowF
+length,http://dbpedia.org/property/length
+header,http://dbpedia.org/property/header
+map size,http://dbpedia.org/property/mapSize
+area total sq mi,http://dbpedia.org/property/areaTotalSqMi
+May humidity,http://dbpedia.org/property/mayHumidity
+Nov rain days,http://dbpedia.org/property/novRainDays
+Feb snow inch,http://dbpedia.org/property/febSnowInch
+architect,http://dbpedia.org/property/architect
+Feb rain inch,http://dbpedia.org/property/febRainInch
+East,http://dbpedia.org/property/east
+group,http://dbpedia.org/property/group
+crosses,http://dbpedia.org/ontology/crosses
+d,http://dbpedia.org/property/d
+plant operator,http://dbpedia.org/property/plantOperator
+c,http://dbpedia.org/property/c
+mark-lat,http://dbpedia.org/property/markLat
+b,http://dbpedia.org/property/b
+l,http://dbpedia.org/property/l
+minimum elevation (μ),http://dbpedia.org/ontology/minimumElevation
+n,http://dbpedia.org/property/n
+res tidal range,http://dbpedia.org/property/resTidalRange
+k,http://dbpedia.org/property/k
+j,http://dbpedia.org/property/j
+t,http://dbpedia.org/property/t
+footer,http://dbpedia.org/property/footer
+w,http://dbpedia.org/property/w
+v,http://dbpedia.org/property/v
+q,http://dbpedia.org/property/q
+p,http://dbpedia.org/property/p
+s,http://dbpedia.org/property/s
+zoom,http://dbpedia.org/property/zoom
+hanja,http://dbpedia.org/property/hanja
+r,http://dbpedia.org/property/r
+maintained by,http://dbpedia.org/ontology/maintainedBy
+Feb record low F,http://dbpedia.org/property/febRecordLowF
+mr,http://dbpedia.org/property/mr
+AC voltage,http://dbpedia.org/property/acVoltage
+Feb record low C,http://dbpedia.org/property/febRecordLowC
+year rain days,http://dbpedia.org/property/yearRainDays
+plant annual gen,http://dbpedia.org/property/plantAnnualGen
+downstream,http://dbpedia.org/property/downstream
+width,http://dbpedia.org/property/width
+hangul,http://dbpedia.org/property/hangul
+Mar humidity,http://dbpedia.org/property/marHumidity
+part of,http://dbpedia.org/property/partOf
+engineer,http://dbpedia.org/property/engineer
+Oct precipitation mm,http://dbpedia.org/property/octPrecipitationMm
+name official,http://dbpedia.org/property/nameOfficial
+dam width base,http://dbpedia.org/property/damWidthBase
+spillway capacity,http://dbpedia.org/property/spillwayCapacity
+decommissioned,http://dbpedia.org/property/decommissioned
+np reactor supplier,http://dbpedia.org/property/npReactorSupplier
+lat2 dir,http://dbpedia.org/property/lat2Dir
+Mar avg record high F,http://dbpedia.org/property/marAvgRecordHighF
+year humidity,http://dbpedia.org/property/yearHumidity
+nocat,http://dbpedia.org/property/nocat
+border,http://dbpedia.org/property/border
+label2 size,http://dbpedia.org/property/label2Size
+expected,http://dbpedia.org/property/expected
+color,http://dbpedia.org/property/color
+Feb high F,http://dbpedia.org/property/febHighF
+fullheight,http://dbpedia.org/property/fullheight
+caption bathymetry,http://dbpedia.org/property/captionBathymetry
+Feb high C,http://dbpedia.org/property/febHighC
+Sep record high C,http://dbpedia.org/property/sepRecordHighC
+Sep record high F,http://dbpedia.org/property/sepRecordHighF
+external link,http://dbpedia.org/property/externalLink
+Mar rain days,http://dbpedia.org/property/marRainDays
+Jun mean F,http://dbpedia.org/property/junMeanF
+width mi,http://dbpedia.org/property/widthMi
+Jun mean C,http://dbpedia.org/property/junMeanC
+label,http://dbpedia.org/property/label
+lon min,http://dbpedia.org/property/lonMin
+icon,http://dbpedia.org/property/icon
+Jul avg record high F,http://dbpedia.org/property/julAvgRecordHighF
+number spans,http://dbpedia.org/property/numberSpans
+ps annual generation,http://dbpedia.org/property/psAnnualGeneration
+area total (km2),http://dbpedia.org/ontology/PopulatedPlace/areaTotal
+Jun rain days,http://dbpedia.org/property/junRainDays
+image alt,http://dbpedia.org/property/imageAlt
+quote,http://dbpedia.org/property/quote
+Jul dew point F,http://dbpedia.org/property/julDewPointF
+width (μ),http://dbpedia.org/ontology/width
+mark-size,http://dbpedia.org/property/markSize

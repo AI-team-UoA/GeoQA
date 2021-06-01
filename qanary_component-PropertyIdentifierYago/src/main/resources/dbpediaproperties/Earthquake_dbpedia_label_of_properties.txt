@@ -1,0 +1,185 @@
+type,http://dbpedia.org/property/type
+anss-url,http://dbpedia.org/property/anssUrl
+events,http://dbpedia.org/property/events
+Link from a Wikipage to an external page,http://dbpedia.org/ontology/wikiPageExternalLink
+intensity,http://dbpedia.org/property/intensity
+align,http://dbpedia.org/property/align
+small,http://dbpedia.org/property/small
+tail number,http://dbpedia.org/property/tailNumber
+operator,http://dbpedia.org/property/operator
+id,http://dbpedia.org/property/id
+Link from a Wikipage to another Wikipage,http://dbpedia.org/ontology/wikiPageWikiLink
+site,http://dbpedia.org/property/site
+ground injuries,http://dbpedia.org/property/groundInjuries
+otherarticle,http://dbpedia.org/property/otherarticle
+Location,http://dbpedia.org/property/location
+lon deg,http://dbpedia.org/property/lonDeg
+Link from a Wikipage to a Wikipage in a different language about the same or a related subject.,http://dbpedia.org/ontology/wikiPageInterLanguageLink
+maxmagnitude,http://dbpedia.org/property/maxmagnitude
+bot,http://dbpedia.org/property/bot
+text,http://dbpedia.org/property/text
+image size,http://dbpedia.org/property/imageSize
+aftershocks,http://dbpedia.org/property/aftershocks
+summary,http://dbpedia.org/property/summary
+image,http://dbpedia.org/property/image
+damage amount,http://dbpedia.org/ontology/damage
+total width,http://dbpedia.org/property/totalWidth
+label-pos,http://dbpedia.org/property/labelPos
+hp,http://dbpedia.org/property/hp
+position,http://dbpedia.org/property/position
+label size,http://dbpedia.org/property/labelSize
+engvar,http://dbpedia.org/property/engvar
+tags,http://dbpedia.org/property/tags
+affected,http://dbpedia.org/property/affected
+labels,http://dbpedia.org/property/labels
+topic,http://dbpedia.org/property/topic
+nolabels,http://dbpedia.org/property/nolabels
+altname,http://dbpedia.org/property/altname
+float,http://dbpedia.org/property/float
+imagecaption,http://dbpedia.org/property/imagecaption
+map alt,http://dbpedia.org/property/mapAlt
+countries affected,http://dbpedia.org/property/countriesAffected
+local-time-C,http://dbpedia.org/property/localTimeC
+local-time-B,http://dbpedia.org/property/localTimeB
+mapsize,http://dbpedia.org/property/mapsize
+casualties,http://dbpedia.org/ontology/casualties
+local-time-A,http://dbpedia.org/property/localTimeA
+tstyle,http://dbpedia.org/property/tstyle
+lat deg,http://dbpedia.org/property/latDeg
+duration,http://dbpedia.org/property/duration
+local-time-D,http://dbpedia.org/property/localTimeD
+timestamp-A,http://dbpedia.org/property/timestampA
+timestamp-C,http://dbpedia.org/property/timestampC
+Wikipage revision ID,http://dbpedia.org/ontology/wikiPageRevisionID
+header,http://dbpedia.org/property/header
+timestamp-B,http://dbpedia.org/property/timestampB
+timestamp-E,http://dbpedia.org/property/timestampE
+map caption,http://dbpedia.org/property/mapCaption
+timestamp-D,http://dbpedia.org/property/timestampD
+map size,http://dbpedia.org/property/mapSize
+tsunami,http://dbpedia.org/property/tsunami
+local-date-C,http://dbpedia.org/property/localDateC
+local-date-D,http://dbpedia.org/property/localDateD
+local-date-A,http://dbpedia.org/property/localDateA
+occurrence type,http://dbpedia.org/property/occurrenceType
+local-date-B,http://dbpedia.org/property/localDateB
+label-offset-y,http://dbpedia.org/property/labelOffsetY
+label-offset-x,http://dbpedia.org/property/labelOffsetX
+mark-coord,http://dbpedia.org/property/markCoord
+relief,http://dbpedia.org/property/relief
+pushpin relief,http://dbpedia.org/property/pushpinRelief
+header align,http://dbpedia.org/property/headerAlign
+thumbnail,http://dbpedia.org/ontology/thumbnail
+quoted,http://dbpedia.org/property/quoted
+commons,http://dbpedia.org/property/commons
+certain,http://dbpedia.org/property/certain
+isc-event-E,http://dbpedia.org/property/iscEventE
+magnitude-E,http://dbpedia.org/property/magnitudeE
+magnitude-D,http://dbpedia.org/property/magnitudeD
+mark,http://dbpedia.org/property/mark
+langcode,http://dbpedia.org/property/langcode
+magnitude-A,http://dbpedia.org/property/magnitudeA
+isc-event-A,http://dbpedia.org/property/iscEventA
+isc-event-B,http://dbpedia.org/property/iscEventB
+c,http://dbpedia.org/property/c
+isc-event-C,http://dbpedia.org/property/iscEventC
+magnitude-C,http://dbpedia.org/property/magnitudeC
+magnitude-B,http://dbpedia.org/property/magnitudeB
+isc-event-D,http://dbpedia.org/property/iscEventD
+b,http://dbpedia.org/property/b
+anss-url-B,http://dbpedia.org/property/anssUrlB
+anss-url-C,http://dbpedia.org/property/anssUrlC
+l,http://dbpedia.org/property/l
+anss-url-D,http://dbpedia.org/property/anssUrlD
+anss-url-E,http://dbpedia.org/property/anssUrlE
+n,http://dbpedia.org/property/n
+has abstract,http://dbpedia.org/ontology/abstract
+mark-dim,http://dbpedia.org/property/markDim
+t,http://dbpedia.org/property/t
+footer,http://dbpedia.org/property/footer
+w,http://dbpedia.org/property/w
+v,http://dbpedia.org/property/v
+q,http://dbpedia.org/property/q
+species,http://dbpedia.org/property/species
+Damages,http://dbpedia.org/property/damages
+p,http://dbpedia.org/property/p
+s,http://dbpedia.org/property/s
+depth,http://dbpedia.org/property/depth
+zoom,http://dbpedia.org/property/zoom
+anss-url-A,http://dbpedia.org/property/anssUrlA
+wikt,http://dbpedia.org/property/wikt
+pos,http://dbpedia.org/property/pos
+format,http://dbpedia.org/property/format
+pga,http://dbpedia.org/property/pga
+poj,http://dbpedia.org/property/poj
+date,http://dbpedia.org/property/date
+width,http://dbpedia.org/property/width
+scalemark,http://dbpedia.org/property/scalemark
+source ,http://dbpedia.org/property/source
+direction,http://dbpedia.org/property/direction
+sound recording,http://dbpedia.org/ontology/soundRecording
+image name,http://dbpedia.org/property/imageName
+halign,http://dbpedia.org/property/halign
+label-color,http://dbpedia.org/property/labelColor
+shape,http://dbpedia.org/property/shape
+timestamp,http://dbpedia.org/property/timestamp
+depth-A,http://dbpedia.org/property/depthA
+depth-B,http://dbpedia.org/property/depthB
+class,http://dbpedia.org/property/class
+description,http://dbpedia.org/property/description
+name,http://dbpedia.org/property/name
+depth-C,http://dbpedia.org/property/depthC
+depth-D,http://dbpedia.org/property/depthD
+url,http://dbpedia.org/property/url
+caption,http://dbpedia.org/property/caption
+isc-event,http://dbpedia.org/property/iscEvent
+video,http://dbpedia.org/property/video
+salign,http://dbpedia.org/property/salign
+page length (characters) of wiki page,http://dbpedia.org/ontology/wikiPageLength
+author,http://dbpedia.org/property/author
+survivors,http://dbpedia.org/property/survivors
+map,http://dbpedia.org/property/map
+border,http://dbpedia.org/property/border
+bgcolor,http://dbpedia.org/property/bgcolor
+foreshocks,http://dbpedia.org/property/foreshocks
+PGV,http://dbpedia.org/property/pgv
+duration (s),http://dbpedia.org/ontology/duration
+qalign,http://dbpedia.org/property/qalign
+fatalities,http://dbpedia.org/property/fatalities
+title-bg,http://dbpedia.org/property/titleBg
+mark-title,http://dbpedia.org/property/markTitle
+ground fatalities,http://dbpedia.org/property/groundFatalities
+magnitude,http://dbpedia.org/property/magnitude
+label,http://dbpedia.org/property/label
+local-date,http://dbpedia.org/property/localDate
+long,http://dbpedia.org/property/long
+height,http://dbpedia.org/property/height
+filename,http://dbpedia.org/property/filename
+damage,http://dbpedia.org/property/damage
+related,http://dbpedia.org/property/related
+colwidth,http://dbpedia.org/property/colwidth
+shape-color,http://dbpedia.org/property/shapeColor
+Wikipage redirect,http://dbpedia.org/ontology/wikiPageRedirects
+fault,http://dbpedia.org/property/fault
+Wikipage page ID,http://dbpedia.org/ontology/wikiPageID
+links,http://dbpedia.org/property/links
+location,http://dbpedia.org/ontology/location
+alt,http://dbpedia.org/property/alt
+marksize,http://dbpedia.org/property/marksize
+reason,http://dbpedia.org/property/reason
+pushpin map,http://dbpedia.org/property/pushpinMap
+landslide,http://dbpedia.org/property/landslide
+casualties,http://dbpedia.org/property/casualties
+injuries,http://dbpedia.org/property/injuries
+native name,http://dbpedia.org/property/nativeName
+pre-,http://dbpedia.org/property/pre
+fix-attempted,http://dbpedia.org/property/fixAttempted
+crew,http://dbpedia.org/property/crew
+image alt,http://dbpedia.org/property/imageAlt
+quote,http://dbpedia.org/property/quote
+title,http://dbpedia.org/property/title
+mark-size,http://dbpedia.org/property/markSize
+footer align,http://dbpedia.org/property/footerAlign
+aircraft type,http://dbpedia.org/property/aircraftType
+local-time,http://dbpedia.org/property/localTime
+lat,http://dbpedia.org/property/lat

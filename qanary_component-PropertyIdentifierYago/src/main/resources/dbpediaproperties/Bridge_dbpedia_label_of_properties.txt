@@ -1,0 +1,579 @@
+type,http://dbpedia.org/property/type
+Oct record high F,http://dbpedia.org/property/octRecordHighF
+number of piers in water,http://dbpedia.org/ontology/numberOfPiersInWater
+align,http://dbpedia.org/property/align
+downstream text,http://dbpedia.org/property/downstreamText
+Apr record high F,http://dbpedia.org/property/aprRecordHighF
+datakey,http://dbpedia.org/property/datakey
+id type,http://dbpedia.org/property/idType
+county,http://dbpedia.org/property/county
+passable,http://dbpedia.org/property/passable
+Feb record high F,http://dbpedia.org/property/febRecordHighF
+coordinates,http://dbpedia.org/property/coordinates
+cost ($),http://dbpedia.org/ontology/cost
+grid,http://dbpedia.org/property/grid
+northkorea,http://dbpedia.org/property/northkorea
+lon deg,http://dbpedia.org/property/lonDeg
+overlay1colour,http://dbpedia.org/property/overlay1colour
+Jul precipitation inch,http://dbpedia.org/property/julPrecipitationInch
+designation1 free3value,http://dbpedia.org/property/designation1Free3value
+total width,http://dbpedia.org/property/totalWidth
+province,http://dbpedia.org/ontology/province
+position,http://dbpedia.org/property/position
+RR,http://dbpedia.org/property/rr
+Jan record low F,http://dbpedia.org/property/janRecordLowF
+Road,http://dbpedia.org/property/road
+bridge signs,http://dbpedia.org/property/bridgeSigns
+labels,http://dbpedia.org/property/labels
+length (km),http://dbpedia.org/ontology/Infrastructure/length
+accessdate,http://dbpedia.org/property/accessdate
+closing date,http://dbpedia.org/ontology/closingDate
+Feb precipitation inch,http://dbpedia.org/property/febPrecipitationInch
+upstream,http://dbpedia.org/property/upstream
+spacing,http://dbpedia.org/property/spacing
+article,http://dbpedia.org/property/article
+native name lang,http://dbpedia.org/property/nativeNameLang
+direction a,http://dbpedia.org/property/directionA
+direction b,http://dbpedia.org/property/directionB
+bridge,http://dbpedia.org/property/bridge
+keywords,http://dbpedia.org/property/keywords
+Jan high F,http://dbpedia.org/property/janHighF
+table,http://dbpedia.org/property/table
+Jan snow inch,http://dbpedia.org/property/janSnowInch
+footer background,http://dbpedia.org/property/footerBackground
+next,http://dbpedia.org/property/next
+base width,http://dbpedia.org/property/baseWidth
+construction material,http://dbpedia.org/ontology/constructionMaterial
+lat min,http://dbpedia.org/property/latMin
+established,http://dbpedia.org/property/established
+Jul record high F,http://dbpedia.org/property/julRecordHighF
+capacity,http://dbpedia.org/property/capacity
+collapsed,http://dbpedia.org/property/collapsed
+Apr precipitation inch,http://dbpedia.org/property/aprPrecipitationInch
+life,http://dbpedia.org/property/life
+ends,http://dbpedia.org/property/ends
+os grid reference,http://dbpedia.org/property/osGridReference
+Dec precipitation inch,http://dbpedia.org/property/decPrecipitationInch
+borough,http://dbpedia.org/property/borough
+preceded,http://dbpedia.org/property/preceded
+pushpin relief,http://dbpedia.org/property/pushpinRelief
+Base,http://dbpedia.org/property/base
+quoted,http://dbpedia.org/property/quoted
+precision,http://dbpedia.org/property/precision
+mark,http://dbpedia.org/property/mark
+number of spans,http://dbpedia.org/ontology/numberOfSpans
+downsub,http://dbpedia.org/property/downsub
+Aug low F,http://dbpedia.org/property/augLowF
+map type,http://dbpedia.org/property/mapType
+image width,http://dbpedia.org/property/imageWidth
+Center,http://dbpedia.org/property/center
+May snow inch,http://dbpedia.org/property/maySnowInch
+year snow inch,http://dbpedia.org/property/yearSnowInch
+Southwest,http://dbpedia.org/property/southwest
+architecture,http://dbpedia.org/property/architecture
+time,http://dbpedia.org/property/time
+depth,http://dbpedia.org/property/depth
+order,http://dbpedia.org/property/order
+speed limit (kmh),http://dbpedia.org/ontology/speedLimit
+por,http://dbpedia.org/property/por
+Nov record high F,http://dbpedia.org/property/novRecordHighF
+completed,http://dbpedia.org/property/completed
+Nov low F,http://dbpedia.org/property/novLowF
+lon3 deg,http://dbpedia.org/property/lon3Deg
+mainspan,http://dbpedia.org/property/mainspan
+data,http://dbpedia.org/property/data
+poj,http://dbpedia.org/property/poj
+date,http://dbpedia.org/property/date
+scalemark,http://dbpedia.org/property/scalemark
+Mar record low F,http://dbpedia.org/property/marRecordLowF
+source ,http://dbpedia.org/property/source
+Feb low F,http://dbpedia.org/property/febLowF
+next type,http://dbpedia.org/property/nextType
+operator,http://dbpedia.org/ontology/operator
+downstream sign,http://dbpedia.org/property/downstreamSign
+Aug precipitation inch,http://dbpedia.org/property/augPrecipitationInch
+designation1 free1name,http://dbpedia.org/property/designation1Free1name
+shape,http://dbpedia.org/property/shape
+Oct snow inch,http://dbpedia.org/property/octSnowInch
+showflag,http://dbpedia.org/property/showflag
+built,http://dbpedia.org/property/built
+content,http://dbpedia.org/property/content
+closing year,http://dbpedia.org/ontology/closingYear
+description,http://dbpedia.org/property/description
+lanes,http://dbpedia.org/property/lanes
+Dec high F,http://dbpedia.org/property/decHighF
+caption,http://dbpedia.org/property/caption
+May low F,http://dbpedia.org/property/mayLowF
+grade,http://dbpedia.org/property/grade
+demolished,http://dbpedia.org/property/demolished
+auto-caption,http://dbpedia.org/property/autoCaption
+official name,http://dbpedia.org/property/officialName
+closed,http://dbpedia.org/property/closed
+pushpin map alt,http://dbpedia.org/property/pushpinMapAlt
+start year,http://dbpedia.org/property/startYear
+image caption,http://dbpedia.org/property/imageCaption
+references,http://dbpedia.org/property/references
+extra,http://dbpedia.org/property/extra
+image upright,http://dbpedia.org/property/imageUpright
+mapframe-width,http://dbpedia.org/property/mapframeWidth
+next route,http://dbpedia.org/property/nextRoute
+lon2 deg,http://dbpedia.org/property/lon2Deg
+refnum,http://dbpedia.org/property/refnum
+type,http://dbpedia.org/ontology/type
+height,http://dbpedia.org/property/height
+designated other1 name,http://dbpedia.org/property/designatedOther1Name
+mapframe-zoom,http://dbpedia.org/property/mapframeZoom
+links,http://dbpedia.org/property/links
+map width,http://dbpedia.org/property/mapWidth
+collapse,http://dbpedia.org/property/collapse
+location,http://dbpedia.org/ontology/location
+reason,http://dbpedia.org/property/reason
+pushpin map,http://dbpedia.org/property/pushpinMap
+casualties,http://dbpedia.org/property/casualties
+before,http://dbpedia.org/property/before
+building start date,http://dbpedia.org/ontology/buildingStartDate
+fix-attempted,http://dbpedia.org/property/fixAttempted
+overlay5top,http://dbpedia.org/property/overlay5top
+perrow,http://dbpedia.org/property/perrow
+onlysourced,http://dbpedia.org/property/onlysourced
+Jun low F,http://dbpedia.org/property/junLowF
+Oct low F,http://dbpedia.org/property/octLowF
+beginning label,http://dbpedia.org/property/beginningLabel
+overlay5left,http://dbpedia.org/property/overlay5left
+small,http://dbpedia.org/property/small
+designation1 number,http://dbpedia.org/property/designation1Number
+toggle,http://dbpedia.org/property/toggle
+Apr low F,http://dbpedia.org/property/aprLowF
+Jun record high F,http://dbpedia.org/property/junRecordHighF
+nocty,http://dbpedia.org/property/nocty
+individualised GND number,http://dbpedia.org/ontology/individualisedGnd
+refs,http://dbpedia.org/property/refs
+Aug snow inch,http://dbpedia.org/property/augSnowInch
+aqueduct name,http://dbpedia.org/property/aqueductName
+Link from a Wikipage to another Wikipage,http://dbpedia.org/ontology/wikiPageWikiLink
+overlay4colour,http://dbpedia.org/property/overlay4colour
+shape-outline,http://dbpedia.org/property/shapeOutline
+otherarticle,http://dbpedia.org/property/otherarticle
+image title,http://dbpedia.org/property/imageTitle
+text align,http://dbpedia.org/property/textAlign
+Wikipage disambiguates,http://dbpedia.org/ontology/wikiPageDisambiguates
+Reverse,http://dbpedia.org/property/reverse
+bot,http://dbpedia.org/property/bot
+location special,http://dbpedia.org/property/locationSpecial
+mainspan (μ),http://dbpedia.org/ontology/mainspan
+upstream text,http://dbpedia.org/property/upstreamText
+cspan,http://dbpedia.org/property/cspan
+prev,http://dbpedia.org/property/prev
+label-pos,http://dbpedia.org/property/labelPos
+mapframe-marker,http://dbpedia.org/property/mapframeMarker
+piccap,http://dbpedia.org/property/piccap
+Mar high F,http://dbpedia.org/property/marHighF
+previous route,http://dbpedia.org/property/previousRoute
+contracted designer,http://dbpedia.org/property/contractedDesigner
+topic,http://dbpedia.org/property/topic
+Jan record high F,http://dbpedia.org/property/janRecordHighF
+bridge name,http://dbpedia.org/property/bridgeName
+status,http://dbpedia.org/property/status
+Jun precipitation inch,http://dbpedia.org/property/junPrecipitationInch
+designation,http://dbpedia.org/property/designation
+overlay,http://dbpedia.org/property/overlay
+fetchwikidata,http://dbpedia.org/property/fetchwikidata
+map dot label,http://dbpedia.org/property/mapDotLabel
+pushpin map size,http://dbpedia.org/property/pushpinMapSize
+type name,http://dbpedia.org/property/typeName
+embedded,http://dbpedia.org/property/embedded
+thdl,http://dbpedia.org/property/thdl
+lang,http://dbpedia.org/property/lang
+Jan precipitation inch,http://dbpedia.org/property/janPrecipitationInch
+designated other1 link,http://dbpedia.org/property/designatedOther1Link
+North,http://dbpedia.org/property/north
+Northwest,http://dbpedia.org/property/northwest
+road start direction,http://dbpedia.org/ontology/routeStartDirection
+Jun high F,http://dbpedia.org/property/junHighF
+overlay3colour,http://dbpedia.org/property/overlay3colour
+rebuilt,http://dbpedia.org/property/rebuilt
+display,http://dbpedia.org/property/display
+relief,http://dbpedia.org/property/relief
+rows,http://dbpedia.org/property/rows
+named for,http://dbpedia.org/property/namedFor
+Sep precipitation inch,http://dbpedia.org/property/sepPrecipitationInch
+single line,http://dbpedia.org/property/singleLine
+header align,http://dbpedia.org/property/headerAlign
+religion,http://dbpedia.org/property/religion
+commons,http://dbpedia.org/property/commons
+designated other1 color,http://dbpedia.org/property/designatedOther1Color
+langcode,http://dbpedia.org/property/langcode
+terminus a,http://dbpedia.org/property/terminusA
+terminus b,http://dbpedia.org/property/terminusB
+fullscreen-option,http://dbpedia.org/property/fullscreenOption
+place,http://dbpedia.org/property/place
+columns,http://dbpedia.org/property/columns
+after,http://dbpedia.org/property/after
+has abstract,http://dbpedia.org/ontology/abstract
+lon1 deg,http://dbpedia.org/property/lon1Deg
+deleted,http://dbpedia.org/property/deleted
+background,http://dbpedia.org/property/background
+photo1b,http://dbpedia.org/property/photo1b
+clearance above,http://dbpedia.org/property/clearanceAbove
+photo1a,http://dbpedia.org/property/photo1a
+Nov high F,http://dbpedia.org/property/novHighF
+years,http://dbpedia.org/property/years
+lang1 content,http://dbpedia.org/property/lang1Content
+complete,http://dbpedia.org/property/complete
+mspan,http://dbpedia.org/property/mspan
+alternate name,http://dbpedia.org/property/alternateName
+structure gauge,http://dbpedia.org/property/structureGauge
+wuu,http://dbpedia.org/property/wuu
+qid,http://dbpedia.org/property/qid
+fabricator,http://dbpedia.org/property/fabricator
+starts,http://dbpedia.org/property/starts
+designation1 type,http://dbpedia.org/property/designation1Type
+direction,http://dbpedia.org/property/direction
+marker image,http://dbpedia.org/property/markerImage
+Oct precipitation inch,http://dbpedia.org/property/octPrecipitationInch
+metro,http://dbpedia.org/property/metro
+state,http://dbpedia.org/property/state
+May record low F,http://dbpedia.org/property/mayRecordLowF
+lon dir,http://dbpedia.org/property/lonDir
+Mar low F,http://dbpedia.org/property/marLowF
+desc,http://dbpedia.org/property/desc
+index,http://dbpedia.org/property/index
+name,http://dbpedia.org/property/name
+pierswater,http://dbpedia.org/property/pierswater
+Sep high F,http://dbpedia.org/property/sepHighF
+url,http://dbpedia.org/property/url
+demolition date,http://dbpedia.org/ontology/demolitionDate
+Aug record low F,http://dbpedia.org/property/augRecordLowF
+heritage,http://dbpedia.org/property/heritage
+other name,http://dbpedia.org/property/otherName
+Jul snow inch,http://dbpedia.org/property/julSnowInch
+video,http://dbpedia.org/property/video
+Southeast,http://dbpedia.org/property/southeast
+noicon,http://dbpedia.org/property/noicon
+bgcolor,http://dbpedia.org/property/bgcolor
+clearance below,http://dbpedia.org/property/clearanceBelow
+speed,http://dbpedia.org/property/speed
+designation1 free1value,http://dbpedia.org/property/designation1Free1value
+pic,http://dbpedia.org/property/pic
+building end date,http://dbpedia.org/ontology/buildingEndDate
+distance,http://dbpedia.org/property/distance
+fullwidth,http://dbpedia.org/property/fullwidth
+Mar precipitation inch,http://dbpedia.org/property/marPrecipitationInch
+United States National Bridge ID,http://dbpedia.org/ontology/unitedStatesNationalBridgeId
+est,http://dbpedia.org/property/est
+elevation,http://dbpedia.org/property/elevation
+legend1start,http://dbpedia.org/property/legend1start
+lon sec,http://dbpedia.org/property/lonSec
+May high F,http://dbpedia.org/property/mayHighF
+long,http://dbpedia.org/property/long
+opening date,http://dbpedia.org/property/openingDate
+gauge,http://dbpedia.org/property/gauge
+maintained,http://dbpedia.org/property/maintained
+Wikipage redirect,http://dbpedia.org/ontology/wikiPageRedirects
+shape-color,http://dbpedia.org/property/shapeColor
+other names,http://dbpedia.org/property/otherNames
+headerimage,http://dbpedia.org/property/headerimage
+towpath,http://dbpedia.org/property/towpath
+start,http://dbpedia.org/property/start
+Wikipage page ID,http://dbpedia.org/ontology/wikiPageID
+structure,http://dbpedia.org/property/structure
+track gauge,http://dbpedia.org/property/trackGauge
+sponsor,http://dbpedia.org/property/sponsor
+alt,http://dbpedia.org/property/alt
+builder,http://dbpedia.org/ontology/builder
+open,http://dbpedia.org/property/open
+carries,http://dbpedia.org/property/carries
+footer align,http://dbpedia.org/property/footerAlign
+Apr snow inch,http://dbpedia.org/property/aprSnowInch
+lat,http://dbpedia.org/property/lat
+status,http://dbpedia.org/ontology/status
+toll,http://dbpedia.org/property/toll
+added,http://dbpedia.org/property/added
+Link from a Wikipage to an external page,http://dbpedia.org/ontology/wikiPageExternalLink
+upstream signs,http://dbpedia.org/property/upstreamSigns
+operator,http://dbpedia.org/property/operator
+Aug high F,http://dbpedia.org/property/augHighF
+overlay2top,http://dbpedia.org/property/overlay2top
+image-left,http://dbpedia.org/property/imageLeft
+lspan,http://dbpedia.org/property/lspan
+Location,http://dbpedia.org/property/location
+designation1 date,http://dbpedia.org/property/designation1Date
+listclass,http://dbpedia.org/property/listclass
+text,http://dbpedia.org/property/text
+country,http://dbpedia.org/property/country
+image size,http://dbpedia.org/property/imageSize
+current,http://dbpedia.org/property/current
+Jul low F,http://dbpedia.org/property/julLowF
+image,http://dbpedia.org/property/image
+frame,http://dbpedia.org/property/frame
+postal code,http://dbpedia.org/ontology/postalCode
+stateafter,http://dbpedia.org/property/stateafter
+overlay3left,http://dbpedia.org/property/overlay3left
+vpd,http://dbpedia.org/property/vpd
+Jul record low F,http://dbpedia.org/property/julRecordLowF
+proposer,http://dbpedia.org/property/proposer
+formed,http://dbpedia.org/property/formed
+mapframe long,http://dbpedia.org/property/mapframeLong
+dedicated,http://dbpedia.org/property/dedicated
+end,http://dbpedia.org/property/end
+lat deg,http://dbpedia.org/property/latDeg
+exit,http://dbpedia.org/property/exit
+indic,http://dbpedia.org/property/indic
+Nov precipitation inch,http://dbpedia.org/property/novPrecipitationInch
+metro system,http://dbpedia.org/property/metroSystem
+map caption,http://dbpedia.org/property/mapCaption
+bgcolour,http://dbpedia.org/property/bgcolour
+vehicles per day,http://dbpedia.org/ontology/vehiclesPerDay
+lat sec,http://dbpedia.org/property/latSec
+Dec low F,http://dbpedia.org/property/decLowF
+country,http://dbpedia.org/ontology/country
+number of lanes,http://dbpedia.org/ontology/numberOfLanes
+Dec record high F,http://dbpedia.org/property/decRecordHighF
+right,http://dbpedia.org/property/right
+South,http://dbpedia.org/property/south
+located in area,http://dbpedia.org/ontology/locatedInArea
+Sep snow inch,http://dbpedia.org/property/sepSnowInch
+previous type,http://dbpedia.org/property/previousType
+property name,http://dbpedia.org/property/propertyName
+height (μ),http://dbpedia.org/ontology/height
+Dec snow inch,http://dbpedia.org/property/decSnowInch
+age,http://dbpedia.org/property/age
+frame-width,http://dbpedia.org/property/frameWidth
+thumbnail,http://dbpedia.org/ontology/thumbnail
+upsub,http://dbpedia.org/property/upsub
+Jun record low F,http://dbpedia.org/property/junRecordLowF
+designation1 offname,http://dbpedia.org/property/designation1Offname
+river,http://dbpedia.org/property/river
+also known as,http://dbpedia.org/property/alsoKnownAs
+load,http://dbpedia.org/property/load
+owner,http://dbpedia.org/ontology/owner
+locale,http://dbpedia.org/property/locale
+stakeholders,http://dbpedia.org/property/stakeholders
+mapframe,http://dbpedia.org/property/mapframe
+dno,http://dbpedia.org/property/dno
+successor,http://dbpedia.org/property/successor
+overlay1top,http://dbpedia.org/property/overlay1top
+overlay2colour,http://dbpedia.org/property/overlay2colour
+el,http://dbpedia.org/property/el
+Jul high F,http://dbpedia.org/property/julHighF
+format,http://dbpedia.org/property/format
+sign,http://dbpedia.org/property/sign
+lat dir,http://dbpedia.org/property/latDir
+structurenumber,http://dbpedia.org/property/structurenumber
+designer,http://dbpedia.org/property/designer
+auto,http://dbpedia.org/property/auto
+builder,http://dbpedia.org/property/builder
+Nov record low F,http://dbpedia.org/property/novRecordLowF
+West,http://dbpedia.org/property/west
+road end direction,http://dbpedia.org/ontology/routeEndDirection
+clearance,http://dbpedia.org/property/clearance
+nrhp type,http://dbpedia.org/property/nrhpType
+label-color,http://dbpedia.org/property/labelColor
+first length,http://dbpedia.org/property/firstLength
+crosses,http://dbpedia.org/property/crosses
+roads,http://dbpedia.org/property/roads
+Dec record low F,http://dbpedia.org/property/decRecordLowF
+map dot mark,http://dbpedia.org/property/mapDotMark
+begin,http://dbpedia.org/property/begin
+thisis,http://dbpedia.org/property/thisis
+opened,http://dbpedia.org/property/opened
+lat1 deg,http://dbpedia.org/property/lat1Deg
+mode,http://dbpedia.org/property/mode
+salign,http://dbpedia.org/property/salign
+downstream signs,http://dbpedia.org/property/downstreamSigns
+page length (characters) of wiki page,http://dbpedia.org/ontology/wikiPageLength
+overlay4left,http://dbpedia.org/property/overlay4left
+survey,http://dbpedia.org/property/survey
+completion date,http://dbpedia.org/property/completionDate
+Nov snow inch,http://dbpedia.org/property/novSnowInch
+reported deaths,http://dbpedia.org/property/reportedDeaths
+death place,http://dbpedia.org/property/deathPlace
+cc,http://dbpedia.org/property/cc
+value,http://dbpedia.org/property/value
+Jan low F,http://dbpedia.org/property/janLowF
+mark-title,http://dbpedia.org/property/markTitle
+designated nrhp type,http://dbpedia.org/property/designatedNrhpType
+inaugurated,http://dbpedia.org/property/inaugurated
+fmt,http://dbpedia.org/property/fmt
+mapframe-caption,http://dbpedia.org/property/mapframeCaption
+maint,http://dbpedia.org/property/maint
+traversable,http://dbpedia.org/property/traversable
+Apr high F,http://dbpedia.org/property/aprHighF
+commons-search,http://dbpedia.org/property/commonsSearch
+cause,http://dbpedia.org/property/cause
+toll ($),http://dbpedia.org/ontology/toll
+replaced by,http://dbpedia.org/property/replacedBy
+map upright,http://dbpedia.org/property/mapUpright
+stroke-width,http://dbpedia.org/property/strokeWidth
+num track,http://dbpedia.org/property/numTrack
+followed,http://dbpedia.org/property/followed
+overlay5colour,http://dbpedia.org/property/overlay5colour
+locmapin,http://dbpedia.org/property/locmapin
+Mar record high F,http://dbpedia.org/property/marRecordHighF
+estimated cost,http://dbpedia.org/property/estimatedCost
+Northeast,http://dbpedia.org/property/northeast
+background color,http://dbpedia.org/property/backgroundColor
+May precipitation inch,http://dbpedia.org/property/mayPrecipitationInch
+frame-height,http://dbpedia.org/property/frameHeight
+postal code,http://dbpedia.org/property/postalCode
+reported injuries,http://dbpedia.org/property/reportedInjuries
+Sep low F,http://dbpedia.org/property/sepLowF
+header type,http://dbpedia.org/property/headerType
+mpsub,http://dbpedia.org/property/mpsub
+precipitation colour,http://dbpedia.org/property/precipitationColour
+piers in water,http://dbpedia.org/property/piersInWater
+official website,http://dbpedia.org/property/officialWebsite
+year,http://dbpedia.org/property/year
+cap,http://dbpedia.org/property/cap
+y,http://dbpedia.org/property/y
+x,http://dbpedia.org/property/x
+cat,http://dbpedia.org/property/cat
+hatnote,http://dbpedia.org/property/hatnote
+load limit (g),http://dbpedia.org/ontology/loadLimit
+stroke-colour,http://dbpedia.org/property/strokeColour
+lat2 deg,http://dbpedia.org/property/lat2Deg
+id,http://dbpedia.org/property/id
+notes,http://dbpedia.org/property/notes
+system,http://dbpedia.org/property/system
+planned finish,http://dbpedia.org/property/plannedFinish
+designation1 free2name,http://dbpedia.org/property/designation1Free2name
+Link from a Wikipage to a Wikipage in a different language about the same or a related subject.,http://dbpedia.org/ontology/wikiPageInterLanguageLink
+portal,http://dbpedia.org/property/portal
+namesake,http://dbpedia.org/property/namesake
+statebefore,http://dbpedia.org/property/statebefore
+below,http://dbpedia.org/property/below
+winner,http://dbpedia.org/property/winner
+label size,http://dbpedia.org/property/labelSize
+mile,http://dbpedia.org/property/mile
+opening date,http://dbpedia.org/ontology/openingDate
+engineering,http://dbpedia.org/property/engineering
+path,http://dbpedia.org/property/path
+handle,http://dbpedia.org/property/handle
+alias,http://dbpedia.org/ontology/alias
+altname,http://dbpedia.org/property/altname
+float,http://dbpedia.org/property/float
+map alt,http://dbpedia.org/property/mapAlt
+Jun snow inch,http://dbpedia.org/property/junSnowInch
+length km,http://dbpedia.org/property/lengthKm
+mapframe-marker-color,http://dbpedia.org/property/mapframeMarkerColor
+destroyed,http://dbpedia.org/property/destroyed
+length mi,http://dbpedia.org/property/lengthMi
+image-top,http://dbpedia.org/property/imageTop
+line,http://dbpedia.org/property/line
+design,http://dbpedia.org/property/design
+length,http://dbpedia.org/property/length
+picture,http://dbpedia.org/ontology/picture
+Apr record low F,http://dbpedia.org/property/aprRecordLowF
+Wikipage revision ID,http://dbpedia.org/ontology/wikiPageRevisionID
+header,http://dbpedia.org/property/header
+note,http://dbpedia.org/property/note
+mapframe lat,http://dbpedia.org/property/mapframeLat
+map size,http://dbpedia.org/property/mapSize
+size,http://dbpedia.org/property/size
+road type,http://dbpedia.org/property/roadType
+website,http://dbpedia.org/property/website
+audio,http://dbpedia.org/property/audio
+commissioning date,http://dbpedia.org/property/commissioningDate
+left,http://dbpedia.org/property/left
+traffic,http://dbpedia.org/property/traffic
+architect,http://dbpedia.org/property/architect
+Feb snow inch,http://dbpedia.org/property/febSnowInch
+overlay4top,http://dbpedia.org/property/overlay4top
+bridge carries,http://dbpedia.org/ontology/bridgeCarries
+nyc,http://dbpedia.org/property/nyc
+Mar snow inch,http://dbpedia.org/property/marSnowInch
+link,http://dbpedia.org/property/link
+overlay2left,http://dbpedia.org/property/overlay2left
+East,http://dbpedia.org/property/east
+beginning date,http://dbpedia.org/property/beginningDate
+group,http://dbpedia.org/property/group
+May record high F,http://dbpedia.org/property/mayRecordHighF
+crosses,http://dbpedia.org/ontology/crosses
+supp,http://dbpedia.org/property/supp
+first,http://dbpedia.org/property/first
+designation1 free2value,http://dbpedia.org/property/designation1Free2value
+c,http://dbpedia.org/property/c
+cost,http://dbpedia.org/property/cost
+m,http://dbpedia.org/property/m
+l,http://dbpedia.org/property/l
+H,http://dbpedia.org/property/h
+j,http://dbpedia.org/property/j
+t,http://dbpedia.org/property/t
+footer,http://dbpedia.org/property/footer
+w,http://dbpedia.org/property/w
+p,http://dbpedia.org/property/p
+s,http://dbpedia.org/property/s
+zoom,http://dbpedia.org/property/zoom
+replaces,http://dbpedia.org/property/replaces
+r,http://dbpedia.org/property/r
+hanja,http://dbpedia.org/property/hanja
+Character,http://dbpedia.org/property/character
+maintained by,http://dbpedia.org/ontology/maintainedBy
+Aug record high F,http://dbpedia.org/property/augRecordHighF
+Feb record low F,http://dbpedia.org/property/febRecordLowF
+mr,http://dbpedia.org/property/mr
+version,http://dbpedia.org/property/version
+electrification,http://dbpedia.org/property/electrification
+map dot label position,http://dbpedia.org/property/mapDotLabelPosition
+downstream,http://dbpedia.org/property/downstream
+width,http://dbpedia.org/property/width
+hangul,http://dbpedia.org/property/hangul
+part of,http://dbpedia.org/property/partOf
+engineer,http://dbpedia.org/property/engineer
+talk,http://dbpedia.org/property/talk
+architect,http://dbpedia.org/ontology/architect
+Sep record low F,http://dbpedia.org/property/sepRecordLowF
+dwgs,http://dbpedia.org/property/dwgs
+Subtype,http://dbpedia.org/property/subtype
+governing body,http://dbpedia.org/property/governingBody
+birth place,http://dbpedia.org/property/birthPlace
+embed,http://dbpedia.org/property/embed
+Oct high F,http://dbpedia.org/property/octHighF
+predecessor,http://dbpedia.org/property/predecessor
+length (μ),http://dbpedia.org/ontology/length
+area,http://dbpedia.org/property/area
+trans,http://dbpedia.org/property/trans
+route,http://dbpedia.org/property/route
+overlay3top,http://dbpedia.org/property/overlay3top
+Oct record low F,http://dbpedia.org/property/octRecordLowF
+map image,http://dbpedia.org/property/mapImage
+List ,http://dbpedia.org/property/list
+photo caption,http://dbpedia.org/property/photoCaption
+author,http://dbpedia.org/property/author
+designation1 free3name,http://dbpedia.org/property/designation1Free3name
+border,http://dbpedia.org/property/border
+opening year,http://dbpedia.org/ontology/openingYear
+color,http://dbpedia.org/property/color
+map relief,http://dbpedia.org/property/mapRelief
+liststyle,http://dbpedia.org/property/liststyle
+opening,http://dbpedia.org/property/opening
+km,http://dbpedia.org/property/km
+Feb high F,http://dbpedia.org/property/febHighF
+legend1title,http://dbpedia.org/property/legend1title
+fullheight,http://dbpedia.org/property/fullheight
+Sep record high F,http://dbpedia.org/property/sepRecordHighF
+overlay1left,http://dbpedia.org/property/overlay1left
+num,http://dbpedia.org/property/num
+label,http://dbpedia.org/property/label
+lon min,http://dbpedia.org/property/lonMin
+icon,http://dbpedia.org/property/icon
+material,http://dbpedia.org/property/material
+colwidth,http://dbpedia.org/property/colwidth
+photos,http://dbpedia.org/property/photos
+number spans,http://dbpedia.org/property/numberSpans
+owner,http://dbpedia.org/property/owner
+homepage,http://dbpedia.org/property/homepage
+lat3 deg,http://dbpedia.org/property/lat3Deg
+marksize,http://dbpedia.org/property/marksize
+post-text,http://dbpedia.org/property/postText
+previous,http://dbpedia.org/property/previous
+identifier,http://dbpedia.org/property/identifier
+nearest city,http://dbpedia.org/property/nearestCity
+native name,http://dbpedia.org/property/nativeName
+pushpin map caption,http://dbpedia.org/property/pushpinMapCaption
+quote,http://dbpedia.org/property/quote
+title,http://dbpedia.org/property/title
+width (μ),http://dbpedia.org/ontology/width
+mark-size,http://dbpedia.org/property/markSize
+spans,http://dbpedia.org/property/spans
+unnum,http://dbpedia.org/property/unnum

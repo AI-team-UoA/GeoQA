@@ -1,0 +1,152 @@
+type,http://dbpedia.org/property/type
+reference,http://dbpedia.org/property/reference
+Link from a Wikipage to an external page,http://dbpedia.org/ontology/wikiPageExternalLink
+align,http://dbpedia.org/property/align
+NGA,http://dbpedia.org/property/nga
+frozen,http://dbpedia.org/property/frozen
+named after,http://dbpedia.org/ontology/namedAfter
+Link from a Wikipage to another Wikipage,http://dbpedia.org/ontology/wikiPageWikiLink
+coordinates,http://dbpedia.org/property/coordinates
+Location,http://dbpedia.org/property/location
+iucn category,http://dbpedia.org/property/iucnCategory
+image bathymetry,http://dbpedia.org/property/imageBathymetry
+etymology,http://dbpedia.org/property/etymology
+pushpin,http://dbpedia.org/property/pushpin
+is part of,http://dbpedia.org/ontology/isPartOf
+Link from a Wikipage to a Wikipage in a different language about the same or a related subject.,http://dbpedia.org/ontology/wikiPageInterLanguageLink
+text,http://dbpedia.org/property/text
+portal,http://dbpedia.org/property/portal
+image size,http://dbpedia.org/property/imageSize
+image,http://dbpedia.org/property/image
+quote,http://dbpedia.org/ontology/quote
+elevation (μ),http://dbpedia.org/ontology/elevation
+minimum temperature (K),http://dbpedia.org/ontology/minimumTemperature
+oLeft,http://dbpedia.org/property/oleft
+float,http://dbpedia.org/property/float
+characteristic,http://dbpedia.org/property/characteristic
+voy,http://dbpedia.org/property/voy
+residence time,http://dbpedia.org/property/residenceTime
+original name,http://dbpedia.org/ontology/originalName
+maximum temperature (K),http://dbpedia.org/ontology/maximumTemperature
+oceans,http://dbpedia.org/property/oceans
+designation,http://dbpedia.org/property/designation
+native name lang,http://dbpedia.org/property/nativeNameLang
+islands,http://dbpedia.org/property/islands
+outflow,http://dbpedia.org/ontology/outflow
+ind,http://dbpedia.org/property/ind
+area km,http://dbpedia.org/property/areaKm
+benches,http://dbpedia.org/property/benches
+vie,http://dbpedia.org/property/vie
+embedded,http://dbpedia.org/property/embedded
+length,http://dbpedia.org/property/length
+Wikipage revision ID,http://dbpedia.org/ontology/wikiPageRevisionID
+map caption,http://dbpedia.org/property/mapCaption
+lang,http://dbpedia.org/property/lang
+map size,http://dbpedia.org/property/mapSize
+admiralty,http://dbpedia.org/property/admiralty
+image map,http://dbpedia.org/property/imageMap
+website,http://dbpedia.org/property/website
+managingagent,http://dbpedia.org/property/managingagent
+pushpin label,http://dbpedia.org/property/pushpinLabel
+established,http://dbpedia.org/property/established
+country,http://dbpedia.org/ontology/country
+frozen,http://dbpedia.org/ontology/frozen
+relief,http://dbpedia.org/property/relief
+average depth (μ),http://dbpedia.org/ontology/averageDepth
+cHeight,http://dbpedia.org/property/cheight
+pushpin relief,http://dbpedia.org/property/pushpinRelief
+thumbnail,http://dbpedia.org/ontology/thumbnail
+commons,http://dbpedia.org/property/commons
+basin countries,http://dbpedia.org/property/basinCountries
+nearest city,http://dbpedia.org/ontology/nearestCity
+c,http://dbpedia.org/property/c
+l,http://dbpedia.org/property/l
+image width,http://dbpedia.org/property/imageWidth
+n,http://dbpedia.org/property/n
+AlternativeMap,http://dbpedia.org/property/alternativemap
+H,http://dbpedia.org/property/h
+has abstract,http://dbpedia.org/ontology/abstract
+j,http://dbpedia.org/property/j
+outflow,http://dbpedia.org/property/outflow
+t,http://dbpedia.org/property/t
+w,http://dbpedia.org/property/w
+hain,http://dbpedia.org/property/hain
+v,http://dbpedia.org/property/v
+q,http://dbpedia.org/property/q
+inflow,http://dbpedia.org/ontology/inflow
+p,http://dbpedia.org/property/p
+s,http://dbpedia.org/property/s
+automated,http://dbpedia.org/property/automated
+order,http://dbpedia.org/property/order
+wikt,http://dbpedia.org/property/wikt
+cWidth,http://dbpedia.org/property/cwidth
+por,http://dbpedia.org/property/por
+sign,http://dbpedia.org/property/sign
+lang1 content,http://dbpedia.org/property/lang1Content
+wuu,http://dbpedia.org/property/wuu
+max-depth,http://dbpedia.org/property/maxDepth
+marking,http://dbpedia.org/property/marking
+kanji,http://dbpedia.org/property/kanji
+poj,http://dbpedia.org/property/poj
+width,http://dbpedia.org/property/width
+date,http://dbpedia.org/property/date
+image name,http://dbpedia.org/property/imageName
+part of,http://dbpedia.org/property/partOf
+rtgs,http://dbpedia.org/property/rtgs
+islands category,http://dbpedia.org/property/islandsCategory
+governing body,http://dbpedia.org/property/governingBody
+shape,http://dbpedia.org/property/shape
+showflag,http://dbpedia.org/property/showflag
+area total (m2),http://dbpedia.org/ontology/areaTotal
+countries,http://dbpedia.org/property/countries
+description,http://dbpedia.org/property/description
+length (μ),http://dbpedia.org/ontology/length
+name,http://dbpedia.org/property/name
+area,http://dbpedia.org/property/area
+tha,http://dbpedia.org/property/tha
+maximum depth (μ),http://dbpedia.org/ontology/maximumDepth
+url,http://dbpedia.org/property/url
+kana,http://dbpedia.org/property/kana
+caption,http://dbpedia.org/property/caption
+other name,http://dbpedia.org/property/otherName
+map image,http://dbpedia.org/property/mapImage
+cities,http://dbpedia.org/property/cities
+page length (characters) of wiki page,http://dbpedia.org/ontology/wikiPageLength
+tgl,http://dbpedia.org/property/tgl
+inflow,http://dbpedia.org/property/inflow
+ARLHS,http://dbpedia.org/property/arlhs
+lightsource,http://dbpedia.org/property/lightsource
+pushpin map alt,http://dbpedia.org/property/pushpinMapAlt
+caption bathymetry,http://dbpedia.org/property/captionBathymetry
+lqn,http://dbpedia.org/property/lqn
+rivers,http://dbpedia.org/property/rivers
+pushpin label position,http://dbpedia.org/property/pushpinLabelPosition
+oTop,http://dbpedia.org/property/otop
+elevation,http://dbpedia.org/property/elevation
+type,http://dbpedia.org/ontology/type
+salinity,http://dbpedia.org/property/salinity
+height,http://dbpedia.org/property/height
+msa,http://dbpedia.org/property/msa
+alternative name,http://dbpedia.org/ontology/alternativeName
+caption map,http://dbpedia.org/property/captionMap
+yearlit,http://dbpedia.org/property/yearlit
+shore length (μ),http://dbpedia.org/ontology/shoreLength
+Wikipage page ID,http://dbpedia.org/ontology/wikiPageID
+island,http://dbpedia.org/ontology/island
+links,http://dbpedia.org/property/links
+trenches,http://dbpedia.org/property/trenches
+location,http://dbpedia.org/ontology/location
+area of catchment (m2),http://dbpedia.org/ontology/areaOfCatchment
+alt,http://dbpedia.org/property/alt
+romaji,http://dbpedia.org/property/romaji
+yearbuilt,http://dbpedia.org/property/yearbuilt
+reason,http://dbpedia.org/property/reason
+pushpin map,http://dbpedia.org/property/pushpinMap
+construction,http://dbpedia.org/property/construction
+native name,http://dbpedia.org/property/nativeName
+volume (μ³),http://dbpedia.org/ontology/volume
+bSize,http://dbpedia.org/property/bsize
+bpmf,http://dbpedia.org/property/bpmf
+pushpin map caption,http://dbpedia.org/property/pushpinMapCaption
+title,http://dbpedia.org/property/title
+width (μ),http://dbpedia.org/ontology/width
