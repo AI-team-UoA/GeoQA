@@ -160,7 +160,7 @@ public class ConceptIdentifier extends QanaryComponent {
 
 		// Map<String, String> allMapConceptWord =
 		// DBpediaConceptsAndURIs.getDBpediaConceptsAndURIs();
-		Map<String, ArrayList<String>> allMapConceptWord = YagoConceptsAndURIs.getYagoConceptsAndURIs();
+		Map<String, String> allMapConceptWord = DBpediaConceptsAndURIs.getDBpediaConceptsAndURIs();
 		getXML("/src/main/resources/osm.owl");
 		// getCommonClass(allMapConceptWord.keySet());
 		QanaryUtils myQanaryUtils = this.getUtils(myQanaryMessage);
@@ -170,32 +170,31 @@ public class ConceptIdentifier extends QanaryComponent {
 		List<Concept> osmConcepts = new ArrayList<Concept>();
 		List<String> allNouns = getNouns(myQanaryQuestion.getTextualRepresentation());
 		// question string is required as input for the service call
-//		osmUriMap.put("District", "http://www.app-lab.eu/gadm/District");
-//		osmUriMap.put("County", "http://www.app-lab.eu/gadm/County");
-//		osmUriMap.put("Administrative County", "http://www.app-lab.eu/gadm/AdministrativeCounty");
-//		osmUriMap.put("London Borough", "http://www.app-lab.eu/gadm/LondonBorough");
-//		osmUriMap.put("MetropolitanCounty", "http://www.app-lab.eu/gadm/MetropolitanCounty");
-//		osmUriMap.put("Country", "http://www.app-lab.eu/gadm/HomeNation|ConstituentCountry");
-//		osmUriMap.put("Province", "http://www.app-lab.eu/gadm/Province");
-//		osmUriMap.put("Unitary District", "http://www.app-lab.eu/gadm/UnitaryDistrict");
-//		osmUriMap.put("Administrative Unit", "http://www.app-lab.eu/gadm/AdministrativeUnit");
-//		osmUriMap.put("Metropolitan Borough", "http://www.app-lab.eu/gadm/MetropolitanBorough");
-		//-----------------------------------------------------------------------------------------
-		osmUriMap.put("Civil Parishor Community", "http://kr.di.uoa.gr/yago2geo/ontology/OS_CivilParishorCommunity");
-		osmUriMap.put("Unitary Authority Ward", "http://kr.di.uoa.gr/yago2geo/ontology/OS_UnitaryAuthorityWard");
-		osmUriMap.put("District Ward", "http://kr.di.uoa.gr/yago2geo/ontology/OS_DistrictWard");
-		osmUriMap.put("District", "http://kr.di.uoa.gr/yago2geo/ontology/OS_District");
-		osmUriMap.put("County", "http://kr.di.uoa.gr/yago2geo/ontology/OS_County");
-		osmUriMap.put("Metropolitan District Ward", "http://kr.di.uoa.gr/yago2geo/ontology/OS_MetropolitanDistrictWard");
-		osmUriMap.put("Unitary Authority", "http://kr.di.uoa.gr/yago2geo/ontology/OS_UnitaryAuthority");
-		osmUriMap.put("London Borough", "http://kr.di.uoa.gr/yago2geo/ontology/OS_LondonBorough");
-		osmUriMap.put("London Borough Ward", "http://kr.di.uoa.gr/yago2geo/ontology/OS_LondonBoroughWard");
-		osmUriMap.put("Metropolitan District", "http://kr.di.uoa.gr/yago2geo/ontology/OS_MetropolitanDistrict");
-		osmUriMap.put("GreaterLondon Authority", "http://kr.di.uoa.gr/yago2geo/ontology/OS_GreaterLondonAuthority");
-		osmUriMap.put("European Region", "http://kr.di.uoa.gr/yago2geo/ontology/OS_EuropeanRegion");
-		osmUriMap.put("Community Ward", "http://kr.di.uoa.gr/yago2geo/ontology/OS_COMMUNITYWARD");
-		osmUriMap.put("City Community Ward", "http://kr.di.uoa.gr/yago2geo/ontology/OS_CCOMMUNITYWARD");
-
+		osmUriMap.put("District", "http://www.app-lab.eu/gadm/District");
+		osmUriMap.put("County", "http://www.app-lab.eu/gadm/County");
+		osmUriMap.put("Administrative County", "http://www.app-lab.eu/gadm/AdministrativeCounty");
+		osmUriMap.put("London Borough", "http://www.app-lab.eu/gadm/LondonBorough");
+		osmUriMap.put("MetropolitanCounty", "http://www.app-lab.eu/gadm/MetropolitanCounty");
+		osmUriMap.put("Country", "http://www.app-lab.eu/gadm/HomeNation|ConstituentCountry");
+		osmUriMap.put("Province", "http://www.app-lab.eu/gadm/Province");
+		osmUriMap.put("Unitary District", "http://www.app-lab.eu/gadm/UnitaryDistrict");
+		osmUriMap.put("Administrative Unit", "http://www.app-lab.eu/gadm/AdministrativeUnit");
+		osmUriMap.put("Metropolitan Borough", "http://www.app-lab.eu/gadm/MetropolitanBorough");
+		// -----------------------------------------------------------------------------------------
+//		osmUriMap.put("Civil Parishor Community", "http://kr.di.uoa.gr/yago2geo/ontology/OS_CivilParishorCommunity");
+//		osmUriMap.put("Unitary Authority Ward", "http://kr.di.uoa.gr/yago2geo/ontology/OS_UnitaryAuthorityWard");
+//		osmUriMap.put("District Ward", "http://kr.di.uoa.gr/yago2geo/ontology/OS_DistrictWard");
+//		osmUriMap.put("District", "http://kr.di.uoa.gr/yago2geo/ontology/OS_District");
+//		osmUriMap.put("County", "http://kr.di.uoa.gr/yago2geo/ontology/OS_County");
+//		osmUriMap.put("Metropolitan District Ward", "http://kr.di.uoa.gr/yago2geo/ontology/OS_MetropolitanDistrictWard");
+//		osmUriMap.put("Unitary Authority", "http://kr.di.uoa.gr/yago2geo/ontology/OS_UnitaryAuthority");
+//		osmUriMap.put("London Borough", "http://kr.di.uoa.gr/yago2geo/ontology/OS_LondonBorough");
+//		osmUriMap.put("London Borough Ward", "http://kr.di.uoa.gr/yago2geo/ontology/OS_LondonBoroughWard");
+//		osmUriMap.put("Metropolitan District", "http://kr.di.uoa.gr/yago2geo/ontology/OS_MetropolitanDistrict");
+//		osmUriMap.put("GreaterLondon Authority", "http://kr.di.uoa.gr/yago2geo/ontology/OS_GreaterLondonAuthority");
+//		osmUriMap.put("European Region", "http://kr.di.uoa.gr/yago2geo/ontology/OS_EuropeanRegion");
+//		osmUriMap.put("Community Ward", "http://kr.di.uoa.gr/yago2geo/ontology/OS_COMMUNITYWARD");
+//		osmUriMap.put("City Community Ward", "http://kr.di.uoa.gr/yago2geo/ontology/OS_CCOMMUNITYWARD");
 
 		/*
 		 * http://kr.di.uoa.gr/yago2geo/ontology/OS_CivilParishorCommunity
@@ -246,23 +245,16 @@ public class ConceptIdentifier extends QanaryComponent {
 					Pattern p = Pattern.compile("\\b" + synonym + "\\b", Pattern.CASE_INSENSITIVE);
 					Matcher m = p.matcher(nounWord);
 					if (m.find()) {
-						for (String s : allMapConceptWord.get(conceptLabel.replaceAll(" ", "_"))) {
-							Concept concept = new Concept();
-							concept.setBegin(myQuestion.toLowerCase().indexOf(synonym.toLowerCase()));
-							concept.setEnd(myQuestion.toLowerCase().indexOf(synonym.toLowerCase()) + synonym.length());
-							concept.setURI(s);
-							mappedConcepts.add(concept);
-							System.out.println(
-									"Identified Concepts: dbo:" + conceptLabel + " ============================"
-											+ "Synonym inside question is: " + synonym + " ===================");
-							logger.info("identified concept: concept={} : {} : {}", concept.toString(), myQuestion,
-									conceptLabel);
-						}
-						// TODO: remove break and collect all appearances of
-						// concepts
-						// TODO: implement test case "City nearby Forest
-						// nearby
-						// River"
+						Concept concept = new Concept();
+						concept.setBegin(myQuestion.toLowerCase().indexOf(synonym.toLowerCase()));
+						concept.setEnd(myQuestion.toLowerCase().indexOf(synonym.toLowerCase()) + synonym.length());
+						concept.setURI(allMapConceptWord.get(conceptLabel.replaceAll(" ", "_")));
+						concept.setLabel(conceptLabel);
+						mappedConcepts.add(concept);
+						System.out.println("Identified Concepts: dbo:" + conceptLabel + " ============================"
+								+ "Synonym inside question is: " + synonym + " ===================");
+						logger.info("identified concept: concept={} : {} : {}", concept.toString(), myQuestion,
+								conceptLabel);
 						break;
 					}
 				}
@@ -299,87 +291,8 @@ public class ConceptIdentifier extends QanaryComponent {
 			}
 		}
 
-		// Find class from DBpedia
-//		for (String conceptLabel : allMapConceptWord.keySet()) {
-//			// logger.info("The word: {} question : {}", conceptLabel,
-//			// myQuestion);
-//
-//			ArrayList<String> wordNetSynonyms = wordNet.getSynonyms(conceptLabel);
-//			for (String synonym : wordNetSynonyms) {
-//				for (String nounWord : allNouns) {
-//					Pattern p = Pattern.compile("\\b" + synonym + "\\b", Pattern.CASE_INSENSITIVE);
-//					Matcher m = p.matcher(nounWord);
-//					if (m.find()) {
-//						Concept concept = new Concept();
-//						concept.setBegin(myQuestion.toLowerCase().indexOf(synonym.toLowerCase()));
-//						concept.setEnd(myQuestion.toLowerCase().indexOf(synonym.toLowerCase()) + synonym.length());
-//						concept.setURI(allMapConceptWord.get(conceptLabel.replaceAll(" ", "_")));
-//						mappedConcepts.add(concept);
-//						System.out.println(
-//								"Identified Concepts: dbo:" + conceptLabel + " ============================"
-//										+ "Synonym inside question is: " + synonym + " ===================");
-//						logger.info("identified concept: concept={} : {} : {}", concept.toString(), myQuestion,
-//								conceptLabel);
-//						// TODO: remove break and collect all appearances of
-//						// concepts
-//						// TODO: implement test case "City nearby Forest
-//						// nearby
-//						// River"
-//						break;
-//					}
-//				}
-//			}
-//		}
-		// for (String conceptLabel : allMapConceptWord.keySet()) {
-		// // logger.info("The word: {} question : {}", conceptLabel,
-		// // myQuestion);
-		// Pattern p = Pattern.compile("\\b" + conceptLabel + "\\b",
-		// Pattern.CASE_INSENSITIVE);
-		// Matcher m = p.matcher(myQuestion);
-		// if (m.find()) {
-		// Concept concept = new Concept();
-		// concept.setBegin(myQuestion.toLowerCase().indexOf(conceptLabel.toLowerCase()));
-		// concept.setEnd(
-		// myQuestion.toLowerCase().indexOf(conceptLabel.toLowerCase()) +
-		// conceptLabel.length());
-		// concept.setURI(allMapConceptWord.get(conceptLabel.replaceAll(" ",
-		// "_")));
-		// mappedConcepts.add(concept);
-		//
-		// logger.info("identified concept: concept={} : {} : {}",
-		// concept.toString(), myQuestion,
-		// conceptLabel);
-		// // TODO: remove break and collect all appearances of
-		// // concepts
-		// // TODO: implement test case "City nearby Forest nearby
-		// // River"
-		// // break;
-		// }
-		// }
-
-		// System.out.println("The Identified Concepts: ");
-		// for (Concept concept : mappedConcepts) {
-		// System.out.println("=========");
-		// System.out.println(concept.getURI());
-		// System.out.println("=========");
-		// }
-		/////////////////////////////////////////////////////////////////
-		// Step 4: now push the results, i.e., identified concept and its
-		// associated URI back to triplestore
-		/////////////////////////////////////////////////////////////////
-
-
 		ArrayList<Concept> removalList = new ArrayList<Concept>();
-//		for (int i = 0; i < mappedConcepts.size(); i++) {
-//			Concept tempConcept = mappedConcepts.get(i);
-//			String conUri = tempConcept.getURI();
-//			if (conUri.contains("Park")) {
-//				if (myQuestionNl.contains(" car ")) {
-//					removalList.add(mappedConcepts.get(i));
-//				}
-//			}
-//			System.out.println("Concept: " + conUri);
-//		}
+
 		for (Concept tempConcept : mappedConcepts) {
 			String conUri = tempConcept.getURI();
 			if (conUri != null) {
@@ -396,7 +309,7 @@ public class ConceptIdentifier extends QanaryComponent {
 						|| conUri.contains("http://dbpedia.org/ontology/Name")
 						|| conUri.contains("http://dbpedia.org/ontology/Population")
 						|| (conUri.contains("http://www.app-lab.eu/osm/ontology#Peak")
-						&& myQuestion.toLowerCase().contains("height")) ) {
+								&& myQuestion.toLowerCase().contains("height"))) {
 					removalList.add(tempConcept);
 				}
 			}
