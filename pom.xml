@@ -14,7 +14,7 @@
     <module>qanary_component-TagMeDisambiguate</module>
     <module>qanary_component-ConceptIdentifier</module>
     <module>qanary_component-RelationDetection</module>
-    <module>qanary_component-PropertyIdentifierYago</module>
+    <module>qanary_component-PropertyIdentifier</module>
     <module>qanary_component-GeoSparqlGenerator</module>
   </modules>
 </project>

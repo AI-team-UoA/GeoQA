@@ -146,7 +146,7 @@ public class PropertyIdentifier extends QanaryComponent {
 		for (CoreMap sentence : sentences) {
 			// Iterate over all tokens in a sentence
 			SemanticGraph dependencies = sentence.get(SemanticGraphCoreAnnotations.BasicDependenciesAnnotation.class);
-			dependencies.prettyPrint();
+//			dependencies.prettyPrint();
 			List<SemanticGraphEdge>	edges = dependencies.edgeListSorted();
 
 			for(SemanticGraphEdge edge: edges){
@@ -186,7 +186,7 @@ public class PropertyIdentifier extends QanaryComponent {
 		for (CoreMap sentence : sentences) {
 			// Iterate over all tokens in a sentence
 			SemanticGraph dependencies = sentence.get(SemanticGraphCoreAnnotations.BasicDependenciesAnnotation.class);
-			dependencies.prettyPrint();
+//			dependencies.prettyPrint();
 			List<SemanticGraphEdge>	edges = dependencies.edgeListSorted();
 
 			for(SemanticGraphEdge edge: edges){

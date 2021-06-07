@@ -210,9 +210,9 @@ public class TagMeDisambiguate extends QanaryComponent {
 			for (NedAnnotation ann : annotations) {
 				if (ann.getTitle() != null) {
 					Link l = new Link();
-					l.link = this.yagoLink + ann.getTitle();
+					l.link = this.dbpediaLink + ann.getTitle();
 					l.linkCount = getNoOfLinks(countQuery1 + " <" + l.link + "> " + countQuery2,
-							yagoEndpoint);
+							dbpediaEndpoint);
 					l.begin = ann.getStart();
 					l.end = ann.getEnd();
 					String entlst = myQuestion.substring(l.begin,l.end);

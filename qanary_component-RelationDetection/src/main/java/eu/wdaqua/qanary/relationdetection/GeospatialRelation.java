@@ -92,7 +92,7 @@ public enum GeospatialRelation {
 	}, NEAR_BY {
 		@Override
 		public String[] getLabels() {
-			return new String[]{"near","nearby", "close", "at most","around","less than","at least"};
+			return new String[]{"near","nearby", "close", "at most","around","less than","at least","nearest","closest"};
 		}
 		@Override
 		public String getURI() {
