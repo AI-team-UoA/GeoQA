@@ -1,4 +1,4 @@
-package eu.wdaqua.qanary.propertyidentifieryago;
+package eu.wdaqua.qanary.propertyidentifier;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
@@ -27,7 +27,7 @@ public class Application {
 	*/
 	@Bean
 	public QanaryComponent qanaryComponent() {
-		return new PropertyIdentifierYago();
+		return new PropertyIdentifier();
 	}
 
 	@Autowired

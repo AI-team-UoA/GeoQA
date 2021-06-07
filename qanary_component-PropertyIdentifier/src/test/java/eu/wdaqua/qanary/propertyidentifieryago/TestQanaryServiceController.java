@@ -34,6 +34,7 @@ import static eu.wdaqua.qanary.commons.config.QanaryConfiguration.outGraphKey;
 import eu.wdaqua.qanary.commons.QanaryMessage;
 import eu.wdaqua.qanary.commons.config.QanaryConfiguration;
 import eu.wdaqua.qanary.component.QanaryServiceController;
+import eu.wdaqua.qanary.propertyidentifier.Application;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @SpringBootTest(classes = Application.class)

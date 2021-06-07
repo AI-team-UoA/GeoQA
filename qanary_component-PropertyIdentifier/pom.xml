@@ -4,7 +4,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>eu.wdaqua.qanary.component</groupId>
-	<artifactId>qanary_component-PropertyIdentifierYago</artifactId>
+	<artifactId>qanary_component-PropertyIdentifier</artifactId>
 	<version>0.1.0</version>
 
 	<parent>
@@ -20,7 +20,7 @@
 		<!-- Replace the name of the docker image to be generated -->
 		<!-- if there is an error demanding a lower-case name, then you picked 
 			a artifactId not following the naming conventions, (c.f., https://maven.apache.org/guides/mini/guide-naming-conventions.html) -->
-		<docker.image.name>qanary_component-propertyidentifieryago</docker.image.name>
+		<docker.image.name>qanary_component-propertyidentifier</docker.image.name>
 		<dockerfile-maven-version>1.4.13</dockerfile-maven-version>
 	</properties>
 
@@ -94,7 +94,7 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 				<configuration>
-					<mainClass>eu.wdaqua.qanary.propertyidentifieryago.Application</mainClass>
+					<mainClass>eu.wdaqua.qanary.propertyidentifier.Application</mainClass>
 				</configuration>
 				<executions>
 					<execution>
