@@ -71,6 +71,7 @@ public class GeoSparqlGenerator extends QanaryComponent {
 	public static String questionText = "", questionTextL = "";
 	public static List<String> dbpediaProperty = new ArrayList<String>();
 	public static String final_DBpediaProperty = "";
+
 	public static String lemmatize(String documentText) {
 		Properties props = new Properties();
 		props.put("annotators", "tokenize, ssplit, pos, lemma");
@@ -437,7 +438,7 @@ public class GeoSparqlGenerator extends QanaryComponent {
 			if ((tnj.posTag.equalsIgnoreCase("NN") || tnj.posTag.equalsIgnoreCase("NNP")
 					|| tnj.posTag.equalsIgnoreCase("NNPS"))
 					&& (tnj1.posTag.equalsIgnoreCase("NN") || tnj1.posTag.equalsIgnoreCase("NNP")
-					|| tnj1.posTag.equalsIgnoreCase("NNPS"))) {
+							|| tnj1.posTag.equalsIgnoreCase("NNPS"))) {
 				if ((tnj.conceptList.size() > 0 || tnj.entityList.size() > 0)
 						&& (tnj1.conceptList.size() > 0 || tnj1.entityList.size() > 0)) {
 					tnj.m_name += " " + tnj1.m_name;
@@ -681,7 +682,8 @@ public class GeoSparqlGenerator extends QanaryComponent {
 			for (CoreLabel token : sentence.get(TokensAnnotation.class)) {
 				String pos = token.get(PartOfSpeechAnnotation.class);
 				if (pos.contains("JJS")) {
-					if(token.originalText().equalsIgnoreCase("nearest")||token.originalText().equalsIgnoreCase("nearest")) {
+					if (token.originalText().equalsIgnoreCase("nearest")
+							|| token.originalText().equalsIgnoreCase("nearest")) {
 						retVal = true;
 					}
 				}
@@ -735,8 +737,7 @@ public class GeoSparqlGenerator extends QanaryComponent {
 		Map<Integer, String> mapOfGeoRelation = new TreeMap<Integer, String>();
 		Map<Integer, List<Concept>> sameConcepts = new HashMap<Integer, List<Concept>>();
 		Map<Integer, List<Entity>> sameInstances = new HashMap<Integer, List<Entity>>();
-		
-		
+
 		try {
 			logger.info("store data in graph {}",
 					myQanaryMessage.getValues().get(new URL(myQanaryMessage.getEndpoint().toString())));
@@ -1180,12 +1181,11 @@ public class GeoSparqlGenerator extends QanaryComponent {
 			System.out.println("cSize : " + cSize + "\trSize : " + rSize + "\tiSize : " + iSize + "\tpSize : " + pSize
 					+ "\n" + "CountFlag = " + countFlag);
 
-
 			nearestFlag = isJJSClosestOrNearest(myQuestionNL);
-			// add code that would check for nearest flag and generate the closest/nearest queries
+			// add code that would check for nearest flag and generate the closest/nearest
+			// queries
 
 			// if POSTags contains JJS generate queries with ORDER BY()
-
 
 			if (cSize == 0 && rSize == 1 && iSize == 1) {
 				if (getW(myQuestionNL).size() > 0) {
@@ -1210,7 +1210,7 @@ public class GeoSparqlGenerator extends QanaryComponent {
 					}
 				}
 			}
-			
+
 			if (cSize == 1 && (rSize == 2 || rSize == 1 || rSize == 3) && iSize == 1 && pSize == 1) {
 				if (rSize == 1) {
 					System.out.println("***************** CRIP identified *****************");
@@ -1597,8 +1597,7 @@ public class GeoSparqlGenerator extends QanaryComponent {
 				}
 			}
 
-			//CRI 
-			
+			// CRI
 
 			if (cSize == 1 && rSize == 1 && iSize == 1 && pSize == 0) {
 				System.out.println("***************** CRI identified *****************");
@@ -1749,12 +1748,13 @@ public class GeoSparqlGenerator extends QanaryComponent {
 												+ ents.uri
 												+ ">; geo:hasGeometry ?geom. ?geom geo:asWKT ?iWKT. FILTER(geof:distance(?cWKT,?iWKT,uom:metre) <= 1000) }";
 									}
-
-									if (thresholdFlag) {
+									if (nearestFlag) {
+										sparqlQ = sparqlQ.replace(
+												"FILTER(geof:distance(?cWKT,?iWKT,uom:metre) <= 1000) }",
+												" } ORDER BY(geof:distance(?cWKT,?iWKT,uom:metre)) LIMIT 1");
+									} else if (thresholdFlag) {
 										sparqlQ = sparqlQ.replace("1000", thresholdDistance);
-									}
-
-									else {
+									} else {
 										if (con.link.contains("Restaurant") || con.link.contains("Park")) {
 											sparqlQ = sparqlQ.replace("1000", "500");
 										}
@@ -1838,8 +1838,11 @@ public class GeoSparqlGenerator extends QanaryComponent {
 												+ ">; geo:hasGeometry ?cGeom. ?cGeom geo:asWKT ?cWKT. <" + ents.uri
 												+ "> geo:hasGeometry ?iGeom. ?iGeom geo:asWKT ?iWKT. FILTER(geof:distance(?cWKT,?iWKT,uom:metre) <= 1000) }";
 									}
-
-									if (thresholdFlag) {
+									if (nearestFlag) {
+										sparqlQ = sparqlQ.replace(
+												"FILTER(geof:distance(?cWKT,?iWKT,uom:metre) <= 1000) }",
+												" } ORDER BY(geof:distance(?cWKT,?iWKT,uom:metre)) LIMIT 1");
+									} else if (thresholdFlag) {
 										sparqlQ = sparqlQ.replace("1000", thresholdDistance);
 									}
 
@@ -2110,8 +2113,11 @@ public class GeoSparqlGenerator extends QanaryComponent {
 															+ ent2.uri
 															+ ">; geo:hasGeometry ?iGeom2. ?iGeom2 geo:asWKT ?iWKT2. FILTER((geof:distance(?cWKT, ?iWKT1, uom:metre) <= 1000) && geof:sfWithin(?iWKT1, ?iWKT2) ) }";
 												}
-
-												if (thresholdFlag) {
+												if (nearestFlag) {
+													sparqlQ = sparqlQ.replace(
+															"FILTER((geof:distance(?cWKT, ?iWKT1, uom:metre) <= 1000) && geof:sfWithin(?iWKT1, ?iWKT2) ) }",
+															" FILTER(geof:sfWithin(?iWKT1, ?iWKT2) ) } ORDER BY(geof:distance(?cWKT,?iWKT1,uom:metre)) LIMIT 1");
+												} else if (thresholdFlag) {
 													sparqlQ = sparqlQ.replace("1000", thresholdDistance);
 												} else {
 													if (con.link.contains("Restaurant") || con.link.contains("Park")) {
@@ -2151,8 +2157,11 @@ public class GeoSparqlGenerator extends QanaryComponent {
 															+ ">; geo:hasGeometry ?iGeom2. ?iGeom2 geo:asWKT ?iWKT2. FILTER((geof:distance(?cWKT, ?iWKT2, uom:metre) <= 1000) && geof:sfWithin(?cWKT, ?iWKT1) ) }";
 
 												}
-
-												if (thresholdFlag) {
+												if (nearestFlag) {
+													sparqlQ = sparqlQ.replace(
+															"FILTER((geof:distance(?cWKT, ?iWKT2, uom:metre) <= 1000) && geof:sfWithin(?cWKT, ?iWKT1) ) }",
+															" FILTER(geof:sfWithin(?cWKT, ?iWKT1) ) } ORDER BY(geof:distance(?cWKT,?iWKT2,uom:metre)) LIMIT 1");
+												} else if (thresholdFlag) {
 													sparqlQ = sparqlQ.replace("1000", thresholdDistance);
 												} else {
 													if (con.link.contains("Restaurant") || con.link.contains("Park")) {
@@ -2276,8 +2285,11 @@ public class GeoSparqlGenerator extends QanaryComponent {
 														+ ">; geo:hasGeometry ?iGeom1. ?iGeom1 geo:asWKT ?iWKT1.  <"
 														+ ent2.uri
 														+ "> geo:hasGeometry ?iGeom2. ?iGeom2 geo:asWKT ?iWKT2. FILTER((geof:distance(?cWKT, ?iWKT1, uom:metre) <= 1000) && geof:sfWithin(?iWKT1, ?iWKT2) ) }";
-
-												if (thresholdFlag) {
+												if (nearestFlag) {
+													sparqlQ = sparqlQ.replace(
+															"FILTER((geof:distance(?cWKT, ?iWKT1, uom:metre) <= 1000) && geof:sfWithin(?iWKT1, ?iWKT2) ) }",
+															" FILTER(geof:sfWithin(?iWKT1, ?iWKT2) ) } ORDER BY(geof:distance(?cWKT,?iWKT1,uom:metre)) LIMIT 1");
+												} else if (thresholdFlag) {
 													sparqlQ = sparqlQ.replace("1000", thresholdDistance);
 												}
 
@@ -2308,8 +2320,11 @@ public class GeoSparqlGenerator extends QanaryComponent {
 														+ ">; geo:hasGeometry ?iGeom1. ?iGeom1 geo:asWKT ?iWKT1.  <"
 														+ ent2.uri
 														+ "> geo:hasGeometry ?iGeom2. ?iGeom2 geo:asWKT ?iWKT2. FILTER((geof:distance(?cWKT, ?iWKT2, uom:metre) <= 1000) && geof:sfWithin(?cWKT, ?iWKT1) ) }";
-
-												if (thresholdFlag) {
+												if (nearestFlag) {
+													sparqlQ = sparqlQ.replace(
+															"FILTER((geof:distance(?cWKT, ?iWKT2, uom:metre) <= 1000) && geof:sfWithin(?cWKT, ?iWKT1) ) }",
+															" FILTER(geof:sfWithin(?cWKT, ?iWKT1) ) } ORDER BY(geof:distance(?cWKT,?iWKT2,uom:metre)) LIMIT 1");
+												} else if (thresholdFlag) {
 													sparqlQ = sparqlQ.replace("1000", thresholdDistance);
 												}
 
@@ -2435,8 +2450,11 @@ public class GeoSparqlGenerator extends QanaryComponent {
 														+ "> geo:hasGeometry ?iGeom1. ?iGeom1 geo:asWKT ?iWKT1.  ?instance owl:sameAs <"
 														+ ent2.uri
 														+ ">; geo:hasGeometry ?iGeom2. ?iGeom2 geo:asWKT ?iWKT2. FILTER((geof:distance(?cWKT, ?iWKT1, uom:metre) <= 1000) && geof:sfWithin(?iWKT1, ?iWKT2) ) }";
-
-												if (thresholdFlag) {
+												if (nearestFlag) {
+													sparqlQ = sparqlQ.replace(
+															"FILTER((geof:distance(?cWKT, ?iWKT1, uom:metre) <= 1000) && geof:sfWithin(?iWKT1, ?iWKT2) ) }",
+															" FILTER(geof:sfWithin(?iWKT1, ?iWKT2) ) } ORDER BY(geof:distance(?cWKT,?iWKT1,uom:metre)) LIMIT 1");
+												} else if (thresholdFlag) {
 													sparqlQ = sparqlQ.replace("1000", thresholdDistance);
 												}
 
@@ -2467,8 +2485,11 @@ public class GeoSparqlGenerator extends QanaryComponent {
 														+ "> geo:hasGeometry ?iGeom1. ?iGeom1 geo:asWKT ?iWKT1.  ?instance owl:sameAs <"
 														+ ent2.uri
 														+ ">; geo:hasGeometry ?iGeom2. ?iGeom2 geo:asWKT ?iWKT2. FILTER((geof:distance(?cWKT, ?iWKT2, uom:metre) <= 1000) && geof:sfWithin(?cWKT, ?iWKT1) ) }";
-
-												if (thresholdFlag) {
+												if (nearestFlag) {
+													sparqlQ = sparqlQ.replace(
+															"FILTER((geof:distance(?cWKT, ?iWKT2, uom:metre) <= 1000) && geof:sfWithin(?cWKT, ?iWKT1) ) }",
+															" FILTER(geof:sfWithin(?cWKT, ?iWKT1) ) } ORDER BY(geof:distance(?cWKT,?iWKT2,uom:metre)) LIMIT 1");
+												} else if (thresholdFlag) {
 													sparqlQ = sparqlQ.replace("1000", thresholdDistance);
 												}
 
@@ -2596,8 +2617,11 @@ public class GeoSparqlGenerator extends QanaryComponent {
 														+ "> geo:hasGeometry ?iGeom1. ?iGeom1 geo:asWKT ?iWKT1.  <"
 														+ ent2.uri
 														+ "> geo:hasGeometry ?iGeom2. ?iGeom2 geo:asWKT ?iWKT2. FILTER((geof:distance(?cWKT, ?iWKT1, uom:metre) <= 1000) && geof:sfWithin(?iWKT1, ?iWKT2) ) }";
-
-												if (thresholdFlag) {
+												if (nearestFlag) {
+													sparqlQ = sparqlQ.replace(
+															"FILTER((geof:distance(?cWKT, ?iWKT1, uom:metre) <= 1000) && geof:sfWithin(?iWKT1, ?iWKT2) ) }",
+															" FILTER(geof:sfWithin(?iWKT1, ?iWKT2) ) } ORDER BY(geof:distance(?cWKT,?iWKT1,uom:metre)) LIMIT 1");
+												} else if (thresholdFlag) {
 													sparqlQ = sparqlQ.replace("1000", thresholdDistance);
 												}
 
@@ -2629,8 +2653,11 @@ public class GeoSparqlGenerator extends QanaryComponent {
 														+ "> geo:hasGeometry ?iGeom1. ?iGeom1 geo:asWKT ?iWKT1.  <"
 														+ ent2.uri
 														+ "> geo:hasGeometry ?iGeom2. ?iGeom2 geo:asWKT ?iWKT2. FILTER(geof:sfWithin(?cWKT, ?iWKT1) && (geof:distance(?cWKT, ?iWKT2,uom:metre) < 1000) ) }";
-
-												if (thresholdFlag) {
+												if (nearestFlag) {
+													sparqlQ = sparqlQ.replace(
+															"FILTER(geof:sfWithin(?cWKT, ?iWKT1) && (geof:distance(?cWKT, ?iWKT2,uom:metre) < 1000) ) }",
+															" FILTER(geof:sfWithin(?cWKT, ?iWKT1) ) } ORDER BY(geof:distance(?cWKT,?iWKT1,uom:metre)) LIMIT 1");
+												} else if (thresholdFlag) {
 													sparqlQ = sparqlQ.replace("1000", thresholdDistance);
 												}
 
@@ -2794,7 +2821,10 @@ public class GeoSparqlGenerator extends QanaryComponent {
 										+ ">; geo:hasGeometry ?cGeom1. ?cGeom1 geo:asWKT ?cWKT1. ?y rdf:type <"
 										+ con2.link
 										+ ">; geo:hasGeometry ?cGeom2. ?cGeom2 geo:asWKT ?cWKT2. FILTER(geof:distance(?cWKT1,?cWKT2,uom:metre) <= 1000)}";
-								if (thresholdFlag) {
+								if (nearestFlag) {
+									sparqlQ = sparqlQ.replace("FILTER(geof:distance(?cWKT1,?cWKT2,uom:metre) <= 1000)}",
+											" } ORDER BY(geof:distance(?cWKT1,?cWKT2,uom:metre)) LIMIT 1");
+								} else if (thresholdFlag) {
 									sparqlQ = sparqlQ.replace("1000", thresholdDistance);
 								}
 
@@ -2882,8 +2912,11 @@ public class GeoSparqlGenerator extends QanaryComponent {
 														+ ">; geo:hasGeometry ?geom2. ?geom2 geo:asWKT ?cWKT2. ?instance owl:sameAs <"
 														+ ents.uri
 														+ ">; geo:hasGeometry ?iGeom. ?iGeom geo:asWKT ?iWKT.   FILTER((geof:distance(?cWKT1, ?cWKT2,uom:metre) < 1000)  && geof:sfWithin(?cWKT2, ?iWKT) ) }";
-
-												if (thresholdFlag) {
+												if (nearestFlag) {
+													sparqlQ = sparqlQ.replace(
+															"FILTER((geof:distance(?cWKT1, ?cWKT2,uom:metre) < 1000)  && geof:sfWithin(?cWKT2, ?iWKT) ) }",
+															" FILTER(geof:sfWithin(?cWKT2, ?iWKT) ) } ORDER BY(geof:distance(?cWKT1,?cWKT2,uom:metre)) LIMIT 1");
+												} else if (thresholdFlag) {
 													sparqlQ = sparqlQ.replace("1000", thresholdDistance);
 												}
 
@@ -2915,8 +2948,11 @@ public class GeoSparqlGenerator extends QanaryComponent {
 														+ ">; geo:hasGeometry ?geom2. ?geom2 geo:asWKT ?cWKT2. ?instance owl:sameAs <"
 														+ ents.uri
 														+ ">; geo:hasGeometry ?iGeom. ?iGeom geo:asWKT ?iWKT.   FILTER((geof:distance(?cWKT2, ?iWKT,uom:metre) < 1000)  && geof:sfWithin(?cWKT1, ?cWKT2) ) }";
-
-												if (thresholdFlag) {
+												if (nearestFlag) {
+													sparqlQ = sparqlQ.replace(
+															"FILTER((geof:distance(?cWKT2, ?iWKT,uom:metre) < 1000)  && geof:sfWithin(?cWKT1, ?cWKT2) ) }",
+															" FILTER(geof:sfWithin(?cWKT1, ?cWKT2) ) } ORDER BY(geof:distance(?cWKT2,?iWKT,uom:metre)) LIMIT 1");
+												} else if (thresholdFlag) {
 													sparqlQ = sparqlQ.replace("1000", thresholdDistance);
 												}
 
@@ -2967,8 +3003,11 @@ public class GeoSparqlGenerator extends QanaryComponent {
 														+ ">; geo:hasGeometry ?geom2. ?geom2 geo:asWKT ?cWKT2. <"
 														+ ents.uri
 														+ "> geo:hasGeometry ?iGeom. ?iGeom geo:asWKT ?iWKT.   FILTER((geof:distance(?cWKT1, ?cWKT2,uom:metre) < 1000)  && geof:sfWithin(?cWKT2, ?iWKT) ) }";
-
-												if (thresholdFlag) {
+												if (nearestFlag) {
+													sparqlQ = sparqlQ.replace(
+															"FILTER((geof:distance(?cWKT1, ?cWKT2,uom:metre) < 1000)  && geof:sfWithin(?cWKT2, ?iWKT) ) }",
+															" FILTER(geof:sfWithin(?cWKT2, ?iWKT) ) } ORDER BY(geof:distance(?cWKT1,?cWKT2,uom:metre)) LIMIT 1");
+												} else if (thresholdFlag) {
 													sparqlQ = sparqlQ.replace("1000", thresholdDistance);
 												}
 
@@ -2999,8 +3038,11 @@ public class GeoSparqlGenerator extends QanaryComponent {
 														+ ">; geo:hasGeometry ?geom2. ?geom2 geo:asWKT ?cWKT2. <"
 														+ ents.uri
 														+ "> geo:hasGeometry ?iGeom. ?iGeom geo:asWKT ?iWKT.   FILTER((geof:distance(?cWKT2, ?iWKT,uom:metre) < 1000)  && geof:sfWithin(?cWKT1, ?cWKT2) ) }";
-
-												if (thresholdFlag) {
+												if (nearestFlag) {
+													sparqlQ = sparqlQ.replace(
+															"FILTER((geof:distance(?cWKT2, ?iWKT,uom:metre) < 1000)  && geof:sfWithin(?cWKT1, ?cWKT2) ) }",
+															" FILTER(geof:sfWithin(?cWKT1, ?cWKT2) ) } ORDER BY(geof:distance(?cWKT2,?iWKT,uom:metre)) LIMIT 1");
+												} else if (thresholdFlag) {
 													sparqlQ = sparqlQ.replace("1000", thresholdDistance);
 												}
 
@@ -3105,6 +3147,11 @@ public class GeoSparqlGenerator extends QanaryComponent {
 									sparqlQ = "ASK { ?x owl:sameAs <" + ent1.uri
 											+ ">; geo:hasGeometry ?iGeom1. ?iGeom1 geo:asWKT ?iWKT1. <" + ent2.uri
 											+ "> geo:hasGeometry ?iGeom2. ?iGeom2 geo:asWKT ?iWKT2. FILTER(geof:distance(?iWKT1, ?iWKT2,uom:metre) < 10000) }";
+									if (nearestFlag) {
+										sparqlQ = sparqlQ.replace(
+												"FILTER(geof:distance(?iWKT1, ?iWKT2,uom:metre) < 10000) }",
+												" } ORDER BY(geof:distance(?iWKT1,?iWKT2,uom:metre)) LIMIT 1");
+									}
 									Query q = new Query();
 									q.query = sparqlQ;
 									q.score = ent1.linkCount + ent2.linkCount;
@@ -3170,6 +3217,11 @@ public class GeoSparqlGenerator extends QanaryComponent {
 										+ "> geo:hasGeometry ?iGeom1. ?iGeom1 geo:asWKT ?iWKT1. ?x owl:sameAs <"
 										+ ent2.uri
 										+ ">; geo:hasGeometry ?iGeom2. ?iGeom2 geo:asWKT ?iWKT2. FILTER(geof:distance(?iWKT1, ?iWKT2,uom:metre) < 10000) }";
+								if (nearestFlag) {
+									sparqlQ = sparqlQ.replace(
+											"FILTER(geof:distance(?iWKT1, ?iWKT2,uom:metre) < 10000) }",
+											" } ORDER BY(geof:distance(?iWKT1,?iWKT2,uom:metre)) LIMIT 1");
+								}
 								Query q = new Query();
 								q.query = sparqlQ;
 								q.score = ent1.linkCount + ent2.linkCount;
@@ -3235,6 +3287,11 @@ public class GeoSparqlGenerator extends QanaryComponent {
 								sparqlQ = "ASK {  <" + ent1.uri
 										+ "> geo:hasGeometry ?iGeom1. ?iGeom1 geo:asWKT ?iWKT1. <" + ent2.uri
 										+ "> geo:hasGeometry ?iGeom2. ?iGeom2 geo:asWKT ?iWKT2. FILTER(geof:distance(?iWKT1, ?iWKT2,uom:metre) < 10000) }";
+								if (nearestFlag) {
+									sparqlQ = sparqlQ.replace(
+											"FILTER(geof:distance(?iWKT1, ?iWKT2,uom:metre) < 10000) }",
+											" } ORDER BY(geof:distance(?iWKT1,?iWKT2,uom:metre)) LIMIT 1");
+								}
 								Query q = new Query();
 								q.query = sparqlQ;
 								q.score = ent1.linkCount + ent2.linkCount;
@@ -3360,10 +3417,14 @@ public class GeoSparqlGenerator extends QanaryComponent {
 								allQueriesList.add(q);
 								allSparqlQueries.add(sparqlQ);
 							}
-							if (spatialRelation.contains("near")) {
+							if (spatialRelation.contains("distance")) {
 								String sparqlQ = "ASK {  <" + ent1.uri
 										+ "> geo:hasGeometry ?iGeom1. ?iGeom1 geo:asWKT ?iWKT1. <" + ent2.uri
 										+ "> geo:hasGeometry ?iGeom2. ?iGeom2 geo:asWKT ?iWKT2. FILTER(geof:distance(?iWKT1, ?iWKT2) < 10000) }";
+								if (nearestFlag) {
+									sparqlQ = sparqlQ.replace("FILTER(geof:distance(?iWKT1, ?iWKT2) < 10000) }",
+											" } ORDER BY(geof:distance(?iWKT1,?iWKT2,uom:metre)) LIMIT 1");
+								}
 								Query q = new Query();
 								q.query = sparqlQ;
 								q.score = ent1.linkCount + ent2.linkCount;
@@ -3417,1750 +3478,171 @@ public class GeoSparqlGenerator extends QanaryComponent {
 
 			}
 
-			if (cSize == 2 && rSize == 1 && iSize == 1 && pSize == 0) {
-				System.out.println("***************** CRCI identified *****************");
-				String spatialRelation = relationsList.get(0).get(0).relationFunction.toLowerCase();
-
-				List<Concept> concept1 = concpetsLists.get(0);
-				List<Concept> concept2 = concpetsLists.get(1);
-				List<Concept> finalConcept = concpetsLists.get(0);
-
-				Concept con1 = concpetsLists.get(0).get(0);
-				Concept con2 = concpetsLists.get(1).get(0);
-//				Entity ent1 = instancesList.get(0);
-				Boolean flag = false;
-
-				for (Entity ent1 : instancesList.get(0)) {
-					for (int i = 0; i < concept1.size(); i++) {
-						if (checkNeighbours(concept1.get(i), ent1)) {
-							flag = true;
-							finalConcept = concept2;
-						}
-					}
-
-					for (int i = 0; i < concept2.size(); i++) {
-						if (checkNeighbours(concept2.get(i), ent1)) {
-							flag = true;
-							finalConcept = concept1;
-						}
-					}
-
-					if (flag) {
-						for (Concept con : finalConcept) {
-							if (con.link.contains("http://yago-knowledge.org")) {
-								if (ent1.uri.contains("http://yago-knowledge.org")) {
-									// check if the combination of this concept - relation - typeofinstance exist
-									if (answerAvailable(con.link, ent1.uri, spatialRelation)) {
-										if (spatialRelation.contains("within")) { // these code block is to be
-
-											String sparqlQ = "select ?x where { SERVICE <http://pyravlos1.di.uoa.gr:8890/sparql> { ?x rdf:type <"
-													+ con.link
-													+ ">. ?x <http://yago-knowledge.org/resource/isLocatedIn> <"
-													+ ent1.uri + ">.} }";
-											Query q = new Query();
-											q.query = sparqlQ;
-											q.score = ent1.linkCount;
-											allQueriesList.add(q);
-											allSparqlQueries.add(sparqlQ);
-										}
-
-										// We can't answer other relationships if the concept is YAGO class
-
-									}
-
-								}
-							} else {
-
-								if (ent1.uri.contains("http://yago-knowledge.org")) {
-
-									// CONCEPT = OSM, INSTANCE = YAGO
-									boolean yagoEntityThatIsNotInEndpoint = false;
-									String answer = null;
-									// If I is from yago, we first check if we have polygon for yago entity in
-									// pyravlos
-									String Query = "SELECT ?x where { <" + ent1.uri + "> ?p ?x . }";
-									// If at least one result is returned, it means we have the polygon in pyravlos
-									// and we don't need to do anything else
-									answer = runSparqlOnEndpoint(Query, "http://pyravlos1.di.uoa.gr:8080/geoqa/Query");
-									if (answer == null) {
-										yagoEntityThatIsNotInEndpoint = true;
-									}
-
-									String sparqlQ = "select ?x where { ?x rdf:type <" + con.link
-											+ ">; geo:hasGeometry ?cGeom. ?cGeom geo:asWKT ?cWKT. ";
-
-									if (yagoEntityThatIsNotInEndpoint)
-										sparqlQ += "?instance owl:sameAs <" + ent1.uri
-												+ ">; geo:hasGeometry ?geom. ?geom geo:asWKT ?iWKT.";
-									else
-										sparqlQ += "<" + ent1.uri + "> geo:hasGeometry ?geom. ?geom geo:asWKT ?iWKT.";
-
-									if (spatialRelation.contains("within")) {
-										sparqlQ += "FILTER(geof:sfWithin(?cWKT,?iWKT))}";
-
-									}
-									if (spatialRelation.contains("near")) {
-										sparqlQ += "FILTER(geof:distance(?cWKT,?iWKT,uom:metre) <= 1000) }";
-
-										if (thresholdFlag) {
-											sparqlQ = sparqlQ.replace("1000", thresholdDistance);
-										}
-
-										else {
-											if (con.link.contains("Restaurant") || con.link.contains("Park")) {
-												sparqlQ = sparqlQ.replace("1000", "500");
-											}
-											if (con.link.contains("City")) {
-												sparqlQ = sparqlQ.replace("1000", "5000");
-											}
-										}
-									}
-									if (spatialRelation.contains("crosses")) {
-										sparqlQ += "FILTER(geof:sfCrosses(?cWKT,?iWKT))}";
-									}
-									if (spatialRelation.contains("boundry")) {
-										sparqlQ += "FILTER(geof:sfTouches(?cWKT,?iWKT))}";
-									}
-									Query q = new Query();
-									q.query = sparqlQ;
-									q.score = ent1.linkCount;
-									allQueriesList.add(q);
-									allSparqlQueries.add(sparqlQ);
-								} else {
-									// CONCEPT = OSM, INSTANCE = OSM
-									String sparqlQ = "select ?x where { ?x rdf:type <" + con.link
-											+ ">; geo:hasGeometry ?cGeom. ?cGeom geo:asWKT ?cWKT. <" + ent1.uri
-											+ "> geo:hasGeometry ?geom. ?geom geo:asWKT ?iWKT. ";
-
-									if (spatialRelation.contains("within")) {
-										sparqlQ += "FILTER(geof:sfWithin(?cWKT,?iWKT))}";
-
-									}
-									if (spatialRelation.contains("near")) {
-										sparqlQ += "FILTER(geof:distance(?cWKT,?iWKT,uom:metre) <= 1000) }";
-
-										if (thresholdFlag) {
-											sparqlQ = sparqlQ.replace("1000", thresholdDistance);
-										}
-
-										else {
-											if (con.link.contains("Restaurant") || con.link.contains("Park")) {
-												sparqlQ = sparqlQ.replace("1000", "500");
-											}
-											if (con.link.contains("City")) {
-												sparqlQ = sparqlQ.replace("1000", "5000");
-											}
-										}
-									}
-									if (spatialRelation.contains("crosses")) {
-										sparqlQ += "FILTER(geof:sfCrosses(?cWKT,?iWKT))}";
-									}
-									if (spatialRelation.contains("boundry")) {
-										sparqlQ += "FILTER(geof:sfTouches(?cWKT,?iWKT))}";
-									}
-
-									Query q = new Query();
-									q.query = sparqlQ;
-									q.score = ent1.linkCount;
-									allQueriesList.add(q);
-									allSparqlQueries.add(sparqlQ);
-								}
-							}
-						}
-					}
-				}
-			}
+//			if (cSize == 2 && rSize == 1 && iSize == 1 && pSize == 0) {
+//				System.out.println("***************** CRCI identified *****************");
+//				String spatialRelation = relationsList.get(0).get(0).relationFunction.toLowerCase();
+//
+//				List<Concept> concept1 = concpetsLists.get(0);
+//				List<Concept> concept2 = concpetsLists.get(1);
+//				List<Concept> finalConcept = concpetsLists.get(0);
+//
+//				Concept con1 = concpetsLists.get(0).get(0);
+//				Concept con2 = concpetsLists.get(1).get(0);
+////				Entity ent1 = instancesList.get(0);
+//				Boolean flag = false;
+//
+//				for (Entity ent1 : instancesList.get(0)) {
+//					for (int i = 0; i < concept1.size(); i++) {
+//						if (checkNeighbours(concept1.get(i), ent1)) {
+//							flag = true;
+//							finalConcept = concept2;
+//						}
+//					}
+//
+//					for (int i = 0; i < concept2.size(); i++) {
+//						if (checkNeighbours(concept2.get(i), ent1)) {
+//							flag = true;
+//							finalConcept = concept1;
+//						}
+//					}
+//
+//					if (flag) {
+//						for (Concept con : finalConcept) {
+//							if (con.link.contains("http://yago-knowledge.org")) {
+//								if (ent1.uri.contains("http://yago-knowledge.org")) {
+//									// check if the combination of this concept - relation - typeofinstance exist
+//									if (answerAvailable(con.link, ent1.uri, spatialRelation)) {
+//										if (spatialRelation.contains("within")) { // these code block is to be
+//
+//											String sparqlQ = "select ?x where { SERVICE <http://pyravlos1.di.uoa.gr:8890/sparql> { ?x rdf:type <"
+//													+ con.link
+//													+ ">. ?x <http://yago-knowledge.org/resource/isLocatedIn> <"
+//													+ ent1.uri + ">.} }";
+//											Query q = new Query();
+//											q.query = sparqlQ;
+//											q.score = ent1.linkCount;
+//											allQueriesList.add(q);
+//											allSparqlQueries.add(sparqlQ);
+//										}
+//
+//										// We can't answer other relationships if the concept is YAGO class
+//
+//									}
+//
+//								}
+//							} else {
+//
+//								if (ent1.uri.contains("http://yago-knowledge.org")) {
+//
+//									// CONCEPT = OSM, INSTANCE = YAGO
+//									boolean yagoEntityThatIsNotInEndpoint = false;
+//									String answer = null;
+//									// If I is from yago, we first check if we have polygon for yago entity in
+//									// pyravlos
+//									String Query = "SELECT ?x where { <" + ent1.uri + "> ?p ?x . }";
+//									// If at least one result is returned, it means we have the polygon in pyravlos
+//									// and we don't need to do anything else
+//									answer = runSparqlOnEndpoint(Query, "http://pyravlos1.di.uoa.gr:8080/geoqa/Query");
+//									if (answer == null) {
+//										yagoEntityThatIsNotInEndpoint = true;
+//									}
+//
+//									String sparqlQ = "select ?x where { ?x rdf:type <" + con.link
+//											+ ">; geo:hasGeometry ?cGeom. ?cGeom geo:asWKT ?cWKT. ";
+//
+//									if (yagoEntityThatIsNotInEndpoint)
+//										sparqlQ += "?instance owl:sameAs <" + ent1.uri
+//												+ ">; geo:hasGeometry ?geom. ?geom geo:asWKT ?iWKT.";
+//									else
+//										sparqlQ += "<" + ent1.uri + "> geo:hasGeometry ?geom. ?geom geo:asWKT ?iWKT.";
+//
+//									if (spatialRelation.contains("within")) {
+//										sparqlQ += "FILTER(geof:sfWithin(?cWKT,?iWKT))}";
+//
+//									}
+//									if (spatialRelation.contains("near")) {
+//										sparqlQ += "FILTER(geof:distance(?cWKT,?iWKT,uom:metre) <= 1000) }";
+//										if (nearestFlag) {
+//											sparqlQ = sparqlQ.replace(
+//													"FILTER(geof:distance(?cWKT,?iWKT,uom:metre) <= 1000) }",
+//													" } ORDER BY(geof:distance(?cWKT,?iWKT,uom:metre)) LIMIT 1");
+//										} else if (thresholdFlag) {
+//											sparqlQ = sparqlQ.replace("1000", thresholdDistance);
+//										}
+//
+//										else {
+//											if (con.link.contains("Restaurant") || con.link.contains("Park")) {
+//												sparqlQ = sparqlQ.replace("1000", "500");
+//											}
+//											if (con.link.contains("City")) {
+//												sparqlQ = sparqlQ.replace("1000", "5000");
+//											}
+//										}
+//									}
+//									if (spatialRelation.contains("crosses")) {
+//										sparqlQ += "FILTER(geof:sfCrosses(?cWKT,?iWKT))}";
+//									}
+//									if (spatialRelation.contains("boundry")) {
+//										sparqlQ += "FILTER(geof:sfTouches(?cWKT,?iWKT))}";
+//									}
+//									Query q = new Query();
+//									q.query = sparqlQ;
+//									q.score = ent1.linkCount;
+//									allQueriesList.add(q);
+//									allSparqlQueries.add(sparqlQ);
+//								} else {
+//									// CONCEPT = OSM, INSTANCE = OSM
+//									String sparqlQ = "select ?x where { ?x rdf:type <" + con.link
+//											+ ">; geo:hasGeometry ?cGeom. ?cGeom geo:asWKT ?cWKT. <" + ent1.uri
+//											+ "> geo:hasGeometry ?geom. ?geom geo:asWKT ?iWKT. ";
+//
+//									if (spatialRelation.contains("within")) {
+//										sparqlQ += "FILTER(geof:sfWithin(?cWKT,?iWKT))}";
+//
+//									}
+//									if (spatialRelation.contains("near")) {
+//										sparqlQ += "FILTER(geof:distance(?cWKT,?iWKT,uom:metre) <= 1000) }";
+//										if (nearestFlag) {
+//											sparqlQ = sparqlQ.replace(
+//													"FILTER(geof:distance(?cWKT,?iWKT,uom:metre) <= 1000) }",
+//													" } ORDER BY(geof:distance(?cWKT,?iWKT,uom:metre)) LIMIT 1");
+//										} else if (thresholdFlag) {
+//											sparqlQ = sparqlQ.replace("1000", thresholdDistance);
+//										}
+//
+//										else {
+//											if (con.link.contains("Restaurant") || con.link.contains("Park")) {
+//												sparqlQ = sparqlQ.replace("1000", "500");
+//											}
+//											if (con.link.contains("City")) {
+//												sparqlQ = sparqlQ.replace("1000", "5000");
+//											}
+//										}
+//									}
+//									if (spatialRelation.contains("crosses")) {
+//										sparqlQ += "FILTER(geof:sfCrosses(?cWKT,?iWKT))}";
+//									}
+//									if (spatialRelation.contains("boundry")) {
+//										sparqlQ += "FILTER(geof:sfTouches(?cWKT,?iWKT))}";
+//									}
+//
+//									Query q = new Query();
+//									q.query = sparqlQ;
+//									q.score = ent1.linkCount;
+//									allQueriesList.add(q);
+//									allSparqlQueries.add(sparqlQ);
+//								}
+//							}
+//						}
+//					}
+//				}
+//			}
 
 			concpetsLists.clear();
 			relationsList.clear();
 			instancesList.clear();
 			postagListsInorderTree.clear();
 			geoSPATIALRelations.clear();
-//			List<String> allSparqlQueries = new ArrayList<String>();
-//  ***********************************************************updated code end here****************************************************************//
-
-			// removing extra identified relations : ie.e "within North within"
-			// woul be " north wihtin"
-//			for (Entry<String, List<Integer>> geoSpatialRelation : mapOfRelationIdex.entrySet()) {
-//				List<Integer> indexOfrelation = geoSpatialRelation.getValue();
-//				switch (geoSpatialRelation.getKey()) {
-//				case "geof:sfWithin":
-//
-//					if (indexOfrelation.size() > 1) {
-//
-//						Collections.sort(indexOfrelation);
-//						for (int i = 1; i < indexOfrelation.size(); i++) {
-//
-//							boolean flagIndex = false;
-//							int indPrev = indexOfrelation.get(i - 1);
-//							int indexCurrent = indexOfrelation.get(i);
-//							for (Integer indValConcept : indexOfConcepts) {
-//								if (indPrev < indValConcept && indexCurrent > indValConcept) {
-//									flagIndex = true;
-//								}
-//							}
-//							for (Integer indValInstance : indexOfInstances) {
-//								if (indPrev < indValInstance && indexCurrent > indValInstance) {
-//									flagIndex = true;
-//								}
-//							}
-//							if (!flagIndex) {
-//								indexOfrelation.remove(i - 1);
-//								i--;
-////								System.out.println(" Insideeeeeeeeeeeeee ===========");
-//							}
-//						}
-//
-//						mapOfRelationIdex.replace("geof:sfWithin", indexOfrelation);
-//					}
-//					break;
-//
-//				default:
-//					break;
-//				}
-//
-//			}
-
-			// if((entities.size()+concepts.size())<=mapOfRelationIdex.size()){
-			// for (Entry<String, List<Integer>> geoSpatialRelation :
-			// mapOfRelationIdex.entrySet()) {
-			// List<Integer> indexOfrelation = geoSpatialRelation.getValue();
-			// for (Integer indexRelation : indexOfrelation) {
-			//
-			//
-			//// patternForQueryGeneration.put(indexRelation, "r");
-			//// mapOfGeoRelation.put(indexRelation,
-			// geoSpatialRelation.getKey());
-			// }
-			// }
-			// }
-
-			// putting identified C , R and I in one place with their Index
-//			geoSPATIALRelations.clear();
-//			for (Integer indexConcept : indexOfConcepts) {
-//				patternForQueryGeneration.put(indexConcept, "c");
-//			}
-//			for (Integer indexInstanc : indexOfInstances) {
-////				System.out.println("index of instance: " + indexInstanc);
-//				patternForQueryGeneration.put(indexInstanc, "i");
-//			}
-//			for (Entry<String, List<Integer>> geoSpatialRelation : mapOfRelationIdex.entrySet()) {
-//				List<Integer> indexOfrelation = geoSpatialRelation.getValue();
-//				for (Integer indexRelation : indexOfrelation) {
-//					patternForQueryGeneration.put(indexRelation, "r");
-//					mapOfGeoRelation.put(indexRelation, geoSpatialRelation.getKey());
-//				}
-//			}
-//
-//			// sorting the C, R, I based on Index puting in a treemap.
-//			TreeMap<Integer, String> sortedPatternBasedOnIndex = new TreeMap<Integer, String>(
-//					patternForQueryGeneration);
-//			// String previousRelation = "";
-//			// int previousIndex = -1;
-//
-//			// relation remover if overlaps Instance
-//			for (Entry<String, List<Integer>> geoSpatialRelation : mapOfRelationIdex.entrySet()) {
-//				List<Integer> indexOfrelation = geoSpatialRelation.getValue();
-//				for (Integer indexRelation : indexOfrelation) {
-//
-//					for (Entity entity : entities) {
-//						if (entity.begin <= indexRelation && entity.end >= indexRelation) {
-//							mapOfGeoRelation.remove(indexRelation);
-//							mapOfRelationIdex.remove(indexRelation);
-////							 System.out.println(	"Inside the relation remover if overlaps Instance=============================");
-//						}
-//					}
-//				}
-//			}
-//
-//			// relation remover if extra relation is present
-//			if ((indexOfInstances.size() + indexOfConcepts.size()) <= mapOfRelationIdex.size()) {
-//				for (Entry<String, List<Integer>> geoSpatialRelation : mapOfRelationIdex.entrySet()) {
-//					List<Integer> indexOfrelation = geoSpatialRelation.getValue();
-//					for (int i = 0; i < indexOfrelation.size() - 1; i++) {
-//						for (int j = i + 1; j < indexOfrelation.size(); i++) {
-//							int indiRelation = indexOfrelation.get(i);
-//							int indjRelation = indexOfrelation.get(j);
-//							boolean conbool = false;
-//							boolean entbool = false;
-//							for (Integer indexConcept : indexOfConcepts) {
-//								if ((indexConcept < indiRelation && indexConcept < indjRelation)
-//										|| (indexConcept > indiRelation && indexConcept > indjRelation)) {
-//									conbool = true;
-//								}
-//							}
-//							for (Integer indexInstance : indexOfInstances) {
-//								if ((indexInstance < indiRelation && indexInstance < indjRelation)
-//										|| (indexInstance > indiRelation && indexInstance > indjRelation)) {
-//									conbool = true;
-//								}
-//							}
-//							if (conbool && entbool) {
-//							}
-//						}
-//					}
-//					for (Integer indexRelation : indexOfrelation) {
-//						for (Integer indexConcept : indexOfConcepts) {
-//
-//							if (indexRelation < indexConcept) {
-//								for (Integer indexInstance : indexOfInstances) {
-//									if (indexInstance > indexConcept) {
-//										mapOfGeoRelation.remove(indexRelation);
-////										 System.out.println(	"Inside the relation remover if extra relation is present=============================");
-//									}
-//								}
-//							}
-//						}
-//
-//						// patternForQueryGeneration.put(indexRelation, "r");
-//						// mapOfGeoRelation.put(indexRelation,
-//						// geoSpatialRelation.getKey());
-//					}
-//
-//				}
-//			}
-//
-//			for (Concept conc : concepts) {
-//				List<Concept> tConcept = new ArrayList<Concept>();
-//				if (sameConcepts.isEmpty()) {
-//					tConcept.add(conc);
-//					sameConcepts.put(conc.begin, tConcept);
-//				} else {
-//					if (sameConcepts.containsKey(conc.begin)) {
-//						tConcept = sameConcepts.remove(conc.begin);
-//					}
-//					tConcept.add(conc);
-//					sameConcepts.put(conc.begin, tConcept);
-//				}
-//			}
-//
-//			for (Entity ents : entities) {
-//				List<Entity> tEnt = new ArrayList<Entity>();
-//				if (sameInstances.isEmpty()) {
-//					tEnt.add(ents);
-//					sameInstances.put(ents.begin, tEnt);
-//				} else {
-//					if (sameInstances.containsKey(ents.begin)) {
-//						tEnt = sameInstances.remove(ents.begin);
-//					}
-//					tEnt.add(ents);
-//					sameInstances.put(ents.begin, tEnt);
-//				}
-//			}
-//			for (Concept conc : concepts) {
-//				System.out.println("Concept Index :" + conc.begin + ": " + sameConcepts.get(conc.begin).size());
-//			}
-//
-//			for (Entity ents : entities) {
-////				System.out.println("Instance Index :" + ents.begin + ": " + sameInstances.get(ents.begin).size());
-//			}
-//			geoSPATIALRelations.clear();
-//			System.out.println("Instance size: " + sameInstances.keySet());
-//
-//			geoSPATIALRelations.clear();
-
-//			int count = 0;
-//			for (Map.Entry<Integer, String> entry : sortedPatternBasedOnIndex.entrySet()) {
-//				System.out.println("Key : " + entry.getKey() + " Value : " + entry.getValue());
-//				// String currentRelation = entry.getValue();
-//				// int currentIndex = entry.getKey();
-//				// if(currentRelation.equalsIgnoreCase("r")){
-//				//
-//				// if ( previousRelation.equalsIgnoreCase("r")) {
-//				//
-//				// }PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-//				// }
-//				// if(currentRelation.equalsIgnoreCase("r")){
-//				//
-//				// }
-//				// else{
-//				// previousRelation = currentRelation;
-//				// }
-//
-//			}
-
-			// Collections.sort(patternIndex);
-			//
-			// logger.info("The generated pattern Index is: {} " +
-			// patternIndex.toString());
-
-			// logger.info("The generate geosparql is :{} ", newGeoSparqlQuery);
-			// geoSparqlQuery = "";
-
-			// geoSPATIALRelations = (List<String>) mapOfGeoRelation.values();
-//			String templateFileName = "";
-//
-//			String host = "pyravlos1.di.uoa.gr";
-//			Integer port = 8080;
-//			String appName = "geoqa/Query";
-//			String query = "";
-//			String format = "TSV";
-//			String sparqlQuesry = "";
-//
-//			for (String spatialTempRelation : mapOfGeoRelation.values()) {
-//				geoSPATIALRelations.add(spatialTempRelation);
-//			}
-
-			// for(Concept conc:concepts) {
-			// String sparqlQuery="";
-			// for(Entity ents:entities) {
-			// if(conc.link.contains("dbpedia")&&ents.uri.contains("dbpedia")) {
-
-			// }
-			// }
-			// }
-
-//			List<List<Entity>> instanceLists1 = new ArrayList<List<Entity>>();
-//			for (Map.Entry<Integer, List<Entity>> entry : sameInstances.entrySet()) {
-//				List<Entity> iteratorInstance = entry.getValue();
-//				instanceLists1.add(iteratorInstance);
-//			}
-//			// get all concepts
-//			List<List<Concept>> concpetLists1 = new ArrayList<List<Concept>>();
-//			for (Map.Entry<Integer, List<Concept>> entry : sameConcepts.entrySet()) {
-//				List<Concept> iteratorConcept = entry.getValue();
-//				concpetLists1.add(iteratorConcept);
-//			}
-//
-//			// chcek to remove extra concept
-//			if ((concpetLists1.size() >= instanceLists1.size()) && (instanceLists1.size() == geoSPATIALRelations.size())
-//					&& (concpetLists1.size() > 1)) {
-//				for (int i = 0; i < concpetLists1.size(); i++) {
-//					for (int j = 0; j < instanceLists1.size(); j++) {
-//						for (int k = 0; k < concpetLists1.get(i).size(); k++) {
-//							for (int l = 0; l < instanceLists1.get(j).size(); l++) {
-//								if (checkNeighbours(concpetLists1.get(i).get(k), instanceLists1.get(j).get(l))) {
-////									if (checkTypes(concpetLists1.get(i).get(k), instanceLists1.get(j).get(l))) {
-////									System.out.println(
-////											"===============Remove Concept from list ===========================");
-//									if (sameConcepts.containsKey(concpetLists1.get(i).get(k).begin)) {
-//										sameConcepts.remove(concpetLists1.get(i).get(k).begin);
-//										break;
-//									}
-////									}
-//								}
-//							}
-//						}
-//					}
-//				}
-//			}
-
-//			primitiveTraversal(tree, concepts, entities, relationKeywords);
-
-//			System.out.println("NO. of Concepts: " + sameConcepts.size() + "\nNo. of Relations : "
-//					+ geoSPATIALRelations.size() + "\nNo. of Instances : " + instanceLists1.size());
-//			String identifiedPattern = "";
-			// CRC patern
-//			if (sameConcepts.size() == 2 && geoSPATIALRelations.size() == 1 && sameInstances.size() == 0) {
-//				System.out.println("Detected Pattern : CRC ");
-//				identifiedPattern = "CRC";
-//				List<List<Concept>> concpetLists = new ArrayList<List<Concept>>();
-//				for (Map.Entry<Integer, List<Concept>> entry : sameConcepts.entrySet()) {
-//					List<Concept> iteratorConcept = entry.getValue();
-//					concpetLists.add(iteratorConcept);
-//
-//				}
-//
-//				String spatialRelation = mappingOfGeospatialRelationsToGeosparqlFunctions
-//						.get(geoSPATIALRelations.get(0));
-//
-//				for (Concept con1 : concpetLists.get(0)) {
-//					for (Concept con2 : concpetLists.get(1)) {
-//						if (con1.link.contains("http://yago-knowledge.org")) {
-//							if (con2.link.contains("http://yago-knowledge.org")) {
-//								if (spatialRelation.contains("within")) {
-//									String sparqlQ = "select ?x where { SERVICE <http://pyravlos1.di.uoa.gr:8890/sparql> { ?x rdf:type <"
-//											+ con1.link + ">. ?y rdf:type <" + con2.link
-//											+ ">. ?x <http://yago-knowledge.org/resource/isLocatedIn> ?y.} }";
-//									Query q = new Query();
-//									q.query = sparqlQ;
-//									allQueriesList.add(q);
-//									allSparqlQueries.add(sparqlQ);
-//								}
-//							}
-//						} else {
-//
-//							if (!con2.link.contains("http://yago-knowledge.org")) {
-//
-//								Query q = new Query();
-//								String sparqlQ = "select ?x where { ?x rdf:type <" + con1.link
-//										+ ">; geo:hasGeometry ?cGeom1. ?cGeom1 geo:asWKT ?cWKT1. ?y rdf:type <"
-//										+ con2.link + ">; geo:hasGeometry ?cGeom2. ?cGeom2 geo:asWKT ?cWKT2.";
-//
-//								if (spatialRelation.contains("within")) {
-//									sparqlQ += "FILTER(geof:sfWithin(?cWKT1,?cWKT2))}";
-//								}
-//
-//								if (spatialRelation.contains("near")) {
-//									sparqlQ += "FILTER(geof:distance(?cWKT1,?cWKT2,uom:metre) <= 1000)}";
-//									if (thresholdFlag) {
-//										sparqlQ = sparqlQ.replace("1000", thresholdDistance);
-//
-//									}
-//
-//									else {
-//										if (con2.link.contains("Restaurant") || con2.link.contains("Park")) {
-//											sparqlQ = sparqlQ.replace("1000", "500");
-//										}
-//										if (con2.link.contains("City")) {
-//											sparqlQ = sparqlQ.replace("1000", "5000");
-//										}
-//									}
-//								}
-//								if (spatialRelation.contains("east")) {
-//									sparqlQ += "FILTER(strdf:right(?cWKT1, ?cWKT2)) }";
-//								}
-//								if (spatialRelation.contains("west")) {
-//									sparqlQ += "FILTER(strdf:left(?cWKT1, ?cWKT2)) }";
-//								}
-//								if (spatialRelation.contains("north")) {
-//									sparqlQ += "FILTER(strdf:above(?cWKT1, ?cWKT2)) }";
-//								}
-//								if (spatialRelation.contains("south")) {
-//									sparqlQ += "FILTER(strdf:below(?cWKT1, ?cWKT2)) }";
-//								}
-//
-//								q.query = sparqlQ;
-//								allQueriesList.add(q);
-//								allSparqlQueries.add(sparqlQ);
-//							}
-//
-//						}
-//					}
-//				}
-//			}
-			// CRCRI patern
-//			if (sameConcepts.size() == 2 && geoSPATIALRelations.size() == 2 && sameInstances.size() == 1) {
-//				System.out.println("Detected Pattern : CRCRI ");
-//				identifiedPattern = "CRCRI";
-//				List<Entity> instanceLists = new ArrayList<Entity>();
-//				for (Map.Entry<Integer, List<Entity>> entry : sameInstances.entrySet()) {
-//					instanceLists = entry.getValue();
-//				}
-//
-//				List<List<Concept>> concpetLists = new ArrayList<List<Concept>>();
-//				for (Map.Entry<Integer, List<Concept>> entry : sameConcepts.entrySet()) {
-//					List<Concept> iteratorConcept = entry.getValue();
-//					concpetLists.add(iteratorConcept);
-//				}
-//
-//				List<String> geoSpatialRelations = new ArrayList<>();
-//				geoSpatialRelations
-//						.add(mappingOfGeospatialRelationsToGeosparqlFunctions.get(geoSPATIALRelations.get(0)));
-//				geoSpatialRelations
-//						.add(mappingOfGeospatialRelationsToGeosparqlFunctions.get(geoSPATIALRelations.get(1)));
-//
-//				for (Concept con1 : concpetLists.get(0)) {
-//					for (Concept con2 : concpetLists.get(1)) {
-//						for (Entity ents : instanceLists) {
-//							if (con1.link.contains("dbpedia")) {
-//								if (con2.link.contains("dbpedia")) {
-//									if (ents.uri.contains("dbpedia.org")) {
-//										if (geoSPATIALRelations.get(0).contains("within")) {
-//											if (geoSPATIALRelations.get(1).contains("within")) {
-//												String sparqlQ = "select ?x { SERVICE <http://dbpedia.org/sparql> { ?x rdf:type <"
-//														+ con1.link + ">. ?y rdf:type <" + con2.link + ">. ?x ?p1 ?y. <"
-//														+ con2.link + "> ?p2 <" + ents.uri + ">.  } }";
-//												Query q = new Query();
-//												q.query = sparqlQ;
-//												q.score = ents.linkCount;
-//												allQueriesList.add(q);
-//												allSparqlQueries.add(sparqlQ);
-//											}
-//										}
-//									}
-//								}
-//							} else {
-//								if (!con2.link.contains("dbpedia")) {
-//									if (ents.uri.contains("dbpedia.org")) {
-//										if (geoSpatialRelations.get(0).contains("within")) {
-//											if (geoSpatialRelations.get(1).contains("within")) {
-//												String sparqlQ = "select ?x { ?x rdf:type <" + con1.link
-//														+ ">; geo:hasGeometry ?geom. ?geom geo:asWKT ?cWKT. ?y rdf:type <"
-//														+ con2.link
-//														+ ">; geo:hasGeometry ?geom2. ?geom2 geo:asWKT ?cWKT2. ?instance owl:sameAs <"
-//														+ ents.uri
-//														+ ">; geo:hasGeometry ?iGeom. ?iGeom geo:asWKT ?iWKT.   FILTER(geof:sfWithin(?cWKT1, ?cWKT2) && geof:sfWithin(?cWKT2, ?iWKT) ) }";
-//												Query q = new Query();
-//												q.query = sparqlQ;
-//												q.score = ents.linkCount;
-//												allQueriesList.add(q);
-//												allSparqlQueries.add(sparqlQ);
-//											}
-//										}
-//										if (geoSpatialRelations.get(0).contains("near")) {
-//											if (geoSpatialRelations.get(1).contains("within")) {
-//
-//												String sparqlQ = "select ?x { ?x rdf:type <" + con1.link
-//														+ ">; geo:hasGeometry ?geom. ?geom geo:asWKT ?cWKT. ?y rdf:type <"
-//														+ con2.link
-//														+ ">; geo:hasGeometry ?geom2. ?geom2 geo:asWKT ?cWKT2. ?instance owl:sameAs <"
-//														+ ents.uri
-//														+ ">; geo:hasGeometry ?iGeom. ?iGeom geo:asWKT ?iWKT.   FILTER((geof:distance(?cWKT1, ?cWKT2,uom:metre) < 1000)  && geof:sfWithin(?cWKT2, ?iWKT) ) }";
-//
-//												if (thresholdFlag) {
-//													sparqlQ = sparqlQ.replace("1000", thresholdDistance);
-//												}
-//
-//												else {
-//													if (con2.link.contains("Restaurant")
-//															|| con2.link.contains("Park")) {
-//														sparqlQ = sparqlQ.replace("1000", "500");
-//													}
-//													if (con2.link.contains("City")) {
-//														sparqlQ = sparqlQ.replace("1000", "5000");
-//													}
-//												}
-//												Query q = new Query();
-//												q.query = sparqlQ;
-//												q.score = ents.linkCount;
-//												allQueriesList.add(q);
-//												allSparqlQueries.add(sparqlQ);
-//
-//											}
-//										}
-//										if (geoSpatialRelations.get(0).contains("within")) {
-//											if (geoSpatialRelations.get(1).contains("near")) {
-//
-//												String sparqlQ = "select ?x { ?x rdf:type <" + con1.link
-//														+ ">; geo:hasGeometry ?geom. ?geom geo:asWKT ?cWKT. ?y rdf:type <"
-//														+ con2.link
-//														+ ">; geo:hasGeometry ?geom2. ?geom2 geo:asWKT ?cWKT2. ?instance owl:sameAs <"
-//														+ ents.uri
-//														+ ">; geo:hasGeometry ?iGeom. ?iGeom geo:asWKT ?iWKT.   FILTER((geof:distance(?cWKT2, ?iWKT,uom:metre) < 1000)  && geof:sfWithin(?cWKT1, ?cWKT2) ) }";
-//
-//												if (thresholdFlag) {
-//													sparqlQ = sparqlQ.replace("1000", thresholdDistance);
-//												}
-//
-//												else {
-//													if (con2.link.contains("Restaurant")
-//															|| con2.link.contains("Park")) {
-//														sparqlQ = sparqlQ.replace("1000", "500");
-//													}
-//													if (con2.link.contains("City")) {
-//														sparqlQ = sparqlQ.replace("1000", "5000");
-//													}
-//												}
-//												Query q = new Query();
-//												q.query = sparqlQ;
-//												q.score = ents.linkCount;
-//												allQueriesList.add(q);
-//												allSparqlQueries.add(sparqlQ);
-//											}
-//										}
-//
-//									} else {
-//										if (geoSpatialRelations.get(0).contains("within")) {
-//											if (geoSpatialRelations.get(1).contains("within")) {
-//												String sparqlQ = "select ?x { ?x rdf:type <" + con1.link
-//														+ ">; geo:hasGeometry ?geom. ?geom geo:asWKT ?cWKT. ?y rdf:type <"
-//														+ con2.link
-//														+ ">; geo:hasGeometry ?geom2. ?geom2 geo:asWKT ?cWKT2. <"
-//														+ ents.uri
-//														+ "> geo:hasGeometry ?iGeom. ?iGeom geo:asWKT ?iWKT.   FILTER(geof:sfWithin(?cWKT1, ?cWKT2) && geof:sfWithin(?cWKT2, ?iWKT) ) }";
-//												Query q = new Query();
-//												q.query = sparqlQ;
-//												q.score = ents.linkCount;
-//												allQueriesList.add(q);
-//												allSparqlQueries.add(sparqlQ);
-//											}
-//										}
-//										if (geoSpatialRelations.get(0).contains("near")) {
-//											if (geoSpatialRelations.get(1).contains("within")) {
-//												String sparqlQ = "select ?x { ?x rdf:type <" + con1.link
-//														+ ">; geo:hasGeometry ?geom. ?geom geo:asWKT ?cWKT. ?y rdf:type <"
-//														+ con2.link
-//														+ ">; geo:hasGeometry ?geom2. ?geom2 geo:asWKT ?cWKT2. <"
-//														+ ents.uri
-//														+ "> geo:hasGeometry ?iGeom. ?iGeom geo:asWKT ?iWKT.   FILTER((geof:distance(?cWKT1, ?cWKT2,uom:metre) < 1000)  && geof:sfWithin(?cWKT2, ?iWKT) ) }";
-//
-//												if (thresholdFlag) {
-//													sparqlQ = sparqlQ.replace("1000", thresholdDistance);
-//												}
-//
-//												else {
-//													if (con2.link.contains("Restaurant")
-//															|| con2.link.contains("Park")) {
-//														sparqlQ = sparqlQ.replace("1000", "500");
-//													}
-//													if (con2.link.contains("City")) {
-//														sparqlQ = sparqlQ.replace("1000", "5000");
-//													}
-//												}
-//
-//												Query q = new Query();
-//												q.query = sparqlQ;
-//												q.score = ents.linkCount;
-//												allQueriesList.add(q);
-//												allSparqlQueries.add(sparqlQ);
-//											}
-//										}
-//										if (geoSpatialRelations.get(0).contains("within")) {
-//											if (geoSpatialRelations.get(1).contains("near")) {
-//												String sparqlQ = "select ?x { ?x rdf:type <" + con1.link
-//														+ ">; geo:hasGeometry ?geom. ?geom geo:asWKT ?cWKT. ?y rdf:type <"
-//														+ con2.link
-//														+ ">; geo:hasGeometry ?geom2. ?geom2 geo:asWKT ?cWKT2. <"
-//														+ ents.uri
-//														+ "> geo:hasGeometry ?iGeom. ?iGeom geo:asWKT ?iWKT.   FILTER((geof:distance(?cWKT2, ?iWKT,uom:metre) < 1000)  && geof:sfWithin(?cWKT1, ?cWKT2) ) }";
-//
-//												if (thresholdFlag) {
-//													sparqlQ = sparqlQ.replace("1000", thresholdDistance);
-//												}
-//
-//												else {
-//													if (con2.link.contains("Restaurant")
-//															|| con2.link.contains("Park")) {
-//														sparqlQ = sparqlQ.replace("1000", "500");
-//													}
-//													if (con2.link.contains("City")) {
-//														sparqlQ = sparqlQ.replace("1000", "5000");
-//													}
-//												}
-//
-//												Query q = new Query();
-//												q.query = sparqlQ;
-//												q.score = ents.linkCount;
-//												allQueriesList.add(q);
-//												allSparqlQueries.add(sparqlQ);
-//											}
-//										}
-//
-//									}
-//								}
-//							}
-//						}
-//					}
-//				}
-//
-//			}
-
-			// CRIRI pattern
-//			if (sameConcepts.size() == 1 && geoSPATIALRelations.size() == 2 && sameInstances.size() == 2) {
-//				System.out.println("Detected Pattern : CRIRI ");
-//				identifiedPattern = "CRIRI";
-//				List<Concept> concpetLists = new ArrayList<Concept>();
-//				for (Map.Entry<Integer, List<Concept>> entry : sameConcepts.entrySet()) {
-//					concpetLists = entry.getValue();
-//				}
-//				boolean flg = false;
-//				List<List<Entity>> instanceLists = new ArrayList<List<Entity>>();
-//				for (Map.Entry<Integer, List<Entity>> entry : sameInstances.entrySet()) {
-//					List<Entity> iteratorInstance = entry.getValue();
-//					instanceLists.add(iteratorInstance);
-//				}
-//
-//				List<String> geoSpatialRelations = new ArrayList<>();
-//				geoSpatialRelations
-//						.add(mappingOfGeospatialRelationsToGeosparqlFunctions.get(geoSPATIALRelations.get(0)));
-//				geoSpatialRelations
-//						.add(mappingOfGeospatialRelationsToGeosparqlFunctions.get(geoSPATIALRelations.get(1)));
-//
-//				for (Concept con : concpetLists) {
-//
-//					for (Entity ent1 : instanceLists.get(0)) {
-//						for (Entity ent2 : instanceLists.get(1)) {
-//							if (con.link.contains("http://yago-knowledge.org")) {
-//								if (ent1.uri.contains("http://yago-knowledge.org")) {
-//									if (ent2.uri.contains("http://yago-knowledge.org")) {
-//										// check if the combination of this concept - relation1 - typeofinstance1 and
-//										// concept - relation2 - typeofrelation2 exist
-//										if (answerAvailable(con.link, ent1.uri, geoSpatialRelations.get(0))
-//												&& answerAvailable(con.link, ent2.uri, geoSpatialRelations.get(1))) {
-//
-//											if (geoSpatialRelations.get(0).contains("within")) {
-//												if (geoSpatialRelations.get(1).contains("within")) {
-//													String sparqlQ = "select ?x WHERE { SERVICE <http://pyravlos1.di.uoa.gr:8890/sparql> { ?x rdf:type <"
-//															+ con.link
-//															+ ">. ?x <http://yago-knowledge.org/resource/isLocatedIn> <"
-//															+ ent2.uri + ">. " + "<" + ent2.uri
-//															+ "> <http://yago-knowledge.org/resource/isLocatedIn> <"
-//															+ ent1.uri + ">. } }";
-//													Query q = new Query();
-//													q.query = sparqlQ;
-//													q.score = ent1.linkCount + ent2.linkCount;
-//													allQueriesList.add(q);
-//													allSparqlQueries.add(sparqlQ);
-//												}
-//											}
-//										}
-//									}
-//
-//									// If C,I1,I2 are all yago, then we can only answer R1=R2=within
-//								}
-//							} else {
-//
-//								// CONCEPT IS NOT YAGO
-//								System.out.println("[" + con.link + "," + ent1.uri + "," + ent2.uri + "]");
-//
-//								boolean yagoEntity1ThatIsNotInEndpoint = false;
-//								boolean yagoEntity2ThatIsNotInEndpoint = false;
-//								if (ent1.uri.contains("http://yago-knowledge.org")) {
-//									String answer1 = null;
-//									// If I1 is from yago, we first check if we have polygon for yago entity in
-//									// pyravlos
-//									String Query = "SELECT ?x where { <" + ent1.uri + "> ?p ?x . }";
-//									// If at least one result is returned, it means we have the polygon in pyravlos
-//									// and we don't need to do anything else
-//									answer1 = runSparqlOnEndpoint(Query, "http://pyravlos1.di.uoa.gr:8080/geoqa/Query");
-//									if (answer1 == null) {
-//										yagoEntity1ThatIsNotInEndpoint = true;
-//
-//									}
-//								}
-//								if (ent2.uri.contains("http://yago-knowledge.org")) {
-//									String answer2 = null;
-//									// If I2 is from yago, we first check if we have polygon for yago entity in
-//									// pyravlos
-//									String Query = "SELECT ?x where { <" + ent2.uri + "> ?p ?x . }";
-//									// If at least one result is returned, it means we have the polygon in pyravlos
-//									// and we don't need to do anything else
-//									answer2 = runSparqlOnEndpoint(Query, "http://pyravlos1.di.uoa.gr:8080/geoqa/Query");
-//									if (answer2 == null) {
-//										yagoEntity2ThatIsNotInEndpoint = true;
-//									}
-//								}
-//
-//								String sparqlQ = "select ?x { ?x rdf:type <" + con.link
-//										+ ">; geo:hasGeometry ?geom. ?geom geo:asWKT ?cWKT.";
-//
-//								if (yagoEntity1ThatIsNotInEndpoint) {
-//									sparqlQ += "?y1 owl:sameAs <" + ent1.uri
-//											+ ">; geo:hasGeometry ?iGeometry1. ?iGeometry1 geo:asWKT ?iWKT1. ";
-//								} else {
-//									sparqlQ += "<" + ent1.uri
-//											+ "> geo:hasGeometry ?iGeometry1. ?iGeometry1 geo:asWKT ?iWKT1. ";
-//								}
-//
-//								if (yagoEntity2ThatIsNotInEndpoint) {
-//									sparqlQ += "?y2 owl:sameAs <" + ent2.uri
-//											+ ">; geo:hasGeometry ?iGeometry2. ?iGeometry2 geo:asWKT ?iWKT2. ";
-//								} else {
-//									sparqlQ += "<" + ent2.uri
-//											+ "> geo:hasGeometry ?iGeometry2. ?iGeometry2 geo:asWKT ?iWKT2. ";
-//								}
-//
-//								// Do all combinations of within, near, east, west, north, south
-//								if (geoSpatialRelations.get(0).contains("within")) {
-//									if (geoSpatialRelations.get(1).contains("within")) {
-//										// within - within
-//										sparqlQ += "FILTER(geof:sfWithin(?cWKT, ?iWKT1) && geof:sfWithin(?cWKT, ?iWKT2) )}";
-//
-//									}
-//									if (geoSpatialRelations.get(1).contains("near")) {
-//										// within - near
-//										sparqlQ += "FILTER(geof:sfWithin(?cWKT, ?iWKT1) && (geof:distance(?cWKT, ?iWKT2, uom:metre) <= 1000)) }";
-//									}
-//									if (geoSpatialRelations.get(1).contains("east")) {
-//										// within - east
-//										sparqlQ += "FILTER(geof:sfWithin(?cWKT, ?iWKT1) && strdf:right(?cWKT, ?iWKT2)) }";
-//									}
-//									if (geoSpatialRelations.get(1).contains("west")) {
-//										// within - west
-//										sparqlQ += "FILTER(geof:sfWithin(?cWKT, ?iWKT1) && strdf:left(?cWKT, ?iWKT2)) }";
-//									}
-//									if (geoSpatialRelations.get(1).contains("north")) {
-//										// within - north
-//										sparqlQ += "FILTER(geof:sfWithin(?cWKT, ?iWKT1) && strdf:above(?cWKT, ?iWKT2)) }";
-//									}
-//									if (geoSpatialRelations.get(1).contains("south")) {
-//										// within - south
-//										sparqlQ += "FILTER(geof:sfWithin(?cWKT, ?iWKT1) && strdf:below(?cWKT, ?iWKT2)) }";
-//									}
-//								}
-//								if (geoSpatialRelations.get(0).contains("near")) {
-//									if (geoSpatialRelations.get(1).contains("within")) {
-//										// near - within
-//										sparqlQ += "FILTER((geof:distance(?cWKT, ?iWKT1, uom:metre) <= 1000) && geof:sfWithin(?cWKT, ?iWKT2) )}";
-//
-//									}
-//									if (geoSpatialRelations.get(1).contains("near")) {
-//										// near - near
-//										sparqlQ += "FILTER((geof:distance(?cWKT, ?iWKT1, uom:metre) <= 1000) && (geof:distance(?cWKT, ?iWKT2, uom:metre) <= 1000)) }";
-//									}
-//									if (geoSpatialRelations.get(1).contains("east")) {
-//										// near - east
-//										sparqlQ += "FILTER((geof:distance(?cWKT, ?iWKT1, uom:metre) <= 1000) && strdf:right(?cWKT, ?iWKT2)) }";
-//									}
-//									if (geoSpatialRelations.get(1).contains("west")) {
-//										// near - west
-//										sparqlQ += "FILTER((geof:distance(?cWKT, ?iWKT1, uom:metre) <= 1000) && strdf:left(?cWKT, ?iWKT2)) }";
-//									}
-//									if (geoSpatialRelations.get(1).contains("north")) {
-//										// near - north
-//										sparqlQ += "FILTER((geof:distance(?cWKT, ?iWKT1, uom:metre) <= 1000) && strdf:above(?cWKT, ?iWKT2)) }";
-//									}
-//									if (geoSpatialRelations.get(1).contains("south")) {
-//										// near - south
-//										sparqlQ += "FILTER((geof:distance(?cWKT, ?iWKT1, uom:metre) <= 1000) && strdf:below(?cWKT, ?iWKT2)) }";
-//									}
-//								}
-//								if (geoSpatialRelations.get(0).contains("east")) {
-//									if (geoSpatialRelations.get(1).contains("within")) {
-//										// east - within
-//										sparqlQ += "FILTER(strdf:right(?cWKT, ?iWKT1) && geof:sfWithin(?cWKT, ?iWKT2) )}";
-//
-//									}
-//									if (geoSpatialRelations.get(1).contains("near")) {
-//										// east - near
-//										sparqlQ += "FILTER(strdf:right(?cWKT, ?iWKT1) && (geof:distance(?cWKT, ?iWKT2, uom:metre) <= 1000)) }";
-//									}
-//									if (geoSpatialRelations.get(1).contains("east")) {
-//										// east - east
-//										sparqlQ += "FILTER(strdf:right(?cWKT, ?iWKT1) && strdf:right(?cWKT, ?iWKT2)) }";
-//									}
-//									if (geoSpatialRelations.get(1).contains("west")) {
-//										// east - west
-//										sparqlQ += "FILTER(strdf:right(?cWKT, ?iWKT1) && strdf:left(?cWKT, ?iWKT2)) }";
-//									}
-//									if (geoSpatialRelations.get(1).contains("north")) {
-//										// east - north
-//										sparqlQ += "FILTER(strdf:right(?cWKT, ?iWKT1) && strdf:above(?cWKT, ?iWKT2)) }";
-//									}
-//									if (geoSpatialRelations.get(1).contains("south")) {
-//										// east - south
-//										sparqlQ += "FILTER(strdf:right(?cWKT, ?iWKT1) && strdf:below(?cWKT, ?iWKT2)) }";
-//									}
-//								}
-//								if (geoSpatialRelations.get(0).contains("west")) {
-//									if (geoSpatialRelations.get(1).contains("within")) {
-//										// west - within
-//										sparqlQ += "FILTER(strdf:left(?cWKT, ?iWKT1) && geof:sfWithin(?cWKT, ?iWKT2) )}";
-//
-//									}
-//									if (geoSpatialRelations.get(1).contains("near")) {
-//										// west - near
-//										sparqlQ += "FILTER(strdf:left(?cWKT, ?iWKT1) && (geof:distance(?cWKT, ?iWKT2, uom:metre) <= 1000)) }";
-//									}
-//									if (geoSpatialRelations.get(1).contains("east")) {
-//										// west - east
-//										sparqlQ += "FILTER(strdf:left(?cWKT, ?iWKT1) && strdf:right(?cWKT, ?iWKT2)) }";
-//									}
-//									if (geoSpatialRelations.get(1).contains("west")) {
-//										// west - west
-//										sparqlQ += "FILTER(strdf:left(?cWKT, ?iWKT1) && strdf:left(?cWKT, ?iWKT2)) }";
-//									}
-//									if (geoSpatialRelations.get(1).contains("north")) {
-//										// west - north
-//										sparqlQ += "FILTER(strdf:left(?cWKT, ?iWKT1) && strdf:above(?cWKT, ?iWKT2)) }";
-//									}
-//									if (geoSpatialRelations.get(1).contains("south")) {
-//										// west - south
-//										sparqlQ += "FILTER(strdf:left(?cWKT, ?iWKT1) && strdf:below(?cWKT, ?iWKT2)) }";
-//									}
-//								}
-//								if (geoSpatialRelations.get(0).contains("north")) {
-//									if (geoSpatialRelations.get(1).contains("within")) {
-//										// north - within
-//										sparqlQ += "FILTER(strdf:above(?cWKT, ?iWKT1) && geof:sfWithin(?cWKT, ?iWKT2) )}";
-//
-//									}
-//									if (geoSpatialRelations.get(1).contains("near")) {
-//										// north - near
-//										sparqlQ += "FILTER(strdf:above(?cWKT, ?iWKT1) && (geof:distance(?cWKT, ?iWKT2, uom:metre) <= 1000)) }";
-//									}
-//									if (geoSpatialRelations.get(1).contains("east")) {
-//										// north - east
-//										sparqlQ += "FILTER(strdf:above(?cWKT, ?iWKT1) && strdf:right(?cWKT, ?iWKT2)) }";
-//									}
-//									if (geoSpatialRelations.get(1).contains("west")) {
-//										// north - west
-//										sparqlQ += "FILTER(strdf:above(?cWKT, ?iWKT1) && strdf:left(?cWKT, ?iWKT2)) }";
-//									}
-//									if (geoSpatialRelations.get(1).contains("north")) {
-//										// north - north
-//										sparqlQ += "FILTER(strdf:above(?cWKT, ?iWKT1) && strdf:above(?cWKT, ?iWKT2)) }";
-//									}
-//									if (geoSpatialRelations.get(1).contains("south")) {
-//										// north - south
-//										sparqlQ += "FILTER(strdf:above(?cWKT, ?iWKT1) && strdf:below(?cWKT, ?iWKT2)) }";
-//									}
-//								}
-//								if (geoSpatialRelations.get(0).contains("south")) {
-//									if (geoSpatialRelations.get(1).contains("within")) {
-//										// south - within
-//										sparqlQ += "FILTER(strdf:below(?cWKT, ?iWKT1) && geof:sfWithin(?cWKT, ?iWKT2) )}";
-//
-//									}
-//									if (geoSpatialRelations.get(1).contains("near")) {
-//										// south - near
-//										sparqlQ += "FILTER(strdf:below(?cWKT, ?iWKT1) && (geof:distance(?cWKT, ?iWKT2, uom:metre) <= 1000)) }";
-//									}
-//									if (geoSpatialRelations.get(1).contains("east")) {
-//										// south - east
-//										sparqlQ += "FILTER(strdf:below(?cWKT, ?iWKT1) && strdf:right(?cWKT, ?iWKT2)) }";
-//									}
-//									if (geoSpatialRelations.get(1).contains("west")) {
-//										// south - west
-//										sparqlQ += "FILTER(strdf:below(?cWKT, ?iWKT1) && strdf:left(?cWKT, ?iWKT2)) }";
-//									}
-//									if (geoSpatialRelations.get(1).contains("north")) {
-//										// south - north
-//										sparqlQ += "FILTER(strdf:below(?cWKT, ?iWKT1) && strdf:above(?cWKT, ?iWKT2)) }";
-//									}
-//									if (geoSpatialRelations.get(1).contains("south")) {
-//										// south - south
-//										sparqlQ += "FILTER(strdf:below(?cWKT, ?iWKT1) && strdf:below(?cWKT, ?iWKT2)) }";
-//									}
-//								}
-//								Query q = new Query();
-//								q.query = sparqlQ;
-//								q.score = ent1.linkCount + ent2.linkCount;
-//								allQueriesList.add(q);
-//								allSparqlQueries.add(sparqlQ);
-//
-//							}
-//						}
-//					}
-//
-//				}
-//
-//			}
-			// IRI patern
-//			if (sameConcepts.size() == 0 && (geoSPATIALRelations.size() == 2 || geoSPATIALRelations.size() == 1)
-//					&& sameInstances.size() == 2) {
-//				System.out.println("Detected Pattern : IRI ");
-//				identifiedPattern = "IRI";
-//				List<List<Entity>> instanceLists = new ArrayList<List<Entity>>();
-//				for (Map.Entry<Integer, List<Entity>> entry : sameInstances.entrySet()) {
-//					List<Entity> iteratorInstance = entry.getValue();
-//					instanceLists.add(iteratorInstance);
-//
-//				}
-//
-//				String spatialRelation = mappingOfGeospatialRelationsToGeosparqlFunctions
-//						.get(geoSPATIALRelations.get(0));
-//				for (Entity ent1 : instanceLists.get(0)) {
-//					for (Entity ent2 : instanceLists.get(1)) {
-//						if (ent1.uri.contains("http://yago-knowledge.org")) {
-//							if (ent2.uri.contains("http://yago-knowledge.org")) {
-//								if (spatialRelation.contains("within")) {
-//									String sparqlQ = "ASK { SERVICE <http://pyravlos1.di.uoa.gr:8890/sparql> { <"
-//											+ ent1.uri + "> <http://yago-knowledge.org/resource/isLocatedIn> <"
-//											+ ent2.uri + ">. } }";
-//									Query q = new Query();
-//									q.query = sparqlQ;
-//									q.score = ent1.linkCount + ent2.linkCount;
-//									allQueriesList.add(q);
-//									allSparqlQueries.add(sparqlQ);
-//								} else {
-//									// Check other relationships and if we have to, interlink with dbpedia to get
-//									// the polygons
-//
-//									boolean yagoEntity1ThatIsNotInEndpoint = false;
-//									String answer1 = null;
-//									// If I1 is from yago, we first check if we have polygon for yago entity in
-//									// pyravlos
-//									String Query = "SELECT ?x where { <" + ent1.uri + "> ?p ?x . }";
-//									// If at least one result is returned, it means we have the polygon in pyravlos
-//									// and we don't need to do anything else
-//									answer1 = runSparqlOnEndpoint(Query, "http://pyravlos1.di.uoa.gr:8080/geoqa/Query");
-//									if (answer1 == null) {
-//										yagoEntity1ThatIsNotInEndpoint = true;
-//
-//									}
-//
-//									boolean yagoEntity2ThatIsNotInEndpoint = false;
-//									String answer2 = null;
-//									// If I2 is from yago, we first check if we have polygon for yago entity in
-//									// pyravlos
-//									Query = "SELECT ?x where { <" + ent2.uri + "> ?p ?x . }";
-//									// If at least one result is returned, it means we have the polygon in pyravlos
-//									// and we don't need to do anything else
-//									answer2 = runSparqlOnEndpoint(Query, "http://pyravlos1.di.uoa.gr:8080/geoqa/Query");
-//									if (answer2 == null) {
-//										yagoEntity2ThatIsNotInEndpoint = true;
-//									}
-//
-//									// Produce queries. Maybe they will have sameAs because of answer1 and answer2
-//									String sparqlQ = "ASK {\t";
-//									if (yagoEntity1ThatIsNotInEndpoint) {
-//										sparqlQ += "?x owl:sameAs <" + ent1.uri
-//												+ ">; geo:hasGeometry ?iGeometry1. ?iGeometry1 geo:asWKT ?iWKT1. ";
-//									} else {
-//										sparqlQ += "<" + ent1.uri
-//												+ "> geo:hasGeometry ?iGeometry1. ?iGeometry1 geo:asWKT ?iWKT1. ";
-//									}
-//
-//									if (yagoEntity2ThatIsNotInEndpoint) {
-//										sparqlQ += "?y owl:sameAs <" + ent2.uri
-//												+ ">; geo:hasGeometry ?iGeometry2. ?iGeometry2 geo:asWKT ?iWKT2. ";
-//									} else {
-//										sparqlQ += "<" + ent2.uri
-//												+ "> geo:hasGeometry ?iGeometry2. ?iGeometry2 geo:asWKT ?iWKT2. ";
-//									}
-//
-//									if (spatialRelation.contains("near"))
-//										sparqlQ += "FILTER(geof:distance(?iWKT1, ?iWKT2) < 10000) }";
-//
-//									if (spatialRelation.contains("east"))
-//										sparqlQ += "FILTER(strdf:right(?iWKT1, ?iWKT2)) }";
-//
-//									if (spatialRelation.contains("west"))
-//										sparqlQ += "FILTER(strdf:left(?iWKT1, ?iWKT2)) }";
-//
-//									if (spatialRelation.contains("north"))
-//										sparqlQ += "FILTER(strdf:above(?iWKT1, ?iWKT2)) }";
-//
-//									if (spatialRelation.contains("south"))
-//										sparqlQ += "FILTER(strdf:below(?iWKT1, ?iWKT2)) }";
-//
-//									Query q = new Query();
-//									q.query = sparqlQ;
-//									q.score = ent1.linkCount + ent2.linkCount;
-//									allQueriesList.add(q);
-//									allSparqlQueries.add(sparqlQ);
-//
-//								}
-//
-//							} else {
-//								// Instance1 = YAGO, Instance2 = not YAGO
-//
-//								// Find if we have Instance 1
-//								boolean yagoEntityThatIsNotInEndpoint = false;
-//								String answer = null;
-//								if (ent1.uri.contains("http://yago-knowledge.org/")) {
-//									// If I1 is from yago, we first check if we have polygon for yago entity in
-//									// pyravlos
-//									String Query = "SELECT ?x where { <" + ent1.uri + "> ?p ?x . }";
-//									// If at least one result is returned, it means we have the polygon in pyravlos
-//									// and we don't need to do anything else
-//									answer = runSparqlOnEndpoint(Query, "http://pyravlos1.di.uoa.gr:8080/geoqa/Query");
-//									if (answer == null) {
-//										yagoEntityThatIsNotInEndpoint = true;
-//
-//									}
-//								}
-//
-//								String sparqlQ = "ASK {\t";
-//								if (yagoEntityThatIsNotInEndpoint) {
-//									sparqlQ += "?x owl:sameAs <" + ent1.uri
-//											+ ">; geo:hasGeometry ?iGeometry1. ?iGeometry1 geo:asWKT ?iWKT1. ";
-//								} else {
-//									sparqlQ += "<" + ent1.uri
-//											+ "> geo:hasGeometry ?iGeometry1. ?iGeometry1 geo:asWKT ?iWKT1. ";
-//								}
-//
-//								sparqlQ += "<" + ent2.uri
-//										+ "> geo:hasGeometry ?iGeometry2. ?iGeometry2 geo:asWKT ?iWKT2. ";
-//
-//								if (spatialRelation.contains("within"))
-//									sparqlQ += "FILTER(geof:sfWithin(?iWKT1, ?iWKT2)) }";
-//
-//								if (spatialRelation.contains("near"))
-//									sparqlQ += "FILTER(geof:distance(?iWKT1, ?iWKT2) < 10000) }";
-//
-//								if (spatialRelation.contains("east"))
-//									sparqlQ += "FILTER(strdf:right(?iWKT1, ?iWKT2)) }";
-//
-//								if (spatialRelation.contains("west"))
-//									sparqlQ += "FILTER(strdf:left(?iWKT1, ?iWKT2)) }";
-//
-//								if (spatialRelation.contains("north"))
-//									sparqlQ += "FILTER(strdf:above(?iWKT1, ?iWKT2)) }";
-//
-//								if (spatialRelation.contains("south"))
-//									sparqlQ += "FILTER(strdf:below(?iWKT1, ?iWKT2)) }";
-//
-//								Query q = new Query();
-//								q.query = sparqlQ;
-//								q.score = ent1.linkCount + ent2.linkCount;
-//								allQueriesList.add(q);
-//								allSparqlQueries.add(sparqlQ);
-//
-//							}
-//						} else {
-//							if (ent2.uri.contains("http://yago-knowledge.org")) {
-//								// Instance1 = not YAGO, Instance2 = YAGO
-//
-//								// Find if we have Instance 2
-//								boolean yagoEntityThatIsNotInEndpoint = false;
-//								String answer = null;
-//								if (ent1.uri.contains("http://yago-knowledge.org/")) {
-//									// If I1 is from yago, we first check if we have polygon for yago entity in
-//									// pyravlos
-//									String Query = "SELECT ?x where { <" + ent2.uri + "> ?p ?x . }";
-//									// If at least one result is returned, it means we have the polygon in pyravlos
-//									// and we don't need to do anything else
-//									answer = runSparqlOnEndpoint(Query, "http://pyravlos1.di.uoa.gr:8080/geoqa/Query");
-//									if (answer == null) {
-//										yagoEntityThatIsNotInEndpoint = true;
-//
-//									}
-//								}
-//
-//								String sparqlQ = "ASK {\t";
-//
-//								sparqlQ += "<" + ent1.uri
-//										+ "> geo:hasGeometry ?iGeometry1. ?iGeometry1 geo:asWKT ?iWKT1. ";
-//
-//								if (yagoEntityThatIsNotInEndpoint) {
-//									sparqlQ += "?x owl:sameAs <" + ent2.uri
-//											+ ">; geo:hasGeometry ?iGeometry2. ?iGeometry2 geo:asWKT ?iWKT2. ";
-//								} else {
-//									sparqlQ += "<" + ent2.uri
-//											+ "> geo:hasGeometry ?iGeometry2. ?iGeometry2 geo:asWKT ?iWKT2. ";
-//								}
-//
-//								if (spatialRelation.contains("within"))
-//									sparqlQ += "FILTER(geof:sfWithin(?iWKT1, ?iWKT2)) }";
-//
-//								if (spatialRelation.contains("near"))
-//									sparqlQ += "FILTER(geof:distance(?iWKT1, ?iWKT2) < 10000) }";
-//
-//								if (spatialRelation.contains("east"))
-//									sparqlQ += "FILTER(strdf:right(?iWKT1, ?iWKT2)) }";
-//
-//								if (spatialRelation.contains("west"))
-//									sparqlQ += "FILTER(strdf:left(?iWKT1, ?iWKT2)) }";
-//
-//								if (spatialRelation.contains("north"))
-//									sparqlQ += "FILTER(strdf:above(?iWKT1, ?iWKT2)) }";
-//
-//								if (spatialRelation.contains("south"))
-//									sparqlQ += "FILTER(strdf:below(?iWKT1, ?iWKT2)) }";
-//
-//								Query q = new Query();
-//								q.query = sparqlQ;
-//								q.score = ent1.linkCount + ent2.linkCount;
-//								allQueriesList.add(q);
-//
-//								allSparqlQueries.add(sparqlQ);
-//
-//							} else {
-//								// Instance1 = not YAGO, Instance2 = not YAGO
-//								String sparqlQ = "ASK {\t";
-//
-//								sparqlQ += "<" + ent1.uri
-//										+ "> geo:hasGeometry ?iGeometry1. ?iGeometry1 geo:asWKT ?iWKT1. ";
-//								sparqlQ += "<" + ent2.uri
-//										+ "> geo:hasGeometry ?iGeometry2. ?iGeometry2 geo:asWKT ?iWKT2. ";
-//
-//								if (spatialRelation.contains("within"))
-//									sparqlQ += "FILTER(geof:sfWithin(?iWKT1, ?iWKT2)) }";
-//
-//								if (spatialRelation.contains("near"))
-//									sparqlQ += "FILTER(geof:distance(?iWKT1, ?iWKT2) < 10000) }";
-//
-//								if (spatialRelation.contains("east"))
-//									sparqlQ += "FILTER(strdf:right(?iWKT1, ?iWKT2)) }";
-//
-//								if (spatialRelation.contains("west"))
-//									sparqlQ += "FILTER(strdf:left(?iWKT1, ?iWKT2)) }";
-//
-//								if (spatialRelation.contains("north"))
-//									sparqlQ += "FILTER(strdf:above(?iWKT1, ?iWKT2)) }";
-//
-//								if (spatialRelation.contains("south"))
-//									sparqlQ += "FILTER(strdf:below(?iWKT1, ?iWKT2)) }";
-//
-//								Query q = new Query();
-//								q.query = sparqlQ;
-//								q.score = ent1.linkCount + ent2.linkCount;
-//								allQueriesList.add(q);
-//								allSparqlQueries.add(sparqlQ);
-//							}
-//						}
-//					}
-//				}
-//
-//			}
-			// CIRI patern
-//			if (sameConcepts.size() == 1 && geoSPATIALRelations.size() == 1 && sameInstances.size() == 2) {
-//				System.out.println("Detected Pattern : CIRI ");
-//				identifiedPattern = "CIRI";
-//				List<List<Entity>> instanceLists = new ArrayList<List<Entity>>();
-//				for (Map.Entry<Integer, List<Entity>> entry : sameInstances.entrySet()) {
-//					List<Entity> iteratorInstance = entry.getValue();
-//					instanceLists.add(iteratorInstance);
-//
-//				}
-//
-//				String spatialRelation = mappingOfGeospatialRelationsToGeosparqlFunctions
-//						.get(geoSPATIALRelations.get(0));
-//				for (Entity ent1 : instanceLists.get(0)) {
-//					for (Entity ent2 : instanceLists.get(1)) {
-//						if (ent1.uri.contains("dbpedia.org")) {
-//							if (ent2.uri.contains("dbpedia.org")) {
-//								if (spatialRelation.contains("within")) {
-//									String sparqlQ = "ASK { SERVICE <http://dbpedia.org/sparql> { <" + ent1.uri
-//											+ "> ?y <" + ent2.uri + ">. } }";
-//									Query q = new Query();
-//									q.query = sparqlQ;
-//									q.score = ent1.linkCount + ent2.linkCount;
-//									allQueriesList.add(q);
-//									allSparqlQueries.add(sparqlQ);
-//								}
-//								if (spatialRelation.contains("crosses")) {
-//									String sparqlQ = "ASK { SERVICE <http://dbpedia.org/sparql> { <" + ent1.uri
-//											+ "> dbo:crosses <" + ent2.uri + ">. } }";
-//									Query q = new Query();
-//									q.query = sparqlQ;
-//									q.score = ent1.linkCount + ent2.linkCount;
-//									allQueriesList.add(q);
-//									allSparqlQueries.add(sparqlQ);
-//								}
-//								if (spatialRelation.contains("east")) {
-//									String sparqlQ = "ASK { SERVICE <http://dbpedia.org/sparql> { <" + ent1.uri
-//											+ "> dbp:east <" + ent2.uri + ">. } }";
-//									Query q = new Query();
-//									q.query = sparqlQ;
-//									q.score = ent1.linkCount + ent2.linkCount;
-//									allQueriesList.add(q);
-//									allSparqlQueries.add(sparqlQ);
-//								}
-//								if (spatialRelation.contains("west")) {
-//									String sparqlQ = "ASK { SERVICE <http://dbpedia.org/sparql> { <" + ent1.uri
-//											+ "> dbp:west <" + ent2.uri + ">. } }";
-//									Query q = new Query();
-//									q.query = sparqlQ;
-//									q.score = ent1.linkCount + ent2.linkCount;
-//									allQueriesList.add(q);
-//									allSparqlQueries.add(sparqlQ);
-//								}
-//								if (spatialRelation.contains("north")) {
-//									String sparqlQ = "ASK { SERVICE <http://dbpedia.org/sparql> { <" + ent1.uri
-//											+ "> dbp:north <" + ent2.uri + ">. } }";
-//									Query q = new Query();
-//									q.query = sparqlQ;
-//									q.score = ent1.linkCount + ent2.linkCount;
-//									allQueriesList.add(q);
-//									allSparqlQueries.add(sparqlQ);
-//								}
-//								if (spatialRelation.contains("south")) {
-//									String sparqlQ = "ASK { SERVICE <http://dbpedia.org/sparql> { <" + ent1.uri
-//											+ "> dbp:south <" + ent2.uri + ">. } }";
-//									Query q = new Query();
-//									q.query = sparqlQ;
-//									q.score = ent1.linkCount + ent2.linkCount;
-//									allQueriesList.add(q);
-//									allSparqlQueries.add(sparqlQ);
-//								}
-//							}
-//						} else if (!ent2.uri.contains("dbpedia.org")) {
-//							if (spatialRelation.contains("within")) {
-//								String sparqlQ = "ASK {  <" + ent1.uri
-//										+ "> geo:hasGeometry ?iGeom1. ?iGeom1 geo:asWKT ?iWKT1. <" + ent2.uri
-//										+ "> geo:hasGeometry ?iGeom2. ?iGeom2 geo:asWKT ?iWKT2. FILTER(geof:sfWithin(?iWKT1, ?iWKT2)) }";
-//								Query q = new Query();
-//								q.query = sparqlQ;
-//								q.score = ent1.linkCount + ent2.linkCount;
-//								allQueriesList.add(q);
-//								allSparqlQueries.add(sparqlQ);
-//							}
-//							if (spatialRelation.contains("near")) {
-//								String sparqlQ = "ASK {  <" + ent1.uri
-//										+ "> geo:hasGeometry ?iGeom1. ?iGeom1 geo:asWKT ?iWKT1. <" + ent2.uri
-//										+ "> geo:hasGeometry ?iGeom2. ?iGeom2 geo:asWKT ?iWKT2. FILTER(geof:distance(?iWKT1, ?iWKT2) < 10000) }";
-//								Query q = new Query();
-//								q.query = sparqlQ;
-//								q.score = ent1.linkCount + ent2.linkCount;
-//								allQueriesList.add(q);
-//								allSparqlQueries.add(sparqlQ);
-//							}
-//
-//							if (spatialRelation.contains("east")) {
-//								String sparqlQ = "ASK {  <" + ent1.uri
-//										+ "> geo:hasGeometry ?iGeom1. ?iGeom1 geo:asWKT ?iWKT1. <" + ent2.uri
-//										+ "> geo:hasGeometry ?iGeom2. ?iGeom2 geo:asWKT ?iWKT2. FILTER(strdf:right(?iWKT1, ?iWKT2)) }";
-//								Query q = new Query();
-//								q.query = sparqlQ;
-//								q.score = ent1.linkCount + ent2.linkCount;
-//								allQueriesList.add(q);
-//								allSparqlQueries.add(sparqlQ);
-//							}
-//							if (spatialRelation.contains("west")) {
-//								String sparqlQ = "ASK {  <" + ent1.uri
-//										+ "> geo:hasGeometry ?iGeom1. ?iGeom1 geo:asWKT ?iWKT1. <" + ent2.uri
-//										+ "> geo:hasGeometry ?iGeom2. ?iGeom2 geo:asWKT ?iWKT2. FILTER(strdf:left(?iWKT1, ?iWKT2)) }";
-//								Query q = new Query();
-//								q.query = sparqlQ;
-//								q.score = ent1.linkCount + ent2.linkCount;
-//								allQueriesList.add(q);
-//								allSparqlQueries.add(sparqlQ);
-//							}
-//							if (spatialRelation.contains("north")) {
-//								String sparqlQ = "ASK {  <" + ent1.uri
-//										+ "> geo:hasGeometry ?iGeom1. ?iGeom1 geo:asWKT ?iWKT1. <" + ent2.uri
-//										+ "> geo:hasGeometry ?iGeom2. ?iGeom2 geo:asWKT ?iWKT2. FILTER(strdf:above(?iWKT1, ?iWKT2)) }";
-//								Query q = new Query();
-//								q.query = sparqlQ;
-//								q.score = ent1.linkCount + ent2.linkCount;
-//								allQueriesList.add(q);
-//								allSparqlQueries.add(sparqlQ);
-//							}
-//							if (spatialRelation.contains("south")) {
-//								String sparqlQ = "ASK {  <" + ent1.uri
-//										+ "> geo:hasGeometry ?iGeom1. ?iGeom1 geo:asWKT ?iWKT1. <" + ent2.uri
-//										+ "> geo:hasGeometry ?iGeom2. ?iGeom2 geo:asWKT ?iWKT2. FILTER(strdf:below(?iWKT1, ?iWKT2)) }";
-//								Query q = new Query();
-//								q.query = sparqlQ;
-//								q.score = ent1.linkCount + ent2.linkCount;
-//								allQueriesList.add(q);
-//								allSparqlQueries.add(sparqlQ);
-//							}
-//						}
-//					}
-//				}
-//
-//			}
-			// CRI patern
-//			if (sameConcepts.size() == 1 && geoSPATIALRelations.size() == 1 && sameInstances.size() == 1) {
-//				System.out.println("Detected Pattern : CRI ");
-//				identifiedPattern = "CRI";
-//				System.out.println("relation is: " + geoSPATIALRelations.get(0) + " =====================");
-//				for (Map.Entry<Integer, List<Concept>> entry : sameConcepts.entrySet()) {
-//					List<Concept> iteratorConcept = entry.getValue();
-//					for (Map.Entry<Integer, List<Entity>> entryE : sameInstances.entrySet()) {
-//						List<Entity> iteratorEntity = entryE.getValue();
-//						String spatialRelation = mappingOfGeospatialRelationsToGeosparqlFunctions
-//								.get(geoSPATIALRelations.get(0));
-//
-//						for (Concept con : iteratorConcept) {
-//							for (Entity ents : iteratorEntity) {
-//
-//								if (con.link.contains("http://yago-knowledge.org")) {
-//									if (ents.uri.contains("http://yago-knowledge.org")) {
-//										// check if the combination of this concept - relation - typeofinstance exist
-//										if (answerAvailable(con.link, ents.uri, spatialRelation)) {
-//											if (spatialRelation.contains("within")) { // these code block is to be
-//
-//												String sparqlQ = "select ?x where { SERVICE <http://pyravlos1.di.uoa.gr:8890/sparql> { ?x rdf:type <"
-//														+ con.link
-//														+ ">. ?x <http://yago-knowledge.org/resource/isLocatedIn> <"
-//														+ ents.uri + ">.} }";
-//												Query q = new Query();
-//												q.query = sparqlQ;
-//												q.score = ents.linkCount;
-//												allQueriesList.add(q);
-//												allSparqlQueries.add(sparqlQ);
-//											}
-//
-//											// We can't answer other relationships if the concept is YAGO class
-//
-//										}
-//
-//									}
-//								} else {
-//
-//									if (ents.uri.contains("http://yago-knowledge.org")) {
-//
-//										// CONCEPT = OSM, INSTANCE = YAGO
-//										boolean yagoEntityThatIsNotInEndpoint = false;
-//										String answer = null;
-//										// If I is from yago, we first check if we have polygon for yago entity in
-//										// pyravlos
-//										String Query = "SELECT ?x where { <" + ents.uri + "> ?p ?x . }";
-//										// If at least one result is returned, it means we have the polygon in pyravlos
-//										// and we don't need to do anything else
-//										answer = runSparqlOnEndpoint(Query,
-//												"http://pyravlos1.di.uoa.gr:8080/geoqa/Query");
-//										if (answer == null) {
-//											yagoEntityThatIsNotInEndpoint = true;
-//										}
-//
-//										String sparqlQ = "select ?x where { ?x rdf:type <" + con.link
-//												+ ">; geo:hasGeometry ?cGeom. ?cGeom geo:asWKT ?cWKT. ";
-//
-//										if (yagoEntityThatIsNotInEndpoint)
-//											sparqlQ += "?instance owl:sameAs <" + ents.uri
-//													+ ">; geo:hasGeometry ?geom. ?geom geo:asWKT ?iWKT.";
-//										else
-//											sparqlQ += "<" + ents.uri
-//													+ "> geo:hasGeometry ?geom. ?geom geo:asWKT ?iWKT.";
-//
-//										if (spatialRelation.contains("within")) {
-//											sparqlQ += "FILTER(geof:sfWithin(?cWKT,?iWKT))}";
-//
-//										}
-//										if (spatialRelation.contains("near")) {
-//											sparqlQ += "FILTER(geof:distance(?cWKT,?iWKT,uom:metre) <= 1000) }";
-//
-//											if (thresholdFlag) {
-//												sparqlQ = sparqlQ.replace("1000", thresholdDistance);
-//											}
-//
-//											else {
-//												if (con.link.contains("Restaurant") || con.link.contains("Park")) {
-//													sparqlQ = sparqlQ.replace("1000", "500");
-//												}
-//												if (con.link.contains("City")) {
-//													sparqlQ = sparqlQ.replace("1000", "5000");
-//												}
-//											}
-//										}
-//										if (spatialRelation.contains("east"))
-//											sparqlQ += "FILTER(strdf:right(?cWKT, ?iWKT)) }";
-//
-//										if (spatialRelation.contains("west"))
-//											sparqlQ += "FILTER(strdf:left(?cWKT, ?iWKT)) }";
-//
-//										if (spatialRelation.contains("north"))
-//											sparqlQ += "FILTER(strdf:above(?cWKT, ?iWKT)) }";
-//
-//										if (spatialRelation.contains("south"))
-//											sparqlQ += "FILTER(strdf:below(?cWKT, ?iWKT)) }";
-//										if (spatialRelation.contains("crosses")) {
-//											sparqlQ += "FILTER(geof:sfCrosses(?cWKT,?iWKT))}";
-//										}
-//										if (spatialRelation.contains("boundry")) {
-//											sparqlQ += "FILTER(geof:sfTouches(?cWKT,?iWKT))}";
-//										}
-//
-//										Query q = new Query();
-//										q.query = sparqlQ;
-//										q.score = ents.linkCount;
-//										allQueriesList.add(q);
-//										allSparqlQueries.add(sparqlQ);
-//									} else {
-//										// CONCEPT = OSM, INSTANCE = OSM
-//										System.out.println("IN OSM OSM");
-//										System.out.println(spatialRelation);
-//										;
-//										String sparqlQ = "select ?x where { ?x rdf:type <" + con.link
-//												+ ">; geo:hasGeometry ?cGeom. ?cGeom geo:asWKT ?cWKT. <" + ents.uri
-//												+ "> geo:hasGeometry ?geom. ?geom geo:asWKT ?iWKT. ";
-//
-//										if (spatialRelation.contains("within")) {
-//											sparqlQ += "FILTER(geof:sfWithin(?cWKT,?iWKT))}";
-//
-//										}
-//										if (spatialRelation.contains("near")) {
-//											sparqlQ += "FILTER(geof:distance(?cWKT,?iWKT,uom:metre) <= 1000) }";
-//
-//											if (thresholdFlag) {
-//												sparqlQ = sparqlQ.replace("1000", thresholdDistance);
-//											}
-//
-//											else {
-//												if (con.link.contains("Restaurant") || con.link.contains("Park")) {
-//													sparqlQ = sparqlQ.replace("1000", "500");
-//												}
-//												if (con.link.contains("City")) {
-//													sparqlQ = sparqlQ.replace("1000", "5000");
-//												}
-//											}
-//										}
-//										if (spatialRelation.contains("east"))
-//											sparqlQ += "FILTER(strdf:right(?cWKT, ?iWKT)) }";
-//
-//										if (spatialRelation.contains("west"))
-//											sparqlQ += "FILTER(strdf:left(?cWKT, ?iWKT)) }";
-//
-//										if (spatialRelation.contains("north"))
-//											sparqlQ += "FILTER(strdf:above(?cWKT, ?iWKT)) }";
-//
-//										if (spatialRelation.contains("south"))
-//											sparqlQ += "FILTER(strdf:below(?cWKT, ?iWKT)) }";
-//										if (spatialRelation.contains("crosses")) {
-//											sparqlQ += "FILTER(geof:sfCrosses(?cWKT,?iWKT))}";
-//										}
-//										if (spatialRelation.contains("boundry")) {
-//											sparqlQ += "FILTER(geof:sfTouches(?cWKT,?iWKT))}";
-//										}
-//										if (spatialRelation.contains("crosses")) {
-//											sparqlQ += "FILTER(geof:sfCrosses(?cWKT,?iWKT))}";
-//										}
-//										if (spatialRelation.contains("boundry")) {
-//											sparqlQ += "FILTER(geof:sfTouches(?cWKT,?iWKT))}";
-//										}
-//										Query q = new Query();
-//										q.query = sparqlQ;
-//										q.score = ents.linkCount;
-//										allQueriesList.add(q);
-//										allSparqlQueries.add(sparqlQ);
-//									}
-//								}
-//
-//							}
-//						}
-//					}
-//				}
-//			}
-			// CRCI patern
-//			if (sameConcepts.size() == 2 && geoSPATIALRelations.size() == 1 && sameInstances.size() == 1) {
-//				System.out.println("Detected Pattern : CRCI ");
-//				identifiedPattern = "CRCI";
-//
-//				// get all concepts
-//				List<List<Concept>> concpetLists = new ArrayList<List<Concept>>();
-//				for (Map.Entry<Integer, List<Concept>> entry : sameConcepts.entrySet()) {
-//					List<Concept> iteratorConcept = entry.getValue();
-//					concpetLists.add(iteratorConcept);
-//				}
-//
-//				// get the one instance
-//				List<Entity> instanceLists = new ArrayList<Entity>();
-//				for (Map.Entry<Integer, List<Entity>> entry : sameInstances.entrySet()) {
-//					instanceLists = entry.getValue();
-//				}
-//
-//				// get the relation
-//				String spatialRelation = mappingOfGeospatialRelationsToGeosparqlFunctions
-//						.get(geoSPATIALRelations.get(0));
-//
-//				List<Concept> concept1 = concpetLists.get(0);
-//				List<Concept> concept2 = concpetLists.get(1);
-//				List<Concept> finalConcept = concpetLists.get(0);
-//
-//				Concept con1 = concpetLists.get(0).get(0);
-//				Concept con2 = concpetLists.get(1).get(0);
-//				Entity ent1 = instanceLists.get(0);
-//				Boolean flag = false;
-//
-//				for (int i = 0; i < concept1.size(); i++) {
-//					if (checkNeighbours(concept1.get(i), ent1)) {
-//						flag = true;
-//						finalConcept = concept2;
-//					}
-//				}
-//
-//				for (int i = 0; i < concept2.size(); i++) {
-//					if (checkNeighbours(concept2.get(i), ent1)) {
-//						flag = true;
-//						finalConcept = concept1;
-//					}
-//				}
-//
-////				// combine concept and instance if neighbours and same type
-////				if (checkNeighbours(con1, ent1) && checkTypes(con1, ent1)) {
-////					con = con2;
-////					flag = true;
-////					System.out.println("======con1");
-////				} else if (checkNeighbours(con2, ent1) && checkTypes(con2, ent1)) {
-////					con = con1;
-////					flag = true;
-////					System.out.println("======con2");
-////				}
-//
-//				// else reject query
-//
-//				// now its just CRI
-//				// This code needs to be updated for yago
-//				if (flag) {
-//					for (Concept con : finalConcept) {
-//						if (con.link.contains("http://yago-knowledge.org")) {
-//							if (ent.uri.contains("http://yago-knowledge.org")) {
-//								// check if the combination of this concept - relation - typeofinstance exist
-//								if (answerAvailable(con.link, ent.uri, spatialRelation)) {
-//									if (spatialRelation.contains("within")) { // these code block is to be
-//
-//										String sparqlQ = "select ?x where { SERVICE <http://pyravlos1.di.uoa.gr:8890/sparql> { ?x rdf:type <"
-//												+ con.link + ">. ?x <http://yago-knowledge.org/resource/isLocatedIn> <"
-//												+ ent.uri + ">.} }";
-//										Query q = new Query();
-//										q.query = sparqlQ;
-//										q.score = ent1.linkCount;
-//										allQueriesList.add(q);
-//										allSparqlQueries.add(sparqlQ);
-//									}
-//
-//									// We can't answer other relationships if the concept is YAGO class
-//
-//								}
-//
-//							}
-//						} else {
-//
-//							if (ent.uri.contains("http://yago-knowledge.org")) {
-//
-//								// CONCEPT = OSM, INSTANCE = YAGO
-//								boolean yagoEntityThatIsNotInEndpoint = false;
-//								String answer = null;
-//								// If I is from yago, we first check if we have polygon for yago entity in
-//								// pyravlos
-//								String Query = "SELECT ?x where { <" + ent.uri + "> ?p ?x . }";
-//								// If at least one result is returned, it means we have the polygon in pyravlos
-//								// and we don't need to do anything else
-//								answer = runSparqlOnEndpoint(Query, "http://pyravlos1.di.uoa.gr:8080/geoqa/Query");
-//								if (answer == null) {
-//									yagoEntityThatIsNotInEndpoint = true;
-//								}
-//
-//								String sparqlQ = "select ?x where { ?x rdf:type <" + con.link
-//										+ ">; geo:hasGeometry ?cGeom. ?cGeom geo:asWKT ?cWKT. ";
-//
-//								if (yagoEntityThatIsNotInEndpoint)
-//									sparqlQ += "?instance owl:sameAs <" + ent.uri
-//											+ ">; geo:hasGeometry ?geom. ?geom geo:asWKT ?iWKT.";
-//								else
-//									sparqlQ += "<" + ent.uri + "> geo:hasGeometry ?geom. ?geom geo:asWKT ?iWKT.";
-//
-//								if (spatialRelation.contains("within")) {
-//									sparqlQ += "FILTER(geof:sfWithin(?cWKT,?iWKT))}";
-//
-//								}
-//								if (spatialRelation.contains("near")) {
-//									sparqlQ += "FILTER(geof:distance(?cWKT,?iWKT,uom:metre) <= 1000) }";
-//
-//									if (thresholdFlag) {
-//										sparqlQ = sparqlQ.replace("1000", thresholdDistance);
-//									}
-//
-//									else {
-//										if (con.link.contains("Restaurant") || con.link.contains("Park")) {
-//											sparqlQ = sparqlQ.replace("1000", "500");
-//										}
-//										if (con.link.contains("City")) {
-//											sparqlQ = sparqlQ.replace("1000", "5000");
-//										}
-//									}
-//								}
-//								if (spatialRelation.contains("crosses")) {
-//									sparqlQ += "FILTER(geof:sfCrosses(?cWKT,?iWKT))}";
-//								}
-//								if (spatialRelation.contains("boundry")) {
-//									sparqlQ += "FILTER(geof:sfTouches(?cWKT,?iWKT))}";
-//								}
-//								Query q = new Query();
-//								q.query = sparqlQ;
-//								q.score = ent1.linkCount;
-//								allQueriesList.add(q);
-//								allSparqlQueries.add(sparqlQ);
-//							} else {
-//								// CONCEPT = OSM, INSTANCE = OSM
-//								String sparqlQ = "select ?x where { ?x rdf:type <" + con.link
-//										+ ">; geo:hasGeometry ?cGeom. ?cGeom geo:asWKT ?cWKT. <" + ent.uri
-//										+ "> geo:hasGeometry ?geom. ?geom geo:asWKT ?iWKT. ";
-//
-//								if (spatialRelation.contains("within")) {
-//									sparqlQ += "FILTER(geof:sfWithin(?cWKT,?iWKT))}";
-//
-//								}
-//								if (spatialRelation.contains("near")) {
-//									sparqlQ += "FILTER(geof:distance(?cWKT,?iWKT,uom:metre) <= 1000) }";
-//
-//									if (thresholdFlag) {
-//										sparqlQ = sparqlQ.replace("1000", thresholdDistance);
-//									}
-//
-//									else {
-//										if (con.link.contains("Restaurant") || con.link.contains("Park")) {
-//											sparqlQ = sparqlQ.replace("1000", "500");
-//										}
-//										if (con.link.contains("City")) {
-//											sparqlQ = sparqlQ.replace("1000", "5000");
-//										}
-//									}
-//								}
-//								if (spatialRelation.contains("crosses")) {
-//									sparqlQ += "FILTER(geof:sfCrosses(?cWKT,?iWKT))}";
-//								}
-//								if (spatialRelation.contains("boundry")) {
-//									sparqlQ += "FILTER(geof:sfTouches(?cWKT,?iWKT))}";
-//								}
-//
-//								Query q = new Query();
-//								q.query = sparqlQ;
-//								q.score = ent1.linkCount;
-//								allQueriesList.add(q);
-//								allSparqlQueries.add(sparqlQ);
-//							}
-//						}
-//					}
-//				}
-//			}
 
 			// -----------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -5357,14 +3839,16 @@ public class GeoSparqlGenerator extends QanaryComponent {
 			System.out.println("Start: " + begin + "\t End: " + end + "\t Entity: " + namedEntity);
 		}
 	}
-	public class TimeAnnotation{
 
-		public String type = ""; //TIMEX type
-		public String value= ""; //TIMEX value
-		public String text =""; //Annotated Text
+	public class TimeAnnotation {
+
+		public String type = ""; // TIMEX type
+		public String value = ""; // TIMEX value
+		public String text = ""; // Annotated Text
 		public int startIndex = -1;
 		public int endIndex = -1;
 	}
+
 	public class Property {
 		public int begin;
 		public int end;
