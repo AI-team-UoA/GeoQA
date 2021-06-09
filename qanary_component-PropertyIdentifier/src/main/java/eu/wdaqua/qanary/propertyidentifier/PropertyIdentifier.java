@@ -45,12 +45,14 @@ import eu.wdaqua.qanary.component.QanaryComponent;
 //import net.ricecode.similarity.StringSimilarityService;
 //import net.ricecode.similarity.StringSimilarityServiceImpl;
 
-
 @Component
 /**
- * This component connected automatically to the Qanary pipeline.
- * The Qanary pipeline endpoint defined in application.properties (spring.boot.admin.url)
- * @see <a href="https://github.com/WDAqua/Qanary/wiki/How-do-I-integrate-a-new-component-in-Qanary%3F" target="_top">Github wiki howto</a>
+ * This component connected automatically to the Qanary pipeline. The Qanary
+ * pipeline endpoint defined in application.properties (spring.boot.admin.url)
+ * 
+ * @see <a href=
+ *      "https://github.com/WDAqua/Qanary/wiki/How-do-I-integrate-a-new-component-in-Qanary%3F"
+ *      target="_top">Github wiki howto</a>
  */
 public class PropertyIdentifier extends QanaryComponent {
 	private static final Logger logger = LoggerFactory.getLogger(PropertyIdentifier.class);
@@ -79,31 +81,6 @@ public class PropertyIdentifier extends QanaryComponent {
 			}
 		}
 		return postags;
-	}
-
-	public static boolean isJJSClosestOrNearest(String documentText) {
-		boolean retVal = false;
-		Properties props = new Properties();
-		props.put("annotators", "tokenize, ssplit, pos,lemma");
-		StanfordCoreNLP pipeline = new StanfordCoreNLP(props);
-		// Create an empty Annotation just with the given text
-		Annotation document = new Annotation(documentText);
-		// run all Annotators on this text
-		pipeline.annotate(document);
-		// Iterate over all of the sentences found
-		List<CoreMap> sentences = document.get(SentencesAnnotation.class);
-		for (CoreMap sentence : sentences) {
-			// Iterate over all tokens in a sentence
-			for (CoreLabel token : sentence.get(TokensAnnotation.class)) {
-				String pos = token.get(PartOfSpeechAnnotation.class);
-				if (pos.contains("JJS")) {
-					if(token.originalText().equalsIgnoreCase("nearest")||token.originalText().equalsIgnoreCase("closest")) {
-						retVal = true;
-					}
-				}
-			}
-		}
-		return retVal;
 	}
 
 	public static List<String> getNouns(String documentText) {
@@ -147,19 +124,19 @@ public class PropertyIdentifier extends QanaryComponent {
 			// Iterate over all tokens in a sentence
 			SemanticGraph dependencies = sentence.get(SemanticGraphCoreAnnotations.BasicDependenciesAnnotation.class);
 //			dependencies.prettyPrint();
-			List<SemanticGraphEdge>	edges = dependencies.edgeListSorted();
+			List<SemanticGraphEdge> edges = dependencies.edgeListSorted();
 
-			for(SemanticGraphEdge edge: edges){
+			for (SemanticGraphEdge edge : edges) {
 
-				if(edge.getSource().toString().contains("JJS") && edge.getDependent().toString().contains("NN")){
+				if (edge.getSource().toString().contains("JJS") && edge.getDependent().toString().contains("NN")) {
 					retVal = true;
 //					System.out.println(" Source ================================================= Dest ");
 //					System.out.println("edge : "+edge.toString());
 //					System.out.println("source: "+edge.getSource());
 //					System.out.println("relation: "+edge.getRelation());
 //					System.out.println("dependent :"+edge.getDependent());
-				}
-				else if (edge.getSource().toString().contains("NN") && edge.getDependent().toString().contains("JJS")){
+				} else if (edge.getSource().toString().contains("NN")
+						&& edge.getDependent().toString().contains("JJS")) {
 					retVal = true;
 //					System.out.println("Dest ================================================= Source");
 //					System.out.println("edge : "+edge.toString());
@@ -187,16 +164,16 @@ public class PropertyIdentifier extends QanaryComponent {
 			// Iterate over all tokens in a sentence
 			SemanticGraph dependencies = sentence.get(SemanticGraphCoreAnnotations.BasicDependenciesAnnotation.class);
 //			dependencies.prettyPrint();
-			List<SemanticGraphEdge>	edges = dependencies.edgeListSorted();
+			List<SemanticGraphEdge> edges = dependencies.edgeListSorted();
 
-			for(SemanticGraphEdge edge: edges){
-				if(edge.getSource().toString().contains("JJS") && edge.getDependent().toString().contains("NN")){
+			for (SemanticGraphEdge edge : edges) {
+				if (edge.getSource().toString().contains("JJS") && edge.getDependent().toString().contains("NN")) {
 					retVal = edge.getSource().toString();
-					retVal = retVal.substring(0,retVal.indexOf('/')-1);
-				}
-				else if (edge.getSource().toString().contains("NN") && edge.getDependent().toString().contains("JJS")){
+					retVal = retVal.substring(0, retVal.indexOf('/') - 1);
+				} else if (edge.getSource().toString().contains("NN")
+						&& edge.getDependent().toString().contains("JJS")) {
 					retVal = edge.getDependent().toString();
-					retVal = retVal.substring(0,retVal.indexOf('/')-1);
+					retVal = retVal.substring(0, retVal.indexOf('/') - 1);
 				}
 			}
 		}
@@ -432,7 +409,7 @@ public class PropertyIdentifier extends QanaryComponent {
 //					bw1.close();
 				}
 				if (properties.size() == 0) {
-					if (valuePropertyD.size() > 0) {
+					if (valuePropertyD.size() > 0) {classLabel.equals("Mountain") 
 						double score = 0.0;
 						System.out.println("Inside value property: ");
 //						SimilarityStrategy strategy = new JaroWinklerStrategy();
@@ -643,6 +620,7 @@ public class PropertyIdentifier extends QanaryComponent {
 		public String label;
 		public String uri;
 	}
+
 	public class Entity {
 
 		public int begin;
