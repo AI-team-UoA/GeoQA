@@ -3,17 +3,12 @@ package eu.wdaqua.qanary.propertyidentifier;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.Map.Entry;
-import java.util.Properties;
-import java.util.Set;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import edu.stanford.nlp.ling.CoreAnnotations;
 import org.apache.jena.query.Query;
 import org.apache.jena.query.QueryExecution;
 import org.apache.jena.query.QueryExecutionFactory;
@@ -81,6 +76,30 @@ public class PropertyIdentifier extends QanaryComponent {
 			}
 		}
 		return postags;
+	}
+
+	public static String lemmatize(String documentText) {
+		Properties props = new Properties();
+		props.put("annotators", "tokenize, ssplit, pos, lemma");
+		StanfordCoreNLP pipeline = new StanfordCoreNLP(props);
+		List<String> lemmas = new ArrayList<>();
+		String lemmetizedQuestion = "";
+		// Create an empty Annotation just with the given text
+		Annotation document = new Annotation(documentText);
+		// run all Annotators on this text
+		pipeline.annotate(document);
+		// Iterate over all of the sentences found
+		List<CoreMap> sentences = document.get(CoreAnnotations.SentencesAnnotation.class);
+		for (CoreMap sentence : sentences) {
+			// Iterate over all tokens in a sentence
+			for (CoreLabel token : sentence.get(CoreAnnotations.TokensAnnotation.class)) {
+				// Retrieve and add the lemma for each word into the
+				// list of lemmas
+				lemmas.add(token.get(CoreAnnotations.LemmaAnnotation.class));
+				lemmetizedQuestion += token.get(CoreAnnotations.LemmaAnnotation.class) + " ";
+			}
+		}
+		return lemmetizedQuestion;
 	}
 
 	public static List<String> getNouns(String documentText) {
@@ -173,10 +192,11 @@ public class PropertyIdentifier extends QanaryComponent {
 				} else if (edge.getSource().toString().contains("NN")
 						&& edge.getDependent().toString().contains("JJS")) {
 					retVal = edge.getDependent().toString();
-					retVal = retVal.substring(0, retVal.indexOf('/') - 1);
+					retVal = retVal.substring(0, retVal.indexOf('/') );
 				}
 			}
 		}
+		System.out.println("ret value : "+retVal);
 		return retVal;
 	}
 
@@ -197,6 +217,7 @@ public class PropertyIdentifier extends QanaryComponent {
 		QanaryUtils myQanaryUtils = this.getUtils(myQanaryMessage);
 		QanaryQuestion<String> myQanaryQuestion = this.getQanaryQuestion(myQanaryMessage);
 		String myQuestion = myQanaryQuestion.getTextualRepresentation();
+		String lemQuestion = lemmatize(myQuestion);
 		logger.info("Question: {}", myQuestion);
 		// TODO: implement processing of question
 
@@ -207,6 +228,7 @@ public class PropertyIdentifier extends QanaryComponent {
 		List<String> instanceProperties = new ArrayList<String>();
 		List<String> valuePropertyList = new ArrayList<String>();
 		List<String> allClassesList = new ArrayList<String>();
+		List<String> dbpediaClassList = new ArrayList<String>();
 		boolean valueFlag = false;
 		Set<String> coonceptsUri = new HashSet<String>();
 		ResultSet r;
@@ -261,15 +283,17 @@ public class PropertyIdentifier extends QanaryComponent {
 			if (conceptTemp.link.contains("dbpedia.org")) {
 				concepts.add(conceptTemp);
 				coonceptsUri.add(conceptTemp.link);
-				allClassesList.add(conceptTemp.link);
+				dbpediaClassList.add(conceptTemp.link);
 				logger.info("Concept start {}, end {} concept {} link {}", conceptTemp.begin, conceptTemp.end,
 						myQuestion.substring(conceptTemp.begin, conceptTemp.end), conceptTemp.link);
 			}
+			allClassesList.add(conceptTemp.link);
 
 		}
 
 		for (int i = 0; i < allVerbs.size(); i++) {
 			for (String classlUri : allClassesList) {
+				System.out.println("Class URI : "+classlUri +"    allverbs :"+allVerbs.get(i));
 				if (classlUri.toLowerCase().contains(allVerbs.get(i).toLowerCase())) {
 					allVerbs.remove(i);
 					i--;
@@ -322,8 +346,8 @@ public class PropertyIdentifier extends QanaryComponent {
 
 			String classLabel = concept.substring(concept.lastIndexOf("/") + 1);
 			System.out.println("classLabel : " + classLabel);
-			File file = new File("src/main/resources/dbpediaproperties/" + classLabel + "_dbpedia_label_of_properties.txt");
-			File file1 = new File("src/main/resources/dbpediaproperties/" + classLabel + "_dbpedia_value_of_properties.txt");
+			File file = new File("qanary_component-PropertyIdentifier/src/main/resources/dbpediaproperties/" + classLabel + "_dbpedia_label_of_properties.txt");
+			File file1 = new File("qanary_component-PropertyIdentifier/src/main/resources/dbpediaproperties/" + classLabel + "_dbpedia_value_of_properties.txt");
 			Map<String, String> valuePropertyD = new HashMap<String, String>();
 			Map<String, String> labelPropertyD = new HashMap<String, String>();
 			if (file.exists()) {
@@ -366,6 +390,9 @@ public class PropertyIdentifier extends QanaryComponent {
 //							new FileWriter("/home/dharmen/justtestproperties.txt", true));
 					for (Entry<String, String> entry : labelPropertyD.entrySet()) {
 						for (String verb : allVerbs) {
+							if(verb.equalsIgnoreCase("of")||verb.equalsIgnoreCase("in")||verb.equalsIgnoreCase("be")||verb.equalsIgnoreCase("name"))
+								continue;
+//							System.out.println("Verb : "+verb);
 							Pattern p = Pattern.compile("\\b" + verb  + "\\b", Pattern.CASE_INSENSITIVE);
 //							if (verb.contains("height") && entry.getKey().contains("height")) {
 //								bw1.write(entry.getKey());
@@ -375,18 +402,17 @@ public class PropertyIdentifier extends QanaryComponent {
 							Matcher m = p.matcher(entry.getKey());
 //							if (!concept.contains(verb)) {
 //								System.out.println("before matching if condition =============== "+ verb);
-							if (m.find() && !entry.getKey().equalsIgnoreCase("crosses")
+							if (m.find() && !entry.getKey().equalsIgnoreCase("crosses") && !entry.getKey().contains("Wikipage")
 									&& !entry.getKey().equalsIgnoreCase("runs")
 									&& !entry.getKey().equalsIgnoreCase("south")
-									&& !entry.getKey().equalsIgnoreCase("number") && entry.getKey().length() > 2) {
+									&& !entry.getKey().equalsIgnoreCase("number") && !verb.equalsIgnoreCase("km") && !verb.equalsIgnoreCase("of") && !verb.equalsIgnoreCase("number") && !verb.equalsIgnoreCase("range") && !verb.equalsIgnoreCase("be") && !verb.equalsIgnoreCase("in")&& entry.getKey().length() > 2) {
 								valueFlag = true;
 								Property property = new Property();
 								if (relationList.size() == 0 || !relationList.contains(entry.getValue())) {
 									relationList.add(entry.getValue());
 									valuePropertyList.add(entry.getValue());
-									property.begin = myQuestion.toLowerCase().indexOf(entry.getKey().toLowerCase());
-									property.end = myQuestion.toLowerCase().indexOf(entry.getKey().toLowerCase())
-											+ entry.getKey().length();
+									property.begin = lemQuestion.toLowerCase().indexOf(entry.getKey().toLowerCase());
+									property.end = property.begin + entry.getKey().length();
 									property.label = entry.getKey();
 									property.uri = entry.getValue();
 //										if (property.begin > 0 && property.end > property.begin) {
@@ -409,7 +435,7 @@ public class PropertyIdentifier extends QanaryComponent {
 //					bw1.close();
 				}
 				if (properties.size() == 0) {
-					if (valuePropertyD.size() > 0) {classLabel.equals("Mountain") 
+					if (valuePropertyD.size() > 0) {
 						double score = 0.0;
 						System.out.println("Inside value property: ");
 //						SimilarityStrategy strategy = new JaroWinklerStrategy();
@@ -432,7 +458,7 @@ public class PropertyIdentifier extends QanaryComponent {
 										if (relationList.size() == 0 || !relationList.contains(entry.getValue())) {
 											relationList.add(entry.getValue());
 											valuePropertyList.add(entry.getValue());
-											property.begin = myQuestion.toLowerCase()
+											property.begin = lemQuestion.toLowerCase()
 													.indexOf(entry.getKey().toLowerCase());
 											property.end = property.begin + entry.getKey().length();
 											property.label = verb;
@@ -453,73 +479,121 @@ public class PropertyIdentifier extends QanaryComponent {
 					}
 				}
 			}
-			for (Property DBpediaProperty : properties) {
-				sparql = "prefix qa: <http://www.wdaqua.eu/qa#> "
-						+ "prefix oa: <http://www.w3.org/ns/openannotation/core/> "
-						+ "prefix xsd: <http://www.w3.org/2001/XMLSchema#> "
-						+ "prefix dbp: <http://dbpedia.org/property/> " + "INSERT { " + "GRAPH <"
-						+ myQanaryQuestion.getOutGraph() + "> { " + "  ?a a qa:AnnotationOfRelation . "
-						+ "  ?a oa:hasTarget [ " + "           a    oa:SpecificResource; "
-						+ "           oa:hasSource    <" + myQanaryQuestion.getUri() + ">; "
-						+ "			  oa:hasSelector  [ " //
-						+ "			         a        oa:TextPositionSelector ; " //
-						+ "			         oa:start " + DBpediaProperty.begin + " ; " //
-						+ "			         oa:end   " + DBpediaProperty.end + " " //
-						+ "		     ] " //
-						+ "  ] ; " + "     oa:hasValue <" + DBpediaProperty.uri.trim() + ">;"
-//						+ "     oa:annotatedBy <http:DBpedia-RelationExtractor.com> ; "
-						+ "	    oa:AnnotatedAt ?time  " + "}} " + "WHERE { " + "BIND (IRI(str(RAND())) AS ?a) ."
-						+ "BIND (now() as ?time) " + "}";
-				logger.info("Sparql query {}", sparql);
-				myQanaryUtils.updateTripleStore(sparql, myQanaryMessage.getEndpoint().toString());
-			}
+
 			valuePropertyD.clear();
 			labelPropertyD.clear();
 		}
 		//check for implicit properties in question
+		System.out.println("isJJN : "+isJJSNN(myQuestion));
+		if(properties.size()<1) {
+			if (isJJSNN(myQuestion)) {
+				String questionProperty = getJJS(myQuestion);
+				//for(Property prop: properties){
+				//	if(!prop.label.toLowerCase().contains(questionProperty)||!prop.uri.toLowerCase().contains(questionProperty)){
+				Property property = new Property();
+				switch (questionProperty) {
+					// Update the code based on class property mapping
 
-		if(isJJSNN(myQuestion)){
-			String questionProperty = getJJS(myQuestion);
-			for(Property prop: properties){
-				if(!prop.label.toLowerCase().contains(questionProperty)||!prop.uri.toLowerCase().contains(questionProperty)){
-					Property property = new Property();
-					switch (questionProperty){
-						case "highest":
-								property.uri = "http://dbpedia.org/ontology/elevation";
-								property.label = questionProperty;
-								property.begin = myQuestion.indexOf(questionProperty);
-								property.end = property.begin+questionProperty.length();
-							break;
-						case "longest":
-							property.uri = "http://dbpedia.org/property/length";
+					case "smallest":
+					case "highest":
+						if(myQuestion.contains("building")) {
+							property.uri = "http://dbpedia.org/ontology/floorCount";
 							property.label = questionProperty;
 							property.begin = myQuestion.indexOf(questionProperty);
-							property.end = property.begin+questionProperty.length();
-							break;
-						case "population":
+							property.end = property.begin + questionProperty.length();
+							System.out.println("Adding floorCount");
+						} else if(myQuestion.contains("population")){
+						property.uri = "http://dbpedia.org/ontology/populationTotal";
+						property.label = questionProperty;
+						property.begin = myQuestion.indexOf(questionProperty);
+						property.end = property.begin + questionProperty.length();
+						System.out.println("Adding populationTotal");
+						} else if(myQuestion.toLowerCase(Locale.ROOT).contains(" lake")){
+							property.uri = "http://dbpedia.org/ontology/areaTotal";
+							property.label = questionProperty;
+							property.begin = myQuestion.indexOf(questionProperty);
+							property.end = property.begin + questionProperty.length();
+							System.out.println("Adding elevation");
+						} else{
+							property.uri = "http://dbpedia.org/ontology/elevation";
+							property.label = questionProperty;
+							property.begin = myQuestion.indexOf(questionProperty);
+							property.end = property.begin + questionProperty.length();
+							System.out.println("Adding elevation");
+						}
+						break;
+					case "shortest":
+					case "longest":
+						property.uri = "http://dbpedia.org/property/length";
+						property.label = questionProperty;
+						property.begin = myQuestion.indexOf(questionProperty);
+						property.end = property.begin + questionProperty.length();
+						System.out.println("Adding length");
+						break;
+					case "population":
+						property.uri = "http://dbpedia.org/ontology/populationTotal";
+						property.label = questionProperty;
+						property.begin = myQuestion.indexOf(questionProperty);
+						property.end = property.begin + questionProperty.length();
+						System.out.println("Adding populationTotal");
+						break;
+					case "largest":
+					case "biggest":
+						// code need to be updated
+						//this property depends on the class present in the question
+						if(myQuestion.contains("population")){
 							property.uri = "http://dbpedia.org/ontology/populationTotal";
 							property.label = questionProperty;
 							property.begin = myQuestion.indexOf(questionProperty);
-							property.end = property.begin+questionProperty.length();
-							break;
-						case "largest":
-							// code need to be updated
-							//this property depends on the class present in the question
-							property.uri = "http://dbpedia.org/ontology/length";
+							property.end = property.begin + questionProperty.length();
+							System.out.println("Adding populationTotal");
+						} else {
+							property.uri = "http://dbpedia.org/ontology/areaTotal";
 							property.label = questionProperty;
 							property.begin = myQuestion.indexOf(questionProperty);
-							property.end = property.begin+questionProperty.length();
-							break;
-						default:
-							break;
-					}
-					if(property.uri!=null){
-						properties.add(property);
-					}
+							property.end = property.begin + questionProperty.length();
+							System.out.println("Adding areaTotal");
+						}
+						break;
+					case "newest":
+					case "oldest":
+						//update code based on class identified
+						property.uri = "http://dbpedia.org/ontology/openingYear";
+						property.label = questionProperty;
+						property.begin = myQuestion.indexOf(questionProperty);
+						property.end = property.begin + questionProperty.length();
+						System.out.println("Adding date");
+						break;
+					default:
+						break;
 				}
+				if (property.uri != null) {
+					properties.add(property);
+				}
+				//}
+				//}
 			}
 		}
-
+		for (Property DBpediaProperty : properties) {
+			sparql = "prefix qa: <http://www.wdaqua.eu/qa#> "
+					+ "prefix oa: <http://www.w3.org/ns/openannotation/core/> "
+					+ "prefix xsd: <http://www.w3.org/2001/XMLSchema#> "
+					+ "prefix dbp: <http://dbpedia.org/property/> " + "INSERT { " + "GRAPH <"
+					+ myQanaryQuestion.getOutGraph() + "> { " + "  ?a a qa:AnnotationOfRelation . "
+					+ "  ?a oa:hasTarget [ " + "           a    oa:SpecificResource; "
+					+ "           oa:hasSource    <" + myQanaryQuestion.getUri() + ">; "
+					+ "			  oa:hasSelector  [ " //
+					+ "			         a        oa:TextPositionSelector ; " //
+					+ "			         oa:start " + DBpediaProperty.begin + " ; " //
+					+ "			         oa:end   " + DBpediaProperty.end + " " //
+					+ "		     ] " //
+					+ "  ] ; " + "     oa:hasValue <" + DBpediaProperty.uri.trim() + ">;"
+//						+ "     oa:annotatedBy <http:DBpedia-RelationExtractor.com> ; "
+					+ "	    oa:AnnotatedAt ?time  " + "}} " + "WHERE { " + "BIND (IRI(str(RAND())) AS ?a) ."
+					+ "BIND (now() as ?time) " + "}";
+			logger.info("Sparql query {}", sparql);
+			myQanaryUtils.updateTripleStore(sparql, myQanaryMessage.getEndpoint().toString());
+		}
 		// Instance property
 		List<String> allNouns = getNouns(myQuestion);
 		System.out.println("Nouns : " + allNouns);
@@ -534,16 +608,19 @@ public class PropertyIdentifier extends QanaryComponent {
 			System.out.println("Sparql Query : " + sparqlQuery + "\n Instance: " + entity);
 			Query query = QueryFactory.create(sparqlQuery);
 
-			QueryExecution exec = QueryExecutionFactory.sparqlService("http://pyravlos1.di.uoa.gr:8890/sparql", query);
+			QueryExecution exec = QueryExecutionFactory.sparqlService("https://dbpedia.org/sparql", query);
 
 			ResultSet results = ResultSetFactory.copyResults(exec.execSelect());
-			if (!results.hasNext() && properties.size() == 0) {
+//			System.out.println("result set : "+results.toString());
+			if (!results.hasNext() && properties.size() > 0) {
+				System.out.println("Property size : "+properties.size()+"Getting out of loop");
 				break;
 			} else {
 				while (results.hasNext()) {
 					QuerySolution qs = results.next();
 					String dbpediaProperty = qs.get("p").toString();
 					String dbpediaPropertyLabel = dbpediaProperty.substring(dbpediaProperty.lastIndexOf('/') + 1);
+					System.out.println("dbpedia property label : "+ dbpediaPropertyLabel);
 //					SimilarityStrategy strategy = new JaroWinklerStrategy();
 //
 //					StringSimilarityService service = new StringSimilarityServiceImpl(strategy);
@@ -565,8 +642,8 @@ public class PropertyIdentifier extends QanaryComponent {
 //											valuePropertyList.add(enrty.getValue());
 								property.label = dbpediaPropertyLabel;
 //											dbpediaPropertyLabel = dbpediaPropertyLabel.substring(dbpediaPropertyLabel.indexOf(' '));
-								property.begin = myQuestion.toLowerCase().indexOf(verb.toLowerCase());
-								property.end = myQuestion.toLowerCase().indexOf(verb.toLowerCase()) + verb.length();
+								property.begin = lemQuestion.toLowerCase().indexOf(verb.toLowerCase());
+								property.end = property.begin + verb.length();
 								property.uri = dbpediaProperty;
 								if (property.begin > 0 && property.end > property.begin
 										&& !property.uri.toLowerCase().contains("mouth"))

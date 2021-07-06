@@ -13,6 +13,7 @@ import com.google.gson.*;
 public class TagMeRequest {
 
 		private final String url = "https://wat.d4science.org/wat/tag/tag";
+//		private final String url = "https://tagme.d4science.org/tagme/tag";
 		private HashMap<String, String> parameters;
 		
 		public TagMeRequest(String API_TOKEN) {
@@ -20,6 +21,8 @@ public class TagMeRequest {
 			
 			this.parameters.put("lang", "en");
 			this.parameters.put("gcube-token", API_TOKEN);
+//			this.parameters.put("rho", "0.2");
+//			this.parameters.put("epsilon", "0.1");
 		}
 		
 		public TagMeResponse doRequest(String text) throws MalformedURLException, IOException {

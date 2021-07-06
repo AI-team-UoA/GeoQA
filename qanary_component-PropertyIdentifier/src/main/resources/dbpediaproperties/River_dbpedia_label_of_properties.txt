@@ -35,7 +35,6 @@ discharge round,http://dbpedia.org/property/dischargeRound
 source confluence place,http://dbpedia.org/ontology/sourceConfluencePlace
 country,http://dbpedia.org/ontology/country
 QUELLE LONG GRAD,http://dbpedia.org/property/quelleLongGrad
-located in area,http://dbpedia.org/ontology/locatedInArea
 source long EW,http://dbpedia.org/property/sourceLongEw
 mouth elevation (μ),http://dbpedia.org/ontology/mouthElevation
 QUELLE LAT GRAD,http://dbpedia.org/property/quelleLatGrad

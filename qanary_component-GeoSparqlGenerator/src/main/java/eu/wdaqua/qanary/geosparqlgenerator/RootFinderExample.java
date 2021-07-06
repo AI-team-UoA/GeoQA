@@ -9,9 +9,14 @@ import edu.stanford.nlp.pipeline.StanfordCoreNLP;
 import edu.stanford.nlp.semgraph.SemanticGraph;
 import edu.stanford.nlp.semgraph.SemanticGraphCoreAnnotations;
 import edu.stanford.nlp.semgraph.SemanticGraphEdge;
+import edu.stanford.nlp.trees.Constituent;
+import edu.stanford.nlp.trees.LabeledScoredConstituentFactory;
+import edu.stanford.nlp.trees.Tree;
+import edu.stanford.nlp.trees.TreeCoreAnnotations;
 import edu.stanford.nlp.util.CoreMap;
 
-import java.io.IOException;
+import java.io.*;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
 import java.util.Set;
@@ -85,6 +90,39 @@ public static boolean isJJSClosestOrNearest(String documentText) {
 	}
 	return retVal;
 }
+
+	public static ArrayList<String> testConstituents(String question){
+		// set up pipeline properties
+		ArrayList<String> retValues = new ArrayList<>();
+		Properties props = new Properties();
+		props.setProperty("annotators", "tokenize,ssplit,pos,lemma,ner,parse");
+		// use faster shift reduce parser
+//		props.setProperty("parse.model", "edu/stanford/nlp/models/srparser/englishSR.ser.gz");
+//		props.setProperty("parse.maxlen", "100");
+		// set up Stanford CoreNLP pipeline
+		StanfordCoreNLP pipeline = new StanfordCoreNLP(props);
+		// build annotation for a review
+		Annotation annotation =
+				new Annotation(question);
+		// annotate
+		pipeline.annotate(annotation);
+		// get tree
+		Tree tree =
+				annotation.get(CoreAnnotations.SentencesAnnotation.class).get(0).get(TreeCoreAnnotations.TreeAnnotation.class);
+//		retValues.add(tree.toString());
+//		System.out.println(tree);
+		Set<Constituent> treeConstituents = tree.constituents(new LabeledScoredConstituentFactory());
+		for (Constituent constituent : treeConstituents) {
+//			System.out.println("Constituent : "+constituent.label() + " : : "+constituent.value());
+			if (constituent.label() != null &&
+					( constituent.label().toString().equals("QP"))) {
+				System.out.println("found constituent: "+constituent.toString());
+				retValues.add(tree.getLeaves().subList(constituent.start(), constituent.end()+1).toString());
+				System.out.println(tree.getLeaves().subList(constituent.start(), constituent.end()+1));
+			}
+		}
+		return retValues;
+	}
 	public static boolean isJJSNN(String documentText) {
 		boolean retVal = false;
 		Properties props = new Properties();
@@ -123,12 +161,56 @@ public static boolean isJJSClosestOrNearest(String documentText) {
 		}
 		return retVal;
 	}
+	public static boolean isRBSMost(String documentText) {
+		boolean retVal = false;
+		Properties props = new Properties();
+		props.setProperty("annotators", "tokenize, ssplit, pos, lemma, ner, depparse");
+		StanfordCoreNLP pipeline = new StanfordCoreNLP(props);
+		// Create an empty Annotation just with the given text
+		Annotation document = new Annotation(documentText);
+		// run all Annotators on this text
+		pipeline.annotate(document);
+		// Iterate over all of the sentences found
+		List<CoreMap> sentences = document.get(SentencesAnnotation.class);
+		for (CoreMap sentence : sentences) {
+			SemanticGraph dependencies = sentence.get(SemanticGraphCoreAnnotations.BasicDependenciesAnnotation.class);
+			List<SemanticGraphEdge> edges = dependencies.edgeListSorted();
+			for (SemanticGraphEdge edge : edges) {
+				if ((edge.getSource().toString().contains("JJ")||edge.getSource().toString().contains("NNS")) && edge.getDependent().toString().contains("RBS")) {
+					retVal = true;
+				}
+			}
+		}
+		return retVal;
+	}
+	public static void processFile(){
+		try{
+			BufferedReader br = new BufferedReader(new FileReader("/home/dharmenp/questionsList.txt"));
+			BufferedWriter bw = new BufferedWriter(new FileWriter("/home/dharmenp/questionsWithQPPhrashe.txt"));
+			int count = 0;
+			String line = "";
+			while((line = br.readLine())!=null){
+				String nps = testConstituents(line).toString();
+//				System.out.println("nps : "+nps);
+				bw.newLine();
+				bw.write(line+":"+nps);
+			}
+			br.close();
+			bw.close();
+		}catch (Exception e){
+			e.printStackTrace();
+		}
+	}
+
 	public static void main(String[] args) throws IOException {
 
 
-		String question = "What is the longest bridge in Scotland?";
-		System.out.println("Does question ask nearest/closest ? : "+isJJSNN(question));
-
+		String question = "Which towns of England have at least two hospitals?";
+		int testVal = Integer.parseInt("twenty");
+		System.out.println("checking is : "+testVal);
+		//System.out.println("Does question ask nearest/closest ? : "+isRBSMost(question));
+//		testConstituents(question);
+//		processFile();
 		/*MyGraph myGraph = new MyGraph();
 
 		// build pipeline

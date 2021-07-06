@@ -107,7 +107,7 @@ public class TagMeDisambiguate extends QanaryComponent {
 
 		System.out.println("Sparql Query : "+sparqlQuery);
 		Query query = QueryFactory.create(sparqlQuery);
-//		System.out.println("sparql query :" + query.toString());
+		System.out.println("sparql query :" + query.toString());
 		QueryExecution exec = QueryExecutionFactory.sparqlService(endpointURI, query);
 		ResultSet results = ResultSetFactory.copyResults(exec.execSelect());
 
@@ -208,9 +208,11 @@ public class TagMeDisambiguate extends QanaryComponent {
 			ArrayList<Link> links = new ArrayList<Link>();
 
 			for (NedAnnotation ann : annotations) {
-				if (ann.getTitle() != null) {
+				if (ann.getTitle() != null && !ann.getTitle().contains("(")) {
 					Link l = new Link();
 					l.link = this.dbpediaLink + ann.getTitle();
+//					l.link = l.link.replaceAll("&amp;","&");
+//					l.link = l.link.replaceAll(" ","_");
 					l.linkCount = getNoOfLinks(countQuery1 + " <" + l.link + "> " + countQuery2,
 							dbpediaEndpoint);
 					l.begin = ann.getStart();

@@ -66,7 +66,7 @@ public class DBpediaConceptsAndURIs {
 //		} catch (Exception e) {
 //			e.printStackTrace();
 //		}
-		Query q = QueryFactory.create(QueryFactory.read("qanary_component-conceptidentifier/src/main/resources/DBPediaConceptGetInEnglish.sparql"));
+		Query q = QueryFactory.create(QueryFactory.read("qanary_component-ConceptIdentifier/src/main/resources/DBPediaConceptGetInEnglish.sparql"));
 		logger.info("generated query: {}", q.toString());
 		objectToExec = QueryExecutionFactory.sparqlService(endpoint, q.toString());
 		objectToExec.setTimeout(timeout);

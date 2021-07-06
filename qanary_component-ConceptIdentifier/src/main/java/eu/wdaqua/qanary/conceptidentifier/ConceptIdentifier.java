@@ -3,12 +3,7 @@ package eu.wdaqua.qanary.conceptidentifier;
 import java.io.File;
 import java.net.MalformedURLException;
 import java.net.URL;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Properties;
-import java.util.Set;
+import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -161,7 +156,7 @@ public class ConceptIdentifier extends QanaryComponent {
 		// Map<String, String> allMapConceptWord =
 		// DBpediaConceptsAndURIs.getDBpediaConceptsAndURIs();
 		Map<String, String> allMapConceptWord = DBpediaConceptsAndURIs.getDBpediaConceptsAndURIs();
-		getXML("/src/main/resources/osm.owl");
+		getXML("qanary_component-ConceptIdentifier/src/main/resources/osm.owl");
 		// getCommonClass(allMapConceptWord.keySet());
 		QanaryUtils myQanaryUtils = this.getUtils(myQanaryMessage);
 		QanaryQuestion<String> myQanaryQuestion = this.getQanaryQuestion(myQanaryMessage);
@@ -180,6 +175,7 @@ public class ConceptIdentifier extends QanaryComponent {
 		osmUriMap.put("Unitary District", "http://www.app-lab.eu/gadm/UnitaryDistrict");
 		osmUriMap.put("Administrative Unit", "http://www.app-lab.eu/gadm/AdministrativeUnit");
 		osmUriMap.put("Metropolitan Borough", "http://www.app-lab.eu/gadm/MetropolitanBorough");
+		osmUriMap.put("Site", "http://www.app-lab.eu/osm/Attraction");
 		// -----------------------------------------------------------------------------------------
 //		osmUriMap.put("Civil Parishor Community", "http://kr.di.uoa.gr/yago2geo/ontology/OS_CivilParishorCommunity");
 //		osmUriMap.put("Unitary Authority Ward", "http://kr.di.uoa.gr/yago2geo/ontology/OS_UnitaryAuthorityWard");
@@ -232,7 +228,7 @@ public class ConceptIdentifier extends QanaryComponent {
 		logger.info("Lemmatize Question: {}", myQuestion);
 		logger.info("store data in graph {}",
 				myQanaryMessage.getValues().get(new URL(myQanaryMessage.getEndpoint().toString())));
-		WordNetAnalyzer wordNet = new WordNetAnalyzer("src/main/resources/WordNet-3.0/dict");
+		WordNetAnalyzer wordNet = new WordNetAnalyzer("qanary_component-ConceptIdentifier/src/main/resources/WordNet-3.0/dict");
 		osmUriMap.remove("county");
 
 		for (String conceptLabel : allMapConceptWord.keySet()) {
@@ -298,17 +294,29 @@ public class ConceptIdentifier extends QanaryComponent {
 			if (conUri != null) {
 				if (conUri.contains("Parking")) {
 					System.out.println("Getting in parking with question : " + myQuestionNl);
-					if (!myQuestionNl.contains(" car ")) {
+					if (!myQuestionNl.toLowerCase().contains("parking") && !myQuestionNl.contains(" car ")) {
 						System.out.println("getting in car parking :" + myQuestion);
 						removalList.add(tempConcept);
 					}
+				}else if (conUri.contains("Park")) {
+					System.out.println("Getting in park with question : " + myQuestionNl);
+					if (myQuestionNl.toLowerCase().contains(" car park")) {
+						System.out.println("getting in car parking :" + myQuestion);
+						if(tempConcept.getURI().contains("dbpedia"))
+						tempConcept.setURI("http://dbpedia.org/ontology/Parking");
+						if(tempConcept.getURI().contains("app-lab"))
+							tempConcept.setURI("http://www.app-lab.eu/osm/ontology#Parking");
+					}
+				}
+				if(conUri.contains("http://dbpedia.org/ontology/Area")){
+					removalList.add(tempConcept);
 				}
 				if (conUri.contains("Gondola") || conUri.contains("http://dbpedia.org/ontology/List")
 						|| conUri.contains("http://dbpedia.org/ontology/Automobile")
 						|| conUri.contains("http://dbpedia.org/ontology/Altitude")
 						|| conUri.contains("http://dbpedia.org/ontology/Name")
 						|| conUri.contains("http://dbpedia.org/ontology/Population")
-						|| (conUri.contains("http://www.app-lab.eu/osm/ontology#Peak")
+						|| (conUri.contains("http://www.app-lab.eu/osm/ontology#Peak") || (conUri.contains("http://dbpedia.org/ontology/Area"))
 								&& myQuestion.toLowerCase().contains("height"))) {
 					removalList.add(tempConcept);
 				}

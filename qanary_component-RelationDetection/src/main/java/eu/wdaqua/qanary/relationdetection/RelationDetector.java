@@ -104,7 +104,7 @@ public class RelationDetector {
 		List<Integer> indexesOfSpatialRelation = new ArrayList<Integer>();
 		Pattern p = Pattern.compile("\\b" + word + "\\b", Pattern.CASE_INSENSITIVE);
 		Matcher m;
-		if(myQuestion.contains("crosses")||myQuestion.contains("includes"))
+		if(myQuestion.contains("crosses")||myQuestion.contains("includes") || myQuestion.contains("located"))
 			m = p.matcher(myQuestion);
 		else
 			m = p.matcher(lemmatize(myQuestion));

@@ -338,7 +338,6 @@ float,http://dbpedia.org/property/float
 map alt,http://dbpedia.org/property/mapAlt
 parts,http://dbpedia.org/property/parts
 Jun snow inch,http://dbpedia.org/property/junSnowInch
-population note,http://dbpedia.org/property/populationNote
 official lang,http://dbpedia.org/property/officialLang
 mapsize,http://dbpedia.org/property/mapsize
 2001 pop density,http://dbpedia.org/property/2001PopDensity
@@ -665,7 +664,6 @@ Nov precipitation mm,http://dbpedia.org/property/novPrecipitationMm
 imagesize,http://dbpedia.org/property/imagesize
 lat sec,http://dbpedia.org/property/latSec
 Jan rain mm,http://dbpedia.org/property/janRainMm
-population footnotes,http://dbpedia.org/property/populationFootnotes
 Sep percentsun,http://dbpedia.org/property/sepPercentsun
 Dec record high F,http://dbpedia.org/property/decRecordHighF
 voting system,http://dbpedia.org/property/votingSystem
@@ -736,7 +734,6 @@ inhabloc cat,http://dbpedia.org/property/inhablocCat
 Mar record high C,http://dbpedia.org/property/marRecordHighC
 Sealsize,http://dbpedia.org/property/sealsize
 year record low F,http://dbpedia.org/property/yearRecordLowF
-population blank1 title,http://dbpedia.org/property/populationBlank1Title
 May precipitation inch,http://dbpedia.org/property/mayPrecipitationInch
 rev,http://dbpedia.org/property/rev
 postal code,http://dbpedia.org/property/postalCode
