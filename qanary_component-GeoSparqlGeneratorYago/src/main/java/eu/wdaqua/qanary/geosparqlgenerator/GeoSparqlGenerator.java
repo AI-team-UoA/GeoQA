@@ -123,11 +123,11 @@ public class GeoSparqlGenerator extends QanaryComponent {
 
 	public static Boolean answerAvailable(String concept, String instance, String relation) {
 		Boolean found = false;
-		concept = concept.substring(concept.lastIndexOf('/') + 1);
+		//concept = concept.substring(concept.lastIndexOf('/') + 1);
 		System.out.println("===============Calling answer available========================");
 		// parse the csv into a list of arrays
 		ArrayList<String[]> ls = new ArrayList<String[]>();
-		String fileName = "qanary_component-GeoSparqlGenerator/src/main/resources/final_table.csv";
+		String fileName = "qanary_component-GeoSparqlGenerator/src/main/resources/final_table_yago.csv";
 		File file = new File(fileName);
 
 		try {
@@ -157,13 +157,13 @@ public class GeoSparqlGenerator extends QanaryComponent {
 		if (!ls.isEmpty()) {
 			System.out.println("Getting in table not empty==============");
 
-			String endpoint = "https://dbpedia.org/sparql";
+			String endpoint = "http://pyravlos1.di.uoa.gr:8890/sparql";
 			QueryExecution objectToExec;
 
 			String sparqlQuery = "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> "
 					+ "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> "
-					+ "PREFIX dbo: <http://dbpedia.org/ontology/> " + " SELECT  distinct ?p "
-					+ "WHERE { ?x rdf:type dbo:" + concept + ". ?x ?p <" + instance + ">. } ";
+					+ " SELECT  distinct ?p "
+					+ " WHERE { ?x rdf:type <" + concept + ">. ?x ?p <" + instance + ">. } ";
 			System.out.println("sparql query: " + sparqlQuery);
 			objectToExec = QueryExecutionFactory.sparqlService(endpoint, sparqlQuery);
 			ResultSet r = objectToExec.execSelect();
@@ -291,17 +291,17 @@ public class GeoSparqlGenerator extends QanaryComponent {
 
 	public static Boolean checkTypes(Concept con, Entity ent) {
 //		System.out.println("===============Calling checkTypes========================");
-		String endpoint = "http://dbpedia.org/sparql";
+		String endpoint = "http://pyravlos1.di.uoa.gr:8890/sparql";
 		QueryExecution objectToExec;
 
 		// get type of instance Make sure that we query only DBpedia for DBpedia classes
 		// and OSM/GADM for OSM/GADM classes.
-		if (con.link.contains("dbpedia.org") && ent.uri.contains("dbpedia.org")) {
+		if (con.link.contains("http://yago-knowledge.org") && ent.uri.contains("http://yago-knowledge.org")) {
 //			System.out.println("concept: " + con.link + " ===== " + "entity : " + ent.uri);
 			String query = "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>"
 					+ "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>"
 					+ "PREFIX dbo: <http://dbpedia.org/ontology/>" + "SELECT  ?type " + "WHERE { "
-					+ "  ?x rdfs:label \"" + ent.namedEntity + "\"@en. " + "  ?x rdf:type ?type. " + "}";
+					+ "  ?x rdfs:label \"" + ent.namedEntity + "\"@eng. " + "  ?x rdf:type ?type. " + "}";
 
 			// must query db
 			objectToExec = QueryExecutionFactory.sparqlService(endpoint, query);
@@ -1875,8 +1875,8 @@ public class GeoSparqlGenerator extends QanaryComponent {
 
 				for (Concept con : concpetsLists.get(0)) {
 					for (Entity ents : instancesList.get(0)) {
-						if (con.link.contains("dbpedia")) {
-							if (ents.uri.contains("dbpedia.org")) {
+						if (con.link.contains("yago-knowledge")) {
+							if (ents.uri.contains("yago-knowledge.org")) {
 								// check if the combination of this concept - relation - typeofinstance exist
 								if (answerAvailable(con.link, ents.uri, spatialRelation)) {
 
