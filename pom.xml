@@ -16,5 +16,7 @@
     <module>qanary_component-RelationDetection</module>
     <module>qanary_component-PropertyIdentifier</module>
     <module>qanary_component-GeoSparqlGenerator</module>
+    <module>qanary_component-AGDISTIS</module>
+    <module>qanary_component-StanfordNERComponent</module>
   </modules>
 </project>
