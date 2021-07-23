@@ -236,10 +236,10 @@ public static boolean isJJSClosestOrNearest(String documentText) {
 	public static void main(String[] args) throws IOException {
 
 
-		String question = "What is the most densely populated city in Ireland?";
+		String question = "What's the name of the river that runs through London?";
 //		int testVal = Integer.parseInt("twenty");
 //		System.out.println("checking is : "+testVal);
-		System.out.println("Does question ask nearest/closest ? : "+isRBSMost(question));
+		System.out.println("Does question ask nearest/closest ? : "+getADJPConstituents(question));
 //		testConstituents(question);
 //		processFile();
 		/*MyGraph myGraph = new MyGraph();

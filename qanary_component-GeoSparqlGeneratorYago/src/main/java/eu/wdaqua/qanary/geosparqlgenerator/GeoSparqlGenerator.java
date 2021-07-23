@@ -73,6 +73,7 @@ public class GeoSparqlGenerator extends QanaryComponent {
 	public final String yagoEndpoint = "http://pyravlos1.di.uoa.gr:8890/sparql";
 	public final String dbpediaEndpoint = "https://dbpedia.org/sparql";
 	public final String strabonEndpoint = "http://pyravlos1.di.uoa.gr:8080/geoqa/query";
+	public final String yago2geostrabonEndpoint = "http://pyravlos1.di.uoa.gr:8080/geoqa/query"; // update the endpoint
 
 	public static String lemmatize(String documentText) {
 		Properties props = new Properties();
@@ -127,7 +128,7 @@ public class GeoSparqlGenerator extends QanaryComponent {
 		System.out.println("===============Calling answer available========================");
 		// parse the csv into a list of arrays
 		ArrayList<String[]> ls = new ArrayList<String[]>();
-		String fileName = "qanary_component-GeoSparqlGenerator/src/main/resources/final_table_yago.csv";
+		String fileName = "qanary_component-GeoSparqlGeneratorYago/src/main/resources/final_table_yago.csv";
 		File file = new File(fileName);
 
 		try {
@@ -404,6 +405,19 @@ public class GeoSparqlGenerator extends QanaryComponent {
 		}
 	}
 
+	public static void mergeNodesBasedOnInstances(){
+
+	}
+	public static void mergeNodesBasedOnConcepts(List<Concept> concepts, String question){
+
+
+
+		for (int j = 0; j < myTreeNodes1.size() - 1; j++) {
+			DependencyTreeNode tnj = myTreeNodes1.get(j);
+			DependencyTreeNode tnj1 = myTreeNodes1.get(j + 1);
+		}
+	}
+
 	public static String walkTreeAndGetPattern1() {
 		StringBuilder identifiedPattern = new StringBuilder();
 //		System.out.println("MyTreeNode Size : " + myTreeNodes1.size());
@@ -644,11 +658,13 @@ public class GeoSparqlGenerator extends QanaryComponent {
 	}
 
 	public static void annotateTreenode(Entity ent) {
-//		System.out.println("Entity start: " + ent.begin + "\t end: " + ent.end);
+		System.out.println("Entity start: " + ent.begin + "\t end: " + ent.end);
 		for (DependencyTreeNode tn : myTreeNodes1) {
-//			System.out.println("tree node start: " + tn.startIndex + "\t end: " + tn.endIndex);
+			System.out.println("tree node start: " + tn.startIndex + "\t end: " + tn.endIndex);
 			if (tn.startIndex < ent.end && tn.endIndex > ent.begin && tn.m_name.length() > 1) {
-				if (ent.namedEntity.contains(tn.m_name) && !tn.m_name.equalsIgnoreCase("and")) { // ent.namedEntity.equalsIgnoreCase(tn.m_name)) {
+				System.out.println("getting in index condition ");
+				System.out.println("Named Entity : "+ent.namedEntity +"\t Tree Node : "+tn.m_name);
+				if (ent.namedEntity.toLowerCase(Locale.ROOT).contains(tn.m_name.toLowerCase(Locale.ROOT)) && !tn.m_name.equalsIgnoreCase("and")) { // ent.namedEntity.equalsIgnoreCase(tn.m_name)) {
 //					System.out.println("annotated tree node : "+tn.m_name+"\t with entity : "+ent.uri + "::"+ent.namedEntity);
 					tn.entityList.add(ent);
 				}
@@ -660,21 +676,26 @@ public class GeoSparqlGenerator extends QanaryComponent {
 		System.out.println("Property start: " + property.begin + "\t end: " + property.end);
 		for (DependencyTreeNode tn : myTreeNodes1) {
 			System.out.println("tree node start: " + tn.startIndex + "\t end: " + tn.endIndex);
-			if(tn.posTag.equalsIgnoreCase("JJS") && (!myQuestion.toLowerCase(Locale.ROOT).contains("population") || myQuestion.toLowerCase(Locale.ROOT).contains(" county")) && !myQuestion.toLowerCase(Locale.ROOT).contains(" area") ){
-				if(property.uri.contains("length")||property.uri.contains("elevation")||property.uri.contains("area")||property.uri.contains("populationTotal")||property.uri.contains("floorCount")){
+			if(tn.posTag.equalsIgnoreCase("JJS") && (!myQuestion.toLowerCase(Locale.ROOT).contains("population") || myQuestion.toLowerCase(Locale.ROOT).contains(" county")) && !myQuestion.toLowerCase(Locale.ROOT).contains(" area")  ){
+				if(property.uri.toLowerCase(Locale.ROOT).contains("length")||property.uri.toLowerCase(Locale.ROOT).contains("elevation")||property.uri.toLowerCase(Locale.ROOT).contains("area")||property.uri.contains("populationtotal")||property.uri.toLowerCase(Locale.ROOT).contains("floorcount")||property.uri.toLowerCase(Locale.ROOT).contains("createdondate")){
 					tn.propertyList.add(property);
 				}
-			}else if(myQuestion.contains(" most")&&(property.uri.contains("http://dbpedia.org/ontology/populationDensity")||property.uri.contains("http://dbpedia.org/ontology/numberOfVisitors")||property.uri.contains("http://dbpedia.org/ontology/populationTotal")||property.uri.contains("http://dbpedia.org/ontology/elevation"))){
+			}else if(myQuestion.contains(" most")&&(property.uri.contains("http://yago-knowledge.org/resource/hasPopulationDensity")||property.uri.contains("http://dbpedia.org/ontology/numberOfVisitors")||property.uri.contains("http://yago-knowledge.org/resource/infobox/en/populationtotal")||property.uri.contains("http://yago-knowledge.org/resource/infobox/en/elevationm"))){
 				if(tn.m_name.contains("populat")||tn.m_name.contains("popular")) {
 					tn.propertyList.add(property);
 				}
-			}else if (tn.startIndex < property.end && tn.endIndex > property.begin && tn.m_name.length() > 1 && !tn.m_name.equalsIgnoreCase("the") && !tn.m_name.equalsIgnoreCase("in")) {
+			}else if (tn.startIndex < property.end && tn.endIndex > property.begin && tn.m_name.length() > 1 && !tn.m_name.equalsIgnoreCase("the") && !tn.m_name.equalsIgnoreCase("in")&& !tn.m_name.equalsIgnoreCase("national")) {
 				String uriLabel = property.uri;
-				uriLabel = uriLabel.substring(uriLabel.lastIndexOf("/"));
-				if (uriLabel.toLowerCase().contains(tn.m_name.toLowerCase())) { // ent.namedEntity.equalsIgnoreCase(tn.m_name))
-					// {
-					System.out.println("tree node label : "+tn.m_name +"\t urilabel : "+uriLabel);
+				if(uriLabel.contains("strdf:area") && tn.m_name.toLowerCase().contains("area")){
+					System.out.println("tree node label : " + tn.m_name + "\t urilabel : " + uriLabel);
 					tn.propertyList.add(property);
+				}else {
+					uriLabel = uriLabel.substring(uriLabel.lastIndexOf("/"));
+					if (uriLabel.toLowerCase().contains(tn.m_name.toLowerCase())) { // ent.namedEntity.equalsIgnoreCase(tn.m_name))
+						// {
+						System.out.println("tree node label : " + tn.m_name + "\t urilabel : " + uriLabel);
+						tn.propertyList.add(property);
+					}
 				}
 			}
 		}
@@ -1343,7 +1364,9 @@ public class GeoSparqlGenerator extends QanaryComponent {
 			boolean sortingFlag = isJJSNN(myQuestion);
 			boolean qauntifierPhrashFlag = false;
 			boolean adjpFlag = false;
-			if((getADJPConstituents(myQuestion))!=null){
+			List<String> adjpConstituents = getADJPConstituents(myQuestion);
+			if(adjpConstituents.size()>0){
+				System.out.println("ADJP Constituents : "+ adjpConstituents);
 				adjpFlag = true;
 			}
 			int propValue = 0;
@@ -1394,28 +1417,21 @@ public class GeoSparqlGenerator extends QanaryComponent {
 
 			// if POSTags contains JJS generate queries with ORDER BY()
 
-			if (cSize == 0 && rSize == 1 && iSize == 1) {
-				if (getW(myQuestionNL).size() > 0) {
+			if (cSize == 0 && rSize == 1 && iSize == 1 && pSize== 0) {
+				//if (getW(myQuestionNL).size() > 0) {
 					System.out.println("***************** RI ( Category 1) identified *****************");
 					String spatialRelation = relationsList.get(0).get(0).relationFunction.toLowerCase();
 					String sparqlQ = "";
 					for (Entity ents : instancesList.get(0)) {
-						if (ents.uri.contains("yago-knowledge.org")) {
-							if (ents.uri.contains("yago-knowledge.org")) {
-								sparqlQ = "select ?geo where { SERVICE <"+yagoEndpoint+"> {  <" + ents.uri
-										+ "> <http://www.w3.org/2003/01/geo/wgs84_pos#geometry> ?geo.} }";
-							} else {
-								sparqlQ = "select ?country where { <" + ents.uri
-										+ "> geo:hasGeometry ?geom. ?geom geo:asWKT ?iWKT. ?country gadm:country ?cv;geo:hasGeometry ?cGeom. ?cGeom geo:asWKT ?cWKT FILTER(geof:sfWithin(?iWKT,?cWKT)) }";
-							}
-							Query q = new Query();
-							q.query = sparqlQ;
-							q.score = ents.linkCount;
-							allQueriesList.add(q);
-							allSparqlQueries.add(sparqlQ);
-						}
+						sparqlQ = "select ?iWKT where { <" + ents.uri
+										+ "> geo:hasGeometry ?geom. ?geom geo:asWKT ?iWKT. }";
+						Query q = new Query();
+						q.query = sparqlQ;
+						q.score = ents.linkCount;
+						allQueriesList.add(q);
+						allSparqlQueries.add(sparqlQ);
 					}
-				}
+				//}
 			}
 
 			if (cSize == 0 && (rSize == 1 || rSize == 0 )&& iSize == 1 && pSize == 1) {
@@ -1425,20 +1441,22 @@ public class GeoSparqlGenerator extends QanaryComponent {
 				String propertyUri = propertiesList.get(0).uri;
 				String sparqlQ = "";
 				for (Entity ents : instancesList.get(0)) {
-					if (ents.uri.contains("dbpedia.org")) {
-						if (ents.uri.contains("dbpedia.org")) {
-							sparqlQ = "select ?property where { SERVICE <"+yagoEndpoint+"> {  <" + ents.uri
-									+ "> <"+propertyUri+"> ?property.} }";
-						} else {
-							sparqlQ = "select ?property where { SERVICE <"+strabonEndpoint+"> { <" + ents.uri
-									+ "> owl:sameAs ?x. } SERVICE<"+yagoEndpoint+">{ ?x <"+propertyUri+"> ?property. } } ";
-						}
+					if(propertyUri.contains("strdf:area")){
+						sparqlQ = "select distinct (strdf:area(?iWKT) as ?area) where {   <" + ents.uri
+								+ "> geo:hasGeometry ?geom. ?geom geo:asWKT ?iWKT. }  ";
+					} else{
+						sparqlQ = "select ?property where { <" + ents.uri
+								+ "> <"+propertyUri+"> ?property. } ";
+					}
+
+						/*if(sortingFlag){
+							sparqlQ += " ORDER BY DESC(?property) LIMIT 1";
+						}*/
 						Query q = new Query();
 						q.query = sparqlQ;
 						q.score = ents.linkCount;
 						allQueriesList.add(q);
 						allSparqlQueries.add(sparqlQ);
-					}
 				}
 			}
 
@@ -1875,334 +1893,71 @@ public class GeoSparqlGenerator extends QanaryComponent {
 
 				for (Concept con : concpetsLists.get(0)) {
 					for (Entity ents : instancesList.get(0)) {
-						if (con.link.contains("yago-knowledge")) {
-							if (ents.uri.contains("yago-knowledge.org")) {
-								// check if the combination of this concept - relation - typeofinstance exist
-								if (answerAvailable(con.link, ents.uri, spatialRelation)) {
-
-									if (spatialRelation.contains("within")) { // these code block is to be
-										String sparqlQ = ""; // updated by Markos
-										if (countFlag) {
-											sparqlQ = "select (count(distinct ?x) as ?total) where { SERVICE <"+yagoEndpoint+"> { ?x rdf:type <"
-													+ con.link + ">. ?x <http://yago-knowledge.org/resource/isLocatedIn> <" + ents.uri + ">.} }";
-										} else {
-											sparqlQ = "select ?x where { SERVICE <"+yagoEndpoint+"> { ?x rdf:type <"
-													+ con.link + ">. ?x <http://yago-knowledge.org/resource/isLocatedIn> <" + ents.uri + ">.} }";
-										}
-										if (con.link.contains("River") || con.link.contains("Airport")) {
-											sparqlQ = sparqlQ.replace("?p1", final_DBpediaProperty);
-										}
-										if(qauntifierPhrashFlag){
-											sparqlQ = sparqlQ.replace("select ?x","SELECT ((count(distinct ?x) as ?total) >= thresholdValue)");
-											if(propValue>0){
-												System.out.println("Got in condition");
-												if(qpPhrasheValue.contains("at least") || qpPhrasheValue.contains("more than")) {
-													sparqlQ = sparqlQ.replace("thresholdValue)", ""+propValue+" )");
-												}
-												else{
-													sparqlQ = sparqlQ.replace(">= thresholdValue)", "< "+propValue+" )");
-												}
-											}
-										}
-										Query q = new Query();
-										q.query = sparqlQ;
-										q.score = ents.linkCount;
-										allQueriesList.add(q);
-									}
-
-									/*if (spatialRelation.contains("crosses")) {
-										String sparqlQ = "";
-										if (countFlag) {
-											sparqlQ = "select (count(?x) as ?total) where { SERVICE <http://dbpedia.org/sparql> { ?x rdf:type <"
-													+ con.link + ">. ?x dbo:crosses <" + ents.uri + ">. } }";
-										} else {
-											sparqlQ = "select ?x where { SERVICE <http://dbpedia.org/sparql> { ?x rdf:type <"
-													+ con.link + ">. ?x dbo:crosses <" + ents.uri + ">. } }";
-										}
-										if (con.link.contains("River")) {
-											sparqlQ = sparqlQ.replace("dbo:crosses", final_DBpediaProperty);
-										}
-										if(qauntifierPhrashFlag){
-											sparqlQ = sparqlQ.replace("select ?x","SELECT ((count(distinct ?x) as ?total) >= thresholdValue)");
-											if(propValue>0){
-												System.out.println("Got in condition");
-												if(qpPhrasheValue.contains("at least") || qpPhrasheValue.contains("more than")) {
-													sparqlQ = sparqlQ.replace("thresholdValue)", ""+propValue+" )");
-												}
-												else{
-													sparqlQ = sparqlQ.replace(">= thresholdValue)", "< "+propValue+" )");
-												}
-											}
-										}
-										Query q = new Query();
-										q.query = sparqlQ;
-										q.score = ents.linkCount;
-										allQueriesList.add(q);
-									}
-
-									if (spatialRelation.contains("above")) {
-										String sparqlQ = "";
-										if (countFlag) {
-											sparqlQ = "select ?x where { SERVICE <http://dbpedia.org/sparql> { ?x rdf:type <"
-													+ con.link + ">. ?x dbp:north <" + ents.uri + ">. } }";
-										} else {
-											sparqlQ = "select ?x where { SERVICE <http://dbpedia.org/sparql> { ?x rdf:type <"
-													+ con.link + ">. ?x dbp:north <" + ents.uri + ">. } }";
-										}
-										if(qauntifierPhrashFlag){
-											sparqlQ = sparqlQ.replace("select ?x","SELECT ((count(distinct ?x) as ?total) >= thresholdValue)");
-											if(propValue>0){
-												System.out.println("Got in condition");
-												if(qpPhrasheValue.contains("at least") || qpPhrasheValue.contains("more than")) {
-													sparqlQ = sparqlQ.replace("thresholdValue)", ""+propValue+" )");
-												}
-												else{
-													sparqlQ = sparqlQ.replace(">= thresholdValue)", "< "+propValue+" )");
-												}
-											}
-										}
-										Query q = new Query();
-										q.query = sparqlQ;
-										q.score = ents.linkCount;
-										allQueriesList.add(q);
-									}
-
-									if (spatialRelation.contains("right")) {
-										String sparqlQ = "";
-										if (countFlag) {
-											sparqlQ = "select (count(?x) as ?total) where { SERVICE <http://dbpedia.org/sparql> { ?x rdf:type <"
-													+ con.link + ">. ?x dbp:east <" + ents.uri + ">. } }";
-										} else {
-											sparqlQ = "select ?x where { SERVICE <http://dbpedia.org/sparql> { ?x rdf:type <"
-													+ con.link + ">. ?x dbp:east <" + ents.uri + ">. } }";
-										}
-										if(qauntifierPhrashFlag){
-											sparqlQ = sparqlQ.replace("select ?x","SELECT ((count(distinct ?x) as ?total) >= thresholdValue)");
-											if(propValue>0){
-												System.out.println("Got in condition");
-												if(qpPhrasheValue.contains("at least") || qpPhrasheValue.contains("more than")) {
-													sparqlQ = sparqlQ.replace("thresholdValue)", ""+propValue+" )");
-												}
-												else{
-													sparqlQ = sparqlQ.replace(">= thresholdValue)", "< "+propValue+" )");
-												}
-											}
-										}
-
-										Query q = new Query();
-										q.query = sparqlQ;
-										q.score = ents.linkCount;
-										allQueriesList.add(q);
-									}
-
-									if (spatialRelation.contains("left")) {
-										String sparqlQ = "";
-
-										if (countFlag) {
-											sparqlQ = "select (count(?x) as ?total) where { SERVICE <http://dbpedia.org/sparql> { ?x rdf:type <"
-													+ con.link + ">. ?x dbp:west <" + ents.uri + ">. } }";
-										} else {
-											sparqlQ = "select ?x where { SERVICE <http://dbpedia.org/sparql> { ?x rdf:type <"
-													+ con.link + ">. ?x dbp:west <" + ents.uri + ">. } }";
-										}
-										if(qauntifierPhrashFlag){
-											sparqlQ = sparqlQ.replace("select ?x","SELECT ((count(distinct ?x) as ?total) >= thresholdValue)");
-											if(propValue>0){
-												System.out.println("Got in condition");
-												if(qpPhrasheValue.contains("at least") || qpPhrasheValue.contains("more than")) {
-													sparqlQ = sparqlQ.replace("thresholdValue)", ""+propValue+" )");
-												}
-												else{
-													sparqlQ = sparqlQ.replace(">= thresholdValue)", "< "+propValue+" )");
-												}
-											}
-										}
-
-										Query q = new Query();
-										q.query = sparqlQ;
-										q.score = ents.linkCount;
-										allQueriesList.add(q);
-									}
-
-									if (spatialRelation.contains("below")) {
-										String sparqlQ = "";
-										if (countFlag) {
-											sparqlQ = "select (count(?x) as ?total) where { SERVICE <http://dbpedia.org/sparql> { ?x rdf:type <"
-													+ con.link + ">. ?x dbp:south <" + ents.uri + ">. } }";
-										} else {
-											sparqlQ = "select ?x where { SERVICE <http://dbpedia.org/sparql> { ?x rdf:type <"
-													+ con.link + ">. ?x dbp:south <" + ents.uri + ">. } }";
-										}
-										if(qauntifierPhrashFlag){
-											sparqlQ = sparqlQ.replace("select ?x","SELECT ((count(distinct ?x) as ?total) >= thresholdValue)");
-											if(propValue>0){
-												System.out.println("Got in condition");
-												if(qpPhrasheValue.contains("at least") || qpPhrasheValue.contains("more than")) {
-													sparqlQ = sparqlQ.replace("thresholdValue)", ""+propValue+" )");
-												}
-												else{
-													sparqlQ = sparqlQ.replace(">= thresholdValue)", "< "+propValue+" )");
-												}
-											}
-										}
-										Query q = new Query();
-										q.query = sparqlQ;
-										q.score = ents.linkCount;
-										allQueriesList.add(q);
-									}*/
-								}
-
-							}
-						} else {
-							if (ents.uri.contains("http://yago-knowledge.org")) {
-								boolean yagoEntityThatIsNotInEndpoint = false;
-								String answer = null;
-								// If I is from yago, we first check if we have polygon for yago entity in
-								// pyravlos
-								String Query = "SELECT ?x where { <" + ents.uri + "> ?p ?x . }";
-								// If at least one result is returned, it means we have the polygon in pyravlos
-								// and we don't need to do anything else
-								answer = runSparqlOnEndpoint(Query, "http://pyravlos1.di.uoa.gr:8080/geoqa/Query");
-								if (answer == null) {
-									yagoEntityThatIsNotInEndpoint = true;
-								}
-								String sparqlQ = "select distinct ?x where { ?x rdf:type <" + con.link
-										+ ">; geo:hasGeometry ?cGeom. ?cGeom geo:asWKT ?cWKT. ";
-								if (countFlag) {
-									sparqlQ = sparqlQ.replace("select distinct ?x","select (count(distinct ?x) as ?total)");
-								}
-								if (yagoEntityThatIsNotInEndpoint) {
-									sparqlQ += "?instance owl:sameAs <" + ents.uri
-											+ ">; geo:hasGeometry ?geom. ?geom geo:asWKT ?iWKT.";
-								}
-								else {
-									sparqlQ += "<" + ents.uri + "> geo:hasGeometry ?geom. ?geom geo:asWKT ?iWKT.";
-								}
-								if (spatialRelation.contains("within")) {
-									if(!countFlag && rSize==2 && thresholdFlag){
-										sparqlQ += " FILTER(geof:distance(?cWKT,?iWKT,uom:metre) <= 1000) }";
-										sparqlQ = sparqlQ.replace("1000", thresholdDistance);
-									} else {
-										sparqlQ += " FILTER(geof:sfWithin(?cWKT,?iWKT)) }";
-									}
-								}
-								if (spatialRelation.contains("distance")) {
-										sparqlQ +=  "FILTER(geof:distance(?cWKT,?iWKT,uom:metre) <= 1000) }";
-									if (nearestFlag) {
-										sparqlQ = sparqlQ.replace(
-												"FILTER(geof:distance(?cWKT,?iWKT,uom:metre) <= 1000) }",
-												" } ORDER BY(geof:distance(?cWKT,?iWKT,uom:metre)) LIMIT 1");
-									} else if (thresholdFlag) {
-										sparqlQ = sparqlQ.replace("1000", thresholdDistance);
-									} else {
-										if (con.link.contains("Restaurant") || con.link.contains("Park")) {
-											sparqlQ = sparqlQ.replace("1000", "500");
-										}
-										if (con.link.contains("City")) {
-											sparqlQ = sparqlQ.replace("1000", "5000");
-										}
-									}
-								}
-
-								if (spatialRelation.contains("crosses")) {
-										sparqlQ += " FILTER(geof:sfCrosses(?cWKT,?iWKT))}";
-								}
-								if (spatialRelation.contains("boundary")) {
-										sparqlQ += " FILTER(geof:sfTouches(?cWKT,?iWKT)) }";
-								}
-								if(qauntifierPhrashFlag){
-									sparqlQ += " having (?total >= thresholdValue) }";
-									sparqlQ = sparqlQ.replace("select distinct ?x","ASK { SELECT (count(distinct ?x) as ?total) ");
-									if(propValue>0){
-										System.out.println("Got in condition");
-										if(qpPhrasheValue.contains("at least") || qpPhrasheValue.contains("more than")) {
-											sparqlQ = sparqlQ.replace("thresholdValue)", ""+propValue+" )");
-										}
-										else{
-											sparqlQ = sparqlQ.replace(">= thresholdValue)", "< "+propValue+" )");
-										}
-									}
-								}
-								Query q = new Query();
-								q.query = sparqlQ;
-								q.score = ents.linkCount;
-								allQueriesList.add(q);
-
+						String sparqlQ = "";
+						sparqlQ = "select distinct ?x where { ?x rdf:type <"+con.link+">; geo:hasGeometry ?cGeom. ?cGeom geo:asWKT ?cWKT. <"+ents.uri+"> geo:hasGeometry ?iGeom. ?iGeom geo:asWKT ?iWKT. ";
+						if (spatialRelation.contains("within")) {
+							if(!countFlag && rSize==2 && thresholdFlag){
+								sparqlQ += " FILTER(geof:distance(?cWKT,?iWKT,uom:metre) <= 1000) }";
+								sparqlQ = sparqlQ.replace("1000", thresholdDistance);
 							} else {
-								// CONCEPT = OSM, INSTANCE = OSM
-								System.out.println("IN OSM OSM");
-								System.out.println(spatialRelation);
-								String sparqlQ = "select distinct ?x where { ?x rdf:type <" + con.link
-										+ ">; geo:hasGeometry ?cGeom. ?cGeom geo:asWKT ?cWKT. <" + ents.uri
-										+ "> geo:hasGeometry ?geom. ?geom geo:asWKT ?iWKT. ";
-								if (countFlag) {
-									sparqlQ = sparqlQ.replace("select distinct ?x","select (count(distinct ?x) as ?total)");
-								}
-								if (spatialRelation.contains("within")) {
-									 if(!countFlag && rSize==2 && thresholdFlag){
-										sparqlQ +=  " FILTER(geof:distance(?cWKT,?iWKT,uom:metre) <= 1000) }";
-										sparqlQ = sparqlQ.replace("1000", thresholdDistance);
-									 } else {
-										sparqlQ += " FILTER(geof:sfWithin(?cWKT,?iWKT)) }";
-									}
-								}
-								if (spatialRelation.contains("distance")) {
-									sparqlQ += "FILTER(geof:distance(?cWKT,?iWKT,uom:metre) <= 1000) }";
-									if (nearestFlag) {
-										sparqlQ = sparqlQ.replace(
-												"FILTER(geof:distance(?cWKT,?iWKT,uom:metre) <= 1000) }",
-												" } ORDER BY(geof:distance(?cWKT,?iWKT,uom:metre)) LIMIT 1");
-									} else if (thresholdFlag) {
-										sparqlQ = sparqlQ.replace("1000", thresholdDistance);
-									}
-									else {
-										if (con.link.contains("Restaurant") || con.link.contains("Park")) {
-											sparqlQ = sparqlQ.replace("1000", "500");
-										}
-										if (con.link.contains("City")) {
-											sparqlQ = sparqlQ.replace("1000", "5000");
-										}
-									}
-								}
-								if (spatialRelation.contains("crosses")) {
-										sparqlQ += " FILTER(geof:sfCrosses(?cWKT,?iWKT)) }";
-								}
-								if (spatialRelation.contains("boundary")) {
-										sparqlQ += " FILTER(geof:sfTouches(?cWKT,?iWKT)) }";
-								}
-								if (spatialRelation.contains("right")) {
-										sparqlQ += " FILTER(strdf:right(?cWKT,?iWKT)) }";
-								}
-								if (spatialRelation.contains("left")) {
-										sparqlQ += " FILTER(strdf:left(?cWKT,?iWKT)) }";
-								}
-								if (spatialRelation.contains("above")) {
-										sparqlQ += " FILTER(strdf:above(?cWKT,?iWKT)) }";
-								}
-								if (spatialRelation.contains("below")) {
-										sparqlQ += " FILTER(strdf:below(?cWKT,?iWKT)) }";
-								}
-								if(qauntifierPhrashFlag){
-									sparqlQ += "having (?total >= thresholdValue) }";
-									sparqlQ = sparqlQ.replace("select ?x","ASK { SELECT (count(distinct ?x) as ?total) ");
-									if(propValue>0){
-										System.out.println("Got in condition");
-										if(qpPhrasheValue.contains("at least") || qpPhrasheValue.contains("more than")) {
-											sparqlQ = sparqlQ.replace("thresholdValue)", ""+propValue+" )");
-										}
-										else{
-											sparqlQ = sparqlQ.replace(">= thresholdValue)", "< "+propValue+" )");
-										}
-									}
-								}
-
-								Query q = new Query();
-								q.query = sparqlQ;
-								q.score = ents.linkCount;
-								allQueriesList.add(q);
-
+								sparqlQ += " FILTER(geof:sfWithin(?cWKT,?iWKT)) }";
 							}
 						}
+						if (spatialRelation.contains("distance")) {
+							sparqlQ +=  "FILTER(geof:distance(?cWKT,?iWKT,uom:metre) <= 1000) }";
+							if (nearestFlag) {
+								sparqlQ = sparqlQ.replace(
+										"FILTER(geof:distance(?cWKT,?iWKT,uom:metre) <= 1000) }",
+										" } ORDER BY(geof:distance(?cWKT,?iWKT,uom:metre)) LIMIT 1");
+							} else if (thresholdFlag) {
+								sparqlQ = sparqlQ.replace("1000", thresholdDistance);
+							} else {
+								if (con.link.contains("Restaurant") || con.link.contains("Park")) {
+									sparqlQ = sparqlQ.replace("1000", "500");
+								}
+								if (con.link.contains("City")) {
+									sparqlQ = sparqlQ.replace("1000", "5000");
+								}
+							}
+						}
+
+						if (spatialRelation.contains("crosses")) {
+							sparqlQ += " FILTER(geof:sfCrosses(?cWKT,?iWKT))}";
+						}
+						if (spatialRelation.contains("boundary")) {
+							sparqlQ += " FILTER(geof:sfTouches(?cWKT,?iWKT)) }";
+						}
+						if (spatialRelation.contains("right")) {
+							sparqlQ += " FILTER(strdf:right(?cWKT,?iWKT)) }";
+						}
+						if (spatialRelation.contains("left")) {
+							sparqlQ += " FILTER(strdf:left(?cWKT,?iWKT)) }";
+						}
+						if (spatialRelation.contains("above")) {
+							sparqlQ += " FILTER(strdf:above(?cWKT,?iWKT)) }";
+						}
+						if (spatialRelation.contains("below")) {
+							sparqlQ += " FILTER(strdf:below(?cWKT,?iWKT)) }";
+						}
+						if(qauntifierPhrashFlag){
+							sparqlQ += " having (?total >= thresholdValue) }";
+							sparqlQ = sparqlQ.replace("select distinct ?x","ASK { SELECT (count(distinct ?x) as ?total) ");
+							if(propValue>0){
+								System.out.println("Got in condition");
+								if(qpPhrasheValue.contains("at least") || qpPhrasheValue.contains("more than")) {
+									sparqlQ = sparqlQ.replace("thresholdValue)", ""+propValue+" )");
+								}
+								else{
+									sparqlQ = sparqlQ.replace(">= thresholdValue)", "< "+propValue+" )");
+								}
+							}
+						}
+						// add code for count
+						Query q = new Query();
+						q.query = sparqlQ;
+						q.score = ents.linkCount;
+						allQueriesList.add(q);
+
 					}
 				}
 
@@ -2353,16 +2108,34 @@ public class GeoSparqlGenerator extends QanaryComponent {
 								//Within relaiton with other
 								if (relationsList.get(0).get(0).relationFunction.toLowerCase()
 										.contains("within")) {
+									System.out.println("Getting in within ===============");
 									if (relationsList.get(1).get(0).relationFunction.toLowerCase()
 											.contains("within")) {
+										System.out.println("Getting in within ===============");
 										if(!countFlag && rSize==3 && thresholdFlag){
 											System.out.println("Need to think about finding distance and within filter");
+											sparqlQ+= "FILTER((geof:distance(?cWKT, ?iWKT1, uom:metre) <= 1000) && geof:sfWithin(?iWKT1, ?iWKT2) ) }";
+											if (nearestFlag) {
+												sparqlQ = sparqlQ.replace(
+														"FILTER((geof:distance(?cWKT, ?iWKT2, uom:metre) <= 1000) && geof:sfWithin(?cWKT, ?iWKT1) ) }",
+														" FILTER(geof:sfWithin(?cWKT, ?iWKT1) ) } ORDER BY(geof:distance(?cWKT,?iWKT2,uom:metre)) LIMIT 1");
+											} else if (thresholdFlag) {
+												sparqlQ = sparqlQ.replace("1000", thresholdDistance);
+											} else {
+												if (con.link.contains("Restaurant") || con.link.contains("Park")) {
+													sparqlQ = sparqlQ.replace("1000", "500");
+												}
+												if (con.link.contains("City")) {
+													sparqlQ = sparqlQ.replace("1000", "5000");
+												}
+											}
 										} else {
 											sparqlQ += " FILTER(geof:sfWithin(?cWKT, ?iWKT1) && geof:sfWithin(?iWKT1, ?iWKT2) ) }";
 										}
 									}
 									if (relationsList.get(1).get(0).relationFunction.toLowerCase()
 											.contains("distance")) {
+										System.out.println("Getting in within ===============");
 											sparqlQ+= "FILTER((geof:distance(?cWKT, ?iWKT2, uom:metre) <= 1000) && geof:sfWithin(?cWKT, ?iWKT1) ) }";
 										if (nearestFlag) {
 											sparqlQ = sparqlQ.replace(
@@ -2387,12 +2160,16 @@ public class GeoSparqlGenerator extends QanaryComponent {
 											.contains("boundary")) {
 										sparqlQ += " FILTER(geof:sfWithin(?cWKT, ?iWKT1) && geof:sfTouches(?iWKT1, ?iWKT2) ) }";
 									}
+									System.out.println("second Relation : "+relationsList.get(1).get(0).relationFunction);
+									System.out.println("Getting out within ===============");
 								}
 								//Distance relation with other
 								if (relationsList.get(0).get(0).relationFunction.toLowerCase()
 										.contains("distance")) {
+									System.out.println("Getting in distance ===============");
 									if (relationsList.get(1).get(0).relationFunction.toLowerCase()
 											.contains("within")) {
+										System.out.println("Getting in within ===============");
 										sparqlQ += " FILTER((geof:distance(?cWKT, ?iWKT1, uom:metre) <= 1000) && geof:sfWithin(?iWKT1, ?iWKT2) ) }";
 										if (nearestFlag) {
 											sparqlQ = sparqlQ.replace(
@@ -2409,6 +2186,8 @@ public class GeoSparqlGenerator extends QanaryComponent {
 											}
 										}
 									}
+									System.out.println("second Relation : "+relationsList.get(1).get(0).relationFunction);
+									System.out.println("Getting out distance ===============");
 								}
 
 								//crosses relation with other
@@ -2493,17 +2272,17 @@ public class GeoSparqlGenerator extends QanaryComponent {
 				for (Concept con1 : concpetsLists.get(0)) {
 					for (Concept con2 : concpetsLists.get(1)) {
 						for (Entity ents : instancesList.get(0)) {
-							if (con1.link.contains("dbpedia")) {
-								if (con2.link.contains("dbpedia")) {
-									if (ents.uri.contains("dbpedia.org")) {
+							if (con1.link.contains("yago-knowledge.org")) {
+								if (con2.link.contains("yago-knowledge.org")) {
+									if (ents.uri.contains("yago-knowledge.org")) {
 										if (relationsList.get(0).get(0).relationFunction.toLowerCase()
 												.contains("within")) {
 											if (relationsList.get(1).get(0).relationFunction.toLowerCase()
 													.contains("within")) {
 												String sparqlQ = "";
-												sparqlQ = "select ?x { SERVICE <http://dbpedia.org/sparql> { ?x rdf:type <"
-														+ con1.link + ">. ?y rdf:type <" + con2.link + ">. ?x ?p1 ?y. <"
-														+ con2.link + "> ?p2 <" + ents.uri + ">.  } }";
+												sparqlQ = "select ?x { SERVICE <"+yagoEndpoint+"> { ?x rdf:type <"
+														+ con1.link + ">. ?y rdf:type <" + con2.link + ">. ?x <http://yago-knowledge.org/resource/isLocatedIn> ?y. <"
+														+ con2.link + "> <http://yago-knowledge.org/resource/isLocatedIn> <" + ents.uri + ">.  } }";
 												if(qauntifierPhrashFlag){
 													sparqlQ +=" GROUP BY(?x) ORDER BY DESC(?total) HAVING(?total >= thresholdValue)";
 													sparqlQ = sparqlQ.replace("select ?x {","select ?x (count(?y) as ?total) {");
@@ -2524,12 +2303,12 @@ public class GeoSparqlGenerator extends QanaryComponent {
 
 											}
 										}
-										if (relationsList.get(0).get(0).relationFunction.toLowerCase()
+										/*if (relationsList.get(0).get(0).relationFunction.toLowerCase()
 												.contains("within")) {
 											if (relationsList.get(1).get(0).relationFunction.toLowerCase()
 													.contains("cross")) {
 												String sparqlQ = "";
-												sparqlQ = "select ?x { SERVICE <http://dbpedia.org/sparql> { ?x rdf:type <"
+												sparqlQ = "select ?x { SERVICE <"+yagoEndpoint+"> { ?x rdf:type <"
 														+ con1.link + ">. ?y rdf:type <" + con2.link + ">. ?x dbp:crosses ?y. <"
 														+ con2.link + "> ?p2 <" + ents.uri + ">.  } }";
 												if(qauntifierPhrashFlag){
@@ -2560,7 +2339,7 @@ public class GeoSparqlGenerator extends QanaryComponent {
 											if (relationsList.get(1).get(0).relationFunction.toLowerCase()
 													.contains("within")) {
 												String sparqlQ = "";
-												sparqlQ = "select ?x { SERVICE <http://dbpedia.org/sparql> { ?x rdf:type <"
+												sparqlQ = "select ?x { SERVICE <"+yagoEndpoint+"> { ?x rdf:type <"
 														+ con1.link + ">. ?y rdf:type <" + con2.link + ">. ?x dbp:crosses ?y. <"
 														+ con2.link + "> ?p2 <" + ents.uri + ">.  } }";
 												if(qauntifierPhrashFlag){
@@ -2585,12 +2364,11 @@ public class GeoSparqlGenerator extends QanaryComponent {
 												allQueriesList.add(q);
 
 											}
-										}
+										}*/
 									}
 								}
 							} else {
-								if (!con2.link.contains("dbpedia")) {
-									if (ents.uri.contains("dbpedia.org")) {
+								if (!con2.link.contains("yago-knowledge.org")) {
 										if (relationsList.get(0).get(0).relationFunction.toLowerCase()
 												.contains("within")) {
 											if (relationsList.get(1).get(0).relationFunction.toLowerCase()
@@ -2599,9 +2377,9 @@ public class GeoSparqlGenerator extends QanaryComponent {
 												sparqlQ = "select ?x { ?x rdf:type <" + con1.link
 														+ ">; geo:hasGeometry ?geom. ?geom geo:asWKT ?cWKT. ?y rdf:type <"
 														+ con2.link
-														+ ">; geo:hasGeometry ?geom2. ?geom2 geo:asWKT ?cWKT2. ?instance owl:sameAs <"
+														+ ">; geo:hasGeometry ?geom2. ?geom2 geo:asWKT ?cWKT2. <"
 														+ ents.uri
-														+ ">; geo:hasGeometry ?iGeom. ?iGeom geo:asWKT ?iWKT.   FILTER(geof:sfWithin(?cWKT1, ?cWKT2) && geof:sfWithin(?cWKT2, ?iWKT) ) }";
+														+ "> geo:hasGeometry ?iGeom. ?iGeom geo:asWKT ?iWKT.   FILTER(geof:sfWithin(?cWKT1, ?cWKT2) && geof:sfWithin(?cWKT2, ?iWKT) ) }";
 												if(qauntifierPhrashFlag){
 													sparqlQ +=" GROUP BY(?x) ORDER BY DESC(?total) HAVING(?total >= thresholdValue)";
 													sparqlQ = sparqlQ.replace("select ?x {","select ?x (count(?y) as ?total) {");
@@ -2630,9 +2408,9 @@ public class GeoSparqlGenerator extends QanaryComponent {
 												sparqlQ = "select ?x { ?x rdf:type <" + con1.link
 														+ ">; geo:hasGeometry ?geom. ?geom geo:asWKT ?cWKT. ?y rdf:type <"
 														+ con2.link
-														+ ">; geo:hasGeometry ?geom2. ?geom2 geo:asWKT ?cWKT2. ?instance owl:sameAs <"
+														+ ">; geo:hasGeometry ?geom2. ?geom2 geo:asWKT ?cWKT2. <"
 														+ ents.uri
-														+ ">; geo:hasGeometry ?iGeom. ?iGeom geo:asWKT ?iWKT.   FILTER(geof:sfWithin(?cWKT1, ?iWKT) && geof:sfTouches?cWKT1, ?cWKT2) ) }";
+														+ "> geo:hasGeometry ?iGeom. ?iGeom geo:asWKT ?iWKT.   FILTER(geof:sfWithin(?cWKT1, ?iWKT) && geof:sfTouches?cWKT1, ?cWKT2) ) }";
 												if(adjpFlag){
 													System.out.println("Group by clause to be added");
 												}
@@ -2651,9 +2429,9 @@ public class GeoSparqlGenerator extends QanaryComponent {
 												sparqlQ = "select ?x { ?x rdf:type <" + con1.link
 														+ ">; geo:hasGeometry ?geom. ?geom geo:asWKT ?cWKT. ?y rdf:type <"
 														+ con2.link
-														+ ">; geo:hasGeometry ?geom2. ?geom2 geo:asWKT ?cWKT2. ?instance owl:sameAs <"
+														+ ">; geo:hasGeometry ?geom2. ?geom2 geo:asWKT ?cWKT2. <"
 														+ ents.uri
-														+ ">; geo:hasGeometry ?iGeom. ?iGeom geo:asWKT ?iWKT.   FILTER((geof:distance(?cWKT1, ?cWKT2,uom:metre) < 1000)  && geof:sfWithin(?cWKT2, ?iWKT) ) }";
+														+ "> geo:hasGeometry ?iGeom. ?iGeom geo:asWKT ?iWKT.   FILTER((geof:distance(?cWKT1, ?cWKT2,uom:metre) < 1000)  && geof:sfWithin(?cWKT2, ?iWKT) ) }";
 												if (nearestFlag) {
 													sparqlQ = sparqlQ.replace(
 															"FILTER((geof:distance(?cWKT1, ?cWKT2,uom:metre) < 1000)  && geof:sfWithin(?cWKT2, ?iWKT) ) }",
@@ -2700,9 +2478,9 @@ public class GeoSparqlGenerator extends QanaryComponent {
 												sparqlQ = "select ?x { ?x rdf:type <" + con1.link
 														+ ">; geo:hasGeometry ?geom. ?geom geo:asWKT ?cWKT. ?y rdf:type <"
 														+ con2.link
-														+ ">; geo:hasGeometry ?geom2. ?geom2 geo:asWKT ?cWKT2. ?instance owl:sameAs <"
+														+ ">; geo:hasGeometry ?geom2. ?geom2 geo:asWKT ?cWKT2. <"
 														+ ents.uri
-														+ ">; geo:hasGeometry ?iGeom. ?iGeom geo:asWKT ?iWKT.   FILTER((geof:distance(?cWKT2, ?iWKT,uom:metre) < 1000)  && geof:sfWithin(?cWKT1, ?cWKT2) ) }";
+														+ "> geo:hasGeometry ?iGeom. ?iGeom geo:asWKT ?iWKT.   FILTER((geof:distance(?cWKT2, ?iWKT,uom:metre) < 1000)  && geof:sfWithin(?cWKT1, ?cWKT2) ) }";
 												if (nearestFlag) {
 													sparqlQ = sparqlQ.replace(
 															"FILTER((geof:distance(?cWKT2, ?iWKT,uom:metre) < 1000)  && geof:sfWithin(?cWKT1, ?cWKT2) ) }",
@@ -2748,9 +2526,9 @@ public class GeoSparqlGenerator extends QanaryComponent {
 												sparqlQ = "select ?x { ?x rdf:type <" + con1.link
 														+ ">; geo:hasGeometry ?geom. ?geom geo:asWKT ?cWKT. ?y rdf:type <"
 														+ con2.link
-														+ ">; geo:hasGeometry ?geom2. ?geom2 geo:asWKT ?cWKT2. ?instance owl:sameAs <"
+														+ ">; geo:hasGeometry ?geom2. ?geom2 geo:asWKT ?cWKT2. <"
 														+ ents.uri
-														+ ">; geo:hasGeometry ?iGeom. ?iGeom geo:asWKT ?iWKT.   FILTER((geof:distance(?cWKT2, ?iWKT,uom:metre) < 1000)  && geof:sfCrosses(?cWKT1, ?cWKT2) ) }";
+														+ "> geo:hasGeometry ?iGeom. ?iGeom geo:asWKT ?iWKT.   FILTER((geof:distance(?cWKT2, ?iWKT,uom:metre) < 1000)  && geof:sfCrosses(?cWKT1, ?cWKT2) ) }";
 												if (nearestFlag) {
 													sparqlQ = sparqlQ.replace(
 															"FILTER((geof:distance(?cWKT2, ?iWKT,uom:metre) < 1000)  && geof:sfCrosses(?cWKT1, ?cWKT2) ) }",
@@ -2796,9 +2574,9 @@ public class GeoSparqlGenerator extends QanaryComponent {
 												sparqlQ = "select ?x { ?x rdf:type <" + con1.link
 														+ ">; geo:hasGeometry ?geom. ?geom geo:asWKT ?cWKT. ?y rdf:type <"
 														+ con2.link
-														+ ">; geo:hasGeometry ?geom2. ?geom2 geo:asWKT ?cWKT2. ?instance owl:sameAs <"
+														+ ">; geo:hasGeometry ?geom2. ?geom2 geo:asWKT ?cWKT2. <"
 														+ ents.uri
-														+ ">; geo:hasGeometry ?iGeom. ?iGeom geo:asWKT ?iWKT.   FILTER((geof:distance(?cWKT1, ?cWKT2,uom:metre) < 1000)  && geof:sfCrosses(?cWKT2, ?iWKT) ) }";
+														+ "> geo:hasGeometry ?iGeom. ?iGeom geo:asWKT ?iWKT.   FILTER((geof:distance(?cWKT1, ?cWKT2,uom:metre) < 1000)  && geof:sfCrosses(?cWKT2, ?iWKT) ) }";
 												if (nearestFlag) {
 													sparqlQ = sparqlQ.replace(
 															"FILTER((geof:distance(?cWKT1, ?cWKT2,uom:metre) < 1000)  && geof:sfCrosses(?cWKT2, ?iWKT) ) }",
@@ -2835,151 +2613,6 @@ public class GeoSparqlGenerator extends QanaryComponent {
 
 											}
 										}
-									} else {
-										if (relationsList.get(0).get(0).relationFunction.toLowerCase()
-												.contains("within")) {
-											if (relationsList.get(1).get(0).relationFunction.toLowerCase()
-													.contains("within")) {
-												String sparqlQ = "";
-												sparqlQ = "select ?x { ?x rdf:type <" + con1.link
-														+ ">; geo:hasGeometry ?geom. ?geom geo:asWKT ?cWKT. ?y rdf:type <"
-														+ con2.link
-														+ ">; geo:hasGeometry ?geom2. ?geom2 geo:asWKT ?cWKT2. <"
-														+ ents.uri
-														+ "> geo:hasGeometry ?iGeom. ?iGeom geo:asWKT ?iWKT.   FILTER(geof:sfWithin(?cWKT1, ?cWKT2) && geof:sfWithin(?cWKT2, ?iWKT) ) }";
-												if(qauntifierPhrashFlag){
-													sparqlQ +=" GROUP BY(?x) ORDER BY DESC(?total) HAVING(?total >= thresholdValue)";
-													sparqlQ = sparqlQ.replace("select ?x {","select ?x (count(?y) as ?total) {");
-													if(propValue>0){
-														if(qpPhrasheValue.contains("at least") || qpPhrasheValue.contains("more than")) {
-															sparqlQ = sparqlQ.replace("thresholdValue)", ""+propValue+" )");
-														}
-														else{
-															sparqlQ = sparqlQ.replace(">= thresholdValue)", "< "+propValue+" )");
-														}
-													}
-												}
-												Query q = new Query();
-												q.query = sparqlQ;
-												q.score = ents.linkCount;
-												allQueriesList.add(q);
-
-											}
-										}
-										if (relationsList.get(0).get(0).relationFunction.toLowerCase()
-												.contains("within")) {
-											if (relationsList.get(1).get(0).relationFunction.toLowerCase()
-													.contains("boundary")) {
-												String sparqlQ = "";
-												sparqlQ = "select ?x { ?x rdf:type <" + con1.link
-														+ ">; geo:hasGeometry ?geom. ?geom geo:asWKT ?cWKT. ?y rdf:type <"
-														+ con2.link
-														+ ">; geo:hasGeometry ?geom2. ?geom2 geo:asWKT ?cWKT2. <"
-														+ ents.uri
-														+ "> geo:hasGeometry ?iGeom. ?iGeom geo:asWKT ?iWKT.   FILTER(geof:sfWithin(?cWKT1, ?iWKT) && geof:sfWithin(?cWKT1, ?cWKT2) ) }";
-												Query q = new Query();
-												q.query = sparqlQ;
-												q.score = ents.linkCount;
-												allQueriesList.add(q);
-
-											}
-										}
-										if (relationsList.get(0).get(0).relationFunction.toLowerCase()
-												.contains("distance")) {
-											if (relationsList.get(1).get(0).relationFunction.toLowerCase()
-													.contains("within")) {
-												String sparqlQ = "";
-												sparqlQ = "select ?x { ?x rdf:type <" + con1.link
-														+ ">; geo:hasGeometry ?geom. ?geom geo:asWKT ?cWKT. ?y rdf:type <"
-														+ con2.link
-														+ ">; geo:hasGeometry ?geom2. ?geom2 geo:asWKT ?cWKT2. <"
-														+ ents.uri
-														+ "> geo:hasGeometry ?iGeom. ?iGeom geo:asWKT ?iWKT.   FILTER((geof:distance(?cWKT1, ?cWKT2,uom:metre) < 1000)  && geof:sfWithin(?cWKT2, ?iWKT) ) }";
-												if (nearestFlag) {
-													sparqlQ = sparqlQ.replace(
-															"FILTER((geof:distance(?cWKT1, ?cWKT2,uom:metre) < 1000)  && geof:sfWithin(?cWKT2, ?iWKT) ) }",
-															" FILTER(geof:sfWithin(?cWKT2, ?iWKT) ) } ORDER BY(geof:distance(?cWKT1,?cWKT2,uom:metre)) LIMIT 1");
-												} else if (thresholdFlag) {
-													sparqlQ = sparqlQ.replace("1000", thresholdDistance);
-												}
-
-												else {
-													if (con2.link.contains("Restaurant")
-															|| con2.link.contains("Park")) {
-														sparqlQ = sparqlQ.replace("1000", "500");
-													}
-													if (con2.link.contains("City")) {
-														sparqlQ = sparqlQ.replace("1000", "5000");
-													}
-												}
-												if(qauntifierPhrashFlag){
-
-													sparqlQ +=" GROUP BY(?x) ORDER BY DESC(?total) HAVING(?total >= thresholdValue)";
-													sparqlQ = sparqlQ.replace("select ?x {","select ?x (count(?y) as ?total) {");
-													if(propValue>0){
-														if(qpPhrasheValue.contains("at least") || qpPhrasheValue.contains("more than")) {
-															sparqlQ = sparqlQ.replace("thresholdValue)", ""+propValue+" )");
-														}
-														else{
-															sparqlQ = sparqlQ.replace(">= thresholdValue)", "< "+propValue+" )");
-														}
-													}
-												}
-												Query q = new Query();
-												q.query = sparqlQ;
-												q.score = ents.linkCount;
-												allQueriesList.add(q);
-
-											}
-										}
-										if (relationsList.get(0).get(0).relationFunction.toLowerCase()
-												.contains("within")) {
-											if (relationsList.get(1).get(0).relationFunction.toLowerCase()
-													.contains("distance")) {
-												String sparqlQ = "";
-												sparqlQ = "select ?x { ?x rdf:type <" + con1.link
-														+ ">; geo:hasGeometry ?geom. ?geom geo:asWKT ?cWKT. ?y rdf:type <"
-														+ con2.link
-														+ ">; geo:hasGeometry ?geom2. ?geom2 geo:asWKT ?cWKT2. <"
-														+ ents.uri
-														+ "> geo:hasGeometry ?iGeom. ?iGeom geo:asWKT ?iWKT.   FILTER((geof:distance(?cWKT2, ?iWKT,uom:metre) < 1000)  && geof:sfWithin(?cWKT1, ?cWKT2) ) }";
-												if (nearestFlag) {
-													sparqlQ = sparqlQ.replace(
-															"FILTER((geof:distance(?cWKT2, ?iWKT,uom:metre) < 1000)  && geof:sfWithin(?cWKT1, ?cWKT2) ) }",
-															" FILTER(geof:sfWithin(?cWKT1, ?cWKT2) ) } ORDER BY(geof:distance(?cWKT2,?iWKT,uom:metre)) LIMIT 1");
-												} else if (thresholdFlag) {
-													sparqlQ = sparqlQ.replace("1000", thresholdDistance);
-												}
-
-												else {
-													if (con2.link.contains("Restaurant")
-															|| con2.link.contains("Park")) {
-														sparqlQ = sparqlQ.replace("1000", "500");
-													}
-													if (con2.link.contains("City")) {
-														sparqlQ = sparqlQ.replace("1000", "5000");
-													}
-												}
-												if(qauntifierPhrashFlag){
-													sparqlQ +=" GROUP BY(?x) ORDER BY DESC(?total) HAVING(?total >= thresholdValue)";
-													sparqlQ = sparqlQ.replace("select ?x {","select ?x (count(?y) as ?total) {");
-													if(propValue>0){
-														if(qpPhrasheValue.contains("at least") || qpPhrasheValue.contains("more than")) {
-															sparqlQ = sparqlQ.replace("thresholdValue)", ""+propValue+" )");
-														}
-														else{
-															sparqlQ = sparqlQ.replace(">= thresholdValue)", "< "+propValue+" ) ");
-														}
-													}
-												}
-												Query q = new Query();
-												q.query = sparqlQ;
-												q.score = ents.linkCount;
-												allQueriesList.add(q);
-
-											}
-										}
-									}
 								}
 							}
 						}
@@ -2990,277 +2623,60 @@ public class GeoSparqlGenerator extends QanaryComponent {
 				System.out.println("***************** IRI identified *****************");
 
 				String spatialRelation = relationsList.get(0).get(0).relationFunction.toLowerCase();
+				String secondSpatialRelation = "";
+				System.out.println("First Spatial Relation is : "+spatialRelation);
+				if(rSize == 2){
+					secondSpatialRelation = relationsList.get(1).get(0).relationFunction.toLowerCase();
+					System.out.println("Second Spatial Relation is : "+secondSpatialRelation);
+					if(spatialRelation.contains("geof:sfwithin")&&secondSpatialRelation.contains("geof:boundary")){
+						spatialRelation = secondSpatialRelation;
+					}
+				}
 				for (Entity ent1 : instancesList.get(0)) {
 					for (Entity ent2 : instancesList.get(1)) {
-						if (ent1.uri.contains("http://yago-knowledge.org")) {
-							if (ent2.uri.contains("http://yago-knowledge.org")) {
-								if (spatialRelation.contains("within")) {
-									String sparqlQ = "";
-									sparqlQ = "ASK { SERVICE <"+yagoEndpoint+"> { <" + ent1.uri + "> ?y <"
-											+ ent2.uri + ">. } }";
-									Query q = new Query();
-									q.query = sparqlQ;
-									q.score = ent1.linkCount + ent2.linkCount;
-									allQueriesList.add(q);
-								} else{
-									boolean yagoEntity1ThatIsNotInEndpoint = false;
-									String answer1 = null;
-									// If I1 is from yago, we first check if we have polygon for yago entity in
-									// pyravlos
-									String Query = "SELECT ?x where { <" + ent1.uri + "> ?p ?x . }";
-									// If at least one result is returned, it means we have the polygon in pyravlos
-									// and we don't need to do anything else
-									answer1 = runSparqlOnEndpoint(Query, "http://pyravlos1.di.uoa.gr:8080/geoqa/Query");
-									if (answer1 == null) {
-										yagoEntity1ThatIsNotInEndpoint = true;
-
-									}
-
-									boolean yagoEntity2ThatIsNotInEndpoint = false;
-									String answer2 = null;
-									// If I2 is from yago, we first check if we have polygon for yago entity in
-									// pyravlos
-									Query = "SELECT ?x where { <" + ent2.uri + "> ?p ?x . }";
-									// If at least one result is returned, it means we have the polygon in pyravlos
-									// and we don't need to do anything else
-									answer2 = runSparqlOnEndpoint(Query, "http://pyravlos1.di.uoa.gr:8080/geoqa/Query");
-									if (answer2 == null) {
-										yagoEntity2ThatIsNotInEndpoint = true;
-									}
-
-									// Produce queries. Maybe they will have sameAs because of answer1 and answer2
-									String sparqlQ = "ASK {\t";
-									if (yagoEntity1ThatIsNotInEndpoint) {
-										sparqlQ += "?x owl:sameAs <" + ent1.uri
-												+ ">; geo:hasGeometry ?iGeometry1. ?iGeometry1 geo:asWKT ?iWKT1. ";
-									} else {
-										sparqlQ += "<" + ent1.uri
-												+ "> geo:hasGeometry ?iGeometry1. ?iGeometry1 geo:asWKT ?iWKT1. ";
-									}
-									if (yagoEntity2ThatIsNotInEndpoint) {
-										sparqlQ += "?y owl:sameAs <" + ent2.uri
-												+ ">; geo:hasGeometry ?iGeometry2. ?iGeometry2 geo:asWKT ?iWKT2. ";
-									} else {
-										sparqlQ += "<" + ent2.uri
-												+ "> geo:hasGeometry ?iGeometry2. ?iGeometry2 geo:asWKT ?iWKT2. ";
-									}
-									if (spatialRelation.contains("distance")) {
-										if(myQuestionNL.toLowerCase(Locale.ROOT).contains("near")){
-											sparqlQ += "FILTER(geof:distance(?iWKT1, ?iWKT2,uom:metre) < 10000) }";
-										}else if(myQuestionNL.toLowerCase(Locale.ROOT).contains("distance")){
-											sparqlQ += "FILTER(geof:distance(?iWKT1, ?iWKT2,uom:metre)) }";
-										} else if(thresholdFlag){
-											sparqlQ += "FILTER(geof:distance(?iWKT1, ?iWKT2,uom:metre) < 10000) }";
-											sparqlQ = sparqlQ.replace("10000",""+thresholdDistance+"");
-										}
-									}
-									Query q = new Query();
-									q.query = sparqlQ;
-									q.score = ent1.linkCount + ent2.linkCount;
-									allQueriesList.add(q);
-								}
-								/*if (spatialRelation.contains("crosses")) {
-									String sparqlQ = "";
-									sparqlQ = "ASK { SERVICE <http://dbpedia.org/sparql> { <" + ent1.uri
-											+ "> dbo:crosses <" + ent2.uri + ">. } }";
-									Query q = new Query();
-									q.query = sparqlQ;
-									q.score = ent1.linkCount + ent2.linkCount;
-									allQueriesList.add(q);
-								}
-								if (spatialRelation.contains("right")) {
-									String sparqlQ = "";
-									sparqlQ = "ASK { SERVICE <http://dbpedia.org/sparql> { <" + ent1.uri
-											+ "> dbp:east <" + ent2.uri + ">. } }";
-									Query q = new Query();
-									q.query = sparqlQ;
-									q.score = ent1.linkCount + ent2.linkCount;
-									allQueriesList.add(q);
-								}
-								if (spatialRelation.contains("left")) {
-									String sparqlQ = "";
-									sparqlQ = "ASK { SERVICE <http://dbpedia.org/sparql> { <" + ent1.uri
-											+ "> dbp:west <" + ent2.uri + ">. } }";
-									Query q = new Query();
-									q.query = sparqlQ;
-									q.score = ent1.linkCount + ent2.linkCount;
-									allQueriesList.add(q);
-								}
-								if (spatialRelation.contains("above")) {
-									String sparqlQ = "";
-									sparqlQ = "ASK { SERVICE <http://dbpedia.org/sparql> { <" + ent1.uri
-											+ "> dbp:north <" + ent2.uri + ">. } }";
-									Query q = new Query();
-									q.query = sparqlQ;
-									q.score = ent1.linkCount + ent2.linkCount;
-									allQueriesList.add(q);
-								}
-								if (spatialRelation.contains("below")) {
-									String sparqlQ = "";
-									sparqlQ = "ASK { SERVICE <http://dbpedia.org/sparql> { <" + ent1.uri
-											+ "> dbp:south <" + ent2.uri + ">. } }";
-									Query q = new Query();
-									q.query = sparqlQ;
-									q.score = ent1.linkCount + ent2.linkCount;
-									allQueriesList.add(q);
-								}*/
-							} else {
-								// Instance1 = YAGO, Instance2 = not YAGO
-
-								// Find if we have Instance 1
-								boolean yagoEntityThatIsNotInEndpoint = false;
-								String answer = null;
-								if (ent1.uri.contains("http://yago-knowledge.org/")) {
-									// If I1 is from yago, we first check if we have polygon for yago entity in
-									// pyravlos
-									String Query = "SELECT ?x where { <" + ent1.uri + "> ?p ?x . }";
-									// If at least one result is returned, it means we have the polygon in pyravlos
-									// and we don't need to do anything else
-									answer = runSparqlOnEndpoint(Query, "http://pyravlos1.di.uoa.gr:8080/geoqa/Query");
-									if (answer == null) {
-										yagoEntityThatIsNotInEndpoint = true;
-
-									}
-								}
-
-								String sparqlQ = "ASK {\t";
-								if (yagoEntityThatIsNotInEndpoint) {
-									sparqlQ += "?x owl:sameAs <" + ent1.uri
-											+ ">; geo:hasGeometry ?iGeometry1. ?iGeometry1 geo:asWKT ?iWKT1. ";
-								} else {
-									sparqlQ += "<" + ent1.uri
-											+ "> geo:hasGeometry ?iGeometry1. ?iGeometry1 geo:asWKT ?iWKT1. ";
-								}
-
-								sparqlQ += "<" + ent2.uri
-										+ "> geo:hasGeometry ?iGeometry2. ?iGeometry2 geo:asWKT ?iWKT2. ";
-
-								if (spatialRelation.contains("within")) {
-									sparqlQ += " FILTER(geof:sfWithin(?iWKT1, ?iWKT2)) }";
-								}
-								if (spatialRelation.contains("distance")) {
-									if(myQuestionNL.toLowerCase(Locale.ROOT).contains("near")){
-										sparqlQ += "FILTER(geof:distance(?iWKT1, ?iWKT2,uom:metre) < 10000) }";
-									}else if(myQuestionNL.toLowerCase(Locale.ROOT).contains("distance")){
-										sparqlQ += "FILTER(geof:distance(?iWKT1, ?iWKT2,uom:metre)) }";
-									} else if(thresholdFlag){
-										sparqlQ += "FILTER(geof:distance(?iWKT1, ?iWKT2,uom:metre) < 10000) }";
-										sparqlQ = sparqlQ.replace("10000",""+thresholdDistance+"");
-									}
-								}
-								if (spatialRelation.contains("right")) {
-									sparqlQ += " FILTER(strdf:right(?iWKT1, ?iWKT2)) }";
-								}
-								if (spatialRelation.contains("left")) {
-									sparqlQ += " FILTER(strdf:left(?iWKT1, ?iWKT2)) }";
-								}
-								if (spatialRelation.contains("above")) {
-									sparqlQ += " FILTER(strdf:above(?iWKT1, ?iWKT2)) }";
-								}
-								if (spatialRelation.contains("below")) {
-									sparqlQ += " FILTER(strdf:below(?iWKT1, ?iWKT2)) }";
-								}
-								Query q = new Query();
-								q.query = sparqlQ;
-								q.score = ent1.linkCount + ent2.linkCount;
-								allQueriesList.add(q);
-							}
-						} else if (ent2.uri.contains("http://yago-knowledge.org")) {
-							// Instance1 = not YAGO, Instance2 = YAGO
-							// Find if we have Instance 2
-							boolean yagoEntityThatIsNotInEndpoint = false;
-							String answer = null;
-							if (ent1.uri.contains("http://yago-knowledge.org/")) {
-								// If I1 is from yago, we first check if we have polygon for yago entity in
-								// pyravlos
-								String Query = "SELECT ?x where { <" + ent2.uri + "> ?p ?x . }";
-								// If at least one result is returned, it means we have the polygon in pyravlos
-								// and we don't need to do anything else
-								answer = runSparqlOnEndpoint(Query, "http://pyravlos1.di.uoa.gr:8080/geoqa/Query");
-								if (answer == null) {
-									yagoEntityThatIsNotInEndpoint = true;
-								}
-							}
-							String sparqlQ = "ASK {\t";
-							sparqlQ += "<" + ent1.uri
-									+ "> geo:hasGeometry ?iGeometry1. ?iGeometry1 geo:asWKT ?iWKT1. ";
-							if (yagoEntityThatIsNotInEndpoint) {
-								sparqlQ += "?x owl:sameAs <" + ent2.uri
-										+ ">; geo:hasGeometry ?iGeometry2. ?iGeometry2 geo:asWKT ?iWKT2. ";
-							} else {
-								sparqlQ += "<" + ent2.uri
-										+ "> geo:hasGeometry ?iGeometry2. ?iGeometry2 geo:asWKT ?iWKT2. ";
-							}
-							if (spatialRelation.contains("within")) {
+						String sparqlQ = "";
+						sparqlQ = "ASK {  <" + ent1.uri + "> geo:hasGeometry ?iGeometry1. ?iGeometry1 geo:asWKT ?iWKT1. <"
+								+ ent2.uri + "> geo:hasGeometry ?iGeometry2. ?iGeometry2 geo:asWKT ?iWKT2. ";
+						if (spatialRelation.contains("within")) {
+							if(thresholdFlag){
+								sparqlQ += "FILTER(geof:distance(?iWKT1, ?iWKT2,uom:metre) < 10000) }";
+								sparqlQ = sparqlQ.replace("10000",""+thresholdDistance+"");
+							} else{
 								sparqlQ += " FILTER(geof:sfWithin(?iWKT1, ?iWKT2)) }";
 							}
-							if (spatialRelation.contains("distance")) {
-								if(myQuestionNL.toLowerCase(Locale.ROOT).contains("near")){
-									sparqlQ += "FILTER(geof:distance(?iWKT1, ?iWKT2,uom:metre) < 10000) }";
-								}else if(myQuestionNL.toLowerCase(Locale.ROOT).contains("distance")){
-									sparqlQ += "FILTER(geof:distance(?iWKT1, ?iWKT2,uom:metre)) }";
-								} else if(thresholdFlag){
-									sparqlQ += "FILTER(geof:distance(?iWKT1, ?iWKT2,uom:metre) < 10000) }";
-									sparqlQ = sparqlQ.replace("10000",""+thresholdDistance+"");
-								}
-							}
-
-							if (spatialRelation.contains("right")) {
-								sparqlQ += " FILTER(strdf:right(?iWKT1, ?iWKT2)) }";
-							}
-							if (spatialRelation.contains("left")) {
-								sparqlQ += " FILTER(strdf:left(?iWKT1, ?iWKT2)) }";
-							}
-							if (spatialRelation.contains("above")) {
-								sparqlQ += " FILTER(strdf:above(?iWKT1, ?iWKT2)) }";
-							}
-							if (spatialRelation.contains("below")) {
-								sparqlQ += " FILTER(strdf:below(?iWKT1, ?iWKT2)) }";
-							}
-							Query q = new Query();
-							q.query = sparqlQ;
-							q.score = ent1.linkCount + ent2.linkCount;
-							allQueriesList.add(q);
-						} else if (!ent2.uri.contains("http://yago-knowledge.org")) {
-
-							// Instance1 = not YAGO, Instance2 = not YAGO
-							String sparqlQ = "ASK {\t";
-
-							sparqlQ += "<" + ent1.uri
-									+ "> geo:hasGeometry ?iGeometry1. ?iGeometry1 geo:asWKT ?iWKT1. ";
-							sparqlQ += "<" + ent2.uri
-									+ "> geo:hasGeometry ?iGeometry2. ?iGeometry2 geo:asWKT ?iWKT2. ";
-							if (spatialRelation.contains("within")) {
-								sparqlQ += " FILTER(geof:sfWithin(?iWKT1, ?iWKT2)) }";
-
-							}
-							if (spatialRelation.contains("distance")) {
-								if(myQuestionNL.toLowerCase(Locale.ROOT).contains("near")){
-									sparqlQ += "FILTER(geof:distance(?iWKT1, ?iWKT2,uom:metre) < 10000) }";
-								}else if(myQuestionNL.toLowerCase(Locale.ROOT).contains("distance")){
-									sparqlQ += "FILTER(geof:distance(?iWKT1, ?iWKT2,uom:metre)) }";
-								} else if(thresholdFlag){
-									sparqlQ += "FILTER(geof:distance(?iWKT1, ?iWKT2,uom:metre) < 10000) }";
-									sparqlQ = sparqlQ.replace("10000",""+thresholdDistance+"");
-								}
-							}
-							if (spatialRelation.contains("right")) {
-								sparqlQ += " FILTER(strdf:right(?iWKT1, ?iWKT2)) }";
-							}
-							if (spatialRelation.contains("left")) {
-								sparqlQ += " FILTER(strdf:left(?iWKT1, ?iWKT2)) }";
-							}
-							if (spatialRelation.contains("above")) {
-								sparqlQ += " FILTER(strdf:above(?iWKT1, ?iWKT2)) }";
-							}
-							if (spatialRelation.contains("below")) {
-								sparqlQ += " FILTER(strdf:below(?iWKT1, ?iWKT2)) }";
-							}
-							Query q = new Query();
-							q.query = sparqlQ;
-							q.score = ent1.linkCount + ent2.linkCount;
-							allQueriesList.add(q);
 						}
+						if (spatialRelation.contains("distance")) {
+							if(myQuestionNL.toLowerCase(Locale.ROOT).contains("near")){
+								sparqlQ += "FILTER(geof:distance(?iWKT1, ?iWKT2,uom:metre) < 10000) }";
+							}else if(myQuestionNL.toLowerCase(Locale.ROOT).contains("distance")){
+								sparqlQ += "FILTER(geof:distance(?iWKT1, ?iWKT2,uom:metre)) }";
+							} else if(thresholdFlag){
+								sparqlQ += "FILTER(geof:distance(?iWKT1, ?iWKT2,uom:metre) < 10000) }";
+								sparqlQ = sparqlQ.replace("10000",""+thresholdDistance+"");
+							}
+						}
+						if (spatialRelation.contains("cross")) {
+							sparqlQ += " FILTER(geof:sfCrosses(?iWKT1, ?iWKT2)) }";
+						}
+						if (spatialRelation.contains("boundary")) {
+							sparqlQ += " FILTER(geof:sfTouches(?iWKT1, ?iWKT2)) }";
+						}
+						if (spatialRelation.contains("right")) {
+							sparqlQ += " FILTER(strdf:right(?iWKT1, ?iWKT2)) }";
+						}
+						if (spatialRelation.contains("left")) {
+							sparqlQ += " FILTER(strdf:left(?iWKT1, ?iWKT2)) }";
+						}
+						if (spatialRelation.contains("above")) {
+							sparqlQ += " FILTER(strdf:above(?iWKT1, ?iWKT2)) }";
+						}
+						if (spatialRelation.contains("below")) {
+							sparqlQ += " FILTER(strdf:below(?iWKT1, ?iWKT2)) }";
+						}
+						Query q = new Query();
+						q.query = sparqlQ;
+						q.score = ent1.linkCount + ent2.linkCount;
+						allQueriesList.add(q);
 					}
 				}
 			}
@@ -3673,10 +3089,10 @@ public class GeoSparqlGenerator extends QanaryComponent {
 				System.out.println("Selected query : " + finalQuery);
 			}
 
-			BufferedWriter bw = new BufferedWriter(new FileWriter("/home/dharmenp/generatedQueries2021july.txt",true));
+			/*BufferedWriter bw = new BufferedWriter(new FileWriter("/home/dharmenp/generatedQueries2021julyYago2geo_b_type.txt",true));
 			bw.newLine();
 			bw.write(myQuestionNL+" :: "+finalQuery);
-			bw.close();
+			bw.close();*/
 
 			logger.debug("store the generated GeoSPARQL query in triplestore: {}", finalQuery);
 			// STEP 3: Push the GeoSPARQL query to the triplestore

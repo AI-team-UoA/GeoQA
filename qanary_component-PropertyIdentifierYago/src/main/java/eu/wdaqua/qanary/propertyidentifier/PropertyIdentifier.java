@@ -283,6 +283,7 @@ public class PropertyIdentifier extends QanaryComponent {
 		logger.info("process: {}", myQanaryMessage);
 		// TODO: implement processing of question
 
+		String yago2geoOnlyEndpoint = "http://pyravlos2.di.uoa.gr:8080/yago2geo/Query";
 		QanaryUtils myQanaryUtils = this.getUtils(myQanaryMessage);
 		QanaryQuestion<String> myQanaryQuestion = this.getQanaryQuestion(myQanaryMessage);
 		String myQuestion = myQanaryQuestion.getTextualRepresentation();
@@ -349,15 +350,14 @@ public class PropertyIdentifier extends QanaryComponent {
 			// newGeoSparqlQuery += "" + conceptTemplate.replace("poiURI",
 			// conceptTemp.link).replaceAll("poi",
 			// "poi" + conceptTemp.begin);
-			if (conceptTemp.link.contains("yago-knowledge.org")) {
+			//if (conceptTemp.link.contains("yago-knowledge.org")) {
 				concepts.add(conceptTemp);
 				coonceptsUri.add(conceptTemp.link);
 				dbpediaClassList.add(conceptTemp.link);
 				logger.info("Concept start {}, end {} concept {} link {}", conceptTemp.begin, conceptTemp.end,
 						myQuestion.substring(conceptTemp.begin, conceptTemp.end), conceptTemp.link);
-			}
+			//}
 			allClassesList.add(conceptTemp.link);
-
 		}
 
 		for (int i = 0; i < allVerbs.size(); i++) {
@@ -404,10 +404,9 @@ public class PropertyIdentifier extends QanaryComponent {
 			entityTemp.namedEntity = myQuestion.substring(entityTemp.begin, entityTemp.end);
 
 			entityTemp.linkCount = s.getLiteral("lcount").getInt();
-			if (entityTemp.uri.contains("yago-knowledge.org")) {
-				entities.add(entityTemp);
-				entitiesUri.add(entityTemp.uri);
-			}
+
+			entities.add(entityTemp);
+			entitiesUri.add(entityTemp.uri);
 		}
 
 		System.out.println("all verbs: " + allVerbs);
@@ -415,10 +414,11 @@ public class PropertyIdentifier extends QanaryComponent {
 
 			String classLabel = concept.substring(concept.lastIndexOf("/") + 1);
 			System.out.println("classLabel : " + classLabel);
-			File file = new File("qanary_component-PropertyIdentifier/src/main/resources/yagoproperties/" + classLabel + "_yago_label_of_properties.txt");
-			File file1 = new File("qanary_component-PropertyIdentifier/src/main/resources/yagoproperties/" + classLabel + "_yago_value_of_properties.txt");
+			File file = new File("qanary_component-PropertyIdentifierYago/src/main/resources/yago2geoproperties/" + classLabel + ".txt");
+			//File file1 = new File("qanary_component-PropertyIdentifierYago/src/main/resources/yago2geoproperties/" + classLabel + ".txt");
 			Map<String, String> valuePropertyD = new HashMap<String, String>();
 			Map<String, String> labelPropertyD = new HashMap<String, String>();
+			System.out.println("File name : "+ file.getAbsolutePath());
 			if (file.exists()) {
 				valuePropertyD.clear();
 				labelPropertyD.clear();
@@ -433,17 +433,18 @@ public class PropertyIdentifier extends QanaryComponent {
 					}
 				}
 				br.close();
+				/*if(file1.exists()) {
+					BufferedReader br1 = new BufferedReader(new FileReader(file1));
 
-				BufferedReader br1 = new BufferedReader(new FileReader(file1));
-
-				line = "";
-				while ((line = br1.readLine()) != null) {
-					String splitedLine[] = line.split(",");
-					if (splitedLine.length > 1) {
-						valuePropertyD.put(splitedLine[1], splitedLine[0]);
+					line = "";
+					while ((line = br1.readLine()) != null) {
+						String splitedLine[] = line.split(",");
+						if (splitedLine.length > 1) {
+							valuePropertyD.put(splitedLine[1], splitedLine[0]);
+						}
 					}
-				}
-				br1.close();
+					br1.close();
+				}*/
 
 				System.out.println("size is : " + valuePropertyD.size());
 
@@ -486,8 +487,8 @@ public class PropertyIdentifier extends QanaryComponent {
 									property.uri = entry.getValue();
 //										if (property.begin > 0 && property.end > property.begin) {
 									if(classLabel.equals("Mountain")  ){
-										if(property.uri.equals("http://dbpedia.org/property/highest") || property.uri.equals("http://dbpedia.org/property/height"))
-											property.uri = "http://dbpedia.org/ontology/elevation";
+										if(property.uri.equals("http://yago-knowledge.org/resource/infobox/en/highest") || property.uri.equals("http://dbpedia.org/property/height"))
+											property.uri = "http://yago-knowledge.org/resource/infobox/en/elevationm";
 									}
 									properties.add(property);
 									System.out.println("For class : " + classLabel + "   Found Value: " + entry.getKey()
@@ -502,50 +503,6 @@ public class PropertyIdentifier extends QanaryComponent {
 						}
 					}
 //					bw1.close();
-				}
-				if (properties.size() == 0) {
-					if (valuePropertyD.size() > 0) {
-						double score = 0.0;
-						System.out.println("Inside value property: ");
-//						SimilarityStrategy strategy = new JaroWinklerStrategy();
-//
-//						StringSimilarityService service = new StringSimilarityServiceImpl(strategy);
-						for (Entry<String, String> entry : valuePropertyD.entrySet()) {
-							for (String verb : allVerbs) {
-								if (verb.contains(classLabel.toLowerCase()) || verb.length() < 3
-										|| entry.getKey().length() > 10 || entry.getKey().contains("(")
-										|| entry.getKey().contains(")"))
-									continue;
-
-								Pattern p = Pattern.compile("\\b" + entry.getKey() + "\\b", Pattern.CASE_INSENSITIVE);
-//						System.out.println("Keyword: "+verb+"=================================="+enrty.getKey());
-								Matcher m = p.matcher(verb);
-								if (!verb.equalsIgnoreCase(concept)) {
-									if (m.find() && !entry.getKey().equalsIgnoreCase("crosses")) {
-										valueFlag = true;
-										Property property = new Property();
-										if (relationList.size() == 0 || !relationList.contains(entry.getValue())) {
-											relationList.add(entry.getValue());
-											valuePropertyList.add(entry.getValue());
-											property.begin = lemQuestion.toLowerCase()
-													.indexOf(entry.getKey().toLowerCase());
-											property.end = property.begin + entry.getKey().length();
-											property.label = verb;
-											property.uri = entry.getValue();
-											if (property.begin > 0 && property.end > property.begin) {
-												properties.add(property);
-												System.out.println("For class : " + classLabel + "   Found Value: "
-														+ verb + " :" + entry.getValue() + " : Begin : "
-														+ property.begin + "  : end " + property.end);
-											}
-										}
-										System.out.println("For class : " + classLabel + "   Found Value: "
-												+ entry.getKey() + " :" + entry.getValue());
-									}
-								}
-							}
-						}
-					}
 				}
 			}
 
@@ -567,25 +524,25 @@ public class PropertyIdentifier extends QanaryComponent {
 					case "smallest":
 					case "highest":
 						if(myQuestion.contains("building")) {
-							property.uri = "http://dbpedia.org/ontology/floorCount";
+							property.uri = "http://yago-knowledge.org/resource/hasHeight";
 							property.label = questionProperty;
 							property.begin = myQuestion.indexOf(questionProperty);
 							property.end = property.begin + questionProperty.length();
 							System.out.println("Adding floorCount");
 						} else if(myQuestion.contains("population")){
-						property.uri = "http://dbpedia.org/ontology/populationTotal";
+						property.uri = "http://yago-knowledge.org/resource/infobox/en/populationtotal";
 						property.label = questionProperty;
 						property.begin = myQuestion.indexOf(questionProperty);
 						property.end = property.begin + questionProperty.length();
 						System.out.println("Adding populationTotal");
 						} else if(myQuestion.toLowerCase(Locale.ROOT).contains(" lake")){
-							property.uri = "http://dbpedia.org/ontology/areaTotal";
+							property.uri = "http://yago-knowledge.org/resource/infobox/en/areatotalkm";
 							property.label = questionProperty;
 							property.begin = myQuestion.indexOf(questionProperty);
 							property.end = property.begin + questionProperty.length();
 							System.out.println("Adding elevation");
 						} else{
-							property.uri = "http://dbpedia.org/ontology/elevation";
+							property.uri = "http://yago-knowledge.org/resource/infobox/en/elevationm";
 							property.label = questionProperty;
 							property.begin = myQuestion.indexOf(questionProperty);
 							property.end = property.begin + questionProperty.length();
@@ -594,14 +551,14 @@ public class PropertyIdentifier extends QanaryComponent {
 						break;
 					case "shortest":
 					case "longest":
-						property.uri = "http://dbpedia.org/property/length";
+						property.uri = "http://yago-knowledge.org/resource/hasLength";
 						property.label = questionProperty;
 						property.begin = myQuestion.indexOf(questionProperty);
 						property.end = property.begin + questionProperty.length();
 						System.out.println("Adding length");
 						break;
 					case "population":
-						property.uri = "http://dbpedia.org/ontology/populationTotal";
+						property.uri = "http://yago-knowledge.org/resource/infobox/en/populationtotal";
 						property.label = questionProperty;
 						property.begin = myQuestion.indexOf(questionProperty);
 						property.end = property.begin + questionProperty.length();
@@ -612,13 +569,13 @@ public class PropertyIdentifier extends QanaryComponent {
 						// code need to be updated
 						//this property depends on the class present in the question
 						if(myQuestion.contains("population")){
-							property.uri = "http://dbpedia.org/ontology/populationTotal";
+							property.uri = "http://yago-knowledge.org/resource/infobox/en/populationtotal";
 							property.label = questionProperty;
 							property.begin = myQuestion.indexOf(questionProperty);
 							property.end = property.begin + questionProperty.length();
 							System.out.println("Adding populationTotal");
 						} else {
-							property.uri = "http://dbpedia.org/ontology/areaTotal";
+							property.uri = "http://yago-knowledge.org/resource/infobox/en/areatotalkm";
 							property.label = questionProperty;
 							property.begin = myQuestion.indexOf(questionProperty);
 							property.end = property.begin + questionProperty.length();
@@ -628,7 +585,7 @@ public class PropertyIdentifier extends QanaryComponent {
 					case "newest":
 					case "oldest":
 						//update code based on class identified
-						property.uri = "http://dbpedia.org/ontology/openingYear";
+						property.uri = "http://yago-knowledge.org/resource/wasCreatedOnDate";
 						property.label = questionProperty;
 						property.begin = myQuestion.indexOf(questionProperty);
 						property.end = property.begin + questionProperty.length();
@@ -643,33 +600,33 @@ public class PropertyIdentifier extends QanaryComponent {
 				//}
 				//}
 			}
-			else if((adjpText = getADJPConstituents(myQuestion))!=null){
+			else {
+				if ((adjpText = getADJPConstituents(myQuestion)) != null && properties.size()<1) {
 					Property property = new Property();
-					if(adjpText.size()>0){
+					if (adjpText.size() > 0) {
 						String adjpVal = adjpText.get(0);
-						adjpVal = adjpVal.replaceAll(",","");
-						adjpVal = adjpVal.replace("most","");
-						if(adjpVal.contains("densely populated")){
-							property.uri = "http://dbpedia.org/ontology/populationDensity";
+						adjpVal = adjpVal.replaceAll(",", "");
+						adjpVal = adjpVal.replace("most", "");
+						if (adjpVal.contains("densely populated")) {
+							property.uri = "http://yago-knowledge.org/resource/hasPopulationDensity";
 							property.label = adjpVal;
 							property.begin = myQuestion.indexOf(adjpVal);
 							property.end = property.begin + adjpVal.length();
 							System.out.println("Adding populationDensity");
-						}else if(adjpVal.contains("popular")){
+						} else if (adjpVal.contains("popular")) {
 							property.uri = "http://dbpedia.org/ontology/numberOfVisitors";
 							property.label = adjpVal;
 							property.begin = myQuestion.indexOf(adjpVal);
 							property.end = property.begin + adjpVal.length();
 							System.out.println("Adding numberOfVisitors");
-						}else if(adjpVal.contains("populated")){
-							property.uri = "http://dbpedia.org/ontology/populationTotal";
+						} else if (adjpVal.contains("populated")) {
+							property.uri = "http://yago-knowledge.org/resource/infobox/en/populationtotal";
 							property.label = adjpVal;
 							property.begin = myQuestion.indexOf(adjpVal);
 							property.end = property.begin + adjpVal.length();
 							System.out.println("Adding populationTotal");
-						}
-						else if(adjpVal.contains("elevated")){
-							property.uri = "http://dbpedia.org/ontology/elevation";
+						} else if (adjpVal.contains("elevated")) {
+							property.uri = "http://yago-knowledge.org/resource/infobox/en/elevationm";
 							property.label = adjpVal;
 							property.begin = myQuestion.indexOf(adjpVal);
 							property.end = property.begin + adjpVal.length();
@@ -680,10 +637,9 @@ public class PropertyIdentifier extends QanaryComponent {
 						properties.add(property);
 					}
 
+				}
 			}
 		}
-
-
 
 		for (Property DBpediaProperty : properties) {
 			sparql = "prefix qa: <http://www.wdaqua.eu/qa#> "
@@ -720,7 +676,7 @@ public class PropertyIdentifier extends QanaryComponent {
 				System.out.println("Sparql Query : " + sparqlQuery + "\n Instance: " + entity);
 				Query query = QueryFactory.create(sparqlQuery);
 
-				QueryExecution exec = QueryExecutionFactory.sparqlService("http://pyravlos1.di.uoa.gr:8890/sparql", query);
+				QueryExecution exec = QueryExecutionFactory.sparqlService(yago2geoOnlyEndpoint, query);
 
 				ResultSet results = ResultSetFactory.copyResults(exec.execSelect());
 //			System.out.println("result set : "+results.toString());
@@ -769,7 +725,18 @@ public class PropertyIdentifier extends QanaryComponent {
 					}
 				}
 			}
+			if(properties.size()<1){
+				if(myQuestion.toLowerCase(Locale.ROOT).contains(" area") || myQuestion.toLowerCase(Locale.ROOT).contains(" totalarea") ){
+					Property property = new Property();
+					property.label = "area";
+					property.begin = myQuestion.indexOf(" area")+1;
+					property.end = property.begin+4;
+					property.uri = "strdf:area";
+					instProperties.add(property);
+				}
+			}
 		}
+
 		allVerbs.clear();
 		for (Property DBpediaProperty : instProperties) {
 			sparql = "prefix qa: <http://www.wdaqua.eu/qa#> "

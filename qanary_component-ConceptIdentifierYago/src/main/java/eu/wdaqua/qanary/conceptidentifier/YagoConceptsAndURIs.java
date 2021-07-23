@@ -14,7 +14,7 @@ public class YagoConceptsAndURIs {
 		BufferedReader reader;
 		HashMap<String, ArrayList<String>> map = new HashMap<String, ArrayList<String>>();
 		try {
-			reader = new BufferedReader(new FileReader("qanary_component-conceptidentifier/src/main/resources/YagoClasses.txt"));
+			reader = new BufferedReader(new FileReader("qanary_component-ConceptIdentifierYago/src/main/resources/YagoClasses.txt"));
 			
 			while(true) {
 				String classLabel = reader.readLine();

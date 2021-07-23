@@ -135,3 +135,7 @@ http://yago-knowledge.org/resource/wordnet_village_108672738,geof:sfWithin,http:
 http://yago-knowledge.org/resource/wordnet_village_108672738,geof:sfWithin,http://yago-knowledge.org/resource/wordnet_council_108309409
 http://yago-knowledge.org/resource/wordnet_village_108672738,geof:sfWithin,http://yago-knowledge.org/resource/wordnet_council_108310949
 http://yago-knowledge.org/resource/wordnet_village_108672738,geof:sfWithin,http://yago-knowledge.org/resource/wordnet_county_108546183
+http://yago-knowledge.org/resource/wordnet_mountain_109359803,geof:sfWithin,http://yago-knowledge.org/resource/wordnet_county_108546183
+http://yago-knowledge.org/resource/wordnet_mountain_109359803,geof:sfWithin,http://yago-knowledge.org/resource/wordnet_city_108524735
+http://yago-knowledge.org/resource/wordnet_mountain_109359803,geof:sfWithin,http://yago-knowledge.org/resource/wordnet_country_108544813
+http://yago-knowledge.org/resource/wordnet_mountain_109359803,geof:sfWithin,http://yago-knowledge.org/resource/wordnet_council_108309409
