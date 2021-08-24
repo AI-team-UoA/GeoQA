@@ -250,8 +250,12 @@ public class TagMeDisambiguate extends QanaryComponent {
 			TagMeRequest tagMeRequest = new TagMeRequest(tagMeKey);
 
 			TagMeResponse response = tagMeRequest.doRequest(input);
-
+			TagMeResponse responseT = tagMeRequest.doRequestTagMeAPI(input);
 			ArrayList<NedAnnotation> annotations = response.getAnnotations();
+			/*if(annotations.size()<2) {
+				annotations.addAll(responseT.getAnnotations());
+			}*/
+
 			// Extract entities
 			ArrayList<Link> links = new ArrayList<Link>();
 
@@ -262,6 +266,15 @@ public class TagMeDisambiguate extends QanaryComponent {
 					l.link = this.yagoLink + ann.getTitle();
 //					l.link = l.link.replaceAll("&amp;","&");
 //					l.link = l.link.replaceAll(" ","_");
+
+					if(l.link.contains("&amp;")){
+						l.link = l.link.replaceAll("&amp;","&");
+					}
+					if(l.link.contains(" ")){
+						l.link = l.link.replaceAll(" ","_");
+					}
+
+					System.out.println("l.link : "+l.link);
 					l.linkCount = getNoOfLinks(countQuery1 + " <" + l.link + "> " + countQuery2,
 							yago2geoOnlyEndpoint);
 					l.begin = ann.getStart();

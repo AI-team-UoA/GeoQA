@@ -389,7 +389,7 @@ http://kr.di.uoa.gr/yago2geo/ontology/OSM_canal
 			for(String ngramwords: ngramsOfquestion){
 				similarityScore = jw.similarity(ngramwords.toLowerCase(Locale.ROOT),conceptLabel.toLowerCase(Locale.ROOT));
 				System.out.println("got similarity for  ngram :"+ngramwords+"\t and concept label : "+conceptLabel+"\t is = "+similarityScore);
-				if(similarityScore>0.95){
+				if(similarityScore>0.99){
 					System.out.println("====================got similarity more than 95 for  ngram :"+ngramwords+"\t and concept label : "+conceptLabel);
 					falgFound = true;
 					Concept concept = new Concept();

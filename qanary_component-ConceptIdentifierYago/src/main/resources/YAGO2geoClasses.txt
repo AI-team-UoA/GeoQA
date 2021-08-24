@@ -1,4 +1,9 @@
- Municipal unit,http://kr.di.uoa.gr/yago2geo/ontology/GAG_MunicipalUnit 
+ Country,http://kr.di.uoa.gr/yago2geo/ontology/GADM_1stOrder_AdministrativeUnit
+ 2nd Order Administrative Unit,http://kr.di.uoa.gr/yago2geo/ontology/GADM_2ndOrder_AdministrativeUnit
+ 3rd Order Administrative Unit,http://kr.di.uoa.gr/yago2geo/ontology/GADM_3rdOrder_AdministrativeUnit
+ 4th Order Administrative Unit,http://kr.di.uoa.gr/yago2geo/ontology/GADM_4thOrder_AdministrativeUnit
+ 5th Order Administrative Unit,http://kr.di.uoa.gr/yago2geo/ontology/GADM_5thOrder_AdministrativeUnit
+ Municipal unit,http://kr.di.uoa.gr/yago2geo/ontology/GAG_MunicipalUnit
  Decentralized Administration,http://kr.di.uoa.gr/yago2geo/ontology/GAG_DecentralizedAdministration 
  Region,http://kr.di.uoa.gr/yago2geo/ontology/GAG_Region 
  Regional Unit,http://kr.di.uoa.gr/yago2geo/ontology/GAG_RegionalUnit 

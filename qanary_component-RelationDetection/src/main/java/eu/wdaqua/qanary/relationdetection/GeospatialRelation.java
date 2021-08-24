@@ -11,16 +11,25 @@ public enum GeospatialRelation {
 	IN {
 		@Override
 		public String[] getLabels() {
-			return new String[]{"in", "within","of","into","inside", "contains","includes","have","located"};
+			return new String[]{"in", "within","of","into","inside", "includes","located","belong"};
 		}
 		@Override
 		public String getURI() {
 			return new String("geof:sfWithin");
 		}
-	}, NORTH_OF {
+	}, CONTAINS {
 		@Override
 		public String[] getLabels() {
-			return new String[]{"above","north"};
+			return new String[]{ "contain","include","have","has"};
+		}
+		@Override
+		public String getURI() {
+			return new String("geof:sfContains");
+		}
+	},NORTH_OF {
+		@Override
+		public String[] getLabels() {
+			return new String[]{"above","north","northern"};
 		}
 		@Override
 		public String getURI() {
@@ -47,7 +56,7 @@ public enum GeospatialRelation {
 	}, SOUTH_OF {
 		@Override
 		public String[] getLabels() {
-			return new String[]{"south", "below"};
+			return new String[]{"south", "below","southern"};
 		}
 		@Override
 		public String getURI() {
@@ -74,7 +83,7 @@ public enum GeospatialRelation {
 	}, WEST_OF {
 		@Override
 		public String[] getLabels() {
-			return new String[]{"west","left"};
+			return new String[]{"west","left","western"};
 		}
 		@Override
 		public String getURI() {
@@ -83,7 +92,7 @@ public enum GeospatialRelation {
 	}, EAST_OF {
 		@Override
 		public String[] getLabels() {
-			return new String[]{"east","right"};
+			return new String[]{"east","right","eastern"};
 		}
 		@Override
 		public String getURI() {
@@ -92,7 +101,7 @@ public enum GeospatialRelation {
 	}, NEAR_BY {
 		@Override
 		public String[] getLabels() {
-			return new String[]{"near","nearby", "close", "at most","around","less than","at least","nearest","closest","distance"};
+			return new String[]{"near","nearby", "close", "at most","around","less than","at least","nearest","closest","distance","far"};
 		}
 		@Override
 		public String getURI() {
@@ -110,16 +119,25 @@ public enum GeospatialRelation {
 	}, AT_THE_BORDER_OF {
 		@Override
 		public String[] getLabels() {
-			return new String[]{"border", "outskirts","boundary","surround","adjacent"};
+			return new String[]{"border", "outskirts","boundary","surround","adjacent","next","touch"};
 		}
 		@Override
 		public String getURI() {
 			return new String("geof:boundary");
 		}
+	}, INTERSECT {
+		@Override
+		public String[] getLabels() {
+			return new String[]{"intersect","overlap"};
+		}
+		@Override
+		public String getURI() {
+			return new String("geof:sfIntersect");
+		}
 	}, CROSSES {
 		@Override
 		public String[] getLabels() {
-			return new String[]{"crosses", "cross","intersect","flows","flow","on"};
+			return new String[]{"crosses", "cross","flows","flow","on"};
 		}
 		@Override
 		public String getURI() {

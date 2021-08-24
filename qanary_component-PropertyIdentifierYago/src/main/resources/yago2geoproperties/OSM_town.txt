@@ -6,7 +6,6 @@ http://kr.di.uoa.gr/yago2geo/ontology/hasGADM_Name , GADM Name
 http://kr.di.uoa.gr/yago2geo/ontology/hasOSI_ID , OSI ID
 http://kr.di.uoa.gr/yago2geo/ontology/hasOSNI_Perimeter , OSNI Perimeter
 http://kr.di.uoa.gr/yago2geo/ontology/hasGADM_UpperLevelUnit , GADM UpperLevelUnit
-http://kr.di.uoa.gr/yago2geo/ontology/hasOSNI_Area , OSNI Area
 http://kr.di.uoa.gr/yago2geo/ontology/hasGADM_NationalLevel , GADM NationalLevel
 http://kr.di.uoa.gr/yago2geo/ontology/hasGAG_Population , GAG Population
 http://kr.di.uoa.gr/yago2geo/ontology/hasOSM_ID , OSM ID

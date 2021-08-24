@@ -117,6 +117,19 @@ public class RelationDetector {
 		return indexesOfSpatialRelation;
 	}
 
+	public List<Integer> getIndexListOfSpatialRelationLem(String word, String myQuestion) {
+		List<Integer> indexesOfSpatialRelation = new ArrayList<Integer>();
+		Pattern p = Pattern.compile("\\b" + word + "\\b", Pattern.CASE_INSENSITIVE);
+		Matcher m;
+		m = p.matcher(myQuestion);
+		while (m.find()) {
+			indexesOfSpatialRelation.add(m.start());
+		}
+		if (indexesOfSpatialRelation.size() == 0)
+			return null;
+		return indexesOfSpatialRelation;
+	}
+
 	/**
 	 * check for the existence of a geospatial relation in the question
 	 * 
@@ -130,6 +143,7 @@ public class RelationDetector {
 		// allowed labels
 		List<RelationDetectorAnswer> relationDetectorAnswerList = null;
 		List<String> filteredPosTags = new ArrayList<String>();
+		String lemmatizedQuestion = lemmatize(myQuestion);
 		// ResultSet r;
 		// String questionForProcessing = myQuestion;
 		//
@@ -217,6 +231,7 @@ public class RelationDetector {
 			//	for (String verb : filteredPosTags) {
 					Pattern p = Pattern.compile("\\b" + textualRepresentation + "\\b", Pattern.CASE_INSENSITIVE);
 					Matcher m = p.matcher(myQuestion);
+					Matcher m1 = p.matcher(lemmatizedQuestion);
 					if (m.find()) {
 						if (count == 0) {
 							relationDetectorAnswerList = new ArrayList<RelationDetectorAnswer>();
@@ -227,6 +242,22 @@ public class RelationDetector {
 						if (indexesOfSpatialRelation != null) {
 							for (Integer indexOfSpatialRelation : indexesOfSpatialRelation) {
 								logger.info("processed question: {}, found {} at{}", myQuestion, myGeospatialRelation,
+										indexOfSpatialRelation);
+								relationDetectorAnswerList.add(
+										new RelationDetectorAnswer(true, myGeospatialRelation, indexOfSpatialRelation,textualRepresentation));
+							}
+						}
+					}
+					else if (m1.find()) {
+						if (count == 0) {
+							relationDetectorAnswerList = new ArrayList<RelationDetectorAnswer>();
+							count++;
+						}
+						List<Integer> indexesOfSpatialRelation = getIndexListOfSpatialRelationLem(textualRepresentation,
+								lemmatizedQuestion);
+						if (indexesOfSpatialRelation != null) {
+							for (Integer indexOfSpatialRelation : indexesOfSpatialRelation) {
+								logger.info("processed question: {}, found {} at{}", lemmatizedQuestion, myGeospatialRelation,
 										indexOfSpatialRelation);
 								relationDetectorAnswerList.add(
 										new RelationDetectorAnswer(true, myGeospatialRelation, indexOfSpatialRelation,textualRepresentation));
