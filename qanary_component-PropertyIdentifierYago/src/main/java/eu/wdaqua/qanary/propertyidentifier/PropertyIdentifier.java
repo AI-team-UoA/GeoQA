@@ -460,7 +460,7 @@ public class PropertyIdentifier extends QanaryComponent {
 //							new FileWriter("/home/dharmen/justtestproperties.txt", true));
 					for (Entry<String, String> entry : labelPropertyD.entrySet()) {
 						for (String verb : allVerbs) {
-							if(verb.equalsIgnoreCase("of")||verb.equalsIgnoreCase("in")||verb.equalsIgnoreCase("be")||verb.equalsIgnoreCase("name"))
+							if(verb.equalsIgnoreCase("of")||verb.equalsIgnoreCase("in")||verb.equalsIgnoreCase("be"))//||verb.equalsIgnoreCase("name")
 								continue;
 //							System.out.println("Verb : "+verb);
 							Pattern p = Pattern.compile("\\b" + verb  + "\\b", Pattern.CASE_INSENSITIVE);
@@ -528,14 +528,22 @@ public class PropertyIdentifier extends QanaryComponent {
 					case "smallest":
 					case "biggest":
 					case "largest":
+					case "least":
 					case "fewest":
-						if(lemQuestion.contains("population")){
-						property.uri = "http://yago-knowledge.org/resource/infobox/en/populationtotal";
-						property.label = questionProperty;
-						property.begin = lemQuestion.indexOf(questionProperty);
-						property.end = property.begin + questionProperty.length();
+						if(lemQuestion.contains("population") || lemQuestion.contains("populat")){
+						property.uri = "http://kr.di.uoa.gr/yago2geo/ontology/hasGAG_Population";
+						property.label = "";
+						if(myQuestion.contains("population")){
+							property.label = "population";
+							property.begin = lemQuestion.indexOf("population");
+							property.end = property.begin + "population".length();
+						}else if(myQuestion.contains("populated")){
+							property.label = "populated";
+							property.begin = lemQuestion.indexOf("populated");
+							property.end = property.begin + "populated".length();
+						}
 						System.out.println("Adding populationTotal");
-						} else if(!questionProperty.contains("fewset")){
+						} /*else if(!questionProperty.contains("fewset")){
 							property.label = "area";
 							if(lemQuestion.toLowerCase(Locale.ROOT).contains(" area")){
 								property.begin = lemQuestion.toLowerCase(Locale.ROOT).indexOf("area");
@@ -547,7 +555,7 @@ public class PropertyIdentifier extends QanaryComponent {
 							property.uri = "strdf:area";
 							instProperties.add(property);
 							System.out.println("Adding strdf:area");
-						}
+						}*/
 						break;
 					default:
 						break;
@@ -565,12 +573,18 @@ public class PropertyIdentifier extends QanaryComponent {
 						String adjpVal = adjpText.get(0);
 						adjpVal = adjpVal.replaceAll(",", "");
 						adjpVal = adjpVal.replace("most", "");
+						adjpVal = adjpVal.replaceAll("\\[","");
+						adjpVal = adjpVal.replaceAll("\\]","");
+						adjpVal = adjpVal.trim();
+						System.out.println("adjp value : "+adjpVal);
 						if (adjpVal.contains("densely populated")) {
+							adjpVal = adjpVal.split(" ")[1];
 							property.uri = "http://kr.di.uoa.gr/yago2geo/ontology/hasGAG_Population";
 							property.label = adjpVal;
 							property.begin = myQuestion.indexOf(adjpVal);
 							property.end = property.begin + adjpVal.length();
 							System.out.println("Adding populationDensity");
+							System.out.println("myquestion : "+myQuestion);
 						} else if (adjpVal.contains("popular")) {
 							property.uri = "http://dbpedia.org/ontology/numberOfVisitors";
 							property.label = adjpVal;
@@ -578,6 +592,7 @@ public class PropertyIdentifier extends QanaryComponent {
 							property.end = property.begin + adjpVal.length();
 							System.out.println("Adding numberOfVisitors");
 						} else if (adjpVal.contains("populated")) {
+							System.out.println(" inside populated");
 							property.uri = "http://yago-knowledge.org/resource/infobox/en/populationtotal";
 							property.label = adjpVal;
 							property.begin = myQuestion.indexOf(adjpVal);
@@ -589,7 +604,7 @@ public class PropertyIdentifier extends QanaryComponent {
 							property.begin = myQuestion.indexOf(adjpVal);
 							property.end = property.begin + adjpVal.length();
 							System.out.println("Adding elevation");
-						} else if(adjpVal.contains("smallest")||adjpVal.contains("biggest")){
+						} else if(adjpVal.contains("smallest")||adjpVal.contains("biggest")||adjpVal.contains("largest")){
 							property.label = "area";
 							if(lemQuestion.toLowerCase(Locale.ROOT).contains(" area")){
 								property.begin = lemQuestion.toLowerCase(Locale.ROOT).indexOf("area");
@@ -600,6 +615,9 @@ public class PropertyIdentifier extends QanaryComponent {
 							}else if(lemQuestion.contains("biggest")){
 								property.begin = lemQuestion.indexOf("biggest");
 								property.end = property.begin + "biggest".length();
+							}else if(lemQuestion.contains("largest")){
+								property.begin = lemQuestion.indexOf("largest");
+								property.end = property.begin + "largest".length();
 							}
 							property.uri = "strdf:area";
 							instProperties.add(property);

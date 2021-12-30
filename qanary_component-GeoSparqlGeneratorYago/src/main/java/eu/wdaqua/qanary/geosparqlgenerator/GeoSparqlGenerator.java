@@ -740,7 +740,7 @@ public class GeoSparqlGenerator extends QanaryComponent {
 				if(property.uri.toLowerCase(Locale.ROOT).contains("length")||property.uri.toLowerCase(Locale.ROOT).contains("elevation")||property.uri.toLowerCase(Locale.ROOT).contains("area")||property.uri.contains("populationtotal")||property.uri.toLowerCase(Locale.ROOT).contains("floorcount")||property.uri.toLowerCase(Locale.ROOT).contains("createdondate")){
 					tn.propertyList.add(property);
 				}
-			}else if(myQuestion.contains(" most")&&(property.uri.contains("http://yago-knowledge.org/resource/hasPopulationDensity")||property.uri.contains("http://dbpedia.org/ontology/numberOfVisitors")||property.uri.contains("http://yago-knowledge.org/resource/infobox/en/populationtotal")||property.uri.contains("http://yago-knowledge.org/resource/infobox/en/elevationm"))){
+			}else if((myQuestion.contains(" most") || myQuestion.contains(" least"))&&(property.uri.contains("http://kr.di.uoa.gr/yago2geo/ontology/hasGAG_Population")||property.uri.contains("http://dbpedia.org/ontology/numberOfVisitors")||property.uri.contains("http://yago-knowledge.org/resource/infobox/en/populationtotal")||property.uri.contains("http://yago-knowledge.org/resource/infobox/en/elevationm"))){
 				if(tn.m_name.contains("populat")||tn.m_name.contains("popular")) {
 					tn.propertyList.add(property);
 				}
@@ -886,12 +886,23 @@ public class GeoSparqlGenerator extends QanaryComponent {
 				if ((edge.getSource().toString().contains("CD"))) {
 					String tempVal = edge.getSource().toString();
 					tempVal = tempVal.substring(0,tempVal.indexOf("/"));
-					retVal = Double.parseDouble(tempVal);
+					//retVal = Double.parseDouble(tempVal);
+					String testString = tempVal.replaceAll("[^-\\d]+", "");
+					System.out.println("test string: "+testString);
+					if(testString.length()>0){
+						retVal = Double.parseDouble(testString);
+						System.out.println("======= propValue : "+retVal);
+					}
 					System.out.println("CD value : "+tempVal);
 				} else if ( edge.getDependent().toString().contains("CD")) {
 					String tempVal = edge.getDependent().toString();
 					tempVal = tempVal.substring(0,tempVal.indexOf("/"));
-					retVal = Double.parseDouble(tempVal);
+					String testString = tempVal.replaceAll("[^-\\d]+", "");
+					System.out.println("test string: "+testString);
+					if(testString.length()>0){
+						retVal = Double.parseDouble(testString);
+						System.out.println("======= propValue : "+retVal);
+					}
 					System.out.println("CD value : "+tempVal);
 				}
 			}
@@ -925,6 +936,41 @@ public class GeoSparqlGenerator extends QanaryComponent {
 		return retVal;
 	}
 
+
+	public static String getMostRBS(String documentText) {
+		String retVal = "";
+		Properties props = new Properties();
+		props.setProperty("annotators", "tokenize, ssplit, pos, lemma, ner, depparse");
+		StanfordCoreNLP pipeline = new StanfordCoreNLP(props);
+		// Create an empty Annotation just with the given text
+		Annotation document = new Annotation(documentText);
+		// run all Annotators on this text
+		pipeline.annotate(document);
+		// Iterate over all of the sentences found
+		List<CoreMap> sentences = document.get(SentencesAnnotation.class);
+		for (CoreMap sentence : sentences) {
+			SemanticGraph dependencies = sentence.get(SemanticGraphCoreAnnotations.BasicDependenciesAnnotation.class);
+			List<SemanticGraphEdge> edges = dependencies.edgeListSorted();
+			for (SemanticGraphEdge edge : edges) {
+//				System.out.println("edge source : "+edge.getSource().toString());
+//				System.out.println("edge dependent : "+edge.getDependent().toString());
+				if((edge.getSource().toString().contains("most/"))){
+					if (edge.getSource().toString().contains("RBS") || edge.getSource().toString().contains("JJS")) {
+						String retVals = edge.getDependent().toString();
+						retVal = retVals.split("/")[0];
+//						System.out.println("retVal : "+retVal);
+					}
+				}else if(edge.getDependent().toString().toLowerCase(Locale.ROOT).contains("most/")){
+					if (edge.getDependent().toString().contains("RBS") || edge.getDependent().toString().contains("JJS")) {
+						String retVals = edge.getSource().toString();
+						retVal = retVals.split("/")[0];
+//						System.out.println("retVal : "+retVal);
+					}
+				}
+			}
+		}
+		return retVal;
+	}
 
 	public static ArrayList<String> getCCConstituents(String question){
 		// set up pipeline properties
@@ -1400,12 +1446,17 @@ public class GeoSparqlGenerator extends QanaryComponent {
 					}
 					System.out.println("previous index : "+previous_relation_index+"\t current relation index : "+geoSpatialRelationIndex+"\t difference : "+difference_in_index);
 					if (mapOfRelationIdex.keySet().contains(geoSpatialRelation)) {
-						if(!(difference_in_index >8)) {
+						if(!(difference_in_index >=10)) {
 							if (geoSpatialRelation.contains("geof:sfWithin")) {
 								if ((mapOfRelationIdex.keySet().contains("strdf:left")
 										|| mapOfRelationIdex.keySet().contains("strdf:right")
 										|| mapOfRelationIdex.keySet().contains("strdf:above")
 										|| mapOfRelationIdex.keySet().contains("strdf:below"))) {
+									continue;
+								}
+							}
+							if (mapOfRelationIdex.keySet().contains("geof:sfContains")) {
+								if (geoSpatialRelation.contains("geof:sfWithin")) {
 									continue;
 								}
 							}
@@ -1420,7 +1471,7 @@ public class GeoSparqlGenerator extends QanaryComponent {
 						previous_relation_index = geoSpatialRelationIndex;
 						annotateTreenode(sr);
 					} else {
-						if(!(difference_in_index >8)) {
+						if(!(difference_in_index >=10)) {
 							if (geoSpatialRelation.contains("geof:sfWithin")) {
 								if (mapOfRelationIdex.keySet().contains("strdf:left")
 										|| mapOfRelationIdex.keySet().contains("strdf:right")
@@ -1429,7 +1480,13 @@ public class GeoSparqlGenerator extends QanaryComponent {
 									continue;
 								}
 							}
+							if (mapOfRelationIdex.keySet().contains("geof:sfContains")) {
+								if (geoSpatialRelation.contains("geof:sfWithin")) {
+									continue;
+								}
+							}
 						}
+						System.out.println("adding relation : "+geoSpatialRelation);
 						List<Integer> indexes = new ArrayList<Integer>();
 						indexes.add(geoSpatialRelationIndex);
 						mapOfRelationIdex.put(geoSpatialRelation, indexes);
@@ -1584,8 +1641,8 @@ public class GeoSparqlGenerator extends QanaryComponent {
 //						entityTemp.namedEntity, entityTemp.uri);
 
 			}
-			System.out.println("=============Before merging nodes===========================");
-			printParseTree1();
+//			System.out.println("=============Before merging nodes===========================");
+//			printParseTree1();
 			System.out.println("============================================================");
 			walkTreeAndMergeNodes();
 			System.out.println("============================================================");
@@ -1605,6 +1662,9 @@ public class GeoSparqlGenerator extends QanaryComponent {
 			boolean adjpFlag = false;
 			boolean cdFlag = false;
 			double cDValue = 0.0;
+			boolean ccAndFlag = false;
+			boolean ccOrFlag = false;
+			String mostValue = "";
 			List<String> adjpConstituents = getADJPConstituents(myQuestion);
 			if(adjpConstituents.size()>0){
 				System.out.println("ADJP Constituents : "+ adjpConstituents);
@@ -1614,6 +1674,8 @@ public class GeoSparqlGenerator extends QanaryComponent {
 			if(cDValue!=0.0){
 				cdFlag = true;
 			}
+			mostValue = getMostRBS(myQuestion);
+			System.out.println("most value : "+mostValue);
 			int propValue = 0;
 			String qpPhrasheValue = null;
 			List<String> qpConstituents = getQPConstituents(myQuestion);
@@ -1668,10 +1730,16 @@ public class GeoSparqlGenerator extends QanaryComponent {
 
 			}
 			getCCConstituents(myQuestion);
-			getCCPostag(myQuestion);
+			String ccTextValue = getCCPostag(myQuestion);
+			if(ccTextValue.equalsIgnoreCase("and")){
+				ccAndFlag = true;
+			}
+			if(ccTextValue.equalsIgnoreCase("or")){
+				ccOrFlag = true;
+			}
 //			mergeNodesBasedOnConcepts(tree,concpetsLists,myQuestionNL);
 			System.out.println("cSize : " + cSize + "\trSize : " + rSize + "\tiSize : " + iSize + "\tpSize : " + pSize
-					+ "\n" + "CountFlag = " + countFlag +"\t Thresholdflag = "+thresholdFlag +"\t sorting flag= "+sortingFlag+"\t GroupByFlag = "+qauntifierPhrashFlag);
+					+ "\n" + "CountFlag = " + countFlag +"\t Thresholdflag = "+thresholdFlag +"\t sorting flag= "+sortingFlag+"\t GroupByFlag = "+qauntifierPhrashFlag +"\t adjpflag = "+adjpFlag);
 
 			System.out.println("Nearest flag : "+nearestFlag);
 			// add code that would check for nearest flag and generate the closest/nearest
@@ -1700,7 +1768,7 @@ public class GeoSparqlGenerator extends QanaryComponent {
 			}
 
 
-			if (cSize == 1 && (rSize == 1 || rSize == 0 )&& iSize == 0 && pSize == 1) {
+			if (cSize == 1 && (rSize == 1 || rSize == 0 || rSize==2 )&& iSize == 0 && pSize == 1) {
 //				System.out.println("Inside IP/PRI");
 				System.out.println("***************** CP identified *****************");
 				String propertyUri = propertiesList.get(0).uri;
@@ -1711,15 +1779,26 @@ public class GeoSparqlGenerator extends QanaryComponent {
 							sparqlQ = "select distinct (SUM(strdf:area(?cWKT)) as ?area) where { ?x rdf:type <"+con.link+">; geo:hasGeometry ?cGeom. ?cGeom geo:asWKT ?cWKT. }";
 						} else if(myQuestion.contains(" average ")){
 							sparqlQ = "select distinct (AVERAGE(strdf:area(?cWKT)) as ?area) where { ?x rdf:type <"+con.link+">; geo:hasGeometry ?cGeom. ?cGeom geo:asWKT ?cWKT. }";
-						} else if(myQuestion.contains(" maximum ")){
-							sparqlQ = "select distinct (AVERAGE(strdf:area(?cWKT)) as ?area) where { ?x rdf:type <"+con.link+">; geo:hasGeometry ?cGeom. ?cGeom geo:asWKT ?cWKT. }";
+						} else if(myQuestion.toLowerCase(Locale.ROOT).contains(" maximum ") || myQuestion.toLowerCase(Locale.ROOT).contains(" max ")){
+							sparqlQ = "select distinct (MAX(strdf:area(?cWKT)) as ?area) where { ?x rdf:type <"+con.link+">; geo:hasGeometry ?cGeom. ?cGeom geo:asWKT ?cWKT. }";
 						}
 						else {
 							sparqlQ = "select distinct (strdf:area(?cWKT) as ?area) where { ?x rdf:type <" + con.link + ">; geo:hasGeometry ?cGeom. ?cGeom geo:asWKT ?cWKT. }";
+							if(myQuestionNL.contains("smallest")){
+								sparqlQ += " Order By(?area) Limit 1";
+							} else if (myQuestionNL.contains("biggest")){
+								sparqlQ += " Order By DESC(?area) Limit 1";
+							}
 						}
 					} else{
 						sparqlQ = "select distinct ?property where { ?x rdf:type <"+con.link+">; <"+propertyUri+"> ?property. } ";
+						if(myQuestionNL.contains("smallest")){
+							sparqlQ += " Order By(?property) Limit 1";
+						} else if (myQuestionNL.contains("biggest")){
+							sparqlQ += " Order By DESC(?property) Limit 1";
+						}
 					}
+
 					Query q = new Query();
 					q.query = sparqlQ;
 					q.score = 0;
@@ -1761,6 +1840,7 @@ public class GeoSparqlGenerator extends QanaryComponent {
 				}
 
 				String spatialRelation = relationsList.get(0).get(0).relationFunction.toLowerCase();
+
 				String propertyUri = propertiesList.get(0).uri;
 				for (Concept con : concpetsLists.get(0)) {
 					for (Entity ents : instancesList.get(0)) {
@@ -1768,14 +1848,21 @@ public class GeoSparqlGenerator extends QanaryComponent {
 						sparqlQ = "select distinct ?x ?property where { ?x rdf:type <"+con.link+">; geo:hasGeometry ?cGeom; <"+propertyUri+"> ?property. ?cGeom geo:asWKT ?cWKT. <"+ents.uri+"> geo:hasGeometry ?iGeom. ?iGeom geo:asWKT ?iWKT. ";
 						if(propertyUri.contains("strdf:area")){
 
-							if(myQuestion.contains(" sum of ") || myQuestion.contains(" total area ")){
+							if(myQuestionNL.contains(" sum of ") || myQuestionNL.contains(" total area ")){
 								sparqlQ = "select distinct ?x (SUM(strdf:area(?cWKT)) as ?totalArea) where { ?x rdf:type <"+con.link+">; geo:hasGeometry ?cGeom. ?cGeom geo:asWKT ?cWKT. <"+ents.uri+"> geo:hasGeometry ?iGeom. ?iGeom geo:asWKT ?iWKT. ";
-							} else if(myQuestion.contains(" average ") ){
+							} else if(myQuestionNL.contains(" average ") ){
 								sparqlQ = "select distinct ?x (AVERAGE(strdf:area(?cWKT)) as ?totalArea) where { ?x rdf:type <"+con.link+">; geo:hasGeometry ?cGeom. ?cGeom geo:asWKT ?cWKT. <"+ents.uri+"> geo:hasGeometry ?iGeom. ?iGeom geo:asWKT ?iWKT. ";
 							} else {
 								sparqlQ = "select distinct ?x ((strdf:area(?cWKT)) as ?totalArea) where { ?x rdf:type <"+con.link+">; geo:hasGeometry ?cGeom. ?cGeom geo:asWKT ?cWKT. <"+ents.uri+"> geo:hasGeometry ?iGeom. ?iGeom geo:asWKT ?iWKT. ";
 							}
 
+						} else if(propertyUri.contains("_Area")){
+
+							if(myQuestionNL.contains(" sum of ") || myQuestionNL.contains(" total area ")){
+								sparqlQ = "select distinct ?x (SUM(?property) as ?totalArea) where { ?x rdf:type <"+con.link+">; geo:hasGeometry ?cGeom; <"+propertyUri+"> ?property. ?cGeom geo:asWKT ?cWKT. <"+ents.uri+"> geo:hasGeometry ?iGeom. ?iGeom geo:asWKT ?iWKT. ";
+							} else if(myQuestionNL.contains(" average ") ){
+								sparqlQ = "select distinct ?x (AVERAGE(?property) as ?totalArea) where { ?x rdf:type <"+con.link+">; geo:hasGeometry ?cGeom; <"+propertyUri+"> ?property. ?cGeom geo:asWKT ?cWKT. <"+ents.uri+"> geo:hasGeometry ?iGeom. ?iGeom geo:asWKT ?iWKT. ";
+							}
 						}
 						if (spatialRelation.contains("within")) {
 							if(!countFlag && thresholdFlag){
@@ -1851,7 +1938,7 @@ public class GeoSparqlGenerator extends QanaryComponent {
 										sparqlQ += " having( xsd:float(?property) > "+propValue+" )";
 									} else if(myQuestion.contains("below") || myQuestion.contains("less than")||myQuestion.contains("smaller than")){
 										sparqlQ += " having( xsd:float(?property) < "+propValue+" )";
-									} else if(myQuestion.contains("at least")){
+									} else if(myQuestion.contains("least")){
 										sparqlQ += " having(xsd:float(?property) >= "+cDValue+" )";
 									} else{
 										sparqlQ += " ORDER BY DESC(xsd:float(?property)) LIMIT 1 ";
@@ -1879,20 +1966,24 @@ public class GeoSparqlGenerator extends QanaryComponent {
 								}
 							}
 						}else if(cdFlag){
+							System.out.println("inside cdFalg");
 							if(myQuestion.contains("over") || myQuestion.contains("more than") || myQuestion.contains("higher than")){
 								sparqlQ += " having( xsd:float(?property) > "+cDValue+" )";
 							} else if(myQuestion.contains("below") || myQuestion.contains("less than")||myQuestion.contains("smaller than")){
 								sparqlQ += " having( xsd:float(?property) < "+cDValue+" )";
 							} else if(myQuestion.contains("at least")){
 								sparqlQ += " having(xsd:float(?property) >= "+cDValue+" )";
+							} else if(mostValue.length()>1){
+								sparqlQ += " ORDER BY DESC(?property) LIMIT  "+cDValue;
 							}
 						}
 
 						if(countFlag){
 							sparqlQ = sparqlQ.replace("select distinct ?x","select (count(distinct ?x) as ?totalX) ");
 						}
+
 						if(qauntifierPhrashFlag){
-							sparqlQ += " having (?total >= thresholdValue) }";
+							sparqlQ += " Group By(?x) having (?total >= thresholdValue) }";
 							sparqlQ = sparqlQ.replace("select distinct ?x","ASK { SELECT (count(distinct ?x) as ?total) ");
 							if(propValue>0){
 								System.out.println("Got in condition");
@@ -1904,7 +1995,6 @@ public class GeoSparqlGenerator extends QanaryComponent {
 								}
 							}
 						}
-
 						// add code for count
 						Query q = new Query();
 						q.query = sparqlQ;
@@ -1919,9 +2009,20 @@ public class GeoSparqlGenerator extends QanaryComponent {
 
 			if (cSize == 1 && (rSize == 1 ||rSize == 2) && iSize == 1 && pSize == 0) {
 				System.out.println("***************** CRI identified *****************");
-				System.out.println("relation is: " + relationsList.get(0).get(0).relation);
+				System.out.println("relation is: " + relationsList.get(0).get(0).relationFunction.toLowerCase());
 				String spatialRelation = relationsList.get(0).get(0).relationFunction.toLowerCase();
-
+				String secondSpatialRelation = "";
+				if(rSize == 2){
+					secondSpatialRelation = relationsList.get(1).get(0).relationFunction.toLowerCase();
+					System.out.println("Second Spatial Relation is : "+secondSpatialRelation);
+					if((spatialRelation.toLowerCase(Locale.ROOT).contains("geof:sfwithin")&&secondSpatialRelation.toLowerCase(Locale.ROOT).contains("geof:boundary")) || (spatialRelation.toLowerCase(Locale.ROOT).contains("geof:sfcontains")&&secondSpatialRelation.contains("geof:boundary"))){
+						spatialRelation = secondSpatialRelation;
+					}
+					if(spatialRelation.toLowerCase(Locale.ROOT).contains("geof:sfwithin")&&(secondSpatialRelation.toLowerCase(Locale.ROOT).contains("strdf:above") || secondSpatialRelation.toLowerCase(Locale.ROOT).contains("strdf:below") || secondSpatialRelation.toLowerCase(Locale.ROOT).contains("strdf:right") || secondSpatialRelation.toLowerCase(Locale.ROOT).contains("strdf:left"))){
+						spatialRelation = secondSpatialRelation;
+					}
+				}
+				System.out.println("spatial relation after change : "+spatialRelation);
 				for (Concept con : concpetsLists.get(0)) {
 					for (Entity ents : instancesList.get(0)) {
 						String sparqlQ = "";
@@ -1979,9 +2080,16 @@ public class GeoSparqlGenerator extends QanaryComponent {
 						if(countFlag){
 							sparqlQ = sparqlQ.replace("select distinct ?x","select (count(distinct ?x) as ?totalX) ");
 						}
+						if(mostValue.length()>1 && !thresholdFlag && !qauntifierPhrashFlag){
+							sparqlQ += " GROUP BY(?x) ORDER BY DESC(count(?y)) ";
+							sparqlQ = sparqlQ.replace("select distinct ?x"," select distinct ?x (count(distinct ?y) as ?total) ");
+							if(propValue > 0){
+								sparqlQ += " LIMIT "+propValue;
+							}
+						}
 						if(qauntifierPhrashFlag){
-							sparqlQ += " having (?total >= thresholdValue) }";
-							sparqlQ = sparqlQ.replace("select distinct ?x","ASK { SELECT (count(distinct ?x) as ?total) ");
+							sparqlQ += " Group By(?x) having (?total >= thresholdValue) ";
+							sparqlQ = sparqlQ.replace("select distinct ?x","SELECT ?x (count(distinct ?x) as ?total) ");
 							if(propValue>0){
 								System.out.println("Got in condition");
 								if(qpPhrasheValue.contains("at least") || qpPhrasheValue.contains("more than")) {
@@ -2003,6 +2111,182 @@ public class GeoSparqlGenerator extends QanaryComponent {
 
 			}
 
+			// CCRI and
+			if (cSize == 2 && (rSize == 1 ||rSize == 2) && iSize == 1 && pSize == 0 && ccAndFlag) {
+				System.out.println("***************** CCRI(And) identified *****************");
+				System.out.println("relation is: " + relationsList.get(0).get(0).relation);
+				String spatialRelation = relationsList.get(0).get(0).relationFunction.toLowerCase();
+
+				for (Concept con : concpetsLists.get(0)) {
+					for (Concept con2 : concpetsLists.get(1)) {
+						for (Entity ents : instancesList.get(0)) {
+							String sparqlQ = "";
+							sparqlQ = "select distinct ?x ?y where { ?x rdf:type <" + con.link + ">; geo:hasGeometry ?cGeom. ?cGeom geo:asWKT ?cWKT. ?y rdf:type <" + con2.link + ">; geo:hasGeometry ?cGeom2. ?cGeom2 geo:asWKT ?cWKT2. <" + ents.uri + "> geo:hasGeometry ?iGeom. ?iGeom geo:asWKT ?iWKT. ";
+							if (spatialRelation.contains("within")) {
+								if (!countFlag && thresholdFlag) {
+									sparqlQ += " FILTER((geof:distance(?cWKT,?iWKT,uom:metre) <= 1000) && geof:distance(?cWKT2,?iWKT,uom:metre) <= 1000) }";
+									sparqlQ = sparqlQ.replace("1000", thresholdDistance);
+								} else {
+									sparqlQ += " FILTER(geof:sfWithin(?cWKT,?iWKT) && geof:sfWithin(?cWKT2,?iWKT)) }";
+								}
+							}
+							if (spatialRelation.contains("contain")) {
+								sparqlQ += " FILTER(geof:sfContains(?iWKT,?cWKT) && geof:sfContains(?iWKT,?cWKT2)) }";
+							}
+							if (spatialRelation.contains("distance")) {
+								sparqlQ += "FILTER((geof:distance(?cWKT,?iWKT,uom:metre) <= 1000) && geof:distance(?cWKT2,?iWKT,uom:metre) <= 1000) }";
+								if (nearestFlag) {
+									sparqlQ = sparqlQ.replace(
+											"FILTER(geof:distance(?cWKT,?iWKT,uom:metre) <= 1000) }",
+											" } ORDER BY(geof:distance(?cWKT,?iWKT,uom:metre)) LIMIT 1");
+								} else if (thresholdFlag) {
+									sparqlQ = sparqlQ.replace("1000", thresholdDistance);
+								} else {
+									if (con.link.contains("Restaurant") || con.link.contains("Park")) {
+										sparqlQ = sparqlQ.replace("1000", "500");
+									}
+									if (con.link.contains("City")) {
+										sparqlQ = sparqlQ.replace("1000", "5000");
+									}
+								}
+							}
+
+							if (spatialRelation.contains("crosses")) {
+								sparqlQ += " FILTER(geof:sfCrosses(?cWKT,?iWKT) && geof:sfCrosses(?cWKT2,?iWKT))}";
+							}
+							if (spatialRelation.contains("intersect")) {
+								sparqlQ += " FILTER(geof:sfIntersect(?cWKT,?iWKT) && geof:sfIntersect(?cWKT2,?iWKT))}";
+							}
+							if (spatialRelation.contains("boundary")) {
+								sparqlQ += " FILTER(geof:sfTouches(?cWKT,?iWKT) && geof:sfTouches(?cWKT2,?iWKT)) }";
+							}
+							if (spatialRelation.contains("right")) {
+								sparqlQ += " FILTER(strdf:right(?cWKT,?iWKT) && strdf:right(?cWKT2,?iWKT)) }";
+							}
+							if (spatialRelation.contains("left")) {
+								sparqlQ += " FILTER(strdf:left(?cWKT,?iWKT) && strdf:left(?cWKT2,?iWKT)) }";
+							}
+							if (spatialRelation.contains("above")) {
+								sparqlQ += " FILTER(strdf:above(?cWKT,?iWKT) && strdf:above(?cWKT2,?iWKT)) }";
+							}
+							if (spatialRelation.contains("below")) {
+								sparqlQ += " FILTER(strdf:below(?cWKT,?iWKT) && strdf:below(?cWKT2,?iWKT)) }";
+							}
+							if (countFlag) {
+								sparqlQ = sparqlQ.replace("select distinct ?x ?y", "select (count(distinct ?x) as ?totalX) (count(distinct ?y) as ?totalY) ");
+							}
+							if (qauntifierPhrashFlag) {
+								sparqlQ += " Group By(?x) having (?total >= thresholdValue) ";
+								sparqlQ = sparqlQ.replace("select distinct ?x ?y", "SELECT (count(distinct ?x) as ?total) ?y ");
+								if (propValue > 0) {
+									System.out.println("Got in condition");
+									if (qpPhrasheValue.contains("at least") || qpPhrasheValue.contains("more than")) {
+										sparqlQ = sparqlQ.replace("thresholdValue)", "" + propValue + " )");
+									} else {
+										sparqlQ = sparqlQ.replace(">= thresholdValue)", "< " + propValue + " )");
+									}
+								}
+							}
+							// add code for count
+							Query q = new Query();
+							q.query = sparqlQ;
+							q.score = ents.linkCount;
+							allQueriesList.add(q);
+
+						}
+					}
+				}
+
+			}
+
+			// CRII and
+			if (cSize == 1 && (rSize == 1 ||rSize == 2) && iSize == 2 && pSize == 0 && ccAndFlag) {
+				System.out.println("***************** CRII(and) identified *****************");
+				System.out.println("relation is: " + relationsList.get(0).get(0).relation);
+				String spatialRelation = relationsList.get(0).get(0).relationFunction.toLowerCase();
+
+				for (Concept con : concpetsLists.get(0)) {
+					for (Entity ents : instancesList.get(0)) {
+						for (Entity ent2 : instancesList.get(1)) {
+							String sparqlQ = "";
+							sparqlQ = "select distinct ?x where { ?x rdf:type <" + con.link + ">; geo:hasGeometry ?cGeom. ?cGeom geo:asWKT ?cWKT.  <" + ents.uri + "> geo:hasGeometry ?iGeom. ?iGeom geo:asWKT ?iWKT. <" + ent2.uri + "> geo:hasGeometry ?iGeom2. ?iGeom2 geo:asWKT ?iWKT2.";
+							if (spatialRelation.contains("within")) {
+								if (!countFlag && thresholdFlag) {
+									sparqlQ += " FILTER((geof:distance(?cWKT,?iWKT,uom:metre) <= 1000) && geof:distance(?cWKT,?iWKT2,uom:metre) <= 1000) }";
+									sparqlQ = sparqlQ.replace("1000", thresholdDistance);
+								} else {
+									sparqlQ += " FILTER(geof:sfWithin(?cWKT,?iWKT) && geof:sfWithin(?cWKT,?iWKT2)) }";
+								}
+							}
+							if (spatialRelation.contains("contain")) {
+								sparqlQ += " FILTER(geof:sfContains(?iWKT,?cWKT) && geof:sfContains(?iWKT2,?cWKT)) }";
+							}
+							if (spatialRelation.contains("distance")) {
+								sparqlQ += "FILTER((geof:distance(?cWKT,?iWKT,uom:metre) <= 1000) && geof:distance(?cWKT,?iWKT2,uom:metre) <= 1000) }";
+								if (nearestFlag) {
+									sparqlQ = sparqlQ.replace(
+											"FILTER(geof:distance(?cWKT,?iWKT,uom:metre) <= 1000) }",
+											" } ORDER BY(geof:distance(?cWKT,?iWKT,uom:metre)) LIMIT 1");
+								} else if (thresholdFlag) {
+									sparqlQ = sparqlQ.replace("1000", thresholdDistance);
+								} else {
+									if (con.link.contains("Restaurant") || con.link.contains("Park")) {
+										sparqlQ = sparqlQ.replace("1000", "500");
+									}
+									if (con.link.contains("City")) {
+										sparqlQ = sparqlQ.replace("1000", "5000");
+									}
+								}
+							}
+
+							if (spatialRelation.contains("crosses")) {
+								sparqlQ += " FILTER(geof:sfCrosses(?cWKT,?iWKT) && geof:sfCrosses(?cWKT,?iWKT2))}";
+							}
+							if (spatialRelation.contains("intersect")) {
+								sparqlQ += " FILTER(geof:sfIntersect(?cWKT,?iWKT) && geof:sfIntersect(?cWKT,?iWKT2))}";
+							}
+							if (spatialRelation.contains("boundary")) {
+								sparqlQ += " FILTER(geof:sfTouches(?cWKT,?iWKT) && geof:sfTouches(?cWKT,?iWKT2)) }";
+							}
+							if (spatialRelation.contains("right")) {
+								sparqlQ += " FILTER(strdf:right(?cWKT,?iWKT) && strdf:right(?cWKT,?iWKT2)) }";
+							}
+							if (spatialRelation.contains("left")) {
+								sparqlQ += " FILTER(strdf:left(?cWKT,?iWKT) && strdf:left(?cWKT,?iWKT2)) }";
+							}
+							if (spatialRelation.contains("above")) {
+								sparqlQ += " FILTER(strdf:above(?cWKT,?iWKT) && strdf:above(?cWKT,?iWKT2)) }";
+							}
+							if (spatialRelation.contains("below")) {
+								sparqlQ += " FILTER(strdf:below(?cWKT,?iWKT) && strdf:below(?cWKT,?iWKT2)) }";
+							}
+							if (countFlag) {
+								sparqlQ = sparqlQ.replace("select distinct ?x", "select (count(distinct ?x) as ?totalX) ");
+							}
+							if (qauntifierPhrashFlag) {
+								sparqlQ += " Group By(?x) having (?total >= thresholdValue) ";
+								sparqlQ = sparqlQ.replace("select distinct ?x", "SELECT (count(distinct ?x) as ?total) ");
+								if (propValue > 0) {
+									System.out.println("Got in condition");
+									if (qpPhrasheValue.contains("at least") || qpPhrasheValue.contains("more than")) {
+										sparqlQ = sparqlQ.replace("thresholdValue)", "" + propValue + " )");
+									} else {
+										sparqlQ = sparqlQ.replace(">= thresholdValue)", "< " + propValue + " )");
+									}
+								}
+							}
+							// add code for count
+							Query q = new Query();
+							q.query = sparqlQ;
+							q.score = ents.linkCount;
+							allQueriesList.add(q);
+
+						}
+					}
+				}
+
+			}
+
 			if (cSize == 2 && (rSize == 1 || rSize==2) && iSize == 0 && pSize == 0) {
 				System.out.println("***************** CRC identified *****************");
 
@@ -2014,7 +2298,7 @@ public class GeoSparqlGenerator extends QanaryComponent {
 								+ ">; geo:hasGeometry ?cGeom1. ?cGeom1 geo:asWKT ?cWKT1. ?y rdf:type <"
 								+ con2.link + ">; geo:hasGeometry ?cGeom2. ?cGeom2 geo:asWKT ?cWKT2. ";
 						if (spatialRelation.contains("within")) {
-							if(!countFlag && rSize==2 && thresholdFlag){
+							if( thresholdFlag){
 								sparqlQ += " FILTER(geof:distance(?cWKT1,?cWKT2,uom:metre) <= 1000) }";
 								sparqlQ = sparqlQ.replace("1000", thresholdDistance);
 							} else {
@@ -2067,9 +2351,17 @@ public class GeoSparqlGenerator extends QanaryComponent {
 							sparqlQ = sparqlQ.replace("select distinct ?x","select (count(distinct ?x) as ?totalX) ");
 						}
 
+						if(mostValue.length()>1){
+							sparqlQ += " GROUP BY(?x) ORDER BY DESC(count(?y)) ";
+							sparqlQ = sparqlQ.replace("select distinct ?x"," select distinct ?x (count(distinct ?y) as ?total) ");
+							if(propValue > 0){
+								sparqlQ += " LIMIT "+propValue;
+							}
+						}
+
 						if(qauntifierPhrashFlag){
-							sparqlQ += " having (?total >= thresholdValue) }";
-							sparqlQ = sparqlQ.replace("select distinct ?x","ASK { SELECT (count(distinct ?x) as ?total) ");
+							sparqlQ += " Group by(?x) having (?total >= thresholdValue) ";
+							sparqlQ = sparqlQ.replace("select distinct ?x"," SELECT ?x (count(distinct ?y) as ?total) ");
 							if(propValue>0){
 								System.out.println("Got in condition");
 								if(qpPhrasheValue.contains("at least") || qpPhrasheValue.contains("more than")) {
@@ -2080,6 +2372,7 @@ public class GeoSparqlGenerator extends QanaryComponent {
 								}
 							}
 						}
+
 
 						Query q = new Query();
 						q.query = sparqlQ;
@@ -2195,7 +2488,13 @@ public class GeoSparqlGenerator extends QanaryComponent {
 								}
 							}
 							// add code as above for rest of the relations using some example questions
-
+//							if(mostValue.length()>1 && !thresholdFlag && !qauntifierPhrashFlag){
+//								sparqlQ += " GROUP BY(?x) ORDER BY DESC(count(?y)) ";
+//								sparqlQ = sparqlQ.replace("select distinct ?x"," select distinct ?x (count(distinct ?y) as ?total) ");
+//								if(propValue > 0){
+//									sparqlQ += " LIMIT "+propValue;
+//								}
+//							}
 							Query q = new Query();
 							q.query = sparqlQ;
 							q.score = ent1.linkCount + ent2.linkCount;
@@ -2363,6 +2662,17 @@ public class GeoSparqlGenerator extends QanaryComponent {
 										sparqlQ += " having(?area < "+propval+" )";
 									} else if(myQuestion.contains("at least")){
 										sparqlQ += " having(?area >= "+propval+" )";
+									}
+								}
+								if(myQuestion.contains("population")){
+									double propval = getCDValue(myQuestion);
+									System.out.println("inside population bigger than :" + propval);
+									if(myQuestion.contains("bigger than") ||myQuestion.contains("more than") ||myQuestion.contains("higher than") ){
+										sparqlQ += " having(?property > "+propval+" )";
+									} else if(myQuestion.contains("property than")|| myQuestion.contains("smaller than")){
+										sparqlQ += " having(?property < "+propval+" )";
+									} else if(myQuestion.contains("at least")){
+										sparqlQ += " having(?property >= "+propval+" )";
 									}
 								}
 							}
@@ -2534,7 +2844,10 @@ public class GeoSparqlGenerator extends QanaryComponent {
 								if (relationsList.get(1).get(0).relationFunction.toLowerCase()
 										.contains("within")) {
 									sparqlQ += " FILTER(geof:sfWithin(?cWKT1,?iWKT) && geof:sfWithin(?cWKT1,?cWKT2)) }";
-									if(qauntifierPhrashFlag){
+									if (!countFlag && thresholdFlag) {
+										sparqlQ = sparqlQ.replace("FILTER(geof:sfWithin(?cWKT1,?iWKT) && geof:sfWithin(?cWKT1,?cWKT2)) }"," FILTER(geof:sfWithin(?cWKT1,?iWKT) && geof:distance(?cWKT1,?cWKT2,uom:metre) <= 1000) }");
+										sparqlQ = sparqlQ.replace("1000", thresholdDistance);
+									} else if(qauntifierPhrashFlag){
 										sparqlQ +=" GROUP BY(?x) ORDER BY DESC(?total) HAVING(?total >= thresholdValue)";
 										sparqlQ = sparqlQ.replace("select distinct ?x {","select ?x (count(?y) as ?total) {");
 										if(propValue>0){
@@ -2612,13 +2925,16 @@ public class GeoSparqlGenerator extends QanaryComponent {
 								}
 								if (relationsList.get(1).get(0).relationFunction.toLowerCase()
 										.contains("below")) {
-									sparqlQ += " FILTER(geof:sfWithin(?cWKT1,?iWKT) && strdf:below(?cWKT1,?cWKT2)) }";
+									sparqlQ += " FILTER(geof:sfWithin(?cWKT1,?cWKT2) && strdf:below(?cWKT1,?iWKT)) }";
 
 								}
 								if (relationsList.get(1).get(0).relationFunction.toLowerCase()
 										.contains("contain")) {
 									sparqlQ += " FILTER(geof:sfWithin(?cWKT1,?iWKT) && geof:sfContains(?cWKT1,?cWKT2)) }";
-
+									if (!countFlag && thresholdFlag) {
+										sparqlQ = sparqlQ.replace("FILTER(geof:sfWithin(?cWKT1,?iWKT) && geof:sfContains(?cWKT1,?cWKT2)) }"," FILTER(geof:sfWithin(?cWKT1,?iWKT) && geof:distance(?cWKT1,?cWKT2,uom:metre) <= 1000) }");
+										sparqlQ = sparqlQ.replace("1000", thresholdDistance);
+									}
 								}
 							}
 							//First relation distance/nearby with rest
@@ -2643,18 +2959,6 @@ public class GeoSparqlGenerator extends QanaryComponent {
 										}
 										if (con2.link.contains("City")) {
 											sparqlQ = sparqlQ.replace("1000", "5000");
-										}
-									}
-									if(qauntifierPhrashFlag){
-										sparqlQ +=" GROUP BY(?x) ORDER BY DESC(?total) HAVING(?total >= thresholdValue)";
-										sparqlQ = sparqlQ.replace("select ?x {","select ?x (count(?y) as ?total) {");
-										if(propValue>0){
-											if(qpPhrasheValue.contains("at least") || qpPhrasheValue.contains("more than")) {
-												sparqlQ = sparqlQ.replace("thresholdValue)", ""+propValue+" )");
-											}
-											else{
-												sparqlQ = sparqlQ.replace(">= thresholdValue)", "< "+propValue+" )");
-											}
 										}
 									}
 								}
@@ -2851,58 +3155,45 @@ public class GeoSparqlGenerator extends QanaryComponent {
 											sparqlQ = sparqlQ.replace("1000", "5000");
 										}
 									}
-									if(qauntifierPhrashFlag){
-										sparqlQ +=" GROUP BY(?x) ORDER BY DESC(?total) HAVING(?total >= thresholdValue)";
-										sparqlQ = sparqlQ.replace("select distinct ?x {","select ?x (count(?y) as ?total) {");
-										if(propValue>0){
-											if(qpPhrasheValue.contains("at least") || qpPhrasheValue.contains("more than")) {
-												sparqlQ = sparqlQ.replace("thresholdValue)", ""+propValue+" )");
-											}
-											else{
-												sparqlQ = sparqlQ.replace(">= thresholdValue)", "< "+propValue+" )");
-											}
-										}
-									}
-
 								}
 								if (relationsList.get(1).get(0).relationFunction.toLowerCase()
 										.contains("boundary")) {
-									sparqlQ += " FILTER(geof:sfWithin(?cWKT1,?iWKT) && geof:sfTouches(?cWKT1,?cWKT2)) }";
+									sparqlQ += " FILTER(geof:sfContains(?cWKT1,?iWKT) && geof:sfTouches(?cWKT1,?cWKT2)) }";
 
 								}
 								if (relationsList.get(1).get(0).relationFunction.toLowerCase()
 										.contains("cross")) {
-									sparqlQ += " FILTER(geof:sfWithin(?cWKT1,?iWKT) && geof:sfCrosses(?cWKT1,?cWKT2)) }";
+									sparqlQ += " FILTER(geof:sfContains(?cWKT1,?iWKT) && geof:sfCrosses(?cWKT1,?cWKT2)) }";
 
 								}
 								if (relationsList.get(1).get(0).relationFunction.toLowerCase()
 										.contains("intersect")) {
-									sparqlQ += " FILTER(geof:sfWithin(?cWKT1,?iWKT) && geof:sfIntersects(?cWKT1,?cWKT2)) }";
+									sparqlQ += " FILTER(geof:sfContains(?cWKT1,?iWKT) && geof:sfIntersects(?cWKT1,?cWKT2)) }";
 
 								}
 								if (relationsList.get(1).get(0).relationFunction.toLowerCase()
 										.contains("right")) {
-									sparqlQ += " FILTER(geof:sfWithin(?cWKT1,?iWKT) && strdf:right(?cWKT1,?cWKT2)) }";
+									sparqlQ += " FILTER(geof:sfContains(?cWKT1,?cWKT2) && strdf:right(?cWKT2,?iWKT)) }";
 
 								}
 								if (relationsList.get(1).get(0).relationFunction.toLowerCase()
 										.contains("left")) {
-									sparqlQ += " FILTER(geof:sfWithin(?cWKT1,?iWKT) && strdf:left(?cWKT1,?cWKT2)) }";
+									sparqlQ += " FILTER(geof:sfContains(?cWKT1,?cWKT2) && strdf:left(?cWKT2,?iWKT)) }";
 
 								}
 								if (relationsList.get(1).get(0).relationFunction.toLowerCase()
 										.contains("above")) {
-									sparqlQ += " FILTER(geof:sfWithin(?cWKT1,?iWKT) && strdf:above(?cWKT1,?cWKT2)) }";
+									sparqlQ += " FILTER(geof:sfContains(?cWKT1,?cWKT2) && strdf:above(?cWKT2,?iWKT)) }";
 
 								}
 								if (relationsList.get(1).get(0).relationFunction.toLowerCase()
 										.contains("below")) {
-									sparqlQ += " FILTER(geof:sfWithin(?cWKT1,?iWKT) && strdf:below(?cWKT1,?cWKT2)) }";
+									sparqlQ += " FILTER(geof:sfContains(?cWKT1,?cWKT2) && strdf:below(?cWKT2,?iWKT)) }";
 
 								}
 								if (relationsList.get(1).get(0).relationFunction.toLowerCase()
 										.contains("contain")) {
-									sparqlQ += " FILTER(geof:sfWithin(?cWKT1,?iWKT) && geof:sfContains(?cWKT1,?cWKT2)) }";
+									sparqlQ += " FILTER(geof:sfContains(?cWKT1,?iWKT) && geof:sfContains(?cWKT1,?cWKT2)) }";
 
 								}
 							}
@@ -2935,19 +3226,6 @@ public class GeoSparqlGenerator extends QanaryComponent {
 											sparqlQ = sparqlQ.replace("1000", "5000");
 										}
 									}
-									if(qauntifierPhrashFlag){
-										sparqlQ +=" GROUP BY(?x) ORDER BY DESC(?total) HAVING(?total >= thresholdValue)";
-										sparqlQ = sparqlQ.replace("select distinct ?x {","select ?x (count(?y) as ?total) {");
-										if(propValue>0){
-											if(qpPhrasheValue.contains("at least") || qpPhrasheValue.contains("more than")) {
-												sparqlQ = sparqlQ.replace("thresholdValue)", ""+propValue+" )");
-											}
-											else{
-												sparqlQ = sparqlQ.replace(">= thresholdValue)", "< "+propValue+" )");
-											}
-										}
-									}
-
 								}
 								if (relationsList.get(1).get(0).relationFunction.toLowerCase()
 										.contains("boundary")) {
@@ -3019,18 +3297,7 @@ public class GeoSparqlGenerator extends QanaryComponent {
 											sparqlQ = sparqlQ.replace("1000", "5000");
 										}
 									}
-									if(qauntifierPhrashFlag){
-										sparqlQ +=" GROUP BY(?x) ORDER BY DESC(?total) HAVING(?total >= thresholdValue)";
-										sparqlQ = sparqlQ.replace("select distinct ?x {","select ?x (count(?y) as ?total) {");
-										if(propValue>0){
-											if(qpPhrasheValue.contains("at least") || qpPhrasheValue.contains("more than")) {
-												sparqlQ = sparqlQ.replace("thresholdValue)", ""+propValue+" )");
-											}
-											else{
-												sparqlQ = sparqlQ.replace(">= thresholdValue)", "< "+propValue+" )");
-											}
-										}
-									}
+
 								}
 								if (relationsList.get(1).get(0).relationFunction.toLowerCase()
 										.contains("boundary")) {
@@ -3100,18 +3367,6 @@ public class GeoSparqlGenerator extends QanaryComponent {
 										}
 										if (con2.link.contains("City")) {
 											sparqlQ = sparqlQ.replace("1000", "5000");
-										}
-									}
-									if(qauntifierPhrashFlag){
-										sparqlQ +=" GROUP BY(?x) ORDER BY DESC(?total) HAVING(?total >= thresholdValue)";
-										sparqlQ = sparqlQ.replace("select distinct ?x {","select ?x (count(?y) as ?total) {");
-										if(propValue>0){
-											if(qpPhrasheValue.contains("at least") || qpPhrasheValue.contains("more than")) {
-												sparqlQ = sparqlQ.replace("thresholdValue)", ""+propValue+" )");
-											}
-											else{
-												sparqlQ = sparqlQ.replace(">= thresholdValue)", "< "+propValue+" )");
-											}
 										}
 									}
 								}
@@ -3185,18 +3440,6 @@ public class GeoSparqlGenerator extends QanaryComponent {
 											sparqlQ = sparqlQ.replace("1000", "5000");
 										}
 									}
-									if(qauntifierPhrashFlag){
-										sparqlQ +=" GROUP BY(?x) ORDER BY DESC(?total) HAVING(?total >= thresholdValue)";
-										sparqlQ = sparqlQ.replace("select distinct ?x {","select ?x (count(?y) as ?total) {");
-										if(propValue>0){
-											if(qpPhrasheValue.contains("at least") || qpPhrasheValue.contains("more than")) {
-												sparqlQ = sparqlQ.replace("thresholdValue)", ""+propValue+" )");
-											}
-											else{
-												sparqlQ = sparqlQ.replace(">= thresholdValue)", "< "+propValue+" )");
-											}
-										}
-									}
 								}
 								if (relationsList.get(1).get(0).relationFunction.toLowerCase()
 										.contains("boundary")) {
@@ -3268,18 +3511,6 @@ public class GeoSparqlGenerator extends QanaryComponent {
 											sparqlQ = sparqlQ.replace("1000", "5000");
 										}
 									}
-									if(qauntifierPhrashFlag){
-										sparqlQ +=" GROUP BY(?x) ORDER BY DESC(?total) HAVING(?total >= thresholdValue)";
-										sparqlQ = sparqlQ.replace("select distinct ?x {","select ?x (count(?y) as ?total) {");
-										if(propValue>0){
-											if(qpPhrasheValue.contains("at least") || qpPhrasheValue.contains("more than")) {
-												sparqlQ = sparqlQ.replace("thresholdValue)", ""+propValue+" )");
-											}
-											else{
-												sparqlQ = sparqlQ.replace(">= thresholdValue)", "< "+propValue+" )");
-											}
-										}
-									}
 								}
 								if (relationsList.get(1).get(0).relationFunction.toLowerCase()
 										.contains("boundary")) {
@@ -3318,10 +3549,31 @@ public class GeoSparqlGenerator extends QanaryComponent {
 								}
 								if (relationsList.get(1).get(0).relationFunction.toLowerCase()
 										.contains("contain")) {
-									sparqlQ += " FILTER(strdf:below(?cWKT1,?iWKT) && geof:sfContains(?cWKT1,?iWKT)) }";
+									sparqlQ += " FILTER(strdf:below(?cWKT1,?iWKT) && geof:sfContains(?cWKT1,?cWKT2)) }";
 								}
 							}
 
+							if(mostValue.length()>1 && !thresholdFlag && !qauntifierPhrashFlag){
+								sparqlQ += " GROUP BY(?x) ORDER BY DESC(count(?y)) LIMIT 1";
+								sparqlQ = sparqlQ.replace("select distinct ?x"," select distinct ?x (count(distinct ?y) as ?total) ");
+								if(propValue > 0){
+									sparqlQ = sparqlQ.replace("LIMIT 1","LIMIT "+propValue);
+								}
+							}
+							if(qauntifierPhrashFlag){
+								sparqlQ +=" GROUP BY(?x) HAVING(count(?y) > thresholdValue)";
+								sparqlQ = sparqlQ.replace("select distinct ?x"," select distinct ?x (count(distinct ?y) as ?total) ");
+								if(propValue>0){
+									if(qpPhrasheValue.contains("at least") ) {
+										sparqlQ = sparqlQ.replace("> thresholdValue)", ">= "+propValue+" )");
+									} else if(qpPhrasheValue.contains("more than") ) {
+										sparqlQ = sparqlQ.replace("> thresholdValue)", " "+propValue+" )");
+									}
+									else if (qpPhrasheValue.contains("less than") ){
+										sparqlQ = sparqlQ.replace("> thresholdValue)", "< "+propValue+" )");
+									}
+								}
+							}
 							//need to think about the code for below
 							/*if(sortingFlag || adjpFlag){
 								System.out.println("Inside condition for Sorting ");
@@ -3355,6 +3607,10 @@ public class GeoSparqlGenerator extends QanaryComponent {
 					if(spatialRelation.contains("geof:sfwithin")&&secondSpatialRelation.contains("geof:boundary")){
 						spatialRelation = secondSpatialRelation;
 					}
+					if(spatialRelation.contains("geof:sfwithin")&&(secondSpatialRelation.contains("strdf:above") || secondSpatialRelation.contains("strdf:below") || secondSpatialRelation.contains("strdf:right") || secondSpatialRelation.contains("strdf:left"))){
+						spatialRelation = secondSpatialRelation;
+					}
+
 				}
 				for (Entity ent1 : instancesList.get(0)) {
 					for (Entity ent2 : instancesList.get(1)) {
@@ -3795,7 +4051,7 @@ public class GeoSparqlGenerator extends QanaryComponent {
 			});
 
 			myTreeNodes1.clear();
-
+			System.out.println("myquestionNl: "+myQuestionNL);
 			if (myQuestionNL.toLowerCase(Locale.ROOT).startsWith("is there") || myQuestionNL.toLowerCase(Locale.ROOT).startsWith("does") || myQuestionNL.startsWith("do")
 					|| myQuestionNL.toLowerCase(Locale.ROOT).startsWith("are there") || myQuestionNL.toLowerCase(Locale.ROOT).startsWith("is")) {
 				for (Query queries : allQueriesList) {
@@ -3812,9 +4068,9 @@ public class GeoSparqlGenerator extends QanaryComponent {
 			}
 			System.out.println("Total number of Generated queries: " + allQueriesList.size());
 			if (!finalQuery.equals("")) {
-				if (countFlag) {
-					if (finalQuery.contains("select ?x")) {
-						finalQuery = finalQuery.replace("select ?x", "select (count(?x) as ?total) ");
+				if (countFlag || myQuestionNL.contains(" number of ")) {
+					if (finalQuery.contains("select distinct ?x")) {
+						finalQuery = finalQuery.replace("select distinct ?x", "select (count(distinct ?x) as ?total) ");
 					}
 					countFlag = false;
 				}
