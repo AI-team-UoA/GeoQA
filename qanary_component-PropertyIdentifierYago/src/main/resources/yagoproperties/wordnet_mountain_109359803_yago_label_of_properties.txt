@@ -1095,7 +1095,6 @@ latda , http://yago-knowledge.org/resource/infobox/en/latda
 latdb , http://yago-knowledge.org/resource/infobox/en/latdb
 nuts , http://yago-knowledge.org/resource/infobox/en/nuts
 roadname , http://yago-knowledge.org/resource/infobox/en/roadname
-time , http://yago-knowledge.org/resource/infobox/en/time
 octmeanf , http://yago-knowledge.org/resource/infobox/en/octmeanf
 prominenceref , http://yago-knowledge.org/resource/infobox/en/prominenceref
 octmeanc , http://yago-knowledge.org/resource/infobox/en/octmeanc

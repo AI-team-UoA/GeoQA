@@ -1367,7 +1367,6 @@ buc , http://yago-knowledge.org/resource/infobox/en/buc
 creator , http://yago-knowledge.org/resource/infobox/en/creator
 imagealt , http://yago-knowledge.org/resource/infobox/en/imagealt
 noofcitiestowns , http://yago-knowledge.org/resource/infobox/en/noofcitiestowns
-below , http://yago-knowledge.org/resource/infobox/en/below
 lakename , http://yago-knowledge.org/resource/infobox/en/lakename
 popcensus , http://yago-knowledge.org/resource/infobox/en/popcensus
 fdiinflow , http://yago-knowledge.org/resource/infobox/en/fdiinflow

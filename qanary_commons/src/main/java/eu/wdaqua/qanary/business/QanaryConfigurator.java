@@ -78,6 +78,7 @@ public class QanaryConfigurator {
 		logger.info("QanaryMessage for current process: {} (components={})", message.asJsonString(), myComponents);
 
 		// run the process for all demanded components
+		System.out.println("components size: "+myComponents.size());
 		for (QanaryComponent component : myComponents) {
 
 			URI myURI;

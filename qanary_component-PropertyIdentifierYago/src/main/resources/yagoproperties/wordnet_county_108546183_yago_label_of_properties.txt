@@ -35,7 +35,6 @@ divtype , http://yago-knowledge.org/resource/infobox/en/divtype
 est , http://yago-knowledge.org/resource/infobox/en/est
 staticimagewidth , http://yago-knowledge.org/resource/infobox/en/staticimagewidth
 hurlingchamp , http://yago-knowledge.org/resource/infobox/en/hurlingchamp
-province , http://yago-knowledge.org/resource/infobox/en/province
 areathirdyear , http://yago-knowledge.org/resource/infobox/en/areathirdyear
 hasOfficialLanguage , http://yago-knowledge.org/resource/hasOfficialLanguage
 blankemblemsize , http://yago-knowledge.org/resource/infobox/en/blankemblemsize
@@ -303,7 +302,6 @@ countryadmindivisionstitle , http://yago-knowledge.org/resource/infobox/en/count
 legaljuris , http://yago-knowledge.org/resource/infobox/en/legaljuris
 replace , http://yago-knowledge.org/resource/infobox/en/replace
 poverty , http://yago-knowledge.org/resource/infobox/en/poverty
-nation , http://yago-knowledge.org/resource/infobox/en/nation
 flag , http://yago-knowledge.org/resource/infobox/en/flag
 county , http://yago-knowledge.org/resource/infobox/en/county
 hasPopulationDensity , http://yago-knowledge.org/resource/hasPopulationDensity
@@ -361,7 +359,6 @@ elevationmaxm , http://yago-knowledge.org/resource/infobox/en/elevationmaxm
 isConnectedTo , http://yago-knowledge.org/resource/isConnectedTo
 rlengthf , http://yago-knowledge.org/resource/infobox/en/rlengthf
 titlerepresentative , http://yago-knowledge.org/resource/infobox/en/titlerepresentative
-link , http://yago-knowledge.org/resource/infobox/en/link
 lcapital , http://yago-knowledge.org/resource/infobox/en/lcapital
 populationurban , http://yago-knowledge.org/resource/infobox/en/populationurban
 onscode , http://yago-knowledge.org/resource/infobox/en/onscode
@@ -441,7 +438,6 @@ elevationminft , http://yago-knowledge.org/resource/infobox/en/elevationminft
 membershiptype , http://yago-knowledge.org/resource/infobox/en/membershiptype
 latitude , http://yago-knowledge.org/resource/infobox/en/latitude
 ldevelopmentregion , http://yago-knowledge.org/resource/infobox/en/ldevelopmentregion
-state , http://yago-knowledge.org/resource/infobox/en/state
 latminutes , http://yago-knowledge.org/resource/infobox/en/latminutes
 febprecipitationdays , http://yago-knowledge.org/resource/infobox/en/febprecipitationdays
 highestmount , http://yago-knowledge.org/resource/infobox/en/highestmount
@@ -658,7 +654,6 @@ areametrosqmi , http://yago-knowledge.org/resource/infobox/en/areametrosqmi
 areawatersqkm , http://yago-knowledge.org/resource/infobox/en/areawatersqkm
 populationref , http://yago-knowledge.org/resource/infobox/en/populationref
 owner , http://yago-knowledge.org/resource/infobox/en/owner
-realm , http://yago-knowledge.org/resource/infobox/en/realm
 platforms , http://yago-knowledge.org/resource/infobox/en/platforms
 densitythirdyear , http://yago-knowledge.org/resource/infobox/en/densitythirdyear
 unitaryengland , http://yago-knowledge.org/resource/infobox/en/unitaryengland
@@ -792,7 +787,6 @@ febprecipitationmm , http://yago-knowledge.org/resource/infobox/en/febprecipitat
 coatofarmssize , http://yago-knowledge.org/resource/infobox/en/coatofarmssize
 seattype , http://yago-knowledge.org/resource/infobox/en/seattype
 governmentfootnotes , http://yago-knowledge.org/resource/infobox/en/governmentfootnotes
-country , http://yago-knowledge.org/resource/infobox/en/country
 populationdate , http://yago-knowledge.org/resource/infobox/en/populationdate
 gdp , http://yago-knowledge.org/resource/infobox/en/gdp
 category , http://yago-knowledge.org/resource/infobox/en/category

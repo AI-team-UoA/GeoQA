@@ -261,11 +261,14 @@ public class TagMeDisambiguate extends QanaryComponent {
 
 			for (NedAnnotation ann : annotations) {
 				if (ann.getTitle() != null && !ann.getTitle().contains("(")) {
+
+					System.out.println("title : "+ann.getTitle());
 					int cnt = 0;
 					Link l = new Link();
 					l.link = this.yagoLink + ann.getTitle();
 //					l.link = l.link.replaceAll("&amp;","&");
 //					l.link = l.link.replaceAll(" ","_");
+
 
 					if(l.link.contains("&amp;")){
 						l.link = l.link.replaceAll("&amp;","&");
@@ -275,13 +278,17 @@ public class TagMeDisambiguate extends QanaryComponent {
 					}
 
 					System.out.println("l.link : "+l.link);
-					l.linkCount = getNoOfLinks(countQuery1 + " <" + l.link + "> " + countQuery2,
+					l.y2glinkCount = getNoOfLinks(countQuery1 + " <" + l.link + "> " + countQuery2,
 							yago2geoOnlyEndpoint);
+					l.y2LinkCount = getNoOfLinks(countQuery1 + " <" + l.link + "> " + countQuery2,
+								yagoEndpoint);
+
 					l.begin = ann.getStart();
 					l.end = ann.getEnd();
-					String entlst = myQuestion.substring(l.begin,l.end);
-					System.out.println("count of :"+ l.link +" = "+l.linkCount);
-					if(l.linkCount<1){
+					System.out.println("count of :"+ l.link +" = "+l.y2glinkCount + " :: "+l.y2LinkCount);
+					if(ann.getTitle().contains("_GAA"))
+						l.y2glinkCount=0;
+					if(l.y2glinkCount<1){
 						String ent_title = ann.getTitle();
 						for(String predicate:namePredicates){
 							if(ent_title.contains("_")){
@@ -310,45 +317,26 @@ public class TagMeDisambiguate extends QanaryComponent {
 								for(String ent: entitiesfromy2g){
 									Link ll = new Link();
 									ll.link = ent;
-									ll.linkCount = getNoOfLinks(countQuery1 + " <" + ll.link + "> " + countQuery2,
+									ll.y2glinkCount = getNoOfLinks(countQuery1 + " <" + ll.link + "> " + countQuery2,
 											yago2geoOnlyEndpoint);
+
+									ll.y2LinkCount = l.y2LinkCount;
 									ll.begin = ann.getStart();
 									ll.end = ann.getEnd();
 									links.add(ll);
 
 									System.out.println("ADDING LINK for (" + input.substring(l.begin, l.end) + "):" + l.begin + " "
 											+ l.end + " " + l.link);
-									System.out.println("count of :"+ l.link +" = "+l.linkCount);
+									System.out.println("count of :"+ l.link +" = "+l.y2glinkCount+"  :: "+l.y2LinkCount);
 									cnt++;
 								}
 							}
 						}
-						/*if(cnt<1){
-							for(String predicate:namePredicates){
-								ent_title = myQuestion.substring(ann.getStart(), ann.getEnd());
-								if(ent_title.contains("_")){
-									ent_title = ent_title.replaceAll("_"," ");
-								}
-								List<String> entitiesfromy2g = getEntitesWithName("select distinct ?x where { ?x <"+predicate+"> \""+ent_title+"\"@en } ",yago2geoOnlyEndpoint);
-								if(entitiesfromy2g.size()>0){
-									for(String ent: entitiesfromy2g){
-										l.link = ent;
-										l.linkCount = getNoOfLinks(countQuery1 + " <" + l.link + "> " + countQuery2,
-												yago2geoOnlyEndpoint);
-										links.add(l);
-										System.out.println("ADDING LINK for (" + input.substring(l.begin, l.end) + "):" + l.begin + " "
-												+ l.end + " " + l.link);
-										System.out.println("count of :"+ l.link +" = "+l.linkCount);
-										cnt++;
-									}
-								}
-							}
-						}*/
-					} else{
-						links.add(l);
-						System.out.println("ADDING LINK for (" + input.substring(l.begin, l.end) + "):" + l.begin + " "
-								+ l.end + " " + l.link);
 					}
+					links.add(l);
+					System.out.println("ADDING LINK for (" + input.substring(l.begin, l.end) + "):" + l.begin + " "
+								+ l.end + " " + l.link);
+
 					cnt = 0;
 				}
 
@@ -357,109 +345,7 @@ public class TagMeDisambiguate extends QanaryComponent {
 				System.out.println("link : "+ll.link);
 			}
 			int cnt = 0;
-			/*for (String instance : entitiesList) {
-				if (StringUtils.isNumeric(instance))
-					continue;
-				String sparqlQuery = " select ?instance where { ?instance <http://www.app-lab.eu/osm/ontology#has_name> \""
-						+ instance + "\"^^<http://www.w3.org/2001/XMLSchema#string> . }";// ?instance ?p ?o . }";
 
-				List<String> instancesFromStrabonEndpoint = getInstances(sparqlQuery,yago2geoOnlyEndpoint);
-				for(String inst : instancesFromStrabonEndpoint){
-					Link l = new Link();
-					l.link = inst.trim();
-					// l.begin = lemmatize(myQuestion).indexOf(instance);
-					l.begin = myQuestion.indexOf(instance);
-					// l.end = lemmatize(myQuestion).indexOf(instance)+instance.length();
-					l.end = myQuestion.indexOf(instance) + instance.length();
-					l.linkCount = getNoOfLinks(countQuery1 + " <" + l.link + "> " + countQuery2,
-							yago2geoOnlyEndpoint);
-					links.add(l);
-					System.out.println("Question: " + myQuestion + " ::: " + inst.trim()
-							+ "== index : " + l.begin + " : " + l.end+"\t"+"\t 1 resultStringLength: "+instancesFromStrabonEndpoint.size());
-				}
-				*//*String host = "http://pyravlos1.di.uoa.gr/";
-				Integer port = 8080;
-				String appName = "geoqa/Query";
-				String query = sparqlQuery;
-				String format = "TSV";
-
-				SPARQLEndpoint endpoint = new SPARQLEndpoint(host, port, appName);
-				if (query.length() > 2) {
-					try {
-
-						EndpointResult result = endpoint.query(query,
-								(stSPARQLQueryResultFormat) stSPARQLQueryResultFormat.valueOf(format));
-
-						System.out.println("<----- Result ----->");
-						String resultString[] = result.getResponse().replaceAll("\n", "\n\t").split("\n");
-						for (int i = 1; i < resultString.length; i++) {
-							Link l = new Link();
-							l.link = resultString[i].trim();
-							// l.begin = lemmatize(myQuestion).indexOf(instance);
-							l.begin = myQuestion.indexOf(instance);
-							// l.end = lemmatize(myQuestion).indexOf(instance)+instance.length();
-							l.end = myQuestion.indexOf(instance) + instance.length();
-							l.linkCount = getNoOfLinks(countQuery1 + " <" + l.link + "> " + countQuery2,
-									"http://pyravlos1.di.uoa.gr:8080/geoqa/Query");
-							links.add(l);
-							System.out.println("Question: " + myQuestion + " ::: " + resultString[i].trim()
-									+ "== index : " + l.begin + " : " + l.end+"\t"+i+"\t 1 resultStringLength: "+resultString.length);
-						}
-
-						System.out.println("<----- Result ----->");
-
-					} catch (IOException e) {
-						e.printStackTrace();
-					}
-				}*//*
-				sparqlQuery = "select ?instance where { ?instance <http://www.app-lab.eu/gadm/ontology/hasName> \""
-						+ instance + "\"@en . }";// ?instance ?p ?o . }";
-//				query = sparqlQuery;
-				instancesFromStrabonEndpoint = getInstances(sparqlQuery,"http://pyravlos1.di.uoa.gr:8080/geoqa/Query");
-				for(String inst : instancesFromStrabonEndpoint){
-					Link l = new Link();
-					l.link = inst.trim();
-					// l.begin = lemmatize(myQuestion).indexOf(instance);
-					l.begin = myQuestion.indexOf(instance);
-					// l.end = lemmatize(myQuestion).indexOf(instance)+instance.length();
-					l.end = myQuestion.indexOf(instance) + instance.length();
-					l.linkCount = getNoOfLinks(countQuery1 + " <" + l.link + "> " + countQuery2,
-							yago2geoOnlyEndpoint);
-					links.add(l);
-					System.out.println("Question: " + myQuestion + " ::: " + inst.trim()
-							+ "== index : " + l.begin + " : " + l.end+"\t"+"\t 1 resultStringLength: "+instancesFromStrabonEndpoint.size());
-				}
-				*//*if (query.length() > 2) {
-					try {
-
-						EndpointResult result = endpoint.query(query,
-								(stSPARQLQueryResultFormat) stSPARQLQueryResultFormat.valueOf(format));
-
-						System.out.println("<----- Result ----->");
-						// System.out.println(result.getResponse().replaceAll("\n", "\n\t"));
-						String resultString[] = result.getResponse().replaceAll("\n", "\n\t").split("\n");
-
-						for (int i = 1; i < resultString.length; i++) {
-							Link l = new Link();
-							l.link = resultString[i].trim();
-							// l.begin = lemmatize(myQuestion).indexOf(instance);
-							l.begin = myQuestion.indexOf(instance);
-							// l.end = lemmatize(myQuestion).indexOf(instance)+instance.length();
-							l.end = myQuestion.indexOf(instance) + instance.length();
-							l.linkCount = getNoOfLinks(countQuery1 + " <" + l.link + "> " + countQuery2,
-									"http://pyravlos1.di.uoa.gr:8080/geoqa/Query");
-							links.add(l);
-							System.out.println("Question: " + myQuestion + " ::: " + resultString[i].trim()
-									+ "== index : " + l.begin + " : " + l.end +"\t"+i+"\t 2 resultStringLength: "+resultString.length);
-						}
-						System.out.println("<----- Result ----->");
-
-					} catch (IOException e) {
-						e.printStackTrace();
-					}
-				}*//*
-				cnt++;
-			}*/
 			// STEP4: Push the result of the component to the triplestore
 			String sparql;
 			logger.info("Apply vocabulary alignment on outgraph");
@@ -474,7 +360,8 @@ public class TagMeDisambiguate extends QanaryComponent {
 						+ "           oa:hasSelector  [ " + "                    a oa:TextPositionSelector ; "
 						+ "                    oa:start \"" + l.begin + "\"^^xsd:nonNegativeInteger ; "
 						+ "                    oa:end  \"" + l.end + "\"^^xsd:nonNegativeInteger;  "
-						+ "					   oa:linkcount \"" + l.linkCount + "\"^^xsd:nonNegativeInteger "
+						+ "					   oa:y2glinkcount \"" + l.y2glinkCount + "\"^^xsd:nonNegativeInteger; "
+						+ "                    oa:y2linkcount \"" + l.y2LinkCount +"\"^^xsd:nonNegativeInteger  "
 						+ "           ] " + "  ] . " + "  ?a oa:hasBody <" + l.link + "> ;"
 						+ "     oa:annotatedBy <http://TagMeDisambiguate> ; "
 						+ "	    oa:AnnotatedAt ?time  " + "}} " + "WHERE { " + "BIND (IRI(str(RAND())) AS ?a) ."
@@ -499,6 +386,7 @@ public class TagMeDisambiguate extends QanaryComponent {
 		public int begin;
 		public int end;
 		public String link;
-		public int linkCount;
+		public int y2glinkCount;
+		public int y2LinkCount;
 	}
 }

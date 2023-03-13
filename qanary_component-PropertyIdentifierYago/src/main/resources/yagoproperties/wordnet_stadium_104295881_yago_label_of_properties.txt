@@ -552,7 +552,6 @@ totalstadiumarea , http://yago-knowledge.org/resource/infobox/en/totalstadiumare
 videoboard , http://yago-knowledge.org/resource/infobox/en/videoboard
 flowrate , http://yago-knowledge.org/resource/infobox/en/flowrate
 hangul , http://yago-knowledge.org/resource/infobox/en/hangul
-country , http://yago-knowledge.org/resource/infobox/en/country
 accessdate , http://yago-knowledge.org/resource/infobox/en/accessdate
 seatingchart , http://yago-knowledge.org/resource/infobox/en/seatingchart
 decks , http://yago-knowledge.org/resource/infobox/en/decks

@@ -1029,7 +1029,6 @@ nearne , http://yago-knowledge.org/resource/infobox/en/nearne
 julhighf , http://yago-knowledge.org/resource/infobox/en/julhighf
 closestcity , http://yago-knowledge.org/resource/infobox/en/closestcity
 route , http://yago-knowledge.org/resource/infobox/en/route
-feature , http://yago-knowledge.org/resource/infobox/en/feature
 mayor , http://yago-knowledge.org/resource/infobox/en/mayor
 classicclimbs , http://yago-knowledge.org/resource/infobox/en/classicclimbs
 locations , http://yago-knowledge.org/resource/infobox/en/locations
@@ -1221,7 +1220,6 @@ facilities , http://yago-knowledge.org/resource/infobox/en/facilities
 mouth , http://yago-knowledge.org/resource/infobox/en/mouth
 openingseason , http://yago-knowledge.org/resource/infobox/en/openingseason
 blankinfo , http://yago-knowledge.org/resource/infobox/en/blankinfo
-cause , http://yago-knowledge.org/resource/infobox/en/cause
 canton , http://yago-knowledge.org/resource/infobox/en/canton
 seprecordhighf , http://yago-knowledge.org/resource/infobox/en/seprecordhighf
 nearse , http://yago-knowledge.org/resource/infobox/en/nearse

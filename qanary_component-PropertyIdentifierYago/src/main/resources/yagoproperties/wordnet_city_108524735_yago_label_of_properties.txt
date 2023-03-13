@@ -339,7 +339,6 @@ octsun , http://yago-knowledge.org/resource/infobox/en/octsun
 replace , http://yago-knowledge.org/resource/infobox/en/replace
 janrecordlowf , http://yago-knowledge.org/resource/infobox/en/janrecordlowf
 yearprecipitationmm , http://yago-knowledge.org/resource/infobox/en/yearprecipitationmm
-nation , http://yago-knowledge.org/resource/infobox/en/nation
 flag , http://yago-knowledge.org/resource/infobox/en/flag
 countryclaimdivisionstitle , http://yago-knowledge.org/resource/infobox/en/countryclaimdivisionstitle
 verwaltungsverband , http://yago-knowledge.org/resource/infobox/en/verwaltungsverband
@@ -489,7 +488,6 @@ overseascollectivity , http://yago-knowledge.org/resource/infobox/en/overseascol
 area , http://yago-knowledge.org/resource/infobox/en/area
 latitudeminutes , http://yago-knowledge.org/resource/infobox/en/latitudeminutes
 lowestft , http://yago-knowledge.org/resource/infobox/en/lowestft
-shore , http://yago-knowledge.org/resource/infobox/en/shore
 archipelago , http://yago-knowledge.org/resource/infobox/en/archipelago
 leaderparty , http://yago-knowledge.org/resource/infobox/en/leaderparty
 architecture , http://yago-knowledge.org/resource/infobox/en/architecture
@@ -500,7 +498,6 @@ julmeanf , http://yago-knowledge.org/resource/infobox/en/julmeanf
 regiontypelocal , http://yago-knowledge.org/resource/infobox/en/regiontypelocal
 aprprecipitationinch , http://yago-knowledge.org/resource/infobox/en/aprprecipitationinch
 populationof , http://yago-knowledge.org/resource/infobox/en/populationof
-state , http://yago-knowledge.org/resource/infobox/en/state
 latminutes , http://yago-knowledge.org/resource/infobox/en/latminutes
 villagegampong , http://yago-knowledge.org/resource/infobox/en/villagegampong
 febprecipitationdays , http://yago-knowledge.org/resource/infobox/en/febprecipitationdays
@@ -825,7 +822,6 @@ areapercentage , http://yago-knowledge.org/resource/infobox/en/areapercentage
 populationurbanfootnotes , http://yago-knowledge.org/resource/infobox/en/populationurbanfootnotes
 augprecipitationdays , http://yago-knowledge.org/resource/infobox/en/augprecipitationdays
 blankinfo , http://yago-knowledge.org/resource/infobox/en/blankinfo
-cause , http://yago-knowledge.org/resource/infobox/en/cause
 municipalityname , http://yago-knowledge.org/resource/infobox/en/municipalityname
 elevationmaxft , http://yago-knowledge.org/resource/infobox/en/elevationmaxft
 idh , http://yago-knowledge.org/resource/infobox/en/idh
@@ -1475,7 +1471,6 @@ popyear , http://yago-knowledge.org/resource/infobox/en/popyear
 fish , http://yago-knowledge.org/resource/infobox/en/fish
 primarydeity , http://yago-knowledge.org/resource/infobox/en/primarydeity
 augraininch , http://yago-knowledge.org/resource/infobox/en/augraininch
-region , http://yago-knowledge.org/resource/infobox/en/region
 maptext , http://yago-knowledge.org/resource/infobox/en/maptext
 governor , http://yago-knowledge.org/resource/infobox/en/governor
 istat , http://yago-knowledge.org/resource/infobox/en/istat
@@ -1709,7 +1704,6 @@ seattype , http://yago-knowledge.org/resource/infobox/en/seattype
 cityrights , http://yago-knowledge.org/resource/infobox/en/cityrights
 governmentfootnotes , http://yago-knowledge.org/resource/infobox/en/governmentfootnotes
 places , http://yago-knowledge.org/resource/infobox/en/places
-country , http://yago-knowledge.org/resource/infobox/en/country
 enname , http://yago-knowledge.org/resource/infobox/en/enname
 imagsize , http://yago-knowledge.org/resource/infobox/en/imagsize
 gdp , http://yago-knowledge.org/resource/infobox/en/gdp

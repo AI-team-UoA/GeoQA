@@ -9,6 +9,7 @@ import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import com.robrua.nlp.bert.Bert;
 import info.debatty.java.stringsimilarity.JaroWinkler;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -50,7 +51,7 @@ public class ConceptIdentifier extends QanaryComponent {
 	static List<String> osmClass = new ArrayList<String>();
 	static List<String> commonClasses = new ArrayList<String>();
 	static Map<String, String> osmUriMap = new HashMap<String, String>();
-	static Map<String, String> DBpediaUrimap = new HashMap<String, String>();
+	static Map<String, String> yago2classesmap = new HashMap<String, String>();
 	static Map<String, String> yago2geoclassesmap = new HashMap<>();
 	public static void getCommonClass(Set<String> dbpediaConcepts) {
 
@@ -64,6 +65,23 @@ public class ConceptIdentifier extends QanaryComponent {
 
 	}
 
+	static float computeCosSimilarity(float[] a, float[] b) {
+		//todo: you might want to check they are the same size before proceeding
+
+		float dotProduct = 0;
+		float normASum = 0;
+		float normBSum = 0;
+
+		for(int i = 0; i < a.length; i ++) {
+			dotProduct += a[i] * b[i];
+			normASum += a[i] * a[i];
+			normBSum += b[i] * b[i];
+		}
+
+		float eucledianDist = (float) (Math.sqrt(normASum) * Math.sqrt(normBSum));
+		return dotProduct / eucledianDist;
+	}
+
 	public static void loadlistOfClasses(String fname){
 		try{
 			BufferedReader br = new BufferedReader(new FileReader(fname));
@@ -72,6 +90,21 @@ public class ConceptIdentifier extends QanaryComponent {
 				String splittedLine[] = line.split(",");
 //				System.out.println("0: "+splittedLine[0]+"\t 1:"+splittedLine[1]);
 				yago2geoclassesmap.put(splittedLine[0].trim(),splittedLine[1].trim());
+			}
+			br.close();
+		}catch (Exception e){
+			e.printStackTrace();
+		}
+	}
+
+	public static void loadlistOfyago2Classes(String fname){
+		try{
+			BufferedReader br = new BufferedReader(new FileReader(fname));
+			String line = "";
+			while((line = br.readLine())!=null){
+				String splittedLine[] = line.split(",");
+//				System.out.println("0: "+splittedLine[0]+"\t 1:"+splittedLine[1]);
+				yago2classesmap.put(splittedLine[0].trim(),splittedLine[1].trim());
 			}
 			br.close();
 		}catch (Exception e){
@@ -208,101 +241,14 @@ public class ConceptIdentifier extends QanaryComponent {
 		QanaryUtils myQanaryUtils = this.getUtils(myQanaryMessage);
 		QanaryQuestion<String> myQanaryQuestion = this.getQanaryQuestion(myQanaryMessage);
 		List<Concept> mappedConcepts = new ArrayList<Concept>();
-		List<Concept> DBpediaConcepts = new ArrayList<Concept>();
+		List<Concept> yago2mappedConcepts = new ArrayList<Concept>();
 		List<Concept> osmConcepts = new ArrayList<Concept>();
 		List<Concept> yago2geoConcepts = new ArrayList<>();
 		List<String> allNouns = getNouns(myQanaryQuestion.getTextualRepresentation());
-		loadlistOfClasses("qanary_component-ConceptIdentifierYago/src/main/resources/YAGO2geoClasses.txt");
-		// question string is required as input for the service call
-//		osmUriMap.put("District", "http://www.app-lab.eu/gadm/District");
-//		osmUriMap.put("County", "http://www.app-lab.eu/gadm/County");
-//		osmUriMap.put("Administrative County", "http://www.app-lab.eu/gadm/AdministrativeCounty");
-//		osmUriMap.put("London Borough", "http://www.app-lab.eu/gadm/LondonBorough");
-//		osmUriMap.put("MetropolitanCounty", "http://www.app-lab.eu/gadm/MetropolitanCounty");
-//		osmUriMap.put("Country", "http://www.app-lab.eu/gadm/HomeNation|ConstituentCountry");
-//		osmUriMap.put("Province", "http://www.app-lab.eu/gadm/Province");
-//		osmUriMap.put("Unitary District", "http://www.app-lab.eu/gadm/UnitaryDistrict");
-//		osmUriMap.put("Administrative Unit", "http://www.app-lab.eu/gadm/AdministrativeUnit");
-//		osmUriMap.put("Metropolitan Borough", "http://www.app-lab.eu/gadm/MetropolitanBorough");
-		/*osmUriMap.put("Site", "http://www.app-lab.eu/osm/Attraction");
-//		allMapConceptWord.put("point","http://yago-knowledge.org/resource/wordnet_mountain_109359803");
-		// -----------------------------------------------------------------------------------------
-		osmUriMap.put("Civil Parishor Community", "http://kr.di.uoa.gr/yago2geo/ontology/OS_CivilParishorCommunity");
-		osmUriMap.put("Unitary Authority Ward", "http://kr.di.uoa.gr/yago2geo/ontology/OS_UnitaryAuthorityWard");
-		osmUriMap.put("District Ward", "http://kr.di.uoa.gr/yago2geo/ontology/OS_DistrictWard");
-		osmUriMap.put("District", "http://kr.di.uoa.gr/yago2geo/ontology/OS_District");
-		osmUriMap.put("County", "http://kr.di.uoa.gr/yago2geo/ontology/OS_County");
-		osmUriMap.put("Metropolitan District Ward", "http://kr.di.uoa.gr/yago2geo/ontology/OS_MetropolitanDistrictWard");
-		osmUriMap.put("Unitary Authority", "http://kr.di.uoa.gr/yago2geo/ontology/OS_UnitaryAuthority");
-		osmUriMap.put("London Borough", "http://kr.di.uoa.gr/yago2geo/ontology/OS_LondonBorough");
-		osmUriMap.put("London Borough Ward", "http://kr.di.uoa.gr/yago2geo/ontology/OS_LondonBoroughWard");
-		osmUriMap.put("Metropolitan District", "http://kr.di.uoa.gr/yago2geo/ontology/OS_MetropolitanDistrict");
-		osmUriMap.put("GreaterLondon Authority", "http://kr.di.uoa.gr/yago2geo/ontology/OS_GreaterLondonAuthority");
-		osmUriMap.put("European Region", "http://kr.di.uoa.gr/yago2geo/ontology/OS_EuropeanRegion");
-		osmUriMap.put("Community Ward", "http://kr.di.uoa.gr/yago2geo/ontology/OS_COMMUNITYWARD");
-		osmUriMap.put("City Community Ward", "http://kr.di.uoa.gr/yago2geo/ontology/OS_CCOMMUNITYWARD");*/
-
-
-		/*BufferedReader br = new BufferedReader(new FileReader("qanary_component-ConceptIdentifierYago/src/main/resources/yago2geoOsmclasses.txt"));
-		String line = "";
-		while((line = br.readLine())!=null){
-			String splitted[] = line.split(",");
-			if(osmUriMap.containsKey(splitted[1])) {
-				System.out.println("updated class: "+ osmUriMap.get(splitted[1])+" to : "+splitted[1]);
-				osmClass.remove(osmUriMap.get(splitted[1]));
-				osmUriMap.remove(splitted[1]);
-			}
-			osmUriMap.put(splitted[1],splitted[0]);
-			osmClass.add(splitted[0]);
-		}
-		br.close();*/
-
+		loadlistOfClasses("D:\\GeoQA code\\intelij\\GeoQAUpdated2021\\qanary_component-ConceptIdentifierYago\\src\\main\\resources\\YAGO2geoClasses.txt");
+		loadlistOfyago2Classes("D:\\GeoQA code\\intelij\\GeoQAUpdated2021\\qanary_component-ConceptIdentifierYago\\src\\main\\resources\\yagoclasslist.txt");
 		//osmUriMap.remove("county");
-		/*
-		 * http://kr.di.uoa.gr/yago2geo/ontology/OS_CivilParishorCommunity
-		 * http://kr.di.uoa.gr/yago2geo/ontology/OS_UnitaryAuthorityWard
-		 * http://kr.di.uoa.gr/yago2geo/ontology/OS_DistrictWard
-		 * http://kr.di.uoa.gr/yago2geo/ontology/OS_District
-		 * http://kr.di.uoa.gr/yago2geo/ontology/OS_County
-		 * http://kr.di.uoa.gr/yago2geo/ontology/OS_MetropolitanDistrictWard
-		 * http://kr.di.uoa.gr/yago2geo/ontology/OS_UnitaryAuthority
-		 * http://kr.di.uoa.gr/yago2geo/ontology/OS_LondonBorough
-		 * http://kr.di.uoa.gr/yago2geo/ontology/OS_LondonBoroughWard
-		 * http://kr.di.uoa.gr/yago2geo/ontology/OS_MetropolitanDistrict
-		 * http://kr.di.uoa.gr/yago2geo/ontology/OS_GreaterLondonAuthority
-		 * http://kr.di.uoa.gr/yago2geo/ontology/OS_EuropeanRegion
-		 * http://kr.di.uoa.gr/yago2geo/ontology/OS_COMMUNITYWARD
-		 * http://kr.di.uoa.gr/yago2geo/ontology/OS_COMMUNITY
-		 * http://kr.di.uoa.gr/yago2geo/ontology/OS_CCOMMUNITY
-		 * http://kr.di.uoa.gr/yago2geo/ontology/GAG_DecentralizedAdministration
-		 * http://kr.di.uoa.gr/yago2geo/ontology/GAG_Municipality
-		 * http://kr.di.uoa.gr/yago2geo/ontology/GAG_MunicipalUnit
-		 * http://kr.di.uoa.gr/yago2geo/ontology/GAG_Region
-		 * http://kr.di.uoa.gr/yago2geo/ontology/GAG_RegionalUnit
-		 * http://kr.di.uoa.gr/yago2geo/ontology/GAG_MunicipalCommunity
-		 * http://kr.di.uoa.gr/yago2geo/ontology/GADM_1stOrder_AdministrativeUnit
-		 * http://kr.di.uoa.gr/yago2geo/ontology/GADM_2ndOrder_AdministrativeUnit
-		 * http://kr.di.uoa.gr/yago2geo/ontology/GADM_3rdOrder_AdministrativeUnit
-		 * http://kr.di.uoa.gr/yago2geo/ontology/GADM_4thOrder_AdministrativeUnit
-		 * http://kr.di.uoa.gr/yago2geo/ontology/GADM_5thOrder_AdministrativeUnit
-		 * http://kr.di.uoa.gr/yago2geo/ontology/GADM_6thOrder_AdministrativeUnit
-		 * http://kr.di.uoa.gr/yago2geo/ontology/OSM_forest
-http://kr.di.uoa.gr/yago2geo/ontology/OSM_park
-http://kr.di.uoa.gr/yago2geo/ontology/OSM_nature_reserve
-http://kr.di.uoa.gr/yago2geo/ontology/OSM_lake
-http://kr.di.uoa.gr/yago2geo/ontology/OSM_beach
-http://kr.di.uoa.gr/yago2geo/ontology/OSM_bay
-http://kr.di.uoa.gr/yago2geo/ontology/OSM_reservoir
-http://kr.di.uoa.gr/yago2geo/ontology/OSM_lagoon
-http://kr.di.uoa.gr/yago2geo/ontology/OSM_oxbow
-http://kr.di.uoa.gr/yago2geo/ontology/OSM_village
-http://kr.di.uoa.gr/yago2geo/ontology/OSM_locality
-http://kr.di.uoa.gr/yago2geo/ontology/OSM_town
-http://kr.di.uoa.gr/yago2geo/ontology/OSM_island
-http://kr.di.uoa.gr/yago2geo/ontology/OSM_city
-http://kr.di.uoa.gr/yago2geo/ontology/OSM_stream
-http://kr.di.uoa.gr/yago2geo/ontology/OSM_canal
-		 */
+		Bert bert = Bert.load("bert-cased-L-12-H-768-A-12");
 		String myQuestion = lemmatize(myQanaryQuestion.getTextualRepresentation());
 
 		String myQuestionNl = myQanaryQuestion.getTextualRepresentation();
@@ -313,70 +259,7 @@ http://kr.di.uoa.gr/yago2geo/ontology/OSM_canal
 		WordNetAnalyzer wordNet = new WordNetAnalyzer("qanary_component-ConceptIdentifierYago/src/main/resources/WordNet-3.0/dict");
 		osmUriMap.remove("county");
 
-		/*for (String conceptLabel : allMapConceptWord.keySet()) {
-			// logger.info("The word: {} question : {}", conceptLabel,
-			// myQuestion);
 
-			ArrayList<String> wordNetSynonyms = wordNet.getSynonyms(conceptLabel);
-			*//*for (String synonym : wordNetSynonyms) {
-				for (String nounWord : allNouns) {
-					Pattern p = Pattern.compile("\\b" + synonym + "\\b", Pattern.CASE_INSENSITIVE);
-					Matcher m = p.matcher(nounWord);
-					if (m.find()) {
-						for (String s : allMapConceptWord.get(conceptLabel.replaceAll(" ", "_"))) {
-							Concept concept = new Concept();
-							int begin = myQuestion.toLowerCase().indexOf(synonym.toLowerCase());
-							concept.setBegin(begin);
-							concept.setEnd(begin + synonym.length());
-							concept.setURI(s);
-							mappedConcepts.add(concept);
-							System.out.println(
-									"Identified Concepts: yago:" + conceptLabel + " ============================"
-											+ "Synonym inside question is: " + synonym + " ===================");
-							logger.info("identified concept: concept={} : {} : {}", concept.toString(), myQuestion,
-									conceptLabel);
-						}
-						// TODO: remove break and collect all appearances of
-						// concepts
-						// TODO: implement test case "City nearby Forest
-						// nearby
-						// River"
-						break;
-					}
-				}
-			}*//*
-		}*/
-
-		/*for (String conceptLabel : osmUriMap.keySet()) {
-			// logger.info("The word: {} question : {}", conceptLabel,
-			// myQuestion);
-
-			ArrayList<String> wordNetSynonyms = wordNet.getSynonyms(conceptLabel);
-			for (String synonym : wordNetSynonyms) {
-				for (String nounWord : allNouns) {
-					Pattern p = Pattern.compile("\\b" + synonym + "\\b", Pattern.CASE_INSENSITIVE);
-					Matcher m = p.matcher(nounWord);
-					if (m.find()) {
-						Concept concept = new Concept();
-						int begin = myQuestion.toLowerCase().indexOf(synonym.toLowerCase());
-						concept.setBegin(begin);
-						concept.setEnd(begin + synonym.length());
-						concept.setURI(osmUriMap.get(conceptLabel.replaceAll(" ", "_")));
-						mappedConcepts.add(concept);
-						System.out.println("Identified Concepts: osm:" + conceptLabel + " ============================"
-								+ "Synonym inside question is: " + synonym + " ===================");
-						logger.info("identified concept: concept={} : {} : {}", concept.toString(), myQuestion,
-								concept.getURI());
-						// TODO: remove break and collect all appearances of
-						// concepts
-						// TODO: implement test case "City nearby Forest
-						// nearby
-						// River"
-						break;
-					}
-				}
-			}
-		}*/
 		//sliding window for string similarity
 		boolean falgFound = false;
 		for (String conceptLabel : yago2geoclassesmap.keySet()) {
@@ -405,11 +288,85 @@ http://kr.di.uoa.gr/yago2geo/ontology/OSM_canal
 					break;
 				}
 			}
+
+			for(String ngramwords: ngramsOfquestion){
+				float[] emb1 = bert.embedSequence(conceptLabel.toLowerCase(Locale.ROOT));
+				float[] emb2 = bert.embedSequence(ngramwords.toLowerCase(Locale.ROOT));
+				float similarityEmbSeq = computeCosSimilarity(emb1, emb2);
+				System.out.println("got similarity for  ngram :"+ngramwords+"\t and concept label : "+conceptLabel+"\t is = "+similarityEmbSeq);
+				if(similarityEmbSeq>0.95){
+					System.out.println("====================got similarity more than 95 for  ngram :"+ngramwords+"\t and concept label : "+conceptLabel);
+					falgFound = true;
+					Concept concept = new Concept();
+					int begin = myQuestion.toLowerCase().indexOf(ngramwords.toLowerCase());
+					concept.setBegin(begin);
+					concept.setEnd(begin + ngramwords.length());
+					concept.setURI(yago2geoclassesmap.get(conceptLabel));
+					mappedConcepts.add(concept);
+					System.out.println("Identified Concepts: yago2geo:" + conceptLabel + " ============================"
+							+ "ngram inside question is: " + ngramwords + " ===================");
+					logger.info("identified concept: concept={} : {} : {}", concept.toString(), myQuestion,
+							concept.getURI());
+					break;
+				}
+			}
+			/*if(falgFound){
+				break;
+			}*/
+		}
+		for (String conceptLabel : yago2classesmap.keySet()) {
+			int wordCount = wordcount(conceptLabel);
+//			System.out.println("total words :"+wordCount+"\t in : "+conceptLabel);
+//			String wordsOdSentence[] = myQuestionNl.split(" ");
+			List<String> ngramsOfquestion = ngrams(wordCount,myQuestion);
+			JaroWinkler jw = new JaroWinkler();
+			double similarityScore = 0.0;
+			for(String ngramwords: ngramsOfquestion){
+				similarityScore = jw.similarity(ngramwords.toLowerCase(Locale.ROOT),conceptLabel.toLowerCase(Locale.ROOT));
+				System.out.println("got similarity for  ngram :"+ngramwords+"\t and concept label : "+conceptLabel+"\t is = "+similarityScore);
+				if(similarityScore>0.99){
+					System.out.println("====================got similarity more than 95 for  ngram :"+ngramwords+"\t and concept label : "+conceptLabel);
+					falgFound = true;
+					Concept concept = new Concept();
+					int begin = myQuestion.toLowerCase().indexOf(ngramwords.toLowerCase());
+					concept.setBegin(begin);
+					concept.setEnd(begin + ngramwords.length());
+					concept.setURI(yago2classesmap.get(conceptLabel));
+					yago2mappedConcepts.add(concept);
+					System.out.println("Identified Concepts: yago2:" + conceptLabel + " ============================"
+							+ "ngram inside question is: " + ngramwords + " ===================");
+					logger.info("identified concept: concept={} : {} : {}", concept.toString(), myQuestion,
+							concept.getURI());
+					break;
+				}
+			}
+			for(String ngramwords: ngramsOfquestion){
+				float[] emb1 = bert.embedSequence(conceptLabel.toLowerCase(Locale.ROOT));
+				float[] emb2 = bert.embedSequence(ngramwords.toLowerCase(Locale.ROOT));
+				float similarityEmbSeq = computeCosSimilarity(emb1, emb2);
+				System.out.println("got similarity for  ngram :"+ngramwords+"\t and concept label : "+conceptLabel+"\t is = "+similarityEmbSeq);
+				if(similarityEmbSeq>0.95){
+					System.out.println("====================got similarity more than 95 for  ngram :"+ngramwords+"\t and concept label : "+conceptLabel);
+					falgFound = true;
+					Concept concept = new Concept();
+					int begin = myQuestion.toLowerCase().indexOf(ngramwords.toLowerCase());
+					concept.setBegin(begin);
+					concept.setEnd(begin + ngramwords.length());
+					concept.setURI(yago2classesmap.get(conceptLabel));
+					yago2mappedConcepts.add(concept);
+					System.out.println("EmbdSeq Cosine simi Identified Concepts: yago2:" + conceptLabel + " ============================"
+							+ "ngram inside question is: " + ngramwords + " ===================");
+					logger.info("identified concept: concept={} : {} : {}", concept.toString(), myQuestion,
+							concept.getURI());
+					break;
+				}
+			}
 			/*if(falgFound){
 				break;
 			}*/
 		}
 		if(!falgFound){
+
 			for (String conceptLabel : yago2geoclassesmap.keySet()) {
 //			System.out.println("============Got Inside==============");
 				ArrayList<String> wordNetSynonyms = wordNet.getSynonyms(conceptLabel);
@@ -434,6 +391,35 @@ http://kr.di.uoa.gr/yago2geo/ontology/OSM_canal
 					}
 				}
 			}
+
+			for (String conceptLabel : yago2geoclassesmap.keySet()) {
+//			System.out.println("============Got Inside==============");
+				ArrayList<String> wordNetSynonyms = wordNet.getSynonyms(conceptLabel);
+				for (String synonym : wordNetSynonyms) {
+					for (String nounWord : allNouns) {
+						float[] emb1 = bert.embedSequence(nounWord.toLowerCase(Locale.ROOT));
+						float[] emb2 = bert.embedSequence(synonym.toLowerCase(Locale.ROOT));
+//						Pattern p = Pattern.compile("\\b" + synonym + "\\b", Pattern.CASE_INSENSITIVE);
+//						Matcher m = p.matcher(nounWord);
+//					System.out.println("for synonym : "+synonym+"\t noun word : "+nounWord);
+						float similarityEmbSeq = computeCosSimilarity(emb1, emb2);
+						if (similarityEmbSeq>0.95) {
+							Concept concept = new Concept();
+							int begin = myQuestionNl.toLowerCase().indexOf(synonym.toLowerCase());
+							concept.setBegin(begin);
+							concept.setEnd(begin + synonym.length());
+							concept.setURI(yago2geoclassesmap.get(conceptLabel));
+							mappedConcepts.add(concept);
+							System.out.println(" EmbdSeq Cosine simi Identified Concepts: yago2geo:" + conceptLabel + " ============================"
+									+ "Synonym inside question is: " + synonym + " ===================");
+							logger.info("identified concept: concept={} : {} : {}", concept.toString(), myQuestion,
+									concept.getURI());
+							break;
+						}
+					}
+				}
+			}
+
 		}
 
 
@@ -510,6 +496,37 @@ http://kr.di.uoa.gr/yago2geo/ontology/OSM_canal
 			myQanaryUtils.updateTripleStore(sparql, myQanaryQuestion.getEndpoint().toString());
 		}
 
+		for (Concept mappedConcept : yago2mappedConcepts) {
+			// insert data in QanaryMessage.outgraph
+			logger.info("apply vocabulary alignment on outgraph: {}", myQanaryQuestion.getOutGraph());
+			String sparql = "" //
+					+ "PREFIX qa: <http://www.wdaqua.eu/qa#> " //
+					+ "PREFIX oa: <http://www.w3.org/ns/openannotation/core/> " //
+					+ "PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> " //
+					+ "INSERT { " //
+					+ "GRAPH <" + myQanaryQuestion.getOutGraph() + "> { " //
+					+ "  ?a a qa:AnnotationOfConcepts . " //
+					+ "  ?a oa:hasTarget [ " //
+					+ "           a oa:SpecificResource; " //
+					+ "             oa:hasSource    ?source; " //
+					+ "             oa:hasSelector  [ " //
+					+ "                    a oa:TextPositionSelector ; " //
+					+ "                    oa:start \"" + mappedConcept.getBegin() + "\"^^xsd:nonNegativeInteger ; " //
+					+ "                    oa:end   \"" + mappedConcept.getEnd() + "\"^^xsd:nonNegativeInteger  " //
+					+ "             ] " //
+					+ "  ] . " //
+					+ "  ?a oa:hasBody ?mappedConceptURI;" //
+					+ "     oa:annotatedBy qa:ConceptIdentifier; " //
+					+ "}} " //
+					+ "WHERE { " //
+					+ "  BIND (IRI(str(RAND())) AS ?a) ."//
+					+ "  BIND (now() AS ?time) ." //
+					+ "  BIND (<" + mappedConcept.getURI() + "> AS ?mappedConceptURI) ." //
+					+ "  BIND (<" + myQanaryQuestion.getUri() + "> AS ?source  ) ." //
+					+ "}";
+			logger.debug("Sparql query to add concepts to Qanary triplestore: {}", sparql);
+			myQanaryUtils.updateTripleStore(sparql, myQanaryQuestion.getEndpoint().toString());
+		}
 		return myQanaryMessage;
 	}
 

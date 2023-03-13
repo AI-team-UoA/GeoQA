@@ -49,3 +49,4 @@
  city,http://kr.di.uoa.gr/yago2geo/ontology/OSM_city 
  stream,http://kr.di.uoa.gr/yago2geo/ontology/OSM_stream 
  canal,http://kr.di.uoa.gr/yago2geo/ontology/OSM_canal
+ State,http://kr.di.uoa.gr/yago2geo/ontology/NBD_State

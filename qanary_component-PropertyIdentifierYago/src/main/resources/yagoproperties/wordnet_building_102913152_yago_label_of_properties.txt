@@ -58,7 +58,6 @@ posttown , http://yago-knowledge.org/resource/infobox/en/posttown
 est , http://yago-knowledge.org/resource/infobox/en/est
 designatedothername , http://yago-knowledge.org/resource/infobox/en/designatedothername
 chapel , http://yago-knowledge.org/resource/infobox/en/chapel
-province , http://yago-knowledge.org/resource/infobox/en/province
 dedication , http://yago-knowledge.org/resource/infobox/en/dedication
 restrictionin , http://yago-knowledge.org/resource/infobox/en/restrictionin
 gridreference , http://yago-knowledge.org/resource/infobox/en/gridreference
@@ -361,7 +360,6 @@ carspertrain , http://yago-knowledge.org/resource/infobox/en/carspertrain
 bishop , http://yago-knowledge.org/resource/infobox/en/bishop
 lift , http://yago-knowledge.org/resource/infobox/en/lift
 beganoperation , http://yago-knowledge.org/resource/infobox/en/beganoperation
-parishdeaneryarchdeaconryepiscopalareaarchdiocesemetropolitandioceseprovincepresbyterysynodcircuitdistrict , http://yago-knowledge.org/resource/infobox/en/parishdeaneryarchdeaconryepiscopalareaarchdiocesemetropolitandioceseprovincepresbyterysynodcircuitdistrict
 honcurate , http://yago-knowledge.org/resource/infobox/en/honcurate
 tradchi , http://yago-knowledge.org/resource/infobox/en/tradchi
 numvolunteers , http://yago-knowledge.org/resource/infobox/en/numvolunteers
@@ -402,7 +400,6 @@ identificationsymbollabel , http://yago-knowledge.org/resource/infobox/en/identi
 anlauflänge , http://yago-knowledge.org/resource/infobox/en/anlauflänge
 alternatename , http://yago-knowledge.org/resource/infobox/en/alternatename
 slowest , http://yago-knowledge.org/resource/infobox/en/slowest
-nation , http://yago-knowledge.org/resource/infobox/en/nation
 election , http://yago-knowledge.org/resource/infobox/en/election
 commissioned , http://yago-knowledge.org/resource/infobox/en/commissioned
 genre , http://yago-knowledge.org/resource/infobox/en/genre
@@ -486,7 +483,6 @@ rlengthf , http://yago-knowledge.org/resource/infobox/en/rlengthf
 atrium , http://yago-knowledge.org/resource/infobox/en/atrium
 enginetype , http://yago-knowledge.org/resource/infobox/en/enginetype
 focalheight , http://yago-knowledge.org/resource/infobox/en/focalheight
-link , http://yago-knowledge.org/resource/infobox/en/link
 religiousaffiliation , http://yago-knowledge.org/resource/infobox/en/religiousaffiliation
 restored , http://yago-knowledge.org/resource/infobox/en/restored
 line , http://yago-knowledge.org/resource/infobox/en/line
@@ -585,7 +581,6 @@ yearrestored , http://yago-knowledge.org/resource/infobox/en/yearrestored
 bhattaraka , http://yago-knowledge.org/resource/infobox/en/bhattaraka
 architecture , http://yago-knowledge.org/resource/infobox/en/architecture
 organist , http://yago-knowledge.org/resource/infobox/en/organist
-state , http://yago-knowledge.org/resource/infobox/en/state
 latminutes , http://yago-knowledge.org/resource/infobox/en/latminutes
 associate , http://yago-knowledge.org/resource/infobox/en/associate
 otherlocations , http://yago-knowledge.org/resource/infobox/en/otherlocations
@@ -2053,7 +2048,6 @@ serversguild , http://yago-knowledge.org/resource/infobox/en/serversguild
 cercle , http://yago-knowledge.org/resource/infobox/en/cercle
 prathyaksham , http://yago-knowledge.org/resource/infobox/en/prathyaksham
 fundedby , http://yago-knowledge.org/resource/infobox/en/fundedby
-country , http://yago-knowledge.org/resource/infobox/en/country
 indo , http://yago-knowledge.org/resource/infobox/en/indo
 designarchitect , http://yago-knowledge.org/resource/infobox/en/designarchitect
 emergency , http://yago-knowledge.org/resource/infobox/en/emergency

@@ -98,6 +98,16 @@
 			<artifactId>java-string-similarity</artifactId>
 			<version>RELEASE</version>
 		</dependency>
+		<dependency>
+			<groupId>com.robrua.nlp</groupId>
+			<artifactId>easy-bert</artifactId>
+			<version>1.0.3</version>
+		</dependency>
+		<dependency>
+			<groupId>com.robrua.nlp.models</groupId>
+			<artifactId>easy-bert-cased-L-12-H-768-A-12</artifactId>
+			<version>1.0.0</version>
+		</dependency>
 	</dependencies>
 	<build>
 		<plugins>

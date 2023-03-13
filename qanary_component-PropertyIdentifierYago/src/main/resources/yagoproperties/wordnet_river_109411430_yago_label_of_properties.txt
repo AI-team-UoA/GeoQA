@@ -132,7 +132,6 @@ sourcelatitude , http://yago-knowledge.org/resource/infobox/en/sourcelatitude
 spillwaytype , http://yago-knowledge.org/resource/infobox/en/spillwaytype
 startpoint , http://yago-knowledge.org/resource/infobox/en/startpoint
 startwork , http://yago-knowledge.org/resource/infobox/en/startwork
-distance , http://yago-knowledge.org/resource/infobox/en/distance
 staticimagename , http://yago-knowledge.org/resource/infobox/en/staticimagename
 latns , http://yago-knowledge.org/resource/infobox/en/latns
 creator , http://yago-knowledge.org/resource/infobox/en/creator

@@ -137,7 +137,7 @@ public enum GeospatialRelation {
 	}, CROSSES {
 		@Override
 		public String[] getLabels() {
-			return new String[]{"crosses", "cross","flows","flow","on"};
+			return new String[]{"crosses", "cross","flows","flow","on","pass"};
 		}
 		@Override
 		public String getURI() {

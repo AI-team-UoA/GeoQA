@@ -321,7 +321,6 @@ isoregion , http://yago-knowledge.org/resource/infobox/en/isoregion
 elevationmaxm , http://yago-knowledge.org/resource/infobox/en/elevationmaxm
 domestic , http://yago-knowledge.org/resource/infobox/en/domestic
 rlengthf , http://yago-knowledge.org/resource/infobox/en/rlengthf
-link , http://yago-knowledge.org/resource/infobox/en/link
 firstascent , http://yago-knowledge.org/resource/infobox/en/firstascent
 builder , http://yago-knowledge.org/resource/infobox/en/builder
 populationurban , http://yago-knowledge.org/resource/infobox/en/populationurban

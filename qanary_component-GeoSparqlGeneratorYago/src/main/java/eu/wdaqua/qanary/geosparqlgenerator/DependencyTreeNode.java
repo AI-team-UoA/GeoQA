@@ -11,9 +11,6 @@ import eu.wdaqua.qanary.geosparqlgenerator.GeoSparqlGenerator.Entity;
 import eu.wdaqua.qanary.geosparqlgenerator.GeoSparqlGenerator.Property;
 import eu.wdaqua.qanary.geosparqlgenerator.GeoSparqlGenerator.SpatialRelation;
 
-/**
- * Created by Tomer on 2015-10-28.
- */
 public class DependencyTreeNode {
 	public DependencyTreeNode m_parent;
 	public String m_name;
