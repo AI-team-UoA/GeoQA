@@ -23,7 +23,13 @@
 		<docker.image.name>qanary_component-propertyidentifier</docker.image.name>
 		<dockerfile-maven-version>1.4.13</dockerfile-maven-version>
 	</properties>
-
+	<repositories>
+		<repository>
+			<id>jitpack.io</id>
+			<name>jitpack</name>
+			<url>https://jitpack.io</url>
+		</repository>
+	</repositories>
 	<dependencies>
 		<dependency>
 			<groupId>eu.wdaqua.qanary</groupId>
