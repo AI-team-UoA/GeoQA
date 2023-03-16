@@ -11,6 +11,7 @@ import java.util.regex.Pattern;
 
 import com.robrua.nlp.bert.Bert;
 import eu.wdaqua.qanary.utils.CoreNLPUtilities;
+import eu.wdaqua.qanary.utils.NeuralUtilities;
 import info.debatty.java.stringsimilarity.JaroWinkler;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -56,23 +57,6 @@ public class ConceptIdentifier extends QanaryComponent {
 			}
 		}
 
-	}
-
-	static float computeCosSimilarity(float[] a, float[] b) {
-		//todo: you might want to check they are the same size before proceeding
-
-		float dotProduct = 0;
-		float normASum = 0;
-		float normBSum = 0;
-
-		for(int i = 0; i < a.length; i ++) {
-			dotProduct += a[i] * b[i];
-			normASum += a[i] * a[i];
-			normBSum += b[i] * b[i];
-		}
-
-		float eucledianDist = (float) (Math.sqrt(normASum) * Math.sqrt(normBSum));
-		return dotProduct / eucledianDist;
 	}
 
 	public static void loadlistOfClasses(String fname){
@@ -235,7 +219,7 @@ public class ConceptIdentifier extends QanaryComponent {
 			for(String ngramwords: ngramsOfquestion){
 				float[] emb1 = bert.embedSequence(conceptLabel.toLowerCase(Locale.ROOT));
 				float[] emb2 = bert.embedSequence(ngramwords.toLowerCase(Locale.ROOT));
-				float similarityEmbSeq = computeCosSimilarity(emb1, emb2);
+				float similarityEmbSeq = NeuralUtilities.computeCosSimilarity(emb1, emb2);
 				System.out.println("got similarity for  ngram :"+ngramwords+"\t and concept label : "+conceptLabel+"\t is = "+similarityEmbSeq);
 				if(similarityEmbSeq>0.95){
 					System.out.println("====================got similarity more than 95 for  ngram :"+ngramwords+"\t and concept label : "+conceptLabel);
@@ -286,7 +270,7 @@ public class ConceptIdentifier extends QanaryComponent {
 			for(String ngramwords: ngramsOfquestion){
 				float[] emb1 = bert.embedSequence(conceptLabel.toLowerCase(Locale.ROOT));
 				float[] emb2 = bert.embedSequence(ngramwords.toLowerCase(Locale.ROOT));
-				float similarityEmbSeq = computeCosSimilarity(emb1, emb2);
+				float similarityEmbSeq = NeuralUtilities.computeCosSimilarity(emb1, emb2);
 				System.out.println("got similarity for  ngram :"+ngramwords+"\t and concept label : "+conceptLabel+"\t is = "+similarityEmbSeq);
 				if(similarityEmbSeq>0.95){
 					System.out.println("====================got similarity more than 95 for  ngram :"+ngramwords+"\t and concept label : "+conceptLabel);
@@ -345,7 +329,7 @@ public class ConceptIdentifier extends QanaryComponent {
 //						Pattern p = Pattern.compile("\\b" + synonym + "\\b", Pattern.CASE_INSENSITIVE);
 //						Matcher m = p.matcher(nounWord);
 //					System.out.println("for synonym : "+synonym+"\t noun word : "+nounWord);
-						float similarityEmbSeq = computeCosSimilarity(emb1, emb2);
+						float similarityEmbSeq = NeuralUtilities.computeCosSimilarity(emb1, emb2);
 						if (similarityEmbSeq>0.95) {
 							Concept concept = new Concept();
 							int begin = myQuestionNl.toLowerCase().indexOf(synonym.toLowerCase());

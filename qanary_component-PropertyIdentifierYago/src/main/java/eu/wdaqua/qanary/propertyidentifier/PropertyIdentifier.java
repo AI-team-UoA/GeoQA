@@ -15,6 +15,7 @@ import edu.stanford.nlp.trees.LabeledScoredConstituentFactory;
 import edu.stanford.nlp.trees.Tree;
 import edu.stanford.nlp.trees.TreeCoreAnnotations;
 import eu.wdaqua.qanary.utils.CoreNLPUtilities;
+import eu.wdaqua.qanary.utils.NeuralUtilities;
 import org.apache.jena.query.Query;
 import org.apache.jena.query.QueryExecution;
 import org.apache.jena.query.QueryExecutionFactory;
@@ -47,23 +48,6 @@ import eu.wdaqua.qanary.component.QanaryComponent;
  */
 public class PropertyIdentifier extends QanaryComponent {
 	private static final Logger logger = LoggerFactory.getLogger(PropertyIdentifier.class);
-
-	static float computeCosSimilarity(float[] a, float[] b) {
-		//todo: you might want to check they are the same size before proceeding
-
-		float dotProduct = 0;
-		float normASum = 0;
-		float normBSum = 0;
-
-		for(int i = 0; i < a.length; i ++) {
-			dotProduct += a[i] * b[i];
-			normASum += a[i] * a[i];
-			normBSum += b[i] * b[i];
-		}
-
-		float eucledianDist = (float) (Math.sqrt(normASum) * Math.sqrt(normBSum));
-		return dotProduct / eucledianDist;
-	}
 
 	public static boolean isAlphaNumeric(String s) {
 		return s != null && s.matches("^[a-zA-Z0-9]*$");
@@ -311,7 +295,7 @@ public class PropertyIdentifier extends QanaryComponent {
 								Bert bert = Bert.load("bert-cased-L-12-H-768-A-12");
 								float[] emb1 = bert.embedSequence(entry.getValue());
 								float[] emb2 = bert.embedSequence(synonym);
-								if ((computeCosSimilarity(emb1,emb2)>0.95) && !entry.getValue().equalsIgnoreCase("crosses") && !entry.getKey().contains("Wikipage")
+								if ((NeuralUtilities.computeCosSimilarity(emb1,emb2)>0.95) && !entry.getValue().equalsIgnoreCase("crosses") && !entry.getKey().contains("Wikipage")
 										&& !entry.getKey().equalsIgnoreCase("runs")
 										&& !entry.getKey().equalsIgnoreCase("south")
 										&& !entry.getKey().equalsIgnoreCase("number") && !synonym.equalsIgnoreCase("km") && !synonym.equalsIgnoreCase("of")
