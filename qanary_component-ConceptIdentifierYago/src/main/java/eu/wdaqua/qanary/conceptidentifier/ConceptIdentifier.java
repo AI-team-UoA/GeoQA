@@ -10,6 +10,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import com.robrua.nlp.bert.Bert;
+import eu.wdaqua.qanary.utils.CoreNLPUtilities;
 import info.debatty.java.stringsimilarity.JaroWinkler;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -19,14 +20,6 @@ import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
-import edu.stanford.nlp.ling.CoreAnnotations.LemmaAnnotation;
-import edu.stanford.nlp.ling.CoreAnnotations.PartOfSpeechAnnotation;
-import edu.stanford.nlp.ling.CoreAnnotations.SentencesAnnotation;
-import edu.stanford.nlp.ling.CoreAnnotations.TokensAnnotation;
-import edu.stanford.nlp.ling.CoreLabel;
-import edu.stanford.nlp.pipeline.Annotation;
-import edu.stanford.nlp.pipeline.StanfordCoreNLP;
-import edu.stanford.nlp.util.CoreMap;
 import eu.wdaqua.qanary.commons.QanaryMessage;
 import eu.wdaqua.qanary.commons.QanaryQuestion;
 import eu.wdaqua.qanary.commons.QanaryUtils;
@@ -144,32 +137,6 @@ public class ConceptIdentifier extends QanaryComponent {
 
 	}
 
-	public static List<String> getNouns(String documentText) {
-		Properties props = new Properties();
-		props.put("annotators", "tokenize, ssplit, pos,lemma");
-		StanfordCoreNLP pipeline = new StanfordCoreNLP(props);
-		List<String> postags = new ArrayList<>();
-		String lemmetizedQuestion = "";
-		// Create an empty Annotation just with the given text
-		Annotation document = new Annotation(documentText);
-		// run all Annotators on this text
-		pipeline.annotate(document);
-		// Iterate over all of the sentences found
-		List<CoreMap> sentences = document.get(SentencesAnnotation.class);
-		for (CoreMap sentence : sentences) {
-			// Iterate over all tokens in a sentence
-			for (CoreLabel token : sentence.get(TokensAnnotation.class)) {
-				// Retrieve and add the lemma for each word into the
-				// list of lemmas
-				String pos = token.get(PartOfSpeechAnnotation.class);
-				if (pos.contains("NN")) {
-					postags.add(token.get(LemmaAnnotation.class));
-				}
-			}
-		}
-		return postags;
-	}
-
 	public static ArrayList<String> ngrams(int n, String str) {
 		ArrayList<String> ngrams = new ArrayList<String>();
 		String[] words = str.split(" ");
@@ -182,30 +149,6 @@ public class ConceptIdentifier extends QanaryComponent {
 		for (int i = start; i < end; i++)
 			sb.append((i > start ? " " : "") + words[i]);
 		return sb.toString();
-	}
-
-	public static String lemmatize(String documentText) {
-		Properties props = new Properties();
-		props.put("annotators", "tokenize, ssplit, pos, lemma");
-		StanfordCoreNLP pipeline = new StanfordCoreNLP(props);
-		List<String> lemmas = new ArrayList<>();
-		String lemmetizedQuestion = "";
-		// Create an empty Annotation just with the given text
-		Annotation document = new Annotation(documentText);
-		// run all Annotators on this text
-		pipeline.annotate(document);
-		// Iterate over all of the sentences found
-		List<CoreMap> sentences = document.get(SentencesAnnotation.class);
-		for (CoreMap sentence : sentences) {
-			// Iterate over all tokens in a sentence
-			for (CoreLabel token : sentence.get(TokensAnnotation.class)) {
-				// Retrieve and add the lemma for each word into the
-				// list of lemmas
-				lemmas.add(token.get(LemmaAnnotation.class));
-				lemmetizedQuestion += token.get(LemmaAnnotation.class) + " ";
-			}
-		}
-		return lemmetizedQuestion;
 	}
 
 	static int wordcount(String string)
@@ -244,12 +187,12 @@ public class ConceptIdentifier extends QanaryComponent {
 		List<Concept> yago2mappedConcepts = new ArrayList<Concept>();
 		List<Concept> osmConcepts = new ArrayList<Concept>();
 		List<Concept> yago2geoConcepts = new ArrayList<>();
-		List<String> allNouns = getNouns(myQanaryQuestion.getTextualRepresentation());
+		List<String> allNouns = CoreNLPUtilities.getNouns(myQanaryQuestion.getTextualRepresentation());
 		loadlistOfClasses("D:\\GeoQA code\\intelij\\GeoQAUpdated2021\\qanary_component-ConceptIdentifierYago\\src\\main\\resources\\YAGO2geoClasses.txt");
 		loadlistOfyago2Classes("D:\\GeoQA code\\intelij\\GeoQAUpdated2021\\qanary_component-ConceptIdentifierYago\\src\\main\\resources\\yagoclasslist.txt");
 		//osmUriMap.remove("county");
 		Bert bert = Bert.load("bert-cased-L-12-H-768-A-12");
-		String myQuestion = lemmatize(myQanaryQuestion.getTextualRepresentation());
+		String myQuestion = CoreNLPUtilities.lemmatize(myQanaryQuestion.getTextualRepresentation());
 
 		String myQuestionNl = myQanaryQuestion.getTextualRepresentation();
 

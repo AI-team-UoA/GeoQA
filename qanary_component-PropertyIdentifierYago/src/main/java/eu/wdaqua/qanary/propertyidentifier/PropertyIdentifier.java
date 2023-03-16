@@ -14,6 +14,7 @@ import edu.stanford.nlp.trees.Constituent;
 import edu.stanford.nlp.trees.LabeledScoredConstituentFactory;
 import edu.stanford.nlp.trees.Tree;
 import edu.stanford.nlp.trees.TreeCoreAnnotations;
+import eu.wdaqua.qanary.utils.CoreNLPUtilities;
 import org.apache.jena.query.Query;
 import org.apache.jena.query.QueryExecution;
 import org.apache.jena.query.QueryExecutionFactory;
@@ -26,17 +27,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
-import edu.stanford.nlp.ling.CoreAnnotations.LemmaAnnotation;
-import edu.stanford.nlp.ling.CoreAnnotations.PartOfSpeechAnnotation;
-import edu.stanford.nlp.ling.CoreAnnotations.SentencesAnnotation;
-import edu.stanford.nlp.ling.CoreAnnotations.TokensAnnotation;
-import edu.stanford.nlp.ling.CoreLabel;
-import edu.stanford.nlp.pipeline.Annotation;
-import edu.stanford.nlp.pipeline.StanfordCoreNLP;
-import edu.stanford.nlp.semgraph.SemanticGraph;
-import edu.stanford.nlp.semgraph.SemanticGraphCoreAnnotations;
-import edu.stanford.nlp.semgraph.SemanticGraphEdge;
-import edu.stanford.nlp.util.CoreMap;
 import eu.wdaqua.qanary.commons.QanaryMessage;
 import eu.wdaqua.qanary.commons.QanaryQuestion;
 import eu.wdaqua.qanary.commons.QanaryUtils;
@@ -58,125 +48,6 @@ import eu.wdaqua.qanary.component.QanaryComponent;
 public class PropertyIdentifier extends QanaryComponent {
 	private static final Logger logger = LoggerFactory.getLogger(PropertyIdentifier.class);
 
-	public static List<String> getVerbsNouns(String documentText) {
-		Properties props = new Properties();
-		props.put("annotators", "tokenize, ssplit, pos,lemma");
-		StanfordCoreNLP pipeline = new StanfordCoreNLP(props);
-		List<String> postags = new ArrayList<>();
-		String lemmetizedQuestion = "";
-		// Create an empty Annotation just with the given text
-		Annotation document = new Annotation(documentText);
-		// run all Annotators on this text
-		pipeline.annotate(document);
-		// Iterate over all of the sentences found
-		List<CoreMap> sentences = document.get(SentencesAnnotation.class);
-		for (CoreMap sentence : sentences) {
-			// Iterate over all tokens in a sentence
-			for (CoreLabel token : sentence.get(TokensAnnotation.class)) {
-				// Retrieve and add the lemma for each word into the
-				// list of lemmas
-				String pos = token.get(PartOfSpeechAnnotation.class);
-				if (pos.contains("VB") || pos.contains("IN") || pos.contains("NN") || pos.contains("JJ")) {
-					postags.add(token.get(LemmaAnnotation.class));
-				}
-			}
-		}
-		return postags;
-	}
-
-	public static String lemmatize(String documentText) {
-		Properties props = new Properties();
-		props.put("annotators", "tokenize, ssplit, pos, lemma");
-		StanfordCoreNLP pipeline = new StanfordCoreNLP(props);
-		List<String> lemmas = new ArrayList<>();
-		String lemmetizedQuestion = "";
-		// Create an empty Annotation just with the given text
-		Annotation document = new Annotation(documentText);
-		// run all Annotators on this text
-		pipeline.annotate(document);
-		// Iterate over all of the sentences found
-		List<CoreMap> sentences = document.get(CoreAnnotations.SentencesAnnotation.class);
-		for (CoreMap sentence : sentences) {
-			// Iterate over all tokens in a sentence
-			for (CoreLabel token : sentence.get(CoreAnnotations.TokensAnnotation.class)) {
-				// Retrieve and add the lemma for each word into the
-				// list of lemmas
-				lemmas.add(token.get(CoreAnnotations.LemmaAnnotation.class));
-				lemmetizedQuestion += token.get(CoreAnnotations.LemmaAnnotation.class) + " ";
-			}
-		}
-		return lemmetizedQuestion;
-	}
-
-	public static List<String> getNouns(String documentText) {
-		Properties props = new Properties();
-		props.put("annotators", "tokenize, ssplit, pos,lemma");
-		StanfordCoreNLP pipeline = new StanfordCoreNLP(props);
-		List<String> postags = new ArrayList<>();
-		String lemmetizedQuestion = "";
-		// Create an empty Annotation just with the given text
-		Annotation document = new Annotation(documentText);
-		// run all Annotators on this text
-		pipeline.annotate(document);
-		// Iterate over all of the sentences found
-		List<CoreMap> sentences = document.get(SentencesAnnotation.class);
-		for (CoreMap sentence : sentences) {
-			// Iterate over all tokens in a sentence
-			for (CoreLabel token : sentence.get(TokensAnnotation.class)) {
-				// Retrieve and add the lemma for each word into the
-				// list of lemmas
-				String pos = token.get(PartOfSpeechAnnotation.class);
-				if (pos.contains("NN") || pos.contains("JJ") || pos.contains("NP") || pos.contains("NNP")) {
-					postags.add(token.get(LemmaAnnotation.class));
-				}
-			}
-		}
-		return postags;
-	}
-
-	public static boolean isJJSNN(String documentText) {
-		boolean retVal = false;
-		Properties props = new Properties();
-		props.setProperty("annotators", "tokenize, ssplit, pos, lemma, ner, depparse");
-		StanfordCoreNLP pipeline = new StanfordCoreNLP(props);
-		// Create an empty Annotation just with the given text
-		Annotation document = new Annotation(documentText);
-		// run all Annotators on this text
-		pipeline.annotate(document);
-		// Iterate over all of the sentences found
-		List<CoreMap> sentences = document.get(SentencesAnnotation.class);
-		for (CoreMap sentence : sentences) {
-			// Iterate over all tokens in a sentence
-			SemanticGraph dependencies = sentence.get(SemanticGraphCoreAnnotations.BasicDependenciesAnnotation.class);
-//			dependencies.prettyPrint();
-			List<SemanticGraphEdge> edges = dependencies.edgeListSorted();
-
-			for (SemanticGraphEdge edge : edges) {
-
-				if (edge.getSource().toString().contains("JJS") && edge.getDependent().toString().contains("NN")) {
-					retVal = true;
-//					System.out.println(" Source ================================================= Dest ");
-//					System.out.println("edge : "+edge.toString());
-//					System.out.println("source: "+edge.getSource());
-//					System.out.println("relation: "+edge.getRelation());
-//					System.out.println("dependent :"+edge.getDependent());
-				} else if (edge.getSource().toString().contains("NN")
-						&& edge.getDependent().toString().contains("JJS")) {
-					retVal = true;
-//					System.out.println("Dest ================================================= Source");
-//					System.out.println("edge : "+edge.toString());
-//					System.out.println("source: "+edge.getSource());
-//					System.out.println("relation: "+edge.getRelation());
-//					System.out.println("dependent :"+edge.getDependent());
-				} else if (edge.getSource().toString().contains("NNS")
-						&& edge.getDependent().toString().contains("JJR")) {
-					retVal = true;
-				}
-			}
-		}
-		return retVal;
-	}
-
 	static float computeCosSimilarity(float[] a, float[] b) {
 		//todo: you might want to check they are the same size before proceeding
 
@@ -192,104 +63,6 @@ public class PropertyIdentifier extends QanaryComponent {
 
 		float eucledianDist = (float) (Math.sqrt(normASum) * Math.sqrt(normBSum));
 		return dotProduct / eucledianDist;
-	}
-
-	public static boolean isRBSMost(String documentText) {
-		boolean retVal = false;
-		List<String> strRetVal = new ArrayList<String>();
-		Properties props = new Properties();
-		props.setProperty("annotators", "tokenize, ssplit, pos, lemma, ner, depparse");
-		StanfordCoreNLP pipeline = new StanfordCoreNLP(props);
-		// Create an empty Annotation just with the given text
-		Annotation document = new Annotation(documentText);
-		// run all Annotators on this text
-		pipeline.annotate(document);
-		// Iterate over all of the sentences found
-		List<CoreMap> sentences = document.get(SentencesAnnotation.class);
-		for (CoreMap sentence : sentences) {
-			SemanticGraph dependencies = sentence.get(SemanticGraphCoreAnnotations.BasicDependenciesAnnotation.class);
-			List<SemanticGraphEdge> edges = dependencies.edgeListSorted();
-			for (SemanticGraphEdge edge : edges) {
-				if ((edge.getSource().toString().contains("JJ")||edge.getSource().toString().contains("NNS")) && edge.getDependent().toString().contains("RBS")) {
-//					strRetVal.add("true");
-					String val = edge.getSource().toString();
-//					strRetVal.add("");
-					retVal = true;
-				} else if (edge.getSource().toString().contains("NN")
-						&& edge.getDependent().toString().contains("JJS")) {
-					retVal = true;
-//					strRetVal.add("true");
-//					strRetVal.add("");
-				}
-			}
-		}
-		return retVal;
-	}
-
-
-	public static ArrayList<String> getADJPConstituents(String question){
-		// set up pipeline properties
-		ArrayList<String> retValues = new ArrayList<>();
-		Properties props = new Properties();
-		props.setProperty("annotators", "tokenize,ssplit,pos,lemma,ner,parse");
-		// use faster shift reduce parser
-//		props.setProperty("parse.model", "edu/stanford/nlp/models/srparser/englishSR.ser.gz");
-//		props.setProperty("parse.maxlen", "100");
-		// set up Stanford CoreNLP pipeline
-		StanfordCoreNLP pipeline = new StanfordCoreNLP(props);
-		// build annotation for a review
-		Annotation annotation =
-				new Annotation(question);
-		// annotate
-		pipeline.annotate(annotation);
-		// get tree
-		Tree tree =
-				annotation.get(CoreAnnotations.SentencesAnnotation.class).get(0).get(TreeCoreAnnotations.TreeAnnotation.class);
-//		retValues.add(tree.toString());
-//		System.out.println(tree);
-		Set<Constituent> treeConstituents = tree.constituents(new LabeledScoredConstituentFactory());
-		for (Constituent constituent : treeConstituents) {
-//			System.out.println("Constituent : "+constituent.label() + " : : "+constituent.value());
-			if (constituent.label() != null &&
-					( constituent.label().toString().equals("ADJP"))) {
-				System.out.println("found constituent: "+constituent.toString());
-				retValues.add(tree.getLeaves().subList(constituent.start(), constituent.end()+1).toString());
-				System.out.println(tree.getLeaves().subList(constituent.start(), constituent.end()+1));
-			}
-		}
-		return retValues;
-	}
-
-	public static String getJJS(String documentText) {
-		String retVal = "";
-		Properties props = new Properties();
-		props.setProperty("annotators", "tokenize, ssplit, pos, lemma, ner, depparse");
-		StanfordCoreNLP pipeline = new StanfordCoreNLP(props);
-		// Create an empty Annotation just with the given text
-		Annotation document = new Annotation(documentText);
-		// run all Annotators on this text
-		pipeline.annotate(document);
-		// Iterate over all of the sentences found
-		List<CoreMap> sentences = document.get(SentencesAnnotation.class);
-		for (CoreMap sentence : sentences) {
-			// Iterate over all tokens in a sentence
-			SemanticGraph dependencies = sentence.get(SemanticGraphCoreAnnotations.BasicDependenciesAnnotation.class);
-//			dependencies.prettyPrint();
-			List<SemanticGraphEdge> edges = dependencies.edgeListSorted();
-
-			for (SemanticGraphEdge edge : edges) {
-				if (edge.getSource().toString().contains("JJS") && edge.getDependent().toString().contains("NN")) {
-					retVal = edge.getSource().toString();
-					retVal = retVal.substring(0, retVal.indexOf('/') - 1);
-				} else if (edge.getSource().toString().contains("NN")
-						&& edge.getDependent().toString().contains("JJS")) {
-					retVal = edge.getDependent().toString();
-					retVal = retVal.substring(0, retVal.indexOf('/') );
-				}
-			}
-		}
-		System.out.println("ret value : "+retVal);
-		return retVal;
 	}
 
 	public static boolean isAlphaNumeric(String s) {
@@ -311,12 +84,12 @@ public class PropertyIdentifier extends QanaryComponent {
 		QanaryUtils myQanaryUtils = this.getUtils(myQanaryMessage);
 		QanaryQuestion<String> myQanaryQuestion = this.getQanaryQuestion(myQanaryMessage);
 		String myQuestion = myQanaryQuestion.getTextualRepresentation();
-		String lemQuestion = lemmatize(myQuestion);
+		String lemQuestion = CoreNLPUtilities.lemmatize(myQuestion);
 		WordNetAnalyzer wordNet = new WordNetAnalyzer("D:\\GeoQA code\\intelij\\GeoQAUpdated2021\\qanary_component-PropertyIdentifierYago\\src\\main\\resources\\WordNet-3.0\\dict");
 		logger.info("Question: {}", myQuestion);
 		// TODO: implement processing of question
 
-		List<String> allVerbs = getVerbsNouns(myQuestion);
+		List<String> allVerbs = CoreNLPUtilities.getVerbsNounsAdjectivesPrepositions(myQuestion);
 		List<String> relationList = new ArrayList<String>();
 		List<Property> properties = new ArrayList<Property>();
 		List<Property> instProperties = new ArrayList<Property>();
@@ -802,11 +575,11 @@ public class PropertyIdentifier extends QanaryComponent {
 		}
 
 		//check for implicit properties in question
-		System.out.println("isJJN : "+isJJSNN(myQuestion));
+		System.out.println("isJJN : "+ CoreNLPUtilities.isJJSNN(myQuestion));
 		if(properties.size()<1) {
 			List<String> adjpText= null;
-			if (isJJSNN(myQuestion)) {
-				String questionProperty = getJJS(myQuestion);
+			if (CoreNLPUtilities.isJJSNN(myQuestion)) {
+				String questionProperty = CoreNLPUtilities.getJJS(myQuestion);
 				System.out.println("isJJS: TRUE");
 				//for(Property prop: properties){
 				//	if(!prop.label.toLowerCase().contains(questionProperty)||!prop.uri.toLowerCase().contains(questionProperty)){
@@ -1053,7 +826,7 @@ public class PropertyIdentifier extends QanaryComponent {
 				//}
 			}
 			else {
-				if ((adjpText = getADJPConstituents(myQuestion)) != null && properties.size()<1) {
+				if ((adjpText = CoreNLPUtilities.getADJPConstituents(myQuestion)) != null && properties.size()<1) {
 					Property property = new Property();
 					if (adjpText.size() > 0) {
 						String adjpVal = adjpText.get(0);
@@ -1232,7 +1005,7 @@ public class PropertyIdentifier extends QanaryComponent {
 		}
 		// Instance property
 		if(properties.size()<1) {
-			List<String> allNouns = getNouns(myQuestion);
+			List<String> allNouns = CoreNLPUtilities.getNounsExtended(myQuestion);
 			System.out.println("Nouns : " + allNouns);
 			for (String entity : entitiesUri) {
 

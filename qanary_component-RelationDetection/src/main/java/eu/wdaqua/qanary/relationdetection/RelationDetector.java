@@ -7,19 +7,11 @@ import java.util.Properties;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import eu.wdaqua.qanary.utils.CoreNLPUtilities;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
-import edu.stanford.nlp.ling.CoreAnnotations.LemmaAnnotation;
-import edu.stanford.nlp.ling.CoreAnnotations.PartOfSpeechAnnotation;
-import edu.stanford.nlp.ling.CoreAnnotations.SentencesAnnotation;
-import edu.stanford.nlp.ling.CoreAnnotations.TextAnnotation;
-import edu.stanford.nlp.ling.CoreAnnotations.TokensAnnotation;
-import edu.stanford.nlp.ling.CoreLabel;
-import edu.stanford.nlp.pipeline.Annotation;
-import edu.stanford.nlp.pipeline.StanfordCoreNLP;
-import edu.stanford.nlp.util.CoreMap;
 import eu.wdaqua.qanary.commons.QanaryQuestion;
 
 /**
@@ -43,62 +35,6 @@ public class RelationDetector {
 		String myQuestion = myQanaryQuestion.getTextualRepresentation();
 		return this.process(myQuestion);
 	}
-
-	
-	
-	public static List<String> getVerbs(String documentText) {
-		Properties props = new Properties();
-		props.put("annotators", "tokenize, ssplit, pos,lemma");
-		StanfordCoreNLP pipeline = new StanfordCoreNLP(props);
-		List<String> postags = new ArrayList<>();
-		String lemmetizedQuestion = "";
-		// Create an empty Annotation just with the given text
-		Annotation document = new Annotation(documentText);
-		// run all Annotators on this text
-		pipeline.annotate(document);
-		// Iterate over all of the sentences found
-		List<CoreMap> sentences = document.get(SentencesAnnotation.class);
-		for (CoreMap sentence : sentences) {
-			// Iterate over all tokens in a sentence
-			for (CoreLabel token : sentence.get(TokensAnnotation.class)) {
-				// Retrieve and add the lemma for each word into the
-				// list of lemmas
-				String pos = token.get(PartOfSpeechAnnotation.class);
-				if (pos.contains("VB")|| pos.contains("IN") || pos.contains("VP") || pos.contains("VBP") || pos.contains("VBZ")) {
-					postags.add(token.get(LemmaAnnotation.class));
-				}
-			}
-		}
-		if(documentText.contains("crosses"))
-			postags.add("crosses");
-		System.out.println("Postags: "+postags);
-		return postags;
-	}
-	
-	public static String lemmatize(String documentText) {
-		Properties props = new Properties();
-		props.put("annotators", "tokenize, ssplit, pos, lemma");
-		StanfordCoreNLP pipeline = new StanfordCoreNLP(props);
-		List<String> lemmas = new ArrayList<>();
-		String lemmetizedQuestion = "";
-		// Create an empty Annotation just with the given text
-		Annotation document = new Annotation(documentText);
-		// run all Annotators on this text
-		pipeline.annotate(document);
-		// Iterate over all of the sentences found
-		List<CoreMap> sentences = document.get(SentencesAnnotation.class);
-		for (CoreMap sentence : sentences) {
-			// Iterate over all tokens in a sentence
-			for (CoreLabel token : sentence.get(TokensAnnotation.class)) {
-				// Retrieve and add the lemma for each word into the
-				// list of lemmas
-				lemmas.add(token.get(LemmaAnnotation.class));
-				lemmetizedQuestion += token.get(LemmaAnnotation.class) + " ";
-			}
-		}
-		System.out.println("lemmetized question: "+lemmetizedQuestion);
-		return lemmetizedQuestion;
-	}
 	
 	public List<Integer> getIndexListOfSpatialRelation(String word, String myQuestion) {
 		List<Integer> indexesOfSpatialRelation = new ArrayList<Integer>();
@@ -107,7 +43,7 @@ public class RelationDetector {
 		if(myQuestion.contains("crosses")||myQuestion.contains("includes") || myQuestion.contains("located"))
 			m = p.matcher(myQuestion);
 		else
-			m = p.matcher(lemmatize(myQuestion));
+			m = p.matcher(CoreNLPUtilities.lemmatize(myQuestion));
 
 		while (m.find()) {
 			indexesOfSpatialRelation.add(m.start());
@@ -143,7 +79,7 @@ public class RelationDetector {
 		// allowed labels
 		List<RelationDetectorAnswer> relationDetectorAnswerList = null;
 		List<String> filteredPosTags = new ArrayList<String>();
-		String lemmatizedQuestion = lemmatize(myQuestion);
+		String lemmatizedQuestion = CoreNLPUtilities.lemmatize(myQuestion);
 		// ResultSet r;
 		// String questionForProcessing = myQuestion;
 		//

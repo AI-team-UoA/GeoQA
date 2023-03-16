@@ -38,13 +38,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
-import edu.stanford.nlp.ling.CoreAnnotations;
-import edu.stanford.nlp.ling.CoreLabel;
-import edu.stanford.nlp.pipeline.Annotation;
-import edu.stanford.nlp.pipeline.StanfordCoreNLP;
-import edu.stanford.nlp.util.CoreMap;
-import eu.earthobservatory.org.StrabonEndpoint.client.EndpointResult;
-import eu.earthobservatory.org.StrabonEndpoint.client.SPARQLEndpoint;
 import eu.wdaqua.qanary.commons.QanaryMessage;
 import eu.wdaqua.qanary.commons.QanaryQuestion;
 import eu.wdaqua.qanary.commons.QanaryUtils;
@@ -78,30 +71,6 @@ public class TagMeDisambiguate extends QanaryComponent {
 	public final String dbpediaLink = "http://dbpedia.org/resource/";
 	public final String yago2geoOnlyEndpoint = "http://pyravlos2.di.uoa.gr:8080/yago2geo/Query";
 	private static final Logger logger = LoggerFactory.getLogger(TagMeDisambiguate.class);
-
-	public static String lemmatize(String documentText) {
-		Properties props = new Properties();
-		props.put("annotators", "tokenize, ssplit, pos, lemma");
-		StanfordCoreNLP pipeline = new StanfordCoreNLP(props);
-		List<String> lemmas = new ArrayList<>();
-		String lemmetizedQuestion = "";
-		// Create an empty Annotation just with the given text
-		Annotation document = new Annotation(documentText);
-		// run all Annotators on this text
-		pipeline.annotate(document);
-		// Iterate over all of the sentences found
-		List<CoreMap> sentences = document.get(CoreAnnotations.SentencesAnnotation.class);
-		for (CoreMap sentence : sentences) {
-			// Iterate over all tokens in a sentence
-			for (CoreLabel token : sentence.get(CoreAnnotations.TokensAnnotation.class)) {
-				// Retrieve and add the lemma for each word into the
-				// list of lemmas
-				lemmas.add(token.get(CoreAnnotations.LemmaAnnotation.class));
-				lemmetizedQuestion += token.get(CoreAnnotations.LemmaAnnotation.class) + " ";
-			}
-		}
-		return lemmetizedQuestion;
-	}
 
 	public static int getNoOfLinks(String sparqlQuery, String endpointURI) {
 		int count = 0;
