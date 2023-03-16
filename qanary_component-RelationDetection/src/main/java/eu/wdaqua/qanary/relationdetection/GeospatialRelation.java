@@ -7,7 +7,6 @@ package eu.wdaqua.qanary.relationdetection;
  *
  */
 public enum GeospatialRelation {
-	// TODO: check the demand for multilingual support
 	IN {
 		@Override
 		public String[] getLabels() {
@@ -15,7 +14,7 @@ public enum GeospatialRelation {
 		}
 		@Override
 		public String getURI() {
-			return new String("geof:sfWithin");
+			return "geof:sfWithin";
 		}
 	}, CONTAINS {
 		@Override
@@ -24,16 +23,16 @@ public enum GeospatialRelation {
 		}
 		@Override
 		public String getURI() {
-			return new String("geof:sfContains");
+			return "geof:sfContains";
 		}
-	},NORTH_OF {
+	}, NORTH_OF {
 		@Override
 		public String[] getLabels() {
 			return new String[]{"above","north","northern"};
 		}
 		@Override
 		public String getURI() {
-			return new String("strdf:above");
+			return "strdf:above";
 		}
 	}, NORTH_WEST_OF {
 		@Override
@@ -42,7 +41,7 @@ public enum GeospatialRelation {
 		}
 		@Override
 		public String getURI() {
-			return new String("strdf:above_left");
+			return "strdf:above_left";
 		}
 	}, NORTH_EAST_OF {
 		@Override
@@ -51,7 +50,7 @@ public enum GeospatialRelation {
 		}
 		@Override
 		public String getURI() {
-			return new String("strdf:above_right");
+			return "strdf:above_right";
 		}
 	}, SOUTH_OF {
 		@Override
@@ -60,7 +59,7 @@ public enum GeospatialRelation {
 		}
 		@Override
 		public String getURI() {
-			return new String("strdf:below");
+			return "strdf:below";
 		}
 	}, SOUTH_WEST_OF {
 		@Override
@@ -69,7 +68,7 @@ public enum GeospatialRelation {
 		}
 		@Override
 		public String getURI() {
-			return new String("strdf:below_left");
+			return "strdf:below_left";
 		}
 	}, SOUTH_EAST_OF {
 		@Override
@@ -78,7 +77,7 @@ public enum GeospatialRelation {
 		}
 		@Override
 		public String getURI() {
-			return new String("strdf:below_right");
+			return "strdf:below_right";
 		}
 	}, WEST_OF {
 		@Override
@@ -87,7 +86,7 @@ public enum GeospatialRelation {
 		}
 		@Override
 		public String getURI() {
-			return new String("strdf:left");
+			return "strdf:left";
 		}
 	}, EAST_OF {
 		@Override
@@ -96,7 +95,7 @@ public enum GeospatialRelation {
 		}
 		@Override
 		public String getURI() {
-			return new String("strdf:right");
+			return "strdf:right";
 		}
 	}, NEAR_BY {
 		@Override
@@ -105,7 +104,7 @@ public enum GeospatialRelation {
 		}
 		@Override
 		public String getURI() {
-			return new String("geof:distance");
+			return "geof:distance";
 		}
 	}, IN_THE_CENTER_OF {
 		@Override
@@ -114,7 +113,7 @@ public enum GeospatialRelation {
 		}
 		@Override
 		public String getURI() {
-			return new String("postgis:ST_Centroid");
+			return "postgis:ST_Centroid";
 		}
 	}, AT_THE_BORDER_OF {
 		@Override
@@ -123,7 +122,7 @@ public enum GeospatialRelation {
 		}
 		@Override
 		public String getURI() {
-			return new String("geof:boundary");
+			return "geof:boundary";
 		}
 	}, INTERSECT {
 		@Override
@@ -132,19 +131,19 @@ public enum GeospatialRelation {
 		}
 		@Override
 		public String getURI() {
-			return new String("geof:sfIntersect");
+			return "geof:sfIntersect";
 		}
 	}, CROSSES {
 		@Override
 		public String[] getLabels() {
-			return new String[]{"crosses", "cross","flows","flow","on","pass"};
+			return new String[]{"crosses", "cross","flows","flow","on"};
 		}
 		@Override
 		public String getURI() {
-			return new String("geof:sfCrosses");
+			return "geof:sfCrosses";
 		}
 	};
-	
+
     public abstract String[] getLabels();
     public abstract String getURI();
 }
