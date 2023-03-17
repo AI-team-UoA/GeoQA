@@ -1,397 +1,104 @@
 package eu.wdaqua.qanary.conceptidentifier;
 
 import java.io.BufferedReader;
-import java.io.File;
 import java.io.FileReader;
-import java.net.MalformedURLException;
-import java.net.URL;
 import java.util.*;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
-import com.robrua.nlp.bert.Bert;
-import eu.wdaqua.qanary.utils.CoreNLPUtilities;
-import eu.wdaqua.qanary.utils.NeuralUtilities;
-import info.debatty.java.stringsimilarity.JaroWinkler;
+import eu.wdaqua.qanary.utils.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
-import org.w3c.dom.Document;
-import org.w3c.dom.Element;
-import org.w3c.dom.Node;
-import org.w3c.dom.NodeList;
 
 import eu.wdaqua.qanary.commons.QanaryMessage;
 import eu.wdaqua.qanary.commons.QanaryQuestion;
 import eu.wdaqua.qanary.commons.QanaryUtils;
 import eu.wdaqua.qanary.component.QanaryComponent;
 
-import javax.xml.parsers.DocumentBuilder;
-import javax.xml.parsers.DocumentBuilderFactory;
-
-@Component
 /**
- * This component connected automatically to the Qanary pipeline. The Qanary
- * pipeline endpoint defined in application.properties (spring.boot.admin.url)
- *
- * @see <a href=
- *      "https://github.com/WDAqua/Qanary/wiki/How-do-I-integrate-a-new-component-in-Qanary%3F"
- *      target="_top">Github wiki howto</a>
+ * This component identifies concepts (types of features) in the question and maps them to the corresponding classes of the
+ * YAGO2geo ontology.
  */
+@Component
 public class ConceptIdentifier extends QanaryComponent {
 	private static final Logger logger = LoggerFactory.getLogger(ConceptIdentifier.class);
 
-	static List<String> allConceptWordUri = new ArrayList<String>();
-	static List<String> osmClass = new ArrayList<String>();
-	static List<String> commonClasses = new ArrayList<String>();
-	static Map<String, String> osmUriMap = new HashMap<String, String>();
-	static Map<String, String> yago2classesmap = new HashMap<String, String>();
-	static Map<String, String> yago2geoclassesmap = new HashMap<>();
-	public static void getCommonClass(Set<String> dbpediaConcepts) {
+	private final WordNetAnalyzer wordNet = new WordNetAnalyzer("qanary_component-ConceptIdentifierYago/src/main/resources/WordNet-3.0/dict");
+	private final JaroWrinklerSimilarity jwSimilarity = new JaroWrinklerSimilarity();
+	private final BertEmbeddingSimilarity bertSimilarity = new BertEmbeddingSimilarity();
 
-		for (String lab : osmClass) {
-
-			if (dbpediaConcepts.contains(lab)) {
-				if (!commonClasses.contains(lab))
-					commonClasses.add(lab);
-			}
-		}
-
+	static Map<String, String> yago2ClassesMap = new HashMap<>();
+	static Map<String, String> yago2geoClassesMap = new HashMap<>();
+	static {
+		loadListOfClasses("qanary_component-ConceptIdentifierYago/src/main/resources/YAGOClasses.txt", yago2ClassesMap);
+		loadListOfClasses("qanary_component-ConceptIdentifierYago/src/main/resources/YAGO2geoClasses.txt", yago2geoClassesMap);
 	}
 
-	public static void loadlistOfClasses(String fname){
-		try{
-			BufferedReader br = new BufferedReader(new FileReader(fname));
-			String line = "";
-			while((line = br.readLine())!=null){
-				String splittedLine[] = line.split(",");
-//				System.out.println("0: "+splittedLine[0]+"\t 1:"+splittedLine[1]);
-				yago2geoclassesmap.put(splittedLine[0].trim(),splittedLine[1].trim());
+	/**
+	 * Load the classes of an ontology and their labels from a file.
+	 *
+	 * @param fname The path of a file that contains a list of classes used by some graph.
+	 * @param targetMap The data structure that will hold the classes contained in the file.
+	 */
+	static void loadListOfClasses(String fname, Map<String, String> targetMap){
+		try (BufferedReader br = new BufferedReader(new FileReader(fname))) {
+			String line;
+			while((line = br.readLine()) != null){
+				String[] splitLine = line.split(",");
+				targetMap.put(splitLine[0].trim(),splitLine[1].trim());
 			}
-			br.close();
-		}catch (Exception e){
+		} catch (Exception e){
 			e.printStackTrace();
 		}
 	}
 
-	public static void loadlistOfyago2Classes(String fname){
-		try{
-			BufferedReader br = new BufferedReader(new FileReader(fname));
-			String line = "";
-			while((line = br.readLine())!=null){
-				String splittedLine[] = line.split(",");
-//				System.out.println("0: "+splittedLine[0]+"\t 1:"+splittedLine[1]);
-				yago2classesmap.put(splittedLine[0].trim(),splittedLine[1].trim());
-			}
-			br.close();
-		}catch (Exception e){
-			e.printStackTrace();
-		}
-	}
-
-	public static void getXML(String fname) {
-		try {
-			File fXmlFile = new File(fname);
-			DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
-			DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
-			Document doc = dBuilder.parse(fXmlFile);
-
-			doc.getDocumentElement().normalize();
-
-			NodeList nList = doc.getElementsByTagName("owl:Class");
-			for (int temp = 0; temp < nList.getLength(); temp++) {
-
-				Node nNode = nList.item(temp);
-				String uri, cEntity;
-
-				if (nNode.getNodeType() == Node.ELEMENT_NODE) {
-
-					Element eElement = (Element) nNode;
-					uri = eElement.getAttribute("rdf:about");
-					osmUriMap.put(uri.substring(uri.indexOf('#') + 1), uri);
-					uri = uri.substring(uri.indexOf('#') + 1);
-					osmClass.add(uri);
-				}
-
-			}
-
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-
-	}
-
-	public static ArrayList<String> ngrams(int n, String str) {
-		ArrayList<String> ngrams = new ArrayList<String>();
-		String[] words = str.split(" ");
+	/**
+	 * Create all word n-grams of size n for the given string.
+	 *
+	 * @param n The size, in words, of each subsequence (n-gram).
+	 * @param str The String to separate into n-grams.
+	 * @return All subsequences of length n.
+	 */
+	static ArrayList<String> createNGrams(int n, String str) {
+		var ngrams = new ArrayList<String>();
+		var words = str.split(" ");
 		for (int i = 0; i < words.length - n + 1; i++)
 			ngrams.add(concat(words, i, i+n));
 		return ngrams;
 	}
-	public static String concat(String[] words, int start, int end) {
+
+	static String concat(String[] words, int start, int end) {
 		StringBuilder sb = new StringBuilder();
 		for (int i = start; i < end; i++)
-			sb.append((i > start ? " " : "") + words[i]);
+			sb.append(i > start ? " " : "").append(words[i]);
 		return sb.toString();
 	}
 
-	static int wordcount(String string)
-	{
-		int count=0;
-
-		char ch[]= new char[string.length()];
-		for(int i=0;i<string.length();i++)
-		{
-			ch[i]= string.charAt(i);
-			if( ((i>0)&&(ch[i]!=' ')&&(ch[i-1]==' ')) || ((ch[0]!=' ')&&(i==0)) )
-				count++;
-		}
-		return count;
+	static int wordcount(String string)	{
+		return new StringTokenizer(string).countTokens();
 	}
 
 	/**
-	 * implement this method encapsulating the functionality of your Qanary
-	 * component
-	 *
-	 * @throws Exception
+	 * Method encapsulating the functionality of the ConceptIdentifier.
 	 */
 	@Override
 	public QanaryMessage process(QanaryMessage myQanaryMessage) throws Exception {
 		logger.info("process: {}", myQanaryMessage);
 
-		// Map<String, String> allMapConceptWord =
-		// DBpediaConceptsAndURIs.getDBpediaConceptsAndURIs();
-//		Map<String, ArrayList<String>> allMapConceptWord = YagoConceptsAndURIs.getYagoConceptsAndURIs();
-//		getXML("qanary_component-ConceptIdentifierYago/src/main/resources/osm.owl");
-
-		// getCommonClass(allMapConceptWord.keySet());
 		QanaryUtils myQanaryUtils = this.getUtils(myQanaryMessage);
 		QanaryQuestion<String> myQanaryQuestion = this.getQanaryQuestion(myQanaryMessage);
-		List<Concept> mappedConcepts = new ArrayList<Concept>();
-		List<Concept> yago2mappedConcepts = new ArrayList<Concept>();
-		List<Concept> osmConcepts = new ArrayList<Concept>();
-		List<Concept> yago2geoConcepts = new ArrayList<>();
-		List<String> allNouns = CoreNLPUtilities.getNouns(myQanaryQuestion.getTextualRepresentation());
-		loadlistOfClasses("D:\\GeoQA code\\intelij\\GeoQAUpdated2021\\qanary_component-ConceptIdentifierYago\\src\\main\\resources\\YAGO2geoClasses.txt");
-		loadlistOfyago2Classes("D:\\GeoQA code\\intelij\\GeoQAUpdated2021\\qanary_component-ConceptIdentifierYago\\src\\main\\resources\\yagoclasslist.txt");
-		//osmUriMap.remove("county");
-		Bert bert = Bert.load("bert-cased-L-12-H-768-A-12");
 		String myQuestion = CoreNLPUtilities.lemmatize(myQanaryQuestion.getTextualRepresentation());
 
-		String myQuestionNl = myQanaryQuestion.getTextualRepresentation();
+		// YAGO2geo Concepts
+		var yago2geoMappedConcepts = mapConcepts(myQuestion, yago2geoClassesMap);
 
-		logger.info("Lemmatize Question: {}", myQuestion);
-		logger.info("store data in graph {}",
-				myQanaryMessage.getValues().get(new URL(myQanaryMessage.getEndpoint().toString())));
-		WordNetAnalyzer wordNet = new WordNetAnalyzer("qanary_component-ConceptIdentifierYago/src/main/resources/WordNet-3.0/dict");
-		osmUriMap.remove("county");
+		// YAGO2 Concepts
+		var yago2MappedConcepts = mapConcepts(myQuestion, yago2ClassesMap);
 
+		// Join YAGO2 & YAGO2geo mapped concepts
+//		yago2geoMappedConcepts.addAll(yago2MappedConcepts); // disable to ignore YAGO2 Concepts
 
-		//sliding window for string similarity
-		boolean falgFound = false;
-		for (String conceptLabel : yago2geoclassesmap.keySet()) {
-			int wordCount = wordcount(conceptLabel);
-//			System.out.println("total words :"+wordCount+"\t in : "+conceptLabel);
-//			String wordsOdSentence[] = myQuestionNl.split(" ");
-			List<String> ngramsOfquestion = ngrams(wordCount,myQuestion);
-			JaroWinkler jw = new JaroWinkler();
-			double similarityScore = 0.0;
-			for(String ngramwords: ngramsOfquestion){
-				similarityScore = jw.similarity(ngramwords.toLowerCase(Locale.ROOT),conceptLabel.toLowerCase(Locale.ROOT));
-				System.out.println("got similarity for  ngram :"+ngramwords+"\t and concept label : "+conceptLabel+"\t is = "+similarityScore);
-				if(similarityScore>0.99){
-					System.out.println("====================got similarity more than 95 for  ngram :"+ngramwords+"\t and concept label : "+conceptLabel);
-					falgFound = true;
-					Concept concept = new Concept();
-					int begin = myQuestion.toLowerCase().indexOf(ngramwords.toLowerCase());
-					concept.setBegin(begin);
-					concept.setEnd(begin + ngramwords.length());
-					concept.setURI(yago2geoclassesmap.get(conceptLabel));
-					mappedConcepts.add(concept);
-					System.out.println("Identified Concepts: yago2geo:" + conceptLabel + " ============================"
-							+ "ngram inside question is: " + ngramwords + " ===================");
-					logger.info("identified concept: concept={} : {} : {}", concept.toString(), myQuestion,
-							concept.getURI());
-					break;
-				}
-			}
-
-			for(String ngramwords: ngramsOfquestion){
-				float[] emb1 = bert.embedSequence(conceptLabel.toLowerCase(Locale.ROOT));
-				float[] emb2 = bert.embedSequence(ngramwords.toLowerCase(Locale.ROOT));
-				float similarityEmbSeq = NeuralUtilities.computeCosSimilarity(emb1, emb2);
-				System.out.println("got similarity for  ngram :"+ngramwords+"\t and concept label : "+conceptLabel+"\t is = "+similarityEmbSeq);
-				if(similarityEmbSeq>0.95){
-					System.out.println("====================got similarity more than 95 for  ngram :"+ngramwords+"\t and concept label : "+conceptLabel);
-					falgFound = true;
-					Concept concept = new Concept();
-					int begin = myQuestion.toLowerCase().indexOf(ngramwords.toLowerCase());
-					concept.setBegin(begin);
-					concept.setEnd(begin + ngramwords.length());
-					concept.setURI(yago2geoclassesmap.get(conceptLabel));
-					mappedConcepts.add(concept);
-					System.out.println("Identified Concepts: yago2geo:" + conceptLabel + " ============================"
-							+ "ngram inside question is: " + ngramwords + " ===================");
-					logger.info("identified concept: concept={} : {} : {}", concept.toString(), myQuestion,
-							concept.getURI());
-					break;
-				}
-			}
-			/*if(falgFound){
-				break;
-			}*/
-		}
-		for (String conceptLabel : yago2classesmap.keySet()) {
-			int wordCount = wordcount(conceptLabel);
-//			System.out.println("total words :"+wordCount+"\t in : "+conceptLabel);
-//			String wordsOdSentence[] = myQuestionNl.split(" ");
-			List<String> ngramsOfquestion = ngrams(wordCount,myQuestion);
-			JaroWinkler jw = new JaroWinkler();
-			double similarityScore = 0.0;
-			for(String ngramwords: ngramsOfquestion){
-				similarityScore = jw.similarity(ngramwords.toLowerCase(Locale.ROOT),conceptLabel.toLowerCase(Locale.ROOT));
-				System.out.println("got similarity for  ngram :"+ngramwords+"\t and concept label : "+conceptLabel+"\t is = "+similarityScore);
-				if(similarityScore>0.99){
-					System.out.println("====================got similarity more than 95 for  ngram :"+ngramwords+"\t and concept label : "+conceptLabel);
-					falgFound = true;
-					Concept concept = new Concept();
-					int begin = myQuestion.toLowerCase().indexOf(ngramwords.toLowerCase());
-					concept.setBegin(begin);
-					concept.setEnd(begin + ngramwords.length());
-					concept.setURI(yago2classesmap.get(conceptLabel));
-					yago2mappedConcepts.add(concept);
-					System.out.println("Identified Concepts: yago2:" + conceptLabel + " ============================"
-							+ "ngram inside question is: " + ngramwords + " ===================");
-					logger.info("identified concept: concept={} : {} : {}", concept.toString(), myQuestion,
-							concept.getURI());
-					break;
-				}
-			}
-			for(String ngramwords: ngramsOfquestion){
-				float[] emb1 = bert.embedSequence(conceptLabel.toLowerCase(Locale.ROOT));
-				float[] emb2 = bert.embedSequence(ngramwords.toLowerCase(Locale.ROOT));
-				float similarityEmbSeq = NeuralUtilities.computeCosSimilarity(emb1, emb2);
-				System.out.println("got similarity for  ngram :"+ngramwords+"\t and concept label : "+conceptLabel+"\t is = "+similarityEmbSeq);
-				if(similarityEmbSeq>0.95){
-					System.out.println("====================got similarity more than 95 for  ngram :"+ngramwords+"\t and concept label : "+conceptLabel);
-					falgFound = true;
-					Concept concept = new Concept();
-					int begin = myQuestion.toLowerCase().indexOf(ngramwords.toLowerCase());
-					concept.setBegin(begin);
-					concept.setEnd(begin + ngramwords.length());
-					concept.setURI(yago2classesmap.get(conceptLabel));
-					yago2mappedConcepts.add(concept);
-					System.out.println("EmbdSeq Cosine simi Identified Concepts: yago2:" + conceptLabel + " ============================"
-							+ "ngram inside question is: " + ngramwords + " ===================");
-					logger.info("identified concept: concept={} : {} : {}", concept.toString(), myQuestion,
-							concept.getURI());
-					break;
-				}
-			}
-			/*if(falgFound){
-				break;
-			}*/
-		}
-		if(!falgFound){
-
-			for (String conceptLabel : yago2geoclassesmap.keySet()) {
-//			System.out.println("============Got Inside==============");
-				ArrayList<String> wordNetSynonyms = wordNet.getSynonyms(conceptLabel);
-				for (String synonym : wordNetSynonyms) {
-					for (String nounWord : allNouns) {
-						Pattern p = Pattern.compile("\\b" + synonym + "\\b", Pattern.CASE_INSENSITIVE);
-						Matcher m = p.matcher(nounWord);
-//					System.out.println("for synonym : "+synonym+"\t noun word : "+nounWord);
-						if (m.find()) {
-							Concept concept = new Concept();
-							int begin = myQuestionNl.toLowerCase().indexOf(synonym.toLowerCase());
-							concept.setBegin(begin);
-							concept.setEnd(begin + synonym.length());
-							concept.setURI(yago2geoclassesmap.get(conceptLabel));
-							mappedConcepts.add(concept);
-							System.out.println("Identified Concepts: yago2geo:" + conceptLabel + " ============================"
-									+ "Synonym inside question is: " + synonym + " ===================");
-							logger.info("identified concept: concept={} : {} : {}", concept.toString(), myQuestion,
-									concept.getURI());
-							break;
-						}
-					}
-				}
-			}
-
-			for (String conceptLabel : yago2geoclassesmap.keySet()) {
-//			System.out.println("============Got Inside==============");
-				ArrayList<String> wordNetSynonyms = wordNet.getSynonyms(conceptLabel);
-				for (String synonym : wordNetSynonyms) {
-					for (String nounWord : allNouns) {
-						float[] emb1 = bert.embedSequence(nounWord.toLowerCase(Locale.ROOT));
-						float[] emb2 = bert.embedSequence(synonym.toLowerCase(Locale.ROOT));
-//						Pattern p = Pattern.compile("\\b" + synonym + "\\b", Pattern.CASE_INSENSITIVE);
-//						Matcher m = p.matcher(nounWord);
-//					System.out.println("for synonym : "+synonym+"\t noun word : "+nounWord);
-						float similarityEmbSeq = NeuralUtilities.computeCosSimilarity(emb1, emb2);
-						if (similarityEmbSeq>0.95) {
-							Concept concept = new Concept();
-							int begin = myQuestionNl.toLowerCase().indexOf(synonym.toLowerCase());
-							concept.setBegin(begin);
-							concept.setEnd(begin + synonym.length());
-							concept.setURI(yago2geoclassesmap.get(conceptLabel));
-							mappedConcepts.add(concept);
-							System.out.println(" EmbdSeq Cosine simi Identified Concepts: yago2geo:" + conceptLabel + " ============================"
-									+ "Synonym inside question is: " + synonym + " ===================");
-							logger.info("identified concept: concept={} : {} : {}", concept.toString(), myQuestion,
-									concept.getURI());
-							break;
-						}
-					}
-				}
-			}
-
-		}
-
-
-		ArrayList<Concept> removalList = new ArrayList<Concept>();
-
-//		for (Concept tempConcept : mappedConcepts) {
-//			String conUri = tempConcept.getURI();
-//			if (conUri != null) {
-//				if (conUri.contains("Parking")) {
-//					System.out.println("Getting in parking with question : " + myQuestionNl);
-//					if (!myQuestionNl.toLowerCase().contains("parking") && !myQuestionNl.contains(" car ")) {
-//						System.out.println("getting in car parking :" + myQuestion);
-//						removalList.add(tempConcept);
-//					}
-//				}else if (conUri.contains("Park")) {
-//					System.out.println("Getting in park with question : " + myQuestionNl);
-//					if (myQuestionNl.toLowerCase().contains(" car park")) {
-//						System.out.println("getting in car parking :" + myQuestion);
-//						if(tempConcept.getURI().contains("dbpedia"))
-//						tempConcept.setURI("http://dbpedia.org/ontology/Parking");
-//						if(tempConcept.getURI().contains("app-lab"))
-//							tempConcept.setURI("http://www.app-lab.eu/osm/ontology#Parking");
-//					}
-//				}
-//				if(conUri.contains("http://dbpedia.org/ontology/Area")){
-//					removalList.add(tempConcept);
-//				}
-//				if (conUri.contains("Gondola") || conUri.contains("http://dbpedia.org/ontology/List")
-//						|| conUri.contains("http://dbpedia.org/ontology/Automobile")
-//						|| conUri.contains("http://dbpedia.org/ontology/Altitude")
-//						|| conUri.contains("http://dbpedia.org/ontology/Name")
-//						|| conUri.contains("http://dbpedia.org/ontology/Population")
-//						|| (conUri.contains("http://www.app-lab.eu/osm/ontology#Peak") || (conUri.contains("http://dbpedia.org/ontology/Area"))
-//								&& myQuestion.toLowerCase().contains("height"))) {
-//					removalList.add(tempConcept);
-//				}
-//			}
-////			System.out.println("Concept: " + conUri);
-//		}
-//
-		for (Concept removalC : removalList) {
-			mappedConcepts.remove(removalC);
-		}
-
-		for (Concept mappedConcept : mappedConcepts) {
+		// Store data (mapped Concepts) to the triplestore
+		for (Concept mappedConcept : yago2geoMappedConcepts) {
 			// insert data in QanaryMessage.outgraph
 			logger.info("apply vocabulary alignment on outgraph: {}", myQanaryQuestion.getOutGraph());
 			String sparql = "" //
@@ -423,38 +130,89 @@ public class ConceptIdentifier extends QanaryComponent {
 			myQanaryUtils.updateTripleStore(sparql, myQanaryQuestion.getEndpoint().toString());
 		}
 
-		for (Concept mappedConcept : yago2mappedConcepts) {
-			// insert data in QanaryMessage.outgraph
-			logger.info("apply vocabulary alignment on outgraph: {}", myQanaryQuestion.getOutGraph());
-			String sparql = "" //
-					+ "PREFIX qa: <http://www.wdaqua.eu/qa#> " //
-					+ "PREFIX oa: <http://www.w3.org/ns/openannotation/core/> " //
-					+ "PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> " //
-					+ "INSERT { " //
-					+ "GRAPH <" + myQanaryQuestion.getOutGraph() + "> { " //
-					+ "  ?a a qa:AnnotationOfConcepts . " //
-					+ "  ?a oa:hasTarget [ " //
-					+ "           a oa:SpecificResource; " //
-					+ "             oa:hasSource    ?source; " //
-					+ "             oa:hasSelector  [ " //
-					+ "                    a oa:TextPositionSelector ; " //
-					+ "                    oa:start \"" + mappedConcept.getBegin() + "\"^^xsd:nonNegativeInteger ; " //
-					+ "                    oa:end   \"" + mappedConcept.getEnd() + "\"^^xsd:nonNegativeInteger  " //
-					+ "             ] " //
-					+ "  ] . " //
-					+ "  ?a oa:hasBody ?mappedConceptURI;" //
-					+ "     oa:annotatedBy qa:ConceptIdentifier; " //
-					+ "}} " //
-					+ "WHERE { " //
-					+ "  BIND (IRI(str(RAND())) AS ?a) ."//
-					+ "  BIND (now() AS ?time) ." //
-					+ "  BIND (<" + mappedConcept.getURI() + "> AS ?mappedConceptURI) ." //
-					+ "  BIND (<" + myQanaryQuestion.getUri() + "> AS ?source  ) ." //
-					+ "}";
-			logger.debug("Sparql query to add concepts to Qanary triplestore: {}", sparql);
-			myQanaryUtils.updateTripleStore(sparql, myQanaryQuestion.getEndpoint().toString());
-		}
 		return myQanaryMessage;
 	}
 
+	/**
+	 * @param candidateStr The matching candidate.
+	 * @param targetStr The target concept or a synonym of the concept that we want to match.
+	 * @param conceptLabel The label of the concept, as known by GeoQA.
+	 * @param similarity The Similarity object to use for matching.
+	 * @param threshold Similarity threshold.
+	 * @param mappedConcepts A data structure used to hold matched Concepts.
+	 * @param myQuestion The lemmatized version of the question asked.
+	 * @return True if the match was successful, i.e., if the candidate was mapped to a Concept.
+	 */
+	boolean mapIfSimilar(String candidateStr, String targetStr, String conceptLabel, Similarity similarity, double threshold, List<Concept> mappedConcepts, String myQuestion) {
+		double similarityScore = similarity.computeSimilarity(candidateStr.toLowerCase(Locale.ROOT), targetStr.toLowerCase(Locale.ROOT));
+		System.out.println("got similarity for candidate : " + candidateStr + "\t and concept label : " +targetStr + "\t is = "+similarityScore);
+		if(similarityScore > threshold) {
+			Concept concept = new Concept();
+			int begin = myQuestion.toLowerCase().indexOf(candidateStr.toLowerCase());
+			concept.setBegin(begin);
+			concept.setEnd(begin + candidateStr.length());
+			concept.setURI(yago2geoClassesMap.get(conceptLabel));
+			mappedConcepts.add(concept);
+			System.out.println("Identified Concepts: yago2geo:" + conceptLabel + " ============================"
+					+ "candidate inside question is: " + candidateStr + " ===================");
+			logger.info("identified concept: concept={} : {} : {}", concept, myQuestion, concept.getURI());
+			return true;
+		}
+		return false;
+	}
+
+	/**
+	 * @param question The input question.
+	 * @param classesMap A map of Labels-Classes that the ConceptIdentifier will look for.
+	 * @return A list of identified Concepts.
+	 */
+	List<Concept> mapConcepts(String question, Map<String, String> classesMap) {
+		var mappedConcepts = new ArrayList<Concept>();
+
+		MAP_CONCEPTS_LOOP:
+		for (String conceptLabel : classesMap.keySet()) {
+			List<String> ngrams = createNGrams(wordcount(conceptLabel), question);
+
+			// use string similarity (Concept label compared to word-ngrams)
+			for (String ngram : ngrams) {
+				if (mapIfSimilar(ngram, conceptLabel, conceptLabel, jwSimilarity, 0.99, mappedConcepts, question))
+					continue MAP_CONCEPTS_LOOP;
+			}
+
+			// use bert embedding cosine similarity
+			for (String ngram : ngrams) {
+				if (mapIfSimilar(ngram, conceptLabel, conceptLabel, bertSimilarity, 0.95, mappedConcepts, question))
+					continue MAP_CONCEPTS_LOOP;
+			}
+
+			/*
+			 * Use synonyms to identify Concepts.
+			 */
+			ArrayList<String> wordNetSynonyms = wordNet.getSynonyms(conceptLabel);
+
+			// use pattern matching
+			for (String synonym : wordNetSynonyms) {
+				List<String> ngramsSynonym = createNGrams(wordcount(conceptLabel), question);
+
+				// use string similarity (Concept label compared to word-ngrams)
+				for (String ngram : ngramsSynonym) {
+					if (mapIfSimilar(ngram, synonym, conceptLabel, jwSimilarity, 0.99, mappedConcepts, question))
+						continue MAP_CONCEPTS_LOOP;
+				}
+			}
+
+			// use bert embedding cosine similarity
+			for (String synonym : wordNetSynonyms) {
+				List<String> ngramsSynonym = createNGrams(wordcount(conceptLabel), question);
+
+				// use string similarity (Concept label compared to word-ngrams)
+				for (String ngram : ngramsSynonym) {
+					if (mapIfSimilar(ngram, synonym, conceptLabel, bertSimilarity, 0.95, mappedConcepts, question))
+						continue MAP_CONCEPTS_LOOP;
+				}
+			}
+		}
+
+		return mappedConcepts;
+	}
 }

@@ -16,6 +16,13 @@
 		<maven.compiler.source>${java.version}</maven.compiler.source>
 		<maven.compiler.target>${java.version}</maven.compiler.target>
 	</properties>
+	<repositories>
+		<repository>
+			<id>jitpack.io</id>
+			<name>jitpack</name>
+			<url>https://jitpack.io</url>
+		</repository>
+	</repositories>
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -111,6 +118,16 @@
 			<groupId>edu.stanford.nlp</groupId>
 			<artifactId>stanford-corenlp</artifactId>
 			<version>4.2.2</version>
+		</dependency>
+		<dependency>
+			<groupId>com.robrua.nlp</groupId>
+			<artifactId>easy-bert</artifactId>
+			<version>1.0.3</version>
+		</dependency>
+		<dependency>
+			<groupId>info.debatty</groupId>
+			<artifactId>java-string-similarity</artifactId>
+			<version>RELEASE</version>
 		</dependency>
 	</dependencies>
 

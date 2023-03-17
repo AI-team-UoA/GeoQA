@@ -26,18 +26,17 @@ public class WordNetAnalyzer {
      * retrieves synonyms from wordnet
      *
      * @param word word for which synonyms are retrieved
-     * @param delimiter character to delimit synonyms in return value
      * @return string containing synonyms separated by delimiter
      */
     public ArrayList<String> getSynonyms(String word) {
     	ArrayList<String> synStringSet = new ArrayList<String>();
-//        Synset[] synsets = wordNetDatabase.getSynsets(word);
-//        for (Synset synset : synsets) {
-//            for (String s1 : synset.getWordForms()) {
-//            	if(!synStringSet.contains(s1))
-//                synStringSet.add(s1);
-//            }
-//        }
+        Synset[] synsets = wordNetDatabase.getSynsets(word);
+        for (Synset synset : synsets) {
+            for (String s1 : synset.getWordForms()) {
+            	if(!synStringSet.contains(s1))
+                    synStringSet.add(s1);
+            }
+        }
     	synStringSet.add(word);
         return synStringSet;
     }
@@ -65,8 +64,6 @@ public class WordNetAnalyzer {
      *
      * @param word word for which synonyms and relational word forms are
      * retrieved
-     * @param delimiter character to delimit synonyms and derivational word
-     * forms
      * @return list containing synonyms and derivational words, separated by
      * delimiter
      */
@@ -86,11 +83,7 @@ public class WordNetAnalyzer {
             }
         }
         return derivStringSet;
-        //return String.join(delimiter, derivStringSet);
     }
-/*    public static void main(String s[]){
-    	WordNetAnalyzer wordNet = new WordNetAnalyzer("src/main/resources/WordNet-3.0/dict");
-    	System.out.println(wordNet.getSynonyms("restaurant"));
-    }*/
+
     private WordNetDatabase wordNetDatabase;
 }

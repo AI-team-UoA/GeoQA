@@ -39,7 +39,6 @@ import eu.wdaqua.qanary.component.QanaryServiceController;
 @SpringBootTest(classes = Application.class)
 @WebAppConfiguration
 public class TestQanaryServiceController {
-
 	private static final Logger logger = LoggerFactory.getLogger(TestQanaryServiceController.class);
 
 	@Inject
@@ -74,56 +73,6 @@ public class TestQanaryServiceController {
 	}
 
 	/**
-	 * send and receive message a JSON message to
-	 * QanaryConfiguration.annotatequestion, check if the values are the same
-	 */
-	@Test
-	@Ignore //TODO this test cannot be executed as the triplestore needs to be mocked first
-	public void testMessageReceiveAndSend() {
-
-		QanaryMessage requestMessage;
-		try {
-			requestMessage = new QanaryMessage(new URI(endpointKey), new URI(inGraphKey), new URI(outGraphKey));
-			logger.info("Message {}" + requestMessage);
-		} catch (URISyntaxException e) {
-			fail(e.getMessage());
-			return;
-		}
-
-		// check the response
-		MvcResult res;
-		try {
-			res = mockMvc.perform( //
-					post(QanaryConfiguration.annotatequestion) //
-							.content(requestMessage.asJsonString()) //
-							.contentType(MediaType.APPLICATION_JSON))
-					// .andExpect(status().is2xxSuccessful()) //
-					.andExpect(content().contentTypeCompatibleWith(MediaType.APPLICATION_JSON)) //
-					.andReturn();
-		} catch (Exception e) {
-			fail(e.getMessage());
-			return;
-		}
-
-		// check the values of all messages, should be equal if dummy
-		// implementation is used
-		QanaryMessage resultMessage;
-		try {
-			resultMessage = new QanaryMessage(res.getResponse().getContentAsString());
-		} catch (Exception e) {
-			fail(e.getMessage());
-			return;
-		}
-
-		for (Entry<URI, URI> entry : requestMessage.getValues().entrySet()) {
-			URI key = entry.getKey();
-			int compareResult = entry.getValue().toString().compareTo(resultMessage.getValues().get(key).toString());
-			assertTrue("check result vs. request: " + key, compareResult == 0);
-		}
-
-	}
-
-	/**
 	 * test correct message format
 	 */
 	@Test
@@ -145,7 +94,28 @@ public class TestQanaryServiceController {
 			e.printStackTrace();
 			fail(e.getMessage());
 		}
-
 	}
 
+	// TODO: Move these tests to a separate file
+
+	@Test
+	public void testWordCount() {
+		assertEquals (0, ConceptIdentifier.wordcount(" "));
+		assertEquals (4, ConceptIdentifier.wordcount("My name is Sergios"));
+		assertEquals (4, ConceptIdentifier.wordcount(" My name	 is     Sergios"));
+	}
+
+	@Test
+	public void testCreateNGrams() {
+		var ngrams = ConceptIdentifier.createNGrams(2, "My name is Sergios");
+		assertEquals("My name", ngrams.get(0));
+		assertEquals("name is", ngrams.get(1));
+		assertEquals("is Sergios", ngrams.get(2));
+
+		ngrams = ConceptIdentifier.createNGrams(1, "My name is Sergios");
+		var split = "My name is Sergios".split(" ");
+		for (int i = 0; i < ngrams.size(); i++) {
+			assertEquals(split[i], ngrams.get(i));
+		}
+	}
 }

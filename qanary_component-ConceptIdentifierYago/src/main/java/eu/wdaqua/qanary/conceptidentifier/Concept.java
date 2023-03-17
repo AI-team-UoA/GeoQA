@@ -39,6 +39,4 @@ public class Concept {
 	{
 		return "begin = "+begin+" end = "+ end+" uri = "+uri;
 	}
-
-
 }
