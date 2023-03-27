@@ -73,10 +73,6 @@ public class ConceptIdentifier extends QanaryComponent {
 		return sb.toString();
 	}
 
-	static int wordcount(String string)	{
-		return new StringTokenizer(string).countTokens();
-	}
-
 	/**
 	 * Method encapsulating the functionality of the ConceptIdentifier.
 	 */
@@ -171,7 +167,7 @@ public class ConceptIdentifier extends QanaryComponent {
 
 		MAP_CONCEPTS_LOOP:
 		for (String conceptLabel : classesMap.keySet()) {
-			List<String> ngrams = createNGrams(wordcount(conceptLabel), question);
+			List<String> ngrams = createNGrams(CoreNLPUtilities.wordcount(conceptLabel), question);
 
 			// use string similarity (Concept label compared to word-ngrams)
 			for (String ngram : ngrams) {
@@ -192,7 +188,7 @@ public class ConceptIdentifier extends QanaryComponent {
 
 			// use pattern matching
 			for (String synonym : wordNetSynonyms) {
-				List<String> ngramsSynonym = createNGrams(wordcount(conceptLabel), question);
+				List<String> ngramsSynonym = createNGrams(CoreNLPUtilities.wordcount(conceptLabel), question);
 
 				// use string similarity (Concept label compared to word-ngrams)
 				for (String ngram : ngramsSynonym) {
@@ -203,7 +199,7 @@ public class ConceptIdentifier extends QanaryComponent {
 
 			// use bert embedding cosine similarity
 			for (String synonym : wordNetSynonyms) {
-				List<String> ngramsSynonym = createNGrams(wordcount(conceptLabel), question);
+				List<String> ngramsSynonym = createNGrams(CoreNLPUtilities.wordcount(conceptLabel), question);
 
 				// use string similarity (Concept label compared to word-ngrams)
 				for (String ngram : ngramsSynonym) {

@@ -459,4 +459,8 @@ public class CoreNLPUtilities {
 
         return retValues;
     }
+
+    public static int wordcount(String string)	{
+        return new StringTokenizer(string).countTokens();
+    }
 }

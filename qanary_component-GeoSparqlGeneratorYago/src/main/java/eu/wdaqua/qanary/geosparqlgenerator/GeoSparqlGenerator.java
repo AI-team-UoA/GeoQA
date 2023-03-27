@@ -958,7 +958,7 @@ public class GeoSparqlGenerator extends QanaryComponent {
 					dbpediaPropertyFlag = true;
 					annotateTreenode(property,myQuestionNL);
 				}
-				logger.info("Yago (property) uri info {} label {} coceptUri{}", s.getResource("uri").getURI(), property.label, property.conceptUri);
+				logger.info("Yago (property) uri info" + s.getResource("uri").getURI() + "label" + property.label + "coceptUri" + property.conceptUri);
 			}
 
 			System.out.println("total properties found : " + propertiesList.size());
@@ -1169,7 +1169,7 @@ public class GeoSparqlGenerator extends QanaryComponent {
 				indexOfConcepts.add(conceptTemp.begin);
 				concepts.add(conceptTemp);
 				annotateTreenode(conceptTemp);
-				logger.info("Concept start {}, end {}, URI {}", conceptTemp.begin, conceptTemp.end, conceptTemp.link);
+				logger.info("Concept start " + conceptTemp.begin + ", end " + conceptTemp.end + " URI " + conceptTemp.link);
 
 			}
 

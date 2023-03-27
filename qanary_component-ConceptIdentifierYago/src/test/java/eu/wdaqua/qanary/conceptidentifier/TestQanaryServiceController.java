@@ -99,13 +99,6 @@ public class TestQanaryServiceController {
 	// TODO: Move these tests to a separate file
 
 	@Test
-	public void testWordCount() {
-		assertEquals (0, ConceptIdentifier.wordcount(" "));
-		assertEquals (4, ConceptIdentifier.wordcount("My name is Sergios"));
-		assertEquals (4, ConceptIdentifier.wordcount(" My name	 is     Sergios"));
-	}
-
-	@Test
 	public void testCreateNGrams() {
 		var ngrams = ConceptIdentifier.createNGrams(2, "My name is Sergios");
 		assertEquals("My name", ngrams.get(0));
