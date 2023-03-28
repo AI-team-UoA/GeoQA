@@ -120,6 +120,12 @@
 			<version>4.2.2</version>
 		</dependency>
 		<dependency>
+			<groupId>edu.stanford.nlp</groupId>
+			<artifactId>stanford-corenlp</artifactId>
+			<version>4.2.2</version>
+			<classifier>models</classifier>
+		</dependency>
+		<dependency>
 			<groupId>com.robrua.nlp</groupId>
 			<artifactId>easy-bert</artifactId>
 			<version>1.0.3</version>
