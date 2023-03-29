@@ -1,12 +1,13 @@
 package eu.wdaqua.qanary.utils;
 
+import java.io.File;
 import java.util.Locale;
 import com.robrua.nlp.bert.Bert;
 
 public class NeuralUtilities {
     static Bert bert;
-    static {
-        bert = Bert.load("bert-cased-L-12-H-768-A-12");
+    static { // FIXME
+//        bert = Bert.load("com/robrua/nlp/easy-bert/bert-uncased-L-12-H-768-A-12");
     }
 
     public static float computeCosSimilarity(float[] a, float[] b) {
@@ -27,8 +28,10 @@ public class NeuralUtilities {
     }
 
     public static float computeCosSimilarity(String a, String b) {
-        float[] emb1 = bert.embedSequence(a.toLowerCase(Locale.ROOT));
-        float[] emb2 = bert.embedSequence(b.toLowerCase(Locale.ROOT));
-        return NeuralUtilities.computeCosSimilarity(emb1, emb2);
+        // FIXME
+//        float[] emb1 = bert.embedSequence(a.toLowerCase(Locale.ROOT));
+//        float[] emb2 = bert.embedSequence(b.toLowerCase(Locale.ROOT));
+//        return NeuralUtilities.computeCosSimilarity(emb1, emb2);
+        return 0;
     }
 }
