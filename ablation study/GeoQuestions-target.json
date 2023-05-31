@@ -1,0 +1,110 @@
+{
+    "1": {
+        "Question": "What is the population of Central Greece?",
+        "Query": "SELECT DISTINCT ?population WHERE { <http://yago-knowledge.org/resource/Central_Greece_(region)> y2geoo:hasGAG_Population ?population }",
+        "Annotation": {
+            "tar_instances": [
+                "<http://yago-knowledge.org/resource/Central_Greece_(region)>"
+            ],
+            "tar_relations": [],
+            "tar_properties": [
+                "y2geoo:hasGAG_Population"
+            ],
+            "tar_concepts": []
+        },
+        "Category": "A",
+        "Answer": [
+            "\"570922\"^^<http://www.w3.org/2001/XMLSchema#integer>"
+        ]
+    },
+    "144": {
+        "Question": "Is Crete south of Thessaly?",
+        "Query": "ASK { <http://yago-knowledge.org/resource/Crete> geo:hasGeometry ?geo1 . <http://yago-knowledge.org/resource/Thessaly> geo:hasGeometry ?geo2 . ?geo1 geo:asWKT ?geoWKT1 . ?geo2 geo:asWKT ?geoWKT2 . FILTER(strdf:below(?geoWKT1, ?geoWKT2)) }",
+        "Annotation": {
+            "tar_instances": [
+                "<http://yago-knowledge.org/resource/Crete> ",
+                " <http://yago-knowledge.org/resource/Thessaly>"
+            ],
+            "tar_relations": [
+                "strdf:below"
+            ],
+            "tar_properties": [],
+            "tar_concepts": []
+        },
+        "Category": "B",
+        "Answer": [
+            "0"
+        ]
+    },
+    "278": {
+        "Question": "Which lakes are in the Epirus region?",
+        "Query": "SELECT DISTINCT ?lake WHERE { <http://yago-knowledge.org/resource/Epirus_(region)> geo:hasGeometry ?geoC . ?geoC geo:asWKT ?cWKT . ?lake rdf:type y2geoo:OSM_lake . ?lake geo:hasGeometry ?geoL . ?geoL geo:asWKT ?lWKT . FILTER(geof:sfWithin(?lWKT, ?cWKT)) }",
+        "Annotation": {
+            "tar_instances": [
+                "<http://yago-knowledge.org/resource/Epirus_(region)>"
+            ],
+            "tar_relations": [
+                "geof:sfWithin"
+            ],
+            "tar_properties": [],
+            "tar_concepts": [
+                "y2geoo:OSM_lake"
+            ]
+        },
+        "Category": "C",
+        "Answer": [
+            "<http://yago-knowledge.org/resource/geoentity_L\u00c3\u00admni_Ziro\u00c3\u00ba_251199>",
+            "<http://yago-knowledge.org/resource/geoentity_L\u00c3\u00admni_Zarav\u00c3\u00adnas_252498>"
+        ]
+    },
+    "433": {
+        "Question": "Give me 10 nature reserves that are west of townlands.",
+        "Query": "SELECT distinct ?nr WHERE { ?nr rdf:type y2geoo:OSM_nature_reserve. ?nr geo:hasGeometry ?nrGeo. ?nrGeo geo:asWKT ?nrWKt. ?townland rdf:type y2geoo:OSI_Townland. ?townland geo:hasGeometry ?TownlandGeo. ?TownlandGeo geo:asWKT ?TownlandWKt. FILTER (strdf:left(?nrWKt, ?TownlandWKt)) } LIMIT 10",
+        "Annotation": {
+            "tar_instances": [],
+            "tar_relations": [
+                "strdf:left"
+            ],
+            "tar_properties": [],
+            "tar_concepts": [
+                "y2geoo:OSM_nature_reserve",
+                "y2geoo:OSI_Townland"
+            ]
+        },
+        "Category": "D",
+        "Answer": [
+            "<http://yago-knowledge.org/resource/geoentity_Pollardstown_Fen_Nature_Reserve_11776787>",
+            "<http://yago-knowledge.org/resource/Killarney_National_Park>",
+            "<http://yago-knowledge.org/resource/geoentity_The_Gearagh_11777298>",
+            "<http://yago-knowledge.org/resource/geoentity_Trough_Creek_Wilderness_Area_9951960>",
+            "<http://yago-knowledge.org/resource/geoentity_Long_Pond_Conservation_Area_11593533>",
+            "<http://yago-knowledge.org/resource/geoentity_Joshua_Tree_Wilderness_9860604>",
+            "<http://yago-knowledge.org/resource/geoentity_Apalachicola_River_Water_Management_Area_9967750>",
+            "<http://yago-knowledge.org/resource/geoentity_Lake_Alice_Conservation_Area_11002579>",
+            "<http://yago-knowledge.org/resource/geoentity_Hogback_Prarie_State_Natural_Area_11205382>",
+            "<http://yago-knowledge.org/resource/geoentity_Abalone_Cove_State_Marine_Conservation_Area_10297354>"
+        ]
+    },
+    "454": {
+        "Question": "Are there any streams that cross villages in Central Greece?",
+        "Query": "ASK { <http://yago-knowledge.org/resource/Central_Greece_(region)> geo:hasGeometry ?geoC . ?geoC geo:asWKT ?cWKT . ?vill rdf:type y2geoo:OSM_village . ?vill geo:hasGeometry ?geoL . ?geoL geo:asWKT ?lWKT . ?stream rdf:type y2geoo:OSM_stream . ?stream geo:hasGeometry ?geoS . ?geoS geo:asWKT ?sWKT . FILTER(geof:sfWithin(?lWKT, ?cWKT)  && geof:sfCrosses(?lWKT, ?sWKT)) }",
+        "Annotation": {
+            "tar_instances": [
+                "<http://yago-knowledge.org/resource/Central_Greece_(region)>"
+            ],
+            "tar_relations": [
+                "geof:sfWithin",
+                "sfCrosses"
+            ],
+            "tar_properties": [],
+            "tar_concepts": [
+                "y2geoo:OSM_village",
+                "y2geoo:OSM_stream"
+            ]
+        },
+        "Category": "E",
+        "Answer": [
+            "0"
+        ]
+    }
+}
