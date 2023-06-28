@@ -1,0 +1,2102 @@
+{
+    "1": {
+        "Question": "What is the population of Central Greece?",
+        "Query": "SELECT DISTINCT ?population WHERE { <http://yago-knowledge.org/resource/Central_Greece_(region)> y2geoo:hasGAG_Population ?population }",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/Central_Greece_(region)>",
+            "property": "y2geoo:hasGAG_Population",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "2": {
+        "Question": "Where is the Dorset county located?",
+        "Query": "SELECT DISTINCT ?wkt WHERE { <http://yago-knowledge.org/resource/Dorset> geo:hasGeometry ?geo. ?geo geo:asWKT ?wkt }",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/Dorset>",
+            "property": "geo:hasGeometry / geo:asWKT",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "3": {
+        "Question": "Where is Lough Ramor located?",
+        "Query": "SELECT DISTINCT ?wkt WHERE { <http://yago-knowledge.org/resource/Lough_Ramor> geo:hasGeometry ?geo. ?geo geo:asWKT ?wkt }",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/Lough_Ramor>",
+            "property": "geo:hasGeometry / geo:asWKT",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "4": {
+        "Question": "What is the population of the Municipality of Moschato Tavros?",
+        "Query": "SELECT ?population WHERE { yago:Moschato-Tavros y2geoo:hasGAG_Population ?population }",
+        "Annotation": {
+            "instance": "yago:Moschato-Tavros",
+            "property": "y2geoo:hasGAG_Population",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "5": {
+        "Question": "Where is Oxfordshire located?",
+        "Query": "SELECT ?WKT WHERE { yago:Oxfordshire geo:hasGeometry ?o. ?o geo:asWKT ?WKT. }",
+        "Annotation": {
+            "instance": "yago:Oxfordshire",
+            "property": "geo:hasGeometry / geo:asWKT",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "6": {
+        "Question": "What is the total area of County Galway?",
+        "Query": "SELECT (strdf:area(?WKT) AS ?area) WHERE { yago:County_Galway geo:hasGeometry ?o. ?o geo:asWKT ?WKT }",
+        "Annotation": {
+            "instance": "yago:County_Galway",
+            "property": "geo:hasGeometry / geo:asWKT / strdf:area",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "7": {
+        "Question": "Where is Liverpool located?",
+        "Query": "select ?geoWKT where {  <http://yago-knowledge.org/resource/Liverpool> geo:hasGeometry ?o.  ?o geo:asWKT ?geoWKT. }",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/Liverpool>",
+            "property": "geo:hasGeometry / geo:asWKT",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "9": {
+        "Question": "Where is Glyfada located?",
+        "Query": "select ?geoWKT where { <http://yago-knowledge.org/resource/Glyfada> geo:hasGeometry ?o. ?o geo:asWKT ?geoWKT. }",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/Glyfada>",
+            "property": "geo:hasGeometry / geo:asWKT",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "10": {
+        "Question": "What is the population of Aegina ?",
+        "Query": "SELECT ?pop WHERE { yago:Aegina y2geoo:hasGAG_Population ?pop }",
+        "Annotation": {
+            "instance": "yago:Aegina",
+            "property": "y2geoo:hasGAG_Population",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "11": {
+        "Question": "What is the location of the county of Cambridge?",
+        "Query": "select distinct ?geoWKT where { <http://yago-knowledge.org/resource/Cambridge> geo:hasGeometry ?o. ?o geo:asWKT ?geoWKT. }",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/Cambridge>",
+            "property": "geo:hasGeometry / geo:asWKT",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "12": {
+        "Question": "What is the total area of Glengarra Wood forest?",
+        "Query": "select distinct (strdf:area(?geoWKT) as ?area) where { <http://yago-knowledge.org/resource/geoentity_Glengarra_Wood_3300941> geo:hasGeometry ?o. ?o geo:asWKT ?geoWKT. }",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/geoentity_Glengarra_Wood_3300941>",
+            "property": "geo:hasGeometry / geo:asWKT / strdf:area",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "13": {
+        "Question": "What is the population of Piraeus?",
+        "Query": "SELECT ?population WHERE { yago:Piraeus y2geoo:hasGAG_Population ?population }",
+        "Annotation": {
+            "instance": "yago:Piraeus",
+            "property": "y2geoo:hasGAG_Population",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "14": {
+        "Question": "What is the total area of Cambridgeshire?",
+        "Query": "SELECT (strdf:area(?WKT) AS ?totalArea) WHERE { yago:Cambridge geo:hasGeometry  ?rep1 . ?rep1 geo:asWKT ?WKT }",
+        "Annotation": {
+            "instance": "yago:Cambridge",
+            "property": "geo:hasGeometry / geo:asWKT / strdf:area",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "15": {
+        "Question": "Where is Dublin located?",
+        "Query": "SELECT ?WKT WHERE { yago:Dublin geo:hasGeometry  ?rep1 . ?rep1 geo:asWKT ?WKT }",
+        "Annotation": {
+            "instance": "yago:Dublin",
+            "property": "geo:hasGeometry / geo:asWKT",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "17": {
+        "Question": "Where is Taghsheenod Glebe located?",
+        "Query": "SELECT DISTINCT ?geoWKT WHERE {  <http://yago-knowledge.org/resource/geoentity_Taghsheenod_2961290> geo:hasGeometry ?o . ?o geo:asWKT ?geoWKT }",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/geoentity_Taghsheenod_2961290>",
+            "property": "geo:hasGeometry / geo:asWKT",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "18": {
+        "Question": "Where is Petroupoli located?",
+        "Query": "SELECT DISTINCT ?dimos_geoWKT WHERE { <http://yago-knowledge.org/resource/Petroupoli> geo:hasGeometry ?dimos_geo.  ?dimos_geo geo:asWKT ?dimos_geoWKT. }",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/Petroupoli>",
+            "property": "geo:hasGeometry / geo:asWKT",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "19": {
+        "Question": "What is the total area of the river Garw?",
+        "Query": "select distinct (strdf:area(?geoWKT) as ?totalArea) where { <http://yago-knowledge.org/resource/River_Garw> geo:hasGeometry ?o. ?o geo:asWKT ?geoWKT. }",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/River_Garw>",
+            "property": "geo:hasGeometry / geo:asWKT / strdf:area",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "20": {
+        "Question": "Where is Muckross village located?",
+        "Query": "select distinct ?geoWKT where { yago:geoentity_Muckross_Village_9884064 geo:hasGeometry ?o. ?o geo:asWKT ?geoWKT. }",
+        "Annotation": {
+            "instance": "yago:geoentity_Muckross_Village_9884064",
+            "property": "geo:hasGeometry / geo:asWKT",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "21": {
+        "Question": "What is the population of the municipality of Oinofyta?",
+        "Query": "SELECT ?population WHERE { yago:Oinofyta y2geoo:hasGAG_Population ?population . }",
+        "Annotation": {
+            "instance": "yago:Oinofyta",
+            "property": "y2geoo:hasGAG_Population",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "22": {
+        "Question": "Where is Anafi located?",
+        "Query": "select distinct ?geoWKT where {  <http://yago-knowledge.org/resource/Anafi> geo:hasGeometry ?o.  ?o geo:asWKT ?geoWKT. }",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/Anafi>",
+            "property": "geo:hasGeometry / geo:asWKT",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "23": {
+        "Question": "What is the location of Southampton?",
+        "Query": "select distinct ?geoWKT where {  <http://yago-knowledge.org/resource/Southampton> geo:hasGeometry ?o.  ?o geo:asWKT ?geoWKT. }",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/Southampton>",
+            "property": "geo:hasGeometry / geo:asWKT",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "24": {
+        "Question": "Where is the city of Cork located?",
+        "Query": "select distinct  ?geoWKT where {  <http://yago-knowledge.org/resource/geoentity_Cork_City_7778678> geo:hasGeometry ?o.  ?o geo:asWKT ?geoWKT. }",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/geoentity_Cork_City_7778678>",
+            "property": "geo:hasGeometry / geo:asWKT",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "25": {
+        "Question": "What is the population of the municipality of Lemnos?",
+        "Query": "SELECT ?population  WHERE { yago:Lemnos y2geoo:hasGAG_Population ?population }",
+        "Annotation": {
+            "instance": "yago:Lemnos",
+            "property": "y2geoo:hasGAG_Population",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "26": {
+        "Question": "Where is Oxford located?",
+        "Query": "SELECT ?gWKT  WHERE {   <http://yago-knowledge.org/resource/Oxford> geo:hasGeometry ?g .  ?g geo:asWKT ?gWKT }",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/Oxford>",
+            "property": "geo:hasGeometry / geo:asWKT",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "27": {
+        "Question": "How large is County Donegal?",
+        "Query": "SELECT ?area  WHERE {   <http://yago-knowledge.org/resource/County_Donegal> geo:hasGeometry ?gy .  ?gy geo:asWKT ?yWKT .  BIND(strdf:area(strdf:transform(?yWKT, <http://www.opengis.net/def/crs/EPSG/0/4326>)) AS ?area)     }",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/County_Donegal>",
+            "property": "geo:hasGeometry / geo:asWKT / strdf:transform / strdf:area",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "28": {
+        "Question": "What is the size of Eretria?",
+        "Query": "select (strdf:area(?iWKT) as ?area) where { yago:Eretria geo:hasGeometry ?iGeom. ?iGeom geo:asWKT ?iWKT. }",
+        "Annotation": {
+            "instance": "yago:Eretria",
+            "property": "geo:hasGeometry / geo:asWKT / strdf:area",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "29": {
+        "Question": "Where is Cambridge located?",
+        "Query": "select distinct ?geoWKT where { yago:geoentity_Cambridge_District_7290660 geo:hasGeometry ?o. ?o geo:asWKT ?geoWKT. }",
+        "Annotation": {
+            "instance": "yago:geoentity_Cambridge_District_7290660",
+            "property": "geo:hasGeometry / geo:asWKT",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "30": {
+        "Question": "What is Dublin's administrative type?",
+        "Query": "select ?e where { yago:Dublin rdf:type ?e }",
+        "Annotation": {
+            "instance": "yago:Dublin",
+            "property": "rdf:type",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "31": {
+        "Question": "Where is Galatsi located?",
+        "Query": "select ?geoWKT where {  <http://yago-knowledge.org/resource/Galatsi> geo:hasGeometry ?o.  ?o geo:asWKT ?geoWKT. }",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/Galatsi>",
+            "property": "geo:hasGeometry / geo:asWKT",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "32": {
+        "Question": "Where is Mitchelstown located?",
+        "Query": "select ?geoWKT where {  <http://yago-knowledge.org/resource/Mitchelstown> geo:hasGeometry ?o.  ?o geo:asWKT ?geoWKT. }",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/Mitchelstown>",
+            "property": "geo:hasGeometry / geo:asWKT",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "33": {
+        "Question": "Where is Loch Ness located?",
+        "Query": "SELECT DISTINCT ?geoWKT WHERE {   <http://yago-knowledge.org/resource/Loch_Ness> geo:hasGeometry ?o.   ?o geo:asWKT ?geoWKT. }",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/Loch_Ness>",
+            "property": "geo:hasGeometry / geo:asWKT",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "34": {
+        "Question": "Where is the location of Lake Kerkini?",
+        "Query": "SELECT DISTINCT ?geoWKT WHERE {   <http://yago-knowledge.org/resource/Lake_Kerkini> geo:hasGeometry ?o.   ?o geo:asWKT ?geoWKT. }",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/Lake_Kerkini>",
+            "property": "geo:hasGeometry / geo:asWKT",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "35": {
+        "Question": "Where is Lough Derg located?",
+        "Query": "SELECT DISTINCT ?geoWKT WHERE {   <http://yago-knowledge.org/resource/Lough_Derg_(Shannon)> geo:hasGeometry ?o.   ?o geo:asWKT ?geoWKT. }",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/Lough_Derg_(Shannon)>",
+            "property": "geo:hasGeometry / geo:asWKT",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "36": {
+        "Question": "What is the population of the municipality of Gravia?",
+        "Query": "SELECT ?population WHERE { yago:Gravia y2geoo:hasGAG_Population ?population }",
+        "Annotation": {
+            "instance": "yago:Gravia",
+            "property": "y2geoo:hasGAG_Population",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "37": {
+        "Question": "What is the area of West Sussex?",
+        "Query": "SELECT (strdf:area(?geoWKT) AS ?area) ?g WHERE{         yago:West_Sussex geo:hasGeometry ?g.         ?g geo:asWKT ?geoWKT. }",
+        "Annotation": {
+            "instance": "yago:West_Sussex",
+            "property": "geo:hasGeometry / geo:asWKT / strdf:area",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "38": {
+        "Question": "What is the area of the Republic of Ireland?",
+        "Query": "SELECT (strdf:area(?geoWKT) AS ?area) WHERE{         yago:Republic_of_Ireland geo:hasGeometry ?g.         ?g geo:asWKT ?geoWKT. }",
+        "Annotation": {
+            "instance": "yago:Republic_of_Ireland",
+            "property": "geo:hasGeometry / geo:asWKT / strdf:area",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "39": {
+        "Question": "Where is Crete located?",
+        "Query": "SELECT distinct ?xWKT WHERE {     <http://yago-knowledge.org/resource/Crete> geo:hasGeometry ?xgeo.     ?xgeo geo:asWKT ?xWKT.  }",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/Crete>",
+            "property": "geo:hasGeometry / geo:asWKT",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "40": {
+        "Question": "Where is City of London located?",
+        "Query": "SELECT distinct ?xWKT WHERE {     <http://yago-knowledge.org/resource/geoentity_City_of_London_2643744> geo:hasGeometry ?xgeo.     ?xgeo geo:asWKT ?xWKT.  }",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/geoentity_City_of_London_2643744>",
+            "property": "geo:hasGeometry / geo:asWKT",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "41": {
+        "Question": "Where is Lough Derg located?",
+        "Query": "SELECT distinct ?xWKT WHERE {     <http://yago-knowledge.org/resource/Lough_Derg_(Shannon)> geo:hasGeometry ?xgeo.     ?xgeo geo:asWKT ?xWKT.  }",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/Lough_Derg_(Shannon)>",
+            "property": "geo:hasGeometry / geo:asWKT",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "42": {
+        "Question": "Is Crete an island?",
+        "Query": "ASK {  yago:Crete rdf:type   y2geoo:OSM_island. }",
+        "Annotation": {
+            "instance": "yago:Crete",
+            "property": "rdf:type y2geoo:OSM_island",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "43": {
+        "Question": "What is the population of Kallithea?",
+        "Query": "SELECT ?population {            yago:Kallithea  y2geoo:hasGAG_Population ?population . }",
+        "Annotation": {
+            "instance": "yago:Kallithea",
+            "property": "y2geoo:hasGAG_Population",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "44": {
+        "Question": "What is the national level of Plymouth?",
+        "Query": "select ?nationalLevel  where {   yago:Plymouth y2geoo:hasGADM_NationalLevel  ?nationalLevel . }",
+        "Annotation": {
+            "instance": "yago:Plymouth",
+            "property": "y2geoo:hasGADM_NationalLevel",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "45": {
+        "Question": "Where is Lough Ree located?",
+        "Query": "SELECT ?x1WKT  WHERE {      yago:Lough_Ree geo:hasGeometry ?x1Geo. ?x1Geo geo:asWKT ?x1WKT.  }",
+        "Annotation": {
+            "instance": "yago:Lough_Ree",
+            "property": "geo:hasGeometry / geo:asWKT",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "46": {
+        "Question": "What is the total area of Liverpool?",
+        "Query": "select distinct (strdf:area(?geoWKT)as ?totalArea) where { yago:Liverpool geo:hasGeometry ?o. ?o geo:asWKT ?geoWKT. }",
+        "Annotation": {
+            "instance": "yago:Liverpool",
+            "property": "geo:hasGeometry / geo:asWKT / strdf:area",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "47": {
+        "Question": "Where is Dublin located?",
+        "Query": "select ?geoWKT where { yago:Dublin geo:hasGeometry ?o. ?o geo:asWKT ?geoWKT. }",
+        "Annotation": {
+            "instance": "yago:Dublin",
+            "property": "geo:hasGeometry / geo:asWKT",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "48": {
+        "Question": "What population does Icaria have?",
+        "Query": "SELECT ?population WHERE{ yago:Icaria  y2geoo:hasGAG_Population ?population . }",
+        "Annotation": {
+            "instance": "yago:Icaria",
+            "property": "y2geoo:hasGAG_Population",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "49": {
+        "Question": "What is the population of Andravida?",
+        "Query": "SELECT ?population WHERE { yago:Andravida y2geoo:hasGAG_Population ?population . }",
+        "Annotation": {
+            "instance": "yago:Andravida",
+            "property": "y2geoo:hasGAG_Population",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "50": {
+        "Question": "Where is Dublin located?",
+        "Query": "SELECT  ?xWKT WHERE {   yago:Dublin geo:hasGeometry ?xGeom .   ?xGeom geo:asWKT ?xWKT . }",
+        "Annotation": {
+            "instance": "yago:Dublin",
+            "property": "geo:hasGeometry / geo:asWKT",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "51": {
+        "Question": "What is the total area of Manchester?",
+        "Query": "SELECT distinct (strdf:area(?xWKT)as ?totalArea) WHERE {   yago:Manchester geo:hasGeometry ?xGeom .   ?xGeom geo:asWKT ?xWKT . }",
+        "Annotation": {
+            "instance": "yago:Manchester",
+            "property": "geo:hasGeometry / geo:asWKT / strdf:area",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "52": {
+        "Question": "Where is Nafpaktia located?",
+        "Query": "select distinct ?geoWKT where {     yago:Nafpaktia geo:hasGeometry ?o.     ?o geo:asWKT ?geoWKT. }",
+        "Annotation": {
+            "instance": "yago:Nafpaktia",
+            "property": "geo:hasGeometry / geo:asWKT",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "53": {
+        "Question": "What is the population of Psara?",
+        "Query": "SELECT ?pop WHERE { <http://yago-knowledge.org/resource/Psara>   <http://kr.di.uoa.gr/yago2geo/ontology/hasGAG_Population>  ?pop. }",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/Psara>",
+            "property": "<http://kr.di.uoa.gr/yago2geo/ontology/hasGAG_Population>",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "54": {
+        "Question": "Where is York located?",
+        "Query": "select distinct ?geoWKT where {         <http://yago-knowledge.org/resource/York> geo:hasGeometry ?o.         ?o geo:asWKT ?geoWKT.}",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/York>",
+            "property": "geo:hasGeometry / geo:asWKT",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "55": {
+        "Question": "How many citizens does Astypalaia have?",
+        "Query": "SELECT ?p  WHERE {        <http://yago-knowledge.org/resource/Astypalaia> y2geoo:hasGAG_Population ?p  }",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/Astypalaia>",
+            "property": "y2geoo:hasGAG_Population",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "56": {
+        "Question": "Where is the Isle of Portland located?",
+        "Query": "SELECT ?geoWKT  WHERE {        yago:Isle_of_Portland geo:hasGeometry ?g.     ?g geo:asWKT ?geoWKT. }",
+        "Annotation": {
+            "instance": "yago:Isle_of_Portland",
+            "property": "geo:hasGeometry / geo:asWKT",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "57": {
+        "Question": "What is the location of County Cork?",
+        "Query": "select ?geoWKT{     yago:County_Cork geo:hasGeometry ?geom .     ?geom geo:asWKT ?geoWKT.  }",
+        "Annotation": {
+            "instance": "yago:County_Cork",
+            "property": "geo:hasGeometry / geo:asWKT",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "58": {
+        "Question": "What is Londonderry's surface area?",
+        "Query": "SELECT DISTINCT ?area WHERE {         <http://kr.di.uoa.gr/yago2geo/resource/osnientity_Londonderry_1414> y2geoo:hasOSNI_Area ?area }",
+        "Annotation": {
+            "instance": "<http://kr.di.uoa.gr/yago2geo/resource/osnientity_Londonderry_1414>",
+            "property": "y2geoo:hasOSNI_Area",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "59": {
+        "Question": "What is the population of Syros?",
+        "Query": "SELECT ?pop WHERE {   yago:Syros y2geoo:hasGAG_Population ?pop }",
+        "Annotation": {
+            "instance": "yago:Syros",
+            "property": "y2geoo:hasGAG_Population",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "60": {
+        "Question": "Where is Kastanas beach located?",
+        "Query": "SELECT ?wkt WHERE{ yago:geoentity_Paral\u00eda_Kastan\u00e1s_10277719 geo:hasGeometry  ?rep1 . ?rep1 geo:asWKT ?wkt }",
+        "Annotation": {
+            "instance": "yago:geoentity_Paral\u00eda_Kastan\u00e1s_10277719",
+            "property": "geo:hasGeometry / geo:asWKT",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "61": {
+        "Question": "Where is the Loch Leven National Nature Reserve located?",
+        "Query": "SELECT ?wkt WHERE{ yago:geoentity_Loch_Leven_2643816 geo:hasGeometry  ?rep1 . ?rep1 geo:asWKT ?wkt }",
+        "Annotation": {
+            "instance": "yago:geoentity_Loch_Leven_2643816",
+            "property": "geo:hasGeometry / geo:asWKT",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "62": {
+        "Question": "What's the location of Killarney Beach?",
+        "Query": "SELECT ?wkt WHERE{ yago:geoentity_Killarney_Beach_8215737 geo:hasGeometry  ?rep1 . ?rep1 geo:asWKT ?wkt }",
+        "Annotation": {
+            "instance": "yago:geoentity_Killarney_Beach_8215737",
+            "property": "geo:hasGeometry / geo:asWKT",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "63": {
+        "Question": "Where is Selby District located?",
+        "Query": "select distinct ?geoWKT where {     yago:Selby_District geo:hasGeometry ?o.     ?o geo:asWKT ?geoWKT. }",
+        "Annotation": {
+            "instance": "yago:Selby_District",
+            "property": "geo:hasGeometry / geo:asWKT",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "64": {
+        "Question": "What is the total area of town Ballinasloe?",
+        "Query": "select distinct (strdf:area(?geoWKT) as ?totalArea) where {     yago:Ballinasloe geo:hasGeometry ?o.     ?o geo:asWKT ?geoWKT. }",
+        "Annotation": {
+            "instance": "yago:Ballinasloe",
+            "property": "geo:hasGeometry / geo:asWKT / strdf:area",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "65": {
+        "Question": "Where is the city of Drogheda located?",
+        "Query": "SELECT DISTINCT ?geoWKT WHERE {  yago:Drogheda geo:hasGeometry ?o .  ?o geo:asWKT ?geoWKT . }",
+        "Annotation": {
+            "instance": "yago:Drogheda",
+            "property": "geo:hasGeometry / geo:asWKT",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "66": {
+        "Question": "Where is Crewe located?",
+        "Query": "SELECT DISTINCT ?geoWKT WHERE {  yago:Crewe geo:hasGeometry ?o .  ?o geo:asWKT ?geoWKT . }",
+        "Annotation": {
+            "instance": "yago:Crewe",
+            "property": "geo:hasGeometry / geo:asWKT",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "67": {
+        "Question": "Where is Lesbos located?",
+        "Query": "SELECT DISTINCT ?geoWKT WHERE {  yago:Lesbos geo:hasGeometry ?o .  ?o geo:asWKT ?geoWKT . }",
+        "Annotation": {
+            "instance": "yago:Lesbos",
+            "property": "geo:hasGeometry / geo:asWKT",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "68": {
+        "Question": "Where is Arkansas located?",
+        "Query": "select distinct ?geoWKT where {  <http://yago-knowledge.org/resource/Arkansas> geo:hasGeometry ?o.  ?o geo:asWKT ?geoWKT. }",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/Arkansas>",
+            "property": "geo:hasGeometry / geo:asWKT",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "69": {
+        "Question": "Where is Chichester located?",
+        "Query": "select distinct ?geoWKT where {  <http://yago-knowledge.org/resource/Chichester> geo:hasGeometry ?o.  ?o geo:asWKT ?geoWKT. }",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/Chichester>",
+            "property": "geo:hasGeometry / geo:asWKT",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "70": {
+        "Question": "What is the population of Nikaia-Agios Ioannis Rentis?",
+        "Query": "select ?o where {  <http://yago-knowledge.org/resource/Nikaia-Agios_Ioannis_Rentis> <http://kr.di.uoa.gr/yago2geo/ontology/hasGAG_Population> ?o. }",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/Nikaia-Agios_Ioannis_Rentis>",
+            "property": "http://kr.di.uoa.gr/yago2geo/ontology/hasGAG_Population",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "71": {
+        "Question": "Where is Mullingar, the county town, located?",
+        "Query": "SELECT DISTINCT ?geoWKT WHERE {  yago:Mullingar geo:hasGeometry ?o .  ?o geo:asWKT ?geoWKT . }",
+        "Annotation": {
+            "instance": "yago:Mullingar",
+            "property": "geo:hasGeometry / geo:asWKT",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "72": {
+        "Question": "Where is the city of Manchester located?",
+        "Query": "SELECT DISTINCT ?geoWKT WHERE {  yago:Manchester geo:hasGeometry ?o .  ?o geo:asWKT ?geoWKT . }",
+        "Annotation": {
+            "instance": "yago:Manchester",
+            "property": "geo:hasGeometry / geo:asWKT",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "73": {
+        "Question": "Where is Paxi island located?",
+        "Query": "SELECT DISTINCT ?geoWKT WHERE {  yago:Paxi geo:hasGeometry ?o .  ?o geo:asWKT ?geoWKT . }",
+        "Annotation": {
+            "instance": "yago:Paxi",
+            "property": "geo:hasGeometry / geo:asWKT",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "74": {
+        "Question": "Where is the municipality of Athens located?",
+        "Query": "SELECT ?geoWKT WHERE{ yago:geoentity_Dimos_Athens_8133876 geo:hasGeometry ?o.                 ?o geo:asWKT ?geoWKT.}",
+        "Annotation": {
+            "instance": "yago:geoentity_Dimos_Athens_8133876",
+            "property": "geo:hasGeometry / geo:asWKT",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "75": {
+        "Question": "Where is Coventry located?",
+        "Query": "SELECT distinct ?geoWKT WHERE {        yago:Coventry geo:hasGeometry ?o.        ?o geo:asWKT ?geoWKT.}",
+        "Annotation": {
+            "instance": "yago:Coventry",
+            "property": "geo:hasGeometry / geo:asWKT",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "76": {
+        "Question": "Where is Cork City located?",
+        "Query": "SELECT distinct ?geoWKT WHERE {        <http://yago-knowledge.org/resource/geoentity_Cork_City_7778678>  geo:hasGeometry ?o .                        ?o geo:asWKT ?geoWKT . }",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/geoentity_Cork_City_7778678>",
+            "property": "geo:hasGeometry / geo:asWKT",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "77": {
+        "Question": "Where is the municipality of Chania located?",
+        "Query": "SELECT ?gWKT WHERE{         <http://yago-knowledge.org/resource/geoentity_Chania_8133762> geo:hasGeometry ?g. ?g geo:asWKT ?gWKT.  }",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/geoentity_Chania_8133762>",
+            "property": "geo:hasGeometry / geo:asWKT",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "78": {
+        "Question": "Where is Norfolk, the county, located?",
+        "Query": "SELECT ?gWKT WHERE{         <http://yago-knowledge.org/resource/Norfolk> geo:hasGeometry ?g.  ?g geo:asWKT ?gWKT.  }",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/Norfolk>",
+            "property": "geo:hasGeometry / geo:asWKT",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "79": {
+        "Question": "Where is the Ballymoe barony located?",
+        "Query": "SELECT ?gWKT WHERE{         <http://yago-knowledge.org/resource/Ballymoe> geo:hasGeometry ?g. ?g geo:asWKT ?gWKT.  }",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/Ballymoe>",
+            "property": "geo:hasGeometry / geo:asWKT",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "80": {
+        "Question": "Where is Galway located?",
+        "Query": "SELECT ?wkt  WHERE {      y2geor:gadmentity_Galway_IRL.7_1  geo:hasGeometry ?geom . ?geom geo:asWKT ?wkt  }",
+        "Annotation": {
+            "instance": "y2geor:gadmentity_Galway_IRL.7_1",
+            "property": "geo:hasGeometry / geo:asWKT",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "81": {
+        "Question": "What is the total area of Greece?",
+        "Query": "SELECT (strdf:area(?wkt) AS ?area)  WHERE {      yago:Greece geo:hasGeometry ?geom . ?geom geo:asWKT ?wkt.  }",
+        "Annotation": {
+            "instance": "yago:Greece",
+            "property": "geo:hasGeometry / geo:asWKT / strdf:area",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "82": {
+        "Question": "Where is Edinburgh located?",
+        "Query": "SELECT ?wkt  WHERE {      yago:Edinburgh geo:hasGeometry ?geom . ?geom geo:asWKT ?wkt.  }",
+        "Annotation": {
+            "instance": "yago:Edinburgh",
+            "property": "geo:hasGeometry / geo:asWKT",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "83": {
+        "Question": "What area does Greenwich Park cover?",
+        "Query": "SELECT (strdf:area(?wkt) AS ?area) WHERE { yago:Greenwich_Park geo:hasGeometry ?geom . ?geom geo:asWKT ?wkt. }",
+        "Annotation": {
+            "instance": "yago:Greenwich_Park",
+            "property": "geo:hasGeometry / geo:asWKT / strdf:area",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "84": {
+        "Question": "Where Glasgow is located?",
+        "Query": "SELECT ?wkt WHERE { yago:geoentity_Glasgow_City_3333231 geo:hasGeometry ?geom . ?geom geo:asWKT ?wkt. }",
+        "Annotation": {
+            "instance": "yago:geoentity_Glasgow_City_3333231",
+            "property": "geo:hasGeometry / geo:asWKT",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "85": {
+        "Question": "What is the total area of the United Kingdom?",
+        "Query": "SELECT (strdf:area(?cwkt) AS ?area) WHERE { yago:United_Kingdom geo:hasGeometry ?cgeom . ?cgeom geo:asWKT ?cwkt . }",
+        "Annotation": {
+            "instance": "yago:United_Kingdom",
+            "property": "geo:hasGeometry / geo:asWKT / strdf:area",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "86": {
+        "Question": "Which are the inflows and outflows of Lake Michigan?",
+        "Query": "SELECT ?river WHERE { ?river rdf:type y2geoo:OSM_stream . ?river geo:hasGeometry ?rgeom . ?rgeom geo:asWKT ?rwkt . yago:Lake_Michigan geo:hasGeometry ?lgeom . ?lgeom geo:asWKT ?lwkt . FILTER(geof:sfIntersects(?rwkt, ?lwkt)). }",
+        "Annotation": {
+            "instance": "yago:Lake_Michigan",
+            "property": "geo:hasGeometry / geo:asWKT",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "87": {
+        "Question": "What is the population of Lincoln in Montana?",
+        "Query": "SELECT (xsd:integer (?population) as ?pop) WHERE { yago:Lincoln_County\\,_Montana y2geoo:POPULATION  ?population.   }",
+        "Annotation": {
+            "instance": "yago:Lincoln_County,_Montana",
+            "property": "y2geoo:POPULATION",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "88": {
+        "Question": "What is the location of the city of Houston?",
+        "Query": "SELECT ?wkt WHERE{ yago:geoentity_City_of_Houston_11788285 geo:hasGeometry  ?rep1 . ?rep1 geo:asWKT ?wkt }",
+        "Annotation": {
+            "instance": "yago:geoentity_City_of_Houston_11788285",
+            "property": "geo:hasGeometry / geo:asWKT",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "89": {
+        "Question": "What's the location of Lake Houston?",
+        "Query": "SELECT ?wkt WHERE{ yago:Lake_Houston geo:hasGeometry  ?rep1 . ?rep1 geo:asWKT ?wkt }",
+        "Annotation": {
+            "instance": "yago:Lake_Houston",
+            "property": "geo:hasGeometry / geo:asWKT",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "90": {
+        "Question": "What is the location of Selby District?",
+        "Query": "select distinct ?geoWKT where { yago:Selby_District geo:hasGeometry ?o . ?o geo:asWKT ?geoWKT. }",
+        "Annotation": {
+            "instance": "yago:Selby_District",
+            "property": "geo:hasGeometry / geo:asWKT",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "91": {
+        "Question": "What is the total area of Arkansas?",
+        "Query": "select distinct (strdf:area(?geoWKT) as ?totalArea) where { yago:Arkansas geo:hasGeometry ?o.     ?o geo:asWKT ?geoWKT. }",
+        "Annotation": {
+            "instance": "yago:Arkansas",
+            "property": "geo:hasGeometry / geo:asWKT / strdf:area",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "92": {
+        "Question": "Where is Drogheda located?",
+        "Query": "SELECT DISTINCT ?geoWKT WHERE { yago:Drogheda geo:hasGeometry ?o .  ?o geo:asWKT ?geoWKT . }",
+        "Annotation": {
+            "instance": "yago:Drogheda",
+            "property": "geo:hasGeometry / geo:asWKT",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "93": {
+        "Question": "Where is Pallini located?",
+        "Query": "SELECT DISTINCT ?geoWKT WHERE {  yago:Pallini geo:hasGeometry ?o .  ?o geo:asWKT ?geoWKT . }",
+        "Annotation": {
+            "instance": "yago:Pallini",
+            "property": "geo:hasGeometry / geo:asWKT",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "94": {
+        "Question": "Where is Corfu located?",
+        "Query": "SELECT DISTINCT ?geoWKT WHERE {  yago:Corfu geo:hasGeometry ?o .  ?o geo:asWKT ?geoWKT . }",
+        "Annotation": {
+            "instance": "yago:Corfu",
+            "property": "geo:hasGeometry / geo:asWKT",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "95": {
+        "Question": "What's the location of Cardiff?",
+        "Query": "select distinct ?geoWKT where {  yago:Cardiff geo:hasGeometry ?o.  ?o geo:asWKT ?geoWKT. }",
+        "Annotation": {
+            "instance": "yago:Cardiff",
+            "property": "geo:hasGeometry / geo:asWKT",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "96": {
+        "Question": "How many people live in Albany County, New York?",
+        "Query": "select ?o where { yago:Albany_County\\,_New_York <http://kr.di.uoa.gr/yago2geo/ontology/POPULATION> ?o. }",
+        "Annotation": {
+            "instance": "yago:Albany_County,_New_York",
+            "property": "http://kr.di.uoa.gr/yago2geo/ontology/POPULATION",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "97": {
+        "Question": "What is the population of the Greek region of Epirus?",
+        "Query": "SELECT DISTINCT ?population WHERE { <http://yago-knowledge.org/resource/Epirus_(region)> y2geoo:hasGAG_Population ?population }",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/Epirus_(region)>",
+            "property": "y2geoo:hasGAG_Population",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "98": {
+        "Question": "What is the location of Marousi?",
+        "Query": "SELECT DISTINCT ?wkt WHERE { yago:geoentity_Dimos_Marousi_8133770 geo:hasGeometry ?geo. ?geo geo:asWKT ?wkt }",
+        "Annotation": {
+            "instance": "yago:geoentity_Dimos_Marousi_8133770",
+            "property": "geo:hasGeometry / geo:asWKT",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "99": {
+        "Question": "Where is the forest of Sherwood located?",
+        "Query": "SELECT DISTINCT ?wkt WHERE { yago:geoentity_Sherwood_Park_5781312 geo:hasGeometry ?geo. ?geo geo:asWKT ?wkt }",
+        "Annotation": {
+            "instance": "yago:geoentity_Sherwood_Park_5781312",
+            "property": "geo:hasGeometry / geo:asWKT",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "100": {
+        "Question": "Where is Texas located?",
+        "Query": "SELECT ?WKT WHERE { yago:Texas geo:hasGeometry ?o. ?o geo:asWKT ?WKT. }",
+        "Annotation": {
+            "instance": "yago:Texas",
+            "property": "geo:hasGeometry / geo:asWKT",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "101": {
+        "Question": "What is the total area of Greece?",
+        "Query": "SELECT (strdf:area(?WKT) AS ?area) WHERE { yago:Greece geo:hasGeometry ?o. ?o geo:asWKT ?WKT }",
+        "Annotation": {
+            "instance": "yago:Greece",
+            "property": "geo:hasGeometry / geo:asWKT / strdf:area",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "102": {
+        "Question": "Where is Alaska situated?",
+        "Query": "select ?geoWKT where {  <http://yago-knowledge.org/resource/Alaska> geo:hasGeometry ?o.  ?o geo:asWKT ?geoWKT. }",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/Alaska>",
+            "property": "geo:hasGeometry / geo:asWKT",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "104": {
+        "Question": "How large is Newport?",
+        "Query": "select (strdf:area (?geoWKT) as ?area) where { <http://yago-knowledge.org/resource/geoentity_Newport_3333246> geo:hasGeometry ?o. ?o geo:asWKT ?geoWKT. }",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/geoentity_Newport_3333246>",
+            "property": "geo:hasGeometry / geo:asWKT / strdf:area",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "105": {
+        "Question": "Where is Bristol located?",
+        "Query": "SELECT ?pop WHERE { yago:Bristol geo:hasGeometry ?o. ?o geo:asWKT ?geoWKT. }",
+        "Annotation": {
+            "instance": "yago:Bristol",
+            "property": "geo:hasGeometry / geo:asWKT",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "106": {
+        "Question": "Where is Lake Trichonida located?",
+        "Query": "select distinct ?geoWKT where { yago:Lake_Trichonida geo:hasGeometry ?o. ?o geo:asWKT ?geoWKT. }",
+        "Annotation": {
+            "instance": "yago:Lake_Trichonida",
+            "property": "geo:hasGeometry / geo:asWKT",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "107": {
+        "Question": "How large is Trichonida?",
+        "Query": "select distinct (strdf:area(?geoWKT) as ?area) where { yago:Lake_Trichonida geo:hasGeometry ?o. ?o geo:asWKT ?geoWKT. }",
+        "Annotation": {
+            "instance": "yago:Lake_Trichonida",
+            "property": "geo:hasGeometry / geo:asWKT / strdf:area",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "108": {
+        "Question": "How many inhabitants does Piraeus have?",
+        "Query": "SELECT ?population WHERE { yago:Piraeus y2geoo:hasGAG_Population ?population }",
+        "Annotation": {
+            "instance": "yago:Piraeus",
+            "property": "y2geoo:hasGAG_Population",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "109": {
+        "Question": "What is the total surface area of the Andover Ponds?",
+        "Query": "SELECT (strdf:area(?WKT) AS ?totalArea) WHERE { yago:geoentity_Andover_Ponds_5095197 geo:hasGeometry  ?rep1 . ?rep1 geo:asWKT ?WKT }",
+        "Annotation": {
+            "instance": "yago:geoentity_Andover_Ponds_5095197",
+            "property": "geo:hasGeometry / geo:asWKT / strdf:area",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "110": {
+        "Question": "Where is Ullswater on a map?",
+        "Query": "SELECT ?WKT WHERE { yago:Ullswater geo:hasGeometry  ?rep1 . ?rep1 geo:asWKT ?WKT }",
+        "Annotation": {
+            "instance": "yago:Ullswater",
+            "property": "geo:hasGeometry / geo:asWKT",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "111": {
+        "Question": "Where is Rafina located?",
+        "Query": "SELECT DISTINCT ?geoWKT WHERE { yago:Rafina-Pikermi geo:hasGeometry ?o . ?o geo:asWKT ?geoWKT }",
+        "Annotation": {
+            "instance": "yago:Rafina-Pikermi",
+            "property": "geo:hasGeometry / geo:asWKT",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "112": {
+        "Question": "Where is the village of Muckross located?",
+        "Query": "select distinct ?geoWKT where { yago:geoentity_Muckross_Village_9884064 geo:hasGeometry ?o. ?o geo:asWKT ?geoWKT. }",
+        "Annotation": {
+            "instance": "yago:geoentity_Muckross_Village_9884064",
+            "property": "geo:hasGeometry / geo:asWKT",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "113": {
+        "Question": "What is the population of Wells County, North Dakota?",
+        "Query": "SELECT (xsd:double (?population) as ?pop) WHERE { yago:Wells_County\\,_North_Dakota y2geoo:POPULATION ?population . }",
+        "Annotation": {
+            "instance": "yago:Wells_County,_North_Dakota",
+            "property": "y2geoo:POPULATION",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "114": {
+        "Question": "What is the size of Wells County, North Dakota?",
+        "Query": "select distinct (strdf:area(?geoWKT) as ?area) where { yago:Wells_County\\,_North_Dakota geo:hasGeometry ?o.  ?o geo:asWKT ?geoWKT. }",
+        "Annotation": {
+            "instance": "yago:Wells_County,_North_Dakota",
+            "property": "geo:hasGeometry / geo:asWKT / strdf:area",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "115": {
+        "Question": "Where is Southampton situated?",
+        "Query": "select distinct ?geoWKT where {  <http://yago-knowledge.org/resource/Southampton> geo:hasGeometry ?o.  ?o geo:asWKT ?geoWKT. }",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/Southampton>",
+            "property": "geo:hasGeometry / geo:asWKT",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "116": {
+        "Question": "Where is Alaska located?",
+        "Query": "select distinct  ?geoWKT where { yago:Alaska geo:hasGeometry ?o.  ?o geo:asWKT ?geoWKT. }",
+        "Annotation": {
+            "instance": "yago:Alaska",
+            "property": "geo:hasGeometry / geo:asWKT",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "117": {
+        "Question": "Where is Kalamata located?",
+        "Query": "SELECT ?geoWKT  WHERE { yago:geoentity_Dimos_Kalamata_8133971 geo:hasGeometry ?g.     ?g geo:asWKT ?geoWKT. }",
+        "Annotation": {
+            "instance": "yago:geoentity_Dimos_Kalamata_8133971",
+            "property": "geo:hasGeometry / geo:asWKT",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "118": {
+        "Question": "Where is the location of the County Cavan?",
+        "Query": "select ?geoWKT{     yago:County_Cavan geo:hasGeometry ?geom .     ?geom geo:asWKT ?geoWKT.  }",
+        "Annotation": {
+            "instance": "yago:County_Cavan",
+            "property": "geo:hasGeometry / geo:asWKT",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "119": {
+        "Question": "What is the national level of Essex?",
+        "Query": "SELECT DISTINCT ?nl WHERE {yago:Essex y2geoo:hasGADM_NationalLevel ?nl }",
+        "Annotation": {
+            "instance": "yago:Essex",
+            "property": "y2geoo:hasGADM_NationalLevel",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "120": {
+        "Question": "What is the population of Serifos?",
+        "Query": "SELECT ?pop WHERE {   yago:Serifos y2geoo:hasGAG_Population ?pop }",
+        "Annotation": {
+            "instance": "yago:Serifos",
+            "property": "y2geoo:hasGAG_Population",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "121": {
+        "Question": "Where is Kifisia located?",
+        "Query": "SELECT ?wkt WHERE{ yago:geoentity_Dimos_Kifisia_8133694 geo:hasGeometry  ?rep1 . ?rep1 geo:asWKT ?wkt }",
+        "Annotation": {
+            "instance": "yago:geoentity_Dimos_Kifisia_8133694",
+            "property": "geo:hasGeometry / geo:asWKT",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "122": {
+        "Question": "Where is Chicago located?",
+        "Query": "SELECT ?wkt WHERE{ yago:geoentity_City_of_Chicago_4887539 geo:hasGeometry  ?rep1 . ?rep1 geo:asWKT ?wkt }",
+        "Annotation": {
+            "instance": "yago:geoentity_City_of_Chicago_4887539",
+            "property": "geo:hasGeometry / geo:asWKT",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "123": {
+        "Question": "What's the location of Birmingham?",
+        "Query": "SELECT ?wkt WHERE{ yago:Birmingham geo:hasGeometry  ?rep1 . ?rep1 geo:asWKT ?wkt }",
+        "Annotation": {
+            "instance": "yago:Birmingham",
+            "property": "geo:hasGeometry / geo:asWKT",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "124": {
+        "Question": "Where is Nottinghamshire located?",
+        "Query": "select distinct ?geoWKT where {yago:Nottinghamshire geo:hasGeometry ?o.     ?o geo:asWKT ?geoWKT. }",
+        "Annotation": {
+            "instance": "yago:Nottinghamshire",
+            "property": "geo:hasGeometry / geo:asWKT",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "125": {
+        "Question": "What is the total area of city of Dundee?",
+        "Query": "select distinct (strdf:area(?geoWKT) as ?totalArea) where {<http://yago-knowledge.org/resource/geoentity_Dundee_City_3333225> geo:hasGeometry ?o.     ?o geo:asWKT ?geoWKT. }",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/geoentity_Dundee_City_3333225>",
+            "property": "geo:hasGeometry / geo:asWKT / strdf:area",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "126": {
+        "Question": "Where is Luton located?",
+        "Query": "SELECT DISTINCT ?geoWKT WHERE {  yago:Luton geo:hasGeometry ?o .  ?o geo:asWKT ?geoWKT . }",
+        "Annotation": {
+            "instance": "yago:Luton",
+            "property": "geo:hasGeometry / geo:asWKT",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "127": {
+        "Question": "Where is Broxtowe located?",
+        "Query": "SELECT DISTINCT ?geoWKT WHERE {  yago:Broxtowe geo:hasGeometry ?o .  ?o geo:asWKT ?geoWKT . }",
+        "Annotation": {
+            "instance": "yago:Broxtowe",
+            "property": "geo:hasGeometry / geo:asWKT",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "128": {
+        "Question": "Where is Distomo-Arachova-Antikyra located?",
+        "Query": "SELECT DISTINCT ?geoWKT WHERE {  <http://yago-knowledge.org/resource/Distomo-Arachova-Antikyra> geo:hasGeometry ?o .  ?o geo:asWKT ?geoWKT . }",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/Distomo-Arachova-Antikyra>",
+            "property": "geo:hasGeometry / geo:asWKT",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "130": {
+        "Question": "Where is Pylos located?",
+        "Query": "select distinct ?geoWKT where {  yago:Pylos-Nestor geo:hasGeometry ?o.  ?o geo:asWKT ?geoWKT. }",
+        "Annotation": {
+            "instance": "yago:Pylos-Nestor",
+            "property": "geo:hasGeometry / geo:asWKT",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "131": {
+        "Question": "What is the population of Pylos?",
+        "Query": "select ?o where {  yago:Pylos-Nestor <http://kr.di.uoa.gr/yago2geo/ontology/hasGAG_Population> ?o. }",
+        "Annotation": {
+            "instance": "yago:Pylos-Nestor",
+            "property": "http://kr.di.uoa.gr/yago2geo/ontology/hasGAG_Population",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "132": {
+        "Question": "What is the aggregate surface area of Liverpool?",
+        "Query": "select distinct (strdf:area(?geoWKT)as ?totalArea) where { yago:Liverpool geo:hasGeometry ?o. ?o geo:asWKT ?geoWKT. }",
+        "Annotation": {
+            "instance": "yago:Liverpool",
+            "property": "geo:hasGeometry / geo:asWKT / strdf:area",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "133": {
+        "Question": "What is the total land area within Manchester's boundaries?",
+        "Query": "SELECT distinct (strdf:area(?xWKT)as ?totalArea) WHERE {   yago:Manchester geo:hasGeometry ?xGeom .   ?xGeom geo:asWKT ?xWKT . }",
+        "Annotation": {
+            "instance": "yago:Manchester",
+            "property": "geo:hasGeometry / geo:asWKT / strdf:area",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "134": {
+        "Question": "What is the number of inhabitants residing in Amarynthos?",
+        "Query": "SELECT ?pop WHERE { <http://yago-knowledge.org/resource/Amarynthos>   <http://kr.di.uoa.gr/yago2geo/ontology/hasGAG_Population>  ?pop. }",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/Amarynthos>",
+            "property": "<http://kr.di.uoa.gr/yago2geo/ontology/hasGAG_Population>",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "135": {
+        "Question": "What is the geographical position of Petroupoli?",
+        "Query": "SELECT DISTINCT ?dimos_geoWKT WHERE { <http://yago-knowledge.org/resource/Petroupoli> geo:hasGeometry ?dimos_geo.  ?dimos_geo geo:asWKT ?dimos_geoWKT. }",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/Petroupoli>",
+            "property": "geo:hasGeometry / geo:asWKT",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "136": {
+        "Question": "How many residents does Western Macedonia have?",
+        "Query": "SELECT ?pop WHERE { yago:geoentity_Western_Macedonia_6697811 y2geoo:hasGAG_Population ?pop }",
+        "Annotation": {
+            "instance": "yago:geoentity_Western_Macedonia_6697811",
+            "property": "y2geoo:hasGAG_Population",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "137": {
+        "Question": "What is the size of Oklahoma?",
+        "Query": "SELECT (strdf:area(?wkt) as ?oarea) WHERE { yago:Oklahoma  geo:hasGeometry ?geo . ?geo geo:asWKT ?wkt }",
+        "Annotation": {
+            "instance": "yago:Oklahoma",
+            "property": "geo:hasGeometry / geo:asWKT / strdf:area",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "138": {
+        "Question": "Is Londonderry in Wales?",
+        "Query": "ASK { y2geor:osnientity_Londonderry_1414 geo:hasGeometry ?lGeo . ?lGeo geo:asWKT ?lWKT . yago:Wales geo:hasGeometry ?wGeo . ?wGeo geo:asWKT ?wWKT . FILTER(geof:sfWithin(?lWKT, ?wWKT)) . }",
+        "Annotation": {
+            "instance": "y2geor:osnientity_Londonderry_1414, yago:Wales",
+            "property": "geo:hasGeometry / geo:asWKT, geo:hasGeometry / geo:asWKT, geof:sfWithin",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "139": {
+        "Question": "What is the area of George Washington Park?",
+        "Query": "SELECT (strdf:area(?wkt) as ?area) { yago:geoentity_George_Washington_Park_4257912 geo:hasGeometry ?geo . ?geo geo:asWKT ?wkt . }",
+        "Annotation": {
+            "instance": "yago:geoentity_George_Washington_Park_4257912",
+            "property": "geo:hasGeometry / geo:asWKT / strdf:area",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "140": {
+        "Question": "How many people live in Missouri?",
+        "Query": "SELECT (sum(xsd:double(?pop)) as ?population) WHERE { yago:Missouri geo:hasGeometry ?aGeo . ?aGeo geo:asWKT ?aWKT . ?county y2geoo:hasGADM_Description \"County\" . ?county geo:hasGeometry ?cGeom . ?cGeom geo:asWKT ?cWKT . FILTER(strdf:within(?cWKT, ?aWKT)) . ?county y2geoo:POPULATION ?pop }",
+        "Annotation": {
+            "instance": "yago:Missouri",
+            "property": "geo:hasGeometry / geo:asWKT / FILTER(strdf:within(?cWKT, ?aWKT)) / ?county y2geoo:POPULATION",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "141": {
+        "Question": "What is the population of Alabama?",
+        "Query": "SELECT (sum(xsd:double(?pop)) as ?population) WHERE { yago:Alabama geo:hasGeometry ?aGeo . ?aGeo geo:asWKT ?aWKT . ?county y2geoo:hasGADM_Description \"County\" . ?county geo:hasGeometry ?cGeom . ?cGeom geo:asWKT ?cWKT . FILTER(strdf:within(?cWKT, ?aWKT)) . ?county y2geoo:POPULATION ?pop }",
+        "Annotation": {
+            "instance": "yago:Alabama",
+            "property": "geo:hasGeometry / geo:asWKT / FILTER(strdf:within(?cWKT, ?aWKT)) / ?county y2geoo:POPULATION",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "142": {
+        "Question": "What is the population density of the municipality of Thessaloniki?",
+        "Query": "SELECT (xsd:float(?pop) / xsd:float(?area) as ?result)  WHERE { yago:geoentity_Dimos_Thessaloniki_8133841 geo:hasGeometry ?g . ?g geo:asWKT ?wkt . BIND (strdf:area(?wkt) as ?area) . yago:geoentity_Dimos_Thessaloniki_8133841 y2geoo:hasGAG_Population ?pop }",
+        "Annotation": {
+            "instance": "yago:geoentity_Dimos_Thessaloniki_8133841",
+            "property": "geo:hasGeometry / geo:asWKT / strdf:area, y2geoo:hasGAG_Population",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "143": {
+        "Question": "How much of the UK is woodland?",
+        "Query": "SELECT ((SUM(strdf:area(?fWKT))/?ukArea) as ?woodland) WHERE { yago:United_Kingdom geo:hasGeometry ?ukGeo . ?ukGeo geo:asWKT ?ukWKT . BIND(strdf:area(?ukWKT) as ?ukArea) .  ?forest rdf:type y2geoo:OSM_forest . ?forest geo:hasGeometry ?fGeo . ?fGeo geo:asWKT ?fWKT . FILTER(geof:sfWithin(?fWKT,?ukWKT)) . } GROUP BY ?forest ?ukArea",
+        "Annotation": {
+            "instance": "yago:United_Kingdom",
+            "property": "geo:hasGeometry / geo:asWKT / strdf:area / y2geoo:OSM_forest / geo:hasGeometry / geo:asWKT / geof:sfWithin",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "895": {
+        "Question": "What is the population of San Francisco?",
+        "Query": "SELECT (xsd:integer (?population) as ?pop) WHERE { yago:San_Francisco yago:hasPopulation ?population. }",
+        "Annotation": {
+            "instance": "yago:San_Francisco",
+            "property": "yago:hasPopulation",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "896": {
+        "Question": "What is the capital of California?",
+        "Query": "SELECT ?capital  WHERE {      yago:California yago:hasCapital ?capital.  }",
+        "Annotation": {
+            "instance": "yago:California",
+            "property": "yago:hasCapital",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "897": {
+        "Question": "What is the height of the Mount Shuksan Waterfalls?",
+        "Query": "SELECT ?height  WHERE {        yago:Mount_Shuksan_Waterfalls yago:hasHeight ?height.  }",
+        "Annotation": {
+            "instance": "yago:Mount_Shuksan_Waterfalls",
+            "property": "yago:hasHeight",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "898": {
+        "Question": "What is the population of the UK?",
+        "Query": "SELECT (xsd:integer (?population) as ?pop)  WHERE {        yago:United_Kingdom yago:hasPopulation ?population.  }",
+        "Annotation": {
+            "instance": "yago:United_Kingdom",
+            "property": "yago:hasPopulation",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "899": {
+        "Question": "What is the population of Northern Ireland?",
+        "Query": "SELECT (xsd:integer (?population) as ?pop)  WHERE {      yago:Northern_Ireland yago:hasPopulation ?population.  }",
+        "Annotation": {
+            "instance": "yago:Northern_Ireland",
+            "property": "yago:hasPopulation",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "900": {
+        "Question": "Which is the capital of Northern Ireland?",
+        "Query": "SELECT ?capital  WHERE {      yago:Northern_Ireland yago:hasCapital ?capital.  }",
+        "Annotation": {
+            "instance": "yago:Northern_Ireland",
+            "property": "yago:hasCapital",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "901": {
+        "Question": "What is the population of Athens?",
+        "Query": "SELECT (xsd:integer (?population) as ?pop) WHERE {      yago:Athens yago:hasPopulation ?population.  }",
+        "Annotation": {
+            "instance": "yago:Athens",
+            "property": "yago:hasPopulation",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "902": {
+        "Question": "What are the geographic coordinates of the USA?",
+        "Query": "SELECT ?lat ?lon  WHERE {      yago:United_States yago:hasLatitude ?lat . yago:United_States yago:hasLongitude ?lon }",
+        "Annotation": {
+            "instance": "yago:United_States",
+            "property": "yago:hasLatitude / yago:hasLongitude",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "903": {
+        "Question": "How many people live in LA?",
+        "Query": "SELECT (xsd:integer (?population) as ?pop) WHERE {       yago:Los_Angeles yago:hasPopulation ?population.  }",
+        "Annotation": {
+            "instance": "yago:Los_Angeles",
+            "property": "yago:hasPopulation",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "904": {
+        "Question": "What's the length of the Loch Ness?",
+        "Query": "SELECT ?length  WHERE {      yago:Loch_Ness yago:hasLength ?length.  }",
+        "Annotation": {
+            "instance": "yago:Loch_Ness",
+            "property": "yago:hasLength",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "905": {
+        "Question": "How many people live in the Ireland?",
+        "Query": "SELECT (xsd:integer (?population) as ?pop) WHERE {      yago:Republic_of_Ireland yago:hasPopulation ?population.  }",
+        "Annotation": {
+            "instance": "yago:Republic_of_Ireland",
+            "property": "yago:hasPopulation",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "906": {
+        "Question": "What are the coordinaties of the John F. Kennedy International Airport?",
+        "Query": "SELECT ?lat ?lon  WHERE {      yago:John_F._Kennedy_International_Airport yago:hasLatitude ?lat . yago:John_F._Kennedy_International_Airport yago:hasLongitude ?lon.  }",
+        "Annotation": {
+            "instance": "yago:John_F._Kennedy_International_Airport",
+            "property": "yago:hasLatitude / yago:hasLongitude",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "907": {
+        "Question": "Which is the length of River Liffey?",
+        "Query": "SELECT ?o  WHERE {      yago:River_Liffey yago:hasLength ?o.  }",
+        "Annotation": {
+            "instance": "yago:River_Liffey",
+            "property": "yago:hasLength",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "908": {
+        "Question": "What is the population of Dublin?",
+        "Query": "SELECT ?population  WHERE {    yago:Dublin yago:hasPopulation ?population.  }",
+        "Annotation": {
+            "instance": "yago:Dublin",
+            "property": "yago:hasPopulation",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "909": {
+        "Question": "What is the height of the Lower Ghaghri Falls?",
+        "Query": "SELECT ?height  WHERE {      yago:Lower_Ghaghri_Falls yago:hasHeight ?height.  }",
+        "Annotation": {
+            "instance": "yago:Lower_Ghaghri_Falls",
+            "property": "yago:hasHeight",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "910": {
+        "Question": "Give me the latitude and longitude of NYC.",
+        "Query": "SELECT ?lat ?lon  WHERE {      yago:New_York_City yago:hasLatitude ?lat.      yago:New_York_City yago:hasLongitude ?lon.  }",
+        "Annotation": {
+            "instance": "yago:New_York_City",
+            "property": "yago:hasLatitude / yago:hasLongitude",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "911": {
+        "Question": "What is the population of Scotland?",
+        "Query": "SELECT  ?y  WHERE {      yago:Scotland yago:hasPopulation ?y  }",
+        "Annotation": {
+            "instance": "yago:Scotland",
+            "property": "yago:hasPopulation",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "912": {
+        "Question": "How tall are the Victoria Falls?",
+        "Query": "SELECT  ?y  WHERE {      yago:Victoria_Falls yago:hasHeight ?y  }",
+        "Annotation": {
+            "instance": "yago:Victoria_Falls",
+            "property": "yago:hasHeight",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "913": {
+        "Question": "Which country is North Somerset located in?",
+        "Query": "SELECT DISTINCT ?bath_loc  WHERE { yago:North_Somerset yago:isLocatedIn ?bath_loc  }  LIMIT 1",
+        "Annotation": {
+            "instance": "yago:North_Somerset",
+            "property": "yago:isLocatedIn",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "914": {
+        "Question": "What is Skye?",
+        "Query": "SELECT ?type  WHERE { yago:Skye a ?type. }",
+        "Annotation": {
+            "instance": "yago:Skye",
+            "property": "a",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "915": {
+        "Question": "What is the length of the Awali river?",
+        "Query": "SELECT ?length  WHERE {      yago:Awali_\\(river\\) yago:hasLength ?length.  }",
+        "Annotation": {
+            "instance": "yago:Awali_(river)",
+            "property": "yago:hasLength",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "916": {
+        "Question": "What is the length of the Dnyanganga river?",
+        "Query": "SELECT ?length  WHERE { yago:River_Dnyanganga yago:hasLength ?length. }",
+        "Annotation": {
+            "instance": "yago:River_Dnyanganga",
+            "property": "yago:hasLength",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "917": {
+        "Question": "How much area does Mount Rushmore cover?",
+        "Query": "SELECT ?area WHERE { yago:Mount_Rushmore  yago:hasArea  ?area. }",
+        "Annotation": {
+            "instance": "yago:Mount_Rushmore",
+            "property": "yago:hasArea",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "918": {
+        "Question": "How long is the Grand Canyon?",
+        "Query": "SELECT ?area WHERE { yago:Grand_Canyon yago:hasLength ?area }",
+        "Annotation": {
+            "instance": "yago:Grand_Canyon",
+            "property": "yago:hasLength",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "919": {
+        "Question": "In which state is Detroit?",
+        "Query": "SELECT DISTINCT ?state WHERE { ?state a yago:wikicategory_States_of_the_United_States . yago:Detroit yago:isLocatedIn+ ?state. }",
+        "Annotation": {
+            "instance": "?state, yago:Detroit",
+            "property": "a yago:wikicategory_States_of_the_United_States, yago:isLocatedIn+",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "920": {
+        "Question": "How many people live in the capital of England?",
+        "Query": "SELECT (xsd:integer (?population) as ?pop) WHERE { yago:London yago:hasPopulation ?population }",
+        "Annotation": {
+            "instance": "yago:London",
+            "property": "yago:hasPopulation",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "921": {
+        "Question": "What is the maximum length of Bala Lake?",
+        "Query": "SELECT ?length WHERE { yago:Bala_Lake yago:hasLength ?length }",
+        "Annotation": {
+            "instance": "yago:Bala_Lake",
+            "property": "yago:hasLength",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "922": {
+        "Question": "How long is Loch Awe?",
+        "Query": "SELECT ?length WHERE { yago:Loch_Awe yago:hasLength ?length }",
+        "Annotation": {
+            "instance": "yago:Loch_Awe",
+            "property": "yago:hasLength",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "923": {
+        "Question": "What is the total area of Lake Taupo?",
+        "Query": "SELECT ?area WHERE { yago:Lake_Taupo yago:hasArea ?area }",
+        "Annotation": {
+            "instance": "yago:Lake_Taupo",
+            "property": "yago:hasArea",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "924": {
+        "Question": "How many people live in Washington, the capital of the US?",
+        "Query": "SELECT (xsd:integer(?population) as ?pop) WHERE { yago:United_States yago:hasCapital ?cap . ?cap yago:hasPopulation ?population  }",
+        "Annotation": {
+            "instance": "yago:United_States",
+            "property": "yago:hasCapital / yago:hasPopulation",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "925": {
+        "Question": "Where is the Buckingham Palace located?",
+        "Query": "SELECT ?city WHERE { yago:Buckingham_Palace yago:isLocatedIn ?city }",
+        "Annotation": {
+            "instance": "yago:Buckingham_Palace",
+            "property": "yago:isLocatedIn",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "926": {
+        "Question": "Where is municipality of Nafplio located?",
+        "Query": "select distinct ?geoWKT where {  yago:geoentity_Dimos_Nafplio_8133806 geo:hasGeometry ?o.  ?o geo:asWKT ?geoWKT. }",
+        "Annotation": {
+            "instance": "yago:geoentity_Dimos_Nafplio_8133806",
+            "property": " ",
+            "relation": "geo:hasGeometry",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "8": {
+        "Question": "Where is municipality of Nafplio located?",
+        "Query": "select distinct ?geoWKT where {  yago:geoentity_Dimos_Nafplio_8133806 geo:hasGeometry ?o.  ?o geo:asWKT ?geoWKT. }",
+        "Annotation": {
+            "instance": "yago:geoentity_Dimos_Nafplio_8133806",
+            "property": " ",
+            "relation": "geo:hasGeometry",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "16": {
+        "Question": "Where is municipality of Nafplio located?",
+        "Query": "select distinct ?geoWKT where {  yago:geoentity_Dimos_Nafplio_8133806 geo:hasGeometry ?o.  ?o geo:asWKT ?geoWKT. }",
+        "Annotation": {
+            "instance": "yago:geoentity_Dimos_Nafplio_8133806",
+            "property": " ",
+            "relation": "geo:hasGeometry",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "103": {
+        "Question": "Where is municipality of Nafplio located?",
+        "Query": "select distinct ?geoWKT where {  yago:geoentity_Dimos_Nafplio_8133806 geo:hasGeometry ?o.  ?o geo:asWKT ?geoWKT. }",
+        "Annotation": {
+            "instance": "yago:geoentity_Dimos_Nafplio_8133806",
+            "property": " ",
+            "relation": "geo:hasGeometry",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    },
+    "129": {
+        "Question": "Where is municipality of Nafplio located?",
+        "Query": "select distinct ?geoWKT where {  yago:geoentity_Dimos_Nafplio_8133806 geo:hasGeometry ?o.  ?o geo:asWKT ?geoWKT. }",
+        "Annotation": {
+            "instance": "yago:geoentity_Dimos_Nafplio_8133806",
+            "property": " ",
+            "relation": "geo:hasGeometry",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "A"
+    }
+}

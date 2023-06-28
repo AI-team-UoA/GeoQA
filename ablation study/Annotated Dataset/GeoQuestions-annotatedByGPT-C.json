@@ -1,0 +1,2072 @@
+{
+    "278": {
+        "Question": "Which lakes are in the Epirus region?",
+        "Query": "SELECT DISTINCT ?lake WHERE { <http://yago-knowledge.org/resource/Epirus_(region)> geo:hasGeometry ?geoC . ?geoC geo:asWKT ?cWKT . ?lake rdf:type y2geoo:OSM_lake . ?lake geo:hasGeometry ?geoL . ?geoL geo:asWKT ?lWKT . FILTER(geof:sfWithin(?lWKT, ?cWKT)) }",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/Epirus_(region)>",
+            "property": " ",
+            "relation": "geof:sfWithin",
+            "concept": "y2geoo:OSM_lake",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "279": {
+        "Question": "Which streams cross Oxfordshire?",
+        "Query": "SELECT DISTINCT ?stream WHERE { <http://yago-knowledge.org/resource/Oxfordshire> geo:hasGeometry ?geoC . ?geoC geo:asWKT ?cWKT . ?stream rdf:type y2geoo:OSM_stream . ?stream geo:hasGeometry ?geoL . ?geoL geo:asWKT ?lWKT . FILTER(geof:sfCrosses(?lWKT, ?cWKT)) }",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/Oxfordshire>",
+            "property": " ",
+            "relation": "geof:sfCrosses",
+            "concept": "y2geoo:OSM_stream",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "280": {
+        "Question": "Which counties border County Mayo?",
+        "Query": "SELECT DISTINCT ?county WHERE { <http://yago-knowledge.org/resource/County_Mayo> geo:hasGeometry ?geo1 . ?geo1 geo:asWKT ?geoWKT1 . { ?county rdf:type y2geoo:OSI_County_Council . } UNION { ?county rdf:type y2geoo:OSI_City_and_County_Council. } . ?county geo:hasGeometry ?geo2 . ?geo2 geo:asWKT ?geoWKT2 . FILTER(geof:sfTouches(?geoWKT1, ?geoWKT2)) }",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/County_Mayo>",
+            "property": " ",
+            "relation": "geof:sfTouches",
+            "concept": "y2geoo:OSI_County_Council or y2geoo:OSI_City_and_County_Council",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "281": {
+        "Question": "Which Municipalities border with Moschato Tavros?",
+        "Query": "SELECT DISTINCT ?municipality WHERE {         yago:Moschato-Tavros geo:hasGeometry ?o.         ?o geo:asWKT ?WKT.          ?municipality rdf:type y2geoo:GAG_Municipality;         geo:hasGeometry ?o1.         ?o1 geo:asWKT ?WKT1.          FILTER(geof:sfTouches(strdf:buffer(?WKT, 0, uom:metre), strdf:buffer(?WKT1, 0, uom:metre))) }",
+        "Annotation": {
+            "instance": "yago:Moschato-Tavros",
+            "property": " ",
+            "relation": "geof:sfTouches",
+            "concept": "y2geoo:GAG_Municipality",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "282": {
+        "Question": "Which District Wards are within Essex?",
+        "Query": "SELECT DISTINCT ?districtWard WHERE{         yago:Essex geo:hasGeometry ?o.         ?o geo:asWKT ?WKT.         ?districtWard rdf:type y2geoo:OS_DistrictWard;         geo:hasGeometry ?o1.         ?o1 geo:asWKT ?WKT1.         FILTER(geof:sfWithin(strdf:buffer(?WKT1, 0, uom:metre), strdf:buffer(?WKT, 0, uom:metre)))  }",
+        "Annotation": {
+            "instance": "yago:Essex",
+            "property": " ",
+            "relation": "geof:sfWithin",
+            "concept": "y2geoo:OS_DistrictWard",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "283": {
+        "Question": "Which forests are less than 25km away from County Sligo?",
+        "Query": "SELECT DISTINCT ?forest WHERE{         yago:County_Sligo geo:hasGeometry ?o.         ?o geo:asWKT ?WKT.         ?forest rdf:type y2geoo:OSM_forest;         geo:hasGeometry ?o1.         ?o1 geo:asWKT ?WKT1.         FILTER(geof:distance(?WKT, ?WKT1, uom:metre) < 25000) }",
+        "Annotation": {
+            "instance": "yago:County_Sligo",
+            "property": " ",
+            "relation": "geof:distance",
+            "concept": "y2geoo:OSM_forest",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "284": {
+        "Question": "Which parks are in Liverpool?",
+        "Query": "select distinct ?park where {     <http://yago-knowledge.org/resource/Liverpool>     <http://www.opengis.net/ont/geosparql#hasGeometry> ?geomLC.     ?geomLC geo:asWKT ?lcnWKT.     ?park rdf:type y2geoo:OSM_park .     ?park <http://www.opengis.net/ont/geosparql#hasGeometry> ?geomL.     ?geomL geo:asWKT ?lWKT.     FILTER(geof:sfWithin(?lWKT, ?lcnWKT))  }",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/Liverpool>",
+            "property": " ",
+            "relation": "geof:sfWithin",
+            "concept": "y2geoo:OSM_park",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "285": {
+        "Question": "Which bays are at most 5000 meters from Doolin?",
+        "Query": "select distinct ?bay where {     <http://yago-knowledge.org/resource/Doolin>     <http://www.opengis.net/ont/geosparql#hasGeometry> ?geomLC.     ?geomLC geo:asWKT ?lcnWKT.     ?bay rdf:type y2geoo:OSM_bay .     ?bay <http://www.opengis.net/ont/geosparql#hasGeometry> ?geomL.     ?geomL geo:asWKT ?lWKT.     FILTER (geof:distance(?lcnWKT, ?lWKT, uom:metre)<5000). }",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/Doolin>",
+            "property": " ",
+            "relation": "geof:distance",
+            "concept": "y2geoo:OSM_bay",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "286": {
+        "Question": "Which beaches are near Mykonos?",
+        "Query": "select distinct ?beach where {     <http://yago-knowledge.org/resource/Mykonos>     <http://www.opengis.net/ont/geosparql#hasGeometry> ?geomLC.     ?geomLC geo:asWKT ?lcnWKT.     ?beach rdf:type y2geoo:OSM_beach .     ?beach <http://www.opengis.net/ont/geosparql#hasGeometry> ?geomL.     ?geomL geo:asWKT ?lWKT.     FILTER (geof:distance(?lcnWKT, ?lWKT, uom:metre)<5000). }",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/Mykonos>",
+            "property": " ",
+            "relation": "geof:distance",
+            "concept": "y2geoo:OSM_beach",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "287": {
+        "Question": "Which Regional Units border with Thessaly?",
+        "Query": "SELECT distinct ?rg where  { yago:Thessaly geo:hasGeometry ?tgeo . ?tgeo geo:asWKT ?tWKT . ?rg rdf:type y2geoo:GAG_RegionalUnit . ?rg geo:hasGeometry ?rggeo . ?rggeo geo:asWKT ?rgWKT . FILTER (strdf:touches(?rgWKT,?tWKT)) . }",
+        "Annotation": {
+            "instance": "yago:Thessaly",
+            "property": " ",
+            "relation": "strdf:touches",
+            "concept": "y2geoo:GAG_RegionalUnit",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "288": {
+        "Question": "Which Metropolitan Districts border Manchester ?",
+        "Query": "SELECT DISTINCT ?Mdistrict WHERE { yago:Manchester geo:hasGeometry ?egeo . ?egeo geo:asWKT ?eWKT . ?Mdistrict rdf:type y2geoo:OS_MetropolitanDistrict . ?Mdistrict geo:hasGeometry ?cgeo . ?cgeo geo:asWKT ?cWKT . FILTER(geof:sfTouches(?eWKT,?cWKT)) . }",
+        "Annotation": {
+            "instance": "yago:Manchester",
+            "property": " ",
+            "relation": "geof:sfTouches",
+            "concept": "y2geoo:OS_MetropolitanDistrict",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "289": {
+        "Question": "Which canals cross Dublin?",
+        "Query": "SELECT DISTINCT ?canal WHERE { yago:Dublin geo:hasGeometry ?dgeo . ?dgeo geo:asWKT ?dWKT .  ?canal rdf:type y2geoo:OSM_canal . ?canal geo:hasGeometry ?pgeo . ?pgeo geo:asWKT ?pWKT . FILTER(strdf:crosses(?dWKT,?pWKT)) . }",
+        "Annotation": {
+            "instance": "yago:Dublin",
+            "property": " ",
+            "relation": "strdf:crosses",
+            "concept": "y2geoo:OSM_canal",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "290": {
+        "Question": "Which Municipalities intersect with the Regional Unit of Piraeus?",
+        "Query": "SELECT DISTINCT ?municipality WHERE {      yago:geoentity_Perifereiak\u00ed_En\u00f3tita_Peirai\u00f3s_8200486 geo:hasGeometry  ?rep1 . ?rep1 geo:asWKT ?WKT1.      ?municipality rdf:type y2geoo:GAG_Municipality.      ?municipality geo:hasGeometry  ?rep2 . ?rep2 geo:asWKT ?WKT2.      FILTER(strdf:intersects(strdf:buffer(?WKT2, 0, uom:metre), strdf:buffer(?WKT1, 0, uom:metre))) }",
+        "Annotation": {
+            "instance": "yago:geoentity_Perifereiak\u00ed_En\u00f3tita_Peirai\u00f3s_8200486",
+            "property": " ",
+            "relation": "strdf:intersects",
+            "concept": "y2geoo:GAG_Municipality",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "291": {
+        "Question": "Which are the forests of Cambridgeshire?",
+        "Query": "SELECT DISTINCT ?forest WHERE {      yago:Cambridge geo:hasGeometry  ?rep1 . ?rep1 geo:asWKT ?WKT1.     ?forest rdf:type  y2geoo:OSM_forest.      ?forest geo:hasGeometry  ?rep2 . ?rep2 geo:asWKT ?WKT2.     FILTER(strdf:within(strdf:buffer(?WKT2, 0, uom:metre), strdf:buffer(?WKT1, 0, uom:metre))) }",
+        "Annotation": {
+            "instance": "yago:Cambridge",
+            "property": " ",
+            "relation": "strdf:within",
+            "concept": "y2geoo:OSM_forest",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "292": {
+        "Question": "Which townlands border with Dublin?",
+        "Query": "SELECT DISTINCT ?townland  WHERE {      yago:Dublin geo:hasGeometry  ?rep1 . ?rep1 geo:asWKT ?WKT1.      ?townland rdf:type  y2geoo:OSI_Townland.     ?townland geo:hasGeometry  ?rep2 . ?rep2 geo:asWKT ?WKT2.     FILTER(strdf:touches(?WKT2,?WKT1)) }",
+        "Annotation": {
+            "instance": "yago:Dublin",
+            "property": " ",
+            "relation": "strdf:touches",
+            "concept": "y2geoo:OSI_Townland",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "293": {
+        "Question": "Does Corfu have any beaches?",
+        "Query": "ASK {yago:Corfu geo:hasGeometry ?corfu_geo .    ?corfu_geo geo:asWKT ?corfu_geoWKT .    ?beach rdf:type <http://kr.di.uoa.gr/yago2geo/ontology/OSM_beach> .    ?beach geo:hasGeometry ?geomL .    ?geomL geo:asWKT ?fWKT.    FILTER(geof:sfWithin(?fWKT, ?corfu_geoWKT)) }",
+        "Annotation": {
+            "instance": "yago:Corfu",
+            "property": " ",
+            "relation": "geof:sfWithin",
+            "concept": "<http://kr.di.uoa.gr/yago2geo/ontology/OSM_beach>",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "294": {
+        "Question": "Which lakes are within 50km of Dublin?",
+        "Query": "SELECT  distinct ?lake  WHERE {   <http://yago-knowledge.org/resource/Dublin> geo:hasGeometry ?dublin_geo .   ?dublin_geo geo:asWKT ?dublin_geoWKT .   ?lake rdf:type <http://kr.di.uoa.gr/yago2geo/ontology/OSM_lake> .   ?lake geo:hasGeometry ?lake_geo .   ?lake_geo geo:asWKT ?lake_geoWKT .   FILTER(geof:distance(?dublin_geoWKT,?lake_geoWKT,uom:metre) <= 50000)   }",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/Dublin>",
+            "property": " ",
+            "relation": "geof:distance",
+            "concept": "<http://kr.di.uoa.gr/yago2geo/ontology/OSM_lake>",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "295": {
+        "Question": "Which Unitary Authorities are on the border of Cardiff?",
+        "Query": "SELECT DISTINCT ?order3neighbour  WHERE {  <http://yago-knowledge.org/resource/Cardiff> geo:hasGeometry ?cardiff_geo .    ?cardiff_geo geo:asWKT ?cardiff_geoWKT .  ?order3neighbour rdf:type <http://kr.di.uoa.gr/yago2geo/ontology/OS_UnitaryAuthority> .  ?order3neighbour geo:hasGeometry ?order3neighbourgeo .  ?order3neighbourgeo geo:asWKT ?order3neighbourgeoWKT .  FILTER(geof:sfTouches(?cardiff_geoWKT,?order3neighbourgeoWKT)) }",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/Cardiff>",
+            "property": " ",
+            "relation": "geof:sfTouches",
+            "concept": "<http://kr.di.uoa.gr/yago2geo/ontology/OS_UnitaryAuthority>",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "296": {
+        "Question": "Which parks are at most 10km away from the city of Westminster?",
+        "Query": "select distinct ?park where{  <http://yago-knowledge.org/resource/City_of_Westminster> geo:hasGeometry ?o.  ?o geo:asWKT ?geoWKT.   ?park rdf:type y2geoo:OSM_park; geo:hasGeometry ?geomC.  ?geomC geo:asWKT ?geoWKTr.   FILTER(geof:distance(?geoWKT,?geoWKTr,uom:metre) <= 10000)  }",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/City_of_Westminster>",
+            "property": " ",
+            "relation": "geof:distance",
+            "concept": "y2geoo:OSM_park",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "297": {
+        "Question": "Which rural areas border with Castleblayney?",
+        "Query": "select distinct ?rural_area where { <http://yago-knowledge.org/resource/Castleblayney> <http://www.opengis.net/ont/geosparql#hasGeometry> ?geomLC. ?geomLC geo:asWKT ?lcWKT.  ?rural_area rdf:type <http://kr.di.uoa.gr/yago2geo/ontology/OSI_Rural_Area>; <http://www.opengis.net/ont/geosparql#hasGeometry> ?geomC. ?geomC geo:asWKT ?cWKT.  FILTER(geof:sfTouches(?lcWKT, ?cWKT)) }",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/Castleblayney>",
+            "property": " ",
+            "relation": "geof:sfTouches",
+            "concept": "<http://kr.di.uoa.gr/yago2geo/ontology/OSI_Rural_Area>",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "298": {
+        "Question": "Which villages are located in Thessaly?",
+        "Query": "select distinct ?village where{  ?village rdf:type y2geoo:OSM_village .  ?village geo:hasGeometry ?o.  ?o geo:asWKT ?geoWKT.   yago:Thessaly geo:hasGeometry ?o1.  ?o1 geo:asWKT ?geoWKT1.    FILTER(geof:sfWithin(?geoWKT, ?geoWKT1)) }",
+        "Annotation": {
+            "instance": "yago:Thessaly",
+            "property": " ",
+            "relation": "geof:sfWithin",
+            "concept": "y2geoo:OSM_village",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "299": {
+        "Question": "Which 3rd order administrative units border Hampshire?",
+        "Query": "Select distinct ?city  Where {  <http://yago-knowledge.org/resource/Hampshire> geo:hasGeometry ?o. ?o geo:asWKT ?geoWKT.  ?city rdf:type <http://kr.di.uoa.gr/yago2geo/ontology/GADM_3rdOrder_AdministrativeUnit>; <http://www.opengis.net/ont/geosparql#hasGeometry> ?geomC. ?geomC geo:asWKT ?cWKT. FILTER(geof:sfTouches(?geoWKT,?cWKT)) }",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/Hampshire>",
+            "property": " ",
+            "relation": "geof:sfTouches",
+            "concept": "<http://kr.di.uoa.gr/yago2geo/ontology/GADM_3rdOrder_AdministrativeUnit>",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "300": {
+        "Question": "Which counties border the city of Cork?",
+        "Query": "Select distinct ?CountryCouncil Where {  <http://yago-knowledge.org/resource/geoentity_Cork_City_7778678> geo:hasGeometry ?o. ?o geo:asWKT ?geoWKT.  { ?county rdf:type y2geoo:OSI_County_Council . } UNION { ?county rdf:type y2geoo:OSI_City_and_County_Council. } . ?county geo:hasGeometry ?geomC. ?geomC geo:asWKT ?cWKT. FILTER(strdf:touches(?geoWKT,?cWKT)) }",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/geoentity_Cork_City_7778678>",
+            "property": " ",
+            "relation": "strdf:touches",
+            "concept": "y2geoo:OSI_County_Council, y2geoo:OSI_City_and_County_Council",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "301": {
+        "Question": "Which municipalities border Agia Paraskevi?",
+        "Query": "Select distinct ?dimos  Where { <http://yago-knowledge.org/resource/Agia_Paraskevi> geo:hasGeometry ?o. ?o geo:asWKT ?geoWKT.  ?dimos rdf:type y2geoo:GAG_Municipality; <http://www.opengis.net/ont/geosparql#hasGeometry> ?geomC. ?geomC geo:asWKT ?cWKT. FILTER(geof:sfTouches(strdf:transform(?geoWKT, <http://www.opengis.net/def/crs/EPSG/0/2100>), strdf:transform(?cWKT, <http://www.opengis.net/def/crs/EPSG/0/2100>))) }",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/Agia_Paraskevi>",
+            "property": " ",
+            "relation": "geof:sfTouches",
+            "concept": "y2geoo:GAG_Municipality",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "302": {
+        "Question": "Which municipalities does the Central Athens Regional Unit contain?",
+        "Query": "SELECT distinct ?y  WHERE {   <http://yago-knowledge.org/resource/geoentity_Perifereiak\u00ed_En\u00f3tita_Kentriko\u00fa_Tom\u00e9a_Athin\u00f3n_8200482>  geo:hasGeometry ?gx .  ?gx geo:asWKT ?xWKT .     ?y a y2geoo:GAG_Municipality . ?y geo:hasGeometry ?gy .  ?gy geo:asWKT ?yWKT .   FILTER(strdf:contains( ?xWKT,?yWKT )) }",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/geoentity_Perifereiak\u00ed_En\u00f3tita_Kentriko\u00fa_Tom\u00e9a_Athin\u00f3n_8200482>",
+            "property": " ",
+            "relation": "strdf:contains",
+            "concept": "y2geoo:GAG_Municipality",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "303": {
+        "Question": "Which districts border the Greater London Authority?",
+        "Query": "SELECT distinct ?x  WHERE {   ?x a y2geoo:OS_District. ?x geo:hasGeometry ?g .  ?g geo:asWKT ?gWKT .   ?y a y2geoo:OS_GreaterLondonAuthority.  ?y geo:hasGeometry ?g1 .  ?g1 geo:asWKT ?g1WKT .    ?y geo:sfTouches ?x.   }",
+        "Annotation": {
+            "instance": null,
+            "property": " ",
+            "relation": "geo:sfTouches",
+            "concept": {
+                "subject": "y2geoo:OS_GreaterLondonAuthority",
+                "object": "y2geoo:OS_District"
+            },
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "304": {
+        "Question": "Which counies are west of County Wexford?",
+        "Query": "SELECT distinct ?x  WHERE { { ?x rdf:type y2geoo:OSI_County_Council . } UNION { ?x rdf:type y2geoo:OSI_City_and_County_Council. } . ?x geo:hasGeometry ?gx .  ?gx geo:asWKT ?xWKT .  <http://yago-knowledge.org/resource/County_Wexford> geo:hasGeometry ?gy .  ?gy geo:asWKT ?yWKT .   FILTER(strdf:left(?xWKT,?yWKT ))    }",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/County_Wexford>",
+            "property": " ",
+            "relation": "strdf:left",
+            "concept": [
+                "y2geoo:OSI_County_Council",
+                "y2geoo:OSI_City_and_County_Council"
+            ],
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "305": {
+        "Question": "Is Dublin on an island?",
+        "Query": "ASK { ?x rdf:type y2geoo:OSM_island. ?x geo:hasGeometry ?xGeom. ?xGeom geo:asWKT ?xWKT. yago:Dublin geo:hasGeometry ?iGeom. ?iGeom geo:asWKT ?iWKT. FILTER(geof:sfIntersects(?iWKT,?xWKT)) }",
+        "Annotation": {
+            "instance": "yago:Dublin",
+            "property": " ",
+            "relation": "geof:sfIntersects",
+            "concept": "y2geoo:OSM_island",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "306": {
+        "Question": "Which beaches are near Naxos?",
+        "Query": "select distinct ?beach where { <http://yago-knowledge.org/resource/Naxos> <http://www.opengis.net/ont/geosparql#hasGeometry> ?geomLC. ?geomLC geo:asWKT ?lcnWKT. ?beach rdf:type y2geoo:OSM_beach . ?beach <http://www.opengis.net/ont/geosparql#hasGeometry> ?geomL. ?geomL geo:asWKT ?lWKT. FILTER (geof:distance(?lcnWKT, ?lWKT, uom:metre)<5000). }",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/Naxos>",
+            "property": " ",
+            "relation": "geof:distance",
+            "concept": "y2geoo:OSM_beach",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "307": {
+        "Question": "Which parks are in Manchester?",
+        "Query": "select distinct ?park where { <http://yago-knowledge.org/resource/Manchester> <http://www.opengis.net/ont/geosparql#hasGeometry> ?geomLC. ?geomLC geo:asWKT ?lcnWKT. ?park rdf:type y2geoo:OSM_park . ?park <http://www.opengis.net/ont/geosparql#hasGeometry> ?geomL. ?geomL geo:asWKT ?lWKT. FILTER(geof:sfWithin(?lWKT, ?lcnWKT))  }",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/Manchester>",
+            "property": " ",
+            "relation": "geof:sfWithin",
+            "concept": "y2geoo:OSM_park",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "308": {
+        "Question": "Which bays are near Doolin?",
+        "Query": "select distinct ?bay where { <http://yago-knowledge.org/resource/Doolin> <http://www.opengis.net/ont/geosparql#hasGeometry> ?geomLC. ?geomLC geo:asWKT ?lcnWKT. ?bay rdf:type y2geoo:OSM_bay . ?bay <http://www.opengis.net/ont/geosparql#hasGeometry> ?geomL. ?geomL geo:asWKT ?lWKT. FILTER (geof:distance(?lcnWKT, ?lWKT, uom:metre)<5000). }",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/Doolin>",
+            "property": " ",
+            "relation": "geof:distance",
+            "concept": "y2geoo:OSM_bay",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "309": {
+        "Question": "Which counties border with Lincolnshire?",
+        "Query": "SELECT ?county WHERE {   <http://yago-knowledge.org/resource/Lincolnshire> geo:hasGeometry ?geomLC.   ?geomLC geo:asWKT ?lcWKT.   ?county rdf:type <http://kr.di.uoa.gr/yago2geo/ontology/OS_County>;   geo:hasGeometry ?geomC.   ?geomC geo:asWKT ?cWKT.   FILTER(geof:sfTouches(strdf:transform(?lcWKT, <http://www.opengis.net/def/crs/EPSG/0/4326>),   strdf:transform(?cWKT, <http://www.opengis.net/def/crs/EPSG/0/4326>)))  }",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/Lincolnshire>",
+            "property": " ",
+            "relation": "geof:sfTouches",
+            "concept": "<http://kr.di.uoa.gr/yago2geo/ontology/OS_County>",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "310": {
+        "Question": "Find all the Greek parks.",
+        "Query": "SELECT DISTINCT ?p WHERE {   ?p rdf:type y2geoo:OSM_park;   geo:hasGeometry ?o.   ?o geo:asWKT ?pWKT.   <http://yago-knowledge.org/resource/Greece> geo:hasGeometry ?g.   ?g geo:asWKT ?gWKT.   FILTER(geof:sfWithin(?pWKT, ?gWKT)). }",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/Greece>",
+            "property": " ",
+            "relation": "geof:sfWithin",
+            "concept": "y2geoo:OSM_park",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "311": {
+        "Question": "Which islands are north of Dublin?",
+        "Query": "SELECT DISTINCT ?p WHERE {   ?p rdf:type y2geoo:OSM_island;   geo:hasGeometry ?o.   ?o geo:asWKT ?bWKT.   <http://yago-knowledge.org/resource/Dublin> geo:hasGeometry ?g.   ?g geo:asWKT ?dWKT.   FILTER(strdf:above(?bWKT, ?dWKT)). }",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/Dublin>",
+            "property": " ",
+            "relation": "strdf:above",
+            "concept": "y2geoo:OSM_island",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "312": {
+        "Question": "Which municipalities border Athens?",
+        "Query": "SELECT distinct ?municipality WHERE { yago:geoentity_Dimos_Athens_8133876 geo:hasGeometry ?g. ?g geo:asWKT ?geoWKT. ?municipality rdf:type y2geoo:GAG_Municipality. ?municipality geo:hasGeometry ?g2.  ?g2 geo:asWKT ?geoWKT2. FILTER(geof:sfTouches(strdf:transform(?geoWKT, <http://www.opengis.net/def/crs/EPSG/0/4326>) ,strdf:transform(?geoWKT2, <http://www.opengis.net/def/crs/EPSG/0/4326>)   )) }",
+        "Annotation": {
+            "instance": "yago:geoentity_Dimos_Athens_8133876",
+            "property": " ",
+            "relation": "geof:sfTouches",
+            "concept": "y2geoo:GAG_Municipality",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "313": {
+        "Question": "Which lakes are in Cambridge?",
+        "Query": "SELECT distinct ?lake WHERE { yago:Cambridge geo:hasGeometry ?g. ?g geo:asWKT ?geoWKT.  ?lake rdf:type y2geoo:OSM_lake.  ?lake geo:hasGeometry ?g2.  ?g2 geo:asWKT ?geoWKT2. FILTER(geof:sfContains(?geoWKT, ?geoWKT2)) }",
+        "Annotation": {
+            "instance": "yago:Cambridge",
+            "property": " ",
+            "relation": "geof:sfContains",
+            "concept": "y2geoo:OSM_lake",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "314": {
+        "Question": "Which townlands intersect the Lough Neagh lake?",
+        "Query": "SELECT distinct ?county WHERE{ ?county rdf:type y2geoo:OSNI_Townland  .  ?county geo:hasGeometry ?cg.  ?cg geo:asWKT ?cgeoWKT.  yago:Lough_Neagh geo:hasGeometry ?g.  ?g geo:asWKT ?geoWKT. FILTER(geof:sfIntersects(?cgeoWKT, ?geoWKT)).}",
+        "Annotation": {
+            "instance": "yago:Lough_Neagh",
+            "property": " ",
+            "relation": "geof:sfIntersects",
+            "concept": "y2geoo:OSNI_Townland",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "315": {
+        "Question": "Which municipalities are east of Ierapetra?",
+        "Query": "select distinct ?x where{ ?x rdf:type y2geoo:GAG_Municipality.   ?x geo:hasGeometry ?xgeo.  ?xgeo geo:asWKT ?xWKT. <http://yago-knowledge.org/resource/Ierapetra> geo:hasGeometry ?ygeo.  ?ygeo geo:asWKT ?yWKT.  FILTER (strdf:right(strdf:transform(?xWKT, <http://www.opengis.net/def/crs/EPSG/0/4326>), strdf:transform(?yWKT, <http://www.opengis.net/def/crs/EPSG/0/4326>))) }",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/Ierapetra>",
+            "property": " ",
+            "relation": "strdf:right",
+            "concept": "y2geoo:GAG_Municipality",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "316": {
+        "Question": "Which Metropolitan Boroughs are north of London?",
+        "Query": "select distinct ?n where{      <http://yago-knowledge.org/resource/geoentity_City_of_London_2643744>  geo:hasGeometry ?xgeo.     ?xgeo geo:asWKT ?xWKT.       ?y y2geoo:hasGADM_Description \"MetropolitanBorough\".     ?y geo:hasGeometry ?ygeo.   ?ygeo geo:asWKT ?yWKT.      FILTER (strdf:above(strdf:transform(?yWKT, <http://www.opengis.net/def/crs/EPSG/0/4326>), strdf:transform(?xWKT, <http://www.opengis.net/def/crs/EPSG/0/4326>))) }",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/geoentity_City_of_London_2643744>",
+            "property": " ",
+            "relation": "strdf:above",
+            "concept": "y2geoo:hasGADM_Description \"MetropolitanBorough\"",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "317": {
+        "Question": "Which Civil Parish borders the Kilkieran?",
+        "Query": "select distinct ?x where{ ?x rdf:type y2geoo:OSI_Civil_Parish.  ?x geo:hasGeometry ?xgeo.  ?xgeo geo:asWKT ?xWKT.  <http://yago-knowledge.org/resource/geoentity_Kilkieran_3302356>  geo:hasGeometry ?ygeo.     ?ygeo geo:asWKT ?yWKT.  FILTER(strdf:touches(?xWKT,?yWKT)) }",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/geoentity_Kilkieran_3302356>",
+            "property": " ",
+            "relation": "strdf:touches",
+            "concept": "y2geoo:OSI_Civil_Parish",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "318": {
+        "Question": "Which Metropolitan districts border Birmingham?",
+        "Query": "SELECT distinct ?Metropol_District WHERE{ yago:Birmingham geo:sfTouches ?Metropol_District.  ?Metropol_District rdf:type y2geoo:OS_MetropolitanDistrict. }",
+        "Annotation": {
+            "instance": "yago:Birmingham",
+            "property": " ",
+            "relation": "geo:sfTouches",
+            "concept": "y2geoo:OS_MetropolitanDistrict",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "319": {
+        "Question": "Which countries are south of the Republic of Ireland",
+        "Query": "SELECT distinct ?Country WHERE { ?Country rdf:type y2geoo:GADM_1stOrder_AdministrativeUnit. ?Country geo:hasGeometry ?CountryGeo. ?CountryGeo geo:asWKT ?CountryGeometry.  yago:Republic_of_Ireland geo:hasGeometry ?IrelandGeo. ?IrelandGeo geo:asWKT ?IrelandGeometry.  FILTER(strdf:below(?CountryGeometry,?IrelandGeometry)) }",
+        "Annotation": {
+            "instance": "?Country",
+            "property": " ",
+            "relation": "strdf:below",
+            "concept": "y2geoo:GADM_1stOrder_AdministrativeUnit",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "320": {
+        "Question": "Give me ten lakes of the United Kingdom.",
+        "Query": "SELECT distinct ?x WHERE {  ?x rdf:type y2geoo:OSM_lake. ?x geo:hasGeometry ?GeoX. ?GeoX geo:asWKT ?PolygonX.  yago:United_Kingdom geo:hasGeometry ?GeoY. ?GeoY geo:asWKT ?PolygonY  FILTER(geof:sfWithin(?PolygonX, ?PolygonY))  }limit 10",
+        "Annotation": {
+            "instance": "yago:United_Kingdom",
+            "property": " ",
+            "relation": "geof:sfWithin",
+            "concept": "y2geoo:OSM_lake",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "321": {
+        "Question": "which beaches are near Nea Smirni?",
+        "Query": "SELECT distinct ?x WHERE{  ?x rdf:type y2geoo:OSM_beach. ?x geo:hasGeometry ?beachGeo. ?beachGeo geo:asWKT ?beachPolygon .  yago:Nea_Smyrni geo:hasGeometry ?NsGeo. ?NsGeo geo:asWKT ?NsGeometry.  FILTER (geof:distance(?NsGeometry, ?beachPolygon , <http://www.opengis.net/def/uom/OGC/1.0/metre>) < 5000 ) . }",
+        "Annotation": {
+            "instance": "yago:Nea_Smyrni",
+            "property": " ",
+            "relation": "geof:distance",
+            "concept": "y2geoo:OSM_beach",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "322": {
+        "Question": "With which municipalities does Athens share borders?",
+        "Query": "SELECT distinct ?x1 {            ?x1 a y2geoo:GAG_Municipality .           ?x1 geo:hasGeometry ?geometry .   ?geometry geo:asWKT ?x1WKT .    yago:geoentity_Dimos_Athens_8133876 geo:hasGeometry ?athensGeo .   ?athensGeo geo:asWKT ?athWKT .      FILTER(geof:sfTouches(strdf:buffer(?x1WKT, 0, uom:metre), strdf:buffer(?athWKT, 0, uom:metre))). }",
+        "Annotation": {
+            "instance": "yago:geoentity_Dimos_Athens_8133876",
+            "property": " ",
+            "relation": "geof:sfTouches",
+            "concept": "y2geoo:GAG_Municipality",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "323": {
+        "Question": "Which are the cities near Greater London?",
+        "Query": "SELECT distinct ?city where {   ?city a y2geoo:OSM_city.   ?city geo:hasGeometry ?cityGeometry .   ?cityGeometry geo:asWKT ?wktCity .   yago:Greater_London geo:hasGeometry ?londonGeometry .   ?londonGeometry geo:asWKT ?wktLondon .   FILTER(geof:distance(strdf:buffer(?wktCity,0,uom:metre),strdf:buffer(?wktLondon,0,uom:metre), uom:metre) <= 5000) }",
+        "Annotation": {
+            "instance": "yago:Greater_London",
+            "property": " ",
+            "relation": "geof:distance",
+            "concept": "y2geoo:OSM_city",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "324": {
+        "Question": "Which are the cities north of Dublin?",
+        "Query": "select distinct ?citiesAbove where {   yago:Dublin geo:hasGeometry ?dublinGeometry .   ?dublinGeometry geo:asWKT ?wktDublin .    ?citiesAbove a y2geoo:OSM_city .   ?citiesAbove geo:hasGeometry ?citiesAboveGeometry .   ?citiesAboveGeometry geo:asWKT ?wktCitiesAbove .    FILTER(strdf:above(?wktCitiesAbove , ?wktDublin)) }",
+        "Annotation": {
+            "instance": "yago:Dublin",
+            "property": " ",
+            "relation": "strdf:above",
+            "concept": "y2geoo:OSM_city",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "325": {
+        "Question": "Which are all the parks in Dublin?",
+        "Query": "select distinct  ?park where { yago:Dublin geo:hasGeometry ?geomLC. ?geomLC geo:asWKT ?lcnWKT. ?park rdf:type y2geoo:OSM_park; geo:hasGeometry ?geomL. ?geomL geo:asWKT ?lWKT. FILTER(geof:sfWithin(?lWKT, ?lcnWKT)) }",
+        "Annotation": {
+            "instance": "yago:Dublin",
+            "property": " ",
+            "relation": "geof:sfWithin",
+            "concept": "y2geoo:OSM_park",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "326": {
+        "Question": "Which District Wards are located north of Manchester?",
+        "Query": "select distinct ?District_Ward where { yago:Manchester geo:hasGeometry ?geomLC. ?geomLC geo:asWKT ?lcWKT. ?District_Ward rdf:type y2geoo:OS_DistrictWard; geo:hasGeometry ?geomC. ?geomC geo:asWKT ?cWKT. FILTER(strdf:above(?lcWKT, ?cWKT)) }",
+        "Annotation": {
+            "instance": "yago:Manchester",
+            "property": " ",
+            "relation": "strdf:above",
+            "concept": "y2geoo:OS_DistrictWard",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "327": {
+        "Question": "Which regional units border the regional unit of Thessaloniki?",
+        "Query": "SELECT distinct ?neighboring WHERE {   y2geor:gagentity_202 geo:hasGeometry ?xGeom .   ?xGeom geo:asWKT ?xWKT .    ?neighboring a y2geoo:GAG_RegionalUnit .   ?neighboring geo:hasGeometry ?yGeom .  ?yGeom geo:asWKT ?yWKT .    FILTER(geof:sfTouches(strdf:buffer(?xWKT,0,uom:metre), strdf:buffer(?yWKT ,0,uom:metre))) }",
+        "Annotation": {
+            "instance": "y2geor:gagentity_202",
+            "property": " ",
+            "relation": "geof:sfTouches",
+            "concept": "y2geoo:GAG_RegionalUnit",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "328": {
+        "Question": "Which 2nd Order Administrative Units border Dublin ?",
+        "Query": "SELECT distinct ?adm WHERE {   y2geor:gadmentity_Dublin_IRL.6_1 geo:hasGeometry ?xGeom .   ?xGeom geo:asWKT ?xWKT .    ?adm a y2geoo:GADM_2ndOrder_AdministrativeUnit .   ?adm geo:hasGeometry ?yGeom .   ?yGeom geo:asWKT ?yWKT .    FILTER(geof:sfTouches(?xWKT, ?yWKT)) }",
+        "Annotation": {
+            "instance": "y2geor:gadmentity_Dublin_IRL.6_1",
+            "property": " ",
+            "relation": "geof:sfTouches",
+            "concept": "y2geoo:GADM_2ndOrder_AdministrativeUnit",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "329": {
+        "Question": "Which streams are inside Greater London?",
+        "Query": "SELECT distinct ?stream  WHERE { yago:Greater_London geo:hasGeometry ?xGeom.  ?xGeom geo:asWKT ?xWKT . ?stream a y2geoo:OSM_stream. ?stream geo:hasGeometry ?yGeom. ?yGeom geo:asWKT ?yWKT . FILTER(geof:sfWithin(?yWKT, ?xWKT)) }",
+        "Annotation": {
+            "instance": "yago:Greater_London",
+            "property": " ",
+            "relation": "geof:sfWithin",
+            "concept": "y2geoo:OSM_stream",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "330": {
+        "Question": "Which lakes are in Greece?",
+        "Query": "select distinct ?city where { yago:Greece geo:hasGeometry ?o1.  ?o1 geo:asWKT ?geoWKT1. ?city rdf:type y2geoo:OSM_lake . ?city geo:hasGeometry ?geomC.  ?geomC geo:asWKT ?wktC. FILTER(geof:sfContains( strdf:transform(?geoWKT1, <http://www.opengis.net/def/crs/EPSG/0/4326>), strdf:transform(?wktC, <http://www.opengis.net/def/crs/EPSG/0/4326>) ))   }",
+        "Annotation": {
+            "instance": "yago:Greece",
+            "property": " ",
+            "relation": "geof:sfContains",
+            "concept": "y2geoo:OSM_lake",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "331": {
+        "Question": "Which counties border county Essex?",
+        "Query": "select distinct ?county where {     yago:Essex geo:hasGeometry ?geomEss.     ?geomEss geo:asWKT ?wktEss.     ?county rdf:type y2geoo:OS_County; geo:hasGeometry ?geomC.     ?geomC geo:asWKT ?wktC.     FILTER(geof:sfTouches(?wktEss, ?wktC)) }",
+        "Annotation": {
+            "instance": "yago:Essex",
+            "property": " ",
+            "relation": "geof:sfTouches",
+            "concept": "y2geoo:OS_County",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "332": {
+        "Question": "Which county councils exist in the Republic of Ireland?",
+        "Query": "select distinct ?county where {     yago:Republic_of_Ireland geo:hasGeometry ?geomIre.     ?geomIre geo:asWKT ?wktIre.     ?county rdf:type y2geoo:OSI_County_Council; geo:hasGeometry ?geomC.     ?geomC geo:asWKT ?wktC.     FILTER(geof:sfWithin(?wktC, ?wktIre)) }",
+        "Annotation": {
+            "instance": "yago:Republic_of_Ireland",
+            "property": " ",
+            "relation": "geof:sfWithin",
+            "concept": "y2geoo:OSI_County_Council",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "333": {
+        "Question": "Which municipalities are in Epirus?",
+        "Query": "SELECT distinct ?municipality WHERE {   ?municipality a y2geoo:GAG_Municipality.  ?municipality geo:hasGeometry ?x1Geo.         ?x1Geo geo:asWKT ?x1WKT.          <http://yago-knowledge.org/resource/Epirus_(region)>    geo:hasGeometry ?x2Geo.          ?x2Geo geo:asWKT ?x2WKT.   FILTER(geof:sfWithin(?x1WKT, ?x2WKT))}",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/Epirus_(region)>",
+            "property": " ",
+            "relation": "geof:sfWithin",
+            "concept": "y2geoo:GAG_Municipality",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "334": {
+        "Question": "Which districts border Greater London?",
+        "Query": "SELECT ?district WHERE {   ?district a y2geoo:OS_District. ?district geo:hasGeometry ?x1Geo.         ?x1Geo geo:asWKT ?x1WKT.          <http://yago-knowledge.org/resource/Greater_London>    geo:hasGeometry ?x2Geo.          ?x2Geo geo:asWKT ?x2WKT.   FILTER(geof:sfTouches(?x1WKT, ?x2WKT))}",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/Greater_London>",
+            "property": " ",
+            "relation": "geof:sfTouches",
+            "concept": "y2geoo:OS_District",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "335": {
+        "Question": "Which wards comprise the city of Belfast?",
+        "Query": "SELECT distinct ?ward WHERE {   ?ward a y2geoo:OSNI_Ward. ?ward geo:hasGeometry ?x1Geo.         ?x1Geo geo:asWKT ?x1WKT.          <http://yago-knowledge.org/resource/geoentity_City_of_Belfast_3333223>    geo:hasGeometry ?x2Geo.          ?x2Geo geo:asWKT ?x2WKT.   FILTER(geof:sfWithin(?x1WKT, ?x2WKT))}",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/geoentity_City_of_Belfast_3333223>",
+            "property": " ",
+            "relation": "geof:sfWithin",
+            "concept": "y2geoo:OSNI_Ward",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "336": {
+        "Question": "Is there a stream near Greenwich?",
+        "Query": "ASK {    ?stream a y2geoo:OSM_stream. ?stream geo:hasGeometry ?x1Geo.         ?x1Geo geo:asWKT ?x1WKT.          <http://yago-knowledge.org/resource/geoentity_Greenwich_3333147> geo:hasGeometry ?x2Geo.         ?x2Geo geo:asWKT ?x2WKT.   FILTER(geof:distance(?x1WKT, ?x2WKT, uom:metre) < 5000) }",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/geoentity_Greenwich_3333147>",
+            "property": " ",
+            "relation": "geof:distance",
+            "concept": "y2geoo:OSM_stream",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "337": {
+        "Question": "Find beaches in Alonnisos.",
+        "Query": "SELECT distinct ?beach  WHERE {     ?beach a y2geoo:OSM_beach.     ?beach geo:hasGeometry ?g1.     ?g1 geo:asWKT ?wkt1.     <http://yago-knowledge.org/resource/Alonnisos> geo:hasGeometry ?g2.     ?g2 geo:asWKT ?wkt2.     FILTER(geof:sfIntersects(?wkt1, ?wkt2)) }",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/Alonnisos>",
+            "property": " ",
+            "relation": "geof:sfIntersects",
+            "concept": "y2geoo:OSM_beach",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "338": {
+        "Question": "Which counties are near Nottingham?",
+        "Query": "SELECT distinct ?shire  WHERE {     yago:Nottinghamshire geo:hasGeometry ?g1.     ?g1 geo:asWKT ?wkt1.     ?shire a y2geoo:OS_County.     ?shire geo:hasGeometry ?g2.     ?g2 geo:asWKT ?wkt2.     FILTER(          ?shire != yago:Nottinghamshire  &&         (geof:distance(?wkt1, ?wkt2, uom:metre) < 5000 )) }",
+        "Annotation": {
+            "instance": "yago:Nottinghamshire",
+            "property": " ",
+            "relation": "geof:distance",
+            "concept": "y2geoo:OS_County",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "339": {
+        "Question": "What villages are within 100 km from Dublin?",
+        "Query": "SELECT distinct ?village  WHERE {     ?village a y2geoo:OSM_village.     ?village geo:hasGeometry ?g1.     ?g1 geo:asWKT ?wkt1.     yago:Dublin geo:hasGeometry ?g2.     ?g2 geo:asWKT ?wkt2.     FILTER( geof:distance(?wkt2, ?wkt1, uom:metre) < 100000 ) }",
+        "Annotation": {
+            "instance": "yago:Dublin",
+            "property": " ",
+            "relation": "geof:distance",
+            "concept": "y2geoo:OSM_village",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "340": {
+        "Question": "Are there any parks in Worcestershire County?",
+        "Query": "ASK WHERE {  <http://yago-knowledge.org/resource/Worcestershire>  geo:hasGeometry ?o1 .         ?o1 geo:asWKT ?countyGeo .          ?park a y2geoo:OSM_park .         ?park geo:hasGeometry ?o2 .         ?o2 geo:asWKT ?parkGeo .       FILTER(geof:sfWithin(?parkGeo , ?countyGeo)) }",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/Worcestershire>",
+            "property": " ",
+            "relation": "geof:sfWithin",
+            "concept": "y2geoo:OSM_park",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "341": {
+        "Question": "In which barony is Coolea located?",
+        "Query": "SELECT distinct ?barony  WHERE {     yago:geoentity_Coolea_3300151 geo:hasGeometry ?o .     ?o geo:asWKT ?cooleaGeo .      ?barony a y2geoo:OSI_Barony . ?barony geo:hasGeometry ?o2 .     ?o2 geo:asWKT ?baronyGeo .      FILTER(geof:sfWithin(?cooleaGeo , ?baronyGeo ))  }",
+        "Annotation": {
+            "instance": "yago:geoentity_Coolea_3300151",
+            "property": " ",
+            "relation": "geof:sfWithin",
+            "concept": "y2geoo:OSI_Barony",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "342": {
+        "Question": "Which lakes are located in Kilkis?",
+        "Query": "SELECT DISTINCT ?lake WHERE {    <http://yago-knowledge.org/resource/geoentity_Dimos_Kilkis_8133969> geo:hasGeometry ?o1 .    ?o1 geo:asWKT ?munGeo .     ?lake a y2geoo:OSM_lake .    ?lake geo:hasGeometry ?o2 .    ?o2 geo:asWKT ?lakeWKT .     FILTER(geof:sfWithin(?lakeWKT , ?munGeo)) }",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/geoentity_Dimos_Kilkis_8133969>",
+            "property": " ",
+            "relation": "geof:sfWithin",
+            "concept": "y2geoo:OSM_lake",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "343": {
+        "Question": "Which are the districts that border Copeland district?",
+        "Query": "SELECT DISTINCT ?district WHERE {  ?district a y2geoo:OS_District .         ?district geo:hasGeometry ?o1 .         ?o1 geo:asWKT ?districtGeo .          <http://yago-knowledge.org/resource/geoentity_Copeland_District_7290665> geo:hasGeometry ?o2 .         ?o2 geo:asWKT ?copelandGeo .          FILTER(geof:sfTouches(?copelandGeo, ?districtGeo)) }",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/geoentity_Copeland_District_7290665>",
+            "property": " ",
+            "relation": "geof:sfTouches",
+            "concept": "y2geoo:OS_District",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "344": {
+        "Question": "Are there any forests in a 10km radius from Kastanas beach?",
+        "Query": "ASK {  yago:geoentity_Paral\u00eda_Kastan\u00e1s_10277719 geo:hasGeometry  ?rep1 . ?rep1 geo:asWKT ?kWKT.  ?forest a y2geoo:OSM_forest;     geo:hasGeometry  ?rep2 . ?rep2 geo:asWKT ?fWKT.   FILTER(strdf:distance(?kWKT, ?fWKT, uom:metre) < 10000).  }",
+        "Annotation": {
+            "instance": "yago:geoentity_Paral\u00eda_Kastan\u00e1s_10277719",
+            "property": " ",
+            "relation": "strdf:distance",
+            "concept": "y2geoo:OSM_forest",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "345": {
+        "Question": "Show me the parks of Liverpool.",
+        "Query": "SELECT distinct ?park WHERE{  yago:Liverpool geo:hasGeometry  ?rep1 . ?rep1 geo:asWKT ?lWKT.  ?park a y2geoo:OSM_park;     geo:hasGeometry  ?rep2 . ?rep2 geo:asWKT ?pWKT .   FILTER(geof:sfWithin(?pWKT, ?lWKT)). }",
+        "Annotation": {
+            "instance": "yago:Liverpool",
+            "property": " ",
+            "relation": "geof:sfWithin",
+            "concept": "y2geoo:OSM_park",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "346": {
+        "Question": "Which streams intersect with Cork?",
+        "Query": "SELECT distinct ?stream WHERE{  y2geor:gadmentity_Cork_IRL.4_1 geo:hasGeometry  ?rep1 . ?rep1 geo:asWKT ?cWKT.  ?stream a y2geoo:OSM_stream;     geo:hasGeometry  ?rep2 . ?rep2 geo:asWKT ?sWKT .   FILTER(strdf:intersects(?sWKT, ?cWKT)).  }",
+        "Annotation": {
+            "instance": "y2geor:gadmentity_Cork_IRL.4_1",
+            "property": " ",
+            "relation": "strdf:intersects",
+            "concept": "y2geoo:OSM_stream",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "347": {
+        "Question": "Which regions are in Greece?",
+        "Query": "select distinct ?region where { yago:Greece geo:hasGeometry ?geomLC. ?geomLC geo:asWKT ?lcnWKT.     ?region rdf:type y2geoo:GAG_Region;  geo:hasGeometry ?geomL.   ?geomL geo:asWKT ?lWKT.      FILTER(strdf:within(?lWKT,?lcnWKT))    }",
+        "Annotation": {
+            "instance": "yago:Greece",
+            "property": " ",
+            "relation": "strdf:within",
+            "concept": "y2geoo:GAG_Region",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "348": {
+        "Question": "Which forests are in England?",
+        "Query": "select distinct ?forest  where {     yago:England geo:hasGeometry ?geomLC.     ?geomLC geo:asWKT ?lcnWKT.      ?forest rdf:type y2geoo:OSM_forest;     geo:hasGeometry ?geomL.     ?geomL geo:asWKT ?lWKT.      FILTER(geof:sfWithin(?lWKT, ?lcnWKT))  }",
+        "Annotation": {
+            "instance": "yago:England",
+            "property": " ",
+            "relation": "geof:sfWithin",
+            "concept": "y2geoo:OSM_forest",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "349": {
+        "Question": "Which are the parks of Dublin?",
+        "Query": "select distinct ?park  where {     yago:Dublin geo:hasGeometry ?geomLC.     ?geomLC geo:asWKT ?lcnWKT.      ?park rdf:type y2geoo:OSM_park;     geo:hasGeometry ?geomL.     ?geomL geo:asWKT ?lWKT.      FILTER(geof:sfWithin(?lWKT, ?lcnWKT))  }",
+        "Annotation": {
+            "instance": "yago:Dublin",
+            "property": " ",
+            "relation": "geof:sfWithin",
+            "concept": "y2geoo:OSM_park",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "350": {
+        "Question": "Which counties border Donegal county?",
+        "Query": "SELECT distinct ?county WHERE {  yago:County_Donegal geo:hasGeometry ?o1 .  ?o1 geo:asWKT ?geoWKT1 .  { ?county rdf:type y2geoo:OSI_County_Council . } UNION { ?county rdf:type y2geoo:OSI_City_and_County_Council. } .  ?county geo:hasGeometry ?o2 .  ?o2 geo:asWKT ?geoWKT2 .  FILTER(strdf:touches(?geoWKT1, ?geoWKT2)) }",
+        "Annotation": {
+            "instance": "yago:County_Donegal",
+            "property": " ",
+            "relation": "strdf:touches",
+            "concept": [
+                "y2geoo:OSI_County_Council",
+                "y2geoo:OSI_City_and_County_Council"
+            ],
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "351": {
+        "Question": "Which districts border Warwickshire?",
+        "Query": "SELECT distinct ?district WHERE { yago:Warwickshire geo:hasGeometry ?o1 . ?o1 geo:asWKT ?geoWKT1 . ?district rdf:type y2geoo:OS_District . ?district geo:hasGeometry ?o2 . ?o2 geo:asWKT ?geoWKT2 . FILTER(strdf:touches(?geoWKT1, ?geoWKT2)) }",
+        "Annotation": {
+            "instance": "yago:Warwickshire",
+            "property": " ",
+            "relation": "strdf:touches",
+            "concept": "y2geoo:OS_District",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "352": {
+        "Question": "Which regions border the Central Macedonia region?",
+        "Query": "SELECT distinct ?region WHERE { yago:Central_Macedonia geo:hasGeometry ?o1 . ?o1 geo:asWKT ?geoWKT1 . ?region rdf:type y2geoo:GAG_Region . ?region geo:hasGeometry ?o2 . ?o2 geo:asWKT ?geoWKT2 . FILTER(strdf:touches(?geoWKT1, strdf:buffer(?geoWKT2, 0, uom:metre))) }",
+        "Annotation": {
+            "instance": "yago:Central_Macedonia",
+            "property": " ",
+            "relation": "strdf:touches",
+            "concept": "y2geoo:GAG_Region",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "353": {
+        "Question": "Which country contains Clondalkin?",
+        "Query": "SELECT  distinct ?region WHERE { yago:Clondalkin geo:hasGeometry ?iGeom. ?iGeom geo:asWKT ?iWKT. ?region rdf:type y2geoo:GADM_1stOrder_AdministrativeUnit . ?region geo:hasGeometry ?xGeom. ?xGeom geo:asWKT ?xWKT. FILTER(geof:sfContains(?xWKT, ?iWKT)) }",
+        "Annotation": {
+            "instance": "yago:Clondalkin",
+            "property": " ",
+            "relation": "geof:sfContains",
+            "concept": "y2geoo:GADM_1stOrder_AdministrativeUnit",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "354": {
+        "Question": "Which are the lakes inside Central Macedonia?",
+        "Query": "select DISTINCT ?lake WHERE{ <http://yago-knowledge.org/resource/Central_Macedonia> geo:hasGeometry ?o. ?o geo:asWKT ?geoWKT. ?lake <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kr.di.uoa.gr/yago2geo/ontology/OSM_lake>. ?lake geo:hasGeometry ?o1.  ?o1 geo:asWKT ?geoWKT1.  FILTER(geof:sfWithin(?geoWKT1,?geoWKT)) }",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/Central_Macedonia>",
+            "property": " ",
+            "relation": "geof:sfWithin",
+            "concept": "y2geoo:OSM_lake",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "355": {
+        "Question": "Which parks are within a 10km radius of Liverpool?",
+        "Query": "select distinct ?park WHERE { <http://yago-knowledge.org/resource/Liverpool> geo:hasGeometry ?o. ?o geo:asWKT ?geoWKT. ?park <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kr.di.uoa.gr/yago2geo/ontology/OSM_park>. ?park geo:hasGeometry ?o1. ?o1 geo:asWKT ?geoWKT1. FILTER(geof:sfWithin(?geoWKT1,?geoWKT) && geof:distance(?geoWKT,?geoWKT1,uom:metre) <= 10000) }",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/Liverpool>",
+            "property": " ",
+            "relation": "geof:sfWithin && geof:distance",
+            "concept": "y2geoo:OSM_park",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "356": {
+        "Question": "Which districts border with the Stafford district?",
+        "Query": "select DISTINCT ?district where { <http://yago-knowledge.org/resource/geoentity_Stafford_District_7290631> <http://www.opengis.net/ont/geosparql#hasGeometry> ?geomLC. ?geomLC geo:asWKT ?lcWKT. ?district rdf:type <http://kr.di.uoa.gr/yago2geo/ontology/OS_District>; <http://www.opengis.net/ont/geosparql#hasGeometry> ?geomC. ?geomC geo:asWKT ?cWKT. FILTER(geof:sfTouches(?lcWKT, ?cWKT)) }",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/geoentity_Stafford_District_7290631>",
+            "property": " ",
+            "relation": "geof:sfTouches",
+            "concept": "<http://kr.di.uoa.gr/yago2geo/ontology/OS_District>",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "357": {
+        "Question": "Which counties border County Clare?",
+        "Query": "SELECT distinct ?county WHERE {  yago:County_Clare geo:hasGeometry ?o . ?o geo:asWKT ?geoWKT . { ?county rdf:type y2geoo:OSI_County_Council . } UNION { ?county rdf:type y2geoo:OSI_City_and_County_Council. } . ?county geo:hasGeometry ?o1 . ?o1 geo:asWKT ?geoWKT1 . FILTER(strdf:touches(?geoWKT, ?geoWKT1)) }",
+        "Annotation": {
+            "instance": "yago:County_Clare",
+            "property": " ",
+            "relation": "strdf:touches",
+            "concept": [
+                "y2geoo:OSI_County_Council",
+                "y2geoo:OSI_City_and_County_Council"
+            ],
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "358": {
+        "Question": "Which districts share a border with Wakefield district?",
+        "Query": "SELECT distinct ?district WHERE { yago:City_of_Wakefield geo:hasGeometry ?o . ?o geo:asWKT ?geoWKT . ?district rdf:type y2geoo:OS_District; geo:hasGeometry ?o1 . ?o1 geo:asWKT ?geoWKT1 . FILTER(strdf:touches(?geoWKT, ?geoWKT1)) }",
+        "Annotation": {
+            "instance": "yago:City_of_Wakefield",
+            "property": " ",
+            "relation": "strdf:touches",
+            "concept": "y2geoo:OS_District",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "359": {
+        "Question": "Which regions are next to the region of Thessaly?",
+        "Query": "SELECT distinct ?region WHERE { yago:Thessaly geo:hasGeometry ?o . ?o geo:asWKT ?geoWKT . ?region rdf:type y2geoo:GAG_Region; geo:hasGeometry ?o1 . ?o1 geo:asWKT ?geoWKT1 . FILTER(strdf:touches(?geoWKT, strdf:buffer(?geoWKT1, 0, uom:metre))) }",
+        "Annotation": {
+            "instance": "yago:Thessaly",
+            "property": " ",
+            "relation": "strdf:touches",
+            "concept": "y2geoo:GAG_Region",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "360": {
+        "Question": "Which municipalities border the municipality of Athens?",
+        "Query": "select distinct ?municipality where {  yago:geoentity_Dimos_Athens_8133876  geo:hasGeometry ?o . ?o geo:asWKT ?geoWKT .  ?municipality rdf:type y2geoo:GAG_Municipality . ?municipality geo:hasGeometry ?o1 . ?o1 geo:asWKT ?geoWKT1 . FILTER(strdf:touches(?geoWKT, strdf:buffer(?geoWKT1, 0, uom:metre))) }",
+        "Annotation": {
+            "instance": "yago:geoentity_Dimos_Athens_8133876",
+            "property": " ",
+            "relation": "strdf:touches",
+            "concept": "y2geoo:GAG_Municipality",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "361": {
+        "Question": "Which metropolitan districts are adjacent to Liverpool?",
+        "Query": "select distinct ?metrdist where { <http://yago-knowledge.org/resource/Liverpool> <http://www.opengis.net/ont/geosparql#hasGeometry> ?geomLC.  ?geomLC geo:asWKT ?lcWKT.  ?metrdist  rdf:type  <http://kr.di.uoa.gr/yago2geo/ontology/OS_MetropolitanDistrict>; <http://www.opengis.net/ont/geosparql#hasGeometry>  ?geomC. ?geomC geo:asWKT ?cWKT.  FILTER(geof:sfTouches(?lcWKT, ?cWKT)) }",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/Liverpool>",
+            "property": " ",
+            "relation": "geof:sfTouches",
+            "concept": "<http://kr.di.uoa.gr/yago2geo/ontology/OS_MetropolitanDistrict>",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "362": {
+        "Question": "Which baronies border Ardee?",
+        "Query": "select distinct ?barony where { <http://yago-knowledge.org/resource/Ardee> <http://www.opengis.net/ont/geosparql#hasGeometry> ?geomLC.  ?geomLC geo:asWKT ?lcWKT.  ?barony rdf:type  <http://kr.di.uoa.gr/yago2geo/ontology/OSI_Barony>; <http://www.opengis.net/ont/geosparql#hasGeometry>  ?geomC. ?geomC geo:asWKT ?cWKT.  FILTER(geof:sfTouches(?lcWKT, ?cWKT)) }",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/Ardee>",
+            "property": " ",
+            "relation": "geof:sfTouches",
+            "concept": "<http://kr.di.uoa.gr/yago2geo/ontology/OSI_Barony>",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "363": {
+        "Question": "Which municipalities share a border with Chania?",
+        "Query": "SELECT distinct ?municipality WHERE { <http://yago-knowledge.org/resource/geoentity_Chania_8133762> geo:hasGeometry ?o . ?o geo:asWKT ?geoWKT . ?municipality rdf:type y2geoo:GAG_Municipality . ?municipality geo:hasGeometry ?o1 . ?o1 geo:asWKT ?geoWKT1 . FILTER(strdf:touches(?geoWKT, strdf:buffer(?geoWKT1, 0, uom:metre))) }",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/geoentity_Chania_8133762>",
+            "property": " ",
+            "relation": "strdf:touches",
+            "concept": "y2geoo:GAG_Municipality",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "364": {
+        "Question": "Which forests are found within the boundaries of Norfolk?",
+        "Query": "SELECT DISTINCT ?l WHERE { <http://yago-knowledge.org/resource/Norfolk> geo:hasGeometry ?mg . ?mg geo:asWKT ?mw . ?l a y2geoo:OSM_forest . ?l geo:hasGeometry ?lg . ?lg geo:asWKT ?lw . FILTER(geof:sfContains(?mw,?lw)) }",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/Norfolk>",
+            "property": " ",
+            "relation": "geof:sfContains",
+            "concept": "y2geoo:OSM_forest",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "365": {
+        "Question": "Which forests are contained in the barony of Coshlea?",
+        "Query": "SELECT DISTINCT ?l WHERE { <http://kr.di.uoa.gr/yago2geo/resource/osientity_2AE19629112213A3E055000000000001> geo:hasGeometry ?mg .  ?mg geo:asWKT ?mw .  ?l a y2geoo:OSM_forest . ?l geo:hasGeometry ?lg . ?lg geo:asWKT ?lw . FILTER(geof:sfContains(?mw,?lw)) }",
+        "Annotation": {
+            "instance": "<http://kr.di.uoa.gr/yago2geo/resource/osientity_2AE19629112213A3E055000000000001>",
+            "property": " ",
+            "relation": "geof:sfContains",
+            "concept": "y2geoo:OSM_forest",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "366": {
+        "Question": "Which municipalities border the Municipality of Makrakomi?",
+        "Query": "select distinct ?x { <http://yago-knowledge.org/resource/Makrakomi> geo:hasGeometry ?geo1. ?geo1 geo:asWKT ?g1wkt. ?x rdf:type <http://kr.di.uoa.gr/yago2geo/ontology/GAG_Municipality>; geo:hasGeometry ?geo2. ?geo2 geo:asWKT ?g2wkt.  FILTER(geof:sfTouches(?g1wkt,?g2wkt)) }",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/Makrakomi>",
+            "property": " ",
+            "relation": "geof:sfTouches",
+            "concept": "<http://kr.di.uoa.gr/yago2geo/ontology/GAG_Municipality>",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "367": {
+        "Question": "Which counties border the county of Durham?",
+        "Query": "SELECT distinct ?county WHERE { yago:County_Durham geo:hasGeometry ?o . ?o geo:asWKT ?geoWKT . ?county rdf:type y2geoo:GADM_3rdOrder_AdministrativeUnit; geo:hasGeometry ?o1 . ?o1 geo:asWKT ?geoWKT1 . FILTER(strdf:touches(?geoWKT, ?geoWKT1)) }",
+        "Annotation": {
+            "instance": "yago:County_Durham",
+            "property": " ",
+            "relation": "strdf:touches",
+            "concept": "y2geoo:GADM_3rdOrder_AdministrativeUnit",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "368": {
+        "Question": "Which counties are adjacent to the county of Meath?",
+        "Query": "SELECT distinct ?county WHERE { yago:County_Meath geo:hasGeometry ?o . ?o geo:asWKT ?geoWKT . { ?county rdf:type y2geoo:OSI_County_Council . } UNION { ?county rdf:type y2geoo:OSI_City_and_County_Council. } . ?county geo:hasGeometry ?o1 . ?o1 geo:asWKT ?geoWKT1 . FILTER(strdf:touches(?geoWKT, ?geoWKT1)) }",
+        "Annotation": {
+            "instance": "yago:County_Meath",
+            "property": " ",
+            "relation": "strdf:touches",
+            "concept": [
+                "y2geoo:OSI_County_Council",
+                "y2geoo:OSI_City_and_County_Council"
+            ],
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "370": {
+        "Question": "Which beaches are at most 100 km away from Ormos Vourkari?",
+        "Query": "SELECT DISTINCT ?beach WHERE {    ?beach a y2geoo:OSM_beach. ?beach geo:hasGeometry ?x1Geo.         ?x1Geo geo:asWKT ?x1WKT.          <http://yago-knowledge.org/resource/geoentity_\u00d3rmos_Vourk\u00e1ri_251740> geo:hasGeometry ?x2Geo.         ?x2Geo geo:asWKT ?x2WKT.   FILTER(geof:distance(?x1WKT, ?x2WKT, uom:metre) <= 100000) }",
+        "Annotation": {
+            "instance": null,
+            "property": " ",
+            "relation": "geof:distance",
+            "concept": "y2geoo:OSM_beach",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "372": {
+        "Question": "Which forests are in a radius of 10km from Lincolnshire.",
+        "Query": "select distinct ?x where { ?x rdf:type y2geoo:OSM_forest. ?x geo:hasGeometry ?xGeom.  ?xGeom geo:asWKT ?xWKT. yago:Lincolnshire geo:hasGeometry ?o1 . ?o1 geo:asWKT ?iWKT . FILTER(geof:distance(?xWKT, ?iWKT, uom:metre) <= 10000)}",
+        "Annotation": {
+            "instance": "yago:Lincolnshire",
+            "property": " ",
+            "relation": "geof:distance",
+            "concept": "y2geoo:OSM_forest",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "373": {
+        "Question": "Which is the closest forest to Manchester",
+        "Query": "select ?x where { ?x rdf:type y2geoo:OSM_forest . ?x geo:hasGeometry ?xGeom. ?xGeom geo:asWKT ?xWKT. yago:Manchester geo:hasGeometry ?o1 . ?o1 geo:asWKT ?iWKT . } order by geof:distance(?xWKT, ?iWKT, uom:metre) limit 1",
+        "Annotation": {
+            "instance": "yago:Manchester",
+            "property": " ",
+            "relation": "geof:distance",
+            "concept": "y2geoo:OSM_forest",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "375": {
+        "Question": "Which are the 5 smallest district wards that are north of Liverpool?",
+        "Query": "select ?District_Ward  where { yago:Liverpool geo:hasGeometry ?geomLC. ?geomLC geo:asWKT ?lcWKT. ?District_Ward rdf:type y2geoo:OS_DistrictWard; geo:hasGeometry ?geomC. ?geomC geo:asWKT ?cWKT. FILTER(strdf:below(?lcWKT, ?cWKT)) } ORDER BY (strdf:area(?cWKT)) LIMIT 5",
+        "Annotation": {
+            "instance": "yago:Liverpool",
+            "property": " ",
+            "relation": "strdf:below",
+            "concept": "y2geoo:OS_DistrictWard",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "376": {
+        "Question": "In which country is the Loch Ness lake located?",
+        "Query": "SELECT ?country WHERE { ?country rdf:type y2geoo:GADM_1stOrder_AdministrativeUnit . ?country geo:hasGeometry ?cgeom . ?cgeom geo:asWKT ?cwkt . yago:Loch_Ness geo:hasGeometry ?lgeom . ?lgeom geo:asWKT ?lwkt . FILTER(geof:sfContains(?cwkt, ?lwkt)). }",
+        "Annotation": {
+            "instance": "?country",
+            "property": " ",
+            "relation": "geof:sfContains",
+            "concept": "yago:Loch_Ness",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "377": {
+        "Question": "Which islands are in New York City?",
+        "Query": "SELECT ?island  WHERE {      ?island a y2geoo:OSM_island.      ?island geo:hasGeometry ?islandGeom.      ?islandGeom geo:asWKT ?islandWKT.            yago:New_York_City geo:hasGeometry ?newYorkGeom.      ?newYorkGeom geo:asWKT ?newYorkWKT.            FILTER(geof:sfWithin(?islandWKT, ?newYorkWKT)).  }",
+        "Annotation": {
+            "instance": "yago:New_York_City",
+            "property": " ",
+            "relation": "geof:sfWithin",
+            "concept": "y2geoo:OSM_island",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "378": {
+        "Question": "Which states does Lake Michigan intersect?",
+        "Query": "SELECT ?state WHERE { yago:United_States geo:hasGeometry ?usGeo . ?usGeo geo:asWKT ?usWKT . ?state rdf:type y2geoo:GADM_2ndOrder_AdministrativeUnit . ?state geo:hasGeometry ?sGeo . ?sGeo geo:asWKT ?sWKT . FILTER(geof:sfContains(?usWKT, ?sWKT)) . yago:Lake_Michigan  geo:hasGeometry ?laGeom . ?laGeom geo:asWKT ?laWKT . FILTER(strdf:intersects(?sWKT, ?laWKT)) }",
+        "Annotation": {
+            "instance": "yago:United_States",
+            "property": " ",
+            "relation": "geof:sfContains",
+            "concept": "y2geoo:GADM_2ndOrder_AdministrativeUnit, yago:Lake_Michigan",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "379": {
+        "Question": "Which island is located south of island Hoy?",
+        "Query": "SELECT ?island  WHERE {      yago:geoentity_Hoy_2646475 geo:hasGeometry ?geo1.      ?geo1 geo:asWKT ?wkt1.        ?island a y2geoo:OSM_island.      ?island geo:hasGeometry ?geo2.      ?geo2 geo:asWKT ?wkt2.        FILTER(strdf:below(?wkt2, ?wkt1)).  }  ORDER BY strdf:distance(?wkt1, ?wkt2)  LIMIT 1",
+        "Annotation": {
+            "instance": "yago:geoentity_Hoy_2646475",
+            "property": " ",
+            "relation": "strdf:below",
+            "concept": "y2geoo:OSM_island",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "380": {
+        "Question": "Which cities are north of Miami?",
+        "Query": "SELECT ?cities  WHERE {        ?cities a y2geoo:OSM_city.      ?cities geo:hasGeometry ?cGeom.      ?cGeom geo:asWKT ?cWKT.              <http://yago-knowledge.org/resource/geoentity_Miami_4398117> geo:hasGeometry ?miGeom.      ?miGeom geo:asWKT ?miWKT.        FILTER( strdf:above(?cWKT, ?miWKT)).       }",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/geoentity_Miami_4398117>",
+            "property": " ",
+            "relation": "strdf:above",
+            "concept": "y2geoo:OSM_city",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "381": {
+        "Question": "Are there any rivers connected with lake Lough Corrib?",
+        "Query": "ASK { ?river rdf:type y2geoo:OSM_stream . ?river geo:hasGeometry ?rgeom . ?rgeom geo:asWKT ?rwkt . yago:Lough_Corrib geo:hasGeometry ?lgeom . ?lgeom geo:asWKT ?lwkt . FILTER(geof:sfIntersects(?rwkt, ?lwkt)). }",
+        "Annotation": {
+            "instance": "yago:Lough_Corrib",
+            "property": " ",
+            "relation": "geof:sfIntersects",
+            "concept": "y2geoo:OSM_stream",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "382": {
+        "Question": "How many islands does Scotland have?",
+        "Query": "SELECT (COUNT(?island) AS ?numIslands)  WHERE {      yago:Scotland geo:hasGeometry ?sGeom.      ?sGeom geo:asWKT ?sWKT.        ?island a y2geoo:OSM_island.      ?island geo:hasGeometry ?iGeom.      ?iGeom geo:asWKT ?iWKT.        FILTER(geof:sfWithin(?iWKT, ?sWKT)).  }",
+        "Annotation": {
+            "instance": "yago:Scotland",
+            "property": " ",
+            "relation": "geof:sfWithin",
+            "concept": "y2geoo:OSM_island",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "383": {
+        "Question": "How many parks does Wales have?",
+        "Query": "SELECT (COUNT (?park) AS ?numParks)WHERE { yago:Wales geo:hasGeometry ?geomLC. ?geomLC geo:asWKT ?lcnWKT. ?park rdf:type y2geoo:OSM_park; geo:hasGeometry ?geomL. ?geomL geo:asWKT ?lWKT. FILTER(geof:sfWithin(?lWKT, ?lcnWKT)) }",
+        "Annotation": {
+            "instance": "yago:Wales",
+            "property": " ",
+            "relation": "geof:sfWithin",
+            "concept": "y2geoo:OSM_park",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "384": {
+        "Question": "How many county councils does the Republic of Ireland have?",
+        "Query": "select (count(distinct ?x) as ?totalX)  where { ?x rdf:type <http://kr.di.uoa.gr/yago2geo/ontology/OSI_County_Council>; geo:hasGeometry ?cGeom. ?cGeom geo:asWKT ?cWKT. <http://yago-knowledge.org/resource/Republic_of_Ireland> geo:hasGeometry ?iGeom. ?iGeom geo:asWKT ?iWKT.  FILTER(geof:sfContains(?iWKT,?cWKT)) }",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/Republic_of_Ireland>",
+            "property": " ",
+            "relation": "geof:sfContains",
+            "concept": "http://kr.di.uoa.gr/yago2geo/ontology/OSI_County_Council",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "385": {
+        "Question": "Which are the three largest lakes of the Republic of Ireland?",
+        "Query": "SELECT  ?lake WHERE { { SELECT ?lake (strdf:area(?lWKT) as ?area) WHERE { yago:Republic_of_Ireland geo:hasGeometry  ?geom . ?geom     geo:asWKT        ?mWKT . ?lake     rdf:type         y2geoo:OSM_lake ; geo:hasGeometry  ?geol . ?geol     geo:asWKT        ?lWKT . FILTER (geof:sfContains(?mWKT, ?lWKT)) . } }} ORDER BY DESC(?area) LIMIT   3",
+        "Annotation": {
+            "instance": "yago:Republic_of_Ireland",
+            "property": " ",
+            "relation": "geof:sfContains",
+            "concept": "y2geoo:OSM_lake",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "386": {
+        "Question": "Which Municipalities are on the border of Peristeri?",
+        "Query": "SELECT DISTINCT ?municipality WHERE { yago:Peristeri geo:hasGeometry ?o.         ?o geo:asWKT ?WKT.          ?municipality rdf:type y2geoo:GAG_Municipality;         geo:hasGeometry ?o1.         ?o1 geo:asWKT ?WKT1.          FILTER(geof:sfTouches(strdf:buffer(?WKT, 0, uom:metre), strdf:buffer(?WKT1, 0, uom:metre))) }",
+        "Annotation": {
+            "instance": "yago:Peristeri",
+            "property": " ",
+            "relation": "geof:sfTouches",
+            "concept": "y2geoo:GAG_Municipality",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "387": {
+        "Question": "Which are the unitary authority wards of York?",
+        "Query": "SELECT DISTINCT ?districtWard WHERE { yago:York geo:hasGeometry ?o.         ?o geo:asWKT ?WKT.         ?districtWard rdf:type y2geoo:OS_UnitaryAuthorityWard;   geo:hasGeometry ?o1.         ?o1 geo:asWKT ?WKT1.         FILTER(geof:sfWithin(strdf:buffer(?WKT1, 0, uom:metre), strdf:buffer(?WKT, 0, uom:metre)))  }",
+        "Annotation": {
+            "instance": "yago:York",
+            "property": " ",
+            "relation": "geof:sfWithin",
+            "concept": "y2geoo:OS_UnitaryAuthorityWard",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "388": {
+        "Question": "Are there forests less than 50 kilometres away from the municipality of Missolonghi?",
+        "Query": "ASK { yago:geoentity_Dimos_Missolonghi_8133706 geo:hasGeometry ?o . ?o geo:asWKT ?WKT . ?forest rdf:type y2geoo:OSM_forest;  geo:hasGeometry ?o1.  ?o1 geo:asWKT ?WKT1. FILTER(geof:distance(?WKT, ?WKT1, uom:metre) < 50000) }",
+        "Annotation": {
+            "instance": "yago:geoentity_Dimos_Missolonghi_8133706",
+            "property": " ",
+            "relation": "geof:distance",
+            "concept": "y2geoo:OSM_forest",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "389": {
+        "Question": "Which parks are in Northern Ireland?",
+        "Query": "select distinct ?park where { <http://yago-knowledge.org/resource/Northern_Ireland>  <http://www.opengis.net/ont/geosparql#hasGeometry> ?geomLC.     ?geomLC geo:asWKT ?lcnWKT.     ?park rdf:type y2geoo:OSM_park .     ?park <http://www.opengis.net/ont/geosparql#hasGeometry> ?geomL.     ?geomL geo:asWKT ?lWKT.     FILTER(geof:sfWithin(?lWKT, ?lcnWKT))  }",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/Northern_Ireland>",
+            "property": " ",
+            "relation": "geof:sfWithin",
+            "concept": "y2geoo:OSM_park",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "390": {
+        "Question": "Which lakes are in a 100km radius of Ioannina?",
+        "Query": "select distinct ?bay where { <http://yago-knowledge.org/resource/geoentity_Dimos_Io\u00e1nnina_7303595>  <http://www.opengis.net/ont/geosparql#hasGeometry> ?geomLC.     ?geomLC geo:asWKT ?lcnWKT.     ?bay rdf:type y2geoo:OSM_lake.     ?bay <http://www.opengis.net/ont/geosparql#hasGeometry> ?geomL.     ?geomL geo:asWKT ?lWKT.     FILTER (geof:distance(?lcnWKT, ?lWKT, uom:metre)<100000). }",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/geoentity_Dimos_Io\u00e1nnina_7303595>",
+            "property": " ",
+            "relation": "geof:distance",
+            "concept": "y2geoo:OSM_lake",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "391": {
+        "Question": "Are there any beaches near the city of Chania?",
+        "Query": "ASK { yago:geoentity_Chania_8133762 <http://www.opengis.net/ont/geosparql#hasGeometry> ?geomLC.     ?geomLC geo:asWKT ?lcnWKT.     ?beach rdf:type y2geoo:OSM_beach .     ?beach <http://www.opengis.net/ont/geosparql#hasGeometry> ?geomL.     ?geomL geo:asWKT ?lWKT.     FILTER (geof:distance(?lcnWKT, ?lWKT, uom:metre)<5000). }",
+        "Annotation": {
+            "instance": "yago:geoentity_Chania_8133762",
+            "property": " ",
+            "relation": "geof:distance",
+            "concept": "y2geoo:OSM_beach",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "392": {
+        "Question": "Which are Thessaly's neighboring Regional Units?",
+        "Query": "SELECT distinct ?rg where { yago:Thessaly geo:hasGeometry ?tgeo . ?tgeo geo:asWKT ?tgWKT . ?rg rdf:type y2geoo:GAG_RegionalUnit . ?rg geo:hasGeometry ?rggeo . ?rggeo geo:asWKT ?rgWKT . FILTER (strdf:touches(?tgWKT,?rgWKT)) . }",
+        "Annotation": {
+            "instance": "yago:Thessaly",
+            "property": " ",
+            "relation": "strdf:touches",
+            "concept": "y2geoo:GAG_RegionalUnit",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "393": {
+        "Question": "Which Municipalities are on Thessaly's border?",
+        "Query": "SELECT distinct ?rg where { yago:Thessaly geo:hasGeometry ?tgeo . ?tgeo geo:asWKT ?tgWKT . ?rg rdf:type y2geoo:GAG_Municipality . ?rg geo:hasGeometry ?rggeo . ?rggeo geo:asWKT ?rgWKT . FILTER (strdf:touches(?tgWKT,?rgWKT)) . }",
+        "Annotation": {
+            "instance": "yago:Thessaly",
+            "property": " ",
+            "relation": "strdf:touches",
+            "concept": "y2geoo:GAG_Municipality",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "394": {
+        "Question": "Which Metropolitan Districts border Liverpool ?",
+        "Query": "SELECT DISTINCT ?Mdistrict WHERE { yago:Liverpool geo:hasGeometry ?egeo . ?egeo geo:asWKT ?eWKT . ?Mdistrict rdf:type y2geoo:OS_MetropolitanDistrict . ?Mdistrict geo:hasGeometry ?cgeo . ?cgeo geo:asWKT ?cWKT . FILTER(geof:sfTouches(?eWKT,?cWKT)) . }",
+        "Annotation": {
+            "instance": "yago:Liverpool",
+            "property": " ",
+            "relation": "geof:sfTouches",
+            "concept": "y2geoo:OS_MetropolitanDistrict",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "395": {
+        "Question": "Do any canals cross New York City?",
+        "Query": "ASK { yago:New_York_City geo:hasGeometry ?dgeo . ?dgeo geo:asWKT ?dWKT .  ?canal rdf:type y2geoo:OSM_canal . ?canal geo:hasGeometry ?pgeo . ?pgeo geo:asWKT ?pWKT . FILTER(strdf:crosses(?dWKT,?pWKT)) . }",
+        "Annotation": {
+            "instance": "yago:New_York_City",
+            "property": " ",
+            "relation": "strdf:crosses",
+            "concept": "y2geoo:OSM_canal",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "396": {
+        "Question": "Which municipalities border Thebes?",
+        "Query": "SELECT DISTINCT ?municipality WHERE { yago:geoentity_Dimos_Thebes_8133908 geo:hasGeometry  ?rep1 . ?rep1 geo:asWKT ?WKT1. ?municipality rdf:type y2geoo:GAG_Municipality.      ?municipality geo:hasGeometry  ?rep2 . ?rep2 geo:asWKT ?WKT2.      FILTER(strdf:touches(strdf:buffer(?WKT2, 0, uom:metre), strdf:buffer(?WKT1, 0, uom:metre))) }",
+        "Annotation": {
+            "instance": "yago:geoentity_Dimos_Thebes_8133908",
+            "property": " ",
+            "relation": "strdf:touches",
+            "concept": "y2geoo:GAG_Municipality",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "397": {
+        "Question": "How many forests does Cambridgeshire have?",
+        "Query": "SELECT (COUNT (DISTINCT ?forest) as ?forestCount) WHERE { yago:Cambridge geo:hasGeometry  ?rep1 . ?rep1 geo:asWKT ?WKT1.     ?forest rdf:type  y2geoo:OSM_forest.      ?forest geo:hasGeometry  ?rep2 . ?rep2 geo:asWKT ?WKT2.     FILTER(strdf:within(strdf:buffer(?WKT2, 0, uom:metre), strdf:buffer(?WKT1, 0, uom:metre))) }",
+        "Annotation": {
+            "instance": "yago:Cambridge",
+            "property": " ",
+            "relation": "strdf:within",
+            "concept": "y2geoo:OSM_forest",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "398": {
+        "Question": "Which are Dublin's neighboring townlands?",
+        "Query": "SELECT DISTINCT ?townland  WHERE { yago:Dublin geo:hasGeometry ?rep1 . ?rep1 geo:asWKT ?WKT1 . ?townland rdf:type  y2geoo:OSI_Townland . ?townland geo:hasGeometry ?rep2 . ?rep2 geo:asWKT ?WKT2 .  FILTER(strdf:touches(?WKT2,?WKT1)) }",
+        "Annotation": {
+            "instance": "yago:Dublin",
+            "property": " ",
+            "relation": "strdf:touches",
+            "concept": "y2geoo:OSI_Townland",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "399": {
+        "Question": "Does Lemnos have any beaches?",
+        "Query": "ASK {yago:Lemnos geo:hasGeometry ?lemnos_geo . ?lemnos_geo geo:asWKT ?lemnosWKT .    ?beach rdf:type <http://kr.di.uoa.gr/yago2geo/ontology/OSM_beach> .    ?beach geo:hasGeometry ?geomL .    ?geomL geo:asWKT ?fWKT.    FILTER(geof:sfWithin(?fWKT, ?lemnosWKT)) }",
+        "Annotation": {
+            "instance": "yago:Lemnos",
+            "property": " ",
+            "relation": "geof:sfWithin",
+            "concept": "<http://kr.di.uoa.gr/yago2geo/ontology/OSM_beach>",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "400": {
+        "Question": "Which lakes are within 20km of County Carlow?",
+        "Query": "SELECT  distinct ?lake  WHERE { yago:County_Carlow geo:hasGeometry ?carlowGeo . ?carlowGeo geo:asWKT ?carlowWKT .   ?lake rdf:type <http://kr.di.uoa.gr/yago2geo/ontology/OSM_lake> .   ?lake geo:hasGeometry ?lake_geo .   ?lake_geo geo:asWKT ?lake_geoWKT .   FILTER(geof:distance(?carlowWKT,?lake_geoWKT,uom:metre) <= 20000)   }",
+        "Annotation": {
+            "instance": "yago:County_Carlow",
+            "property": " ",
+            "relation": "geof:distance",
+            "concept": "<http://kr.di.uoa.gr/yago2geo/ontology/OSM_lake>",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "401": {
+        "Question": "Which Unitary Authorities exist in Wales?",
+        "Query": "SELECT DISTINCT ?order3neighbour  WHERE { yago:Wales geo:hasGeometry ?walesGeo .    ?walesGeo geo:asWKT ?walesWKT .  ?order3neighbour rdf:type <http://kr.di.uoa.gr/yago2geo/ontology/OS_UnitaryAuthority> .  ?order3neighbour geo:hasGeometry ?order3neighbourgeo .  ?order3neighbourgeo geo:asWKT ?order3neighbourgeoWKT .  FILTER(geof:sfContains(?walesWKT,?order3neighbourgeoWKT)) }",
+        "Annotation": {
+            "instance": "yago:Wales",
+            "property": " ",
+            "relation": "geof:sfContains",
+            "concept": "<http://kr.di.uoa.gr/yago2geo/ontology/OS_UnitaryAuthority>",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "402": {
+        "Question": "Which parks are less than 10km away from the city of Manchester?",
+        "Query": "select distinct ?park where{ yago:Manchester geo:hasGeometry ?o. ?o geo:asWKT ?geoWKT.   ?park rdf:type y2geoo:OSM_park; geo:hasGeometry ?geomC.  ?geomC geo:asWKT ?geoWKTr.   FILTER(geof:distance(?geoWKT,?geoWKTr,uom:metre) <= 10000)  }",
+        "Annotation": {
+            "instance": "yago:Manchester",
+            "property": " ",
+            "relation": "geof:distance",
+            "concept": "y2geoo:OSM_park",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "403": {
+        "Question": "Which rural areas border with Clonakilty?",
+        "Query": "select distinct ?rural_area where { <http://yago-knowledge.org/resource/Clonakilty> <http://www.opengis.net/ont/geosparql#hasGeometry> ?geomLC. ?geomLC geo:asWKT ?lcWKT.  ?rural_area rdf:type <http://kr.di.uoa.gr/yago2geo/ontology/OSI_Rural_Area>; <http://www.opengis.net/ont/geosparql#hasGeometry> ?geomC. ?geomC geo:asWKT ?cWKT.  FILTER(geof:sfTouches(?lcWKT, ?cWKT)) }",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/Clonakilty>",
+            "property": " ",
+            "relation": "geof:sfTouches",
+            "concept": "<http://kr.di.uoa.gr/yago2geo/ontology/OSI_Rural_Area>",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "404": {
+        "Question": "Which villages are located in the Peloponnese?",
+        "Query": "select distinct ?village where{  ?village rdf:type y2geoo:OSM_village .  ?village geo:hasGeometry ?o.  ?o geo:asWKT ?geoWKT.   yago:Peloponnese_\\(region\\) geo:hasGeometry ?o1.  ?o1 geo:asWKT ?geoWKT1.    FILTER(geof:sfWithin(?geoWKT, ?geoWKT1)) }",
+        "Annotation": {
+            "instance": "yago:Peloponnese_(region)",
+            "property": " ",
+            "relation": "geof:sfWithin",
+            "concept": "y2geoo:OSM_village",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "405": {
+        "Question": "Which townlands border the county council of Dublin?",
+        "Query": "Select distinct ?city  Where { yago:Dublin geo:hasGeometry ?o. ?o geo:asWKT ?geoWKT.  ?city rdf:type <http://kr.di.uoa.gr/yago2geo/ontology/OSI_Townland>; <http://www.opengis.net/ont/geosparql#hasGeometry> ?geomC. ?geomC geo:asWKT ?cWKT. FILTER(geof:sfTouches(?geoWKT,?cWKT)) }",
+        "Annotation": {
+            "instance": "yago:Dublin",
+            "property": " ",
+            "relation": "geof:sfTouches",
+            "concept": "<http://kr.di.uoa.gr/yago2geo/ontology/OSI_Townland>",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "406": {
+        "Question": "Which counties border the county of Bedford?",
+        "Query": "Select distinct ?CountryCouncil Where { yago:Bedford geo:hasGeometry ?o. ?o geo:asWKT ?geoWKT.  ?CountryCouncil rdf:type y2geoo:OS_County; geo:hasGeometry ?geomC. ?geomC geo:asWKT ?cWKT. FILTER(strdf:touches(?geoWKT,?cWKT)) }",
+        "Annotation": {
+            "instance": "yago:Bedford",
+            "property": " ",
+            "relation": "strdf:touches",
+            "concept": "y2geoo:OS_County",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "407": {
+        "Question": "Which municipalities are adjacent to Chalandri?",
+        "Query": "Select distinct ?dimos  Where { <http://yago-knowledge.org/resource/Chalandri> geo:hasGeometry ?o. ?o geo:asWKT ?geoWKT.  ?dimos rdf:type y2geoo:GAG_Municipality; <http://www.opengis.net/ont/geosparql#hasGeometry> ?geomC. ?geomC geo:asWKT ?cWKT. FILTER(geof:sfTouches(strdf:transform(?geoWKT, <http://www.opengis.net/def/crs/EPSG/0/2100>), strdf:transform(?cWKT, <http://www.opengis.net/def/crs/EPSG/0/2100>))) }",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/Chalandri>",
+            "property": " ",
+            "relation": "geof:sfTouches",
+            "concept": "y2geoo:GAG_Municipality",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "408": {
+        "Question": "Which municipalities are contained in the South Athens Regional Unit?",
+        "Query": "SELECT distinct ?y  WHERE {   <http://yago-knowledge.org/resource/geoentity_Perifereiak\u00ed_En\u00f3tita_Not\u00edou_Tom\u00e9a_Athin\u00f3n_8200483>  geo:hasGeometry ?gx .  ?gx geo:asWKT ?xWKT .     ?y a y2geoo:GAG_Municipality . ?y geo:hasGeometry ?gy .  ?gy geo:asWKT ?yWKT .   FILTER(strdf:contains( ?xWKT,?yWKT )) }",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/geoentity_Perifereiak\u00ed_En\u00f3tita_Not\u00edou_Tom\u00e9a_Athin\u00f3n_8200483>",
+            "property": " ",
+            "relation": "strdf:contains",
+            "concept": "y2geoo:GAG_Municipality",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "409": {
+        "Question": "Which districts share a border with the Greater London Authority?",
+        "Query": "SELECT distinct ?x  WHERE {   ?x a y2geoo:OS_District. ?x geo:hasGeometry ?g .  ?g geo:asWKT ?gWKT .   ?y a y2geoo:OS_GreaterLondonAuthority.  ?y geo:hasGeometry ?g1 .  ?g1 geo:asWKT ?g1WKT .    ?y geo:sfTouches ?x.   }",
+        "Annotation": {
+            "instance": null,
+            "property": " ",
+            "relation": "geo:sfTouches",
+            "concept": {
+                "subject": "y2geoo:OS_GreaterLondonAuthority",
+                "object": "y2geoo:OS_District"
+            },
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "410": {
+        "Question": "Is the city of London inside a forest?",
+        "Query": "ASK { ?x rdf:type y2geoo:OSM_forest. ?x geo:hasGeometry ?xGeom. ?xGeom geo:asWKT ?xWKT. yago:geoentity_City_of_London_2643744 geo:hasGeometry ?iGeom. ?iGeom geo:asWKT ?iWKT. FILTER(geof:sfIntersects(?iWKT,?xWKT)) }",
+        "Annotation": {
+            "instance": "yago:geoentity_City_of_London_2643744",
+            "property": " ",
+            "relation": "geof:sfIntersects",
+            "concept": "y2geoo:OSM_forest",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "411": {
+        "Question": "Which beaches are close to Corfu?",
+        "Query": "select distinct ?beach where { yago:Corfu <http://www.opengis.net/ont/geosparql#hasGeometry> ?geomLC. ?geomLC geo:asWKT ?lcnWKT. ?beach rdf:type y2geoo:OSM_beach . ?beach <http://www.opengis.net/ont/geosparql#hasGeometry> ?geomL. ?geomL geo:asWKT ?lWKT. FILTER (geof:distance(?lcnWKT, ?lWKT, uom:metre)<5000). }",
+        "Annotation": {
+            "instance": "yago:Corfu",
+            "property": " ",
+            "relation": "geof:distance",
+            "concept": "y2geoo:OSM_beach",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "412": {
+        "Question": "Which parks are in New York City?",
+        "Query": "select distinct ?park where { yago:New_York_City <http://www.opengis.net/ont/geosparql#hasGeometry> ?geomLC. ?geomLC geo:asWKT ?lcnWKT. ?park rdf:type y2geoo:OSM_park . ?park <http://www.opengis.net/ont/geosparql#hasGeometry> ?geomL. ?geomL geo:asWKT ?lWKT. FILTER(geof:sfWithin(?lWKT, ?lcnWKT))  }",
+        "Annotation": {
+            "instance": "yago:New_York_City",
+            "property": " ",
+            "relation": "geof:sfWithin",
+            "concept": "y2geoo:OSM_park",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "413": {
+        "Question": "Which towns are a short distance away from NYC?",
+        "Query": "select distinct ?bay where { yago:New_York_City <http://www.opengis.net/ont/geosparql#hasGeometry> ?geomLC. ?geomLC geo:asWKT ?lcnWKT. ?bay rdf:type y2geoo:OSM_town . ?bay <http://www.opengis.net/ont/geosparql#hasGeometry> ?geomL. ?geomL geo:asWKT ?lWKT. FILTER (geof:distance(?lcnWKT, ?lWKT, uom:metre)<5000). }",
+        "Annotation": {
+            "instance": "yago:New_York_City",
+            "property": " ",
+            "relation": "geof:distance",
+            "concept": "y2geoo:OSM_town",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "414": {
+        "Question": "Which counties border with Nottinghamshire?",
+        "Query": "SELECT ?county WHERE {   <http://yago-knowledge.org/resource/Nottinghamshire> geo:hasGeometry ?geomLC.   ?geomLC geo:asWKT ?lcWKT.   ?county rdf:type <http://kr.di.uoa.gr/yago2geo/ontology/OS_County>;   geo:hasGeometry ?geomC.   ?geomC geo:asWKT ?cWKT.   FILTER(geof:sfTouches(strdf:transform(?lcWKT, <http://www.opengis.net/def/crs/EPSG/0/4326>),   strdf:transform(?cWKT, <http://www.opengis.net/def/crs/EPSG/0/4326>)))  }",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/Nottinghamshire>",
+            "property": " ",
+            "relation": "geof:sfTouches",
+            "concept": "<http://kr.di.uoa.gr/yago2geo/ontology/OS_County>",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "415": {
+        "Question": "Which are the canals of Wales?",
+        "Query": "select distinct ?canal  where { yago:Wales geo:hasGeometry ?geomLC. ?geomLC geo:asWKT ?lcnWKT. ?canal rdf:type y2geoo:OSM_canal; geo:hasGeometry ?geomLC2. ?geomLC2 geo:asWKT ?lcnWKT2. FILTER(geof:sfWithin(?lcnWKT2,?lcnWKT) ) }",
+        "Annotation": {
+            "instance": "yago:Wales",
+            "property": " ",
+            "relation": "geof:sfWithin",
+            "concept": "y2geoo:OSM_canal",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "416": {
+        "Question": "Which beaches are at most 100 km away from Athens?",
+        "Query": "SELECT DISTINCT ?beach WHERE {    ?beach a y2geoo:OSM_beach. ?beach geo:hasGeometry ?x1Geo.         ?x1Geo geo:asWKT ?x1WKT. yago:geoentity_Dimos_Athens_8133876 geo:hasGeometry ?x2Geo.         ?x2Geo geo:asWKT ?x2WKT.   FILTER(geof:distance(?x1WKT, ?x2WKT, uom:metre) <= 100000) }",
+        "Annotation": {
+            "instance": "yago:geoentity_Dimos_Athens_8133876",
+            "property": " ",
+            "relation": "geof:distance",
+            "concept": "y2geoo:OSM_beach",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "417": {
+        "Question": "What is the largest body of water located in the region of County Kerry?",
+        "Query": "SELECT distinct ?lake (strdf:area(?sWKT) as ?area)  WHERE {  yago:County_Kerry geo:hasGeometry ?lgeo . ?lgeo geo:asWKT ?lWKT .  ?lake rdf:type y2geoo:OSM_lake. ?lake geo:hasGeometry ?sgeo . ?sgeo geo:asWKT ?sWKT .  FILTER (strdf:within(?sWKT,?lWKT)) . }  order by desc (?area) limit 1",
+        "Annotation": {
+            "instance": "yago:County_Kerry",
+            "property": " ",
+            "relation": "strdf:within",
+            "concept": "y2geoo:OSM_lake",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "418": {
+        "Question": "Which is the largest park by area in the municipality of Athens?",
+        "Query": "SELECT DISTINCT ?park ((strdf:area(?pWKT)) AS ?totalArea) WHERE {         ?park rdf:type y2geoo:OSM_park.         ?park   <http://www.opengis.net/ont/geosparql#hasGeometry> ?pGeom.         ?pGeom geo:asWKT ?pWKT.         yago:geoentity_Dimos_Athens_8133876 <http://www.opengis.net/ont/geosparql#hasGeometry> ?lcGeom.         ?lcGeom geo:asWKT ?lcWKT.         FILTER(geof:sfWithin(?pWKT, ?lcWKT))     } ORDER BY DESC(?totalArea) LIMIT 1",
+        "Annotation": {
+            "instance": "yago:geoentity_Dimos_Athens_8133876",
+            "property": " ",
+            "relation": "geof:sfWithin",
+            "concept": "y2geoo:OSM_park",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "419": {
+        "Question": "Which forests are located within a distance of 20km from Dublin?",
+        "Query": "select distinct ?park WHERE { <http://yago-knowledge.org/resource/Dublin> geo:hasGeometry ?o. ?o geo:asWKT ?geoWKT. ?park <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kr.di.uoa.gr/yago2geo/ontology/OSM_forest>. ?park geo:hasGeometry ?o1. ?o1 geo:asWKT ?geoWKT1. FILTER(geof:distance(?geoWKT,?geoWKT1,uom:metre) <= 20000) }",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/Dublin>",
+            "property": " ",
+            "relation": "geof:distance",
+            "concept": "y2geoo:OSM_forest",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "420": {
+        "Question": "What are the adjacent districts surrounding Greater London?",
+        "Query": "SELECT ?district WHERE {   ?district a y2geoo:OS_District. ?district geo:hasGeometry ?x1Geo.         ?x1Geo geo:asWKT ?x1WKT.          <http://yago-knowledge.org/resource/Greater_London>    geo:hasGeometry ?x2Geo.          ?x2Geo geo:asWKT ?x2WKT.   FILTER(geof:sfTouches(?x1WKT, ?x2WKT))}",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/Greater_London>",
+            "property": " ",
+            "relation": "geof:sfTouches",
+            "concept": "y2geoo:OS_District",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "421": {
+        "Question": "What are the green spaces located within a distance of 10 kilometers from Liverpool?",
+        "Query": "select distinct ?park WHERE { <http://yago-knowledge.org/resource/Liverpool> geo:hasGeometry ?o. ?o geo:asWKT ?geoWKT. ?park <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kr.di.uoa.gr/yago2geo/ontology/OSM_park>. ?park geo:hasGeometry ?o1. ?o1 geo:asWKT ?geoWKT1. FILTER(geof:sfWithin(?geoWKT1,?geoWKT) && geof:distance(?geoWKT,?geoWKT1,uom:metre) <= 10000) }",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/Liverpool>",
+            "property": " ",
+            "relation": "geof:sfWithin && geof:distance",
+            "concept": "y2geoo:OSM_park",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "422": {
+        "Question": "Which region of Greece contains Tripoli?",
+        "Query": "SELECT DISTINCT ?region WHERE{ ?region a y2geoo:GAG_Region. ?region geo:hasGeometry ?regionGeometry . ?regionGeometry geo:asWKT ?regionWKT . <http://yago-knowledge.org/resource/Tripoli,_Greece> geo:hasGeometry ?tgeom . ?tgeom geo:asWKT ?twkt . FILTER(geof:sfWithin(?twkt,?regionGeometry))}",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/Tripoli,_Greece>",
+            "property": " ",
+            "relation": "geof:sfWithin",
+            "concept": "y2geoo:GAG_Region",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "423": {
+        "Question": "On which island is the city of Chania located?",
+        "Query": "SELECT ?island WHERE{ <http://yago-knowledge.org/resource/geoentity_Chania_8133762> geo:hasGeometry ?cGeometry . ?cGeometry geo:asWKT ?cWKT . ?island a y2geoo:OSM_island. ?island geo:hasGeometry ?island_geom .?island_geom geo:asWKT ?island_wkt . FILTER(geof:sfContains(?cWKT,?island_wkt))}",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/geoentity_Chania_8133762>",
+            "property": " ",
+            "relation": "geof:sfContains",
+            "concept": "y2geoo:OSM_island",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "424": {
+        "Question": "Which countries make up the UK?",
+        "Query": "SELECT ?constituentCountry WHERE { yago:United_Kingdom geo:hasGeometry ?ukGeo . ?ukGeo geo:asWKT ?ukWKT . ?constituentCountry rdf:type y2geoo:GADM_2ndOrder_AdministrativeUnit . ?constituentCountry geo:hasGeometry ?cGeo . ?cGeo geo:asWKT ?cWKT . FILTER(geof:sfWithin(?cWKT,?ukWKT)) . }",
+        "Annotation": {
+            "instance": "yago:United_Kingdom",
+            "property": " ",
+            "relation": "geof:sfWithin",
+            "concept": "y2geoo:GADM_2ndOrder_AdministrativeUnit",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "425": {
+        "Question": "Give me five cities in Texas?",
+        "Query": "SELECT DISTINCT ?city WHERE {?city a y2geoo:OSM_city. ?city geo:hasGeometry ?city_geom . ?city_geom geo:asWKT ?city_wkt . yago:Texas geo:hasGeometry ?cgeom. ?cgeom geo:asWKT ?ukCkt. FILTER (geof:sfWithin(?city_wkt, ?ukCkt)) . }LIMIT 5",
+        "Annotation": {
+            "instance": "yago:Texas",
+            "property": " ",
+            "relation": "geof:sfWithin",
+            "concept": "y2geoo:OSM_city",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "932": {
+        "Question": "Which city is MoMA P.S. 1 located in?",
+        "Query": "SELECT ?loc  WHERE{    yago:MoMA_PS1 yago:isLocatedIn ?loc  }  LIMIT 1",
+        "Annotation": {
+            "instance": "yago:MoMA_PS1",
+            "property": " ",
+            "relation": "yago:isLocatedIn",
+            "concept": null,
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "933": {
+        "Question": "Which city is the capital of Ireland?",
+        "Query": "SELECT ?capital  WHERE {      yago:Republic_of_Ireland yago:hasCapital ?capital.  }",
+        "Annotation": {
+            "instance": "yago:Republic_of_Ireland",
+            "property": " ",
+            "relation": "yago:hasCapital",
+            "concept": null,
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "934": {
+        "Question": "Which state is Key Largo located in?",
+        "Query": "SELECT ?loc  WHERE{    yago:Key_Largo yago:isLocatedIn ?loc.  }",
+        "Annotation": {
+            "instance": "yago:Key_Largo",
+            "property": " ",
+            "relation": "yago:isLocatedIn",
+            "concept": null,
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "935": {
+        "Question": "Which is the capital city of Scotland?",
+        "Query": "SELECT ?capital  WHERE { yago:Scotland yago:hasCapital ?capital. }",
+        "Annotation": {
+            "instance": "yago:Scotland",
+            "property": " ",
+            "relation": "yago:hasCapital",
+            "concept": null,
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "936": {
+        "Question": "Which country is lake Como located in??",
+        "Query": "SELECT ?country WHERE { yago:Lake_Como yago:isLocatedIn ?country. }",
+        "Annotation": {
+            "instance": "yago:Lake_Como",
+            "property": " ",
+            "relation": "yago:isLocatedIn",
+            "concept": "Country",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "937": {
+        "Question": "Does Liverpool have a stadium?",
+        "Query": "ASK { ?stadium a yago:geoclass_stadium . ?stadium yago:isLocatedIn yago:Liverpool. }",
+        "Annotation": {
+            "instance": "?stadium",
+            "property": " ",
+            "relation": "yago:isLocatedIn",
+            "concept": "yago:geoclass_stadium",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "938": {
+        "Question": "Which are the churches of NYC?",
+        "Query": "SELECT DISTINCT ?mon WHERE {  ?type rdfs:subClassOf+ yago:wordnet_church_103028079. ?mon a ?type . ?mon yago:isLocatedIn yago:New_York_City.  }",
+        "Annotation": {
+            "instance": "yago:New_York_City",
+            "property": " ",
+            "relation": "yago:isLocatedIn",
+            "concept": "yago:wordnet_church_103028079",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "939": {
+        "Question": "What memorials can I visit in Dublin?",
+        "Query": "SELECT DISTINCT ?mon WHERE { ?type rdfs:subClassOf+ yago:wordnet_memorial_103743902. ?mon a ?type . ?mon yago:isLocatedIn yago:Dublin. }",
+        "Annotation": {
+            "instance": "yago:Dublin",
+            "property": " ",
+            "relation": "yago:isLocatedIn",
+            "concept": "yago:wordnet_memorial_103743902",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "940": {
+        "Question": "What museums can I visit in New York?",
+        "Query": "SELECT DISTINCT ?mon WHERE { ?type rdfs:subClassOf+ yago:wordnet_museum_103800563. ?mon a ?type . ?mon yago:isLocatedIn yago:New_York_City. }",
+        "Annotation": {
+            "instance": "yago:New_York_City",
+            "property": " ",
+            "relation": "yago:isLocatedIn",
+            "concept": "yago:wordnet_museum_103800563",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "941": {
+        "Question": "Find all the museums in Athens.",
+        "Query": "SELECT DISTINCT ?mon WHERE { ?type rdfs:subClassOf+ yago:wordnet_museum_103800563. ?mon a ?type . ?mon yago:isLocatedIn yago:Athens. }",
+        "Annotation": {
+            "instance": "yago:wordnet_museum_103800563",
+            "property": " ",
+            "relation": "yago:isLocatedIn",
+            "concept": "yago:Athens",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "942": {
+        "Question": "Find all the airports in the United States",
+        "Query": "SELECT DISTINCT ?airport WHERE { ?airport a yago:geoclass_airport . ?airport yago:isLocatedIn+ yago:United_States. }",
+        "Annotation": {
+            "instance": "yago:United_States",
+            "property": " ",
+            "relation": "yago:isLocatedIn+",
+            "concept": "yago:geoclass_airport",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "943": {
+        "Question": "Which state does Dallas belong to?",
+        "Query": "SELECT ?state WHERE { ?state a yago:wikicategory_States_of_the_United_States . yago:Dallas yago:isLocatedIn+ ?state. }",
+        "Annotation": {
+            "instance": "yago:Dallas",
+            "property": " ",
+            "relation": "yago:isLocatedIn+",
+            "concept": "yago:wikicategory_States_of_the_United_States",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "944": {
+        "Question": "Are there any waterfalls in Dublin?",
+        "Query": "ASK { ?type rdfs:subClassOf+ yago:wordnet_waterfall_109475292 . ?water a ?type . ?water yago:isLocatedIn yago:Dublin. }",
+        "Annotation": {
+            "instance": "yago:Dublin",
+            "property": " ",
+            "relation": "yago:isLocatedIn",
+            "concept": "yago:wordnet_waterfall_109475292",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "945": {
+        "Question": "Which mountains exist in Scotland?",
+        "Query": "SELECT DISTINCT ?mount WHERE { ?type rdfs:subClassOf+ yago:wordnet_mountain_109359803 .  ?mount a ?type .?mount yago:isLocatedIn+ yago:Scotland. }",
+        "Annotation": {
+            "instance": "yago:Scotland",
+            "property": " ",
+            "relation": "yago:isLocatedIn+",
+            "concept": "yago:wordnet_mountain_109359803",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "946": {
+        "Question": "Is there a hospital in Galway?",
+        "Query": "ASK { ?type rdfs:subClassOf+ yago:wordnet_hospital_103540595 . ?hospital a ?type . ?hospital yago:isLocatedIn+ yago:Galway. }",
+        "Annotation": {
+            "instance": "yago:Galway",
+            "property": " ",
+            "relation": "yago:isLocatedIn+",
+            "concept": "yago:wordnet_hospital_103540595",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "947": {
+        "Question": "Which are the states of the United States?",
+        "Query": "SELECT ?state WHERE { ?state a yago:wikicategory_States_of_the_United_States. }",
+        "Annotation": {
+            "instance": "yago:wikicategory_States_of_the_United_States",
+            "property": " ",
+            "relation": "a",
+            "concept": "owl:Thing",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "949": {
+        "Question": "Which museums can I visit in the US capital?",
+        "Query": "SELECT ?museum WHERE { yago:United_States yago:hasCapital ?cap .  ?type rdfs:subClassOf+ yago:wordnet_museum_103800563. ?museum a ?type . ?museum yago:isLocatedIn ?cap }",
+        "Annotation": {
+            "instance": "yago:United_States",
+            "property": " ",
+            "relation": "yago:hasCapital",
+            "concept": "yago:wordnet_museum_103800563",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "950": {
+        "Question": "Which island in New York is the Statue of Liberty on?",
+        "Query": "SELECT ?island WHERE { ?island a yago:wikicategory_Islands_of_New_York_City . yago:Statue_of_Liberty yago:isLocatedIn ?island. }",
+        "Annotation": {
+            "instance": "yago:Statue_of_Liberty",
+            "property": " ",
+            "relation": "yago:isLocatedIn",
+            "concept": "yago:wikicategory_Islands_of_New_York_City",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "952": {
+        "Question": "Which country's capital is Belfast?",
+        "Query": "SELECT ?country WHERE {?country yago:hasCapital yago:Belfast.}",
+        "Annotation": {
+            "instance": "yago:Belfast",
+            "property": " ",
+            "relation": "yago:hasCapital",
+            "concept": "?country",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "953": {
+        "Question": "Which are the non-metropolitan counties of England?",
+        "Query": "SELECT ?county WHERE { ?county a yago:wikicategory_Non-metropolitan_counties }",
+        "Annotation": {
+            "instance": null,
+            "property": " ",
+            "relation": "a",
+            "concept": "yago:wikicategory_Non-metropolitan_counties",
+            "numerical": false
+        },
+        "Category": "C"
+    },
+    "954": {
+        "Question": "Where is the Royal Armouries Museum located?",
+        "Query": "SELECT ?loc WHERE { yago:Royal_Armouries_Museum yago:isLocatedIn ?loc }",
+        "Annotation": {
+            "instance": "yago:Royal_Armouries_Museum",
+            "property": "yago:isLocatedIn",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "C"
+    },
+    "369": {
+        "Question": "Where is the Royal Armouries Museum located?",
+        "Query": "SELECT ?loc WHERE { yago:Royal_Armouries_Museum yago:isLocatedIn ?loc }",
+        "Annotation": {
+            "instance": "yago:Royal_Armouries_Museum",
+            "property": "yago:isLocatedIn",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "C"
+    },
+    "371": {
+        "Question": "Where is the Royal Armouries Museum located?",
+        "Query": "SELECT ?loc WHERE { yago:Royal_Armouries_Museum yago:isLocatedIn ?loc }",
+        "Annotation": {
+            "instance": "yago:Royal_Armouries_Museum",
+            "property": "yago:isLocatedIn",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "C"
+    },
+    "374": {
+        "Question": "Where is the Royal Armouries Museum located?",
+        "Query": "SELECT ?loc WHERE { yago:Royal_Armouries_Museum yago:isLocatedIn ?loc }",
+        "Annotation": {
+            "instance": "yago:Royal_Armouries_Museum",
+            "property": "yago:isLocatedIn",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "C"
+    },
+    "948": {
+        "Question": "Where is the Royal Armouries Museum located?",
+        "Query": "SELECT ?loc WHERE { yago:Royal_Armouries_Museum yago:isLocatedIn ?loc }",
+        "Annotation": {
+            "instance": "yago:Royal_Armouries_Museum",
+            "property": "yago:isLocatedIn",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "C"
+    },
+    "951": {
+        "Question": "Where is the Royal Armouries Museum located?",
+        "Query": "SELECT ?loc WHERE { yago:Royal_Armouries_Museum yago:isLocatedIn ?loc }",
+        "Annotation": {
+            "instance": "yago:Royal_Armouries_Museum",
+            "property": "yago:isLocatedIn",
+            "relation": " ",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "C"
+    }
+}

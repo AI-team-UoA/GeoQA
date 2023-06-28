@@ -1,0 +1,290 @@
+{
+    "591": {
+        "Question": "How big is the park in Essex?",
+        "Query": "SELECT DISTINCT ((strdf:area(?parkGeo)) as ?parkArea) WHERE {   <http://yago-knowledge.org/resource/Essex> geo:hasGeometry ?o1 .         ?o1 geo:asWKT ?countyGeo .          ?park a y2geoo:OSM_park .         ?park geo:hasGeometry ?o2 .         ?o2 geo:asWKT ?parkGeo .           FILTER(geof:sfWithin(?parkGeo, ?countyGeo)) }",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/Essex>",
+            "property": "strdf:area",
+            "relation": "geof:sfWithin",
+            "concept": "y2geoo:OSM_park",
+            "numerical": false
+        },
+        "Category": "F"
+    },
+    "592": {
+        "Question": "Which municipalities that belong to Periferiaki Enotita Nison and have less than 3000 residents individually, contain islands?",
+        "Query": "SELECT DISTINCT ?dimos  WHERE {   ?dimos <http://kr.di.uoa.gr/yago2geo/ontology/GAG_BelongsTo> <http://yago-knowledge.org/resource/geoentity_Perifereiak\u00ed_En\u00f3tita_N\u00edson_8200487> .   ?dimos geo:hasGeometry ?dimos_geo .   ?dimos_geo geo:asWKT ?dimos_geoWKT .  ?dimos <http://kr.di.uoa.gr/yago2geo/ontology/hasGAG_Population> ?dimos_pop .   FILTER( ?dimos_pop < 3000 )   ?island rdf:type <http://kr.di.uoa.gr/yago2geo/ontology/OSM_island> .    ?island geo:hasGeometry ?island_geo .   ?island_geo geo:asWKT ?island_geoWKT .  FILTER( geof:sfIntersects(?island_geoWKT,?dimos_geoWKT) )  }",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/geoentity_Perifereiak\u00ed_En\u00f3tita_N\u00edson_8200487>",
+            "property": "<http://kr.di.uoa.gr/yago2geo/ontology/GAG_BelongsTo>",
+            "relation": "geof:sfIntersects",
+            "concept": "<http://kr.di.uoa.gr/yago2geo/ontology/OSM_island>",
+            "numerical": false
+        },
+        "Category": "F"
+    },
+    "593": {
+        "Question": "What is the name and the area of the parks that are in Wards of Northern Ireland that are east of Dublin?",
+        "Query": "SELECT ?locality ?parkArea WHERE { { SELECT ?locality (strdf:area(?locality_geoWKT) AS ?parkArea) ?locality_geoWKT ?geoWKT WHERE { yago:Dublin  geo:hasGeometry  ?city_geometry . ?city_geometry geo:asWKT ?geoWKT . ?ward     rdf:type         y2geoo:OSNI_Ward ; geo:hasGeometry  ?ward_geo . ?ward_geo  geo:asWKT       ?ward_geoWKT . ?locality  rdf:type        y2geoo:OSM_park ; geo:hasGeometry  ?locality_geo . ?locality_geo geo:asWKT        ?locality_geoWKT . FILTER(geof:sfWithin(?locality_geoWKT,?ward_geoWKT)) } } FILTER(strdf:right(?locality_geoWKT,?geoWKT)) . }",
+        "Annotation": {
+            "instance": "yago:Dublin",
+            "property": "strdf:area",
+            "relation": "geof:sfWithin",
+            "concept": "y2geoo:OSM_park",
+            "numerical": false
+        },
+        "Category": "F"
+    },
+    "594": {
+        "Question": "Which municipalities in Central Macedonia have a population of more than 50.000 people?",
+        "Query": "select distinct ?municipality where{  ?municipality rdf:type y2geoo:GAG_Municipality ;   y2geoo:hasGAG_Population ?population ;  geo:hasGeometry ?om . ?om geo:asWKT ?geoWKT.   yago:Central_Macedonia geo:hasGeometry ?o1.  ?o1 geo:asWKT ?geoWKT1.    FILTER(geof:sfWithin(?geoWKT, ?geoWKT1))  FILTER(?population > 50000) }",
+        "Annotation": {
+            "instance": null,
+            "property": "y2geoo:hasGAG_Population",
+            "relation": "geof:sfWithin",
+            "concept": "y2geoo:GAG_Municipality",
+            "numerical": false
+        },
+        "Category": "F"
+    },
+    "595": {
+        "Question": "Give me the population of islands located in Greece.",
+        "Query": "   select distinct ?pop ?x where { ?x rdf:type y2geoo:OSM_island. ?x geo:hasGeometry ?xGeom. ?x y2geoo:hasGAG_Population ?pop. ?xGeom geo:asWKT ?xWKT. yago:Greece geo:hasGeometry ?o1 . ?o1 geo:asWKT ?iWKT . FILTER(geof:sfWithin(?xWKT, ?iWKT)) }",
+        "Annotation": {
+            "instance": "yago:Greece",
+            "property": "geo:hasGeometry",
+            "relation": "geof:sfWithin",
+            "concept": "y2geoo:OSM_island",
+            "numerical": false
+        },
+        "Category": "F"
+    },
+    "596": {
+        "Question": "Is the area of any canal that intersects with Dublin greater than zero?",
+        "Query": "ASK { ?x rdf:type y2geoo:OSM_canal. ?x geo:hasGeometry ?xGeom. ?xGeom geo:asWKT ?xWKT. yago:Dublin geo:hasGeometry ?o1 . ?o1 geo:asWKT ?iWKT . FILTER(geof:sfIntersects(strdf:transform(?xWKT, <http://www.opengis.net/def/crs/EPSG/0/4326>), strdf:transform(?iWKT, <http://www.opengis.net/def/crs/EPSG/0/4326>))  && (strdf:area(?xWKT) > 0 )) }",
+        "Annotation": {
+            "instance": "yago:Dublin",
+            "property": "strdf:area",
+            "relation": "geof:sfIntersects",
+            "concept": "y2geoo:OSM_canal",
+            "numerical": false
+        },
+        "Category": "F"
+    },
+    "597": {
+        "Question": "Which municipalities in Greece have a population of less than 30000?",
+        "Query": "select distinct ?x  where{ ?x a y2geoo:GAG_Municipality .  ?x geo:hasGeometry ?xgeo.  ?xgeo geo:asWKT ?xWKT.  ?x y2geoo:hasGAG_Population ?pop.  <http://yago-knowledge.org/resource/Greece> geo:hasGeometry ?grgeo. ?grgeo geo:asWKT ?geoWKT1. FILTER(geof:sfWithin(?xWKT, ?geoWKT1))  FILTER(?pop < 30000)   }",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/Greece>",
+            "property": "y2geoo:hasGAG_Population",
+            "relation": "geof:sfWithin",
+            "concept": "y2geoo:GAG_Municipality",
+            "numerical": false
+        },
+        "Category": "F"
+    },
+    "598": {
+        "Question": "Which regional units of the Peloponnese have more than 30.000 inhabitants?",
+        "Query": "SELECT distinct ?x1 WHERE { ?x1 a y2geoo:GAG_RegionalUnit. ?x1 <http://kr.di.uoa.gr/yago2geo/ontology/GAG_BelongsTo> <http://yago-knowledge.org/resource/Peloponnese_(region)>.   ?x1 <http://kr.di.uoa.gr/yago2geo/ontology/hasGAG_Population> ?p.     ?x1 geo:hasGeometry ?x1Geo.         ?x1Geo geo:asWKT ?x1WKT. FILTER (?p > 30000) }",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/Peloponnese_(region)>",
+            "property": "<http://kr.di.uoa.gr/yago2geo/ontology/hasGAG_Population>",
+            "relation": ">",
+            "concept": "y2geoo:GAG_RegionalUnit",
+            "numerical": false
+        },
+        "Category": "F"
+    },
+    "599": {
+        "Question": "Which local government districts in Northern Ireland, north of Belfast, have an area of more than 1000000 square meters?",
+        "Query": "SELECT distinct ?x1  WHERE { ?x1 a y2geoo:OSNI_LocalGovermentDistrict . ?x1 y2geoo:hasOSNI_Area ?area . ?x1 geo:hasGeometry ?x1Geo . ?x1Geo geo:asWKT ?x1WKT . yago:geoentity_City_of_Belfast_3333223 geo:hasGeometry ?x2Geo . ?x2Geo geo:asWKT ?x2WKT . FILTER (strdf:above(?x1WKT, ?x2WKT)) . FILTER (?area > 1000000) }",
+        "Annotation": {
+            "instance": "yago:geoentity_City_of_Belfast_3333223",
+            "property": "strdf:above",
+            "relation": "geo:hasGeometry",
+            "concept": "y2geoo:OSNI_LocalGovermentDistrict",
+            "numerical": false
+        },
+        "Category": "F"
+    },
+    "600": {
+        "Question": "What is the area of each forest in the Scarawalsh Barony?",
+        "Query": "SELECT ?forest ((strdf:area(?forestWKT)) as ?forestArea) WHERE { yago:geoentity_Scarawalsh_Bridge_3304299 geo:hasGeometry ?o1 . ?o1 geo:asWKT ?baronyWKT . ?forest a y2geoo:OSM_forest . ?forest geo:hasGeometry ?o3 . ?o3 geo:asWKT ?forestWKT . FILTER(geof:sfWithin(?forestWKT, ?baronyWKT)) }",
+        "Annotation": {
+            "instance": "yago:geoentity_Scarawalsh_Bridge_3304299",
+            "property": "strdf:area",
+            "relation": "geof:sfWithin",
+            "concept": "y2geoo:OSM_forest",
+            "numerical": false
+        },
+        "Category": "F"
+    },
+    "601": {
+        "Question": "What is the population of the municipalities that border Kastoria?",
+        "Query": "SELECT DISTINCT ?municipality ?population WHERE { yago:Kastoria geo:hasGeometry ?o3 . ?o3 geo:asWKT ?kastoriaWKT . ?municipality a y2geoo:GAG_Municipality . ?municipality geo:hasGeometry ?o1 . ?o1 geo:asWKT ?munWKT . ?municipality y2geoo:hasGAG_Population ?population . FILTER(geof:sfTouches(?kastoriaWKT, ?munWKT)) }",
+        "Annotation": {
+            "instance": "yago:Kastoria",
+            "property": "y2geoo:hasGAG_Population",
+            "relation": "geof:sfTouches",
+            "concept": "y2geoo:GAG_Municipality",
+            "numerical": false
+        },
+        "Category": "F"
+    },
+    "602": {
+        "Question": "Which municipality in Crete has a population over 20000?",
+        "Query": "SELECT DISTINCT ?m WHERE{         yago:Crete geo:hasGeometry ?g.         ?g geo:asWKT ?geoWKT.         ?m rdf:type y2geoo:GAG_Municipality.         ?m geo:hasGeometry ?mg.         ?mg geo:asWKT ?mgeoWKT. FILTER(strdf:within(?mgeoWKT, ?geoWKT)).         ?m y2geoo:hasGAG_Population ?p. FILTER(?p > 20000). }",
+        "Annotation": {
+            "instance": "yago:Crete",
+            "property": "strdf:within",
+            "relation": "geo:hasGeometry",
+            "concept": "y2geoo:GAG_Municipality",
+            "numerical": false
+        },
+        "Category": "F"
+    },
+    "603": {
+        "Question": "Is there a village in Scotland with an area smaller than 0.05 square kilometers?",
+        "Query": "ASK{?village rdf:type y2geoo:OSM_village. ?village geo:hasGeometry ?vg. ?vg geo:asWKT ?vgeoWKT. yago:Scotland geo:hasGeometry ?g. ?g geo:asWKT ?geoWKT. FILTER(strdf:within(?vgeoWKT, ?geoWKT)).FILTER(strdf:area(?vgeoWKT) < 0.05). }",
+        "Annotation": {
+            "instance": "yago:Scotland",
+            "property": "strdf:within",
+            "relation": "geo:hasGeometry",
+            "concept": "y2geoo:OSM_village",
+            "numerical": false
+        },
+        "Category": "F"
+    },
+    "605": {
+        "Question": "Which Greek regional units have less than 10000 inhabitants?",
+        "Query": "SELECT ?region WHERE { ?region a y2geoo:GAG_RegionalUnit . ?region y2geoo:hasGAG_Population ?pop. FILTER(?pop < 10000). }",
+        "Annotation": {
+            "instance": null,
+            "property": "y2geoo:hasGAG_Population",
+            "relation": "<",
+            "concept": "y2geoo:GAG_RegionalUnit",
+            "numerical": false
+        },
+        "Category": "F"
+    },
+    "606": {
+        "Question": "Which municipalities in the Central Athens Regional Unit have less than 50000 residents and contain parks?",
+        "Query": "SELECT DISTINCT ?dimos  WHERE { <http://yago-knowledge.org/resource/geoentity_Perifereiak\u00ed_En\u00f3tita_Kentriko\u00fa_Tom\u00e9a_Athin\u00f3n_8200482> geo:hasGeometry ?mgeo . ?mgeo geo:asWKT ?mWKT .   ?dimos geo:hasGeometry ?dimos_geo .   ?dimos_geo geo:asWKT ?dimos_geoWKT . FILTER(geof:sfContains(?mWKT,?dimos_geoWKT)) .  ?dimos <http://kr.di.uoa.gr/yago2geo/ontology/hasGAG_Population> ?dimos_pop .   FILTER( ?dimos_pop < 50000 )   ?island rdf:type <http://kr.di.uoa.gr/yago2geo/ontology/OSM_park> .    ?park geo:hasGeometry ?park_geo .   ?park_geo geo:asWKT ?parkWKT .  FILTER(geof:sfIntersects(?parkWKT,?dimos_geoWKT))  }",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/geoentity_Perifereiak\u00ed_En\u00f3tita_Kentriko\u00fa_Tom\u00e9a_Athin\u00f3n_8200482>",
+            "property": "http://kr.di.uoa.gr/yago2geo/ontology/hasGAG_Population",
+            "relation": "<http://www.opengis.net/ont/geosparql/sfContains>",
+            "concept": "<http://kr.di.uoa.gr/yago2geo/ontology/OSM_park>",
+            "numerical": false
+        },
+        "Category": "F"
+    },
+    "607": {
+        "Question": "What are the names of the lakes in the Northern Irish wards west of Wales?",
+        "Query": "SELECT DISTINCT ?locality WHERE { yago:Wales geo:hasGeometry ?city_geometry .  ?city_geometry geo:asWKT ?geoWKT .  ?ward rdf:type <http://kr.di.uoa.gr/yago2geo/ontology/OSNI_Ward> .   ?ward geo:hasGeometry ?ward_geo .  ?ward_geo geo:asWKT ?ward_geoWKT .  FILTER(strdf:left(?ward_geoWKT,?geoWKT))   ?locality rdf:type <http://kr.di.uoa.gr/yago2geo/ontology/OSM_lake> .  ?locality geo:hasGeometry ?locality_geo .    ?locality_geo geo:asWKT ?locality_geoWKT .   FILTER(geof:sfWithin(?locality_geoWKT,?ward_geoWKT) )  }",
+        "Annotation": {
+            "instance": "yago:Wales",
+            "property": "strdf:left",
+            "relation": "geof:sfWithin",
+            "concept": "<http://kr.di.uoa.gr/yago2geo/ontology/OSM_lake>",
+            "numerical": false
+        },
+        "Category": "F"
+    },
+    "608": {
+        "Question": "What are the largest lakes that belong to counties south of Epping Forest?",
+        "Query": "SELECT DISTINCT ?locality ((strdf:area(?locality_geoWKT)) as ?lakeArea) WHERE {  <http://yago-knowledge.org/resource/Epping_Forest> geo:hasGeometry ?for_geo .  ?for_geo geo:asWKT ?for_geoWKT .   ?county rdf:type <http://kr.di.uoa.gr/yago2geo/ontology/OS_County> .  ?county geo:hasGeometry ?county_geo .  ?county_geo geo:asWKT ?county_geoWKT .  FILTER(strdf:above(?for_geoWKT,?county_geoWKT))   ?locality rdf:type <http://kr.di.uoa.gr/yago2geo/ontology/OSM_lake> .   ?locality geo:hasGeometry ?locality_geo .  ?locality_geo geo:asWKT ?locality_geoWKT .  FILTER(geof:sfWithin(?locality_geoWKT,?county_geoWKT))  } ORDER BY DESC(?lakeArea) LIMIT 1",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/Epping_Forest>",
+            "property": "strdf:area",
+            "relation": "geof:sfWithin",
+            "concept": "y2geoo:OSM_lake",
+            "numerical": false
+        },
+        "Category": "F"
+    },
+    "610": {
+        "Question": "Which is the number of inhabitants residing on the islands situated within Greece?",
+        "Query": "select distinct ?pop ?x where { ?x rdf:type y2geoo:OSM_island. ?x geo:hasGeometry ?xGeom. ?x y2geoo:hasGAG_Population ?pop. ?xGeom geo:asWKT ?xWKT. yago:Greece geo:hasGeometry ?o1 . ?o1 geo:asWKT ?iWKT . FILTER(geof:sfWithin(?xWKT, ?iWKT)) }",
+        "Annotation": {
+            "instance": "yago:Greece",
+            "property": "geo:hasGeometry",
+            "relation": "geof:sfWithin",
+            "concept": "y2geoo:OSM_island",
+            "numerical": false
+        },
+        "Category": "F"
+    },
+    "611": {
+        "Question": "Which Greek regions have between 500000 and 1000000 inhabitants?",
+        "Query": "SELECT ?region WHERE { ?region a y2geoo:GAG_Region . ?region y2geoo:hasGAG_Population ?pop. FILTER(?pop < 1000000). FILTER(?pop > 500000). }",
+        "Annotation": {
+            "instance": null,
+            "property": "y2geoo:hasGAG_Population",
+            "relation": null,
+            "concept": "y2geoo:GAG_Region",
+            "numerical": false
+        },
+        "Category": "F"
+    },
+    "956": {
+        "Question": "Which cities in Kansas have more than 100,000 inhabitants?",
+        "Query": "SELECT distinct ?city where { ?type rdfs:subClassOf+ yago:wordnet_administrative_district_108491826. ?city a ?type . ?city yago:isLocatedIn+ yago:Kansas . ?city yago:hasPopulation ?pop . FILTER (xsd:integer(?pop) >100000) }",
+        "Annotation": {
+            "instance": "yago:Kansas",
+            "property": "yago:hasPopulation",
+            "relation": "xsd:integer(?) >100000",
+            "concept": "yago:wordnet_administrative_district_108491826",
+            "numerical": false
+        },
+        "Category": "F"
+    },
+    "957": {
+        "Question": "Which villages in New York have more than 10000 residents?",
+        "Query": "SELECT distinct ?vil where { ?type rdfs:subClassOf+ yago:wordnet_village_108672738. ?vil a ?type . ?vil yago:isLocatedIn+ yago:New_York . ?vil yago:hasPopulation ?pop . FILTER (xsd:integer(?pop) > 10000) }",
+        "Annotation": {
+            "instance": "yago:New_York",
+            "property": "yago:hasPopulation",
+            "relation": "xsd:integer",
+            "concept": "yago:wordnet_village_108672738",
+            "numerical": false
+        },
+        "Category": "F"
+    },
+    "958": {
+        "Question": "Which municipalities in Central Athens that intersect with a park have a population of more than 10.000 people?",
+        "Query": "select distinct ?municipality where{?municipality rdf:type y2geoo:GAG_Municipality ;   y2geoo:hasGAG_Population ?population ;  geo:hasGeometry ?om . ?om geo:asWKT ?geoWKT.   yago:geoentity_Perifereiak\u00ed_En\u00f3tita_Kentriko\u00fa_Tom\u00e9a_Athin\u00f3n_8200482 geo:hasGeometry ?o1.  ?o1 geo:asWKT ?geoWKT1. ?park a y2geoo:OSM_park.   ?park  geo:hasGeometry ?parkGeometry .   ?parkGeometry geo:asWKT ?parkWKT . FILTER(geof:sfWithin(?geoWKT, ?geoWKT1)).FILTER(strdf:intersects(?geoWKT, ?parkWKT)).  FILTER(?population > 10000) }",
+        "Annotation": {
+            "instance": "yago:geoentity_Perifereiak\u00ed_En\u00f3tita_Kentriko\u00fa_Tom\u00e9a_Athin\u00f3n_8200482",
+            "property": "y2geoo:hasGAG_Population",
+            "relation": "geof:sfWithin , strdf:intersects",
+            "concept": "y2geoo:GAG_Municipality, y2geoo:OSM_park",
+            "numerical": " "
+        },
+        "Category": "F"
+    },
+    "604": {
+        "Question": "Which municipalities in Central Athens that intersect with a park have a population of more than 10.000 people?",
+        "Query": "select distinct ?municipality where{?municipality rdf:type y2geoo:GAG_Municipality ;   y2geoo:hasGAG_Population ?population ;  geo:hasGeometry ?om . ?om geo:asWKT ?geoWKT.   yago:geoentity_Perifereiak\u00ed_En\u00f3tita_Kentriko\u00fa_Tom\u00e9a_Athin\u00f3n_8200482 geo:hasGeometry ?o1.  ?o1 geo:asWKT ?geoWKT1. ?park a y2geoo:OSM_park.   ?park  geo:hasGeometry ?parkGeometry .   ?parkGeometry geo:asWKT ?parkWKT . FILTER(geof:sfWithin(?geoWKT, ?geoWKT1)).FILTER(strdf:intersects(?geoWKT, ?parkWKT)).  FILTER(?population > 10000) }",
+        "Annotation": {
+            "instance": "yago:geoentity_Perifereiak\u00ed_En\u00f3tita_Kentriko\u00fa_Tom\u00e9a_Athin\u00f3n_8200482",
+            "property": "y2geoo:hasGAG_Population",
+            "relation": "geof:sfWithin , strdf:intersects",
+            "concept": "y2geoo:GAG_Municipality, y2geoo:OSM_park",
+            "numerical": " "
+        },
+        "Category": "F"
+    },
+    "609": {
+        "Question": "Which municipalities in Central Athens that intersect with a park have a population of more than 10.000 people?",
+        "Query": "select distinct ?municipality where{?municipality rdf:type y2geoo:GAG_Municipality ;   y2geoo:hasGAG_Population ?population ;  geo:hasGeometry ?om . ?om geo:asWKT ?geoWKT.   yago:geoentity_Perifereiak\u00ed_En\u00f3tita_Kentriko\u00fa_Tom\u00e9a_Athin\u00f3n_8200482 geo:hasGeometry ?o1.  ?o1 geo:asWKT ?geoWKT1. ?park a y2geoo:OSM_park.   ?park  geo:hasGeometry ?parkGeometry .   ?parkGeometry geo:asWKT ?parkWKT . FILTER(geof:sfWithin(?geoWKT, ?geoWKT1)).FILTER(strdf:intersects(?geoWKT, ?parkWKT)).  FILTER(?population > 10000) }",
+        "Annotation": {
+            "instance": "yago:geoentity_Perifereiak\u00ed_En\u00f3tita_Kentriko\u00fa_Tom\u00e9a_Athin\u00f3n_8200482",
+            "property": "y2geoo:hasGAG_Population",
+            "relation": "geof:sfWithin , strdf:intersects",
+            "concept": "y2geoo:GAG_Municipality, y2geoo:OSM_park",
+            "numerical": " "
+        },
+        "Category": "F"
+    }
+}
