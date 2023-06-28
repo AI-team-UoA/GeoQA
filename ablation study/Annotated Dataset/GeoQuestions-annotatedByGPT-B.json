@@ -1,0 +1,1586 @@
+{
+    "144": {
+        "Question": "Is Crete south of Thessaly?",
+        "Query": "ASK { <http://yago-knowledge.org/resource/Crete> geo:hasGeometry ?geo1 . <http://yago-knowledge.org/resource/Thessaly> geo:hasGeometry ?geo2 . ?geo1 geo:asWKT ?geoWKT1 . ?geo2 geo:asWKT ?geoWKT2 . FILTER(strdf:below(?geoWKT1, ?geoWKT2)) }",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/Crete> ,  <http://yago-knowledge.org/resource/Thessaly>",
+            "property": " ",
+            "relation": "strdf:below",
+            "concept": " ",
+            "numerical": false
+        },
+        "Category": "B"
+    },
+    "145": {
+        "Question": "Is Worcestershire west of Oxfordshire?",
+        "Query": "ASK { <http://yago-knowledge.org/resource/Worcestershire> geo:hasGeometry ?geo1 . <http://yago-knowledge.org/resource/Oxfordshire> geo:hasGeometry ?geo2 . ?geo1 geo:asWKT ?geoWKT1 . ?geo2 geo:asWKT ?geoWKT2 . FILTER(strdf:left(?geoWKT1, ?geoWKT2)) }",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/Worcestershire> ,  <http://yago-knowledge.org/resource/Oxfordshire>",
+            "property": " ",
+            "relation": "strdf:left",
+            "concept": " ",
+            "numerical": false
+        },
+        "Category": "B"
+    },
+    "146": {
+        "Question": "Is county Cavan east of county Mayo?",
+        "Query": "ASK { <http://yago-knowledge.org/resource/County_Cavan> geo:hasGeometry ?geo1 . <http://yago-knowledge.org/resource/County_Mayo> geo:hasGeometry ?geo2 . ?geo1 geo:asWKT ?geoWKT1 . ?geo2 geo:asWKT ?geoWKT2 . FILTER(strdf:right(?geoWKT1, ?geoWKT2)) }",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/County_Cavan> ,  <http://yago-knowledge.org/resource/County_Mayo>",
+            "property": " ",
+            "relation": "strdf:right",
+            "concept": " ",
+            "numerical": false
+        },
+        "Category": "B"
+    },
+    "147": {
+        "Question": "Is Kythira within Attica?",
+        "Query": "ASK {         yago:geoentity_Kythira_8133702 geo:hasGeometry ?o.         ?o geo:asWKT ?WKT.         <http://yago-knowledge.org/resource/Attica_(region)> geo:hasGeometry ?o1.         ?o1 geo:asWKT ?WKT1.         FILTER(geof:sfWithin(strdf:buffer(?WKT, 0, uom:metre), strdf:buffer(?WKT1, 0, uom:metre)))  }",
+        "Annotation": {
+            "instance": "yago:geoentity_Kythira_8133702, <http://yago-knowledge.org/resource/Attica_(region)>",
+            "property": " ",
+            "relation": "geof:sfWithin",
+            "concept": " ",
+            "numerical": false
+        },
+        "Category": "B"
+    },
+    "148": {
+        "Question": "Is Bedford east of Essex?",
+        "Query": "ASK { yago:Bedford geo:hasGeometry ?o. ?o geo:asWKT ?WKT. yago:Essex geo:hasGeometry ?o1. ?o1 geo:asWKT ?WKT1. FILTER(strdf:right(?WKT, ?WKT1)) }",
+        "Annotation": {
+            "instance": "yago:Bedford, yago:Essex",
+            "property": " ",
+            "relation": "strdf:right",
+            "concept": " ",
+            "numerical": false
+        },
+        "Category": "B"
+    },
+    "149": {
+        "Question": "Is County Mayo bordering County Sligo?",
+        "Query": "ASK { yago:County_Mayo geo:hasGeometry ?o. ?o geo:asWKT ?WKT. yago:County_Sligo geo:hasGeometry ?o1. ?o1 geo:asWKT ?WKT1. FILTER(geof:sfTouches(strdf:buffer(?WKT, 0, uom:metre), strdf:buffer(?WKT1, 0, uom:metre))) }",
+        "Annotation": {
+            "instance": "yago:County_Mayo, yago:County_Sligo",
+            "property": " ",
+            "relation": "geof:sfTouches",
+            "concept": " ",
+            "numerical": false
+        },
+        "Category": "B"
+    },
+    "150": {
+        "Question": "Is Dublin north of Kilkenny?",
+        "Query": "ASK {     <http://yago-knowledge.org/resource/Dublin> geo:hasGeometry ?o.     ?o geo:asWKT ?geoWKT.     <http://yago-knowledge.org/resource/Kilkenny> geo:hasGeometry ?o1.     ?o1 geo:asWKT ?geoWKT1.     FILTER(strdf:above(?geoWKT,?geoWKT1)) }",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/Dublin> , <http://yago-knowledge.org/resource/Kilkenny>",
+            "property": " ",
+            "relation": "strdf:above",
+            "concept": " ",
+            "numerical": false
+        },
+        "Category": "B"
+    },
+    "151": {
+        "Question": "Is Samos east of Mykonos?",
+        "Query": "ASK {      <http://yago-knowledge.org/resource/Samos> geo:hasGeometry ?geo1 .     ?geo1 geo:asWKT ?wkt1 .     <http://yago-knowledge.org/resource/Mykonos> geo:hasGeometry ?geo2 .     ?geo2 geo:asWKT ?wkt2 .     FILTER(strdf:right(?wkt1,?wkt2)) }",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/Samos> , <http://yago-knowledge.org/resource/Mykonos>",
+            "property": " ",
+            "relation": "strdf:right",
+            "concept": " ",
+            "numerical": false
+        },
+        "Category": "B"
+    },
+    "152": {
+        "Question": "Is the municipality of Thessaloniki located to the north of the municipality of Trikala?",
+        "Query": "ASK { <http://yago-knowledge.org/resource/geoentity_Dimos_Thessaloniki_8133841> geo:hasGeometry ?thesgeo . ?thesgeo geo:asWKT ?thesWKT . <http://yago-knowledge.org/resource/geoentity_Dimos_Trikala_8133844> geo:hasGeometry ?trikgeo . ?trikgeo geo:asWKT ?trikWKT . FILTER (strdf:above(?thesWKT,?trikWKT)) . }",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/geoentity_Dimos_Thessaloniki_8133841> , <http://yago-knowledge.org/resource/geoentity_Dimos_Trikala_8133844>",
+            "property": " ",
+            "relation": "strdf:above",
+            "concept": " ",
+            "numerical": false
+        },
+        "Category": "B"
+    },
+    "153": {
+        "Question": "Is Oxfordshire more than 100km away from Kent?",
+        "Query": "ASK{ yago:Oxfordshire geo:hasGeometry ?geo . ?geo geo:asWKT ?oxfWKT . yago:Kent geo:hasGeometry ?geo2 . ?geo2 geo:asWKT ?kentWKT . FILTER (geof:distance(?oxfWKT,?kentWKT,uom:metre)>100000) . }",
+        "Annotation": {
+            "instance": "yago:Oxfordshire, yago:Kent",
+            "property": " ",
+            "relation": "geof:distance",
+            "concept": " ",
+            "numerical": false
+        },
+        "Category": "B"
+    },
+    "154": {
+        "Question": "Is Lough Leane in County Kerry ?",
+        "Query": "ASK { yago:County_Kerry geo:hasGeometry ?kgeo . ?kgeo geo:asWKT ?kWKT . yago:Lough_Leane geo:hasGeometry ?lgeo . ?lgeo geo:asWKT ?lWKT . FILTER (geof:sfWithin(?lWKT,?kWKT)) .  }",
+        "Annotation": {
+            "instance": "yago:County_Kerry, yago:Lough_Leane",
+            "property": " ",
+            "relation": "geof:sfWithin",
+            "concept": " ",
+            "numerical": false
+        },
+        "Category": "B"
+    },
+    "155": {
+        "Question": "Is Peristeri west of Zografou?",
+        "Query": "ASK {         yago:Peristeri geo:hasGeometry  ?rep1 . ?rep1 geo:asWKT ?WKT1.         yago:Zografou geo:hasGeometry  ?rep2 . ?rep2 geo:asWKT ?WKT2.     FILTER(strdf:left(?WKT1, ?WKT2)) }",
+        "Annotation": {
+            "instance": "yago:Peristeri, yago:Zografou",
+            "property": " ",
+            "relation": "strdf:left",
+            "concept": " ",
+            "numerical": false
+        },
+        "Category": "B"
+    },
+    "156": {
+        "Question": "Do Cambridge and Oxford intersect?",
+        "Query": "ASK {         yago:geoentity_Cambridge_District_7290660 geo:hasGeometry  ?rep1 . ?rep1 geo:asWKT ?WKT1.         yago:Oxford geo:hasGeometry  ?rep2 . ?rep2 geo:asWKT ?WKT2.       FILTER(strdf:intersects(?WKT1, ?WKT2)) }",
+        "Annotation": {
+            "instance": "yago:geoentity_Cambridge_District_7290660, yago:Oxford",
+            "property": " ",
+            "relation": "strdf:intersects",
+            "concept": " ",
+            "numerical": false
+        },
+        "Category": "B"
+    },
+    "157": {
+        "Question": "Does County Galway contain Claregalway?",
+        "Query": "ASK {     yago:County_Galway geo:hasGeometry  ?rep1 . ?rep1 geo:asWKT ?WKT1.     yago:Claregalway geo:hasGeometry  ?rep2 . ?rep2 geo:asWKT ?WKT2.     FILTER(strdf:contains(?WKT1, ?WKT2)) }",
+        "Annotation": {
+            "instance": "yago:County_Galway, yago:Claregalway",
+            "property": " ",
+            "relation": "strdf:contains",
+            "concept": " ",
+            "numerical": false
+        },
+        "Category": "B"
+    },
+    "158": {
+        "Question": "Is Samos west of Rodhes?",
+        "Query": "ASK {    <http://yago-knowledge.org/resource/Samos> geo:hasGeometry ?samos_geo .    ?samos_geo geo:asWKT ?samosWKT .    <http://yago-knowledge.org/resource/Rhodes> geo:hasGeometry ?rodos_geo .    ?rodos_geo geo:asWKT ?rodosWKT .    FILTER(strdf:left(?samosWKT,?rodosWKT))  }",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/Samos> ,  <http://yago-knowledge.org/resource/Rhodes>",
+            "property": " ",
+            "relation": "strdf:left",
+            "concept": " ",
+            "numerical": false
+        },
+        "Category": "B"
+    },
+    "159": {
+        "Question": "Is Cardiff adjacent to Birmingham?",
+        "Query": "ASK {    <http://yago-knowledge.org/resource/Cardiff> geo:hasGeometry ?cardiff_geo .    ?cardiff_geo geo:asWKT ?cardiff_geoWKT .     <http://yago-knowledge.org/resource/Birmingham> geo:hasGeometry ?birmingham_geo .    ?birmingham_geo geo:asWKT ?birmingham_geoWKT .    FILTER(geof:sfIntersects(?cardiff_geoWKT, ?birmingham_geoWKT))  }",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/Cardiff> , <http://yago-knowledge.org/resource/Birmingham>",
+            "property": " ",
+            "relation": "geof:sfIntersects",
+            "concept": " ",
+            "numerical": false
+        },
+        "Category": "B"
+    },
+    "160": {
+        "Question": "Is Mullingar within 70 km of Dublin?",
+        "Query": "ASK {    <http://yago-knowledge.org/resource/Dublin> geo:hasGeometry ?dublin_geo .    ?dublin_geo geo:asWKT ?dublin_geoWKT .     <http://yago-knowledge.org/resource/Mullingar> geo:hasGeometry ?mullingar_geo .    ?mullingar_geo geo:asWKT ?mullingar_geoWKT .    FILTER(geof:distance(?dublin_geoWKT,?mullingar_geoWKT,uom:metre) <= 70000)  }",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/Dublin> , <http://yago-knowledge.org/resource/Mullingar>",
+            "property": " ",
+            "relation": "geof:distance",
+            "concept": " ",
+            "numerical": false
+        },
+        "Category": "B"
+    },
+    "161": {
+        "Question": "Is Denbighshire located in Wales?",
+        "Query": "ASK {  <http://yago-knowledge.org/resource/Denbighshire> geo:hasGeometry ?o.  ?o geo:asWKT ?geoWKT.  <http://yago-knowledge.org/resource/Wales> geo:hasGeometry ?o1.  ?o1 geo:asWKT ?geoWKT1.  FILTER(geof:sfWithin(?geoWKT, ?geoWKT1)) }",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/Denbighshire> , <http://yago-knowledge.org/resource/Wales>",
+            "property": " ",
+            "relation": "geof:sfWithin",
+            "concept": " ",
+            "numerical": false
+        },
+        "Category": "B"
+    },
+    "162": {
+        "Question": "Is Dublin at most 210km from Galway County?",
+        "Query": "ASK { <http://yago-knowledge.org/resource/Dublin> geo:hasGeometry ?o. ?o geo:asWKT ?geoWKT. <http://yago-knowledge.org/resource/County_Galway> geo:hasGeometry ?o1. ?o1 geo:asWKT ?geoWKT1. FILTER(geof:distance(?geoWKT,?geoWKT1,uom:metre) < 210000)  }",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/Dublin> , <http://yago-knowledge.org/resource/County_Galway>",
+            "property": " ",
+            "relation": "geof:distance",
+            "concept": " ",
+            "numerical": false
+        },
+        "Category": "B"
+    },
+    "163": {
+        "Question": "Is Kallithea located on the border of Nea Smyrni?",
+        "Query": "ASK {  yago:Kallithea geo:hasGeometry ?o.  ?o geo:asWKT ?geoWKT.  yago:Nea_Smyrni geo:hasGeometry ?o1.  ?o1 geo:asWKT ?geoWKT1.  FILTER(geof:sfTouches(?geoWKT, ?geoWKT1)) }",
+        "Annotation": {
+            "instance": "yago:Kallithea, yago:Nea_Smyrni",
+            "property": " ",
+            "relation": "geof:sfTouches",
+            "concept": " ",
+            "numerical": false
+        },
+        "Category": "B"
+    },
+    "164": {
+        "Question": "Is the city of Cork located to the south of the city of Galway?",
+        "Query": "ASK { <http://yago-knowledge.org/resource/geoentity_Cork_City_7778678> geo:hasGeometry ?o. ?o geo:asWKT ?geoWKT. <http://yago-knowledge.org/resource/geoentity_Galway_City_7778676>  geo:hasGeometry ?o1. ?o1 geo:asWKT ?geoWKT1. FILTER(strdf:below(?geoWKT,?geoWKT1)) }",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/geoentity_Cork_City_7778678> , <http://yago-knowledge.org/resource/geoentity_Galway_City_7778676>",
+            "property": " ",
+            "relation": "strdf:below",
+            "concept": " ",
+            "numerical": false
+        },
+        "Category": "B"
+    },
+    "165": {
+        "Question": "Is Southampton located south of Oxford?",
+        "Query": "ASK { <http://yago-knowledge.org/resource/Southampton> geo:hasGeometry ?o. ?o geo:asWKT ?geoWKT. <http://yago-knowledge.org/resource/Oxford>  geo:hasGeometry ?o1. ?o1 geo:asWKT ?geoWKT1. FILTER(strdf:below(?geoWKT,?geoWKT1)) }",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/Southampton> , <http://yago-knowledge.org/resource/Oxford>",
+            "property": " ",
+            "relation": "strdf:below",
+            "concept": " ",
+            "numerical": false
+        },
+        "Category": "B"
+    },
+    "166": {
+        "Question": "Is Agia Paraskevi west of Chalandri?",
+        "Query": "ASK { <http://yago-knowledge.org/resource/Agia_Paraskevi> geo:hasGeometry ?o1. ?o1 geo:asWKT ?geoWKT1. <http://yago-knowledge.org/resource/Chalandri> geo:hasGeometry ?o2. ?o2 geo:asWKT ?geoWKT2. FILTER(strdf:left(?geoWKT1,?geoWKT2)) }",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/Agia_Paraskevi> , <http://yago-knowledge.org/resource/Chalandri>",
+            "property": " ",
+            "relation": "strdf:left",
+            "concept": " ",
+            "numerical": false
+        },
+        "Category": "B"
+    },
+    "167": {
+        "Question": "Is Delta a municipality within the Thessaloniki regional unit?",
+        "Query": "ASK  WHERE {   <http://kr.di.uoa.gr/yago2geo/resource/gagentity_202> geo:hasGeometry ?gx .  ?gx geo:asWKT ?xWKT .     <http://yago-knowledge.org/resource/Delta,_Thessaloniki> geo:hasGeometry ?gy .  ?gy geo:asWKT ?yWKT .   FILTER(strdf:within(?yWKT,?xWKT ))   }",
+        "Annotation": {
+            "instance": "<http://kr.di.uoa.gr/yago2geo/resource/gagentity_202> , <http://yago-knowledge.org/resource/Delta,_Thessaloniki>",
+            "property": " ",
+            "relation": "strdf:within",
+            "concept": " ",
+            "numerical": false
+        },
+        "Category": "B"
+    },
+    "168": {
+        "Question": "Does Essex border Hertfordshire ?",
+        "Query": "ASK  WHERE {   <http://yago-knowledge.org/resource/Essex> geo:hasGeometry ?g .  ?g geo:asWKT ?gWKT .   <http://yago-knowledge.org/resource/Hertfordshire> geo:hasGeometry ?g1 .  ?g1 geo:asWKT ?g1WKT .  FILTER(strdf:touches(?gWKT,?g1WKT ))  }",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/Essex> , <http://yago-knowledge.org/resource/Hertfordshire>",
+            "property": " ",
+            "relation": "strdf:touches",
+            "concept": " ",
+            "numerical": false
+        },
+        "Category": "B"
+    },
+    "169": {
+        "Question": "Is County Donegal north of County Wexford?",
+        "Query": "ASK  WHERE {   <http://yago-knowledge.org/resource/County_Donegal> geo:hasGeometry ?gx .  ?gx geo:asWKT ?xWKT .  <http://yago-knowledge.org/resource/County_Wexford> geo:hasGeometry ?gy .  ?gy geo:asWKT ?yWKT .   FILTER(strdf:above(?xWKT,?yWKT ))    }",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/County_Donegal> , <http://yago-knowledge.org/resource/County_Wexford>",
+            "property": " ",
+            "relation": "strdf:above",
+            "concept": " ",
+            "numerical": false
+        },
+        "Category": "B"
+    },
+    "170": {
+        "Question": "Is Elafonisos west of Galatsi?",
+        "Query": "ASK { yago:Elafonisos geo:hasGeometry ?o. ?o geo:asWKT ?geoWKT. yago:Galatsi geo:hasGeometry ?o1; rdf:type ?type. ?o1 geo:asWKT ?geoWKT1. FILTER(strdf:left(?geoWKT,?geoWKT1)) }",
+        "Annotation": {
+            "instance": "yago:Elafonisos, yago:Galatsi",
+            "property": " ",
+            "relation": "strdf:left",
+            "concept": " ",
+            "numerical": false
+        },
+        "Category": "B"
+    },
+    "171": {
+        "Question": "Is Oxford at most 3km from Cambridge?",
+        "Query": "ASK { yago:Oxford geo:hasGeometry ?o. ?o geo:asWKT ?geoWKT. yago:geoentity_Cambridge_District_7290660 geo:hasGeometry ?o1; rdf:type ?type. ?o1 geo:asWKT ?geoWKT1. FILTER(geof:distance(?geoWKT,?geoWKT1,uom:metre) <= 3000) }",
+        "Annotation": {
+            "instance": "yago:Oxford, yago:geoentity_Cambridge_District_7290660",
+            "property": " ",
+            "relation": "geof:distance",
+            "concept": " ",
+            "numerical": false
+        },
+        "Category": "B"
+    },
+    "172": {
+        "Question": "Is Dublin bordering with Clane?",
+        "Query": "ASK { yago:Dublin geo:hasGeometry ?o. ?o geo:asWKT ?geoWKT. yago:Clane geo:hasGeometry ?o1. ?o1 geo:asWKT ?geoWKT1. FILTER(geof:sfTouches(?geoWKT, ?geoWKT1)) }",
+        "Annotation": {
+            "instance": "yago:Dublin, yago:Clane",
+            "property": " ",
+            "relation": "geof:sfTouches",
+            "concept": " ",
+            "numerical": false
+        },
+        "Category": "B"
+    },
+    "173": {
+        "Question": "Is Rhodes west of Patmos?",
+        "Query": "ASK {  <http://yago-knowledge.org/resource/Rhodes> geo:hasGeometry ?geo1 . ?geo1 geo:asWKT ?wkt1 . <http://yago-knowledge.org/resource/Patmos> geo:hasGeometry ?geo2 . ?geo2 geo:asWKT ?wkt2 . FILTER(strdf:left(?wkt1,?wkt2)) }",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/Rhodes> ,  <http://yago-knowledge.org/resource/Patmos>",
+            "property": " ",
+            "relation": "strdf:left",
+            "concept": " ",
+            "numerical": false
+        },
+        "Category": "B"
+    },
+    "174": {
+        "Question": "Is Doolin south of Dublin?",
+        "Query": "ASK {  <http://yago-knowledge.org/resource/Doolin> geo:hasGeometry ?o.  ?o geo:asWKT ?geoWKT.  <http://yago-knowledge.org/resource/Dublin> geo:hasGeometry ?o1.  ?o1 geo:asWKT ?geoWKT1.  FILTER(strdf:below(?geoWKT,?geoWKT1)) }",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/Doolin> , <http://yago-knowledge.org/resource/Dublin>",
+            "property": " ",
+            "relation": "strdf:below",
+            "concept": " ",
+            "numerical": false
+        },
+        "Category": "B"
+    },
+    "175": {
+        "Question": "Is Liverpool east of Adare?",
+        "Query": "ASK {   <http://yago-knowledge.org/resource/Liverpool> geo:hasGeometry ?o.   ?o geo:asWKT ?geoWKT.   <http://yago-knowledge.org/resource/Adare> geo:hasGeometry ?o1.   ?o1 geo:asWKT ?geoWKT1.   FILTER(strdf:right(?geoWKT,?geoWKT1)) }",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/Liverpool> , <http://yago-knowledge.org/resource/Adare>",
+            "property": " ",
+            "relation": "strdf:right",
+            "concept": " ",
+            "numerical": false
+        },
+        "Category": "B"
+    },
+    "176": {
+        "Question": "Is Sfakia in Scotland?",
+        "Query": "ASK {   <http://yago-knowledge.org/resource/Sfakia> geo:hasGeometry ?o.   ?o geo:asWKT ?pWKT.   <http://yago-knowledge.org/resource/Scotland> geo:hasGeometry ?o1.   ?o1 geo:asWKT ?sWKT.   FILTER(geof:sfWithin(?pWKT, ?sWKT)) }",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/Sfakia> , <http://yago-knowledge.org/resource/Scotland>",
+            "property": " ",
+            "relation": "geof:sfWithin",
+            "concept": " ",
+            "numerical": false
+        },
+        "Category": "B"
+    },
+    "177": {
+        "Question": "Is Belfast close to Edinburgh?",
+        "Query": "ASK {   <http://yago-knowledge.org/resource/geoentity_City_of_Belfast_3333223> geo:hasGeometry ?o.   ?o geo:asWKT ?bWKT.   <http://yago-knowledge.org/resource/Edinburgh> geo:hasGeometry ?o1.   ?o1 geo:asWKT ?eWKT.   FILTER(geof:distance(?bWKT, ?eWKT, uom:metre) < 5000) }",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/geoentity_City_of_Belfast_3333223> , <http://yago-knowledge.org/resource/Edinburgh>",
+            "property": " ",
+            "relation": "geof:distance",
+            "concept": " ",
+            "numerical": false
+        },
+        "Category": "B"
+    },
+    "178": {
+        "Question": "Is Sfakia located north of Peristeri?",
+        "Query": "ASK{         yago:Sfakia geo:hasGeometry ?g.         ?g geo:asWKT ?geoWKT.         yago:Peristeri geo:hasGeometry ?g2.         ?g2 geo:asWKT ?geoWKT2. FILTER(strdf:above(?geoWKT, ?geoWKT2)). }",
+        "Annotation": {
+            "instance": "yago:Sfakia, yago:Peristeri",
+            "property": " ",
+            "relation": "strdf:above",
+            "concept": " ",
+            "numerical": false
+        },
+        "Category": "B"
+    },
+    "179": {
+        "Question": "Is Essex north of Kent?",
+        "Query": "ASK {       yago:Essex geo:hasGeometry ?g.      ?g geo:asWKT ?geoWKT.      yago:Kent geo:hasGeometry ?g2.      ?g2 geo:asWKT ?geoWKT2. FILTER(strdf:above(?geoWKT,?geoWKT2)) }",
+        "Annotation": {
+            "instance": "yago:Essex, yago:Kent",
+            "property": " ",
+            "relation": "strdf:above",
+            "concept": " ",
+            "numerical": false
+        },
+        "Category": "B"
+    },
+    "181": {
+        "Question": "Is Ierapetra south of Athens?",
+        "Query": "ASK {     <http://yago-knowledge.org/resource/Ierapetra> geo:hasGeometry ?xgeo. ?xgeo geo:asWKT ?xWKT.      <http://yago-knowledge.org/resource/geoentity_Dimos_Athens_8133876> geo:hasGeometry ?ygeo.     ?ygeo geo:asWKT ?yWKT.   FILTER (strdf:below(?xWKT, ?yWKT)) }",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/Ierapetra> , <http://yago-knowledge.org/resource/geoentity_Dimos_Athens_8133876>",
+            "property": " ",
+            "relation": "strdf:below",
+            "concept": " ",
+            "numerical": false
+        },
+        "Category": "B"
+    },
+    "182": {
+        "Question": "Is Scotland north of London?",
+        "Query": "ASK {     <http://yago-knowledge.org/resource/Scotland> geo:hasGeometry ?xgeo.     ?xgeo geo:asWKT ?xWKT.      <http://yago-knowledge.org/resource/geoentity_City_of_London_2643744> geo:hasGeometry ?ygeo.     ?ygeo geo:asWKT ?yWKT.   FILTER (strdf:below(?yWKT, ?xWKT)) }",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/Scotland> , <http://yago-knowledge.org/resource/geoentity_City_of_London_2643744>",
+            "property": " ",
+            "relation": "strdf:below",
+            "concept": " ",
+            "numerical": false
+        },
+        "Category": "B"
+    },
+    "183": {
+        "Question": "Is Dublin west of London?",
+        "Query": "ASK {    <http://kr.di.uoa.gr/yago2geo/resource/gadmentity_Dublin_IRL.6_1> geo:hasGeometry ?xgeo.     ?xgeo geo:asWKT ?xWKT.      <http://yago-knowledge.org/resource/geoentity_City_of_London_2643744> geo:hasGeometry ?ygeo.     ?ygeo geo:asWKT ?yWKT.   FILTER (strdf:left(?xWKT, ?yWKT)) }",
+        "Annotation": {
+            "instance": "<http://kr.di.uoa.gr/yago2geo/resource/gadmentity_Dublin_IRL.6_1> , <http://yago-knowledge.org/resource/geoentity_City_of_London_2643744>",
+            "property": " ",
+            "relation": "strdf:left",
+            "concept": " ",
+            "numerical": false
+        },
+        "Category": "B"
+    },
+    "184": {
+        "Question": "Does Bristol belong to Wales?",
+        "Query": "ASK{  yago:Wales geo:hasGeometry ?WalesGeo. ?WalesGeo geo:asWKT ?WalesPolygon.  yago:Bristol geo:hasGeometry ?BristolGeo. ?BristolGeo geo:asWKT ?BristolPolygon.  FILTER(geof:sfWithin(?BristolGeo , ?WalesGeo)) }",
+        "Annotation": {
+            "instance": "yago:Wales, yago:Bristol",
+            "property": " ",
+            "relation": "geof:sfWithin",
+            "concept": " ",
+            "numerical": false
+        },
+        "Category": "B"
+    },
+    "185": {
+        "Question": "Does Thessaly border Western Macedonia?",
+        "Query": "ASK { yago:geoentity_Western_Macedonia_6697811 geo:hasGeometry ?WestMakGeo. ?WestMakGeo geo:asWKT ?WestMakPolygon. yago:Thessaly geo:hasGeometry ?ThessGeo. ?ThessGeo geo:asWKT ?ThessPolygon. FILTER(geof:sfTouches(?WestMakPolygon, ?ThessPolygon)) }",
+        "Annotation": {
+            "instance": "yago:geoentity_Western_Macedonia_6697811, yago:Thessaly",
+            "property": " ",
+            "relation": "geof:sfTouches",
+            "concept": " ",
+            "numerical": false
+        },
+        "Category": "B"
+    },
+    "186": {
+        "Question": "Is the distance between Dublin and Arklow greater than 10km?",
+        "Query": "ASK { yago:Dublin geo:hasGeometry ?DublnGeo. ?DublnGeo geo:asWKT ?DublnPolygon. yago:Arklow geo:hasGeometry ?Geo. ?Geo geo:asWKT ?Polygon.  FILTER((geof:distance(?DublnPolygon, ?Polygon, <http://www.opengis.net/def/uom/OGC/1.0/metre>)) > 10000) }",
+        "Annotation": {
+            "instance": "yago:Dublin, yago:Arklow",
+            "property": " ",
+            "relation": "geof:distance",
+            "concept": " ",
+            "numerical": false
+        },
+        "Category": "B"
+    },
+    "187": {
+        "Question": "Does Kallithea share a border with Nea Smyrni?",
+        "Query": "ASK { yago:Kallithea geo:hasGeometry ?ko . ?ko geo:asWKT ?kWKT .  yago:Nea_Smyrni geo:hasGeometry ?no . ?ko geo:asWKT ?nWKT . FILTER(geof:sfTouches(?kWKT, ?nWKT)) }",
+        "Annotation": {
+            "instance": "yago:Kallithea, yago:Nea_Smyrni",
+            "property": " ",
+            "relation": "geof:sfTouches",
+            "concept": " ",
+            "numerical": false
+        },
+        "Category": "B"
+    },
+    "188": {
+        "Question": "Is Norwich at least 100 kilometers away from London?",
+        "Query": "ASK { yago:geoentity_Norwich_District_7290598 geo:hasGeometry ?norwichGeometry . ?norwichGeometry geo:asWKT ?wktNorwich . yago:Greater_London geo:hasGeometry ?londonGeometry . ?londonGeometry geo:asWKT ?wktLondon . FILTER(geof:distance(?wktNorwich, ?wktLondon, uom:metre) >= 100000) }",
+        "Annotation": {
+            "instance": "yago:geoentity_Norwich_District_7290598, yago:Greater_London",
+            "property": " ",
+            "relation": "geof:distance",
+            "concept": " ",
+            "numerical": false
+        },
+        "Category": "B"
+    },
+    "189": {
+        "Question": "Is Norilsk north of Dublin?",
+        "Query": "ASK { yago:Dublin geo:hasGeometry ?dublinGeometry . ?dublinGeometry geo:asWKT ?wktDublin . yago:Norilsk geo:hasGeometry ?norilskGeometry . ?norilskGeometry geo:asWKT ?wktNorilsk . FILTER(strdf:above(?wktNorilsk , ?wktDublin)) }",
+        "Annotation": {
+            "instance": "yago:Dublin , yago:Norilsk",
+            "property": " ",
+            "relation": "strdf:above",
+            "concept": " ",
+            "numerical": false
+        },
+        "Category": "B"
+    },
+    "190": {
+        "Question": "Does the municipality of Athens border Kallithea?",
+        "Query": "ASK { yago:geoentity_Dimos_Athens_8133876 geo:hasGeometry ?o. ?o geo:asWKT ?geoWKT. yago:Kallithea geo:hasGeometry ?o1; rdf:type ?type. ?o1 geo:asWKT ?geoWKT1. FILTER(geof:sfTouches(?geoWKT,?geoWKT1)) }",
+        "Annotation": {
+            "instance": "yago:geoentity_Dimos_Athens_8133876, yago:Kallithea",
+            "property": " ",
+            "relation": "geof:sfTouches",
+            "concept": " ",
+            "numerical": false
+        },
+        "Category": "B"
+    },
+    "191": {
+        "Question": "Is Manchester part of the Northwestern European region?",
+        "Query": "ASK { yago:Manchester geo:hasGeometry ?o. ?o geo:asWKT ?geoWKT. y2geor:osentity_North_West_Euro_Region_41431  geo:hasGeometry ?o1; rdf:type ?type. ?o1 geo:asWKT ?geoWKT1. FILTER(geof:sfWithin(?geoWKT,?geoWKT1)) }",
+        "Annotation": {
+            "instance": "yago:Manchester, y2geor:osentity_North_West_Euro_Region_41431",
+            "property": " ",
+            "relation": "geof:sfWithin",
+            "concept": " ",
+            "numerical": false
+        },
+        "Category": "B"
+    },
+    "192": {
+        "Question": "Is Belfast south of Dublin?",
+        "Query": "ASK { yago:Belfast geo:hasGeometry ?o. ?o geo:asWKT ?geoWKT. yago:Dublin geo:hasGeometry ?o1; rdf:type ?type. ?o1 geo:asWKT ?geoWKT1. FILTER(strdf:below(?geoWKT,?geoWKT1)) }",
+        "Annotation": {
+            "instance": "yago:Belfast, yago:Dublin",
+            "property": " ",
+            "relation": "strdf:below",
+            "concept": " ",
+            "numerical": false
+        },
+        "Category": "B"
+    },
+    "193": {
+        "Question": "Is Lake Yliki north of the municipality of Athens",
+        "Query": "ASK { yago:Lake_Yliki geo:hasGeometry ?xGeom . ?xGeom geo:asWKT ?xWKT . yago:geoentity_Dimos_Athens_8133876 geo:hasGeometry ?yGeom . ?yGeom geo:asWKT ?yWKT . FILTER(strdf:above(?xWKT, ?yWKT)) }",
+        "Annotation": {
+            "instance": "yago:Lake_Yliki, yago:geoentity_Dimos_Athens_8133876",
+            "property": " ",
+            "relation": "strdf:above",
+            "concept": " ",
+            "numerical": false
+        },
+        "Category": "B"
+    },
+    "194": {
+        "Question": "Is Limerick close to Waterford?",
+        "Query": "ASK { y2geor:gadmentity_Limerick_IRL.13_1 geo:hasGeometry ?xGeom . ?xGeom geo:asWKT ?xWKT . y2geor:gadmentity_Waterford_IRL.23_1 geo:hasGeometry ?yGeom . ?yGeom geo:asWKT ?yWKT . FILTER(geof:distance(?xWKT, ?yWKT, uom:metre) < 2000) }",
+        "Annotation": {
+            "instance": "y2geor:gadmentity_Limerick_IRL.13_1 , y2geor:gadmentity_Waterford_IRL.23_1",
+            "property": " ",
+            "relation": "geof:distance",
+            "concept": " ",
+            "numerical": false
+        },
+        "Category": "B"
+    },
+    "195": {
+        "Question": "Does Rochdale border Manchester?",
+        "Query": "ASK { yago:Metropolitan_Borough_of_Rochdale geo:hasGeometry ?xGeom . ?xGeom geo:asWKT ?xWKT . yago:Manchester geo:hasGeometry ?yGeom . ?yGeom geo:asWKT ?yWKT . FILTER(geof:sfTouches(?xWKT, ?yWKT)) }",
+        "Annotation": {
+            "instance": "yago:Metropolitan_Borough_of_Rochdale, yago:Manchester",
+            "property": " ",
+            "relation": "geof:sfTouches",
+            "concept": " ",
+            "numerical": false
+        },
+        "Category": "B"
+    },
+    "196": {
+        "Question": "Is Nafpaktia west of Athens?",
+        "Query": "ASK { yago:Nafpaktia geo:hasGeometry ?geomNaf . ?geomNaf geo:asWKT ?wktNaf . yago:geoentity_Dimos_Athens_8133876 geo:hasGeometry ?geomAth . ?geomAth geo:asWKT ?wktAth. FILTER(strdf:left(?wktNaf, ?wktAth)) }",
+        "Annotation": {
+            "instance": "yago:Nafpaktia, yago:geoentity_Dimos_Athens_8133876",
+            "property": " ",
+            "relation": "strdf:left",
+            "concept": " ",
+            "numerical": false
+        },
+        "Category": "B"
+    },
+    "197": {
+        "Question": "Is Liverpool south of Wales?",
+        "Query": "ASK { yago:Liverpool geo:hasGeometry ?geomLiv. ?geomLiv geo:asWKT ?wktLiv. yago:Wales geo:hasGeometry ?geomWal. ?geomWal geo:asWKT ?wktWal. FILTER(strdf:below(?wktLiv, ?wktWal)) }",
+        "Annotation": {
+            "instance": "yago:Liverpool, yago:Wales",
+            "property": " ",
+            "relation": "strdf:below",
+            "concept": " ",
+            "numerical": false
+        },
+        "Category": "B"
+    },
+    "198": {
+        "Question": "Is Scotland north of Dublin?",
+        "Query": "ASK { yago:Dublin geo:hasGeometry ?geomDub. ?geomDub geo:asWKT ?wktDub. yago:Scotland geo:hasGeometry ?geomSco. ?geomSco geo:asWKT ?wktSco. FILTER(strdf:above(?wktSco, ?wktDub)) }",
+        "Annotation": {
+            "instance": "yago:Dublin, yago:Scotland",
+            "property": " ",
+            "relation": "strdf:above",
+            "concept": " ",
+            "numerical": false
+        },
+        "Category": "B"
+    },
+    "199": {
+        "Question": "Is Thessaly south of Attica?",
+        "Query": "ASK { <http://yago-knowledge.org/resource/Thessaly> geo:hasGeometry ?o. ?o geo:asWKT ?geoWKT. <http://yago-knowledge.org/resource/Attica_(region)> geo:hasGeometry ?o1.  ?o1 geo:asWKT ?geoWKT1. FILTER(strdf:below(?geoWKT,?geoWKT1))}",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/Thessaly> , <http://yago-knowledge.org/resource/Attica_(region)>",
+            "property": " ",
+            "relation": "strdf:below",
+            "concept": " ",
+            "numerical": false
+        },
+        "Category": "B"
+    },
+    "200": {
+        "Question": "Is Plymouth near Cardiff?",
+        "Query": "ASK { <http://yago-knowledge.org/resource/Plymouth>  geo:hasGeometry ?o. ?o geo:asWKT ?geoWKT. <http://yago-knowledge.org/resource/Cardiff> geo:hasGeometry ?o1.  ?o1 geo:asWKT ?geoWKT1. FILTER(geof:distance(?geoWKT,?geoWKT1, uom:metre) <= 5000) }",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/Plymouth> , <http://yago-knowledge.org/resource/Cardiff>",
+            "property": " ",
+            "relation": "geof:distance",
+            "concept": " ",
+            "numerical": false
+        },
+        "Category": "B"
+    },
+    "201": {
+        "Question": "Is Dublin south of Belfast?",
+        "Query": "ASK { <http://yago-knowledge.org/resource/Dublin> geo:hasGeometry ?o. ?o geo:asWKT ?geoWKT. <http://yago-knowledge.org/resource/geoentity_City_of_Belfast_3333223> geo:hasGeometry ?o1.  ?o1 geo:asWKT ?geoWKT1. FILTER(strdf:below(?geoWKT,?geoWKT1)) }",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/Dublin> , <http://yago-knowledge.org/resource/geoentity_City_of_Belfast_3333223>",
+            "property": " ",
+            "relation": "strdf:below",
+            "concept": " ",
+            "numerical": false
+        },
+        "Category": "B"
+    },
+    "202": {
+        "Question": "Does Astypalaia belong to the Decentralized Administration of the Aegean?",
+        "Query": "ASK { <http://yago-knowledge.org/resource/Astypalaia> geo:hasGeometry ?g1. ?g1 geo:asWKT ?wkt1. <http://kr.di.uoa.gr/yago2geo/resource/gadmentity_Aegean_GRC.1_1>  geo:hasGeometry ?g2. ?g2 geo:asWKT ?wkt2. FILTER(geof:sfWithin(?wkt1,?wkt2)) }",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/Astypalaia> , <http://kr.di.uoa.gr/yago2geo/resource/gadmentity_Aegean_GRC.1_1>",
+            "property": " ",
+            "relation": "geof:sfWithin",
+            "concept": " ",
+            "numerical": false
+        },
+        "Category": "B"
+    },
+    "203": {
+        "Question": "Is the Sennen Cove beach east of Helston?",
+        "Query": "ASK { <http://yago-knowledge.org/resource/Sennen_Cove> geo:hasGeometry ?g1. ?g1 geo:asWKT ?wkt1. yago:Helston geo:hasGeometry ?g2. ?g2 geo:asWKT ?wkt2.     FILTER(strdf:right(?wkt1, ?wkt2)) }",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/Sennen_Cove> , yago:Helston",
+            "property": " ",
+            "relation": "strdf:right",
+            "concept": " ",
+            "numerical": false
+        },
+        "Category": "B"
+    },
+    "204": {
+        "Question": "Is Howth far from Dublin?",
+        "Query": "ASK { <http://yago-knowledge.org/resource/Howth>  geo:hasGeometry ?g1. ?g1 geo:asWKT ?wkt1. yago:Dublin geo:hasGeometry ?g2. ?g2 geo:asWKT ?wkt2. FILTER(geof:distance(?wkt1, ?wkt2, uom:metre) > 5000). }",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/Howth> , yago:Dublin",
+            "property": " ",
+            "relation": "geof:distance",
+            "concept": " ",
+            "numerical": false
+        },
+        "Category": "B"
+    },
+    "205": {
+        "Question": "Is Athlone northeast of Portumna?",
+        "Query": "ASK WHERE {     <http://yago-knowledge.org/resource/Athlone> geo:hasGeometry ?o2 .     ?o2 geo:asWKT ?athloneWKT .      <http://yago-knowledge.org/resource/Portumna> geo:hasGeometry ?o .     ?o geo:asWKT ?portumnaWKT .      FILTER(strdf:right(?athloneWKT, ?portumnaWKT)) .     FILTER(strdf:above(?athloneWKT, ?portumnaWKT)) }",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/Athlone> , <http://yago-knowledge.org/resource/Portumna>",
+            "property": " ",
+            "relation": "strdf:right, strdf:above",
+            "concept": " ",
+            "numerical": false
+        },
+        "Category": "B"
+    },
+    "206": {
+        "Question": "Is Kalamata north of Tripoli?",
+        "Query": "ASK WHERE {     <http://yago-knowledge.org/resource/geoentity_Dimos_Kalamata_8133971> geo:hasGeometry ?o1 .     ?o1 geo:asWKT ?kalamataGeo .      <http://yago-knowledge.org/resource/Tripoli,_Greece> geo:hasGeometry ?o2 .     ?o2 geo:asWKT ?tripoliGeo .      FILTER(strdf:above(?kalamataGeo , ?tripoliGeo )) }",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/geoentity_Dimos_Kalamata_8133971> , <http://yago-knowledge.org/resource/Tripoli,_Greece>",
+            "property": " ",
+            "relation": "strdf:above",
+            "concept": " ",
+            "numerical": false
+        },
+        "Category": "B"
+    },
+    "207": {
+        "Question": "Is Kastanas beach located south of the municipality of Athens?",
+        "Query": "ASK{yago:geoentity_Dimos_Athens_8133876 geo:hasGeometry  ?rep1 . ?rep1 geo:asWKT ?aWKT. yago:geoentity_Paral\u00eda_Kastan\u00e1s_10277719 geo:hasGeometry  ?rep2 . ?rep2 geo:asWKT ?kWKT. FILTER(strdf:below(?kWKT, ?aWKT)). }",
+        "Annotation": {
+            "instance": "yago:geoentity_Dimos_Athens_8133876 , yago:geoentity_Paral\u00eda_Kastan\u00e1s_10277719",
+            "property": " ",
+            "relation": "strdf:below",
+            "concept": " ",
+            "numerical": false
+        },
+        "Category": "B"
+    },
+    "208": {
+        "Question": "Is Liverpool south of Scotland?",
+        "Query": "ASK{ yago:Liverpool geo:hasGeometry  ?rep1 . ?rep1 geo:asWKT ?lWKT. yago:Scotland geo:hasGeometry  ?rep2 . ?rep2 geo:asWKT ?sWKT. FILTER(strdf:below(?lWKT, ?sWKT)). }",
+        "Annotation": {
+            "instance": "yago:Liverpool, yago:Scotland",
+            "property": " ",
+            "relation": "strdf:below",
+            "concept": " ",
+            "numerical": false
+        },
+        "Category": "B"
+    },
+    "209": {
+        "Question": "Is Killarney Beach north of Cork?",
+        "Query": "ASK{ yago:gadmentity_Cork_IRL.4_1 geo:hasGeometry  ?rep1 . ?rep1 geo:asWKT ?cWKT. yago:geoentity_Killarney_Beach_8215737 geo:hasGeometry  ?rep2 . ?rep2 geo:asWKT ?kWKT. FILTER(strdf:above(?kWKT, ?cWKT)). }",
+        "Annotation": {
+            "instance": "yago:gadmentity_Cork_IRL.4_1 , yago:geoentity_Killarney_Beach_8215737",
+            "property": " ",
+            "relation": "strdf:above",
+            "concept": " ",
+            "numerical": false
+        },
+        "Category": "B"
+    },
+    "210": {
+        "Question": "Is Ierapetra east of Chania?",
+        "Query": "ASK {     yago:Ierapetra geo:hasGeometry ?o.     ?o geo:asWKT ?geoWKT_Ierapetra.      yago:geoentity_Chania_8133762 geo:hasGeometry ?o1.     ?o1 geo:asWKT ?geoWKT_Chania.          FILTER(strdf:right(?geoWKT_Ierapetra,?geoWKT_Chania)) }",
+        "Annotation": {
+            "instance": "yago:Ierapetra , yago:geoentity_Chania_8133762",
+            "property": " ",
+            "relation": "strdf:right",
+            "concept": " ",
+            "numerical": false
+        },
+        "Category": "B"
+    },
+    "211": {
+        "Question": "Is Cambridge south of London?",
+        "Query": "ASK {     yago:London geo:hasGeometry ?o.     ?o geo:asWKT ?geoWKT_London.      yago:geoentity_Cambridge_District_7290660 geo:hasGeometry ?o1.     ?o1 geo:asWKT ?geoWKT_Cambridge.          FILTER(strdf:below(?geoWKT_Cambridge,?geoWKT_London)) }",
+        "Annotation": {
+            "instance": "yago:London, yago:geoentity_Cambridge_District_7290660",
+            "property": " ",
+            "relation": "strdf:below",
+            "concept": " ",
+            "numerical": false
+        },
+        "Category": "B"
+    },
+    "212": {
+        "Question": "Is County Cavan located on the border of County Laois?",
+        "Query": "ASK {     yago:County_Cavan  geo:hasGeometry ?o.     ?o geo:asWKT ?geoWKT_Cavan.      yago:County_Laois geo:hasGeometry ?o1.     ?o1 geo:asWKT ?geoWKT_Laois.          FILTER(geof:sfTouches(?geoWKT_Cavan,?geoWKT_Laois)) }",
+        "Annotation": {
+            "instance": "yago:County_Cavan, yago:County_Laois",
+            "property": " ",
+            "relation": "geof:sfTouches",
+            "concept": " ",
+            "numerical": false
+        },
+        "Category": "B"
+    },
+    "213": {
+        "Question": "Is the barony of Kinsale south of the city of Kilkenny?",
+        "Query": "ASK {  yago:Kinsale geo:hasGeometry ?o1 .  ?o1 geo:asWKT ?geoWKT1 .  yago:Kilkenny geo:hasGeometry ?o2 .  ?o2 geo:asWKT ?geoWKT2 .  FILTER(strdf:below(?geoWKT1, ?geoWKT2)) }",
+        "Annotation": {
+            "instance": "yago:Kinsale, yago:Kilkenny",
+            "property": " ",
+            "relation": "strdf:below",
+            "concept": " ",
+            "numerical": false
+        },
+        "Category": "B"
+    },
+    "214": {
+        "Question": "Is Bristol west of Liverpool?",
+        "Query": "ASK {  yago:Bristol geo:hasGeometry ?o1 .  ?o1 geo:asWKT ?geoWKT1 .  yago:Liverpool geo:hasGeometry ?o2 .  ?o2 geo:asWKT ?geoWKT2 .  FILTER(strdf:left(?geoWKT1, ?geoWKT2)) }",
+        "Annotation": {
+            "instance": "yago:Bristol, yago:Liverpool",
+            "property": " ",
+            "relation": "strdf:left",
+            "concept": " ",
+            "numerical": false
+        },
+        "Category": "B"
+    },
+    "215": {
+        "Question": "Is Chios east of Paxi?",
+        "Query": "ASK {  yago:Chios geo:hasGeometry ?o1 .  ?o1 geo:asWKT ?geoWKT1 .  yago:Paxi geo:hasGeometry ?o2 .  ?o2 geo:asWKT ?geoWKT2.  FILTER(strdf:right(?geoWKT1, ?geoWKT2)) }",
+        "Annotation": {
+            "instance": "yago:Chios, yago:Paxi",
+            "property": " ",
+            "relation": "strdf:right",
+            "concept": " ",
+            "numerical": false
+        },
+        "Category": "B"
+    },
+    "216": {
+        "Question": "Is Canada east of China?",
+        "Query": "ASK {  <http://yago-knowledge.org/resource/Canada> geo:hasGeometry ?o.  ?o geo:asWKT ?geoWKT.  <http://yago-knowledge.org/resource/China> geo:hasGeometry ?o1.  ?o1 geo:asWKT ?geoWKT1.  FILTER(strdf:right(?geoWKT,?geoWKT1)) }",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/Canada> , <http://yago-knowledge.org/resource/China>",
+            "property": " ",
+            "relation": "strdf:right",
+            "concept": " ",
+            "numerical": false
+        },
+        "Category": "B"
+    },
+    "217": {
+        "Question": "Is Crete south of Attica?",
+        "Query": "ASK {  <http://yago-knowledge.org/resource/Crete> geo:hasGeometry ?o.  ?o geo:asWKT ?geoWKT.  <http://yago-knowledge.org/resource/Attica_(region)> geo:hasGeometry ?o1.  ?o1 geo:asWKT ?geoWKT1.  FILTER(strdf:below(?geoWKT,?geoWKT1)) }",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/Crete> , <http://yago-knowledge.org/resource/Attica_(region)>",
+            "property": " ",
+            "relation": "strdf:below",
+            "concept": " ",
+            "numerical": false
+        },
+        "Category": "B"
+    },
+    "218": {
+        "Question": "Is Tullyhaw within Northern Ireland?",
+        "Query": "ASK {  <http://yago-knowledge.org/resource/geoentity_Tully_2635377> geo:hasGeometry ?o.  ?o geo:asWKT ?geoWKT.  <http://yago-knowledge.org/resource/Northern_Ireland> geo:hasGeometry ?o1. ?o1 geo:asWKT ?geoWKT1.  FILTER(geof:sfWithin(?geoWKT,?geoWKT1)) }",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/geoentity_Tully_2635377>, <http://yago-knowledge.org/resource/Northern_Ireland>",
+            "property": " ",
+            "relation": "geof:sfWithin",
+            "concept": " ",
+            "numerical": false
+        },
+        "Category": "B"
+    },
+    "219": {
+        "Question": "Is the distance between Liverpool and Manchester approximately 40 kilometers?",
+        "Query": "ASK {  <http://yago-knowledge.org/resource/Manchester> geo:hasGeometry ?o. ?o geo:asWKT ?geoWKT.  <http://yago-knowledge.org/resource/Liverpool> geo:hasGeometry ?o1.  ?o1 geo:asWKT ?geoWKT1.  FILTER(geof:distance(?geoWKT,?geoWKT1,uom:metre)  < 41000).FILTER(geof:distance(?geoWKT,?geoWKT1,uom:metre) > 39000 ). }",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/Manchester> , <http://yago-knowledge.org/resource/Liverpool>",
+            "property": " ",
+            "relation": "geof:distance",
+            "concept": " ",
+            "numerical": false
+        },
+        "Category": "B"
+    },
+    "220": {
+        "Question": "Is Athlone north of Kilkenny?",
+        "Query": "ASK { yago:Athlone geo:hasGeometry ?o. ?o geo:asWKT ?geoWKT. yago:Kilkenny geo:hasGeometry ?o1 . ?o1 geo:asWKT ?geoWKT1. FILTER(strdf:above(?geoWKT,?geoWKT1)) }",
+        "Annotation": {
+            "instance": "yago:Athlone , yago:Kilkenny",
+            "property": " ",
+            "relation": "strdf:above",
+            "concept": " ",
+            "numerical": false
+        },
+        "Category": "B"
+    },
+    "221": {
+        "Question": "Is Nottingham east of Liverpool?",
+        "Query": "ASK { yago:Nottingham geo:hasGeometry ?o. ?o geo:asWKT ?geoWKT. yago:Liverpool geo:hasGeometry ?o1 . ?o1 geo:asWKT ?geoWKT1. FILTER(strdf:right(?geoWKT,?geoWKT1)) }",
+        "Annotation": {
+            "instance": "yago:Nottingham, yago:Liverpool",
+            "property": " ",
+            "relation": "strdf:right",
+            "concept": " ",
+            "numerical": false
+        },
+        "Category": "B"
+    },
+    "222": {
+        "Question": "Is Lesbos west of Chania?",
+        "Query": "ASK { yago:Lesbos geo:hasGeometry ?o. ?o geo:asWKT ?geoWKT. yago:Chania geo:hasGeometry ?o1 . ?o1 geo:asWKT ?geoWKT1. FILTER(strdf:left(?geoWKT,?geoWKT1)) }",
+        "Annotation": {
+            "instance": "yago:Lesbos, yago:Chania",
+            "property": " ",
+            "relation": "strdf:left",
+            "concept": " ",
+            "numerical": false
+        },
+        "Category": "B"
+    },
+    "223": {
+        "Question": "Is Kastoria north of Livadeia?",
+        "Query": "ASK {     <http://yago-knowledge.org/resource/Kastoria> geo:hasGeometry ?o.     ?o geo:asWKT ?geoWKT.     <http://yago-knowledge.org/resource/Livadeia> geo:hasGeometry ?o1; rdf:type ?type.     ?o1 geo:asWKT ?geoWKT1.     FILTER(strdf:above(?geoWKT,?geoWKT1))}",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/Kastoria> , <http://yago-knowledge.org/resource/Livadeia>",
+            "property": " ",
+            "relation": "strdf:above",
+            "concept": " ",
+            "numerical": false
+        },
+        "Category": "B"
+    },
+    "224": {
+        "Question": "Is Birmingham west of Leicester?",
+        "Query": "ASK {     <http://yago-knowledge.org/resource/Birmingham> geo:hasGeometry ?o.     ?o geo:asWKT ?geoWKT.     <http://yago-knowledge.org/resource/Leicester> geo:hasGeometry ?o1.     ?o1 geo:asWKT ?geoWKT1.     FILTER(strdf:left(?geoWKT,?geoWKT1)) }",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/Birmingham> , <http://yago-knowledge.org/resource/Leicester>",
+            "property": " ",
+            "relation": "strdf:left",
+            "concept": " ",
+            "numerical": false
+        },
+        "Category": "B"
+    },
+    "225": {
+        "Question": "Is Cork City west of Dublin?",
+        "Query": "ASK {   <http://yago-knowledge.org/resource/geoentity_Cork_City_7778678> geo:hasGeometry ?o.     ?o geo:asWKT ?geoWKT.     <http://yago-knowledge.org/resource/Dublin> geo:hasGeometry ?o1.     ?o1 geo:asWKT ?geoWKT1.     FILTER(strdf:left(?geoWKT,?geoWKT1)) }",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/geoentity_Cork_City_7778678> , <http://yago-knowledge.org/resource/Dublin>",
+            "property": " ",
+            "relation": "strdf:left",
+            "concept": " ",
+            "numerical": false
+        },
+        "Category": "B"
+    },
+    "226": {
+        "Question": "Is Chania east of Athens?",
+        "Query": "ASK { <http://yago-knowledge.org/resource/geoentity_Chania_8133762> geo:hasGeometry ?g1.         <http://yago-knowledge.org/resource/geoentity_Dimos_Athens_8133876> geo:hasGeometry ?g2.         ?g1 geo:asWKT ?w1.         ?g2 geo:asWKT ?w2.         FILTER(strdf:right(?w1, ?w2)) }",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/geoentity_Chania_8133762> , <http://yago-knowledge.org/resource/geoentity_Dimos_Athens_8133876>",
+            "property": " ",
+            "relation": "strdf:right",
+            "concept": " ",
+            "numerical": false
+        },
+        "Category": "B"
+    },
+    "227": {
+        "Question": "Is Kent west of Norfolk?",
+        "Query": "ASK { <http://yago-knowledge.org/resource/Kent> geo:hasGeometry ?g1.         <http://yago-knowledge.org/resource/Norfolk> geo:hasGeometry ?g2.         ?g1 geo:asWKT ?w1.         ?g2 geo:asWKT ?w2.         FILTER(strdf:left(?w1, ?w2)) }",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/Kent> ,  <http://yago-knowledge.org/resource/Norfolk>",
+            "property": " ",
+            "relation": "strdf:left",
+            "concept": " ",
+            "numerical": false
+        },
+        "Category": "B"
+    },
+    "228": {
+        "Question": "Is Ballymoe west of Ratoath?",
+        "Query": "ASK {      <http://yago-knowledge.org/resource/Ballymoe> geo:hasGeometry ?g1.   <http://yago-knowledge.org/resource/Ratoath> geo:hasGeometry ?g2.         ?g1 geo:asWKT ?w1.         ?g2 geo:asWKT ?w2.         FILTER(strdf:left(?w1, ?w2)) } ",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/Ballymoe> ,  <http://yago-knowledge.org/resource/Ratoath>",
+            "property": " ",
+            "relation": "strdf:left",
+            "concept": " ",
+            "numerical": false
+        },
+        "Category": "B"
+    },
+    "230": {
+        "Question": "Is Dublin east of the municipality of Thessaloniki?",
+        "Query": "ASK { yago:Dublin geo:hasGeometry ?geo1 . ?geo1 geo:asWKT ?wkt1 . yago:geoentity_Dimos_Thessaloniki_8133841 geo:hasGeometry ?geo2 . ?geo2 geo:asWKT ?wkt2 . FILTER(strdf:right(?wkt1,?wkt2)) }",
+        "Annotation": {
+            "instance": "yago:Dublin, yago:geoentity_Dimos_Thessaloniki_8133841",
+            "property": " ",
+            "relation": "strdf:right",
+            "concept": " ",
+            "numerical": false
+        },
+        "Category": "B"
+    },
+    "231": {
+        "Question": "Is Suffolk north of County Cork?",
+        "Query": "ASK { yago:Suffolk geo:hasGeometry ?geo1 . ?geo1 geo:asWKT ?wkt1 . yago:County_Cork geo:hasGeometry ?geo2 . ?geo2 geo:asWKT ?wkt2 . FILTER(strdf:above(?wkt1,?wkt2)) }",
+        "Annotation": {
+            "instance": "yago:Suffolk, yago:County_Cork",
+            "property": " ",
+            "relation": "strdf:above",
+            "concept": " ",
+            "numerical": false
+        },
+        "Category": "B"
+    },
+    "232": {
+        "Question": "Is Albany north of New York city?",
+        "Query": "ASK { <http://yago-knowledge.org/resource/Albany_County,_New_York> geo:hasGeometry ?albanyGeom. ?albanyGeom geo:asWKT ?albanyWKT. yago:New_York_City geo:hasGeometry ?newYorkGeom. ?newYorkGeom geo:asWKT ?newYorkWKT. FILTER(strdf:above(?albanyWKT, ?newYorkWKT)).  }",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/Albany_County,_New_York> , yago:New_York_City",
+            "property": " ",
+            "relation": "strdf:above",
+            "concept": " ",
+            "numerical": false
+        },
+        "Category": "B"
+    },
+    "233": {
+        "Question": "Is Wales to the east of Cambridge?",
+        "Query": "ASK { yago:Wales geo:hasGeometry ?wGeom. ?wGeom geo:asWKT ?wWKT. yago:geoentity_Cambridge_District_7290660 geo:hasGeometry ?cGeom. ?cGeom geo:asWKT ?cWKT. FILTER(strdf:right(?wWKT, ?cWKT)). }",
+        "Annotation": {
+            "instance": "yago:Wales, yago:geoentity_Cambridge_District_7290660",
+            "property": " ",
+            "relation": "strdf:right",
+            "concept": " ",
+            "numerical": false
+        },
+        "Category": "B"
+    },
+    "234": {
+        "Question": "What is the distance between Glasgow and Edinburgh?",
+        "Query": "SELECT (strdf:distance(?gwkt, ?ewkt, uom:metre) as ?distance) WHERE { yago:geoentity_Glasgow_City_3333231 geo:hasGeometry ?ggeom . ?ggeom geo:asWKT ?gwkt . yago:Edinburgh geo:hasGeometry ?egeom . ?egeom geo:asWKT ?ewkt . }",
+        "Annotation": {
+            "instance": "yago:geoentity_Glasgow_City_3333231, yago:Edinburgh",
+            "property": " ",
+            "relation": "strdf:distance",
+            "concept": " ",
+            "numerical": false
+        },
+        "Category": "B"
+    },
+    "235": {
+        "Question": "Is Cardiff north of Manchester?",
+        "Query": "ASK { yago:Cardiff geo:hasGeometry ?geom1 . ?geom1 geo:asWKT ?wkt1 . yago:Manchester geo:hasGeometry ?geom2 . ?geom2 geo:asWKT ?wkt2 . FILTER(strdf:above(?wkt1, ?wkt2)) . }",
+        "Annotation": {
+            "instance": "yago:Cardiff, yago:Manchester",
+            "property": " ",
+            "relation": "strdf:above",
+            "concept": " ",
+            "numerical": false
+        },
+        "Category": "B"
+    },
+    "236": {
+        "Question": "Is Alabama west of Louisiana?",
+        "Query": "ASK { yago:Alabama geo:hasGeometry ?geom1. ?geom1 geo:asWKT ?wkt1. yago:Louisiana geo:hasGeometry ?geom2. ?geom2 geo:asWKT ?wkt2. FILTER(strdf:right(?wkt1, ?wkt2)). }",
+        "Annotation": {
+            "instance": "yago:Alabama, yago:Louisiana",
+            "property": " ",
+            "relation": "strdf:right",
+            "concept": " ",
+            "numerical": false
+        },
+        "Category": "B"
+    },
+    "237": {
+        "Question": "Is Texas north of Kentucky?",
+        "Query": "ASK { yago:Kentucky geo:hasGeometry ?kGeom. ?kGeom geo:asWKT ?kWKT. yago:Texas geo:hasGeometry ?tGeom. ?tGeom geo:asWKT ?tWKT. FILTER(strdf:above(?tWKT, ?kWKT)). }",
+        "Annotation": {
+            "instance": "yago:Kentucky, yago:Texas",
+            "property": " ",
+            "relation": "strdf:above",
+            "concept": " ",
+            "numerical": false
+        },
+        "Category": "B"
+    },
+    "238": {
+        "Question": "How close is Dublin to Scotland?",
+        "Query": "SELECT (geof:distance(?dWKT, ?sWKT, uom:metre) AS ?distance)  WHERE{  yago:Dublin geo:hasGeometry ?dGeom.  ?dGeom geo:asWKT ?dWKT.    yago:Scotland geo:hasGeometry ?sGeom.  ?sGeom geo:asWKT ?sWKT.      }",
+        "Annotation": {
+            "instance": "yago:Dublin, yago:Scotland",
+            "property": " ",
+            "relation": "geof:distance",
+            "concept": " ",
+            "numerical": false
+        },
+        "Category": "B"
+    },
+    "239": {
+        "Question": "Is Manchester to the east of Liverpool?",
+        "Query": "ASK { yago:Manchester geo:hasGeometry ?mgeom.    ?mgeom geo:asWKT ?mwkt.       yago:Liverpool geo:hasGeometry ?lgeom.    ?lgeom geo:asWKT ?lwkt.       FILTER(strdf:right(?mwkt, ?lwkt)).   }",
+        "Annotation": {
+            "instance": "yago:Manchester, yago:Liverpool",
+            "property": " ",
+            "relation": "strdf:right",
+            "concept": " ",
+            "numerical": false
+        },
+        "Category": "B"
+    },
+    "240": {
+        "Question": "Is Ladis north of Dublin?",
+        "Query": "ASK { yago:Ladis geo:hasGeometry ?ladisGeom. ?ladisGeom geo:asWKT ?ladisWKT. yago:Dublin geo:hasGeometry ?dublinGeom. ?dublinGeom geo:asWKT ?dublinWKT. FILTER(strdf:above(?ladisWKT, ?dublinWKT)). }",
+        "Annotation": {
+            "instance": "yago:Ladis, yago:Dublin",
+            "property": " ",
+            "relation": "strdf:above",
+            "concept": " ",
+            "numerical": false
+        },
+        "Category": "B"
+    },
+    "241": {
+        "Question": "Is Whitehall located to the west of Trafalgar Square?",
+        "Query": "ASK { yago:Whitehall geo:hasGeometry ?a . ?a geo:asWKT ?A .  yago:Trafalgar_Square geo:hasGeometry ?b . ?b geo:asWKT ?B .  FILTER(strdf:left(?A,?B)) .     }",
+        "Annotation": {
+            "instance": "yago:Whitehall, yago:Trafalgar_Square",
+            "property": " ",
+            "relation": "strdf:left",
+            "concept": " ",
+            "numerical": false
+        },
+        "Category": "B"
+    },
+    "242": {
+        "Question": "How far is Cumbria from Birmingham?",
+        "Query": "SELECT DISTINCT (geof:distance(?A,?B, uom:metre) as ?distance) WHERE{ yago:Cumbria geo:hasGeometry ?a . ?a geo:asWKT ?A . yago:Birmingham geo:hasGeometry ?b . ?b geo:asWKT ?B . }",
+        "Annotation": {
+            "instance": "yago:Cumbria, yago:Birmingham",
+            "property": " ",
+            "relation": "geof:distance",
+            "concept": " ",
+            "numerical": false
+        },
+        "Category": "B"
+    },
+    "243": {
+        "Question": "Is Athens south of Oxford?",
+        "Query": "ASK { <http://yago-knowledge.org/resource/geoentity_Dimos_Athens_8133876> geo:hasGeometry ?o. ?o geo:asWKT ?geoWKT. <http://yago-knowledge.org/resource/Oxford>  geo:hasGeometry ?o1. ?o1 geo:asWKT ?geoWKT1. FILTER(strdf:below(?geoWKT,?geoWKT1)) }",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/geoentity_Dimos_Athens_8133876> , <http://yago-knowledge.org/resource/Oxford>",
+            "property": " ",
+            "relation": "strdf:below",
+            "concept": " ",
+            "numerical": false
+        },
+        "Category": "B"
+    },
+    "244": {
+        "Question": "Is England to the west of Greece?",
+        "Query": "ASK { <http://yago-knowledge.org/resource/England> geo:hasGeometry ?o1. ?o1 geo:asWKT ?geoWKT1. <http://yago-knowledge.org/resource/Greece> geo:hasGeometry ?o2. ?o2 geo:asWKT ?geoWKT2. FILTER(strdf:left(?geoWKT1,?geoWKT2)) }",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/England> , <http://yago-knowledge.org/resource/Greece>",
+            "property": " ",
+            "relation": "strdf:left",
+            "concept": " ",
+            "numerical": false
+        },
+        "Category": "B"
+    },
+    "245": {
+        "Question": "Is York in Scotland ?",
+        "Query": "ASK  WHERE { yago:York geo:hasGeometry ?gx .  ?gx geo:asWKT ?xWKT . yago:Scotland geo:hasGeometry ?gy .  ?gy geo:asWKT ?yWKT .   FILTER(strdf:contains(?yWKT,?xWKT ))   }",
+        "Annotation": {
+            "instance": "yago:York, yago:Scotland",
+            "property": " ",
+            "relation": "strdf:contains",
+            "concept": " ",
+            "numerical": false
+        },
+        "Category": "B"
+    },
+    "246": {
+        "Question": "Do Essex and Hertfordshire share a border?",
+        "Query": "ASK  WHERE {   <http://yago-knowledge.org/resource/Essex> geo:hasGeometry ?g .  ?g geo:asWKT ?gWKT .   <http://yago-knowledge.org/resource/Hertfordshire> geo:hasGeometry ?g1 .  ?g1 geo:asWKT ?g1WKT .  FILTER(strdf:touches(?gWKT,?g1WKT ))  }",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/Essex> , <http://yago-knowledge.org/resource/Hertfordshire>",
+            "property": " ",
+            "relation": "strdf:touches",
+            "concept": " ",
+            "numerical": false
+        },
+        "Category": "B"
+    },
+    "247": {
+        "Question": "Is Patras north of Tripoli?",
+        "Query": "ASK  WHERE { yago:geoentity_Dimos_Patras_8133690  geo:hasGeometry ?gx .  ?gx geo:asWKT ?xWKT .  <http://yago-knowledge.org/resource/Tripoli,_Greece> geo:hasGeometry ?gy .  ?gy geo:asWKT ?yWKT .   FILTER(strdf:above(?xWKT,?yWKT ))    }",
+        "Annotation": {
+            "instance": "yago:geoentity_Dimos_Patras_8133690, <http://yago-knowledge.org/resource/Tripoli,_Greece>",
+            "property": " ",
+            "relation": "strdf:above",
+            "concept": " ",
+            "numerical": false
+        },
+        "Category": "B"
+    },
+    "248": {
+        "Question": "Is Belfast farther west than Galatsi?",
+        "Query": "ASK { yago:Elafonisos geo:hasGeometry ?o. ?o geo:asWKT ?geoWKT. yago:Galatsi geo:hasGeometry ?o1; rdf:type ?type. ?o1 geo:asWKT ?geoWKT1. FILTER(strdf:left(?geoWKT,?geoWKT1)) }",
+        "Annotation": {
+            "instance": "yago:Elafonisos, yago:Galatsi",
+            "property": " ",
+            "relation": "strdf:left",
+            "concept": " ",
+            "numerical": false
+        },
+        "Category": "B"
+    },
+    "249": {
+        "Question": "Is NYC less than 100km from Cambridge?",
+        "Query": "ASK { yago:New_York_City geo:hasGeometry ?o. ?o geo:asWKT ?geoWKT. yago:geoentity_Cambridge_District_7290660 geo:hasGeometry ?o1; rdf:type ?type. ?o1 geo:asWKT ?geoWKT1. FILTER(geof:distance(?geoWKT,?geoWKT1,uom:metre) <= 100000) }",
+        "Annotation": {
+            "instance": "yago:New_York_City, yago:geoentity_Cambridge_District_7290660",
+            "property": " ",
+            "relation": "geof:distance",
+            "concept": " ",
+            "numerical": false
+        },
+        "Category": "B"
+    },
+    "250": {
+        "Question": "Does Dublin share a border with Clane?",
+        "Query": "ASK { yago:Dublin geo:hasGeometry ?o. ?o geo:asWKT ?geoWKT. yago:Clane geo:hasGeometry ?o1. ?o1 geo:asWKT ?geoWKT1. FILTER(geof:sfTouches(?geoWKT, ?geoWKT1)) }",
+        "Annotation": {
+            "instance": "yago:Dublin, yago:Clane",
+            "property": " ",
+            "relation": "geof:sfTouches",
+            "concept": " ",
+            "numerical": false
+        },
+        "Category": "B"
+    },
+    "251": {
+        "Question": "Is Patmos east of Rhodes?",
+        "Query": "ASK {  <http://yago-knowledge.org/resource/Rhodes> geo:hasGeometry ?geo1 . ?geo1 geo:asWKT ?wkt1 . <http://yago-knowledge.org/resource/Patmos> geo:hasGeometry ?geo2 . ?geo2 geo:asWKT ?wkt2 . FILTER(strdf:right(?wkt2,?wkt1)) }",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/Rhodes> ,  <http://yago-knowledge.org/resource/Patmos>",
+            "property": " ",
+            "relation": "strdf:right",
+            "concept": " ",
+            "numerical": false
+        },
+        "Category": "B"
+    },
+    "252": {
+        "Question": "Is Doolin to the south of Dublin?",
+        "Query": "ASK {  <http://yago-knowledge.org/resource/Doolin> geo:hasGeometry ?o.  ?o geo:asWKT ?geoWKT.  <http://yago-knowledge.org/resource/Dublin> geo:hasGeometry ?o1.  ?o1 geo:asWKT ?geoWKT1.  FILTER(strdf:below(?geoWKT,?geoWKT1)) }",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/Doolin> , <http://yago-knowledge.org/resource/Dublin>",
+            "property": " ",
+            "relation": "strdf:below",
+            "concept": " ",
+            "numerical": false
+        },
+        "Category": "B"
+    },
+    "253": {
+        "Question": "Does Liverpool border Adare?",
+        "Query": "ASK { yago:Liverpool geo:hasGeometry ?o. ?o geo:asWKT ?geoWKT. yago:Adare geo:hasGeometry ?o1. ?o1 geo:asWKT ?geoWKT1. FILTER(geof:sfTouches(?geoWKT, ?geoWKT1)) }",
+        "Annotation": {
+            "instance": "yago:Liverpool, yago:Adare",
+            "property": " ",
+            "relation": "geof:sfTouches",
+            "concept": " ",
+            "numerical": false
+        },
+        "Category": "B"
+    },
+    "254": {
+        "Question": "Is Sfakia in Greece?",
+        "Query": "ASK {   <http://yago-knowledge.org/resource/Sfakia> geo:hasGeometry ?o.   ?o geo:asWKT ?pWKT.   <http://yago-knowledge.org/resource/Greece> geo:hasGeometry ?o1.   ?o1 geo:asWKT ?sWKT.   FILTER(geof:sfWithin(?pWKT, ?sWKT)) }",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/Sfakia> , <http://yago-knowledge.org/resource/Greece>",
+            "property": " ",
+            "relation": "geof:sfWithin",
+            "concept": " ",
+            "numerical": false
+        },
+        "Category": "B"
+    },
+    "255": {
+        "Question": "Is Belfast far from London?",
+        "Query": "ASK {   <http://yago-knowledge.org/resource/geoentity_City_of_Belfast_3333223> geo:hasGeometry ?o.   ?o geo:asWKT ?bWKT.   <http://yago-knowledge.org/resource/geoentity_City_of_London_2643744> geo:hasGeometry ?o1.   ?o1 geo:asWKT ?eWKT.   FILTER(geof:distance(?bWKT, ?eWKT, uom:metre) > 5000) }",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/geoentity_City_of_Belfast_3333223> , <http://yago-knowledge.org/resource/geoentity_City_of_London_2643744>",
+            "property": " ",
+            "relation": "geof:distance",
+            "concept": " ",
+            "numerical": false
+        },
+        "Category": "B"
+    },
+    "256": {
+        "Question": "Does Peristeri intersect with Nea Smyrni?",
+        "Query": "ASK{ yago:Peristeri geo:hasGeometry ?g.         ?g geo:asWKT ?geoWKT.         yago:Nea_Smyrni geo:hasGeometry ?g2.         ?g2 geo:asWKT ?geoWKT2. FILTER(strdf:intersects(?geoWKT, ?geoWKT2)). }",
+        "Annotation": {
+            "instance": "yago:Peristeri , yago:Nea_Smyrni",
+            "property": " ",
+            "relation": "strdf:intersects",
+            "concept": " ",
+            "numerical": false
+        },
+        "Category": "B"
+    },
+    "257": {
+        "Question": "Is Essex located in Cambridgeshire?",
+        "Query": "ASK {       yago:Essex geo:hasGeometry ?g.      ?g geo:asWKT ?geoWKT.      yago:Cambridge geo:hasGeometry ?g2.      ?g2 geo:asWKT ?geoWKT2. FILTER(strdf:within(?geoWKT,?geoWKT2)) }",
+        "Annotation": {
+            "instance": "yago:Essex, yago:Cambridge",
+            "property": " ",
+            "relation": "strdf:within",
+            "concept": " ",
+            "numerical": false
+        },
+        "Category": "B"
+    },
+    "259": {
+        "Question": "Is Ierapetra close to Athens?",
+        "Query": "ASK { yago:Ierapetra geo:hasGeometry ?xgeo. ?xgeo geo:asWKT ?xWKT. yago:geoentity_Dimos_Athens_8133876 geo:hasGeometry ?ygeo. ?ygeo geo:asWKT ?yWKT. FILTER (strdf:distance(?xWKT, ?yWKT, uom:metre) < 5000)  . }",
+        "Annotation": {
+            "instance": "yago:Ierapetra, yago:geoentity_Dimos_Athens_8133876",
+            "property": " ",
+            "relation": "strdf:distance",
+            "concept": " ",
+            "numerical": false
+        },
+        "Category": "B"
+    },
+    "260": {
+        "Question": "Is Edinburgh north of London?",
+        "Query": "ASK {     <http://yago-knowledge.org/resource/Edinburgh> geo:hasGeometry ?xgeo.     ?xgeo geo:asWKT ?xWKT.      <http://yago-knowledge.org/resource/geoentity_City_of_London_2643744> geo:hasGeometry ?ygeo.     ?ygeo geo:asWKT ?yWKT.   FILTER (strdf:below(?yWKT, ?xWKT)) }",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/Edinburgh> , <http://yago-knowledge.org/resource/geoentity_City_of_London_2643744>",
+            "property": " ",
+            "relation": "strdf:below",
+            "concept": " ",
+            "numerical": false
+        },
+        "Category": "B"
+    },
+    "261": {
+        "Question": "Is Belfast west of London?",
+        "Query": "ASK {    <http://kr.di.uoa.gr/yago2geo/resource/geoentity_City_of_Belfast_3333223> geo:hasGeometry ?xgeo.     ?xgeo geo:asWKT ?xWKT.      <http://yago-knowledge.org/resource/geoentity_City_of_London_2643744> geo:hasGeometry ?ygeo.     ?ygeo geo:asWKT ?yWKT.   FILTER (strdf:left(?xWKT, ?yWKT)) }",
+        "Annotation": {
+            "instance": "<http://kr.di.uoa.gr/yago2geo/resource/geoentity_City_of_Belfast_3333223> , <http://yago-knowledge.org/resource/geoentity_City_of_London_2643744>",
+            "property": " ",
+            "relation": "strdf:left",
+            "concept": " ",
+            "numerical": false
+        },
+        "Category": "B"
+    },
+    "262": {
+        "Question": "Is Bristol in Wales?",
+        "Query": "ASK{  yago:Wales geo:hasGeometry ?WalesGeo. ?WalesGeo geo:asWKT ?WalesPolygon.  yago:Bristol geo:hasGeometry ?BristolGeo. ?BristolGeo geo:asWKT ?BristolPolygon.  FILTER(geof:sfWithin(?BristolGeo , ?WalesGeo)) }",
+        "Annotation": {
+            "instance": "yago:Wales, yago:Bristol",
+            "property": " ",
+            "relation": "geof:sfWithin",
+            "concept": " ",
+            "numerical": false
+        },
+        "Category": "B"
+    },
+    "263": {
+        "Question": "Are Thessaly and Western Macedonia neighboring regions?",
+        "Query": "ASK { yago:geoentity_Western_Macedonia_6697811 geo:hasGeometry ?WestMakGeo. ?WestMakGeo geo:asWKT ?WestMakPolygon. yago:Thessaly geo:hasGeometry ?ThessGeo. ?ThessGeo geo:asWKT ?ThessPolygon. FILTER(geof:sfTouches(?WestMakPolygon, ?ThessPolygon)) }",
+        "Annotation": {
+            "instance": "yago:geoentity_Western_Macedonia_6697811, yago:Thessaly",
+            "property": " ",
+            "relation": "geof:sfTouches",
+            "concept": " ",
+            "numerical": false
+        },
+        "Category": "B"
+    },
+    "264": {
+        "Question": "Are Dublin and Arklow more than 10km apart?",
+        "Query": "ASK { yago:Dublin geo:hasGeometry ?DublnGeo. ?DublnGeo geo:asWKT ?DublnPolygon. yago:Arklow geo:hasGeometry ?Geo. ?Geo geo:asWKT ?Polygon.  FILTER((geof:distance(?DublnPolygon, ?Polygon, <http://www.opengis.net/def/uom/OGC/1.0/metre>)) > 10000) }",
+        "Annotation": {
+            "instance": "yago:Dublin, yago:Arklow",
+            "property": " ",
+            "relation": "geof:distance",
+            "concept": " ",
+            "numerical": false
+        },
+        "Category": "B"
+    },
+    "265": {
+        "Question": "Do Kallithea and Nea Smyrni share a border?",
+        "Query": "ASK { yago:Kallithea geo:hasGeometry ?ko . ?ko geo:asWKT ?kWKT .  yago:Nea_Smyrni geo:hasGeometry ?no . ?ko geo:asWKT ?nWKT . FILTER(geof:sfTouches(?kWKT, ?nWKT)) }",
+        "Annotation": {
+            "instance": "yago:Kallithea, yago:Nea_Smyrni",
+            "property": " ",
+            "relation": "geof:sfTouches",
+            "concept": " ",
+            "numerical": false
+        },
+        "Category": "B"
+    },
+    "266": {
+        "Question": "Is Norwich at least 200 kilometers away from Greece?",
+        "Query": "ASK { yago:geoentity_Norwich_District_7290598 geo:hasGeometry ?norwichGeometry . ?norwichGeometry geo:asWKT ?wktNorwich . yago:Greece geo:hasGeometry ?londonGeometry . ?londonGeometry geo:asWKT ?wktLondon . FILTER(geof:distance(?wktNorwich, ?wktLondon, uom:metre) >= 100000) }",
+        "Annotation": {
+            "instance": "yago:geoentity_Norwich_District_7290598 , yago:Greece",
+            "property": " ",
+            "relation": "geof:distance",
+            "concept": " ",
+            "numerical": false
+        },
+        "Category": "B"
+    },
+    "267": {
+        "Question": "Is the city of Norilsk north of the city of Dublin?",
+        "Query": "ASK { yago:Dublin geo:hasGeometry ?dublinGeometry . ?dublinGeometry geo:asWKT ?wktDublin . yago:Norilsk geo:hasGeometry ?norilskGeometry . ?norilskGeometry geo:asWKT ?wktNorilsk . FILTER(strdf:above(?wktNorilsk , ?wktDublin)) }",
+        "Annotation": {
+            "instance": "yago:Dublin , yago:Norilsk",
+            "property": " ",
+            "relation": "strdf:above",
+            "concept": " ",
+            "numerical": false
+        },
+        "Category": "B"
+    },
+    "268": {
+        "Question": "Does Leicester lie to the east of Birmingham?",
+        "Query": "ASK { <http://yago-knowledge.org/resource/Birmingham> geo:hasGeometry ?o.     ?o geo:asWKT ?geoWKT.     <http://yago-knowledge.org/resource/Leicester> geo:hasGeometry ?o1.     ?o1 geo:asWKT ?geoWKT1.     FILTER(strdf:left(?geoWKT,?geoWKT1)) }",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/Birmingham> , <http://yago-knowledge.org/resource/Leicester>",
+            "property": " ",
+            "relation": "strdf:left",
+            "concept": " ",
+            "numerical": false
+        },
+        "Category": "B"
+    },
+    "269": {
+        "Question": "Is Scotland part of England?",
+        "Query": "ASK { yago:England geo:hasGeometry ?eGeo . ?eGeo geo:asWKT ?eWKT . yago:Scotland geo:hasGeometry ?sGeo . ?sGeo geo:asWKT ?sWKT . FILTER(geof:sfWithin(?sWKT,?eWKT)). }",
+        "Annotation": {
+            "instance": "yago:England, yago:Scotland",
+            "property": " ",
+            "relation": "geof:sfWithin",
+            "concept": " ",
+            "numerical": false
+        },
+        "Category": "B"
+    },
+    "270": {
+        "Question": "Is York larger than New York?",
+        "Query": "ASK { yago:York geo:hasGeometry ?yGeo . ?yGeo geo:asWKT ?yWKT . yago:New_York_City geo:hasGeometry ?nyGeo . ?nyGeo geo:asWKT ?nyWKT . FILTER(strdf:area(?yWKT) > strdf:area(?nyWKT) ). }",
+        "Annotation": {
+            "instance": "yago:York, yago:New_York_City",
+            "property": " ",
+            "relation": "strdf:area",
+            "concept": " ",
+            "numerical": false
+        },
+        "Category": "B"
+    },
+    "271": {
+        "Question": "How far is Alaska from Florida?",
+        "Query": "SELECT (strdf:distance(?aWKT,?fWKT,uom:metre) as ?distance){ yago:Alaska geo:hasGeometry ?aGeo . ?aGeo geo:asWKT ?aWKT . yago:Florida geo:hasGeometry ?fGeo . ?fGeo geo:asWKT ?fWKT . }",
+        "Annotation": {
+            "instance": "yago:Alaska, yago:Florida",
+            "property": " ",
+            "relation": "strdf:distance",
+            "concept": " ",
+            "numerical": false
+        },
+        "Category": "B"
+    },
+    "272": {
+        "Question": "Is the Republic of Ireland part of the United Kingdom?",
+        "Query": "ASK { yago:Republic_of_Ireland geo:hasGeometry ?iGeo . ?iGeo geo:asWKT ?iWKT . yago:United_Kingdom geo:hasGeometry ?ukGeo . ?ukGeo geo:asWKT ?ukWKT . FILTER(strdf:contains(?ukWKT, ?iWKT)) }",
+        "Annotation": {
+            "instance": "yago:Republic_of_Ireland, yago:United_Kingdom",
+            "property": " ",
+            "relation": "strdf:contains",
+            "concept": " ",
+            "numerical": false
+        },
+        "Category": "B"
+    },
+    "273": {
+        "Question": "Is Northern Ireland part of the UK?",
+        "Query": "ASK { yago:United_Kingdom geo:hasGeometry ?ukGeom . ?ukGeom geo:asWKT ?ukWKT . yago:Northern_Ireland geo:hasGeometry ?niGeom . ?niGeom geo:asWKT ?niWKT . FILTER (geof:sfContains(?ukWKT, ?niWKT)) }",
+        "Annotation": {
+            "instance": "yago:United_Kingdom, yago:Northern_Ireland",
+            "property": " ",
+            "relation": "geof:sfContains",
+            "concept": " ",
+            "numerical": false
+        },
+        "Category": "B"
+    },
+    "927": {
+        "Question": "How far is New York from the capital of the US?",
+        "Query": "SELECT (strdf:distance(?nyWKT, ?cWKT, uom:metre) as ?distance) WHERE { yago:New_York_City geo:hasGeometry ?nyGeo . ?nyGeo geo:asWKT ?nyWKT  . yago:United_States yago:hasCapital ?capital . ?capital geo:hasGeometry ?cGeo . ?cGeo geo:asWKT ?cWKT }",
+        "Annotation": {
+            "instance": "yago:New_York_City, yago:United_States, ?capital",
+            "property": " ",
+            "relation": "strdf:distance",
+            "concept": " ",
+            "numerical": false
+        },
+        "Category": "B"
+    },
+    "928": {
+        "Question": "Is Dublin the capital of Ireland?",
+        "Query": "ASK { yago:Republic_of_Ireland yago:hasCapital yago:Dublin }",
+        "Annotation": {
+            "instance": "<http://yago-knowledge.org/resource/Republic_of_Ireland> , <http://yago-knowledge.org/resource/Dublin>",
+            "property": " ",
+            "relation": "<http://yago-knowledge.org/resource/hasCapital>",
+            "concept": " ",
+            "numerical": false
+        },
+        "Category": "B"
+    },
+    "180": {
+        "Question": "Is Ballymoe located in County Longford?",
+        "Query": "ASK {                  yago:Ballymoe geo:hasGeometry ?g.         ?g geo:asWKT ?geoWKT.         yago:County_Longford geo:hasGeometry ?g2.         ?g2 geo:asWKT ?geoWKT2. FILTER(geof:sfWithin(?geoWKT, ?geoWKT2))  }",
+        "Annotation": {
+            "instance": "yago:Ballymoe, yago:County_Longford",
+            "property": " ",
+            "relation": "geof:sfWithin",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "B"
+    },
+    "229": {
+        "Question": "Is Athens south of Manchester?",
+        "Query": "ASK { yago:geoentity_Dimos_Athens_8133876 geo:hasGeometry ?geo1 . ?geo1 geo:asWKT ?wkt1 . yago:Manchester geo:hasGeometry ?geo2 . ?geo2 geo:asWKT ?wkt2 . FILTER(strdf:below(?wkt1,?wkt2)) }",
+        "Annotation": {
+            "instance": "yago:geoentity_Dimos_Athens_8133876, yago:Manchester",
+            "property": " ",
+            "relation": "strdf:below",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "B"
+    },
+    "258": {
+        "Question": "Is Ballymoe within the county of Longford?",
+        "Query": "ASK {                  yago:Ballymoe geo:hasGeometry ?g.         ?g geo:asWKT ?geoWKT.         yago:County_Longford geo:hasGeometry ?g2.         ?g2 geo:asWKT ?geoWKT2. FILTER(geof:sfWithin(?geoWKT, ?geoWKT2))  }",
+        "Annotation": {
+            "instance": "yago:Ballymoe, yago:County_Longford",
+            "property": " ",
+            "relation": "geof:sfWithin",
+            "concept": " ",
+            "numerical": " "
+        },
+        "Category": "B"
+    }
+}

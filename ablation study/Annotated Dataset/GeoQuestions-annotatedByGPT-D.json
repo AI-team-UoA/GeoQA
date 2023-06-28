@@ -1,0 +1,182 @@
+{
+    "433": {
+        "Question": "Give me 10 nature reserves that are west of townlands.",
+        "Query": "SELECT distinct ?nr WHERE { ?nr rdf:type y2geoo:OSM_nature_reserve. ?nr geo:hasGeometry ?nrGeo. ?nrGeo geo:asWKT ?nrWKt. ?townland rdf:type y2geoo:OSI_Townland. ?townland geo:hasGeometry ?TownlandGeo. ?TownlandGeo geo:asWKT ?TownlandWKt. FILTER (strdf:left(?nrWKt, ?TownlandWKt)) } LIMIT 10",
+        "Annotation": {
+            "instance": " ",
+            "property": " ",
+            "relation": "strdf:left",
+            "concept": "y2geoo:OSM_nature_reserve, y2geoo:OSI_Townland",
+            "numerical": false
+        },
+        "Category": "D"
+    },
+    "434": {
+        "Question": "Which lakes border villages?",
+        "Query": "SELECT ?lake WHERE { ?village a y2geoo:OSM_village . ?village geo:hasGeometry ?villageGeom . ?villageGeom geo:asWKT ?xWKT . ?lake a y2geoo:OSM_stream . ?lake geo:hasGeometry ?lakeGeom . ?lakeGeom geo:asWKT ?yWKT . FILTER(geof:sfTouches(?xWKT,?yWKT)). }",
+        "Annotation": {
+            "instance": " ",
+            "property": " ",
+            "relation": "geof:sfTouches",
+            "concept": "y2geoo:OSM_village, y2geoo:OSM_stream",
+            "numerical": false
+        },
+        "Category": "D"
+    },
+    "435": {
+        "Question": "Which streams flow through cities?",
+        "Query": "select distinct ?x where { ?x rdf:type y2geoo:OSM_stream; geo:hasGeometry ?cGeom1. ?cGeom1 geo:asWKT ?cWKT1. ?y rdf:type y2geoo:OSM_city; geo:hasGeometry ?cGeom2. ?cGeom2 geo:asWKT ?cWKT2.  FILTER(geof:sfCrosses(?cWKT1,?cWKT2)) }",
+        "Annotation": {
+            "instance": " ",
+            "property": " ",
+            "relation": "geof:sfCrosses",
+            "concept": "y2geoo:OSM_stream, y2geoo:OSM_city",
+            "numerical": false
+        },
+        "Category": "D"
+    },
+    "436": {
+        "Question": "Which forests are entirely within a Barony and intersect with townlands?",
+        "Query": "SELECT DISTINCT ?l WHERE { ?m a y2geoo:OSI_Barony.    ?m geo:hasGeometry ?mg .    ?mg geo:asWKT ?mw .     ?l a y2geoo:OSM_forest.    ?l geo:hasGeometry ?lg .    ?lg geo:asWKT ?lw . ?lake a y2geoo:OSI_Townland.    ?lake geo:hasGeometry ?lg1 .    ?lg1 geo:asWKT ?lw1 .    FILTER(geof:sfWithin(?lw,?mw)). FILTER(strdf:intersects(?lw, ?lw1)). }",
+        "Annotation": {
+            "instance": " ",
+            "property": " ",
+            "relation": "geof:sfWithin, strdf:intersects",
+            "concept": "y2geoo:OSI_Barony, y2geoo:OSM_forest, y2geoo:OSI_Townland",
+            "numerical": false
+        },
+        "Category": "D"
+    },
+    "437": {
+        "Question": "Identify any nature reserves that are situated south of a forested area.",
+        "Query": "SELECT DISTINCT ?nature_reserve WHERE {   ?nature_reserve rdf:type <http://kr.di.uoa.gr/yago2geo/ontology/OSM_nature_reserve> .   ?nature_reserve geo:hasGeometry ?nature_reserve_geo .   ?nature_reserve_geo geo:asWKT ?nature_reserve_geoWKT .  ?forest rdf:type <http://kr.di.uoa.gr/yago2geo/ontology/OSM_forest> .   ?forest geo:hasGeometry ?forest_geo .   ?forest_geo geo:asWKT ?forest_geoWKT .  FILTER(strdf:below(?nature_reserve_geoWKT, ?forest_geoWKT)  ) }",
+        "Annotation": {
+            "instance": " ",
+            "property": " ",
+            "relation": "strdf:below",
+            "concept": "y2geoo:OSM_nature_reserve, y2geoo:OSM_forest",
+            "numerical": false
+        },
+        "Category": "D"
+    },
+    "438": {
+        "Question": "Which towns have beaches?",
+        "Query": "SELECT DISTINCT ?city WHERE { ?city rdf:type y2geoo:OSM_town . ?city geo:hasGeometry ?geoC . ?geoC geo:asWKT ?cWKT . ?beach rdf:type y2geoo:OSM_beach . ?beach geo:hasGeometry ?geoB . ?geoB geo:asWKT ?bWKT . FILTER(geof:sfWithin(?bWKT, ?cWKT)) }",
+        "Annotation": {
+            "instance": " ",
+            "property": " ",
+            "relation": "geof:sfWithin",
+            "concept": "y2geoo:OSM_town, y2geoo:OSM_beach",
+            "numerical": false
+        },
+        "Category": "D"
+    },
+    "439": {
+        "Question": "Which rural areas intersect with lakes?",
+        "Query": "select DISTINCT ?x where { ?x rdf:type y2geoo:OSM_lake . ?x geo:hasGeometry ?xGeom. ?xGeom geo:asWKT ?xWKT. ?o rdf:type y2geoo:OSI_Rural_Area . ?o geo:hasGeometry ?oGeom. ?oGeom geo:asWKT ?iWKT. FILTER(geof:sfIntersects(?xWKT,?iWKT )) }",
+        "Annotation": {
+            "instance": " ",
+            "property": " ",
+            "relation": "geof:sfIntersects",
+            "concept": "y2geoo:OSM_lake, y2geoo:OSI_Rural_Area",
+            "numerical": false
+        },
+        "Category": "D"
+    },
+    "440": {
+        "Question": "What urban centers possess beaches?",
+        "Query": "SELECT DISTINCT ?city WHERE { ?city rdf:type y2geoo:OSM_city . ?city geo:hasGeometry ?geoC . ?geoC geo:asWKT ?cWKT . ?beach rdf:type y2geoo:OSM_beach . ?beach geo:hasGeometry ?geoB . ?geoB geo:asWKT ?bWKT . FILTER(geof:sfWithin(?bWKT, ?cWKT)) }",
+        "Annotation": {
+            "instance": " ",
+            "property": " ",
+            "relation": "geof:sfWithin",
+            "concept": "y2geoo:OSM_city, y2geoo:OSM_beach",
+            "numerical": false
+        },
+        "Category": "D"
+    },
+    "441": {
+        "Question": "Which lakes are linked to a woodland area?",
+        "Query": "select DISTINCT ?x where { ?x rdf:type y2geoo:OSM_lake . ?x geo:hasGeometry ?xGeom. ?xGeom geo:asWKT ?xWKT. ?o rdf:type y2geoo:OSM_forest . ?o geo:hasGeometry ?oGeom. ?oGeom geo:asWKT ?iWKT. FILTER(geof:sfIntersects(?xWKT,?iWKT )) }",
+        "Annotation": {
+            "instance": " ",
+            "property": " ",
+            "relation": "geof:sfIntersects",
+            "concept": "y2geoo:OSM_lake, y2geoo:OSM_forest",
+            "numerical": false
+        },
+        "Category": "D"
+    },
+    "442": {
+        "Question": "Which States of the US border with at most 2 other States?",
+        "Query": "SELECT DISTINCT ?state { yago:United_States geo:hasGeometry ?usGeo . ?usGeo geo:asWKT ?usWKT . ?state rdf:type y2geoo:GADM_2ndOrder_AdministrativeUnit . ?state geo:hasGeometry ?sGeo . ?sGeo geo:asWKT ?sWKT . ?state2 rdf:type y2geoo:GADM_2ndOrder_AdministrativeUnit . ?state2 geo:hasGeometry ?s2Geo . ?s2Geo geo:asWKT ?s2WKT . FILTER(?state != ?state2 && geof:sfWithin(?sWKT,?usWKT) && geof:sfWithin(?s2WKT,?usWKT) && geof:sfTouches(?sWKT,?s2WKT)) . } GROUP BY ?state HAVING(COUNT(?state2)<=2)",
+        "Annotation": {
+            "instance": " ",
+            "property": " ",
+            "relation": "geof:sfWithin, geof:sfTouches",
+            "concept": "y2geoo:GADM_2ndOrder_AdministrativeUnit, yago:United_States",
+            "numerical": false
+        },
+        "Category": "D"
+    },
+    "443": {
+        "Question": "Is there a lake that touches both a forest and a village?",
+        "Query": "ASK { ?lake rdf:type y2geoo:OSM_lake . ?lake geo:hasGeometry ?lGeo . ?lGeo geo:asWKT ?lWKT . ?village rdf:type y2geoo:OSM_village . ?village geo:hasGeometry ?vGeo . ?vGeo geo:asWKT ?vWKT . ?forest rdf:type y2geoo:OSM_forest . ?forest geo:hasGeometry ?fGeo . ?fGeo geo:asWKT ?fWKT . FILTER(geof:sfTouches(?vWKT,?lWKT) && geof:sfTouches(?fWKT,?lWKT)) . }",
+        "Annotation": {
+            "instance": " ",
+            "property": " ",
+            "relation": "geof:sfTouches",
+            "concept": "y2geoo:OSM_lake, y2geoo:OSM_village, y2geoo:OSM_forest",
+            "numerical": false
+        },
+        "Category": "D"
+    },
+    "444": {
+        "Question": "Give me a stream that crosses at least two lakes.",
+        "Query": "SELECT ?stream WHERE { ?stream rdf:type y2geoo:OSM_stream . ?stream geo:hasGeometry ?sGeo . ?sGeo geo:asWKT ?sWKT . ?lake rdf:type y2geoo:OSM_lake . ?lake geo:hasGeometry ?lGeo . ?lGeo geo:asWKT ?lWKT . FILTER(geof:sfCrosses(?sWKT,?lWKT)) . } GROUP BY ?stream HAVING(COUNT(?lake)>=3) LIMIT 1",
+        "Annotation": {
+            "instance": " ",
+            "property": " ",
+            "relation": "geof:sfCrosses",
+            "concept": "y2geoo:OSM_stream, y2geoo:OSM_lake",
+            "numerical": false
+        },
+        "Category": "D"
+    },
+    "445": {
+        "Question": "Which localities are adjacent to lakes?",
+        "Query": "SELECT DISTINCT ?locality where{   ?locality a y2geoo:OSM_locality.   ?locality geo:hasGeometry ?localityGeometry .   ?localityGeometry geo:asWKT ?localityWKT .    ?p a y2geoo:OSM_lake.   ?p geo:hasGeometry ?pGeometry .   ?pGeometry geo:asWKT ?pWKT .      FILTER(geof:sfTouches(?localityWKT,?pWKT)). }",
+        "Annotation": {
+            "instance": " ",
+            "property": " ",
+            "relation": "geof:sfTouches",
+            "concept": "y2geoo:OSM_locality, y2geoo:OSM_lake",
+            "numerical": false
+        },
+        "Category": "D"
+    },
+    "446": {
+        "Question": "Give me 5 streams that are on islands?",
+        "Query": "SELECT DISTINCT ?river WHERE {       ?island a y2geoo:OSM_island .   ?island geo:hasGeometry ?islandGeom .   ?islandGeom geo:asWKT ?xWKT .       ?river a y2geoo:OSM_stream .   ?river geo:hasGeometry ?riverGeom .   ?riverGeom geo:asWKT ?yWKT .       FILTER(geof:sfWithin(?yWKT,?xWKT)) } LIMIT 5",
+        "Annotation": {
+            "instance": " ",
+            "property": " ",
+            "relation": "geof:sfWithin",
+            "concept": "y2geoo:OSM_island, y2geoo:OSM_stream",
+            "numerical": false
+        },
+        "Category": "D"
+    },
+    "447": {
+        "Question": "Which islands are situated within the boundaries of lakes?",
+        "Query": "SELECT ?village WHERE { ?village a y2geoo:OSM_island .   ?village geo:hasGeometry ?villageGeom .   ?villageGeom geo:asWKT ?xWKT .       ?lake a y2geoo:OSM_lake .   ?lake geo:hasGeometry ?lakeGeom .   ?lakeGeom geo:asWKT ?yWKT .       FILTER( geof:sfContains(?yWKT,?xWKT)) }",
+        "Annotation": {
+            "instance": " ",
+            "property": " ",
+            "relation": "geof:sfContains",
+            "concept": "y2geoo:OSM_island, y2geoo:OSM_lake",
+            "numerical": false
+        },
+        "Category": "D"
+    }
+}
